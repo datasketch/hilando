@@ -1,0 +1,5 @@
+baseURL = '/'
+defaultContentLanguage = "es"
+languageCode = 'es'
+taxonomies = []
+title = 'Hilando Vidas y Esperanzas'
