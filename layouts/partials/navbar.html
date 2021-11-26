@@ -1,3 +1,20 @@
-<header>
-    NAVBAR  
+<header
+    class="fixed top-0 left-0 w-full flex justify-between items-center py-3 lg:py-4 xl:py-5 px-3 lg:px-7 xl:px-9 z-50">
+    <a href="{{ relref . " _index.md" }}">
+        <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
+    </a>
+    <nav class="tk-mr-eaves-sans text-white font-bold self-end">
+        {{ $currentPage := . }}
+        <ul class="hidden lg:flex items-center">
+            {{ range .Site.Menus.main }}
+            {{ $menu_item_url := .URL | relLangURL }}
+            {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+            {{ if eq $menu_item_url $page_url }}
+            <li class="mr-20"><a class="uppercase border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ else }}
+            <li class="mr-20"><a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
 </header>
