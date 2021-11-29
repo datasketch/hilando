@@ -16,6 +16,17 @@
     {{ block "js" . }}{{ end }}
     {{ $default := resources.Get "js/default.js" | js.Build (dict "minify" hugo.IsProduction) }}
     <script src="{{ $default.Permalink }}"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
