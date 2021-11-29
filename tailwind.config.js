@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'banner-home-sm': 'url(/images/home/banner-home.png)',
         'banner-home-lg': 'url(/images/home/banner-home@2x.png)',
+        'banner-territorios': 'url(/images/territorios/banner-territorios.svg)'
       },
       colors: {
         black: '#1A1A1A',
