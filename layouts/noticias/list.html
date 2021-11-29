@@ -1,0 +1,5 @@
+{{ define "main" }}
+    {{ range .Pages }}
+        <img src="{{ .Params.image }}" alt="">
+    {{ end }}
+{{ end }}
