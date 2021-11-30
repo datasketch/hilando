@@ -9,6 +9,42 @@
 }
 
 @layer components {
+  .accordion {
+      @apply uppercase font-black flex items-center py-2 px-6 w-full justify-between text-white duration-200;
+  }
+  .accordion--images {
+    @apply duration-200;
+  }
+  .panel {
+      @apply max-h-0 overflow-hidden duration-200; 
+  }
+  .filter-label {
+    @apply mb-3 cursor-pointer text-base select-none flex items-center w-full justify-between duration-300;
+  }
+  .filter-label input {
+    @apply hidden;
+  }
+  .filter-label .checkmark {
+    @apply w-5 h-5 flex-shrink-0 relative duration-300;
+    background-color: #D5DFF0;
+  }
+  .filter-label:hover .checkmark {
+    background-color: #3A3C6A;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .filter-label .checkmark:after {
+    content: "";
+    background-image: url(/images/eventos/checkmark.svg);
+    @apply absolute w-3 h-3 mt-1 ml-1 bg-center bg-contain hidden;
+  }
+
+  .filter-label input:checked ~ .checkmark {
+    background-color: #3A3C6A;
+  }
+
+  .filter-label input:checked ~ .checkmark:after {
+    @apply block;
+  }
 }
 
 @layer utilities {
