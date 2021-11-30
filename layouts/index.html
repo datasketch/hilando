@@ -1,25 +1,26 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER HOME PAGE -->
-    <div class="lg:col-start-1 lg:col-end-13 relative bg-banner-home-sm lg:bg-banner-home-lg bg-cover bg-center py-64 lg:py-72 xl:py-80"
+    <div class="lg:col-start-1 lg:col-end-13 relative bg-banner-home-sm lg:bg-banner-home-lg bg-cover bg-center py-60 lg:py-72 xl:py-80"
         style="height: 550px;">
-        <h1
-            class="tk-mr-eaves-sans text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-center">
-            HILANDO VIDAS Y ESPERANZA
-            <span class="block font-extralight">
-                WEAVING LIVES AND HOPE
-            </span>
-        </h1>
-        <p class="absolute bottom-4 right-4 italic text-white">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing.
-        </p>
+        <div class="mx-auto w-10/12 lg:w-full">
+            <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
+                HILANDO VIDAS Y ESPERANZA
+                <span class="block font-extralight">
+                    WEAVING LIVES AND HOPE
+                </span>
+            </h1>
+            <p class="absolute bottom-4 right-4 italic text-white hidden lg:block">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing.
+            </p>
+        </div>
     </div>
     <!-- BANNER HOME PAGE END -->
 
     <!-- ABOUT THE PROGRAM -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-20" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-5/12 text-center">
-            <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
+            <p class="text-lg xl:text-xl mb-8">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet
                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
@@ -27,7 +28,7 @@
                 in
                 vulputate velit esse molestie consequat, vel illum dolore.
             </p>
-            <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/home/about-program.svg" alt="about the program">
+            <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
             <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
                 style="background-color: #D27028;">Sobre
                 el programa</a>
@@ -37,14 +38,14 @@
 
     <!-- TARGET POPULATION -->
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12">
-        <img class="lg:col-start-1 lg:col-end-7 w-full h-full" src="/images/home/target-population.png"
+        <img class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 w-full h-full" src="/images/home/target-population.png"
             alt="target population">
-        <div class="lg:col-start-7 lg:col-end-13 text-white self-stretch flex flex-col justify-center py-12 md:py-16 lg:py-20 xl:py-24 px-16 lg:px-20 xl:px-24"
+        <div class="order-1 lg:order-2 text-center lg:text-left lg:col-start-7 lg:col-end-13 text-white self-stretch flex flex-col justify-center py-16 lg:py-20 xl:py-24 px-16 lg:px-20 xl:px-24"
             style="background-color: #963B62;">
-            <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4">
+            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
                 <span class="pl-2" style="background-color: #C5296A;">Población</span> objetivo
             </h2>
-            <p class="lg:text-lg xl:text-xl xl:w-11/12">
+            <p class="text-lg xl:text-xl xl:w-11/12">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet
                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
@@ -59,13 +60,13 @@
 
     <!-- TARGETED TERRITORIES -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12">
+        <div class="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8">
             <div class="lg:col-start-1 lg:col-end-7">
-                <div class="mb-3 lg:mb-5 xl:mb-7">
-                    <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4">
+                <div class="mb-8 lg:mb-5 xl:mb-7 text-center lg:text-left">
+                    <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
                         <span class="pl-2" style="background-color: #D7729C;">Territorios</span> focalizados
                     </h2>
-                    <p class="lg:text-lg xl:text-xl xl:w-8/12">
+                    <p class="text-lg xl:text-xl xl:w-8/12">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet
@@ -81,7 +82,7 @@
                     <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
                         Montes de María
                     </h2>
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-6 lg:mb-8 xl:mb-10">
+                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10">
                         <li class="pb-1 border-b border-black">
                             <a class="lg:text-lg xl:text-xl" href="#">Chalán</a>
                         </li>
@@ -102,7 +103,7 @@
                     <h2 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
                         Bajo Cauca y Nordeste Antioqueño
                     </h2>
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-6 lg:mb-8 xl:mb-10 ">
+                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10 ">
                         <li class="pb-1 border-b border-black">
                             <a class="lg:text-lg xl:text-xl" href="#">Anorí</a>
                         </li>
@@ -149,12 +150,12 @@
 
     <!-- PROGRAM IMPACT -->
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12">
-        <div class="lg:col-start-1 lg:col-end-7 py-12 md:py-16 lg:py-20 xl:py-24 px-16 lg:px-20 xl:px-32 text-white"
+        <div class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 py-16 lg:py-20 xl:py-24 px-16 lg:px-20 xl:px-32 text-white text-center lg:text-left"
             style="background-color: #4F7435;">
-            <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4">
+            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4">
                 <span class="pl-2" style="background-color: #81A347;">Impacto</span> del Programa
             </h2>
-            <p class="lg:text-lg xl:text-xl xl:w-11/12">
+            <p class="text-lg xl:text-xl xl:w-11/12">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet
                 dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
@@ -164,34 +165,35 @@
                 accumsan.
             </p>
         </div>
-        <img class="lg:col-start-7 lg:col-end-13 h-full w-full" src="/images/home/program-impact.png" alt="program impact">
+        <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 h-full w-full" src="/images/home/program-impact.png"
+            alt="program impact">
     </div>
     <!-- PROGRAM IMPACT END -->
 
     <!-- OUTSTANDING NEWS -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 py-16 xl:py-20" style="background-color: #FAFAFA;">
         <div class="mx-auto w-11/12 lg:w-10/12">
-            <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
+            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
                 <span class="pl-2" style="background-color: #9EB290;">Noticias</span> destacadas
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 lg:gap-x-8 mb-12 lg:mb-16 xl:mb-20">
                 <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
                     style="background-color: #F7F8F9; border-color: #B0C58F;">
                     <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
-                    <h3 class="lg:text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
+                    <h3 class="text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                     </h3>
-                    <p class="lg:text-lg xl:text-xl mb-2 lg:mb-3">
+                    <p class="text-lg xl:text-xl mb-2 lg:mb-3">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
                         labore dolore magna aliquyam erat, sed Diam...
                     </p>
-                    <p class="lg:text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
+                    <p class="text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
                     <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="sticky">
                 </div>
-                <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
+                <div class="hidden lg:block relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
                     style="background-color: #F7F8F9; border-color: #B0C58F;">
                     <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
-                    <h3 class="lg:text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
+                    <h3 class="text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                     </h3>
                     <p class="lg:text-lg xl:text-xl mb-2 lg:mb-3">
@@ -201,7 +203,7 @@
                     <p class="lg:text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
                     <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="sticky">
                 </div>
-                <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
+                <div class="hidden lg:block relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
                     style="background-color: #F7F8F9; border-color: #B0C58F;">
                     <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
                     <h3 class="lg:text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
@@ -228,20 +230,20 @@
     </div>
 
     <!-- LOREM IPSUM -->
-    <div class="lg:col-start-1 lg:col-end-13 pt-12 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40"
+    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40"
         style="background-color: #FAFAFA;">
         <div class="mx-auto w-11/12 lg:w-10/12">
-            <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
+            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
                 <span class="pl-2" style="background-color: #C493A8;">Lorem</span> impum dolor
             </h2>
             <div
                 class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
-                <div class="order-1">
-                    <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4 xl:mb-6">
+                <div class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+                    <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
                         Lorem ipsum dolor sit amet, <br>
                         <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
-                    </h2>
-                    <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
+                    </h3>
+                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -253,14 +255,14 @@
                         Explorar datos
                     </a>
                 </div>
-                <img class="order-2 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
-                <img class="order-4 md:order-3 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
-                <div class="order-3 md:order-4">
-                    <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4 xl:mb-6">
+                <img class="order-1 lg:order-2 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
+                <img class="order-3 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
+                <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+                    <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
                         Lorem ipsum dolor sit amet, <br>
                         <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
-                    </h2>
-                    <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
+                    </h3>
+                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -272,12 +274,12 @@
                         Explorar datos
                     </a>
                 </div>
-                <div class="order-5">
-                    <h2 class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-2 lg:mb-4 xl:mb-6">
+                <div class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+                    <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
                         Lorem ipsum dolor sit amet, <br>
                         <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
-                    </h2>
-                    <p class="lg:text-lg xl:text-xl mb-4 lg:mb-6 xl:mb-8">
+                    </h3>
+                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -289,7 +291,7 @@
                         Explorar datos
                     </a>
                 </div>
-                <img class="order-6 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
+                <img class="order-5 lg:order-6 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
             </div>
         </div>
     </div>
@@ -299,7 +301,7 @@
     <div class="lg:col-start-1 lg:col-end-13 relative py-12 lg:py-16 xl:py-20" style="background-color: #3A3C6A;">
         <div class="mx-auto w-9/12 relative">
             <h2
-                class="tk-mr-eaves-sans font-black text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6 xl:mb-8 text-center text-white">
+                class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-4 lg:mb-6 xl:mb-8 text-center text-white">
                 Próximos
                 <span class="pl-2" style="background-color: #6C3C66;">eventos</span>
             </h2>
