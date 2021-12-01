@@ -66,7 +66,7 @@
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8">
             <div class="lg:col-start-1 lg:col-end-7">
-                <div class="mb-8 lg:mb-5 xl:mb-7 text-center lg:text-left">
+                <div class="text-center lg:text-left">
                     <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
                         <span class="pl-2" style="background-color: #D7729C;">Territorios</span> focalizados
                     </h2>
@@ -85,7 +85,7 @@
                             Montes de María
                         </li>
                     </ul>
-                    <p class="text-lg xl:text-xl xl:w-8/12 mb-10 lg:mb-20">
+                    <p class="text-lg xl:text-xl xl:w-8/12">
                         Dentro de esas regiones, focalizamos quince municipios, todos con una base comunitaria fuerte y
                         consolidada que incluye plataformas juveniles y de mujeres; iniciativas culturales y de
                         comunicación; asociaciones campesinas, entre otras organizaciones de la sociedad civil que
@@ -93,72 +93,108 @@
                         étnicas; temas de género (mujeres, LGBTI) y la protección medioambiental.
                     </p>
                 </div>
-                <div>
-                    <h2 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
-                        Bajo Cauca y Nordeste Antioqueño
-                    </h2>
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10 ">
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Anorí</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Cáceres</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">El Bagre</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Valdivia</a>
-                        </li>
-                    </ul>
-                    <h2 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
-                        Pacífico Medio, Alto Patía y Norte del Cauca
-                    </h2>
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10">
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Buenaventura</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Buenos Aires</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Santander de
-                                Quilichao</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="{{ relref . " territorios/pradera-valle-cauca.md"
-                                }}">Pradera</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Toribío</a>
-                        </li>
-                    </ul>
-                    <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
-                        Montes de María
-                    </h2>
-                    <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Chalán</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Colosó</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">San Juan
-                                Nepomuceno</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">San Jacinto</a>
-                        </li>
-                        <li class="pb-1 border-b border-black">
-                            <a class="lg:text-lg xl:text-xl" href="#">Toluviejo</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div class="lg:col-start-7 lg:col-end-13">
-                <img class="mx-auto" src="/images/home/targeted-territories.svg" alt="targeted territories">
+            <div class="lg:col-start-8 lg:col-end-13">
+                <p class="text-lg xl:text-xl xl:w-8/12 lg:mt-14 mb-4 lg:mb-6">
+                    Los municipios fueron priorizados con base en criterios como:
+                </p>
+                <ul class="lg:text-lg xl:text-xl">
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Vulnerabilidad (pobreza, necesidades insatisfechas, acceso a servicios psicosociales y de salud
+                        mental)
+                    </li>
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Violencia (violencia basada en género, violencia doméstica y otros tipos)
+                    </li>
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Situación institucional (debilidad administrativa institucional y capacidad de gestión de
+                        entidades locales)
+                    </li>
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Ambiente económico
+                    </li>
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Posibilidades de acceso
+                    </li>
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Logros previos
+                    </li>
+                    <li class="flex items-center">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        Compromiso de las administraciones locales
+                    </li>
+                </ul>
             </div>
+            <div class="lg:col-start-1 lg:col-end-7">
+                <h2 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
+                    Bajo Cauca y Nordeste Antioqueño
+                </h2>
+                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10 ">
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Anorí</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Cáceres</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">El Bagre</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Valdivia</a>
+                    </li>
+                </ul>
+                <h2 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
+                    Pacífico Medio, Alto Patía y Norte del Cauca
+                </h2>
+                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10">
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Buenaventura</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Buenos Aires</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Santander de
+                            Quilichao</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="{{ relref . " territorios/pradera-valle-cauca.md"
+                            }}">Pradera</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Toribío</a>
+                    </li>
+                </ul>
+                <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
+                    Montes de María
+                </h2>
+                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Chalán</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Colosó</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">San Juan
+                            Nepomuceno</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">San Jacinto</a>
+                    </li>
+                    <li class="pb-1 border-b border-black">
+                        <a class="lg:text-lg xl:text-xl" href="#">Toluviejo</a>
+                    </li>
+                </ul>
+            </div>
+            <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/targeted-territories.svg"
+                alt="targeted territories">
         </div>
     </div>
     <!-- TARGETED TERRITORIES END -->
@@ -170,14 +206,16 @@
             <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4">
                 <span class="pl-2" style="background-color: #81A347;">Impacto</span> del Programa
             </h2>
+            <p class="text-lg xl:text-xl xl:w-11/12 mb-4 lg:mb-6">
+                WLH apoya a las comunidades en áreas como liderazgo, generación de ingresos, resolución de conflictos y
+                comunicación para desarrollar capacidades locales, promover la resiliencia e impulsar transformaciones
+                sociales para la convivencia pacífica.
+            </p>
             <p class="text-lg xl:text-xl xl:w-11/12">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet
-                dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-                in
-                vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-                accumsan.
+                En Hilando Vidas y Esperanza priorizamos metodologías que
+                promueven el aprendizaje entre pares, el co-diseño, el empoderamiento del conocimiento local, el
+                aprendizaje experiencial, los intercambios de conocimiento, la mentoría uno-a-uno y el uso de
+                herramientas artísticas y de comunicación.
             </p>
         </div>
         <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 h-full w-full" src="/images/home/program-impact.png"
@@ -233,8 +271,8 @@
                 </div>
             </div>
             <div class="text-center">
-                <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
-                    style="background-color: #C5296A;">Conoce Más</a>
+                <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . " noticias/_index.md"
+                    }}" style="background-color: #C5296A;">Conoce Más</a>
             </div>
         </div>
     </div>
@@ -249,21 +287,19 @@
         style="background-color: #FAFAFA;">
         <div class="mx-auto w-11/12 lg:w-10/12">
             <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
-                <span class="pl-2" style="background-color: #C493A8;">Lorem</span> impum dolor
+                <span class="pl-2" style="background-color: #C493A8;">Mapeo</span> social
             </h2>
             <div
                 class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
                 <div class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full">
                     <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
-                        Lorem ipsum dolor sit amet, <br>
-                        <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
+                        <span class="pl-2" style="background-color: #B97D97;">Distribución</span> poblacional rural
                     </h3>
                     <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation
-                        ullamcorper.
+                        De los quince municipios focalizados, WLH trabaja con comunidades específicas quienes participan
+                        de una intervención integral. Estas comunidades son principalmente rurales con una distribución
+                        poblacional que incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas,
+                        jóvenes y personas con discapacidad.
                     </p>
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
                         style="background-color: #D27028;">
@@ -274,15 +310,15 @@
                 <img class="order-3 mx-auto self-end" src="/images/public/chart.svg" alt="chart">
                 <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
                     <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
-                        Lorem ipsum dolor sit amet, <br>
-                        <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
+                        Panorama de la
+                        <span class="pl-2" style="background-color: #B97D97;"> salud mental</span>
                     </h3>
                     <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation
-                        ullamcorper.
+                        A partir del Registro Individual de Prestación (RIPS), realizamos un comparativo entre los
+                        principales diagnósticos de salud mental atendidos durante el 2020 por el Sistema General de
+                        Seguridad Social Salud (SGSSS) en los quince municipios focalizados. De igual manera, revisamos
+                        las prioridades en salud establecidas por las autoridades sanitarias municipales y relacionadas
+                        con las dimensiones de intervención del Programa y que hacen parte del Plan Decenal de Salud.
                     </p>
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
                         style="background-color: #D27028;">
@@ -291,15 +327,14 @@
                 </div>
                 <div class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full">
                     <h3 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4 xl:mb-6">
-                        Lorem ipsum dolor sit amet, <br>
-                        <span class="pl-2" style="background-color: #B97D97;">consectetuer</span> adipiscing elit
+                        <span class="pl-2" style="background-color: #B97D97;">Economías</span> tradicionales
                     </h3>
                     <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation
-                        ullamcorper.
+                        Los quince municipios PDET en los que trabajaremos hasta el 2026, son predominantemente
+                        agrícolas y forestales, con una potencia para la piscicultura, apicultura y otras prácticas que
+                        protegen el medio ambiente. También, se encuentran en zonas de extracción minera, y tienen
+                        tradición en la agricultura y la producción de artesanías. Existen procesos incipientes de
+                        industrialización en algunos municipios e incentivos para el emprendimiento campesino.
                     </p>
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
                         style="background-color: #D27028;">
