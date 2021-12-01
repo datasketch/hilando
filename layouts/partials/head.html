@@ -3,8 +3,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {{ $css := resources.Get "css/tailwind.pcss" | toCSS | postCSS | minify }}
+{{ $menu := resources.Get "css/menu.css" | toCSS | postCSS | minify }}
 
 <link rel="stylesheet" href="https://use.typekit.net/qwa7obz.css">
+<link rel="stylesheet" href="{{ $menu.Permalink }}">
 <link rel="stylesheet" href="{{ $css.Permalink }}">
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
