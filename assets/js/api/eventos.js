@@ -6,6 +6,12 @@ const accordions = document.querySelectorAll('.accordion');
 const panels = document.querySelectorAll('.panel');
 const images = document.querySelectorAll('.accordion--images');
 
+// DATA
+const dataEl = document.querySelector('#data-eventos');
+
+
+
+
 // EVENTS HANDLERS
 
 // PARENT ELEMENT
@@ -15,7 +21,7 @@ filters.addEventListener('click', function (e) {
         const id = child.getAttribute('data-tab');
         if (panels[id].style.maxHeight) {
             panels[id].style.maxHeight = null;
-            panels[id].style.padding = "0px";
+            panels[id].style.padding = "0px 24px 0px 24px";
             panels[id].style.overflowY = "hidden";
             images[id].style.transform = "rotate(0deg)";
         } else {
