@@ -1,4 +1,28 @@
 {{ define "main" }}
+
+{{ $data := index .Site.Data.eventos }}
+{{ $departamento := slice }}
+{{ $municipio := slice }}
+{{ $mes := slice }}
+{{ $tipo := slice }}
+
+{{/* GET CATEGORIES */}}
+{{ range $data }}
+{{ if .departamento }}
+{{ $departamento = $departamento | append .departamento }}
+{{ end }}
+{{ if .municipio }}
+{{ $municipio = $municipio | append .municipio }}
+{{ end }}
+{{ if .mes }}
+{{ $mes = $mes | append .mes }}
+{{ end }}
+{{ if .tipo }}
+{{ $tipo = $tipo | append .tipo }}
+{{ end }}
+{{ end }}
+{{/* GET CATEGORIES END */}}
+
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
     <div
@@ -10,7 +34,8 @@
     </div>
     <!-- BANNER EVENTS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40"
+        style="background-color: #FAFAFA;">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
                 <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
@@ -25,31 +50,13 @@
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="background-color: #F0F0F2;">
-                            <label class="filter-label text-lg" for="antioquia">
-                                <span class="text-lg lg:text-xl">Antioquia</span>
-                                <input type="checkbox" name="departamento" id="antioquia" value="antioquia">
+                            {{ range sort (uniq $departamento) "value" "asc" }}
+                            <label class="filter-label text-lg" for="{{ . }}">
+                                <span class="text-lg lg:text-xl">{{ . }}</span>
+                                <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="filter-label text-lg" for="bolivar">
-                                <span class="text-lg lg:text-xl">Bolivar</span>
-                                <input type="checkbox" name="departamento" id="bolivar" value="bolivar">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="cauca">
-                                <span class="text-lg lg:text-xl">Cauca</span>
-                                <input type="checkbox" name="departamento" id="cauca" value="cauca">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="sucre">
-                                <span class="text-lg lg:text-xl">Sucre</span>
-                                <input type="checkbox" name="departamento" id="sucre" value="sucre">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="valle-cauca">
-                                <span class="text-lg lg:text-xl">Valle del Cauca</span>
-                                <input type="checkbox" name="departamento" id="valle-cauca" value="valle-cauca">
-                                <span class="checkmark"></span>
-                            </label>
+                            {{ end }}
                         </div>
                     </div>
                     <!-- DEPARTAMENTO END -->
@@ -61,32 +68,13 @@
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="background-color: #F0F0F2;">
-                            <label class="filter-label text-lg" for="buenaventura">
-                                <span class="text-lg lg:text-xl">Buenaventura</span>
-                                <input type="checkbox" name="departamento" id="buenaventura" value="buenaventura">
+                            {{ range sort (uniq $municipio) "value" "asc" }}
+                            <label class="filter-label text-lg" for="{{ . }}">
+                                <span class="text-lg lg:text-xl">{{ . }}</span>
+                                <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="filter-label text-lg" for="pradera">
-                                <span class="text-lg lg:text-xl">Pradera</span>
-                                <input type="checkbox" name="departamento" id="pradera" value="pradera">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="san-juan-nepomuceno">
-                                <span class="text-lg lg:text-xl">San Juan Nepomuceno</span>
-                                <input type="checkbox" name="departamento" id="san-juan-nepomuceno"
-                                    value="san-juan-nepomuceno">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="valdivia">
-                                <span class="text-lg lg:text-xl">Valdivia</span>
-                                <input type="checkbox" name="departamento" id="valdivia" value="valdivia">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="san-jacinto">
-                                <span class="text-lg lg:text-xl">San Jacinto</span>
-                                <input type="checkbox" name="departamento" id="san-jacinto" value="san-jacinto">
-                                <span class="checkmark"></span>
-                            </label>
+                            {{ end }}
                         </div>
                     </div>
                     <!-- MUNICIPIO END -->
@@ -98,66 +86,13 @@
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="background-color: #F0F0F2;">
-                            <label class="filter-label text-lg" for="enero">
-                                <span class="text-lg lg:text-xl">Enero</span>
-                                <input type="checkbox" name="departamento" id="enero" value="enero">
+                            {{ range sort (uniq $mes) "value" "asc" }}
+                            <label class="filter-label text-lg" for="{{ . }}">
+                                <span class="text-lg lg:text-xl">{{ . }}</span>
+                                <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="filter-label text-lg" for="febrero">
-                                <span class="text-lg lg:text-xl">Febrero</span>
-                                <input type="checkbox" name="departamento" id="febrero" value="febrero">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="marzo">
-                                <span class="text-lg lg:text-xl">Marzo</span>
-                                <input type="checkbox" name="departamento" id="marzo" value="marzo">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="abril">
-                                <span class="text-lg lg:text-xl">Abril</span>
-                                <input type="checkbox" name="departamento" id="abril" value="abril">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="mayo">
-                                <span class="text-lg lg:text-xl">Mayo</span>
-                                <input type="checkbox" name="departamento" id="mayo" value="mayo">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="junio">
-                                <span class="text-lg lg:text-xl">junio</span>
-                                <input type="checkbox" name="departamento" id="junio" value="junio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="julio">
-                                <span class="text-lg lg:text-xl">Julio</span>
-                                <input type="checkbox" name="departamento" id="julio" value="julio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="agosto">
-                                <span class="text-lg lg:text-xl">Agosto</span>
-                                <input type="checkbox" name="departamento" id="agosto" value="agosto">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="septiembre">
-                                <span class="text-lg lg:text-xl">Septiembre</span>
-                                <input type="checkbox" name="departamento" id="septiembre" value="septiembre">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="octubre">
-                                <span class="text-lg lg:text-xl">Octubre</span>
-                                <input type="checkbox" name="departamento" id="octubre" value="octubre">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="noviembre">
-                                <span class="text-lg lg:text-xl">Noviembre</span>
-                                <input type="checkbox" name="departamento" id="noviembre" value="noviembre">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label text-lg" for="diciembre">
-                                <span class="text-lg lg:text-xl">Diciembre</span>
-                                <input type="checkbox" name="departamento" id="diciembre" value="diciembre">
-                                <span class="checkmark"></span>
-                            </label>
+                            {{ end }}
                         </div>
                     </div>
                     <!-- MES END -->
@@ -169,11 +104,13 @@
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="background-color: #F0F0F2;">
-                            <label class="filter-label text-lg" for="cultural">
-                                <span class="text-lg lg:text-xl">Cultural</span>
-                                <input type="checkbox" name="departamento" id="cultural" value="cultural">
+                            {{ range sort (uniq $tipo) "value" "asc" }}
+                            <label class="filter-label text-lg" for="{{ . }}">
+                                <span class="text-lg lg:text-xl">{{ . }}</span>
+                                <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
+                            {{ end }}
                         </div>
                     </div>
                     <!-- TIPO EVENTO END -->
