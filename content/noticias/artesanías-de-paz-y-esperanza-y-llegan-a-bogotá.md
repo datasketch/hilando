@@ -1,7 +1,7 @@
 ---
 title: ARTESANÍAS DE PAZ Y ESPERANZA Y LLEGAN A BOGOTÁ
 date: 2021-12-02T20:45:58.571Z
-image: /images/uploads/imagen1.jpg
+image: /images/uploads/untitled-1-.jpg
 description: >
   Entre octubre y noviembre, artesanos y artesanas de San Jacinto, Bolívar y de
   la Etnia Wounaan de Buenaventura, Valle, estarán en Bogotá para ofrecer sus
