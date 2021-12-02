@@ -5,22 +5,19 @@
         style="background-color: #5F2161;">
         <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
             <h1 class="tk-mr-eaves-sans tex-2xl lg:text-3xl xl:text-4xl uppercase text-white mb-4 lg:mb-6 xl:mb-8">
-                <span class="tex-3xl lg:text-4xl xl:text-5xl font-bold block">Pradera</span>
-                Valle del cauca
+                <span class="tex-3xl lg:text-4xl xl:text-5xl font-bold block">{{ .Title }}</span>
+                {{ .Params.departamento }}
             </h1>
             <img class="w-full" src="/images/territorios/line-shape.svg" alt="line shape">
-            <div class="grid grid-cols-1 lg:grid-cols-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-10 xl:gap-y-12">
                 <div class="lg:col-start-2 lg:col-end-7">
-                    <p class="text-white lg:text-lg xl:text-xl xl:mb-14">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                        tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-                        tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+                    <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
+                        {{ .Params.description }}
                     </p>
-                    <img class="mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg" alt="pradera map">
-                    <p class="text-white lg:text-lg xl:text-xl">
-                        Pacífico Medio, Alto Patía y Norte del Cauca.
+                    <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
+                        alt="pradera map">
+                    <p class="text-white lg:text-lg xl:text-xl text-center">
+                        {{ .Params.region }}
                     </p>
                 </div>
                 <div class="lg:col-start-8 lg:col-end-13">
@@ -33,41 +30,32 @@
                             style="background-color: #C5296A;">DESARROLLO ECONÓMICO</button>
                         <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
                             style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</button>
-                        <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
+                        <button class="text-white xl:text-lg py-2 cursor-pointer"
                             style="background-color: #C5296A;">EXPLORAR LOS DATOS</button>
                     </div>
+                </div>
+                <div class="lg:col-start-2 lg:col-end-7">
+                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
+                    <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
+                        {{ range .Params.comunidad_focalizada }}
+                        <li class="flex items-center">
+                            <img class="mr-2" src="/images/public/point.svg" alt="point">
+                            {{ . }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                <div class="lg:col-start-8 lg:col-end-13">
                     <h4 class="text-white text-lg font-bold lg:text-xl xl:text-2xl mb-4 lg:mb-6">
                         Centros poblados y corregimientos
                     </h4>
                     <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
+                        {{ range .Params.centros_poblados_corregimientos }}
                         <li class="flex items-center">
                             <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            La granja
+                            {{ . }}
                         </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            El Recreo
-                        </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            La tupia
-                        </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            La Feria
-                        </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            Lomitas
-                        </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            La Cruz
-                        </li>
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            Potrerito
-                        </li>
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -86,14 +74,14 @@
                     <div class="flex items-center mr-8">
                         <img src="/images/territorios/women-icon.svg" alt="women icon">
                         <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
-                            25.092
+                            {{ .Params.distribucion_poblacional_mujeres }}
                             <span class="block font-normal lg:text-lg xl:text-2xl">Mujeres</span>
                         </h4>
                     </div>
                     <div class="flex items-center">
                         <img src="/images/territorios/men-icon.svg" alt="men icon">
                         <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
-                            23.073
+                            {{ .Params.distribucion_poblacional_hombres }}
                             <span class="block font-normal lg:text-lg xl:text-2xl">Hombres</span>
                         </h4>
                     </div>
@@ -106,7 +94,7 @@
                 <div class="flex items-center mr-8">
                     <img src="/images/territorios/disability.svg" alt="disability icon">
                     <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
-                        4.574
+                        {{ .Params.poblacion_discapacidad }}
                         <span class="block font-normal text-sm">PERSONAS EN CONDICIÓN <br> DE DISCAPACIDAD</span>
                     </h4>
                 </div>
@@ -134,14 +122,39 @@
                 <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
                     Comunidades étnicas en la zona
                 </h4>
+                <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
+                    {{ range .Params.comunidades_etnicas_zona }}
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        {{ . }}
+                    </li>
+                    {{ end }}
+                </ul>
+                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
+                    Asentamientos indígenas
+                </h4>
+                <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        {{ .Params.asentamientos_indigenas }}
+                    </li>
+                </ul>
+                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
+                    Resguardos indígenas
+                </h4>
+                <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        {{ .Params.resguardos_indigenas }}
+                    </li>
+                </ul>
+                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
+                    Consejos comunitarios
+                </h4>
                 <ul class="lg:text-lg xl:text-xl">
                     <li class="flex items-center mb-3 lg:mb-4 leading-tight">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        Resguardo Indígena Kwet Wala (Piedra Grande) conformado por 3 cabildos indígenas.
-                    </li>
-                    <li class="flex items-center">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        7 Concejos Comunitarios afrocolombianos.
+                        {{ .Params.consejos_comunitarios }}
                     </li>
                 </ul>
             </div>
@@ -163,7 +176,8 @@
             <div class="lg:col-start-4 lg:col-end-13 grid grid-cols-1 lg:grid-cols-2">
                 <div>
                     <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
-                        Víctimas del conflicto <span class="ml-2 text-2xl lg:text-3xl xl:text-4xl text-black">15%</span>
+                        Víctimas del conflicto <span class="ml-2 text-2xl lg:text-3xl xl:text-4xl text-black">{{
+                            .Params.total_poblacion_victima }}</span>
                     </h4>
                     <img src="/images/territorios/chart.svg" alt="chart">
                 </div>
@@ -173,11 +187,17 @@
                             style="color: #3A3C6A;">
                             Sujetos de reparación <span class="block">colectiva</span>
                         </h4>
-                        <p class="font-black ml-2 text-2xl lg:text-3xl xl:text-4xl text-black">2</p>
+                        <p class="font-black ml-8 text-2xl lg:text-3xl xl:text-4xl text-black">{{
+                            .Params.num_sujetos_reparacion_colectiva }}</p>
                     </div>
-                    <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
-                        Sujetos de reparación <span class="block">colectiva</span>
-                    </h4>
+                    <div class="flex">
+                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10"
+                            style="color: #3A3C6A;">
+                            Planes de retorno y <span class="block">reubicación colectiva</span>
+                        </h4>
+                        <p class="font-black ml-8 text-2xl lg:text-3xl xl:text-4xl text-black">{{
+                            .Params.num_planes_retorno_reubicacion_colectiva }}</p>
+                    </div>
                 </div>
             </div>
             <img class="lg:col-start-4 lg:col-end-13" src="/images/territorios/person.svg" alt="person image">
@@ -192,54 +212,12 @@
                             SNARIV:
                         </h4>
                         <ul>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Unidad para la Atención y Reparación Integral a Víctimas (UARIV)
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Unidad de Restitución de Tierras
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Departamento Administrativo para la Prosperidad Social
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Ministerio del Interior
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Ministerio de Justicia y del Derecho
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Agencia de Renovación del Territorio
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                SENA
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Ejército Nacional (Desminado humanitario civil, Halotrust)
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Gobernación
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Alcaldía municipal
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Personería Municipal
-                            </li>
+                            {{ range .Params.territorio_entidades_snariv_sivjrnr }}
                             <li class="flex items-center lg:text-lg xl:text-xl">
                                 <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                ICBF
+                                {{ . }}
                             </li>
+                            {{ end }}
                         </ul>
                     </div>
                     <div>
@@ -276,9 +254,7 @@
                         Convivencia social y salud mental
                     </h3>
                     <p class="lg:text-lg xl:text-xl">
-                        Tasa de mortalidad por causa externa, por homicidios, por accidentes de tránsito, por lesiones
-                        no intencionales, por lesiones en adultez, morbilidad por transtornos mentales y del
-                        comportamiento.
+                        {{ .Params.priorizacion_convivencia_social_salud_mental }}
                     </p>
                 </div>
                 <div>
@@ -286,9 +262,7 @@
                         Gestión diferencial en poblaciones vulnerables
                     </h3>
                     <p class="lg:text-lg xl:text-xl">
-                        Discapacidad del movimiento de brazos, manos, piernas y cuerpo, tasa de mortalidad en menores de
-                        un año por mil NV en zona rural y afrodescendientes, analfabetismo, discapacidad del sistema
-                        nervioso, discapacidad de los ojos, atenciones en salud a población extranjera.
+                        {{ .Params.priorizacion_gestion_diferencial_poblaciones_vulnerables }}
                     </p>
                 </div>
                 <div>
@@ -296,9 +270,7 @@
                         Sexualidad, derechos sexuales y reproductivos
                     </h3>
                     <p class="lg:text-lg xl:text-xl">
-                        Tasa ajustada de mortalidad por VIH/SIDA, por tumor maligno de mama, por condiciones derivadas
-                        durante el periodo perinatal, tasa de mortalidad por IRA en menores de cinco años, mortalidad
-                        por ciertas afecciones originadas en el periodo perinatal por mil NV.
+                        {{ .Params.priorizacion_sexualidad_derechos_sexuales_reproductivos }}
                     </p>
                 </div>
                 <div>
@@ -306,7 +278,7 @@
                         Fortalecimiento de autoridad sanitaria
                     </h3>
                     <p class="lg:text-lg xl:text-xl">
-                        Morbilidad por condiciones mal clasificadas
+                        {{ .Params.priorizacion_fortalecimiento_autoridad_sanitaria }}
                     </p>
                 </div>
             </div>
@@ -353,76 +325,39 @@
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 grid grid-cols-1 lg:grid-cols-12"
         style="background-color: #FAFAFA;">
-        <div class="lg:col-start-4 lg:col-end-13 mx-auto w-11/12 lg:w-10/12">
+        <div class="lg:col-start-4 lg:col-end-13 mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
             <h3 class="font-black lg:text-lg xl:text-xl mb-4 lg:mb-5 xl:mb-6" style="color: #1A1A1A;">Eventos en salud
                 pública predominantes</h3>
             <ul class="grid grid-cols-2 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
+                {{ range .Params.eventos_salud_publica_predominantes }}
                 <li class="flex items-center lg:text-lg xl:text-xl">
                     <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Violencia de género e intrafamiliar
+                    {{ . }}
                 </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Varicela individual
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Dengue
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Bajo peso al nacer
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Agresiones por animales potencialmente transmisores de rabia
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Desnutrición aguda en menores de 5 años
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Infección respiratoria aguda grave inusitada
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Intento de suicidio
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Enfermedades huérfanas - raras
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Morbilidad materna extrema
-                </li>
+                {{ end }}
             </ul>
 
             <h3 class="font-black lg:text-lg xl:text-xl mb-4 lg:mb-5 xl:mb-6" style="color: #1A1A1A;">Según el Registro
                 Individual de Prestación (RIPS), se registran entre los principales diagnósticos de salud mental
                 atendidos durante el 2020 por el SGSSS</h3>
             <ul class="grid grid-cols-1 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
+                {{ range .Params.rips_salud_mental_poblacion_general }}
                 <li class="flex items-center lg:text-lg xl:text-xl">
                     <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Trastorno mixto de ansiedad y depresión
+                    {{ . }}
                 </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Trastorno de ansiedad
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Esquizofrenia
-                </li>
-                <li class="flex items-center lg:text-lg xl:text-xl">
-                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                    Trastornos emocionales y del comportamiento
-                </li>
+                {{ end }}
             </ul>
-            <h3 class="font-black lg:text-lg xl:text-xl" style="color: #1A1A1A;">Servicios de
-                Telemedicina en el Municipio y/o Departamento <span
-                    class="ml-4 text-2xl lg:text-3xl xl:text-4xl">No</span></h3>
+            <h3 class="font-black lg:text-lg xl:text-xl mb-4 lg:mb-5 xl:mb-6" style="color: #1A1A1A;">Servicios de
+                Telemedicina en el Municipio y/o Departamento</h3>
+            <ul class="grid grid-cols-1 gap-y-4 gap-x-12 mb-8">
+                {{ range .Params.servicios_telemedicina_mpio_depto }}
+                <li class="flex items-center lg:text-lg xl:text-xl">
+                    <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+                    {{ . }}
+                </li>
+                {{ end }}
+            </ul>
         </div>
     </div>
     <!-- SECTION END -->
@@ -437,7 +372,7 @@
                 <div class="flex items-center mb-8">
                     <img src="/images/territorios/triangle-green.svg" alt="triangle">
                     <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
-                        24.8%
+                        {{ .Params.total_pobreza_multidimensional }}
                         <span class="block font-normal lg:text-lg xl:text-2xl">TOTAL</span>
                     </h4>
                 </div>
@@ -445,14 +380,14 @@
                     <div class="flex items-center">
                         <img src="/images/territorios/triangle-green.svg" alt="triangle">
                         <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
-                            24.8%
+                            {{ .Params.pobreza_multidimensional_urbano }}
                             <span class="block font-normal lg:text-lg xl:text-2xl">URBANO</span>
                         </h4>
                     </div>
                     <div class="flex items-center">
                         <img src="/images/territorios/triangle-green.svg" alt="triangle">
                         <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
-                            31%
+                            {{ .Params.pobreza_multidimensional_centro_poblado_rural_disperso }}
                             <span class="block font-normal text-sm">CENTRO POBLADO <br> Y RURAL DISPERSO</span>
                         </h4>
                     </div>
@@ -484,29 +419,17 @@
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
                     Actividades económicas principales</h3>
-                <ul class="grid grid-cols-1 gap-y-4">
+                <ul class="grid grid-cols-1 gap-y-4 mb-3 lg:mb-4 xl:mb-5">
+                    {{ range .Params.ppales_actividades_economicas }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Trastorno mixto de ansiedad y depresión
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Servicios
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Pago por servicios ambientales
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Mercados campesinos
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        La presencia de empresas de ingenios azucareros es la primera fuente de empleo. Hay 711 empresas
-                        inscritas en la Cámara de Comercio.
-                    </li>
+                    {{ end }}
                 </ul>
+                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                    {{ .Params.observaciones_ppales_actividades_economicas }}
+                </p>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5 text-center"
@@ -515,7 +438,7 @@
                 <div class="flex items-center justify-center">
                     <img src="/images/territorios/triangle-green.svg" alt="triangle">
                     <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12">
-                        77.9%
+                        {{ .Params.trabajo_informal }}
                         <span class="block font-normal text-lg lg:text-xl xl:text-2xl">TOTAL</span>
                     </h4>
                 </div>
@@ -523,37 +446,28 @@
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
                     Principal vocación del suelo del municipio</h3>
-                <ul class="grid grid-cols-1 gap-y-4">
+                <ul class="grid grid-cols-1 gap-y-4 mb-3 lg:mb-4 xl:mb-5">
+                    {{ range .Params.ppal_vocacion_mpio }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Agrícola
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Pecuario
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Bosque
-                    </li>
+                    {{ end }}
                 </ul>
+                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                    {{ .Params.observaciones_ppal_vocacion_mpio }}
+                </p>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
                     Principal uso del suelo del municipio</h3>
                 <ul class="grid grid-cols-1 gap-y-4">
+                    {{ range .Params.ppal_uso_suelo }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        En la zona plana: monocultivo de empresas de caña de azúcar.
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        En la zona de ladera: pancoger, ganadería extensiva y cafés.
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Recientemente se está incursionando en turismo de naturaleza.
-                    </li>
+                    {{ end }}
                 </ul>
             </div>
         </div>
@@ -629,52 +543,24 @@
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Espacios de encuentro socio comunitario</h3>
                 <ul class="grid grid-cols-1 gap-y-4">
+                    {{ range .Params.espacios_socio_comunitarios }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Parque Temático Mompaz
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Biblioteca Pradera
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Casa de la Cultura
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Estadio Salustio
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Coliseo Pradera
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Cancha Sintética, espacio deportivo
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Parque Recreacional
-                    </li>
+                    {{ end }}
                 </ul>
             </div>
-            <div class="lg:col-start-7 lg:col-end-11">
+            <div class="lg:col-start-8 lg:col-end-12">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Medios, formas e iniciativas de comunicación</h3>
                 <ul class="grid grid-cols-1 gap-y-4">
+                    {{ range .Params.medios_comunicacion }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        La pradereña Entérate Pradera
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Pradera Radio Online
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
-                        Cañaveral Stereo
-                    </li>
+                    {{ end }}
                 </ul>
             </div>
         </div>
@@ -688,35 +574,19 @@
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Organizaciones e iniciativas de la <br> sociedad civil</h3>
                 <p class="lg:text-lg xl:text-xl">
-                    Se identificaron 23 organizaciones, en su mayoría productivas. Las Juntas de Acción Comunal, la
-                    Asociación de Mujeres Emprendedoras Rurales del Arenillo Pradera (Asomera), la Asociación de
-                    Campesinos del Arenillo Pradera (Asocapra) son importantes.
+                    {{ .Params.iniciativas_org_sociedad_civil }}
                 </p>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Programas de USAID</h3>
                 <ul class="grid grid-cols-1 gap-y-4">
+                    {{ range .Params.programas_usaid }}
                     <li class="flex items-center lg:text-lg xl:text-xl">
                         <img class="mr-2" src="/images/public/point.svg" alt="point black">
-                        Avanza Pacífico - Manos Visibles, USAID (regional)
+                        {{ . }}
                     </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point.svg" alt="point black">
-                        Justicia para una paz sostenible, Chemonics (regional)
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point.svg" alt="point black">
-                        Programa de Alianzas Comerciales PMA, Fintrac, USAID.
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point.svg" alt="point black">
-                        Iniciativa de Finanzas Rurales, Chemonics, USAID.
-                    </li>
-                    <li class="flex items-center lg:text-lg xl:text-xl">
-                        <img class="mr-2" src="/images/public/point.svg" alt="point black">
-                        Pasos seguros, Fundación Restrepo Barco, USAID
-                    </li>
+                    {{ end }}
                 </ul>
             </div>
             <img class="lg:col-start-1 lg:col-end-13 mx-auto" src="/images/territorios/person-purple.svg" alt="person">
