@@ -100,4 +100,15 @@
     </div>
     <!-- DOWNLOAD END -->
 </div>
+{{ range .Pages.GroupByParam "region" }}
+<h3>{{ .Key }}</h3>
+<ul>
+    {{ range .Pages }}
+    <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
 {{ end }}
