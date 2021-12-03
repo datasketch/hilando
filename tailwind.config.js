@@ -8,7 +8,8 @@ module.exports = {
         'nav--active',
         'menu-icon--active',
         'overlay--active',
-        'btn-up--active'
+        'btn-up--active',
+        'pagination__button'
       ]
     },
   },

@@ -35,7 +35,7 @@
     <!-- BANNER EVENTS END -->
 
     <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40"
-        style="background-color: #FAFAFA;">
+        style="background-color: #FAFAFA;"  id="paginationScroll">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
                 <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
@@ -107,7 +107,7 @@
                             {{ range sort (uniq $tipo) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
                                 <span class="text-lg lg:text-xl">{{ . }}</span>
-                                <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
+                                <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
                             {{ end }}
@@ -121,23 +121,8 @@
                     <h3 class="inline-block py-3 px-6 uppercase text-white font-black"
                         style="background-color: #3A3C6A;">ORDENAR POR</h3>
                 </div>
-                <div class="event">
-                    {{ range first 4 $data }}
-                    <div class="event__item" style="background-color: #F0F0F2;">
-                        <span class="event__place">{{ .municipio }}, {{ .departamento }}</span>
-                        <img class="w-full" src="/images/eventos/sticky.svg" alt="sticky">
-                        <h3 class="event__title" style="color: #963B62;">
-                            {{ .titulo }}
-                        </h3>
-                        <span class="event__month" style="color: #963B62;">
-                            {{ .mes }}
-                        </span>
-                        <span class="event__type">
-                            Tipo: {{ .tipo }}
-                        </span>
-                    </div>
-                    {{ end }}
-                </div>
+                <div class="event"></div>
+                <div class="pagination text-center mt-10 lg:mt-20"></div>
             </div>
         </div>
     </div>
@@ -145,7 +130,7 @@
     <!-- UPCOMING EVENTS -->
     {{ partial "events" . }}
     <!-- UPCOMING EVENTS END -->
-    
+
     <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
 </div>
 {{ end }}
