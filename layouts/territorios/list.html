@@ -24,50 +24,18 @@
         </div>
         <div
             class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 xl:gap-x-12 gap-y-10">
+            {{ range .Pages.GroupByParam "region" }}
             <div>
-                <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
-                    Bajo Cauca y Nordeste Antioqueño
-                </h2>
+                <h3 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">{{ .Key }}</h3>
                 <ul class="grid grid-cols-1 gap-y-4">
-                    {{ range where .Site.RegularPages "Section" "territorios" }}
-                    {{ if eq .Params.region "Bajo Cauca y Nordeste Antioqueño" }}
-                    <li class="pb-1 border-b border-black">
-                        <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
+                    {{ range .Pages }}
+                    <li class="line">
+                        <a class="lg:text-lg xl:text-xl" href="{{ .Permalink }}">{{ .Title }}</a>
                     </li>
-                    {{ end }}
-                    {{ end }}
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
-                    Pacífico Medio, Alto Patía y Norte del Cauca
-                </h2>
-                <ul class="grid grid-cols-1 gap-y-4">
-                    {{ range where .Site.RegularPages "Section" "territorios" }}
-                    {{ if eq .Params.region "Pacífico Medio, Alto Patía y Norte del Cauca" }}
-                    <li class="pb-1 border-b border-black">
-                        <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
                     {{ end }}
                 </ul>
             </div>
-            <div>
-                <h2 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
-                    Montes de María
-                </h2>
-                <div class="mb-2 hidden lg:block">&nbsp;</div>
-                <ul class="grid grid-cols-1 gap-y-4">
-                    {{ range where .Site.RegularPages "Section" "territorios" }}
-                    {{ if eq .Params.region "Montes de María" }}
-                    <li class="pb-1 border-b border-black">
-                        <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
-                    {{ end }}
-                </ul>
-            </div>
+            {{ end }}
         </div>
     </div>
     <!-- TERRITORIES END -->
@@ -100,15 +68,4 @@
     </div>
     <!-- DOWNLOAD END -->
 </div>
-<!-- {{ range .Pages.GroupByParam "region" }}
-<h3>{{ .Key }}</h3>
-<ul>
-    {{ range .Pages }}
-    <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-    </li>
-    {{ end }}
-</ul>
-{{ end }} -->
 {{ end }}

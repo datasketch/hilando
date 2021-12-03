@@ -81,6 +81,21 @@
   .event__type {
     @apply block italic;
   }
+
+  /* LINE */
+  .line {
+    position: relative;
+  }
+
+  .line::after {
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 0.5px;
+    width: 110px;
+    background-color: #000;
+  }
 }
 
 @layer utilities {

@@ -138,7 +138,7 @@
                 <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10 ">
                     {{ range where .Site.RegularPages "Section" "territorios" }}
                     {{ if eq .Params.region "Bajo Cauca y Nordeste Antioqueño" }}
-                    <li class="pb-1 border-b border-black">
+                    <li class="line">
                         <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
                     </li>
                     {{ end }}
@@ -150,7 +150,7 @@
                 <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10">
                     {{ range where .Site.RegularPages "Section" "territorios" }}
                     {{ if eq .Params.region "Pacífico Medio, Alto Patía y Norte del Cauca" }}
-                    <li class="pb-1 border-b border-black">
+                    <li class="line">
                         <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
                     </li>
                     {{ end }}
@@ -162,7 +162,7 @@
                 <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4">
                     {{ range where .Site.RegularPages "Section" "territorios" }}
                     {{ if eq .Params.region "Montes de María" }}
-                    <li class="pb-1 border-b border-black">
+                    <li class="line">
                         <a class="lg:text-lg xl:text-xl" href="{{ .URL }}">{{ .Title }}</a>
                     </li>
                     {{ end }}
@@ -194,8 +194,8 @@
                 herramientas artísticas y de comunicación.
             </p>
         </div>
-        <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 h-full w-full" src="/images/home/program-impact.png"
-            alt="program impact">
+        <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 w-full h-full lg:object-cover"
+            src="/images/home/program-impact.png" alt="program impact">
     </div>
     <!-- PROGRAM IMPACT END -->
 
@@ -327,4 +327,19 @@
     {{ partial "events" . }}
     <!-- UPCOMING EVENTS END -->
 </div>
+
+<!-- {{ range where .Site.RegularPages "Section" "territorios" }}
+{{ range .Pages.GroupByParam "region" }}
+<div>
+    <h3 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">{{ .Key }}</h3>
+    <ul class="grid grid-cols-1 gap-y-4">
+        {{ range .Pages }}
+        <li class="line">
+            <a class="lg:text-lg xl:text-xl" href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
+{{ end }} -->
 {{ end }}

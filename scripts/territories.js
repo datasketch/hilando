@@ -46,6 +46,6 @@ trrs.forEach(trr => {
         comunidad_focalizada: trr['comunidad-focalizada'].split(',')
     })
     const frontmatter = `---\n${metadata}\n---`
-    const pathToFile = join(__dirname, `../content/territorios/${trr.municipio.toLowerCase().replaceAll(' ', '-')}.md`)
+    const pathToFile = join(__dirname, `../content/territorios/${trr.municipio.toLowerCase().replaceAll(' ', '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")}.md`)
     writeFileSync(pathToFile, frontmatter)
 })
