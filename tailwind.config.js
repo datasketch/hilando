@@ -9,7 +9,12 @@ module.exports = {
         'menu-icon--active',
         'overlay--active',
         'btn-up--active',
-        'pagination__button'
+        'pagination__button',
+        'event__item',
+        'event__place',
+        'event__title',
+        'event__month',
+        'event__type'
       ]
     },
   },
