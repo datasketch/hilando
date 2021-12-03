@@ -205,37 +205,15 @@
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
                     Entidades del Sistema Nacional de Atención y Reparación
                 </h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20">
-                    <div>
-                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-2 lg:mb-3 xl:mb-4"
-                            style="color: #3A3C6A;">
-                            SNARIV:
-                        </h4>
-                        <ul>
-                            {{ range .Params.territorio_entidades_snariv_sivjrnr }}
-                            <li class="flex items-center lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                {{ . }}
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-2 lg:mb-3 xl:mb-4"
-                            style="color: #3A3C6A;">
-                            Sistema Integral para la Paz
-                        </h4>
-                        <ul>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Comisión para el Esclarecimiento de la Verdad (CEV)
-                            </li>
-                            <li class="flex items-center mb-4 lg:text-lg xl:text-xl">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                Jurisdicción Especial para la Paz (JEP)
-                            </li>
-                        </ul>
-                    </div>
+                <div>
+                    <ul class="grid grid-cols-1 gap-y-3 lg:gap-y-4">
+                        {{ range .Params.territorio_entidades_snariv_sivjrnr }}
+                        <li class="flex items-center lg:text-lg xl:text-xl">
+                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                            {{ . }}
+                        </li>
+                        {{ end }}
+                    </ul>
                 </div>
             </div>
         </div>

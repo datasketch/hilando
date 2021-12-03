@@ -122,7 +122,7 @@
                         style="background-color: #3A3C6A;">ORDENAR POR</h3>
                 </div>
                 <div class="event">
-                    {{ range $data }}
+                    {{ range first 4 $data }}
                     <div class="event__item" style="background-color: #F0F0F2;">
                         <span class="event__place">{{ .municipio }}, {{ .departamento }}</span>
                         <img class="w-full" src="/images/eventos/sticky.svg" alt="sticky">
