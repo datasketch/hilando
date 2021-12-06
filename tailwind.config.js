@@ -15,8 +15,9 @@ module.exports = {
         'event__title',
         'event__month',
         'event__type',
-        'slider-prev.swiper-button-disabled',
-        'slider-next.swiper-button-disabled'
+        'slider-prev',
+        'slider-next',
+        'swiper-button-disabled'
       ]
     },
   },
