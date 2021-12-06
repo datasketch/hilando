@@ -33,7 +33,7 @@
                 Nuestra operación va hasta el 31 de marzo de 2026.
             </p>
             <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
-            <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
+            <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . "sobre-el-programa.md" }}"
                 style="background-color: #D27028;">Sobre
                 el programa</a>
         </div>
@@ -193,45 +193,22 @@
                 <span class="px-1" style="background-color: #9EB290;">Noticias</span> destacadas
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 lg:gap-x-8 mb-12 lg:mb-16 xl:mb-20">
-                <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
+                {{ range where .Pages "Section" "noticias" }}
+                {{ range first 3 .Pages }}
+                <a href="{{ .RelPermalink }}" class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
                     style="background-color: #F7F8F9; border-color: #B0C58F;">
-                    <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
+                    <img class="mb-2 lg:mb-4 w-full h-48 object-cover object-center" src="{{ .Params.image }}" alt="notice">
                     <h3 class="text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        {{ .Title }}
                     </h3>
                     <p class="text-lg xl:text-xl mb-2 lg:mb-3">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
-                        labore dolore magna aliquyam erat, sed Diam...
+                        {{ .Description | safeHTML | truncate 140 }}
                     </p>
                     <p class="text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
                     <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="sticky">
-                </div>
-                <div class="hidden lg:block relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
-                    style="background-color: #F7F8F9; border-color: #B0C58F;">
-                    <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
-                    <h3 class="text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    </h3>
-                    <p class="lg:text-lg xl:text-xl mb-2 lg:mb-3">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
-                        labore dolore magna aliquyam erat, sed Diam...
-                    </p>
-                    <p class="lg:text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
-                    <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="sticky">
-                </div>
-                <div class="hidden lg:block relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
-                    style="background-color: #F7F8F9; border-color: #B0C58F;">
-                    <img class="mb-2 lg:mb-4" src="/images/home/notice.png" alt="notice">
-                    <h3 class="lg:text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    </h3>
-                    <p class="lg:text-lg xl:text-xl mb-2 lg:mb-3">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u
-                        labore dolore magna aliquyam erat, sed Diam...
-                    </p>
-                    <p class="lg:text-lg xl:text-xl italic">Fecha: Marzo 15 del 2021</p>
-                    <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="sticky">
-                </div>
+                </a>
+                {{ end }}
+                {{ end }}
             </div>
             <div class="text-center">
                 <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . " noticias/_index.md"
