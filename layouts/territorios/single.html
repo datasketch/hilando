@@ -3,14 +3,14 @@
     {{/* BANNER PRADERA DEL VALLE CAUCA */}}
     <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer"
         style="background-color: #5F2161;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
+        <div class="mx-auto w-10/12 xl:w-9/12">
             <h1 class="tk-mr-eaves-sans tex-2xl lg:text-3xl xl:text-4xl uppercase text-white mb-4 lg:mb-6 xl:mb-8">
                 <span class="tex-3xl lg:text-4xl xl:text-5xl font-bold block">{{ .Title }}</span>
                 {{ .Params.departamento }}
             </h1>
             <img class="w-full" src="/images/territorios/line-shape.svg" alt="line shape">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-10 xl:gap-y-12">
-                <div class="lg:col-start-2 lg:col-end-7">
+                <div class="lg:col-start-1 lg:col-end-7">
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
@@ -65,7 +65,7 @@
 
     {{/* SECTION */}}
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-24">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-24">
             <div class="mx-auto">
                 <h3 class="font-black text-xl lg:text-2xl xl:text-3xl mb-8 lg:mb-10 xl:mb-12">
                     Distribución poblacional por sexo
@@ -117,7 +117,7 @@
 
     {{/* SECTION */}}
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #F0F0F2;">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 mx-auto w-10/12 xl:w-9/12">
             <div class="lg:col-start-1 lg:col-end-6">
                 <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
                     Comunidades étnicas en la zona
@@ -130,33 +130,27 @@
                     </li>
                     {{ end }}
                 </ul>
-                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
-                    Asentamientos indígenas
-                </h4>
-                <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
-                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                <div class="flex items-center mb-4 lg:mb-6">
+                    <div class="flex items-center mr-2">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        {{ .Params.asentamientos_indigenas }}
-                    </li>
-                </ul>
-                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
-                    Resguardos indígenas
-                </h4>
-                <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
-                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
+                    </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
+                </div>
+                <div class="flex items-center mb-4 lg:mb-6">
+                    <div class="flex items-center mr-2">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        {{ .Params.resguardos_indigenas }}
-                    </li>
-                </ul>
-                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-3 lg:mb-5 xl:mb-8" style="color: #963B62;">
-                    Consejos comunitarios
-                </h4>
-                <ul class="lg:text-lg xl:text-xl">
-                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
+                    </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center mr-2">
                         <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        {{ .Params.consejos_comunitarios }}
-                    </li>
-                </ul>
+                        <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
+                    </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
+                </div>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-6 lg:mb-8 xl:mb-10 text-center"
@@ -171,8 +165,7 @@
 
     {{/* SECTION */}}
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div
-            class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-y-16 xl:gap-y-20">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-y-16 xl:gap-y-20">
             <div class="lg:col-start-4 lg:col-end-13 grid grid-cols-1 lg:grid-cols-2">
                 <div>
                     <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
@@ -222,7 +215,7 @@
 
     <!-- SECTION -->
     <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
+        <div class="mx-auto w-10/12 xl:w-9/12">
             <h2 class="lg:text-xl xl:text-2xl font-black text-center mb-8 lg:mb-10 xl:mb-12" style="color: #C5296A;">
                 Priorización de los efectos en salud para WLH
             </h2>
@@ -267,7 +260,7 @@
 
     <!-- SECTION -->
     <div class="py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" style="background-color: #3A3C6A;">
-        <div class="mx-auto w-11/12 lg:w-10/12">
+        <div class="mx-auto w-10/12 xl:w-9/12">
             <h3 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">Tasa de
                 violencia</h3>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
@@ -303,7 +296,7 @@
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 grid grid-cols-1 lg:grid-cols-12"
         style="background-color: #FAFAFA;">
-        <div class="lg:col-start-4 lg:col-end-13 mx-auto w-11/12 lg:w-10/12 xl:w-9/12">
+        <div class="lg:col-start-4 lg:col-end-13 mx-auto w-10/12 xl:w-9/12">
             <h3 class="font-black lg:text-lg xl:text-xl mb-4 lg:mb-5 xl:mb-6" style="color: #1A1A1A;">Eventos en salud
                 pública predominantes</h3>
             <ul class="grid grid-cols-2 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
@@ -342,7 +335,7 @@
 
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #4F7435;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-white font-black text-lg lg:text-xl xl:text-2xl mb-6 lg:mb-8 xl:mb-10">
                     Pobreza multidimensional
@@ -392,8 +385,7 @@
 
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-12 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div
-            class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-20 xl:gap-y-24">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-20 xl:gap-y-24">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
                     Actividades económicas principales</h3>
@@ -454,61 +446,62 @@
 
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12">
-        <div class="lg:col-start-1 lg:col-end-7 px-24 py-12 lg:px-28 lg:py-16 xl:px-32 xl:py-20"
-            style="background-color: #F0F0F2;">
-            <h2 class="text-lg lg:text-xl xl:text-2xl font-black mb-10 lg:mb-12 xl:mb-16" style="color: #963B62;">
-                Eventos significativos de la vida comunitaria
-            </h2>
-            <ul class="mx-auto lg:mx-0 w-11/12 lg:w-10/12 grid grid-cols-1 gap-y-6 lg:gap-y-10">
-                <li>
-                    <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                        <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                            Festival de música andina
-                        </h3>
-                        <span class="lg:text-lg xl:text-xl">Tipo</span>
-                    </div>
-                    <div class="flex justify-between py-2">
-                        <span class="lg:text-lg xl:text-xl">Marzo</span>
-                        <span class="lg:text-lg xl:text-xl">Cultural</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                        <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                            Fiestas del Dulce
-                        </h3>
-                        <span class="lg:text-lg xl:text-xl">Tipo</span>
-                    </div>
-                    <div class="flex justify-between py-2">
-                        <span class="lg:text-lg xl:text-xl">Julio</span>
-                        <span class="lg:text-lg xl:text-xl">Comercial</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                        <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                            Fiestas Anuales
-                        </h3>
-                        <span class="lg:text-lg xl:text-xl">Tipo</span>
-                    </div>
-                    <div class="flex justify-between py-2">
-                        <span class="lg:text-lg xl:text-xl">Noviembre</span>
-                        <span class="lg:text-lg xl:text-xl">Tradicional</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                        <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                            Fiestas campesinas
-                        </h3>
-                        <span class="lg:text-lg xl:text-xl">Tipo</span>
-                    </div>
-                    <div class="flex justify-between py-2">
-                        <span class="lg:text-lg xl:text-xl">Periodicamente</span>
-                        <span class="lg:text-lg xl:text-xl">Económico</span>
-                    </div>
-                </li>
-            </ul>
+        <div class="lg:col-start-1 lg:col-end-7 py-12 lg:py-16 xl:py-20" style="background-color: #F0F0F2;">
+            <div class="mx-auto w-10/12 lg:w-8/12 xl:w-6/12">
+                <h2 class="text-lg lg:text-xl xl:text-2xl font-black mb-10 lg:mb-12 xl:mb-16" style="color: #963B62;">
+                    Eventos significativos de la vida comunitaria
+                </h2>
+                <ul class="mx-auto lg:mx-0 w-11/12 lg:w-10/12 grid grid-cols-1 gap-y-6 lg:gap-y-10">
+                    <li>
+                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
+                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
+                                Festival de música andina
+                            </h3>
+                            <span class="lg:text-lg xl:text-xl">Tipo</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="lg:text-lg xl:text-xl">Marzo</span>
+                            <span class="lg:text-lg xl:text-xl">Cultural</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
+                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
+                                Fiestas del Dulce
+                            </h3>
+                            <span class="lg:text-lg xl:text-xl">Tipo</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="lg:text-lg xl:text-xl">Julio</span>
+                            <span class="lg:text-lg xl:text-xl">Comercial</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
+                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
+                                Fiestas Anuales
+                            </h3>
+                            <span class="lg:text-lg xl:text-xl">Tipo</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="lg:text-lg xl:text-xl">Noviembre</span>
+                            <span class="lg:text-lg xl:text-xl">Tradicional</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
+                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
+                                Fiestas campesinas
+                            </h3>
+                            <span class="lg:text-lg xl:text-xl">Tipo</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="lg:text-lg xl:text-xl">Periodicamente</span>
+                            <span class="lg:text-lg xl:text-xl">Económico</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <img class="lg:col-start-7 lg:col-end-13 w-full" src="/images/territorios/events.svg" alt="events">
     </div>
@@ -516,7 +509,7 @@
 
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Espacios de encuentro socio comunitario</h3>
@@ -547,7 +540,7 @@
 
     <!-- SECTION -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #963B62;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12 text-white">
+        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12 text-white">
             <div class="lg:col-start-1 lg:col-end-6">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
                     Organizaciones e iniciativas de la <br> sociedad civil</h3>
@@ -578,10 +571,9 @@
 
     <!-- DOWNLOAD -->
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative" style="background-color: #F0F0F2;">
-        <div class="mx-auto w-11/12 lg:w-10/12 xl:w-9/12 flex">
-            <div class="md:w-6/12 lg:w-5/12">
-                <h2
-                    class="tk-mr-eaves-sans mb-4 lg:mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black">
+        <div class="mx-auto w-10/12 xl:w-9/12 flex">
+            <div class="lg:w-6/12">
+                <h2 class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black">
                     DESCARGA
                 </h2>
                 <p class="xl:text-xl lg:text-lg mb-7">
@@ -589,7 +581,7 @@
                     laoreet
                     dolore magna aliquam erat volutpat.
                 </p>
-                <div class="flex justify-between">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
                         style="background-color: #D27028;">
                         DESCARGA LA FICHA
@@ -601,10 +593,9 @@
                 </div>
             </div>
         </div>
-        <img class="absolute top-0 -right-44 md:-right-40 lg:-right-48 xl:-right-56 h-full"
-            src="/images/public/line-shape-2.svg" alt="line shape">
+        <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg"
+            alt="line shape">
     </div>
     <!-- DOWNLOAD END -->
-
 </div>
 {{ end }}
