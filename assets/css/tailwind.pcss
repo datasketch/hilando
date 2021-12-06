@@ -102,6 +102,27 @@
     @apply py-2 px-4 mr-4 text-white;
     background-color: #3A3C6A;
   }
+
+  /* SLIDER */
+  .slider-wrapper {
+    @apply relative px-10;
+  }
+  .slider-next,
+  .slider-prev {
+    @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
+  }
+  .slider-next {
+    @apply -right-4;
+    background-image: url("/images/public/right-arrow.svg");
+  }
+  .slider-prev {
+    @apply -left-4;
+    background-image: url("/images/public/left-arrow.svg");
+  }
+  .slider-prev.swiper-button-disabled,
+  .slider-next.swiper-button-disabled {
+    @apply opacity-30 cursor-not-allowed;
+  }
 }
 
 @layer utilities {
