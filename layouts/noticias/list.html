@@ -24,7 +24,7 @@
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20">
         <div
             class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-y-12 lg:gap-x-8">
-            {{ range .Pages }}
+            {{ range after 1 .Pages }}
             <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
                 style="background-color: #F7F8F9; border-color: #B0C58F;">
                 <img class="mb-2 lg:mb-4 w-full h-56 object-cover object-center" src="{{ .Params.image }}" alt="{{ .Title }}">
