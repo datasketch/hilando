@@ -1,0 +1,9 @@
+<meta itemprop="name" content="{{ or .Title .Site.Title }}">
+
+{{ if .Description }}
+  <meta itemprop="description" content="{{ .Description }}">
+{{ end }}
+
+{{ if .Params.image }}
+  <meta itemprop="image" content="{{ .Params.image | absURL }}">
+{{ end }}
