@@ -124,33 +124,41 @@
                 </h4>
                 <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
                     {{ range .Params.comunidades_etnicas_zona }}
-                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        {{ . }}
-                    </li>
+                        {{ if . }}
+                            <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                                {{ . }}
+                            </li>
+                        {{ end }}
                     {{ end }}
                 </ul>
-                <div class="flex items-center mb-4 lg:mb-6">
-                    <div class="flex items-center mr-2">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
+                {{ if .Params.asentamientos_indigenas }}
+                    <div class="flex items-center mb-4 lg:mb-6">
+                        <div class="flex items-center mr-2">
+                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                            <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
+                        </div>
+                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
                     </div>
-                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
-                </div>
-                <div class="flex items-center mb-4 lg:mb-6">
-                    <div class="flex items-center mr-2">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
+                {{ end }}
+                {{ if .Params.resguardos_indigenas }}
+                    <div class="flex items-center mb-4 lg:mb-6">
+                        <div class="flex items-center mr-2">
+                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                            <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
+                        </div>
+                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
                     </div>
-                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
-                </div>
-                <div class="flex items-center">
-                    <div class="flex items-center mr-2">
-                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                        <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
+                {{ end }}
+                {{ if .Params.consejos_comunitarios }}
+                    <div class="flex items-center">
+                        <div class="flex items-center mr-2">
+                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                            <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
+                        </div>
+                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
                     </div>
-                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
-                </div>
+                {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-6 lg:mb-8 xl:mb-10 text-center"
@@ -397,9 +405,11 @@
                     </li>
                     {{ end }}
                 </ul>
-                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
-                    {{ .Params.observaciones_ppales_actividades_economicas }}
-                </p>
+                {{ if .Params.observaciones_ppales_actividades_economicas }}
+                    <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                        {{ .Params.observaciones_ppales_actividades_economicas }}
+                    </p>
+                {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5 text-center"
@@ -424,9 +434,11 @@
                     </li>
                     {{ end }}
                 </ul>
-                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
-                    {{ .Params.observaciones_ppal_vocacion_mpio }}
-                </p>
+                {{ if .Params.observaciones_ppal_vocacion_mpio }}
+                    <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                        {{ .Params.observaciones_ppal_vocacion_mpio }}
+                    </p>
+                {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
