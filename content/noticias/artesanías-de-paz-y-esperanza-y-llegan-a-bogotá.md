@@ -10,6 +10,7 @@ description: >
   estuvieron en el Centro Comercial Parque Colina y en Gran Estación. La Feria
   de Emprendimiento Cultural y Creativo ‘Candelaria Camina’, realizada entre el
   22 y el 24 de octubre, marcó el inicio del recorrido comercial.
+cms: true
 ---
 Entre octubre y noviembre, artesanos y artesanas de San Jacinto, Bolívar y de la Etnia Wounaan de Buenaventura, Valle, estarán en Bogotá para ofrecer sus productos al público capitalino que podrá adquirirlos en dos vitrinas móviles en diferentes puntos de la ciudad. Entre el 19 y 22 de noviembre, las cápsulas estuvieron en el Centro Comercial Parque Colina y en Gran Estación. La Feria de Emprendimiento Cultural y Creativo ‘Candelaria Camina’, realizada entre el 22 y el 24 de octubre, marcó el inicio del recorrido comercial.
 

@@ -14,9 +14,11 @@ collections:
     folder: "content/noticias" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    filter: {field: "cms", value: true}
     fields: # The fields for each document, usually in front matter
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
       - {label: "Imagen", name: "image", widget: "image"}
       - {label: "Descripción", name: "description", widget: "text"}
+      - {label: "CMS", name: "cms", widget: "hidden", default: true}
       - {label: "Contenido", name: "body", widget: "markdown"}

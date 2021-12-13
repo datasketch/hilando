@@ -10,6 +10,7 @@ description: >
 
 
   La focalización se da en comunidades con mucha diversidad y potencial ya que han adelantado procesos resilientes aún y a pesar del conflicto armado.
+cms: true
 ---
 <!--StartFragment-->
 
