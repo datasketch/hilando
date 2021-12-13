@@ -5,7 +5,11 @@ description: >-
   El Municipio de Toribio se ubica al nororiente del departamento del Cauca, a
   una distancia de 123 kilómetros de la capital del departamento, Popayán y a 83
   kilómetros de la ciudad de Cali.
-mapa_ubicacion_geografica: /graficas/toribio_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/toribio/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/toribio/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/toribio/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/toribio/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/toribio/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - San Francisco
   - Tacueyó

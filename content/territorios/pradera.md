@@ -6,7 +6,11 @@ description: >-
   en Colombia, localizado en la zona sur del departamento. Es un municipio de
   pequeños contrastes geográficos; con extensas y calientes cordilleras y
   praderas sembradas de caña de azúcar.
-mapa_ubicacion_geografica: /graficas/pradera_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/pradera/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/pradera/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/pradera/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/pradera/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/pradera/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - La Granja
   - La Tupia

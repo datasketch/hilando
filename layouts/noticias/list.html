@@ -7,7 +7,7 @@
     {{ range first 1 .Pages }}
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12 -mt-20 z-10">
         <img class="mx-auto w-10/12 lg:w-full object-center object-cover lg:col-start-1 lg:col-end-9"
-            src="{{ .Params.image }}" alt="{{ .Title }}">
+            src="{{ .Params.image }}" alt="{{ .Title }}" style="height: 394px;">
         <div class="mx-auto w-10/12 lg:w-full lg:col-start-9 lg:col-end-13 px-8 py-6 lg:py-12 lg:px-16" style="background-color: #FAFAFA;">
             <span class="block italic mb-3">Fecha: {{ .Date | time.Format ":date_long" }}</span>
             <h3 class="font-black lg:text-lg xl:text-xl mb-3">

@@ -5,7 +5,11 @@ description: >-
   Es un municipio colombiano ubicado en el departamento de Sucre, en la
   subregión de los Montes de María. El municipio es potencial candidato a ser
   parte de la Red de pueblos patrimonios de Colombia.
-mapa_ubicacion_geografica: /graficas/coloso_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/coloso/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/coloso/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/coloso/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/coloso/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/coloso/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - Chinulito
   - Bajo Don Juan

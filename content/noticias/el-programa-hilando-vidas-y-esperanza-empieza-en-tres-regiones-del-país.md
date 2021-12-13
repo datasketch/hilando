@@ -1,6 +1,6 @@
 ---
 title: EL PROGRAMA HILANDO VIDAS Y ESPERANZA EMPIEZA EN TRES REGIONES DEL PAÍS
-date: 2021-12-02T20:59:12.428Z
+date: 2021-10-01
 image: /images/uploads/untitled.jpg
 description: "El Programa Hilando Vidas y Esperanzas (WLH, por sus siglas en
   inglés) de la Agencia de Estados Unidos para el Desarrollo Internacional

@@ -14,12 +14,12 @@
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
-                    {{ with .Params.mapa_ubicacion_geografica }}
-                        <iframe src="{{ . }}" frameborder="0"></iframe>
+                    {{ with .Params.grafica_ubicacion_geografica }}
+                    <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
                     {{ else }}
                     <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
                         alt="pradera map">
-                    {{ end  }}
+                    {{ end }}
                     <p class="text-white lg:text-lg xl:text-xl text-center">
                         {{ .Params.region }}
                     </p>
@@ -48,6 +48,8 @@
                         </li>
                         {{ end }}
                     </ul>
+                    <iframe class="mx-auto w-full h-96 mt-8" src="{{ .Params.grafica_comunidades_focalizadas }}"
+                        frameborder="0"></iframe>
                 </div>
                 <div class="lg:col-start-8 lg:col-end-13">
                     <h4 class="text-white text-lg font-bold lg:text-xl xl:text-2xl mb-4 lg:mb-6">
@@ -107,13 +109,21 @@
                 <p class="font-black text-xl mb-6 lg:mb-8 xl:mb-10 text-center">
                     Población total distribuida por <span class="block">sexo</span>
                 </p>
+                {{ with .Params.grafica_poblacion_genero }}
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                {{ else }}
                 <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
+                {{ end }}
             </div>
             <div class="mx-auto">
                 <p class="font-black text-xl mb-6 lg:mb-8 xl:mb-10 text-center">
                     Población con discapacidad vs. <span class="block">total de la población</span>
                 </p>
+                {{ with .Params.grafica_area_geografica_genero }}
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                {{ else }}
                 <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
+                {{ end }}
             </div>
         </div>
     </div>
@@ -128,40 +138,40 @@
                 </h4>
                 <ul class="lg:text-lg xl:text-xl mb-4 lg:mb-6">
                     {{ range .Params.comunidades_etnicas_zona }}
-                        {{ if . }}
-                            <li class="flex items-center mb-3 lg:mb-4 leading-tight">
-                                <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                                {{ . }}
-                            </li>
-                        {{ end }}
+                    {{ if . }}
+                    <li class="flex items-center mb-3 lg:mb-4 leading-tight">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        {{ . }}
+                    </li>
+                    {{ end }}
                     {{ end }}
                 </ul>
                 {{ if .Params.asentamientos_indigenas }}
-                    <div class="flex items-center mb-4 lg:mb-6">
-                        <div class="flex items-center mr-2">
-                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                            <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
-                        </div>
-                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
+                <div class="flex items-center mb-4 lg:mb-6">
+                    <div class="flex items-center mr-2">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
                     </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
+                </div>
                 {{ end }}
                 {{ if .Params.resguardos_indigenas }}
-                    <div class="flex items-center mb-4 lg:mb-6">
-                        <div class="flex items-center mr-2">
-                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                            <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
-                        </div>
-                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
+                <div class="flex items-center mb-4 lg:mb-6">
+                    <div class="flex items-center mr-2">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
                     </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
+                </div>
                 {{ end }}
                 {{ if .Params.consejos_comunitarios }}
-                    <div class="flex items-center">
-                        <div class="flex items-center mr-2">
-                            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
-                            <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
-                        </div>
-                        <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
+                <div class="flex items-center">
+                    <div class="flex items-center mr-2">
+                        <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+                        <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
                     </div>
+                    <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
+                </div>
                 {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
@@ -169,7 +179,11 @@
                     style="color: #963B62;">
                     Población étnica
                 </h4>
+                {{ with .Params.grafica_pertenencia_etnica }}
+                    <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                {{ else }}
                 <img class="mx-auto" src="/images/territorios/graphic.svg" alt="graphic">
+                {{ end }}
             </div>
         </div>
     </div>
@@ -410,9 +424,9 @@
                     {{ end }}
                 </ul>
                 {{ if .Params.observaciones_ppales_actividades_economicas }}
-                    <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
-                        {{ .Params.observaciones_ppales_actividades_economicas }}
-                    </p>
+                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                    {{ .Params.observaciones_ppales_actividades_economicas }}
+                </p>
                 {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
@@ -439,9 +453,9 @@
                     {{ end }}
                 </ul>
                 {{ if .Params.observaciones_ppal_vocacion_mpio }}
-                    <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
-                        {{ .Params.observaciones_ppal_vocacion_mpio }}
-                    </p>
+                <p class="text-lg lg:text-xl p-4 border" style="border-color: #4F7435;">
+                    {{ .Params.observaciones_ppal_vocacion_mpio }}
+                </p>
                 {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">

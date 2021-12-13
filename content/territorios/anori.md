@@ -5,7 +5,11 @@ description: >-
   Es un municipio Colombiano, situado en la subregión Nordeste del departamento
   de Antioquia. Limita por el norte con los municipios de Tarazá, Cáceres y
   Zaragoza
-mapa_ubicacion_geografica: /graficas/anori_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/anori/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/anori/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/anori/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/anori/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/anori/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - Liberia
 distribucion_poblacional_hombres: 6998

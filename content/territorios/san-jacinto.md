@@ -6,7 +6,11 @@ description: >-
   de Bolívar y a 120 km al sudeste de Cartagena de Indias. Este municipio se
   encuentra en el sistema orográfico de los Montes de María, muy cerca del
   litoral Caribe colombiano
-mapa_ubicacion_geografica: /graficas/san-jacinto_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/san-jacinto/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/san-jacinto/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/san-jacinto/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/san-jacinto/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/san-jacinto/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - Arenas
   - Bajo Grande

@@ -1,6 +1,6 @@
 ---
 title: ARTESANÍAS DE PAZ Y ESPERANZA Y LLEGAN A BOGOTÁ
-date: 2021-12-02T20:45:58.571Z
+date: 2021-11-01
 image: /images/uploads/untitled-1-.jpg
 description: >
   Entre octubre y noviembre, artesanos y artesanas de San Jacinto, Bolívar y de

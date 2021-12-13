@@ -6,7 +6,11 @@ description: >-
   Perímetro de su cabecera municipal se encuentra ubicada a orillas del río
   Nechí,  en la confluencia con el río Tigüí,  el cual es afluente del río Nechí
   y este del río Cauca
-mapa_ubicacion_geografica: /graficas/el-bagre_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/el-bagre/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/el-bagre/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/el-bagre/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/el-bagre/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/el-bagre/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - Puerto Claver
   - Puerto López

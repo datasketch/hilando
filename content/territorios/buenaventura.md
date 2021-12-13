@@ -4,7 +4,11 @@ departamento: Valle del Cauca
 description: >-
   Es un distrito, una ciudad y el principal puerto marítimo de Colombia y uno de
   los diez puertos más importantes de América Latina
-mapa_ubicacion_geografica: /graficas/buenaventura_ubicacion_geografica.html
+grafica_ubicacion_geografica: /charts/municipios/buenaventura/ubicacion_geografica.html
+grafica_comunidades_focalizadas: /charts/municipios/buenaventura/comunidades_focalizadas.html
+grafica_poblacion_genero: /charts/municipios/buenaventura/poblacion_genero.html
+grafica_area_geografica_genero: /charts/municipios/buenaventura/area_geografica_genero.html
+grafica_pertenencia_etnica: /charts/municipios/buenaventura/pertenencia_etnica.html
 centros_poblados_corregimientos:
   - Aguaclara
   - Barco
