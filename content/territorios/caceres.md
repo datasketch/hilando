@@ -5,6 +5,7 @@ description: >-
   Es un municipio de Colombia, localizado en la subregión del Bajo Cauca del
   departamento de Antioquia. Limita por el norte con el departamento de Córdoba
   y el municipio de Caucasia
+mapa_ubicacion_geografica: /graficas/caceres_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - El Jardín (Tamaná)
   - Guarumo

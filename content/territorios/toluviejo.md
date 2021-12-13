@@ -4,6 +4,7 @@ departamento: Sucre
 description: >-
   Es un municipio colombiano ubicado al norte del departamento de Sucre en la
   Región Caribe. Se sitúa a 18 km de Sincelejo, la capital departamental
+mapa_ubicacion_geografica: /graficas/toluviejo_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - Caracol
   - Las Piedras

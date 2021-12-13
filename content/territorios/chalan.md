@@ -5,6 +5,7 @@ description: >-
   Es un municipio colombiano del departamento de Sucre, ubicado en la subregión
   de Montes de María, al norte del país. Se sitúa a 54 km de Sincelejo, la
   capital departamental.
+mapa_ubicacion_geografica: /graficas/chalan_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - La Ceiba
   - Nuevo Manzanares

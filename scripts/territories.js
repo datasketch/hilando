@@ -5,10 +5,12 @@ const yaml = require('js-yaml')
 const trrs = require('../data/territorios.json')
 
 trrs.forEach(trr => {
+    const filename = trr.municipio.toLowerCase().replace(/\s/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     const metadata = yaml.dump({
         title: trr.municipio,
         departamento: trr.departamento,
         description: trr.descripcion,
+        mapa_ubicacion_geografica: `/graficas/${filename}_ubicacion_geografica.html`,
         centros_poblados_corregimientos: trr['centros-poblados-corregimiento'].split(','),
         distribucion_poblacional_hombres: trr['distribucion-poblacional-hombres'],
         distribucion_poblacional_mujeres: trr['distribucion-poblacional-mujeres'],
@@ -46,7 +48,6 @@ trrs.forEach(trr => {
         comunidad_focalizada: trr['comunidad-focalizada'].split(',')
     })
     const frontmatter = `---\n${metadata}\n---`
-    const filename = trr.municipio.toLowerCase().replace(/\s/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     const pathToFile = join(__dirname, `../content/territorios/${filename}.md`)
     writeFileSync(pathToFile, frontmatter)
 })

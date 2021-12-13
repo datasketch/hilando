@@ -5,6 +5,7 @@ description: >-
   Es un municipio de Colombia, localizado en la subregión del Bajo Cauca del
   departamento de Antioquia y de la subregión de La Mojana ubicada en zona
   fisiográfica de la Depresión momposina.
+mapa_ubicacion_geografica: /graficas/nechi_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - Bijagual
   - Colorado

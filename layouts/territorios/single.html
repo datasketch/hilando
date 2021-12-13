@@ -14,8 +14,12 @@
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
+                    {{ with .Params.mapa_ubicacion_geografica }}
+                        <iframe src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
                     <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
                         alt="pradera map">
+                    {{ end  }}
                     <p class="text-white lg:text-lg xl:text-xl text-center">
                         {{ .Params.region }}
                     </p>

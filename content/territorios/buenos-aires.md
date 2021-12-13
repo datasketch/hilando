@@ -5,6 +5,7 @@ description: >-
   Es uno de los 42 municipios del departamento de Cauca, Colombia. Está
   localizado en la Provincia Norte. El municipio recibe su nombre gracias a la
   brisa permanente y a la calidez de su clima.
+mapa_ubicacion_geografica: /graficas/buenos-aires_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - El Porvenir
   - Honduras

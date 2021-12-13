@@ -4,6 +4,7 @@ departamento: Bolívar
 description: >-
   Es un municipio colombiano ubicado en el norte del departamento de Bolívar. Se
   encuentra dentro del sistema orográfico de las Serranías de San Jacinto
+mapa_ubicacion_geografica: /graficas/san-juan-nepomuceno_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - Corralito
   - La Haya

@@ -4,6 +4,7 @@ departamento: Antioquia
 description: >-
   Es un municipio de Colombia, localizado en la subregión Norte del departamento
   de Antioquia.
+mapa_ubicacion_geografica: /graficas/valdivia_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - Puerto Valdivia
   - Raudal Viejo

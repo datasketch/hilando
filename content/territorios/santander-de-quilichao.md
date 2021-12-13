@@ -4,6 +4,7 @@ departamento: Cauca
 description: >-
   Es un municipio Colombiano ubicado en el sector norte del departamento del
   Cauca, a 97 km al norte de Popayán y a 45 km al sur de Cali
+mapa_ubicacion_geografica: /graficas/santander-de-quilichao_ubicacion_geografica.html
 centros_poblados_corregimientos:
   - El Palmar
   - El Turco
