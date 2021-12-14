@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $data := .Site.Data.eventos }}
+{{ $municipio := .Title }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     {{/* BANNER PRADERA DEL VALLE CAUCA */}}
     <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer"
@@ -174,7 +176,7 @@
                     Población étnica
                 </h4>
                 {{ with .Params.grafica_pertenencia_etnica }}
-                    <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
                 {{ else }}
                 <img class="mx-auto" src="/images/territorios/graphic.svg" alt="graphic">
                 {{ end }}
@@ -476,58 +478,24 @@
                     Eventos significativos de la vida comunitaria
                 </h2>
                 <ul class="mx-auto lg:mx-0 w-11/12 lg:w-10/12 grid grid-cols-1 gap-y-6 lg:gap-y-10">
+                    {{ range where $data "municipio" $municipio }}
                     <li>
                         <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                                Festival de música andina
+                                {{ .titulo }}
                             </h3>
                             <span class="lg:text-lg xl:text-xl">Tipo</span>
                         </div>
                         <div class="flex justify-between py-2">
-                            <span class="lg:text-lg xl:text-xl">Marzo</span>
-                            <span class="lg:text-lg xl:text-xl">Cultural</span>
+                            <span class="lg:text-lg xl:text-xl">{{ .mes }}</span>
+                            <span class="lg:text-lg xl:text-xl">{{ .tipo }}</span>
                         </div>
                     </li>
-                    <li>
-                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                                Fiestas del Dulce
-                            </h3>
-                            <span class="lg:text-lg xl:text-xl">Tipo</span>
-                        </div>
-                        <div class="flex justify-between py-2">
-                            <span class="lg:text-lg xl:text-xl">Julio</span>
-                            <span class="lg:text-lg xl:text-xl">Comercial</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                                Fiestas Anuales
-                            </h3>
-                            <span class="lg:text-lg xl:text-xl">Tipo</span>
-                        </div>
-                        <div class="flex justify-between py-2">
-                            <span class="lg:text-lg xl:text-xl">Noviembre</span>
-                            <span class="lg:text-lg xl:text-xl">Tradicional</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
-                            <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                                Fiestas campesinas
-                            </h3>
-                            <span class="lg:text-lg xl:text-xl">Tipo</span>
-                        </div>
-                        <div class="flex justify-between py-2">
-                            <span class="lg:text-lg xl:text-xl">Periodicamente</span>
-                            <span class="lg:text-lg xl:text-xl">Económico</span>
-                        </div>
-                    </li>
+                    {{ end }}
                 </ul>
             </div>
         </div>
-        <img class="lg:col-start-7 lg:col-end-13 w-full" src="/images/territorios/events.svg" alt="events">
+        <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center" src="/images/territorios/events.svg" alt="events">
     </div>
     <!-- SECTION END -->
 
