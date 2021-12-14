@@ -194,7 +194,11 @@
                         Víctimas del conflicto <span class="ml-2 text-2xl lg:text-3xl xl:text-4xl text-black">{{
                             .Params.total_poblacion_victima }}</span>
                     </h4>
+                    {{ with .Params.grafica_conflicto_identidad }}
+                    <iframe class="w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
                     <img src="/images/territorios/chart.svg" alt="chart">
+                    {{ end }}
                 </div>
                 <div>
                     <div class="flex mb-6 lg:mb-8 xl:mb-10">
@@ -290,25 +294,41 @@
                     <h4
                         class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia sexual</h4>
+                    {{ with .Params.grafica_violencia_sexual }}
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
                     <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+                    {{ end }}
                 </div>
                 <div>
                     <h4
                         class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia fisica</h4>
-                    <img class="mx-auto" src="/images/territorios/chart-pink.svg" alt="chart">
+                    {{ with .Params.grafica_violencia_fisica }}
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
+                    <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+                    {{ end }}
                 </div>
                 <div>
                     <h4
                         class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Negligencia y abandono</h4>
-                    <img class="mx-auto" src="/images/territorios/chart-pink.svg" alt="chart">
+                    {{ with .Params.grafica_negligencia_abandono }}
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
+                    <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+                    {{ end }}
                 </div>
                 <div>
                     <h4
                         class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia psicológica</h4>
-                    <img class="mx-auto" src="/images/territorios/chart-green.svg" alt="chart">
+                    {{ with .Params.grafica_violencia_psicologica }}
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
+                    {{ else }}
+                    <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+                    {{ end }}
                 </div>
             </div>
         </div>
@@ -495,7 +515,8 @@
                 </ul>
             </div>
         </div>
-        <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center" src="/images/territorios/events.svg" alt="events">
+        <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center"
+            src="/images/territorios/events.svg" alt="events">
     </div>
     <!-- SECTION END -->
 
@@ -574,8 +595,8 @@
                     dolore magna aliquam erat volutpat.
                 </p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
-                    <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ .Params.ficha }}" download="Ficha-{{ .Title }}"
-                        style="background-color: #D27028;">
+                    <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ .Params.ficha }}"
+                        download="Ficha-{{ .Title }}" style="background-color: #D27028;">
                         DESCARGA LA FICHA
                     </a>
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"

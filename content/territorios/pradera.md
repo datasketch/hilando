@@ -11,6 +11,11 @@ grafica_comunidades_focalizadas: /charts/municipios/pradera/comunidades_focaliza
 grafica_poblacion_genero: /charts/municipios/pradera/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/pradera/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/pradera/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/pradera/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/pradera/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/pradera/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/pradera/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/pradera/negligencia_abandono.html
 ficha: /fichas/pradera/ficha.pdf
 centros_poblados_corregimientos:
   - La Granja

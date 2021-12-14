@@ -11,6 +11,11 @@ grafica_comunidades_focalizadas: /charts/municipios/el-bagre/comunidades_focaliz
 grafica_poblacion_genero: /charts/municipios/el-bagre/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/el-bagre/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/el-bagre/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/el-bagre/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/el-bagre/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/el-bagre/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/el-bagre/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/el-bagre/negligencia_abandono.html
 ficha: /fichas/el-bagre/ficha.pdf
 centros_poblados_corregimientos:
   - Puerto Claver

@@ -10,6 +10,11 @@ grafica_comunidades_focalizadas: /charts/municipios/toribio/comunidades_focaliza
 grafica_poblacion_genero: /charts/municipios/toribio/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/toribio/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/toribio/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/toribio/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/toribio/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/toribio/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/toribio/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/toribio/negligencia_abandono.html
 ficha: /fichas/toribio/ficha.pdf
 centros_poblados_corregimientos:
   - San Francisco

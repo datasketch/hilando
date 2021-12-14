@@ -9,6 +9,11 @@ grafica_comunidades_focalizadas: /charts/municipios/santander-de-quilichao/comun
 grafica_poblacion_genero: /charts/municipios/santander-de-quilichao/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/santander-de-quilichao/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/santander-de-quilichao/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/santander-de-quilichao/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/santander-de-quilichao/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/santander-de-quilichao/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/santander-de-quilichao/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/santander-de-quilichao/negligencia_abandono.html
 ficha: /fichas/santander-de-quilichao/ficha.pdf
 centros_poblados_corregimientos:
   - El Palmar

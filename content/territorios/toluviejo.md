@@ -9,6 +9,11 @@ grafica_comunidades_focalizadas: /charts/municipios/toluviejo/comunidades_focali
 grafica_poblacion_genero: /charts/municipios/toluviejo/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/toluviejo/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/toluviejo/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/toluviejo/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/toluviejo/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/toluviejo/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/toluviejo/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/toluviejo/negligencia_abandono.html
 ficha: /fichas/toluviejo/ficha.pdf
 centros_poblados_corregimientos:
   - Caracol

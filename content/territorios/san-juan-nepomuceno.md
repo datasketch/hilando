@@ -9,6 +9,11 @@ grafica_comunidades_focalizadas: /charts/municipios/san-juan-nepomuceno/comunida
 grafica_poblacion_genero: /charts/municipios/san-juan-nepomuceno/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/san-juan-nepomuceno/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/san-juan-nepomuceno/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/san-juan-nepomuceno/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/san-juan-nepomuceno/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/san-juan-nepomuceno/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/san-juan-nepomuceno/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/san-juan-nepomuceno/negligencia_abandono.html
 ficha: /fichas/san-juan-nepomuceno/ficha.pdf
 centros_poblados_corregimientos:
   - Corralito

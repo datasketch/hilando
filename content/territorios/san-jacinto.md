@@ -11,6 +11,11 @@ grafica_comunidades_focalizadas: /charts/municipios/san-jacinto/comunidades_foca
 grafica_poblacion_genero: /charts/municipios/san-jacinto/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/san-jacinto/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/san-jacinto/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/san-jacinto/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/san-jacinto/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/san-jacinto/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/san-jacinto/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/san-jacinto/negligencia_abandono.html
 ficha: /fichas/san-jacinto/ficha.pdf
 centros_poblados_corregimientos:
   - Arenas

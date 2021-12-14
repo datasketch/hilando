@@ -9,6 +9,11 @@ grafica_comunidades_focalizadas: /charts/municipios/buenaventura/comunidades_foc
 grafica_poblacion_genero: /charts/municipios/buenaventura/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/buenaventura/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/buenaventura/pertenencia_etnica.html
+grafica_conflicto_identidad: /charts/municipios/buenaventura/conflicto_identidad.html
+grafica_violencia_sexual: /charts/municipios/buenaventura/violencia_sexual.html
+grafica_violencia_fisica: /charts/municipios/buenaventura/violencia_fisica.html
+grafica_violencia_psicologica: /charts/municipios/buenaventura/violencia_psicologica.html
+grafica_negligencia_abandono: /charts/municipios/buenaventura/negligencia_abandono.html
 ficha: /fichas/buenaventura/ficha.pdf
 centros_poblados_corregimientos:
   - Aguaclara
