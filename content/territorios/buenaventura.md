@@ -9,6 +9,7 @@ grafica_comunidades_focalizadas: /charts/municipios/buenaventura/comunidades_foc
 grafica_poblacion_genero: /charts/municipios/buenaventura/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/buenaventura/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/buenaventura/pertenencia_etnica.html
+ficha: /fichas/buenaventura/ficha.pdf
 centros_poblados_corregimientos:
   - Aguaclara
   - Barco

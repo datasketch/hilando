@@ -10,6 +10,7 @@ grafica_comunidades_focalizadas: /charts/municipios/buenos-aires/comunidades_foc
 grafica_poblacion_genero: /charts/municipios/buenos-aires/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/buenos-aires/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/buenos-aires/pertenencia_etnica.html
+ficha: /fichas/buenos-aires/ficha.pdf
 centros_poblados_corregimientos:
   - El Porvenir
   - Honduras

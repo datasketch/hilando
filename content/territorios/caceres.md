@@ -10,6 +10,7 @@ grafica_comunidades_focalizadas: /charts/municipios/caceres/comunidades_focaliza
 grafica_poblacion_genero: /charts/municipios/caceres/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/caceres/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/caceres/pertenencia_etnica.html
+ficha: /fichas/caceres/ficha.pdf
 centros_poblados_corregimientos:
   - El Jardín (Tamaná)
   - Guarumo

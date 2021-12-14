@@ -10,6 +10,7 @@ grafica_comunidades_focalizadas: /charts/municipios/coloso/comunidades_focalizad
 grafica_poblacion_genero: /charts/municipios/coloso/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/coloso/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/coloso/pertenencia_etnica.html
+ficha: /fichas/coloso/ficha.pdf
 centros_poblados_corregimientos:
   - Chinulito
   - Bajo Don Juan

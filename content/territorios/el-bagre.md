@@ -11,6 +11,7 @@ grafica_comunidades_focalizadas: /charts/municipios/el-bagre/comunidades_focaliz
 grafica_poblacion_genero: /charts/municipios/el-bagre/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/el-bagre/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/el-bagre/pertenencia_etnica.html
+ficha: /fichas/el-bagre/ficha.pdf
 centros_poblados_corregimientos:
   - Puerto Claver
   - Puerto López

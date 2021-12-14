@@ -10,6 +10,7 @@ grafica_comunidades_focalizadas: /charts/municipios/chalan/comunidades_focalizad
 grafica_poblacion_genero: /charts/municipios/chalan/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/chalan/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/chalan/pertenencia_etnica.html
+ficha: /fichas/chalan/ficha.pdf
 centros_poblados_corregimientos:
   - La Ceiba
   - Nuevo Manzanares

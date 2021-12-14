@@ -51,10 +51,18 @@
                 <p class="xl:text-xl lg:text-lg mb-7">
                     Descarga la información de cada municipio para conocer el contexto de cada uno de ellos.
                 </p>
-                <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
-                    style="background-color: #D27028;">
-                    DESCARGA LOS DATOS
-                </a>
+                <details>
+                    <summary class="inline-block cursor-pointer uppercase font-bold text-white py-3 px-8 xl:text-lg" style="background-color: #D27028;">
+                        Descarga las fichas
+                    </summary>
+                    <ul class="p-8 text-white grid gap-y-8 overflow-y-scroll" style="background-color: #D27028; height: 300px;">
+                        {{ range where .Pages "Section" "territorios" }}
+                            <li class="text-lg">
+                                <a href="{{ .Params.ficha }}" download="Ficha-{{ .Title }}">{{ .Title }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </details>
             </div>
         </div>
         <img class="absolute top-0 -right-44 md:-right-16 h-full" src="/images/public/line-shape-2.svg"

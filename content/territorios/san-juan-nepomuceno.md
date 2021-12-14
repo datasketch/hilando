@@ -9,6 +9,7 @@ grafica_comunidades_focalizadas: /charts/municipios/san-juan-nepomuceno/comunida
 grafica_poblacion_genero: /charts/municipios/san-juan-nepomuceno/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/san-juan-nepomuceno/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/san-juan-nepomuceno/pertenencia_etnica.html
+ficha: /fichas/san-juan-nepomuceno/ficha.pdf
 centros_poblados_corregimientos:
   - Corralito
   - La Haya

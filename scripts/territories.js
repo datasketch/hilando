@@ -15,6 +15,7 @@ trrs.forEach(trr => {
         grafica_poblacion_genero: `/charts/municipios/${filename}/poblacion_genero.html`,
         grafica_area_geografica_genero: `/charts/municipios/${filename}/area_geografica_genero.html`,
         grafica_pertenencia_etnica: `/charts/municipios/${filename}/pertenencia_etnica.html`,
+        ficha: `/fichas/${filename}/ficha.pdf`,
         centros_poblados_corregimientos: trr['centros-poblados-corregimiento'].split(','),
         distribucion_poblacional_hombres: trr['distribucion-poblacional-hombres'],
         distribucion_poblacional_mujeres: trr['distribucion-poblacional-mujeres'],

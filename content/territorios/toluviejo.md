@@ -9,6 +9,7 @@ grafica_comunidades_focalizadas: /charts/municipios/toluviejo/comunidades_focali
 grafica_poblacion_genero: /charts/municipios/toluviejo/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/toluviejo/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/toluviejo/pertenencia_etnica.html
+ficha: /fichas/toluviejo/ficha.pdf
 centros_poblados_corregimientos:
   - Caracol
   - Las Piedras

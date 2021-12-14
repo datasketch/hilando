@@ -10,6 +10,7 @@ grafica_comunidades_focalizadas: /charts/municipios/toribio/comunidades_focaliza
 grafica_poblacion_genero: /charts/municipios/toribio/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/toribio/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/toribio/pertenencia_etnica.html
+ficha: /fichas/toribio/ficha.pdf
 centros_poblados_corregimientos:
   - San Francisco
   - Tacueyó

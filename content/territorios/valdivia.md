@@ -9,6 +9,7 @@ grafica_comunidades_focalizadas: /charts/municipios/valdivia/comunidades_focaliz
 grafica_poblacion_genero: /charts/municipios/valdivia/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/valdivia/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/valdivia/pertenencia_etnica.html
+ficha: /fichas/valdivia/ficha.pdf
 centros_poblados_corregimientos:
   - Puerto Valdivia
   - Raudal Viejo

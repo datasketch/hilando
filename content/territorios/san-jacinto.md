@@ -11,6 +11,7 @@ grafica_comunidades_focalizadas: /charts/municipios/san-jacinto/comunidades_foca
 grafica_poblacion_genero: /charts/municipios/san-jacinto/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/san-jacinto/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/san-jacinto/pertenencia_etnica.html
+ficha: /fichas/san-jacinto/ficha.pdf
 centros_poblados_corregimientos:
   - Arenas
   - Bajo Grande

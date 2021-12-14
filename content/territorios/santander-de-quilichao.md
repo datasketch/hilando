@@ -9,6 +9,7 @@ grafica_comunidades_focalizadas: /charts/municipios/santander-de-quilichao/comun
 grafica_poblacion_genero: /charts/municipios/santander-de-quilichao/poblacion_genero.html
 grafica_area_geografica_genero: /charts/municipios/santander-de-quilichao/area_geografica_genero.html
 grafica_pertenencia_etnica: /charts/municipios/santander-de-quilichao/pertenencia_etnica.html
+ficha: /fichas/santander-de-quilichao/ficha.pdf
 centros_poblados_corregimientos:
   - El Palmar
   - El Turco
