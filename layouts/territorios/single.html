@@ -16,28 +16,30 @@
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
-                    {{ with .Params.grafica_ubicacion_geografica }}
-                    <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
-                    {{ else }}
-                    <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
-                        alt="pradera map">
-                    {{ end }}
+                    <div id="territorio">
+                        {{ with .Params.grafica_ubicacion_geografica }}
+                        <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
+                        {{ else }}
+                        <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
+                            alt="pradera map">
+                        {{ end }}
+                    </div>
                     <p class="text-white lg:text-lg xl:text-xl text-center">
                         {{ .Params.region }}
                     </p>
                 </div>
-                <div class="lg:col-start-8 lg:col-end-13">
-                    <div class="flex flex-col lg:w-10/12 mb-10 lg:mb-12 xl:mb-14">
-                        <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
-                            style="background-color: #C5296A;">TERRITORIO</button>
-                        <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
-                            style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</button>
-                        <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
-                            style="background-color: #C5296A;">DESARROLLO ECONÓMICO</button>
-                        <button class="text-white xl:text-lg py-2 mb-8 cursor-pointer"
-                            style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</button>
-                        <button class="text-white xl:text-lg py-2 cursor-pointer"
-                            style="background-color: #C5296A;">EXPLORAR LOS DATOS</button>
+                <div class="lg:col-start-8 lg:col-end-13 single-navigation">
+                    <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14">
+                        <a href="#territorio" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                            style="background-color: #C5296A;">TERRITORIO</a>
+                        <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                            style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
+                        <a href="#actividades-economicas" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                            style="background-color: #C5296A;">DESARROLLO ECONÓMICO</a>
+                        <a href="#tejido-social-productivo" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                            style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</a>
+                        <a href="#explora-datos" class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item"
+                            style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
                     </div>
                 </div>
                 <div class="lg:col-start-2 lg:col-end-7">
@@ -240,7 +242,8 @@
     {{/* SECTION END */}}
 
     <!-- SECTION -->
-    <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" style="background-color: #FAFAFA;">
+    <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" id="salud"
+        style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12">
             <h2 class="lg:text-xl xl:text-2xl font-black text-center mb-8 lg:mb-10 xl:mb-12" style="color: #C5296A;">
                 Priorización de los efectos en salud para WLH
@@ -426,7 +429,8 @@
     <!-- SECTION END -->
 
     <!-- SECTION -->
-    <div class="lg:col-start-1 lg:col-end-12 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-12 py-12 lg:py-16 xl:py-20" id="actividades-economicas"
+        style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-20 xl:gap-y-24">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
@@ -521,7 +525,8 @@
     <!-- SECTION END -->
 
     <!-- SECTION -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" id="tejido-social-productivo"
+        style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
@@ -579,7 +584,9 @@
     <!-- SECTION END -->
 
     <!-- DATA EXPLORER -->
-    {{ partial "data-explorer" . }}
+    <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12" id="explora-datos">
+        {{ partial "data-explorer" . }}
+    </div>
     <!-- DATA EXPLORER END -->
 
     <!-- DOWNLOAD -->
@@ -611,4 +618,8 @@
     </div>
     <!-- DOWNLOAD END -->
 </div>
+{{ end }}
+{{ define "js" }}
+{{ $territorios := resources.Get "js/territorios.js" | js.Build (dict "minify" true) }}
+<script src="{{ $territorios.Permalink }}"></script>
 {{ end }}

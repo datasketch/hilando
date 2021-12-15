@@ -17,7 +17,8 @@ module.exports = {
         'event__type',
         'slider-prev',
         'slider-next',
-        'swiper-button-disabled'
+        'swiper-button-disabled',
+        'single-navigation__item--active'
       ]
     },
   },
