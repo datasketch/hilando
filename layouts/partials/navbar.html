@@ -9,6 +9,23 @@
                 <!-- NAV DESKTOP -->
                 <ul class="hidden lg:flex items-center">
                     {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                    <div class="menu">
+                        <li class="mr-20"><a
+                                class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300"
+                                href="{{ .URL }}">{{ .Title }}</a></li>
+                        <ul class="sub-menu w-screen h-96 duration-300 left-0 py-12"
+                            style="top: 115px; background-color: rgba(150, 59, 98, 0.82);">
+                            <div class="mx-auto w-10/12 flex justify-between">
+                                {{ range .Children }}
+                                <li>
+                                    <p class="uppercase text-sm">{{ .Name }}</p>
+                                </li>
+                                {{ end }}
+                            </div>
+                        </ul>
+                    </div>
+                    {{ else }}
                     {{ $menu_item_url := .URL | relLangURL }}
                     {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
                     {{ if eq $menu_item_url $page_url }}
@@ -20,6 +37,7 @@
                     <li class="mr-20"><a
                             class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300"
                             href="{{ .URL }}">{{ .Title }}</a></li>
+                    {{ end }}
                     {{ end }}
                     {{ end }}
                 </ul>

@@ -4,7 +4,7 @@
 
 @layer base {
     header {
-        background: linear-gradient(rgba(58,60,106, 0.82), rgba(58,60,106, 0.82));
+        background: rgba(58,60,106, 0.82);
     }
 }
 
@@ -122,6 +122,16 @@
   .slider-prev.swiper-button-disabled,
   .slider-next.swiper-button-disabled {
     @apply opacity-30 cursor-not-allowed;
+  }
+
+  /* MENU */
+  .menu {
+  }
+  .sub-menu {
+    @apply absolute invisible opacity-0 duration-300;
+  }
+  .menu:hover .sub-menu {
+    @apply visible opacity-100;
   }
 }
 

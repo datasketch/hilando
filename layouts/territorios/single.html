@@ -30,20 +30,24 @@
                 </div>
                 <div class="lg:col-start-8 lg:col-end-13 single-navigation">
                     <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14">
-                        <a href="#territorio" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                        <a href="#territorio"
+                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">TERRITORIO</a>
                         <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
-                        <a href="#actividades-economicas" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                        <a href="#actividades-economicas"
+                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">DESARROLLO ECONÓMICO</a>
-                        <a href="#tejido-social-productivo" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
+                        <a href="#tejido-social-productivo"
+                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</a>
-                        <a href="#explora-datos" class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item"
+                        <a href="#explora-datos"
+                            class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
                     </div>
                 </div>
                 <div class="lg:col-start-2 lg:col-end-7">
-                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
+                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidades focalizadas</h3>
                     <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
                         {{ range .Params.comunidad_focalizada }}
                         <li class="flex items-center">
@@ -54,19 +58,6 @@
                     </ul>
                     <iframe class="mx-auto w-full h-96 mt-8" src="{{ .Params.grafica_comunidades_focalizadas }}"
                         frameborder="0"></iframe>
-                </div>
-                <div class="lg:col-start-8 lg:col-end-13">
-                    <h4 class="text-white text-lg font-bold lg:text-xl xl:text-2xl mb-4 lg:mb-6">
-                        Centros poblados y corregimientos
-                    </h4>
-                    <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
-                        {{ range .Params.centros_poblados_corregimientos }}
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            {{ . }}
-                        </li>
-                        {{ end }}
-                    </ul>
                 </div>
             </div>
         </div>
@@ -306,7 +297,7 @@
                 <div>
                     <h4
                         class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
-                        Violencia fisica</h4>
+                        Violencia física</h4>
                     {{ with .Params.grafica_violencia_fisica }}
                     <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
                     {{ else }}
@@ -597,9 +588,7 @@
                     DESCARGA
                 </h2>
                 <p class="xl:text-xl lg:text-lg mb-7">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet
-                    dolore magna aliquam erat volutpat.
+                    Descarga la información del municipio para conocer su contexto.
                 </p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
                     <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ .Params.ficha }}"
