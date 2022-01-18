@@ -1,7 +1,7 @@
 ---
 title: COMUNIDADES SELECCIONADAS POR EL PROGRAMA WLH
 date: 2021-12-02T20:57:02.951Z
-image: /images/uploads/imagen1.png
+image: /images/uploads/comunidades-wlh.jpeg
 description: >
   El programa WLH tiene focalizadas las primeras 14 comunidades con quien
   iniciará los proyectos para contribuir al mejoramiento de los servicios de
