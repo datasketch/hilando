@@ -9,36 +9,51 @@
                 <!-- NAV DESKTOP -->
                 <ul class="hidden lg:flex items-center">
                     {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                    <div class="menu">
-                        <li class="mr-20"><a
-                                class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300"
-                                href="{{ .URL }}">{{ .Title }}</a></li>
-                        <ul class="sub-menu w-screen h-96 duration-300 left-0 py-12"
-                            style="top: 115px; background-color: rgba(150, 59, 98, 0.82);">
-                            <div class="mx-auto w-10/12 flex justify-between">
-                                {{ range .Children }}
-                                <li>
-                                    <p class="uppercase text-sm">{{ .Name }}</p>
+                        {{ if .HasChildren }}
+                            <div class="menu">
+                                <li class="mr-20">
+                                    <a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title }}</a>
                                 </li>
-                                {{ end }}
+                                <ul class="sub-menu w-screen h-96 duration-300 left-0 py-12" style="top: 115px; background-color: rgba(150, 59, 98, 0.82);">
+                                    <div class="mx-auto w-10/12 flex justify-between">
+                                        {{ if eq .Page.Section "territorios" }}
+                                            {{ range $.Site.Menus.region }}
+                                                <li>
+                                                    <p class="uppercase text-sm">{{ .Name }}</p>
+                                                    {{ if .HasChildren }}
+                                                        <ul>
+                                                            {{ range .Children }}
+                                                                <li>
+                                                                    <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                                                                </li>
+                                                            {{ end }}
+                                                        </ul>
+                                                    {{ end }}
+                                                </li>
+                                            {{ end }}
+                                        {{ else }}
+                                            {{ range .Children }}
+                                                <li>
+                                                    <p class="uppercase text-sm">{{ .Name }}</p>
+                                                </li>
+                                            {{ end }}
+                                        {{ end }}
+                                    </div>
+                                </ul>
                             </div>
-                        </ul>
-                    </div>
-                    {{ else }}
-                    {{ $menu_item_url := .URL | relLangURL }}
-                    {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
-                    {{ if eq $menu_item_url $page_url }}
-                    <li class="mr-20"><a class="uppercase border-b-2 border-white pb-1 duration-300"
-                            href="{{ .URL }}">{{
-                            .Title
-                            }}</a></li>
-                    {{ else }}
-                    <li class="mr-20"><a
-                            class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300"
-                            href="{{ .URL }}">{{ .Title }}</a></li>
-                    {{ end }}
-                    {{ end }}
+                        {{ else }}
+                            {{ $menu_item_url := .URL | relLangURL }}
+                            {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+                            {{ if eq $menu_item_url $page_url }}
+                                <li class="mr-20">
+                                    <a class="uppercase border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title }}</a>
+                                </li>
+                            {{ else }}
+                                <li class="mr-20">
+                                    <a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title }}</a>
+                                </li>
+                            {{ end }}
+                        {{ end }}
                     {{ end }}
                 </ul>
                 <!-- NAV DESKTOP END -->

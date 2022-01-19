@@ -1,5 +1,8 @@
 ---
 title: San Juan Nepomuceno
+menu:
+  region:
+    parent: montes-de-maria
 departamento: Bolívar
 description: >-
   Es un municipio colombiano ubicado en el norte del departamento de Bolívar. Se

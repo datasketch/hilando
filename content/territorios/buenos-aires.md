@@ -1,5 +1,8 @@
 ---
 title: Buenos Aires
+menu:
+  region:
+    parent: pacifico-medio-alto-patia-y-norte-del-cauca
 departamento: Cauca
 description: >-
   Es uno de los 42 municipios del departamento de Cauca, Colombia. Está

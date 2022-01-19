@@ -1,5 +1,8 @@
 ---
 title: Colosó
+menu:
+  region:
+    parent: montes-de-maria
 departamento: Sucre
 description: >-
   Es un municipio colombiano ubicado en el departamento de Sucre, en la

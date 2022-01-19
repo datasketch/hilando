@@ -1,5 +1,8 @@
 ---
 title: Anorí
+menu:
+  region:
+    parent: bajo-cauca-y-nordeste-antioqueno
 departamento: Antioquia
 description: >-
   Es un municipio Colombiano, situado en la subregión Nordeste del departamento

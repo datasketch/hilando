@@ -1,7 +1,9 @@
 ---
 title: Montes de María
 menu:
- main:
-  parent: territorios
+  main:
+    parent: territorios
+  region:
+    identifier: montes-de-maria
 weight: 2
 ---

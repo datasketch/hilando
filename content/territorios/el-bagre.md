@@ -1,5 +1,8 @@
 ---
 title: El Bagre
+menu:
+  region:
+    parent: bajo-cauca-y-nordeste-antioqueno
 departamento: Antioquia
 description: >-
   El área del municipio de El Bagre cuenta con una extensión de 1.563 km2. El

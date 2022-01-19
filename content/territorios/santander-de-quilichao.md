@@ -1,5 +1,8 @@
 ---
 title: Santander de Quilichao
+menu:
+  region:
+    parent: pacifico-medio-alto-patia-y-norte-del-cauca
 departamento: Cauca
 description: >-
   Es un municipio Colombiano ubicado en el sector norte del departamento del

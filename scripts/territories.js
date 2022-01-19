@@ -8,6 +8,11 @@ trrs.forEach(trr => {
     const filename = trr.municipio.toLowerCase().replace(/\s/g, '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     const metadata = yaml.dump({
         title: trr.municipio,
+        menu: {
+            region: {
+                parent: trr.region.toLowerCase().replace(/\s/g, '-').replace(/\,/g, '').normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            }
+        },
         departamento: trr.departamento,
         description: trr.descripcion,
         grafica_ubicacion_geografica: `/charts/municipios/${filename}/ubicacion_geografica.html`,

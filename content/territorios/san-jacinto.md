@@ -1,5 +1,8 @@
 ---
 title: San Jacinto
+menu:
+  region:
+    parent: montes-de-maria
 departamento: Bolívar
 description: >-
   Es un municipio de Colombia situado en el norte del país, en el departamento

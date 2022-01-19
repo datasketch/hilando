@@ -1,5 +1,8 @@
 ---
 title: Toribío
+menu:
+  region:
+    parent: pacifico-medio-alto-patia-y-norte-del-cauca
 departamento: Cauca
 description: >-
   El Municipio de Toribio se ubica al nororiente del departamento del Cauca, a

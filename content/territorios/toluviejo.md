@@ -1,5 +1,8 @@
 ---
 title: Toluviejo
+menu:
+  region:
+    parent: montes-de-maria
 departamento: Sucre
 description: >-
   Es un municipio colombiano ubicado al norte del departamento de Sucre en la

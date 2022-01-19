@@ -1,5 +1,8 @@
 ---
 title: Valdivia
+menu:
+  region:
+    parent: bajo-cauca-y-nordeste-antioqueno
 departamento: Antioquia
 description: >-
   Es un municipio de Colombia, localizado en la subregión Norte del departamento

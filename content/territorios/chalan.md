@@ -1,5 +1,8 @@
 ---
 title: Chalán
+menu:
+  region:
+    parent: montes-de-maria
 departamento: Sucre
 description: >-
   Es un municipio colombiano del departamento de Sucre, ubicado en la subregión

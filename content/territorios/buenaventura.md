@@ -1,5 +1,8 @@
 ---
 title: Buenaventura
+menu:
+  region:
+    parent: pacifico-medio-alto-patia-y-norte-del-cauca
 departamento: Valle del Cauca
 description: >-
   Es un distrito, una ciudad y el principal puerto marítimo de Colombia y uno de
