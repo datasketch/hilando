@@ -30,7 +30,7 @@ if (observer) {
     if (!entry.isIntersecting) {
       btnUp.classList.add('btn-up--active');
       header.classList.add('header--active');
-      subMenu.style.top = '99px';
+      subMenu.style.top = '76px';
     } else {
       btnUp.classList.remove('btn-up--active');
       header.classList.remove('header--active');

@@ -12,6 +12,11 @@
     padding: 4px 6px;
 }
 
+.header--active img {
+    @apply duration-300;
+    height: 60px;
+}
+
 @media only screen and (min-width: 1024px) {
     .header {
         padding: 12px 28px;
