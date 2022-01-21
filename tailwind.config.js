@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
-    enabled: process.env.HUGO_ENVIRONMENT === "production",
-    content: ["./layouts/**/*.html"],
+    enabled: process.env.HUGO_ENVIRONMENT === 'production',
+    content: ['./layouts/**/*.html'],
     options: {
       safelist: [
         'header--active',
@@ -18,8 +18,8 @@ module.exports = {
         'slider-prev',
         'slider-next',
         'swiper-button-disabled',
-        'single-navigation__item--active'
-      ]
+        'single-navigation__item--active',
+      ],
     },
   },
   darkMode: false, // or 'media' or 'class'
@@ -31,7 +31,7 @@ module.exports = {
         'banner-territorios': 'url(/images/territorios/banner-territorios.svg)',
         'banner-noticias': 'url(/images/noticias/banner-noticias.svg)',
         'banner-eventos': 'url(/images/eventos/banner-eventos.svg)',
-        'banner-programa': 'url(/images/sobre-programa/banner-sobre-el-programa.svg)'
+        'banner-programa': 'url(/images/sobre-programa/banner-sobre-el-programa.svg)',
       },
       colors: {
         black: '#1A1A1A',
@@ -42,6 +42,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require("@tailwindcss/aspect-ratio")
-  ]
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };

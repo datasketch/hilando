@@ -20,14 +20,14 @@
                             {{ range $.Site.Menus.region }}
                             <li class="py-4 px-4 border-t border-white">
                                 <div class="flex justify-between items-center">
-                                    <p class="text-sm">{{ .Name }}</p>
+                                    <p class="text-base">{{ .Name }}</p>
                                     <img class="w-2 h-2" src="/images/public/arrow-menu.svg" alt="arrow menu">
                                 </div>
                                 {{ if .HasChildren }}
                                 <ul class="sub-menu-2 border-t border-white mt-2 pt-2">
                                     {{ range .Children }}
                                     <li>
-                                        <a href="{{ .URL | absURL }}">{{ .Name }}</a>
+                                        <a class="text-base" href="{{ .URL | absURL }}">{{ .Name }}</a>
                                     </li>
                                     {{ end }}
                                 </ul>
@@ -37,7 +37,7 @@
                             {{ else }}
                             {{ range .Children }}
                             <li>
-                                <p class="uppercase text-sm">{{ .Name }}</p>
+                                <p class="uppercase text-base">{{ .Name }}</p>
                             </li>
                             {{ end }}
                             {{ end }}
