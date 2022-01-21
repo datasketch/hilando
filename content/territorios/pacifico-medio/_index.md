@@ -5,5 +5,5 @@ menu:
     parent: territorios
   region:
     identifier: pacifico-medio-alto-patia-y-norte-del-cauca
-weight: 3
+weight: 2
 ---

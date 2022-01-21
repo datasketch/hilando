@@ -8,7 +8,6 @@ const overlay = document.querySelector('.overlay');
 const observer = document.querySelector('.observer');
 const btnUp = document.querySelector('.btn-up');
 const header = document.querySelector('.header');
-const subMenu = document.querySelector('.sub-menu');
 
 // FUNCTIONS
 const menuToggle = () => {
@@ -30,11 +29,9 @@ if (observer) {
     if (!entry.isIntersecting) {
       btnUp.classList.add('btn-up--active');
       header.classList.add('header--active');
-      subMenu.style.top = '76px';
     } else {
       btnUp.classList.remove('btn-up--active');
       header.classList.remove('header--active');
-      subMenu.style.top = '115px';
     }
   };
   const bannerObserver = new IntersectionObserver(cb, opts);

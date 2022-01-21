@@ -5,5 +5,5 @@ menu:
     parent: territorios
   region:
     identifier: montes-de-maria
-weight: 2
+weight: 3
 ---
