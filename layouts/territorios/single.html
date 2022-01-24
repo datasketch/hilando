@@ -16,7 +16,7 @@
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
-                    <div id="territorio">
+                    <div class="border border-white mb-4" id="territorio">
                         {{ with .Params.grafica_ubicacion_geografica }}
                         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
                         {{ else }}
@@ -46,7 +46,7 @@
                             style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
                     </div>
                 </div>
-                <div class="lg:col-start-2 lg:col-end-7">
+                <div class="lg:col-start-1 lg:col-end-7">
                     <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidades focalizadas</h3>
                     <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
                         {{ range .Params.comunidad_focalizada }}
@@ -56,8 +56,20 @@
                         </li>
                         {{ end }}
                     </ul>
-                    <iframe class="mx-auto w-full h-96 mt-8" src="{{ .Params.grafica_comunidades_focalizadas }}"
-                        frameborder="0"></iframe>
+                    <iframe class="mx-auto w-full h-96 mt-8 border border-white"
+                        src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>
+                </div>
+                <div class="lg:col-start-8 lg:col-end-13">
+                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Centros poblados y corregimientos
+                    </h3>
+                    <ul class="grid grid-cols-2 text-white xl:text-lg gap-y-4">
+                    {{ range .Params.centros_poblados_corregimientos }}
+                    <li class="flex items-center">
+                        <img class="mr-2" src="/images/public/point.svg" alt="point">
+                        {{ . }}
+                    </li>
+                    {{ end }}
+                </ul>
                 </div>
             </div>
         </div>
