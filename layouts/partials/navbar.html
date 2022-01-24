@@ -18,10 +18,10 @@
                         <ul class="sub-menu transform -left-12 w-48">
                             {{ if eq .Page.Section "territorios" }}
                             {{ range $.Site.Menus.region }}
-                            <li class="py-4 px-4 border-t border-white">
+                            <li class="py-4 px-4 border-t border-white sub-menu-list">
                                 <div class="flex justify-between items-center">
                                     <p class="text-base">{{ .Name }}</p>
-                                    <img class="w-2 h-2" src="/images/public/arrow-menu.svg" alt="arrow menu">
+                                    <img class="w-2 h-2 sub-menu-icon" src="/images/public/arrow-menu.svg" alt="arrow menu">
                                 </div>
                                 {{ if .HasChildren }}
                                 <ul class="sub-menu-2 border-t border-white mt-2 pt-2">

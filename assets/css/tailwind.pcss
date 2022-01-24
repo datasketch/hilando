@@ -131,7 +131,7 @@
     @apply visible opacity-100;
   }
   .sub-menu {
-    @apply absolute invisible opacity-0 duration-300;
+    @apply absolute invisible opacity-0 cursor-pointer duration-300;
     background-color: #3A3C6A;
   }
   .sub-menu li:hover {
@@ -140,8 +140,14 @@
   .sub-menu-2 {
     @apply hidden opacity-0 duration-300;
   }
-  .sub-menu:hover .sub-menu-2 {
+  .sub-menu-2--active {
     @apply block opacity-100;
+  }
+  .sub-menu-icon {
+    @apply transform rotate-0;
+  }
+  .sub-menu-icon--active {
+    @apply transform rotate-90;
   }
 }
 

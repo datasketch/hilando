@@ -19,6 +19,7 @@ module.exports = {
         'slider-next',
         'swiper-button-disabled',
         'single-navigation__item--active',
+        'sub-menu-2--active',
       ],
     },
   },

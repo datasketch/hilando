@@ -8,6 +8,9 @@ const overlay = document.querySelector('.overlay');
 const observer = document.querySelector('.observer');
 const btnUp = document.querySelector('.btn-up');
 const header = document.querySelector('.header');
+const subMenuList = document.querySelectorAll('.sub-menu-list');
+const subMenu2 = document.querySelectorAll('.sub-menu-2');
+const subMenuIcon = document.querySelectorAll('.sub-menu-icon');
 
 // FUNCTIONS
 const menuToggle = () => {
@@ -52,3 +55,8 @@ window.addEventListener('keydown', (e) => {
 btnUp.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
+subMenuList.forEach((menuList, idx) => menuList.addEventListener('click', function(e) {
+  subMenu2[idx].classList.toggle('sub-menu-2--active');
+  subMenuIcon[idx].classList.toggle('sub-menu-icon--active');
+}));
