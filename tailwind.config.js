@@ -35,14 +35,17 @@ module.exports = {
         'banner-programa': 'url(/images/sobre-programa/banner-sobre-el-programa.svg)',
       },
       colors: {
-        black: '#1A1A1A',
-        purple: '#5F2161',
-        cultured: '#fafafa',
+        'black': '#1A1A1A',
+        'purple': '#5F2161',
+        'cultured': '#fafafa',
+        'space-cadet': '#3A3C6A',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['last'],
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

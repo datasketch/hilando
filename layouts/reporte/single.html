@@ -1,23 +1,132 @@
 {{ define "content" }}
-<section style="page-break-after: always;">
-    <div class="bg-purple text-cultured py-32">
-        <div class="container mx-auto">
+<section class="page-a4 relative pb-8">
+    <div class="absolute w-full bottom-0 text-center">
+        <a class="inline-block" href="https://www.datasketch.co">
+            <img class="h-5" src="/powered-by.png" alt="">
+        </a>
+    </div>
+    <!-- Banner -->
+    <div class="bg-purple text-cultured py-6">
+        <div class="px-6">
             <div class="flex justify-between tk-mr-eaves-sans">
                 <div>
-                    <h1 class="font-extrabold text-5xl uppercase">{{ .Title }}</h1>
-                    <p class="font-extralight text-2xl uppercase">{{ .Params.departamento }}</p>
+                    <h1 class="font-extrabold text-4xl uppercase">{{ .Title }}</h1>
+                    <p class="font-extralight text-xl uppercase">{{ .Params.departamento }}</p>
                 </div>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 flex-shrink-0">
                     <div class="text-right self-center">
-                        <p class="font-extrabold text-2xl">Fichas de caracterización municipal</p>
-                        <p class="font-extralight text-2xl uppercase">Weaving lives and hope</p>
+                        <p class="font-extrabold text-xl">Fichas de caracterización municipal</p>
+                        <p class="font-extralight text-xl uppercase">Weaving lives and hope</p>
                     </div>
                     <div class="border-r"></div>
                     <img class="h-16 self-center" src="/images/public/logo-hilando.svg" alt="">
                 </div>
             </div>
+            <div class="mt-12 flex justify-between">
+                <div class="w-1/2">
+                    <p class="tk-mr-eaves-sans font-extrabold text-2xl bg-white bg-opacity-20 -ml-6 pl-6 pr-2 inline-block">
+                        Territorio
+                    </p>
+                    {{ with .Params.description }}
+                        <p class="mt-8">{{ . }}</p>
+                    {{ end }}
+                    {{ with .Params.comunidad_focalizada }}
+                        <p class="font-bold text-lg mt-8">Comunidad focalizada</p>
+                        <ul class="mt-2">
+                            {{ range . }}
+                                <li class="flex items-center space-x-2">
+                                    <img class="inline-block w-4" src="/images/public/comunidad-icon.png" alt="">
+                                    <span>{{ . }}</span>
+                                </li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </div>
+                <div class="w-2/5">
+                    <div class="aspect-w-1 aspect-h-1 border border-white">
+                        <iframe src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>
+                    </div>
+                    <p class="text-center italic mt-2">{{ .Params.region }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Distribución poblacional -->
+    <div class="p-6">
+        <p class="tk-mr-eaves-sans text-space-cadet font-extrabold text-2xl bg-space-cadet bg-opacity-25 -ml-6 pl-6 pr-2 inline-block">
+            Distribución poblacional
+        </p>
+        <div class="flex items-start mt-8">
+            <div class="w-1/4">
+                {{ with .Params.distribucion_poblacional_mujeres }}
+                    <div class="flex items-center p-6 border-b-2 border-space-cadet">
+                        <img class="w-20" src="/images/territorios/women-icon.svg" alt="">
+                        <div class="text-left -ml-8">
+                            <p class="font-bold text-xl leading-none">{{ . }}</p>
+                            <p class="uppercase">Mujeres</p>
+                        </div>
+                    </div>
+                {{ end }}
+                {{ with .Params.distribucion_poblacional_hombres }}
+                    <div class="flex items-center p-6 border-b-2 border-space-cadet">
+                        <img class="w-20" src="/images/territorios/men-icon.svg" alt="">
+                        <div class="text-left -ml-8">
+                            <p class="font-bold text-xl leading-none">{{ . }}</p>
+                            <p class="uppercase">Hombres</p>
+                        </div>
+                    </div>
+                {{ end }}
+                {{ with .Params.poblacion_discapacidad }}
+                    <div class="flex items-center p-6 border-b-2 border-space-cadet last:border-0">
+                        <img class="w-20" src="/images/territorios/disability.svg" alt="">
+                        <div class="text-left -ml-8">
+                            <p class="font-bold text-xl leading-none">{{ . }}</p>
+                            <p class="uppercase text-xs">Personas en condición de discapacidad</p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+            <div class="w-3/4 border-2 border-space-cadet">
+                <table class="w-full">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <iframe src="{{ .Params.grafica_poblacion_genero }}" frameborder="0"></iframe>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="aspect-w-1 aspect-h-1">
+                                    <iframe src="{{ .Params.grafica_area_geografica_genero }}" frameborder="0"></iframe>
+                                </div>
+                            </td>
+                        </tr>
+                        {{ $comunidades_etnicas := slice }}
+                        {{ range .Params.comunidades_etnicas_zona }}
+                            {{ if len . }}
+                                {{ $comunidades_etnicas = $comunidades_etnicas | append . }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if ne (len $comunidades_etnicas) 0}}
+                            <tr>
+                                <td colspan="2" class="py-2 px-6">
+                                    <p class="text-lg font-bold">Comunidades étnicas en la zona</p>
+                                    <ul style="column-count: 2;">
+                                        {{ range $comunidades_etnicas }}
+                                            <li class="flex items-center space-x-1">
+                                                <img src="/images/public/point-black.svg" alt="">
+                                                <span>{{ . }}</span>
+                                            </li>
+                                        {{ end }}
+                                    </ul>
+                                </td>
+                            </tr>
+                        {{ end }}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </section>
-<p>hola</p>
+<!-- <section class="page-a4 relative"></section> -->
 {{ end }}
