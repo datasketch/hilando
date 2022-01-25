@@ -26,7 +26,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {},
+      fontSize: {
+        xxxs: '0.5rem',
+        xxs: '0.625rem',
+      },
       backgroundImage: {
         'banner-home': 'url(/images/home/banner-home.png)',
         'banner-territorios': 'url(/images/territorios/banner-territorios.svg)',
