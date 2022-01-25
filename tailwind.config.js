@@ -36,6 +36,8 @@ module.exports = {
       },
       colors: {
         black: '#1A1A1A',
+        purple: '#5F2161',
+        cultured: '#fafafa',
       },
     },
   },
