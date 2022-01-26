@@ -59,18 +59,6 @@
                     <iframe class="mx-auto w-full h-96 mt-8 border border-white"
                         src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>
                 </div>
-                <div class="lg:col-start-8 lg:col-end-13">
-                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Centros poblados y corregimientos
-                    </h3>
-                    <ul class="grid grid-cols-2 text-white xl:text-lg gap-y-4">
-                    {{ range .Params.centros_poblados_corregimientos }}
-                    <li class="flex items-center">
-                        <img class="mr-2" src="/images/public/point.svg" alt="point">
-                        {{ . }}
-                    </li>
-                    {{ end }}
-                </ul>
-                </div>
             </div>
         </div>
     </div>
