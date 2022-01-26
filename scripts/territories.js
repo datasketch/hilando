@@ -8,6 +8,10 @@ function createPath(folder, name) {
   return join(__dirname, `../content/${folder}/${name}.md`);
 }
 
+function splitList(input) {
+  return input.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+}
+
 trrs.forEach((trr) => {
   const filename = trr.municipio.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   const fields = {
@@ -41,7 +45,7 @@ trrs.forEach((trr) => {
     total_poblacion_victima: trr['total-poblacion-victima'],
     num_sujetos_reparacion_colectiva: trr['num-sujetos-reparacion-colectiva'],
     num_planes_retorno_reubicacion_colectiva: trr['num-planes-retorno-reubicacion-colectiva'],
-    territorio_entidades_snariv_sivjrnr: trr['territorio_entidades-snariv-sivjrnr'].split(','),
+    territorio_entidades_snariv_sivjrnr: splitList(trr['territorio_entidades-snariv-sivjrnr']),
     priorizacion_convivencia_social_salud_mental: trr['priorizacion-convivencia-social-salud-mental'],
     region: trr.region,
     priorizacion_sexualidad_derechos_sexuales_reproductivos: trr['priorizacion-sexualidad-derechos-sexuales-reproductivos'],

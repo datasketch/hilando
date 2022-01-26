@@ -40,8 +40,9 @@ territorio_entidades_snariv_sivjrnr:
   - Personería (SNARIV)
   - Defensoría del Pueblo (SNARIV)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
-  - '"Comisión para el Esclarecimiento de la Verdad'
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
 priorizacion_convivencia_social_salud_mental: >-
   Promover las condiciones sociales y culturales donde se permiten el goce

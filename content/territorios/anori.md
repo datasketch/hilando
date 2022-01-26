@@ -47,8 +47,9 @@ territorio_entidades_snariv_sivjrnr:
   - Agencia de Renovación del Territorio (ART) (SNARIV)
   - Descontamina Colombia (SNARIV)
   - Alcaldía municipal (SNARIV)
-  - '"Comisión para el Esclarecimiento de la Verdad'
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
 priorizacion_convivencia_social_salud_mental: >-

@@ -43,8 +43,9 @@ total_poblacion_victima: 18249
 num_sujetos_reparacion_colectiva: 3
 num_planes_retorno_reubicacion_colectiva: 0
 territorio_entidades_snariv_sivjrnr:
-  - Comisión para el Esclarecimiento de la Verdad
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)

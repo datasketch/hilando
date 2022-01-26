@@ -1,4 +1,5 @@
 {{ define "content" }}
+<!-- 1 -->
 <section class="page-a4 relative pb-8">
     <div class="absolute w-full bottom-0 text-center">
         <a class="inline-block" href="https://www.datasketch.co">
@@ -6,11 +7,11 @@
         </a>
     </div>
     <!-- Banner -->
-    <div class="bg-purple text-cultured p-4">
+    <div class="bg-purple text-cultured p-5">
         <div class="flex justify-between tk-mr-eaves-sans">
-            <div>
-                <h1 class="font-extrabold text-xl uppercase">{{ .Title }}</h1>
-                <p class="font-extralight text-xs uppercase">{{ .Params.departamento }}</p>
+            <div class="uppercase">
+                <h1 class="font-extrabold text-2xl">{{ .Title }}</h1>
+                <p class="font-extralight text-sm">{{ .Params.departamento }}</p>
             </div>
             <div class="flex space-x-4 flex-shrink-0 text-sm">
                 <div class="text-right self-center">
@@ -21,17 +22,17 @@
                 <img class="h-10 self-center" src="/images/public/logo-hilando.svg" alt="">
             </div>
         </div>
-        <div class="mt-12 flex justify-between">
+        <div class="mt-10 flex justify-between">
             <div class="w-1/3">
-                <p class="tk-mr-eaves-sans font-extrabold text-sm bg-white bg-opacity-20 -ml-6 pl-6 pr-2 inline-block">
+                <p class="tk-mr-eaves-sans font-extrabold text-base bg-white bg-opacity-20 -ml-5 pl-5 pr-2 inline-block">
                     Territorio
                 </p>
                 {{ with .Params.description }}
-                    <p class="mt-4 text-xxs">{{ . }}</p>
+                    <p class="mt-5 text-xs">{{ . }}</p>
                 {{ end }}
                 {{ with .Params.comunidad_focalizada }}
-                    <div class="text-xxs">
-                        <p class="font-bold mt-4">Comunidad focalizada</p>
+                    <div class="text-xs">
+                        <p class="font-bold mt-5">Comunidad focalizada</p>
                         <ul class="mt-2">
                             {{ range . }}
                                 <li class="flex items-center space-x-2">
@@ -47,46 +48,46 @@
                 <div class="aspect-w-3 aspect-h-2 border border-white">
                     <iframe src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>
                 </div>
-                <p class="text-center text-xxxs italic mt-2">{{ .Params.region }}</p>
+                <p class="text-center text-xxs italic mt-2">{{ .Params.region }}</p>
             </div>
         </div>
     </div>
     <!-- Distribución poblacional -->
-    <div class="p-4">
-        <p class="tk-mr-eaves-sans text-space-cadet font-extrabold text-sm bg-space-cadet bg-opacity-25 -ml-6 pl-6 pr-2 inline-block">
+    <div class="p-5">
+        <p class="tk-mr-eaves-sans text-space-cadet font-extrabold text-base bg-space-cadet bg-opacity-25 -ml-5 pl-5 pr-2 inline-block">
             Distribución poblacional
         </p>
-        <div class="flex items-start mt-8">
-            <div class="w-1/4">
+        <div class="flex items-start mt-10">
+            <div class="flex-shrink-0">
                 {{ with .Params.distribucion_poblacional_mujeres }}
-                    <div class="flex items-center p-6 border-b border-space-cadet">
+                    <div class="flex items-center p-4 border-b border-space-cadet">
                         <img class="w-20" src="/images/territorios/women-icon.svg" alt="">
                         <div class="text-left -ml-6">
-                            <p class="font-bold text-xs leading-none">{{ . }}</p>
-                            <p class="uppercase font-bold text-xxxs">Mujeres</p>
+                            <p class="font-bold text-sm leading-none">{{ . }}</p>
+                            <p class="uppercase font-bold text-xxs">Mujeres</p>
                         </div>
                     </div>
                 {{ end }}
                 {{ with .Params.distribucion_poblacional_hombres }}
-                    <div class="flex items-center p-6 border-b border-space-cadet">
+                    <div class="flex items-center p-4 border-b border-space-cadet">
                         <img class="w-20" src="/images/territorios/men-icon.svg" alt="">
                         <div class="text-left -ml-6">
-                            <p class="font-bold text-xs leading-none">{{ . }}</p>
-                            <p class="uppercase font-bold text-xxxs">Hombres</p>
+                            <p class="font-bold text-sm leading-none">{{ . }}</p>
+                            <p class="uppercase font-bold text-xxs">Hombres</p>
                         </div>
                     </div>
                 {{ end }}
                 {{ with .Params.poblacion_discapacidad }}
-                    <div class="flex items-center p-6 border-b border-space-cadet last:border-0">
+                    <div class="flex items-center p-4 border-b border-space-cadet last:border-0">
                         <img class="w-20" src="/images/territorios/disability.svg" alt="">
                         <div class="text-left -ml-6">
-                            <p class="font-bold text-xs leading-none">{{ . }}</p>
-                            <p class="uppercase font-bold text-xxxs text-xs">Personas en condición de discapacidad</p>
+                            <p class="font-bold text-sm leading-none">{{ . }}</p>
+                            <p class="uppercase font-bold text-xxs leading-tight">Personas en <br>condición de<br> discapacidad</p>
                         </div>
                     </div>
                 {{ end }}
             </div>
-            <div class="w-3/4">
+            <div class="flex-grow">
                 <table class="w-full border-collapse">
                     <tbody>
                         <tr>
@@ -104,17 +105,14 @@
                             {{ end }}
                         {{ end }}
                         <tr>
-                            <td colspan="2" class="border border-space-cadet py-2 px-6 text-xxs">
+                            <td colspan="2" class="border border-space-cadet py-2 px-5 text-xs">
                                 <div class="flex items-start">
                                     <div class="w-1/2">
                                         {{ if ne (len $comunidades_etnicas) 0}}
                                             <p class="font-bold">Comunidades étnicas en la zona</p>
                                             <ul style="column-count: 2;" class="mt-2">
                                                 {{ range $comunidades_etnicas }}
-                                                    <li class="flex items-center space-x-1">
-                                                        <img class="w-1" src="/images/public/point-black.svg" alt="">
-                                                        <span>{{ . }}</span>
-                                                    </li>
+                                                    {{ partial "list-item.html" (dict "text" . ) }}
                                                 {{ end }}
                                             </ul>
                                         {{ end }}
@@ -141,5 +139,149 @@
         </div>
     </div>
 </section>
-<!-- <section class="page-a4 relative"></section> -->
+<!-- 2 -->
+<section class="page-a4 relative pb-8">
+    <div class="absolute w-full bottom-0 text-center">
+        <a class="inline-block" href="https://www.datasketch.co">
+            <img class="h-5" src="/powered-by.png" alt="">
+        </a>
+    </div>
+    <div class="p-5">{{ partial "pdf-banner.html" . }}</div>
+    <div class="px-5">
+        <div class="flex items-start space-x-20">
+            <div class="w-1/2">
+                <div class="space-y-2">
+                    {{ with .Params.total_poblacion_victima }}
+                        <div class="flex items-center -space-x-4">
+                            <img src="/images/territorios/triangle-gray.svg" alt="">
+                            <p class="text-xs font-bold">Víctimas del conflicto: {{ . }}</p>
+                        </div>
+                    {{ end }}
+                    {{ with .Params.num_sujetos_reparacion_colectiva }}
+                    <div class="flex items-center -space-x-4">
+                        <img src="/images/territorios/triangle-gray.svg" alt="">
+                        <p class="text-xs font-bold">Sujetos de reparación colectiva: {{ . }}</p>
+                    </div>
+                    {{ end }}
+                    {{ with .Params.num_planes_retorno_reubicacion_colectiva }}
+                        <div class="flex items-center -space-x-4">
+                            <img src="/images/territorios/triangle-gray.svg" alt="">
+                            <p class="text-xs font-bold">Planes de retorno y reubicación colectiva: {{ . }}</p>
+                        </div>
+                    {{ end }}
+                </div>
+                {{ with .Params.grafica_conflicto_identidad }}
+                    <div class="aspect-w-4 aspect-h-3 border border-space-cadet mt-5">
+                        <iframe src="{{ . }}" frameborder="0"></iframe>
+                    </div>
+                {{ end }}
+            </div>
+            {{ $snariv_sivjrnr := slice }}
+            {{ range .Params.territorio_entidades_snariv_sivjrnr }}
+                {{ if len . }}
+                    {{ $snariv_sivjrnr = $snariv_sivjrnr | append . }}
+                {{ end }}
+            {{ end }}
+            {{ if ne (len $snariv_sivjrnr) 0 }}
+                <div class="w-1/2">
+                    <h2 class="font-bold text-xs">Entidades del Sistema Nacional de Atención y Reparación</h2>
+                    <ul class="mt-4 space-y-2">
+                        {{ range $snariv_sivjrnr }}
+                            {{ partial "list-item.html" (dict "text" .) }}
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+        </div>
+        {{ $show_section := or .Params.priorizacion_convivencia_social_salud_mental (or .Params.priorizacion_sexualidad_derechos_sexuales_reproductivos (or .Params.priorizacion_gestion_diferencial_poblaciones_vulnerables .Params.priorizacion_fortalecimiento_autoridad_sanitaria)) }}
+        {{ if $show_section }}
+            <p class="tk-mr-eaves-sans font-extrabold text-base text-rose bg-rose bg-opacity-20 -ml-5 pl-5 pr-2 inline-block mt-10">
+                Salud Mental y atención Psicosocial
+            </p>
+            <div class="mt-5 text-xs">
+                <p class="text-center font-bold">Priorización de los efectos en salud para WLH</p>
+                <div class="grid grid-cols-2 gap-5 mt-5">
+                    {{ with.Params.priorizacion_convivencia_social_salud_mental }}
+                        <div class="w-64 mx-auto">
+                            <h3 class="font-bold">Convivencia social y salud mental</h3>
+                            <p class="mt-2">{{ . }}</p>
+                        </div>
+                    {{ end }}
+                    {{ with.Params.priorizacion_gestion_diferencial_poblaciones_vulnerables }}
+                        <div class="w-64 mx-auto">
+                            <h3 class="font-bold">Gestión diferencial en poblaciones vulnerables</h3>
+                            <p class="mt-2">{{ . }}</p>
+                        </div>
+                    {{ end }}
+                    {{ with.Params.priorizacion_sexualidad_derechos_sexuales_reproductivos }}
+                        <div class="w-64 mx-auto">
+                            <h3 class="font-bold">Sexualidad, derechos sexuales y reproductivos</h3>
+                            <p class="mt-2">{{ . }}</p>
+                        </div>
+                    {{ end }}
+                    {{ with.Params.priorizacion_fortalecimiento_autoridad_sanitaria }}
+                        <div class="w-64 mx-auto">
+                            <h3 class="font-bold">Fortalecimiento de autoridad sanitaria</h3>
+                            <p class="mt-2">{{ . }}</p>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</section>
+<!-- 3 -->
+<section class="page-a4 relative pb-8">
+    <div class="absolute w-full bottom-0 text-center">
+        <a class="inline-block" href="https://www.datasketch.co">
+            <img class="h-5" src="/powered-by.png" alt="">
+        </a>
+    </div>
+    <div class="flex flex-col h-full">
+        <div class="p-5">
+            {{ partial "pdf-banner.html" . }}
+        </div>
+        <div class="bg-space-cadet text-white flex-grow py-10 px-5">
+            <p class="tk-mr-eaves-sans font-extrabold text-base bg-white bg-opacity-20 -ml-5 pl-5 pr-2 inline-block">
+                Tasas de violencia
+            </p>
+            <div class="grid grid-cols-2 gap-10 mt-10">
+                <div>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_sexual }}" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_fisica }}" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_negligencia_abandono }}" frameborder="0"></iframe>
+                </div>
+                <div>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_psicologica }}" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 4 -->
+<section class="page-a4 relative pb-8">
+    <div class="absolute w-full bottom-0 text-center">
+        <a class="inline-block" href="https://www.datasketch.co">
+            <img class="h-5" src="/powered-by.png" alt="">
+        </a>
+    </div>
+    <div class="p-5">
+        {{ partial "pdf-banner.html" . }}
+    </div>
+</section>
+<!-- 5 -->
+<section class="page-a4 relative pb-8">
+    <div class="absolute w-full bottom-0 text-center">
+        <a class="inline-block" href="https://www.datasketch.co">
+            <img class="h-5" src="/powered-by.png" alt="">
+        </a>
+    </div>
+    <div class="p-5">
+        {{ partial "pdf-banner.html" . }}
+    </div>
+</section>
 {{ end }}

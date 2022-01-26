@@ -139,8 +139,9 @@ territorio_entidades_snariv_sivjrnr:
   - Secretaría de Salud (SNARIV)
   - Secretaría de Convivencia (SNARIV)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
-  - '"Comisión para el Esclarecimiento de la Verdad'
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
 priorizacion_convivencia_social_salud_mental: >-
   Tasa de incidencia de VIH,Tasa de AVPP por neoplasias en mujeres,Tasa ajustada

@@ -54,8 +54,9 @@ territorio_entidades_snariv_sivjrnr:
   - Secretaría de Agricultura Departamental (SNARIV)
   - Corporación Regional para el Desarrollo (SNARIV)
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
-  - '"Comisión para el Esclarecimiento de la Verdad'
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Secretarías de despacho de la administración local (SNARIV)
   - Personería (SNARIV)
 priorizacion_convivencia_social_salud_mental: >-

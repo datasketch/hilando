@@ -42,6 +42,7 @@ module.exports = {
         'purple': '#5F2161',
         'cultured': '#fafafa',
         'space-cadet': '#3A3C6A',
+        'rose': '#C5296A',
       },
     },
   },

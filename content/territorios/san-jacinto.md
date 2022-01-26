@@ -43,8 +43,9 @@ territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
     (SNARIV)
-  - '"Comisión para el Esclarecimiento de la Verdad'
-  - ' la Convivencia y la No Repeteción (CEV) (SIVJRNR)"'
+  - >-
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
 priorizacion_convivencia_social_salud_mental: >-
