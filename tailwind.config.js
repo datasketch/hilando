@@ -43,6 +43,8 @@ module.exports = {
         'cultured': '#fafafa',
         'space-cadet': '#3A3C6A',
         'rose': '#C5296A',
+        'fern-green': '#4F7435',
+        'magenta': '#963B62',
       },
     },
   },

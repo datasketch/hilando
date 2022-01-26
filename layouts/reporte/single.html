@@ -272,16 +272,286 @@
     <div class="p-5">
         {{ partial "pdf-banner.html" . }}
     </div>
+    <div class="px-5">
+        <div class="flex items-start space-x-20">
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Eventos en salud pública predominante</p>
+                {{ $the_list := slice }}
+                {{ range .Params.eventos_salud_publica_predominantes }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "rose") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay eventos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Según el Registro Individual de Prestación (RIPS), se registran entre los principales diagnósticos de salud mental atendidos durante el 2020 por el SGSSS</p>
+                {{ $the_list = slice }}
+                {{ range .Params.rips_salud_mental_poblacion_general }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "rose") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay diagnósticos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+                <p class="font-bold text-xs mt-5">Servicios de Telemedicina en el Municipio y/o Departamento</p>
+                {{ $the_list = slice }}
+                {{ range .Params.servicios_telemedicina_mpio_depto }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "rose") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay habilitados servicios aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <p class="tk-mr-eaves-sans font-extrabold text-base text-fern-green bg-fern-green bg-opacity-20 -ml-5 pl-5 pr-2 inline-block mt-10">
+            Desarrollo económico
+        </p>
+        <div class="flex items-start space-x-20 mt-5">
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Pobreza multidimensional</p>
+                <div class="mt-2">
+                    <div class="flex items-start space-x-10">
+                        {{ with .Params.total_pobreza_multidimensional }}
+                            <div class="flex items-center -space-x-5">
+                                <img class="w-12" src="/images/territorios/triangle-green.svg" alt="">
+                                <p class="text-sm font-bold uppercase leading-none">
+                                    <span>{{ . }} </span><br><span class="text-xxs">Total</span>
+                                </p>
+                            </div>
+                        {{ end }}
+                        {{ with .Params.pobreza_multidimensional_urbano }}
+                            <div class="flex items-center -space-x-5">
+                                <img class="w-12" src="/images/territorios/triangle-green.svg" alt="">
+                                <p class="text-sm font-bold uppercase leading-none">
+                                    <span>{{ . }} </span><br><span class="text-xxs">Urbano</span>
+                                </p>
+                            </div>
+                        {{ end }}
+                        {{ with .Params.pobreza_multidimensional_centro_poblado_rural_disperso }}
+                            <div class="flex items-center -space-x-5">
+                                <img class="w-12" src="/images/territorios/triangle-green.svg" alt="">
+                                <p class="text-sm font-bold uppercase leading-none">
+                                    <span>{{ . }} </span><br><span class="text-xxxs leading-none">Centro poblado<br>y rural disperso</span>
+                                </p>
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ with .Params.trabajo_informal }}
+                    <p class="font-bold text-xs mt-5">Trabajo informal</p>
+                    <div class="mt-2">
+                        <div class="flex items-center -space-x-5">
+                            <img class="w-12" src="/images/territorios/triangle-green.svg" alt="">
+                            <p class="text-sm font-bold uppercase leading-none">
+                                <span>{{ . }} </span><br><span class="text-xxs">Total</span>
+                            </p>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+            <div class="w-1/2">
+                <div class="text-xs space-y-2">
+                    <p>La pobreza multidimensional se define más allá del tema de los ingresos, y se relaciona con múltiples carencias, privaciones de derechos y capacidades que tiene la población y que afecta su calidad de vida y bienestar.</p>
+                    <p>El índice de pobreza multidimensional (IPM) señala las privaciones que tiene la población en cinco dimensiones: educación; condiciones de niñez y juventud, salud, trabajo, acceso a servicios públicos y condiciones de vivienda y estas cinco dimensiones involucran 15 variable.</p>
+                    <p>(Fuente: Dane y CEPAL).</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-start space-x-20 mt-10">
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Actividades económicas principales</p>
+                {{ $the_list = slice }}
+                {{ range .Params.ppales_actividades_economicas }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "green") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay datos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+                {{ if .Params.observaciones_ppales_actividades_economicas }}
+                    <p class="text-xxs mt-2 bg-fern-green bg-opacity-30 py-2 px-4">
+                        {{ .Params.observaciones_ppales_actividades_economicas }}
+                    </p>
+                {{ end }}
+            </div>
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Principal vocación del suelo del municipio</p>
+                {{ $the_list = slice }}
+                {{ range .Params.ppal_vocacion_mpio }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "green") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay datos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+                {{ if .Params.observaciones_ppal_vocacion_mpio }}
+                    <p class="text-xxs mt-2 bg-fern-green bg-opacity-30 py-2 px-4">
+                        {{ .Params.observaciones_ppal_vocacion_mpio }}
+                    </p>
+                {{ end }}
+                <p class="font-bold text-xs mt-5">Principal uso del suelo del municipio</p>
+                {{ $the_list = slice }}
+                {{ range .Params.ppal_uso_suelo }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" (humanize .) "color" "green") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay datos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+                {{ if .Params.observaciones_ppal_uso_suelo }}
+                    <p class="text-xxs mt-2 bg-fern-green bg-opacity-30 py-2 px-4">
+                        {{ .Params.observaciones_ppal_uso_suelo }}
+                    </p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
 </section>
 <!-- 5 -->
-<section class="page-a4 relative pb-8">
+<section class="page-a4 relative pb-20">
     <div class="absolute w-full bottom-0 text-center">
-        <a class="inline-block" href="https://www.datasketch.co">
+        <p class="tk-mr-eaves-sans text-purple text-sm">WEAVING LIVES AND HOPE</p>
+        <img class="mx-auto w-64" src="/images/public/kids.png" alt="">
+        <a class="inline-block mt-1" href="https://www.datasketch.co">
             <img class="h-5" src="/powered-by.png" alt="">
         </a>
     </div>
     <div class="p-5">
         {{ partial "pdf-banner.html" . }}
+    </div>
+    <div class="px-5">
+        <p class="tk-mr-eaves-sans font-extrabold text-base text-magenta bg-magenta bg-opacity-20 -ml-5 pl-5 pr-2 inline-block">
+            Cultura
+        </p>
+        <div class="flex items-start space-x-20 mt-5">
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Espacios de encuentro socio comunitario</p>
+                {{ $the_list = slice }}
+                {{ range .Params.espacios_socio_comunitarios }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" . "color" "rose") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay datos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="w-1/2">
+                <p class="font-bold text-xs">Medios, formas e iniciativas de comunicación</p>
+                {{ $the_list = slice }}
+                {{ range .Params.medios_comunicacion }}
+                    {{ if len . }}
+                        {{ $the_list = $the_list | append . }}
+                    {{ end }}
+                {{ end }}
+                <ul class="mt-2">
+                    {{ if ne (len $the_list) 0 }}
+                        {{ range $the_list }}
+                            {{ partial "list-item.html" (dict "text" . "color" "rose") }}
+                        {{ end }}
+                    {{ else }}
+                        {{ partial "list-item.html" (dict "text" "No hay datos aún" "color" "rose") }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <p class="tk-mr-eaves-sans font-extrabold text-base text-magenta bg-magenta bg-opacity-20 -ml-5 pl-5 pr-2 inline-block mt-10">
+            Eventos significativos de la vida comunitaria
+        </p>
+        <div class="mt-5">
+            {{ $events := where (.Site.Data.eventos) "municipio" .Title }}
+            {{ if len $events }}
+                <div class="grid grid-cols-2 gap-5">
+                    {{ range $events }}
+                        <div class="text-xs">
+                            <p class="border-b border-magenta flex items-start justify-between relative">
+                                <img class="absolute w-4 top-0 left-0" src="/images/public/triangle-up.svg" alt="">
+                                <span class="pl-2 font-bold relative">{{ .titulo }}</span>
+                                <span class="pr-2">Tipo</span>
+                            </p>
+                            <p class="px-2 flex items-start justify-between relative">
+                                <img class="absolute w-4 top-0 right-0" src="/images/public/triangle-down.svg" alt="">
+                                <span>{{ .mes }}</span>
+                                <span class="relative">{{ .tipo }}</span>
+                            </p>
+                        </div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+        <p class="tk-mr-eaves-sans font-extrabold text-base text-space-cadet bg-space-cadet bg-opacity-20 -ml-5 pl-5 pr-2 inline-block mt-10">
+            Tejido social y productivo
+        </p>
+        <div class="mt-5">
+            <p class="font-bold text-xs">Organizaciones e iniciativas de la sociedad civil: {{ or .Params.iniciativas_org_sociedad_civil 0 }}</p>
+            <p class="font-bold text-xs mt-5">Programas de USAID</p>
+            {{ $the_list = slice }}
+            {{ range .Params.programas_usaid }}
+                {{ if len . }}
+                    {{ $the_list = $the_list | append . }}
+                {{ end }}
+            {{ end }}
+            <ul class="mt-2" style="column-count: 2;">
+                {{ if ne (len $the_list) 0 }}
+                    {{ range $the_list }}
+                        {{ partial "list-item.html" (dict "text" . "color" "space-cadet") }}
+                    {{ end }}
+                {{ else }}
+                    {{ partial "list-item.html" (dict "text" "No hay programas aún" "color" "space-cadet") }}
+                {{ end }}
+            </ul>
+        </div>
     </div>
 </section>
 {{ end }}

@@ -16,7 +16,7 @@ const slugList = trrs.map((trr) => trr.municipio.toLowerCase().replace(/\s/g, '-
     });
     const page = await browser.newPage();
     for (let index = 0; index < slugList.length; index++) {
-      console.log(`Create PDF for ${slugList[index]}`);
+      console.log(`Generando PDF (${slugList[index]})`);
       await page.goto(`http://localhost:1313/reporte/${slugList[index]}/`, {
         waitUntil: 'networkidle0',
       });
@@ -25,7 +25,8 @@ const slugList = trrs.map((trr) => trr.municipio.toLowerCase().replace(/\s/g, '-
         printBackground: true,
       });
       await fs.writeFile(path.join(__dirname, '..', 'static', 'reportes', `${slugList[index]}.pdf`), pdf);
-      console.log(`PDF created for ${slugList[index]}`);
+      console.log('PDF generado');
+      console.log('~~~');
     }
     await browser.close();
   } catch (error) {
