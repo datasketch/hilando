@@ -56,9 +56,9 @@
                         Descarga las fichas
                     </summary>
                     <ul class="p-8 text-white grid gap-y-8 overflow-y-scroll" style="background-color: #D27028; height: 300px;">
-                        {{ range where .Pages "Section" "territorios" }}
+                        {{ range where .RegularPages "Section" "territorios" }}
                             <li class="text-lg">
-                                <a href="{{ .Params.ficha }}" download="Ficha-{{ .Title }}">{{ .Title }}</a>
+                                <a href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}">{{ .Title }}</a>
                             </li>
                         {{ end }}
                     </ul>
