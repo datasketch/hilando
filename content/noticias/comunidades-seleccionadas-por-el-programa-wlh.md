@@ -1,5 +1,5 @@
 ---
-title: COMUNIDADES SELECCIONADAS POR EL PROGRAMA WLH
+title: "15 COMUNIDADES LISTAS PARA TEJER VIDAS Y ESPERANZA JUNTO A USAID Y OIM "
 date: 2021-12-02T20:57:02.951Z
 image: /images/uploads/comunidades-wlh.jpeg
 description: >+
