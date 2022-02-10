@@ -2,45 +2,62 @@
 title: COMUNIDADES SELECCIONADAS POR EL PROGRAMA WLH
 date: 2021-12-02T20:57:02.951Z
 image: /images/uploads/comunidades-wlh.jpeg
-description: >
-  El programa WLH tiene focalizadas las primeras 14 comunidades con quien
-  iniciará los proyectos para contribuir al mejoramiento de los servicios de
-  salud mental, fortalecimiento del tejido comunitario y empoderamiento
-  económico.
+description: >+
+  El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, focalizó
+  las primeras 15 comunidades con quienes iniciará una intervención integral
+  para contribuir al mejoramiento de la salud mental, el fortalecimiento del
+  tejido comunitario y el empoderamiento económico. 
 
 
-  La focalización se da en comunidades con mucha diversidad y potencial ya que han adelantado procesos resilientes aún y a pesar del conflicto armado.
+  Con diálogos comunitarios, visitas domiciliarias, diagnósticos rurales participativos y la construcción de una agenda cultural de eventos, WLH inició la intervención integral en las comunidades que se caracterizan por su resiliencia, diversidad y potencial productivo. 
+
 cms: true
 ---
 <!--StartFragment-->
 
-* El programa WLH tiene focalizadas las primeras 14 comunidades con quien iniciará los proyectos para contribuir al mejoramiento de los servicios de salud mental, fortalecimiento del tejido comunitario y empoderamiento económico.
-* La focalización se da en comunidades con mucha diversidad y potencial ya que han adelantado procesos resilientes aún y a pesar del conflicto armado.
+* El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, focalizó las primeras 15 comunidades con quienes iniciará una intervención integral para contribuir al mejoramiento de la salud mental, el fortalecimiento del tejido comunitario y el empoderamiento económico.
+* Con diálogos comunitarios, visitas domiciliarias, diagnósticos rurales participativos y la construcción de una agenda cultural de eventos, WLH inició la intervención integral en las comunidades que se caracterizan por su resiliencia, diversidad y potencial productivo.
 
+La historia de los sobrevivientes del conflicto armado está llena de iniciativas y procesos locales que muestran la resiliencia de las comunidades en medio del conflicto. Luego de completar su fase de mapeo social, validación conceptual y acercamiento, el Programa Hilando Vidas y Esperanza (WLH, por sus siglas en inglés), de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), priorizó las primeras 15 comunidades con quienes iniciará un trabajo conjunto que fortalezca y potencie los procesos locales.  
 
+En la región de Montes de María, zona de gaitas y tamboras, se identificaron iniciativas de jóvenes y un gran liderazgo femenino y de las personas LGBTQ+. Su entorno natural (con montañas, bosques y ríos) la hace fértil para los proyectos productivos y de servicios, con una apuesta especial por el turismo de naturaleza, de aventura y el fortalecimiento de la cultura local. En la zona, el Programa también espera apoyar la exploración, transformación y comercialización de piedra caliza, la apicultura, la producción de cacao y maíz. Es una región con retos de conectividad y oportunidades para mejorar los servicios de salud y apoyo psicosocial. En esta región, WLH trabajará con las siguientes comunidades:  
 
-La historia de los sobrevivientes del conflicto armado es sorprendente y está llena de iniciativas y procesos que muestran la resiliencia de las comunidades. El Programa Hilando Vidas y Esperanza (WLH por sus siglas en inglés), durante su fase de reconocimiento y trabajo de las regiones en las que se implementaría, conoció 14 comunidades con quienes iniciará un trabajo conjunto de apoyo y aprendizaje mutuo para potenciar varios de sus procesos. 
+1. Corregimiento de La Ceiba en Chalán, Sucre.  
 
+2. Vereda Paraíso en Colosó, Sucre 
 
+3. Corregimiento San Pedro Consolado en San Juan Nepomuceno, Bolívar. 
 
-Las tres regiones en las que trabaja el programa -Montes de María, Bajo Cauca y nordeste Antioqueño; y Pacífico Medio, Alto Patía y Norte del Cauca- son diversas, con un potencial agrícola envidiable, con líderes y lideresas que han venido creando desde la cultura, el deporte, la educación y la salud, procesos de desarrollo que reflejan un tejido social en reconstrucción; aún y a pesar de la guerra. Fue entonces a partir de esos procesos identificados que se seleccionaron las comunidades para poner en marcha, de hoy en adelante, el programa Hilando Vidas y Esperanza, un programa realizado con el apoyo de USAID y operado por OIM Colombia.
+4. La Piche en Tolú Viejo, Bolívar. 
 
+5. Vereda Casa de Piedra y corregimiento Las Mercedes en San Jacinto, Bolívar.  
 
+En la región de Bajo Cauca y Nordeste Antioqueño, el Programa WLH trabajará con comunidades resilientes que generan con sus campesinos y campesinas, sus jóvenes, mujeres, juntas de acción comunal y asociaciones, procesos productivos en torno al apicultura, café, cacao, arroz y plátano. El principal reto de esta región es la persistencia de la violencia en el territorio; así como limitaciones en infraestructura. Hilando Vidas y Esperanza trabajará con las comunidades de:  
 
-En la región de Montes de María, zona de gaitas y tamboras, de yuca, de ñame, WLH trabajará con la comunidad del corregimiento de La Ceiba en Chalán, el corregimiento San Pedro Consolado en San Juan Nepomuceno, La vereda Paraíso en Colosó, La Piche en Tolú Viejo y Casa de Piedra en el corregimiento Las Mercedes en San Jacinto. Esta zona cuenta con muchas iniciativas de jóvenes y gran liderazgo femenino y LGBTQ+, el entorno lleno de bosques y de ríos lo hace fértil para los proyectos productivos y de servicios; y por supuesto cuenta con población diversa y activa en los procesos comunitarios. También es una región con muchos retos de conectividad y muchas oportunidades para mejorar los servicios de salud y apoyos psicoemocionales.
+1. Las veredas Borrachera y La Bonga en El Bagre, Antioquia. 
 
+2. La vereda El Banco en Anorí, Antioquia. 
 
+3. La vereda La Paulina en Valdivia, Antioquia.  
 
-En la región de Bajo Cauca y nordeste Antioqueño, Hilando Vidas y Esperanza trabajará con las veredas Borrachera y La Bonga en El Bagre, la vereda El Banco en Anorí y la vereda La Paulina en Valdivia. Estas comunidades, rodeadas de belleza natural han generado procesos alrededor de los bosques donde producen café, chocolate y mucho más; su potencial productivo está soportado en una fuerte tradición comercial que caracteriza la zona y lo hace un espacio para potenciar la producción agrícola. Sus retos más importantes están en la salud y la permanencia del conflicto armado.
+4. Isla de la Amargura en Cáceres, Antioquia. 
 
+5. La Caucana en Tarazá, Antioquia.
 
+ Finalmente, en la región de Pacífico Medio, Alto Patía y Norte del Cauca, zona de montañas donde se produce, entre otras cosas, café, mora y trucha; y se caracteriza por la diversidad étnica (con comunidades afrodescendientes e indígenas), el liderazgo social, la capacidad de organización, y sus sabedores y culturas ancestrales, se focalizaron las siguientes comunidades: 
 
-Finalmente, la tercera región de WLH, el Pacífico Medio, Alto Patía y Norte del Cauca, está compuesta por comunidades con una diversidad étnica muy rica. Las comunidades focalizadas son la Vereda Flayo del Resguardo San Francisco en Toribio, la vereda El Turco en Santander de Quilichao y el Resguardo Kwet-Wala en el municipio de Pradera. Estas comunidades, resilientes y fuertes, han generado procesos de comunicación asociados a la construcción de paz en sus territorios y también procesos de integración de los saberes ancestrales.
+1. La vereda Flayo del Resguardo San Francisco en Toribio, Cauca. 
 
+2. La vereda El Turco en Santander de Quilichao, Cauca.  
 
+3. La vereda La Alsacia, en Buenos Aires, Cauca.  
 
-Con este avance de selección de comunidades, WLH iniciará una serie de proyectos que involucran diferentes colectivos e instituciones; y que está enfocado en mejorar el acceso a los sistemas de salud psicosociales, el trabajo psicoemocional comunitario y el empoderamiento económico, pilares de Hilando Vidas y Esperanza. Apoyados en una estrategia integral, donde el ser humano está en el centro, el trabajo consistirá en generar una cadena de alianzas con diferentes sectores, para combatir la revictimización, romper los ciclos de violencia y valorar la resiliencia de las comunidades y aprender de ellas. 
+4. El Resguardo Kwet-Wala en el municipio de Pradera, Valle. 
 
+5. El Consejo Comunitario de Punta Soldado, en Buenaventura, Valle.   
 
+Las tres regiones en las que opera el Programa (1. Montes de María; 2. Bajo Cauca y Nordeste Antioqueño; y 3. Pacífico Medio, Alto Patía y Norte del Cauca) cuentan con un potencial agrícola y productivo; un tejido social con procesos sociales, líderes y lideresas que han venido creando, desde la cultura, el deporte, la educación, la agricultura y los saberes propios, oportunidades e iniciativas para superar la violencia. A partir de esta selección de comunidades, WLH avanza, de la mano de la institucionalidad local y nacional, una intervención integral que permita mejorar el acceso a los servicios de salud mental y psicosocial; las relaciones comunitarias; y el empoderamiento económico. 
+
+Durante los últimos meses, el equipo del Programa ha realizado jornadas de diálogo y socialización con las comunidades para conocerlas más a profundidad e informarles sobre su selección. Así mismo, el Programa realizó visitas familiares; diagnósticos rurales participativos;  concertación de agendas culturales; y la construcción participativa los planes de trabajo de intervención integral, que serán implementados en un periodo de aproximadamente un año.
 
 <!--EndFragment-->
