@@ -26,18 +26,18 @@ centros_poblados_corregimientos:
   - Las Pampas
   - Nicaragua
   - Puerto Santo
-distribucion_poblacional_hombres: 13794
-distribucion_poblacional_mujeres: 12666
-poblacion_discapacidad: 2422
+distribucion_poblacional_hombres: '13794'
+distribucion_poblacional_mujeres: '12666'
+poblacion_discapacidad: '2422'
 comunidades_etnicas_zona:
   - Zenú
   - Embera Chamí
-asentamientos_indigenas: 10
-resguardos_indigenas: 4
-consejos_comunitarios: 3
-total_poblacion_victima: 10368
-num_sujetos_reparacion_colectiva: 1
-num_planes_retorno_reubicacion_colectiva: 1
+asentamientos_indigenas: '10'
+resguardos_indigenas: '4'
+consejos_comunitarios: '3'
+total_poblacion_victima: '10368'
+num_sujetos_reparacion_colectiva: '1'
+num_planes_retorno_reubicacion_colectiva: '1'
 territorio_entidades_snariv_sivjrnr:
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -57,11 +57,11 @@ priorizacion_convivencia_social_salud_mental: Tasa de fecundidad específica 10-
 region: Bajo Cauca y Nordeste Antioqueño
 priorizacion_sexualidad_derechos_sexuales_reproductivos: Falta de caracterización de la población vulnerable
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
-  Promoción de la afiliación al SGSSS, afiliación en línea, lecturas públicas,
-  vigilancia en salud pública, etc
+  "Promoción de la afiliación al SGSSS, afiliación en línea, lecturas públicas,
+  vigilancia en salud pública, etc"
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
-  Promoción de la afiliación al SGSSS, afiliación en línea, lecturas públicas,
-  vigilancia en salud pública, etc
+  "Promoción de la afiliación al SGSSS, afiliación en línea, lecturas públicas,
+  vigilancia en salud pública, etc"
 eventos_salud_publica_predominantes:
   - Malaria
   - Leishmaniasis Cutánea
@@ -108,7 +108,7 @@ espacios_socio_comunitarios:
   - ' Casa de la Cultura León Álvarez Palacios'
 medios_comunicacion:
   - Cáceres Stereo
-iniciativas_org_sociedad_civil: 21
+iniciativas_org_sociedad_civil: '21'
 programas_usaid:
   - Justicia para una Paz Sostenible
   - ' Mujeres de Oro'

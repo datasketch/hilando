@@ -22,17 +22,17 @@ centros_poblados_corregimientos:
   - Puerto Valdivia
   - Raudal Viejo
   - Puerto Raudal
-distribucion_poblacional_hombres: 5791
-distribucion_poblacional_mujeres: 5720
-poblacion_discapacidad: 731
+distribucion_poblacional_hombres: '5791'
+distribucion_poblacional_mujeres: '5720'
+poblacion_discapacidad: '731'
 comunidades_etnicas_zona:
   - ''
 asentamientos_indigenas: ''
-resguardos_indigenas: 1
+resguardos_indigenas: '1'
 consejos_comunitarios: ''
-total_poblacion_victima: 6310
-num_sujetos_reparacion_colectiva: 0
-num_planes_retorno_reubicacion_colectiva: 0
+total_poblacion_victima: '6310'
+num_sujetos_reparacion_colectiva: '0'
+num_planes_retorno_reubicacion_colectiva: '0'
 territorio_entidades_snariv_sivjrnr:
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
   - >-
@@ -54,15 +54,15 @@ priorizacion_convivencia_social_salud_mental: >-
 region: Bajo Cauca y Nordeste Antioqueño
 priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   Tasa de mortalidad infantil,"Discapacidad del movimiento de brazos, manos,
-  piernas y cuerpo
+  piernas y cuerpo"
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
   Dificultades en el acceso a los servicios de salud en la población del área
   rural,"Promoción de la afiliación al SGSSS, afiliación en línea, lecturas
-  públicas, vigilancia en salud pública, etc
+  públicas, vigilancia en salud pública, etc"
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
   Dificultades en el acceso a los servicios de salud en la población del área
   rural,"Promoción de la afiliación al SGSSS, afiliación en línea, lecturas
-  públicas, vigilancia en salud pública, etc
+  públicas, vigilancia en salud pública, etc"
 eventos_salud_publica_predominantes:
   - Leishmaniasis Cutánea
   - Vigilancia en salud pública de la violencia de género e intrafamiliar
@@ -119,7 +119,7 @@ medios_comunicacion:
   - Digital Stereo
   - ' TeleValdivia'
   - ' Emisora Briceño Estéreo'
-iniciativas_org_sociedad_civil: 8
+iniciativas_org_sociedad_civil: '8'
 programas_usaid:
   - Justicia para una Paz Sostenible
   - ' Mujeres de Oro'
@@ -128,5 +128,5 @@ programas_usaid:
   - ' Oro Legal'
 comunidad_focalizada:
   - La Paulina
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Valdivia 
+
 ---

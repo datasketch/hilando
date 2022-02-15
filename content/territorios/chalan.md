@@ -24,17 +24,17 @@ centros_poblados_corregimientos:
   - Nuevo Manzanares
   - Desbarrancado
   - Montebello
-distribucion_poblacional_hombres: 2362
-distribucion_poblacional_mujeres: 2063
-poblacion_discapacidad: 620
+distribucion_poblacional_hombres: '2362'
+distribucion_poblacional_mujeres: '2063'
+poblacion_discapacidad: '620'
 comunidades_etnicas_zona:
   - Chale
-asentamientos_indigenas: 1
+asentamientos_indigenas: '1'
 resguardos_indigenas: ''
 consejos_comunitarios: ''
-total_poblacion_victima: 3889
-num_sujetos_reparacion_colectiva: 0
-num_planes_retorno_reubicacion_colectiva: 5
+total_poblacion_victima: '3889'
+num_sujetos_reparacion_colectiva: '0'
+num_planes_retorno_reubicacion_colectiva: '5'
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -46,11 +46,11 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   Discapacidad en personas mayores,Alta dependencia infantil,Población víctima
   del conflicto armado
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 eventos_salud_publica_predominantes:
@@ -105,11 +105,11 @@ espacios_socio_comunitarios:
 medios_comunicacion:
   - Perifoneo
   - ' Volantes'
-iniciativas_org_sociedad_civil: 26
+iniciativas_org_sociedad_civil: '26'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada:
   - La Ceiba
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Chal%C3%A1n
+
 ---

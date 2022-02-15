@@ -29,18 +29,18 @@ centros_poblados_corregimientos:
   - Paloblanco
   - La Esperanza
   - Munchique
-distribucion_poblacional_hombres: 12616
-distribucion_poblacional_mujeres: 12641
-poblacion_discapacidad: 2220
+distribucion_poblacional_hombres: '12616'
+distribucion_poblacional_mujeres: '12641'
+poblacion_discapacidad: '2220'
 comunidades_etnicas_zona:
   - Nasa
   - Afrocolombianos
 asentamientos_indigenas: ''
-resguardos_indigenas: 3
-consejos_comunitarios: 5
-total_poblacion_victima: 8962
-num_sujetos_reparacion_colectiva: 7
-num_planes_retorno_reubicacion_colectiva: 1
+resguardos_indigenas: '3'
+consejos_comunitarios: '5'
+total_poblacion_victima: '8962'
+num_sujetos_reparacion_colectiva: '7'
+num_planes_retorno_reubicacion_colectiva: '1'
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -51,10 +51,10 @@ territorio_entidades_snariv_sivjrnr:
 priorizacion_convivencia_social_salud_mental: >-
   Enfermedades de Transmisión Sexual,Embarazo en Adolescentes (10-19
   años),"Falta educación sobre la política de SSR, interrupción voluntaria del
-  embarazo, y prevención de ITS
+  embarazo, y prevención de ITS"
 region: Pacífico Medio, Alto Patía y Norte del Cauca
 priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
-  Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Población
+  "Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Población
   víctima del conflicto armado,El porcentaje de hogares con analfabetismo supera
   las cifras del departamento
 priorizacion_gestion_diferencial_poblaciones_vulnerables: Cobertura de parte institucional,Coberturas de vacunación
@@ -109,7 +109,7 @@ espacios_socio_comunitarios:
   - ' Polideportivo Ceral Munchique'
 medios_comunicacion:
   - No se identificaron
-iniciativas_org_sociedad_civil: 6
+iniciativas_org_sociedad_civil: '6'
 programas_usaid:
   - Programa de Derechos Humanos
   - ' Territorios de Oportunidad: "Fortalecer la capacidad de las comunidades López'
@@ -129,5 +129,5 @@ programas_usaid:
   - ' Jóvenes Resilientes'
 comunidad_focalizada:
   - Alsacia
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Buenos%20Aires
+
 ---

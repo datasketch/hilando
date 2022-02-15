@@ -4,7 +4,7 @@ departamento: Cauca
 description: >-
   El Municipio de Toribio se ubica al nororiente del departamento del Cauca, a
   una distancia de 123 kilómetros de la capital del departamento, Popayán y a 83
-  kilómetros de la ciudad de Cali.
+  kilómetros de la ciudad de Cali. 
 grafica_ubicacion_geografica: /charts/municipios/toribio/ubicacion_geografica.html
 grafica_comunidades_focalizadas: /charts/municipios/toribio/comunidades_focalizadas.html
 grafica_poblacion_genero: /charts/municipios/toribio/poblacion_genero.html
@@ -21,17 +21,17 @@ centros_poblados_corregimientos:
   - Tacueyó
   - Caloto Nuevo
   - El Huila
-distribucion_poblacional_hombres: 15544
-distribucion_poblacional_mujeres: 15110
-poblacion_discapacidad: 2931
+distribucion_poblacional_hombres: '15544'
+distribucion_poblacional_mujeres: '15110'
+poblacion_discapacidad: '2931'
 comunidades_etnicas_zona:
   - Nasa
 asentamientos_indigenas: ''
-resguardos_indigenas: 3
+resguardos_indigenas: '3'
 consejos_comunitarios: ''
-total_poblacion_victima: 9002
-num_sujetos_reparacion_colectiva: 1
-num_planes_retorno_reubicacion_colectiva: 0
+total_poblacion_victima: '9002'
+num_sujetos_reparacion_colectiva: '1'
+num_planes_retorno_reubicacion_colectiva: '0'
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -51,7 +51,8 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   en 11.3 de la tasa de incidencia de mujeres violentadas por 100 reportadas en
   SIVIGILA,Implementar la estrategia de rehabilitación basada en
   comunidad,"Construir, definir e implementar una agenda social concertada, que
-  unifica la respuesta transitoria de atención integral a víctimas del conflicto
+  unifica la respuesta transitoria de atención integral a víctimas del
+  conflicto"
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
   Número de informes sobre las actividades del proyecto de fortalecimiento de
   las capacidades institucionales y apoyo a la gestión en Salud Pública,Mantener
@@ -133,7 +134,7 @@ espacios_socio_comunitarios:
 medios_comunicacion:
   - NASA STEREO
   - ' Perifoneo'
-iniciativas_org_sociedad_civil: 48
+iniciativas_org_sociedad_civil: '48'
 programas_usaid:
   - Programa de Derechos Humanos
   - ' Territorios de Oportunidad: "Fortalecer la capacidad de las comunidades López'

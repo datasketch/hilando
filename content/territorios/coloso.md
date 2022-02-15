@@ -31,17 +31,17 @@ centros_poblados_corregimientos:
   - La Estacion
   - Marathon
   - Pueblo Nuevo
-distribucion_poblacional_hombres: 4098
-distribucion_poblacional_mujeres: 3705
-poblacion_discapacidad: 489
+distribucion_poblacional_hombres: '4098'
+distribucion_poblacional_mujeres: '3705'
+poblacion_discapacidad: '489'
 comunidades_etnicas_zona:
   - ''
 asentamientos_indigenas: ''
 resguardos_indigenas: ''
 consejos_comunitarios: ''
-total_poblacion_victima: 6697
-num_sujetos_reparacion_colectiva: 1
-num_planes_retorno_reubicacion_colectiva: 10
+total_poblacion_victima: '6697'
+num_sujetos_reparacion_colectiva: '1'
+num_planes_retorno_reubicacion_colectiva: '10'
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -55,11 +55,11 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   Discapacidad en personas mayores,Alta dependencia infantil,Población víctima
   del conflicto armado
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 eventos_salud_publica_predominantes:
@@ -114,11 +114,11 @@ espacios_socio_comunitarios:
 medios_comunicacion:
   - COLOSO STEREO (Ricaurte)
   - ' Perifoneo'
-iniciativas_org_sociedad_civil: 22
+iniciativas_org_sociedad_civil: '22'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada:
   - El Paraiso
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Colos%C3%B3
+
 ---

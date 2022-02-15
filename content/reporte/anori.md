@@ -18,17 +18,17 @@ grafica_negligencia_abandono: /charts/municipios/anori/negligencia_abandono.html
 ficha: /fichas/anori/ficha.pdf
 centros_poblados_corregimientos:
   - Liberia
-distribucion_poblacional_hombres: 6998
-distribucion_poblacional_mujeres: 7504
-poblacion_discapacidad: 1564
+distribucion_poblacional_hombres: '6998'
+distribucion_poblacional_mujeres: '7504'
+poblacion_discapacidad: '1564'
 comunidades_etnicas_zona:
   - ''
 asentamientos_indigenas: ''
 resguardos_indigenas: ''
-consejos_comunitarios: 3
-total_poblacion_victima: 6008
-num_sujetos_reparacion_colectiva: 0
-num_planes_retorno_reubicacion_colectiva: 0
+consejos_comunitarios: '3'
+total_poblacion_victima: '6008'
+num_sujetos_reparacion_colectiva: '0'
+num_planes_retorno_reubicacion_colectiva: '0'
 territorio_entidades_snariv_sivjrnr:
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
@@ -123,7 +123,7 @@ medios_comunicacion:
   - Anorí Stereo
   - ' Aspanor TV'
   - ' Tele Antioquia'
-iniciativas_org_sociedad_civil: 23
+iniciativas_org_sociedad_civil: '23'
 programas_usaid:
   - Justicia para una Paz Sostenible
   - ' Colombia Transforma'

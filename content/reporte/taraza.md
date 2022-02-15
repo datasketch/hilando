@@ -1,8 +1,5 @@
 ---
 title: Tarazá
-menu:
-  region:
-    parent: bajo-cauca-y-nordeste-antioqueno
 departamento: Antioquia
 description: ''
 grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html

@@ -46,17 +46,17 @@ centros_poblados_corregimientos:
   - San José
   - Vilachí
   - Bellavista
-distribucion_poblacional_hombres: 46855
-distribucion_poblacional_mujeres: 49177
-poblacion_discapacidad: 6923
+distribucion_poblacional_hombres: '46855'
+distribucion_poblacional_mujeres: '49177'
+poblacion_discapacidad: '6923'
 comunidades_etnicas_zona:
   - Nasa
 asentamientos_indigenas: ''
-resguardos_indigenas: 5
-consejos_comunitarios: 6
-total_poblacion_victima: 15935
-num_sujetos_reparacion_colectiva: 6
-num_planes_retorno_reubicacion_colectiva: 2
+resguardos_indigenas: '5'
+consejos_comunitarios: '6'
+total_poblacion_victima: '15935'
+num_sujetos_reparacion_colectiva: '6'
+num_planes_retorno_reubicacion_colectiva: '2'
 territorio_entidades_snariv_sivjrnr:
   - Alcaldía municipal (SNARIV)
   - Secretarías municipales (SNARIV)
@@ -77,7 +77,7 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   territorial,Mortalidad materno infantil alta en grupos étnicos,Porcentaje
   importante de hogares con barreras de acceso a los servicios para cuidado de
   la primera infancia,"Discapacidad del movimiento de brazos, manos, piernas y
-  cuerpo
+  cuerpo"
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
   Deficiente capacidad instalada para garantizar atención integral a la
   población,Necesidad de fortalecimiento y continuidad de la implementación de
@@ -138,7 +138,7 @@ medios_comunicacion:
   - RADIO CELESTIAL
   - ' UMA KIWE-STEREO'
   - ' EMISORA MONDOMO STEREO'
-iniciativas_org_sociedad_civil: 41
+iniciativas_org_sociedad_civil: '41'
 programas_usaid:
   - Programa de Derechos Humanos
   - ' Iniciativa de Finanzas Rurales'

@@ -33,17 +33,17 @@ centros_poblados_corregimientos:
   - La Floresta
   - Los Altos
   - Nueva Esperanza
-distribucion_poblacional_hombres: 10216
-distribucion_poblacional_mujeres: 9817
-poblacion_discapacidad: 463
+distribucion_poblacional_hombres: '10216'
+distribucion_poblacional_mujeres: '9817'
+poblacion_discapacidad: '463'
 comunidades_etnicas_zona:
   - Yuma Zenú
 asentamientos_indigenas: ''
-resguardos_indigenas: 1
+resguardos_indigenas: '1'
 consejos_comunitarios: ''
-total_poblacion_victima: 11787
-num_sujetos_reparacion_colectiva: 2
-num_planes_retorno_reubicacion_colectiva: 7
+total_poblacion_victima: '11787'
+num_sujetos_reparacion_colectiva: '2'
+num_planes_retorno_reubicacion_colectiva: '7'
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -57,11 +57,11 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
   Discapacidad en personas mayores,Alta dependencia infantil,Población víctima
   del conflicto armado
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
-  Debilidades en infraestructura, dotación, talento humano para desarrollar
+  "Debilidades en infraestructura, dotación, talento humano para desarrollar
   acciones de IVC",Contratación tardía de talento humano para acciones en salud
   pública,Debilidades en la calidad del RIPS y del registro clínico
 eventos_salud_publica_predominantes:
@@ -105,7 +105,7 @@ observaciones_ppales_actividades_economicas: |-
   Ganadería extensiva 
   Acuicultura 
   Artesanías como sombrero volteado y artesanías de totumo 
-  Turismo de naturaleza
+  Turismo de naturaleza 
 ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
@@ -125,7 +125,7 @@ espacios_socio_comunitarios:
   - ' Casa de la cultura'
 medios_comunicacion:
   - LA NUEVA 100.7
-iniciativas_org_sociedad_civil: 52
+iniciativas_org_sociedad_civil: '52'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
@@ -134,5 +134,5 @@ programas_usaid:
   - ' Fondo de Inversiones para la Paz'
 comunidad_focalizada:
   - La Piche
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Toluviejo
+
 ---

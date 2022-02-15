@@ -22,17 +22,17 @@ centros_poblados_corregimientos:
   - San Agustín
   - San Cayetano
   - San Pedro Consolado
-distribucion_poblacional_hombres: 18152
-distribucion_poblacional_mujeres: 17286
-poblacion_discapacidad: 489
+distribucion_poblacional_hombres: '18152'
+distribucion_poblacional_mujeres: '17286'
+poblacion_discapacidad: '489'
 comunidades_etnicas_zona:
   - Zenú
 asentamientos_indigenas: ''
 resguardos_indigenas: ''
-consejos_comunitarios: 2
-total_poblacion_victima: 20907
-num_sujetos_reparacion_colectiva: 1
-num_planes_retorno_reubicacion_colectiva: 6
+consejos_comunitarios: '2'
+total_poblacion_victima: '20907'
+num_sujetos_reparacion_colectiva: '1'
+num_planes_retorno_reubicacion_colectiva: '6'
 territorio_entidades_snariv_sivjrnr:
   - Alcaldía municipal (SNARIV)
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
@@ -49,8 +49,8 @@ priorizacion_convivencia_social_salud_mental: >-
   efectivo de los Derechos Sexuales y Reproductivo
 region: Montes de María
 priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
-  Implementación de la política de Salud en el Ámbito laboral, Implementada la
-  Estrategia AIEPI en su componente Comunitario a 800 familias
+  "Implementación de la política de Salud en el Ámbito laboral, Implementada la
+  Estrategia AIEPI en su componente Comunitario a 800 familias"
 priorizacion_gestion_diferencial_poblaciones_vulnerables: n/a
 priorizacion_fortalecimiento_autoridad_sanitaria: n/a
 eventos_salud_publica_predominantes:
@@ -102,7 +102,7 @@ espacios_socio_comunitarios:
 medios_comunicacion:
   - Innovación Stereo
   - ' Asosanjuan'
-iniciativas_org_sociedad_civil: 13
+iniciativas_org_sociedad_civil: '13'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Juntos por la Transparencia'

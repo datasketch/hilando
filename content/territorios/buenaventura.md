@@ -111,21 +111,21 @@ centros_poblados_corregimientos:
   - Zaragoza Alto 1
   - Zaragoza Puente San Martín 1
   - Zaragoza Puente San Martín 2
-distribucion_poblacional_hombres: 122530
-distribucion_poblacional_mujeres: 135915
-poblacion_discapacidad: 19019
+distribucion_poblacional_hombres: '122530'
+distribucion_poblacional_mujeres: '135915'
+poblacion_discapacidad: '19019'
 comunidades_etnicas_zona:
   - Wounan
   - Embera Chamí
   - Nasa
   - Eperara Siapidara
   - Inga
-asentamientos_indigenas: 25
-resguardos_indigenas: 11
-consejos_comunitarios: 46
-total_poblacion_victima: 171091
-num_sujetos_reparacion_colectiva: 17
-num_planes_retorno_reubicacion_colectiva: 7
+asentamientos_indigenas: '25'
+resguardos_indigenas: '11'
+consejos_comunitarios: '46'
+total_poblacion_victima: '171091'
+num_sujetos_reparacion_colectiva: '17'
+num_planes_retorno_reubicacion_colectiva: '7'
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - >-
@@ -149,7 +149,7 @@ priorizacion_convivencia_social_salud_mental: >-
   perinatal
 region: Pacífico Medio, Alto Patía y Norte del Cauca
 priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
-  Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Discapacidad
+  "Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Discapacidad
   del sistema nervioso
 priorizacion_gestion_diferencial_poblaciones_vulnerables: Morbilidad por condiciones mal clasificadas
 priorizacion_fortalecimiento_autoridad_sanitaria: Morbilidad por condiciones mal clasificadas
@@ -238,7 +238,7 @@ medios_comunicacion:
   - ' Periódico El Puerto'
   - ' Buenaventura Viva'
   - ' Buenaventura en línea'
-iniciativas_org_sociedad_civil: 60
+iniciativas_org_sociedad_civil: '60'
 programas_usaid:
   - Active Buenaventura
   - ' Alianzas para la reconciliación'
@@ -248,5 +248,5 @@ programas_usaid:
   - ' Victims Participation and Collective Reparation Activity'
 comunidad_focalizada:
   - Punta Soldado
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Buenaventura
+
 ---

@@ -30,21 +30,21 @@ centros_poblados_corregimientos:
   - Borrachera
   - Caño Claro
   - Los Almendros
-distribucion_poblacional_hombres: 14326
-distribucion_poblacional_mujeres: 15262
-poblacion_discapacidad: 1019
+distribucion_poblacional_hombres: '14326'
+distribucion_poblacional_mujeres: '15262'
+poblacion_discapacidad: '1019'
 comunidades_etnicas_zona:
   - Zenú
   - Emberá Katios
-asentamientos_indigenas: 11
+asentamientos_indigenas: '11'
 resguardos_indigenas: ''
-consejos_comunitarios: 12
-total_poblacion_victima: 18249
-num_sujetos_reparacion_colectiva: 3
-num_planes_retorno_reubicacion_colectiva: 0
+consejos_comunitarios: '12'
+total_poblacion_victima: '18249'
+num_sujetos_reparacion_colectiva: '3'
+num_planes_retorno_reubicacion_colectiva: '0'
 territorio_entidades_snariv_sivjrnr:
   - >-
-    Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
+    "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
     Repeteción (CEV) (SIVJRNR)"
   - Jurisdicción Especial para la Paz (JEP) (SIVJRNR)
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
@@ -62,9 +62,9 @@ territorio_entidades_snariv_sivjrnr:
   - Agencia de Renovación del Territorio (ART) (SNARIV)
   - Alcaldía municipal (SNARIV)
 priorizacion_convivencia_social_salud_mental: >-
-  Falta educación sobre la política de SSR, interrupción voluntaria del
+  "Falta educación sobre la política de SSR, interrupción voluntaria del
   embarazo, y prevención de ITS",Embarazo en Adolescentes (10-19 años),"Aumento
-  de los casos de infecciones de trasmisión sexual, VIH SIDA
+  de los casos de infecciones de trasmisión sexual, VIH SIDA"
 region: Bajo Cauca y Nordeste Antioqueño
 priorizacion_sexualidad_derechos_sexuales_reproductivos: Falta de caracterización de la población vulnerable
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
@@ -135,7 +135,7 @@ medios_comunicacion:
   - ' Corporación Bagre Digital Stereo Emisora Comunitaria'
   - ' Emisora La Nuestra'
   - ' Emisora Latina Stereo'
-iniciativas_org_sociedad_civil: 6
+iniciativas_org_sociedad_civil: '6'
 programas_usaid:
   - Justicia para una Paz Sostenible
   - ' Mujeres de Oro'

@@ -25,17 +25,17 @@ centros_poblados_corregimientos:
   - El Recreo
   - La Feria
   - La Cruz
-distribucion_poblacional_hombres: 20895
-distribucion_poblacional_mujeres: 22657
-poblacion_discapacidad: 4574
+distribucion_poblacional_hombres: '20895'
+distribucion_poblacional_mujeres: '22657'
+poblacion_discapacidad: '4574'
 comunidades_etnicas_zona:
   - ''
 asentamientos_indigenas: ''
-resguardos_indigenas: 1
-consejos_comunitarios: 7
-total_poblacion_victima: 7391
-num_sujetos_reparacion_colectiva: 4
-num_planes_retorno_reubicacion_colectiva: 2
+resguardos_indigenas: '1'
+consejos_comunitarios: '7'
+total_poblacion_victima: '7391'
+num_sujetos_reparacion_colectiva: '4'
+num_planes_retorno_reubicacion_colectiva: '2'
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -63,7 +63,7 @@ priorizacion_convivencia_social_salud_mental: >-
   cinco años,Mortalidad materna y perinatal
 region: Pacífico Medio, Alto Patía y Norte del Cauca
 priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
-  Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Tasa de
+  "Discapacidad del movimiento de brazos, manos, piernas y cuerpo",Tasa de
   mortalidad en menores de un año por mil NV en zona rural,Tasa de mortalidad en
   menores de un año por mil NV afrodescendientes,El porcentaje de hogares con
   analfabetismo supera las cifras del departamento,Discapacidad del sistema
@@ -124,7 +124,7 @@ medios_comunicacion:
   - La pradereña Entérate Pradera
   - ' Pradera Radio Online'
   - ' Cañaveral Stereo'
-iniciativas_org_sociedad_civil: 23
+iniciativas_org_sociedad_civil: '23'
 programas_usaid:
   - Avanza Pacífico
   - ' Justicia para una Paz Sostenible'

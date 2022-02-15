@@ -25,17 +25,17 @@ centros_poblados_corregimientos:
   - Las Charquitas
   - Paraíso
   - Las Mercedes
-distribucion_poblacional_hombres: 12071
-distribucion_poblacional_mujeres: 11505
-poblacion_discapacidad: 2921
+distribucion_poblacional_hombres: '12071'
+distribucion_poblacional_mujeres: '11505'
+poblacion_discapacidad: '2921'
 comunidades_etnicas_zona:
   - ''
 asentamientos_indigenas: ''
 resguardos_indigenas: ''
-consejos_comunitarios: 2
-total_poblacion_victima: 19127
-num_sujetos_reparacion_colectiva: 4
-num_planes_retorno_reubicacion_colectiva: 5
+consejos_comunitarios: '2'
+total_poblacion_victima: '19127'
+num_sujetos_reparacion_colectiva: '4'
+num_planes_retorno_reubicacion_colectiva: '5'
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -55,11 +55,11 @@ priorizacion_sexualidad_derechos_sexuales_reproductivos: >-
 priorizacion_gestion_diferencial_poblaciones_vulnerables: >-
   Infraestructura en los centros de salud deteriorada,Falta de compromiso de los
   actores en salud,"Debilidades en infraestructura, dotación, talento humano
-  para desarrollar acciones de IVC
+  para desarrollar acciones de IVC"
 priorizacion_fortalecimiento_autoridad_sanitaria: >-
   Infraestructura en los centros de salud deteriorada,Falta de compromiso de los
   actores en salud,"Debilidades en infraestructura, dotación, talento humano
-  para desarrollar acciones de IVC
+  para desarrollar acciones de IVC"
 eventos_salud_publica_predominantes:
   - Agresiones por animales potencialmente transmisores de rabia
   - Dengue
@@ -116,7 +116,7 @@ medios_comunicacion:
   - ' Tele San Jacinto'
   - ' Emisora la San Jacintera'
   - ' Digital San Jacinto'
-iniciativas_org_sociedad_civil: 10
+iniciativas_org_sociedad_civil: '10'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
