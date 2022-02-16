@@ -7,14 +7,14 @@ departamento: Antioquia
 description: ''
 grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 grafica_comunidades_focalizadas: /charts/municipios/taraza/comunidades_focalizadas.html
-grafica_poblacion_genero: /charts/municipios/taraza/poblacion_genero.html
-grafica_area_geografica_genero: /charts/municipios/taraza/area_geografica_genero.html
-grafica_pertenencia_etnica: /charts/municipios/taraza/pertenencia_etnica.html
-grafica_conflicto_identidad: /charts/municipios/taraza/conflicto_identidad.html
-grafica_violencia_sexual: /charts/municipios/taraza/violencia_sexual.html
-grafica_violencia_fisica: /charts/municipios/taraza/violencia_fisica.html
-grafica_violencia_psicologica: /charts/municipios/taraza/violencia_psicologica.html
-grafica_negligencia_abandono: /charts/municipios/taraza/negligencia_abandono.html
+grafica_poblacion_genero: ''
+grafica_area_geografica_genero: ''
+grafica_pertenencia_etnica: ''
+grafica_conflicto_identidad: ''
+grafica_violencia_sexual: ''
+grafica_violencia_fisica: ''
+grafica_violencia_psicologica: ''
+grafica_negligencia_abandono: ''
 ficha: /fichas/taraza/ficha.pdf
 centros_poblados_corregimientos:
   - La Caucana
