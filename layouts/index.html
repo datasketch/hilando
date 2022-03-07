@@ -77,15 +77,16 @@
                         iniciativas culturales y de comunicación; asociaciones campesinas; y organizaciones de la sociedad civil 
                         que trabajan en proyectos productivos, derechos humanos, género e inclusión, y protección del medio ambiente.
                     </p>
-                    
+                    <p class="text-lg xl:text-xl">
+                        Los municipios fueron priorizados con base a criterios como vulnerabilidad, violencia, institucionalidad y ambiente económico.
+                    </p>
                    
                 </div>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
-                <p class="text-lg xl:text-xl">
-                        Los municipios fueron priorizados con base a criterios como vulnerabilidad, violencia, institucionalidad y ambiente económico.
-                    </p>
                 
+                <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/targeted-territories.svg"
+                alt="targeted territories">
             </div>
             <div class="lg:col-start-1 lg:col-end-7">
                 {{ $territories := where .Site.RegularPages "Section" "territorios" }}
@@ -102,8 +103,7 @@
                 </ul>
                 {{ end }}
             </div>
-            <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/targeted-territories.svg"
-                alt="targeted territories">
+            
         </div>
     </div>
     <!-- TARGETED TERRITORIES END -->
