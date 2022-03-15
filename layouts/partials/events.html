@@ -1,28 +1,29 @@
 {{ $data := .Site.Data.eventos }}
-<div class="lg:col-start-1 lg:col-end-13 relative py-12 lg:py-16 xl:py-20" style="background-color: #3A3C6A;">
+<div class="lg:col-start-1 lg:col-end-13 relative py-24 lg:py-28 xl:py-32">
     <div class="mx-auto w-9/12 relative">
-        <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-4 lg:mb-6 xl:mb-8 text-center text-white">
+        <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-12 xl:mb-16 text-center text-purple">
             Próximos
-            <span class="px-2" style="background-color: #6C3C66;">eventos</span>
+            <span class="px-2" style="background-color: #BF8EA4;">eventos</span>
         </h2>
-        <div class="mb-12 lg:mb-16 xl:mb-20 slider-wrapper">
+        <div class="slider-wrapper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    {{ range where $data "mes" "Enero" }}
+                    {{ range where $data "mes" "Marzo" }}
                     <div class="swiper-slide">
-                        <div class="relative text-white p-10 hover:shadow-lg duration-300"
-                            style="background-color: #3A3C6A;">
-                            <h3 class="relative text-lg lg:text-xl xl:text-2xl font-black mb-2 lg:mb-3 border-b-2 pb-2"
-                                style="border-color: #963B62;">
+                        <div class="relative bg-purple bg-opacity-75 text-white p-10 space-y-4 duration-300">
+                            <h3 class="relative text-lg lg:text-xl xl:text-2xl font-black border-b-2 pb-2 border-purple border-opacity-30">
                                 <img class="absolute -top-4 xl:-top-3 left-0" src="/images/public/triangle-up.svg"
                                     alt="tiangle up">
                                 <span class="relative">{{ .titulo }}</span>
                             </h3>
                             <p class="relative lg:text-lg xl:text-xl">
-                                <img class="absolute -top-2 lg:-top-3 right-0" src="/images/public/triangle-down.svg"
+                                <img class="absolute -top-2 lg:-top-4 right-0" src="/images/public/triangle-down.svg"
                                     alt="tiangle up">
                                 <span class="relative">{{ .mes }}</span>
                             </p>
+                            <a class="uppercase bg-purple text-white py-2 px-6 xl:text-lg inline-block" href="/eventos">
+                            Conoce más
+                        </a>
                         </div>
                     </div>
                     {{ end }}
@@ -30,12 +31,6 @@
             </div>
             <div class="slider-prev"></div>
             <div class="slider-next"></div>
-        </div>
-        <div class="text-center">
-            <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . " eventos.md" }}"
-                style="background-color: #C5296A;">
-                Conoce más
-            </a>
         </div>
     </div>
     <img src="/images/public/line-shape.svg" alt="line shape"

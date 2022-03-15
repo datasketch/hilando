@@ -1,4 +1,4 @@
-import { setupSlider } from '../js/lib/slider';
+import {setupSlider} from '../js/lib/slider';
 
 setupSlider('.slider-wrapper', {
   slidesPerView: 1,
@@ -10,7 +10,7 @@ setupSlider('.slider-wrapper', {
   breakpoints: {
     1024: {
       slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 40,
     },
   },
 });

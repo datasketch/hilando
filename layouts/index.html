@@ -1,8 +1,7 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER HOME PAGE -->
-    <div class="lg:col-start-1 lg:col-end-13 relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-        style="height: 550px;">
+    <div class="lg:col-start-1 lg:col-end-13 relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer" style="height: 550px;">
         <div class="mx-auto w-10/12 lg:w-full">
             <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
                 HILANDO VIDAS Y ESPERANZA
@@ -10,9 +9,9 @@
                     WEAVING LIVES AND HOPE
                 </span>
             </h1>
-            {{/*  <p class="absolute bottom-4 right-4 italic text-white hidden lg:block">
+            {{/* <p class="absolute bottom-4 right-4 italic text-white hidden lg:block">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing.
-            </p>  */}}
+            </p> */}}
         </div>
     </div>
     <!-- BANNER HOME PAGE END -->
@@ -27,8 +26,7 @@
                 Nuestra operación va hasta el 31 de marzo de 2026.
             </p>
             <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
-            <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . "sobre-el-programa.md" }}"
-                style="background-color: #D27028;">Sobre
+            <a class="uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " sobre-el-programa.md" }}" style="background-color: #D27028;">Sobre
                 el programa</a>
         </div>
     </div>
@@ -36,10 +34,8 @@
 
     <!-- TARGET POPULATION -->
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12">
-        <img class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 w-full h-full lg:object-cover"
-            src="/images/home/target-population.png" alt="target population">
-        <div class="order-1 lg:order-2 text-center lg:text-left lg:col-start-7 lg:col-end-13 text-white self-stretch flex flex-col justify-center py-16 lg:py-20 xl:py-24"
-            style="background-color: #963B62;">
+        <img class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 w-full h-full lg:object-cover" src="/images/home/target-population.png" alt="target population">
+        <div class="order-1 lg:order-2 text-center lg:text-left lg:col-start-7 lg:col-end-13 text-white self-stretch flex flex-col justify-center py-16 lg:py-20 xl:py-24" style="background-color: #963B62;">
             <div class="mx-auto w-10/12 lg:w-8/12">
                 <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
                     <span class="px-1" style="background-color: #C5296A;">Población</span> objetivo
@@ -71,47 +67,47 @@
                         <span class="px-1" style="background-color: #D7729C;">Territorios</span> focalizados
                     </h2>
                     <p class="text-lg xl:text-xl mb-4 lg:mb-6">
-                        Hilando Vidas y Esperanza se desarrolla en tres regiones gravemente afectadas por el conflicto armado, 
-                        focalizando su intervención en quince municipios PDET, que cuentan con una base comunitaria fuerte 
-                        la cual incluye plataformas juveniles y de mujeres; grupos étnicos; poblaciones diversas; 
-                        iniciativas culturales y de comunicación; asociaciones campesinas; y organizaciones de la sociedad civil 
+                        Hilando Vidas y Esperanza se desarrolla en tres regiones gravemente afectadas por el conflicto armado,
+                        focalizando su intervención en quince municipios PDET, que cuentan con una base comunitaria fuerte
+                        la cual incluye plataformas juveniles y de mujeres; grupos étnicos; poblaciones diversas;
+                        iniciativas culturales y de comunicación; asociaciones campesinas; y organizaciones de la sociedad civil
                         que trabajan en proyectos productivos, derechos humanos, género e inclusión, y protección del medio ambiente.
                     </p>
                     <p class="text-lg xl:text-xl">
                         Los municipios fueron priorizados con base a criterios como vulnerabilidad, violencia, institucionalidad y ambiente económico.
                     </p>
-                   
+
                 </div>
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
-                
-                <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/targeted-territories.svg"
-                alt="targeted territories">
+                <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/targeted-territories.svg" alt="targeted territories">
             </div>
-            <div class="lg:col-start-1 lg:col-end-7">
-                {{ $territories := where .Site.RegularPages "Section" "territorios" }}
-                {{ range $territories.GroupByParam "region" }}
-                <h3 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
-                    {{ .Key }}
-                </h3>
-                <ul class="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 mb-10 lg:mb-8 xl:mb-10 ">
-                    {{ range .Pages }}
-                    <li class="line">
-                        <a class="lg:text-lg xl:text-xl" href="{{ .Permalink }}">{{ .Title }}</a>
-                    </li>
+            <div class="lg:col-start-1 lg:col-end-13">
+                <div class="grid grid-cols-1 lg:grid-cols-3">
+                    {{ $territories := where .Site.RegularPages "Section" "territorios" }}
+                    {{ range $territories.GroupByParam "region" }}
+                    <div>
+                        <h3 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
+                            {{ .Key }}
+                        </h3>
+                        <ul class="space-y-4 mb-10 lg:mb-8 xl:mb-10 ">
+                            {{ range .Pages }}
+                            <li class="line">
+                                <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}">{{ .Title }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
                     {{ end }}
-                </ul>
-                {{ end }}
+                </div>
             </div>
-            
         </div>
     </div>
     <!-- TARGETED TERRITORIES END -->
 
     <!-- PROGRAM IMPACT -->
     <div class="lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12">
-        <div class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 py-16 lg:py-20 xl:py-24 text-white text-center lg:text-left"
-            style="background-color: #4F7435;">
+        <div class="order-2 lg:order-1 lg:col-start-1 lg:col-end-7 py-16 lg:py-20 xl:py-24 text-white text-center lg:text-left" style="background-color: #4F7435;">
             <div class="mx-auto w-10/12 lg:w-8/12">
                 <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-10 lg:mb-4">
                     <span class="px-1" style="background-color: #81A347;">Impacto</span> del Programa
@@ -131,8 +127,7 @@
                 </p>
             </div>
         </div>
-        <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 w-full h-full lg:object-cover"
-            src="/images/home/program-impact.png" alt="program impact">
+        <img class="order-1 lg:order-2 lg:col-start-7 lg:col-end-13 w-full h-full lg:object-cover" src="/images/home/program-impact.png" alt="program impact">
     </div>
     <!-- PROGRAM IMPACT END -->
 
@@ -145,8 +140,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 lg:gap-x-8 mb-12 lg:mb-16 xl:mb-20">
                 {{ range where .Pages "Section" "noticias" }}
                 {{ range first 3 .Pages }}
-                <a href="{{ .RelPermalink }}" class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300"
-                    style="background-color: #F7F8F9; border-color: #B0C58F;">
+                <a href="{{ .RelPermalink }}" class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300" style="background-color: #F7F8F9; border-color: #B0C58F;">
                     <img class="mb-2 lg:mb-4 w-full h-48 object-cover object-center" src="{{ .Params.image }}" alt="notice">
                     <h3 class="text-lg xl:text-xl font-black mb-2 lg:mb-3" style="color: #4F7435;">
                         {{ .Title | safeHTML | truncate 60 }}
@@ -161,8 +155,7 @@
                 {{ end }}
             </div>
             <div class="text-center">
-                <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="{{ relref . " noticias/_index.md"
-                    }}" style="background-color: #C5296A;">Conoce Más</a>
+                <a class="uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " noticias/_index.md" }}" style="background-color: #C5296A;">Conoce Más</a>
             </div>
         </div>
     </div>
@@ -173,14 +166,12 @@
     </div>
 
     <!-- LOREM IPSUM -->
-    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40"
-        style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12">
             <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
                 <span class="px-1" style="background-color: #C493A8;">Mapeo</span> social
             </h2>
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
                 <div class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full">
                     <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
                         Distribución <span class="pl-1 pr-2" style="background-color: #B97D97;">poblacional rural</span>
@@ -191,8 +182,7 @@
                         poblacional que incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas,
                         jóvenes y personas con discapacidad.
                     </p>
-                    <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
-                        style="background-color: #D27028;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
                         Explorar datos
                     </a>
                 </div>
@@ -210,8 +200,7 @@
                         las prioridades en salud establecidas por las autoridades sanitarias municipales y relacionadas
                         con las dimensiones de intervención del Programa y que hacen parte del Plan Decenal de Salud.
                     </p>
-                    <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
-                        style="background-color: #D27028;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
                         Explorar datos
                     </a>
                 </div>
@@ -226,8 +215,7 @@
                         tradición en la agricultura y la producción de artesanías. Existen procesos incipientes de
                         industrialización en algunos municipios e incentivos para el emprendimiento campesino.
                     </p>
-                    <a class="uppercase font-bold text-white py-3 px-6 xl:text-lg" href="#"
-                        style="background-color: #D27028;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
                         Explorar datos
                     </a>
                 </div>
@@ -240,6 +228,19 @@
     <!-- UPCOMING EVENTS -->
     {{ partial "events" . }}
     <!-- UPCOMING EVENTS END -->
+
+    <div class="lg:col-start-1 lg:col-end-13">
+        <div class="bg-newsletter bg-cover bg-center h-72 grid place-items-center">
+            <div class="text-center space-y-6" style="max-width: 356px;">
+                <h3 class="text-white font-bold tk-mr-eaves-sans text-3xl lg:text-4xl">
+                    Conoce el boletín de Hilando Comunidades
+                </h3>
+                <a class="inline-block uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " boletin.md" }}" style="background-color: #D27028;">
+                    Suscríbete al boletín
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 {{ end }}
 {{ define "head" }}

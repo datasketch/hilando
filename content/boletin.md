@@ -1,0 +1,4 @@
+---
+title: Boletín
+layout: boletin
+---
