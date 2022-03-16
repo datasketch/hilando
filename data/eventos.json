@@ -1,602 +1,74 @@
 [
     {
-        "titulo": "Festival Folclórico del Pacífico",
-        "descripcion": "Buenaventura-Festival Folclórico del Pacífico",
-        "departamento": "Valle del Cauca",
-        "municipio": "Buenaventura",
-        "mes": "Julio",
-        "tipo": "Cultural"
-    },
-    {
-        "titulo": "Fiestas Patronales de San Buenaventura",
-        "descripcion": "Buenaventura-Fiestas Patronales de San Buenaventura",
-        "departamento": "Valle del Cauca",
-        "municipio": "Buenaventura",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de la Virgen del Carmen",
-        "descripcion": "Buenaventura-Fiestas de la Virgen del Carmen",
-        "departamento": "Valle del Cauca",
-        "municipio": "Buenaventura",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Mercado Campesino",
-        "descripcion": "Buenos Aires-Mercado Campesino",
-        "departamento": "Cauca",
-        "municipio": "Buenos Aires",
-        "mes": "Julio",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Carnaval de Blancos y Negros",
-        "descripcion": "Buenos Aires-Carnaval de Blancos y Negros",
-        "departamento": "Cauca",
-        "municipio": "Buenos Aires",
-        "mes": "Enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta del San Miguel Arcángel",
-        "descripcion": "Buenos Aires-Fiesta del San Miguel Arcángel",
-        "departamento": "Cauca",
-        "municipio": "Buenos Aires",
-        "mes": "Septiembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "San Pedro y San Pablo",
-        "descripcion": "Buenos Aires-San Pedro y San Pablo",
-        "departamento": "Cauca",
-        "municipio": "Buenos Aires",
-        "mes": "Junio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiesta de la Virgen del Carmen",
-        "descripcion": "Buenos Aires-Fiesta de la Virgen del Carmen",
-        "departamento": "Cauca",
-        "municipio": "Buenos Aires",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Feria del dulce",
-        "descripcion": "Pradera-Feria del dulce",
-        "departamento": "Valle del Cauca",
-        "municipio": "Pradera",
-        "mes": "Julio",
-        "tipo": "Comercial"
-    },
-    {
-        "titulo": "Fiestas Anuales",
-        "descripcion": "Pradera-Fiestas Anuales",
-        "departamento": "Valle del Cauca",
-        "municipio": "Pradera",
-        "mes": "Noviembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Festival de música andina",
-        "descripcion": "Pradera-Festival de música andina",
-        "departamento": "Valle del Cauca",
-        "municipio": "Pradera",
-        "mes": "Marzo",
-        "tipo": "Cultural"
-    },
-    {
-        "titulo": "Fiestas campesinas",
-        "descripcion": "Pradera-Fiestas campesinas",
-        "departamento": "Valle del Cauca",
-        "municipio": "Pradera",
-        "mes": "Periódicamente",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Semana santa",
-        "descripcion": "Santander de Quilichao-Semana santa",
-        "departamento": "Cauca",
-        "municipio": "Santander de Quilichao",
-        "mes": "Abril",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fugas de adoración",
-        "descripcion": "Santander de Quilichao-Fugas de adoración",
-        "departamento": "Cauca",
-        "municipio": "Santander de Quilichao",
-        "mes": "Diciembre-enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de los Santos Reyes magos",
-        "descripcion": "Santander de Quilichao-Fiestas de los Santos Reyes magos",
-        "departamento": "Cauca",
-        "municipio": "Santander de Quilichao",
-        "mes": "Enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Trueque Municipal",
-        "descripcion": "Toribío-Trueque Municipal",
-        "departamento": "Cauca",
-        "municipio": "Toribío",
-        "mes": "Julio",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Sek Buy (Celebración año andino)",
-        "descripcion": "Toribío-Sek Buy (Celebración año andino)",
-        "departamento": "Cauca",
-        "municipio": "Toribío",
-        "mes": "Junio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Semana Cultural Alvaro Ulcue",
-        "descripcion": "Toribío-Semana Cultural Alvaro Ulcue",
-        "departamento": "Cauca",
-        "municipio": "Toribío",
-        "mes": "Noviembre",
-        "tipo": "Cultural"
-    },
-    {
-        "titulo": "Cxapuc (ritual de ofrenda a los espíritus)",
-        "descripcion": "Toribío-Cxapuc (ritual de ofrenda a los espíritus)",
-        "departamento": "Cauca",
-        "municipio": "Toribío",
-        "mes": "Noviembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta de San Juan Bautista",
-        "descripcion": "Toribío-Fiesta de San Juan Bautista",
-        "departamento": "Cauca",
-        "municipio": "Toribío",
-        "mes": "Junio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas del Campesino Anoriseño",
-        "descripcion": "Anorí-Fiestas del Campesino Anoriseño",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Julio",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Anorí se viste de Antioquia (Fiesta de la antioqueñidad)",
-        "descripcion": "Anorí-Anorí se viste de Antioquia (Fiesta de la antioqueñidad)",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Agosto",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Feria de Ganado",
-        "descripcion": "Anorí-Feria de Ganado",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Tercer martes cada dos meses",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Torneo de futbol",
-        "descripcion": "Anorí-Torneo de futbol",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Dos veces al año",
-        "tipo": "Deportivo"
-    },
-    {
-        "titulo": "Fiestas del Cacique Anorí",
-        "descripcion": "Anorí-Fiestas del Cacique Anorí",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "n/a",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de la Virgen del Carmen",
-        "descripcion": "Anorí-Fiestas de la Virgen del Carmen",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas de San Roque",
-        "descripcion": "Anorí-Fiestas de San Roque",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Diciembre",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiesta de San Isidro",
-        "descripcion": "Anorí-Fiesta de San Isidro",
-        "departamento": "Antioquia",
-        "municipio": "Anorí",
-        "mes": "Agosto",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas del retorno y la cultura Cacereña",
-        "descripcion": "Cáceres-Fiestas del retorno y la cultura Cacereña",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "Noviembre",
-        "tipo": "Cultural"
-    },
-    {
-        "titulo": "Fiestas del Santo Cristo en el corregimiento El jardín",
-        "descripcion": "Cáceres-Fiestas del Santo Cristo en el corregimiento El jardín",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta de Santa María Magdalena",
-        "descripcion": "Cáceres-Fiesta de Santa María Magdalena",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas de San Roque en el corregimiento de Guarumo",
-        "descripcion": "Cáceres-Fiestas de San Roque en el corregimiento de Guarumo",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiesta de la Virgen del Carmen",
-        "descripcion": "Cáceres-Fiesta de la Virgen del Carmen",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas del Perpetuo Socorro en Puerto Bélgica",
-        "descripcion": "Cáceres-Fiestas del Perpetuo Socorro en Puerto Bélgica",
-        "departamento": "Antioquia",
-        "municipio": "Cáceres",
-        "mes": "",
-        "tipo": ""
-    },
-    {
-        "titulo": "Fiestas del oro, la cultura y el renacer bagreño",
-        "descripcion": "El Bagre-Fiestas del oro, la cultura y el renacer bagreño",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Noviembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de la cultura y festival vallenato",
-        "descripcion": "El Bagre-Fiestas de la cultura y festival vallenato",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "",
-        "tipo": "Musical"
-    },
-    {
-        "titulo": "El Festival de la cometa",
-        "descripcion": "El Bagre-El Festival de la cometa",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Agosto",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas del nueve de septiembre San Pedro Claver",
-        "descripcion": "El Bagre-Fiestas del nueve de septiembre San Pedro Claver",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Septiembre",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas de corraleja",
-        "descripcion": "El Bagre-Fiestas de corraleja",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Todo el año",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas patronales de la Virgen del Carmen",
-        "descripcion": "El Bagre-Fiestas patronales de la Virgen del Carmen",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas del divino niño",
-        "descripcion": "El Bagre-Fiestas del divino niño",
-        "departamento": "Antioquia",
-        "municipio": "El Bagre",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Mercados Campesinos",
-        "descripcion": "Nechí-Mercados Campesinos",
-        "departamento": "Antioquia",
-        "municipio": "Nechí",
-        "mes": "Periódicamente",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Torneos interbarriales de fútbol",
-        "descripcion": "Nechí-Torneos interbarriales de fútbol",
-        "departamento": "Antioquia",
-        "municipio": "Nechí",
-        "mes": "Noviembre",
-        "tipo": "Deportivo"
-    },
-    {
-        "titulo": "Fiestas del Fandango y corralejas",
-        "descripcion": "Nechí-Fiestas del Fandango y corralejas",
-        "departamento": "Antioquia",
-        "municipio": "Nechí",
-        "mes": "Enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta de la Virgen del Carmen",
-        "descripcion": "Nechí-Fiesta de la Virgen del Carmen",
-        "departamento": "Antioquia",
-        "municipio": "Nechí",
-        "mes": "Julio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta de la Inmaculada Concepción",
-        "descripcion": "Nechí-Fiesta de la Inmaculada Concepción",
-        "departamento": "Antioquia",
-        "municipio": "Nechí",
-        "mes": "Diciembre",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas del Progreso",
-        "descripcion": "Valdivia-Fiestas del Progreso",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "Diciembre",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Fiestas del Agua, el Verano y la Pesca",
-        "descripcion": "Valdivia-Fiestas del Agua, el Verano y la Pesca",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Semana de la Cultura y del Deporte \"Fiestas de la neblina",
-        "descripcion": "Valdivia-Semana de la Cultura y del Deporte \"Fiestas de la neblina",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "Octubre",
-        "tipo": "Cultural"
-    },
-    {
-        "titulo": "San José",
-        "descripcion": "Valdivia-San José",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Semana Santa",
-        "descripcion": "Valdivia-Semana Santa",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "Marzo",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas del Corpus y altar de San Isidro",
-        "descripcion": "Valdivia-Fiestas del Corpus y altar de San Isidro",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiesta de la Virgen del Carmen",
-        "descripcion": "Valdivia-Fiesta de la Virgen del Carmen",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiesta de la Inmaculada Concepción",
-        "descripcion": "Valdivia-Fiesta de la Inmaculada Concepción",
-        "departamento": "Antioquia",
-        "municipio": "Valdivia",
-        "mes": "Diciembre",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Corraleja",
-        "descripcion": "Colosó-Corraleja",
-        "departamento": "Sucre",
-        "municipio": "Colosó",
-        "mes": "Enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta patronal San Miguel Arcangel",
-        "descripcion": "Colosó-Fiesta patronal San Miguel Arcangel",
-        "departamento": "Sucre",
-        "municipio": "Colosó",
-        "mes": "Septiembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Carreras de caballo",
-        "descripcion": "Colosó-Carreras de caballo",
-        "departamento": "Sucre",
-        "municipio": "Colosó",
-        "mes": "Junio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta Patronal Baltazar Perez",
-        "descripcion": "Colosó-Fiesta Patronal Baltazar Perez",
-        "departamento": "Sucre",
-        "municipio": "Colosó",
-        "mes": "Septiembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Festival del retorno en chalán",
-        "descripcion": "Chalán-Festival del retorno en chalán",
-        "departamento": "Sucre",
-        "municipio": "Chalán",
-        "mes": "Semana Santa",
-        "tipo": "Comercial"
-    },
-    {
-        "titulo": "Agroturismo",
-        "descripcion": "Chalán-Agroturismo",
-        "departamento": "Sucre",
-        "municipio": "Chalán",
-        "mes": "Todo el año",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "FIESTAS PATRONALES",
-        "descripcion": "Chalán-FIESTAS PATRONALES",
-        "departamento": "Sucre",
-        "municipio": "Chalán",
-        "mes": "Diciembre",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de la Virgen del Carmen",
-        "descripcion": "Chalán-Fiestas de la Virgen del Carmen",
-        "departamento": "Sucre",
-        "municipio": "Chalán",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Festival de gaitas",
-        "descripcion": "San Jacinto-Festival de gaitas",
-        "departamento": "Bolívar",
-        "municipio": "San Jacinto",
-        "mes": "Agosto",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta Patronal Santana",
-        "descripcion": "San Jacinto-Fiesta Patronal Santana",
-        "departamento": "Bolívar",
-        "municipio": "San Jacinto",
-        "mes": "s/f",
-        "tipo": "Económico"
-    },
-    {
-        "titulo": "Fiesta Santa Lucía",
-        "descripcion": "San Jacinto-Fiesta Santa Lucía",
-        "departamento": "Bolívar",
-        "municipio": "San Jacinto",
-        "mes": "Diciembre",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Festival del Ñame",
-        "descripcion": "San Juan Nepomuceno-Festival del Ñame",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Agosto",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas taurinas",
-        "descripcion": "San Juan Nepomuceno-Fiestas taurinas",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Enero",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiestas de San Juan",
-        "descripcion": "San Juan Nepomuceno-Fiestas de San Juan",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Junio",
-        "tipo": "Tradicional"
-    },
-    {
-        "titulo": "Fiesta de San Isidro Patrón de los Campesinos",
-        "descripcion": "San Juan Nepomuceno-Fiesta de San Isidro Patrón de los Campesinos",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "s/f",
-        "tipo": "Comunitario"
-    },
-    {
-        "titulo": "Festival del retorno",
-        "descripcion": "San Juan Nepomuceno-Festival del retorno",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Abril",
-        "tipo": "Comunitario"
-    },
-    {
-        "titulo": "Fiestas de San Pedro y San Pablo",
-        "descripcion": "San Juan Nepomuceno-Fiestas de San Pedro y San Pablo",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Junio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas Patronales Virgen del Carmen",
-        "descripcion": "San Juan Nepomuceno-Fiestas Patronales Virgen del Carmen",
-        "departamento": "Bolívar",
-        "municipio": "San Juan Nepomuceno",
-        "mes": "Julio",
-        "tipo": "Religioso"
-    },
-    {
-        "titulo": "Fiestas de San José",
-        "descripcion": "Toluviejo-Fiestas de San José",
+        "titulo": "TALLER DE INSPIRACIÓN SOLE + WLH",
+        "descripcion": "Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje. Conoce de lo que es SOLE COLOMBIA aquí: https://www.solecolombia.org/",
         "departamento": "Sucre",
         "municipio": "Toluviejo",
-        "mes": "Marzo",
-        "tipo": "Tradicional"
+        "mes": "marzo",
+        "tipo": "FORMACIÓN"
     },
     {
-        "titulo": "Fiestas de la Virgen del Carmen",
-        "descripcion": "Toluviejo-Fiestas de la Virgen del Carmen",
-        "departamento": "Sucre",
-        "municipio": "Toluviejo",
-        "mes": "Julio",
-        "tipo": "Tradicional"
+        "titulo": "TALLER DE INSPIRACIÓN SOLE + WLH",
+        "descripcion": "Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje. Conoce de lo que es SOLE COLOMBIA aquí: https://www.solecolombia.org/",
+        "departamento": "Valle del Cauca",
+        "municipio": "Buenaventura",
+        "mes": "marzo",
+        "tipo": "FORMACIÓN"
     },
     {
-        "titulo": "Inmaculada Concepción",
-        "descripcion": "Toluviejo-Inmaculada Concepción",
-        "departamento": "Sucre",
-        "municipio": "Toluviejo",
-        "mes": "Diciembre",
-        "tipo": "Religioso"
+        "titulo": "Futbol femenino",
+        "descripcion": "Se conmemorará el mes de la  mujer con un partido de futbol femenino para derrumbar estereotipos de género, una muestra de los productos hechos a mano que realizan las mujeres de la comunidad y el compartir de un mote de queso, plato típico de la región para diálogar sobre el liderazgo femenino.",
+        "departamento": "Bolívar",
+        "municipio": "San Jacinto",
+        "mes": "marzo",
+        "tipo": "CULTURALES Y RECREATIVAS"
+    },
+    {
+        "titulo": "Juntanza y liderazgo femenino",
+        "descripcion": "Encuentro de las mujeres de las comunidades de la Borrachera y La Bonga para realizar una juntanza y diálogo sobre el liderazgo femenino. Se compartirá una olla comunitaria.",
+        "departamento": "Antioquia",
+        "municipio": "El Bagre",
+        "mes": "marzo",
+        "tipo": "CULTURALES Y RECREATIVAS"
+    },
+    {
+        "titulo": "TALLER DE INSPIRACIÓN SOLE + WLH",
+        "descripcion": "Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje. Conoce de lo que es SOLE COLOMBIA aquí: https://www.solecolombia.org/",
+        "departamento": "Cauca",
+        "municipio": "Pradera",
+        "mes": "abril",
+        "tipo": "FORMACIÓN"
+    },
+    {
+        "titulo": "TALLER DE INSPIRACIÓN SOLE + WLH",
+        "descripcion": "Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje. Conoce de lo que es SOLE COLOMBIA aquí: https://www.solecolombia.org/",
+        "departamento": "Antioquia",
+        "municipio": "El bagre",
+        "mes": "abril",
+        "tipo": "FORMACIÓN"
+    },
+    {
+        "titulo": "Primer Encuentro Cuna de Gaiteros",
+        "descripcion": "Jornada de encuentro de los gaiteros de la comunidad para celebrar la tradición y recordar a los maestros que ya no están.",
+        "departamento": "Bolívar",
+        "municipio": "San Jacinto",
+        "mes": "abril",
+        "tipo": "CULTURALES Y RECREATIVAS"
+    },
+    {
+        "titulo": "Comunicación no violenta y manejo restaurativo de conflictos.",
+        "descripcion": "Capacitación equipo WLH en Comunicación no violenta y resolución de conflictos",
+        "departamento": "Cundinamarca",
+        "municipio": "Bogotá",
+        "mes": "abril",
+        "tipo": "FORMACIÓN"
+    },
+    {
+        "titulo": "Festival del Agua, la Vida y la Esperanza",
+        "descripcion": "En el marco del Día de la Tierra, se realizará una jornada de actividades culturales y pedagógicas relacionadas con el cuidado medio ambiental y se realizará la entrega de tanques de almacenamiento de agua y filtros potabilizadores a la comunidad.",
+        "departamento": "Antioquia",
+        "municipio": "Caucasia",
+        "mes": "abril",
+        "tipo": "CULTURALES Y RECREATIVAS"
     }
 ]

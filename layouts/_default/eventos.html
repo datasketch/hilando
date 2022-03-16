@@ -88,7 +88,7 @@
                         <div class="panel" style="background-color: #F0F0F2;">
                             {{ range sort (uniq $mes) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . }}</span>
+                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
                                 <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>

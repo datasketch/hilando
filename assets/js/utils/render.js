@@ -1,5 +1,5 @@
 export const renderEvent = (parentEl, data) => {
-    const html = `
+  const html = `
     <div class="event__item" style="background-color: #F0F0F2;">
         <span class="event__place">${data.municipio}, ${data.departamento}</span>
         <img class="w-full" src="/images/eventos/sticky.svg" alt="sticky">
@@ -7,12 +7,12 @@ export const renderEvent = (parentEl, data) => {
             ${data.titulo}
         </h3>
         <span class="event__month" style="color: #963B62;">
-            ${data.mes}
+            ${data.mes.charAt(0).toUpperCase() + data.mes.substr(1)}
         </span>
         <span class="event__type">
             Tipo: ${data.tipo}
         </span>
     </div>
     `;
-    parentEl.insertAdjacentHTML('beforeend', html);
-}
+  parentEl.insertAdjacentHTML('beforeend', html);
+};
