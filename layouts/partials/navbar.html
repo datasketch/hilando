@@ -12,8 +12,12 @@
                     {{ if .HasChildren }}
                     <div class="menu relative">
                         <li class="mr-20">
+                            {{ if (eq .Title "Territorios") }}
                             <a class="uppercase border-b-2 border-transparent pb-1 duration-300"
-                                href="{{ .URL }}">{{ .Title }}</a>
+                            href="{{ .URL }}">{{ .Title }}</a>
+                            {{ else }}
+                            <span class="cursor-pointer uppercase border-b-2 border-transparent pb-1 duration-300">{{ .Title }}</span>
+                            {{ end }}
                         </li>
                         <ul class="sub-menu transform -left-12 w-48">
                             {{ if eq .Page.Section "territorios" }}
@@ -37,7 +41,7 @@
                             {{ else }}
                             {{ range .Children }}
                             <li>
-                                <p class="uppercase text-base">{{ .Name }}</p>
+                                <a href="{{ .URL }}" class="block text-base py-4 px-4 border-t border-white">{{ .Name }}</a>
                             </li>
                             {{ end }}
                             {{ end }}

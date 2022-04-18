@@ -1,5 +1,7 @@
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
+import Swiper, {Navigation, Autoplay} from 'swiper';
+import Modal from '../utils/modal';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -11,6 +13,38 @@ const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
 dataEl.remove();
 
+// init Swiper:
+
+// eslint-disable-next-line no-unused-vars
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Autoplay],
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.event-button-prev',
+    prevEl: '.event-button-next',
+    disabledClass: 'opacity-40',
+  },
+
+  // Autoplay
+  autoplay: {
+    delay: 1000,
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  // Responsive breakpoints
+  breakpoints: {
+    1366: {
+      slidesPerView: 2,
+      spaceBetween: 54.18,
+    },
+  },
+});
+
 const state = {
   originalData: JSON.parse(dataEl.value),
   filteredData: null,
@@ -20,7 +54,7 @@ const state = {
     mes: [],
     tipo: [],
   },
-  itemsPerPagination: 10,
+  itemsPerPagination: 3,
   page: 1,
 };
 
@@ -99,6 +133,20 @@ pagination.addEventListener('click', (e) => {
   state.page = +btn.dataset.page;
   filterData();
   scrollPagination.scrollIntoView({behavior: 'smooth'});
+});
+
+event.addEventListener('click', function(e) {
+  // get id
+  const id = e.target.closest('button')?.dataset.id;
+
+  // closure protection
+  if (!id) return;
+
+  // filter by id
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+
+  // call modal class
+  const modal = new Modal(data[0]);
 });
 
 window.addEventListener('load', () => {

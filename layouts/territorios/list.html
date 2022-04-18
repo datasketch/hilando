@@ -27,7 +27,7 @@
                 <ul class="grid grid-cols-1 gap-y-4">
                     {{ range .Pages }}
                     <li class="line">
-                        <a class="lg:text-lg xl:text-xl" href="{{ .Permalink }}">{{ .Title }}</a>
+                        <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}">{{ .Title }}</a>
                     </li>
                     {{ end }}
                 </ul>
@@ -42,7 +42,7 @@
     <!-- DATA EXPLORER END -->
 
     <!-- DOWNLOAD -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative" style="background-color: #F0F0F2;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden" style="background-color: #F0F0F2;">
         <div class="mx-auto w-10/12 xl:w-9/12 flex">
             <div class="md:w-6/12 lg:w-5/12">
                 <h2 class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black">

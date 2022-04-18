@@ -33,11 +33,10 @@
     @apply hidden;
   }
   .filter-label .checkmark {
-    @apply w-5 h-5 flex-shrink-0 relative duration-300;
-    background-color: #D5DFF0;
+    @apply w-5 h-5 flex-shrink-0 bg-purple bg-opacity-60 relative duration-300;
   }
   .filter-label:hover .checkmark {
-    background-color: #3A3C6A;
+    background-color: #5F2161;
   }
   /* Create the checkmark/indicator (hidden when not checked) */
   .filter-label .checkmark:after {
@@ -47,7 +46,7 @@
   }
 
   .filter-label input:checked ~ .checkmark {
-    background-color: #3A3C6A;
+    background-color: #5F2161;
   }
 
   .filter-label input:checked ~ .checkmark:after {
@@ -59,27 +58,39 @@
   /* EVENTS ITEMS COMPONENTES */
 
   .event {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+    @apply space-y-14;
   }
 
   .event__item {
-    @apply hover:shadow-lg p-10 duration-300;
+    @apply flex flex-col-reverse pb-8 lg:pb-0 lg:flex-row relative;
   }
 
-  .event__place {
-    @apply block text-lg lg:text-xl italic mb-2;
+  .event__container-left {
+    @apply lg:w-7/12 p-8 space-y-3;
   }
 
-  .event__title {
-    @apply -mt-10 text-xl lg:text-2xl font-black;
+  .event__municipio-departamento {
+    @apply block italic xl:text-xl;
   }
 
-  .event__month {
-    @apply block italic mb-3;
+  .event__titulo {
+    @apply text-xl xl:text-2xl font-bold relative;
   }
 
-  .event__type {
-    @apply block italic;
+  .event__nombre {
+    @apply relative z-10;
+  }
+
+  .event__image-titulo {
+    @apply absolute -top-2 -left-3 w-full;
+  }
+
+  .event__container-right {
+    @apply lg:w-5/12;
+  }
+
+  .event__image {
+   @apply h-60 w-full lg:h-full object-cover object-center;
   }
 
   /* LINE */
@@ -149,6 +160,29 @@
   .sub-menu-icon--active {
     @apply transform rotate-90;
   }
+
+  /* MODAL */
+
+  .modal {
+    @apply bg-white-2 h-auto w-10/12 max-w-screen-md mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 invisible opacity-0 scale-0 duration-300;
+  }
+
+  .modal--active {
+      @apply visible opacity-100 scale-100;
+  }
+
+  .modal__overlay {
+      @apply invisible fixed top-0 left-0 h-screen w-full p-10 bg-transparent bg-opacity-0 cursor-pointer z-40 duration-300;
+  }
+
+  .modal__overlay--active {
+      @apply visible bg-black bg-opacity-40;
+  }
+
+  .modal__button-close {
+      @apply cursor-pointer absolute -top-10 -right-8 z-10 px-2 py-1 bg-white text-2xl font-bold;
+  }
+
 }
 
 @layer utilities {
