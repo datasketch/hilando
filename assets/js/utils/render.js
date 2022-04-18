@@ -26,7 +26,7 @@ export const renderEvent = (parentEl, data) => {
     </div>
     <div class="event__container-right">
         <img class="event__image" src="${data.imagen}" alt="prueba" style="height: 365px;">
-        <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="http://localhost:1313/galeria/multimedia/" style="background-color: #D27028;">Ver galería</a>
+        <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="#" style="background-color: #D27028;">Ver galería</a>
     </div>
   </div>
     `;
