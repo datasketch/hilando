@@ -29,7 +29,7 @@ module.exports = {
         'modal__overlay',
         'modal__overlay--active',
         'modal__button-close',
-        'opacity-60',
+        'opacity-40',
         'swiper-pagination-bullet',
         'swiper-pagination-bullet-active',
       ],
