@@ -8,6 +8,7 @@ const filters = document.querySelector('.filters');
 const panels = document.querySelectorAll('.panel');
 const images = document.querySelectorAll('.accordion--images');
 const event = document.querySelector('.event');
+const events = document.querySelector('.events');
 const dataEl = document.querySelector('#data-eventos');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
@@ -22,14 +23,14 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.event-button-prev',
-    prevEl: '.event-button-next',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
     disabledClass: 'opacity-40',
   },
 
   // Autoplay
   autoplay: {
-    delay: 1000,
+    delay: 5000,
   },
 
   // Default parameters
@@ -146,6 +147,22 @@ event.addEventListener('click', function(e) {
   const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
 
   // call modal class
+  // eslint-disable-next-line no-unused-vars
+  const modal = new Modal(data[0]);
+});
+
+events.addEventListener('click', function(e) {
+  // get id
+  const id = e.target.closest('button')?.dataset.id;
+
+  // closure protection
+  if (!id) return;
+
+  // filter by id
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+
+  // call modal class
+  // eslint-disable-next-line no-unused-vars
   const modal = new Modal(data[0]);
 });
 

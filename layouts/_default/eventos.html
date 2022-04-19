@@ -31,8 +31,13 @@
         </h1>
     </div>
     <!-- BANNER EVENTS END -->
-
-    {{ partial "events" . }}
+    
+    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20" style="background-color: #FAFAFA;">
+        <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
+            Próximamente
+        </h2>
+        {{ partial "events" . }}
+    </div>
 
     <div class="lg:col-start-1 lg:col-end-13 pb-12" style="background-color: #FAFAFA;" id="paginationScroll">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
@@ -44,11 +49,11 @@
                 <div class="filters space-y-8">
                     <!-- TIPO EVENTO -->
                     <div>
-                        <button class="accordion bg-purple" data-tab="0">
+                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
                             Tipo de Evento
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $tipo) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
                                 <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
@@ -63,11 +68,11 @@
 
                     <!-- MES -->
                     <div>
-                        <button class="accordion bg-purple" data-tab="1">
+                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
                             Mes
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $mes) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
                                 <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
@@ -81,11 +86,11 @@
 
                     <!-- DEPARTAMENTO -->
                     <div>
-                        <button class="accordion bg-purple" data-tab="2">
+                        <button class="accordion bg-transparent" data-tab="2" style="border: 1px solid #BABBC9;">
                             Departamento
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $departamento) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
                                 <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
@@ -99,11 +104,11 @@
 
                     <!-- MUNICIPIO -->
                     <div>
-                        <button class="accordion bg-purple" data-tab="3">
+                        <button class="accordion bg-transparent" data-tab="3" style="border: 1px solid #BABBC9;">
                             Municipio
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $municipio) "value" "asc" }}
                             <label class="filter-label text-lg" for="{{ . }}">
                                 <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
@@ -133,5 +138,5 @@
 <script src="{{ $eventos.Permalink }}"></script>
 {{ end }}
 {{ define "head" }}
-<link rel="stylesheet" href="https://unpkg.com/swiper@6.7.0/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 {{ end }}

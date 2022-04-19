@@ -1,59 +1,54 @@
 {{ $data := .Site.Data.eventos }}
-<div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20" style="background-color: #FAFAFA;">
-    <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
-        Próximamente
-    </h2>
-    <div class="mx-auto w-11/12 xl:w-10/12 relative">
-        <!-- Slider main container -->
-        <div class="swiper overflow-x-hidden">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                {{ range where $data "mes" "abril" }}
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="bg-purple bg-opacity-75 text-white" style="box-shadow: 0px 11px 11px #28202966;">
-                        <h3 class="text-xl font-semibold relative p-6 pb-2">
-                            <span class="relative z-10">{{ .titulo | humanize }}</span>
-                            <img class="absolute top-4 sm:top-3 left-3" src="/images/public/sticky-title.svg" alt="sticky title">
-                        </h3>
-                        <div class="flex flex-col lg:flex-row relative">
-                            <div class="lg:w-1/2 pb-12 order-2 lg:order-1">
-                                <div>
-                                    <div class="px-6">
-                                        <div class="pt-5">
-                                            <p class="text-xl xl:text-2xl font-bold">
-                                                02
-                                            </p>
-                                            <p class="-mt-2 italic xl:text-lg">
-                                                {{ .mes }}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="p-6">
-                                        <p class="text-sm">
-                                            {{ .descripcion | truncate 340 }}
+<div class="mx-auto w-11/12 lg:w-10/12 relative">
+    <!-- Slider main container -->
+    <div class="swiper events">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            {{ range where $data "mes" "abril" }}
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="bg-purple bg-opacity-75 text-white" style="box-shadow: 0px 11px 11px #28202966;">
+                    <h3 class="text-xl font-semibold relative p-6 pb-2">
+                        <span class="relative z-10">{{ .titulo | humanize }}</span>
+                        <img class="absolute top-4 sm:top-3 left-3" src="/images/public/sticky-title.svg" alt="sticky title">
+                    </h3>
+                    <div class="flex flex-col lg:flex-row relative">
+                        <div class="lg:w-1/2 pb-12 order-2 lg:order-1">
+                            <div>
+                                <div class="px-6">
+                                    <div class="pt-5">
+                                        <p class="text-xl xl:text-2xl font-bold">
+                                            02
+                                        </p>
+                                        <p class="-mt-2 italic xl:text-lg">
+                                            {{ .mes }}
                                         </p>
                                     </div>
-                                    <div class="absolute bottom-0 left-0">
-                                        <a class="inline-block uppercase py-2 px-6 bg-purple font-bold" href="#">Conoce más</a>
-                                    </div>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-sm">
+                                        {{ .descripcion | truncate 340 }}
+                                    </p>
+                                </div>
+                                <div class="absolute bottom-0 left-0">
+                                    <button data-id="{{ .id }}" class="cursor-pointer inline-block uppercase py-2 px-6 bg-purple font-bold">Conoce más</button>
                                 </div>
                             </div>
-                            <div class="lg:w-1/2 order-1 lg:order-2">
-                                <img class="w-full object-cover object-center" style="height: 330px;" src="{{ .imagen }}" alt="{{ .titulo }}">
-                            </div>
+                        </div>
+                        <div class="lg:w-1/2 order-1 lg:order-2">
+                            <img class="w-full object-cover object-center" style="height: 330px;" src="{{ .imagen }}" alt="{{ .titulo }}">
                         </div>
                     </div>
                 </div>
-                {{ end }}
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="absolute top-1/2 -left-16 z-10 cursor-pointer transform -translate-y-1/2 event-button-prev">
-                <img src="/images/public/left-arrow.svg" alt="arrow left">
-            </div>
-            <div class="absolute top-1/2 -right-16 z-10 cursor-pointer transform -translate-y-1/2 event-button-next">
-                <img src="/images/public/right-arrow.svg" alt="arrow right">
-            </div>
+            {{ end }}
         </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev">
+        <img src="/images/public/left-arrow.svg" alt="arrow left">
+    </div>
+    <div class="swiper-button-next">
+        <img src="/images/public/right-arrow.svg" alt="arrow right">
     </div>
 </div>

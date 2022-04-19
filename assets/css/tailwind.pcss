@@ -13,13 +13,13 @@
   /* ACCORDION COMPONENT */
 
   .accordion {
-      @apply uppercase font-black flex items-center py-2 px-6 w-full justify-between text-white duration-200;
+      @apply uppercase font-black flex items-center py-2 px-6 w-full justify-between text-space-cadet duration-200;
   }
   .accordion--images {
     @apply duration-200;
   }
   .panel {
-      @apply max-h-0 overflow-hidden duration-200; 
+      @apply max-h-0 overflow-hidden duration-200 bg-transparent; 
   }
 
   /* ACCORDION COMPONENT END */
@@ -33,10 +33,10 @@
     @apply hidden;
   }
   .filter-label .checkmark {
-    @apply w-5 h-5 flex-shrink-0 bg-purple bg-opacity-60 relative duration-300;
+    @apply w-5 h-5 flex-shrink-0 bg-space-cadet bg-opacity-60 relative duration-300;
   }
   .filter-label:hover .checkmark {
-    background-color: #5F2161;
+    @apply bg-space-cadet;
   }
   /* Create the checkmark/indicator (hidden when not checked) */
   .filter-label .checkmark:after {
@@ -46,7 +46,7 @@
   }
 
   .filter-label input:checked ~ .checkmark {
-    background-color: #5F2161;
+    @apply bg-space-cadet;
   }
 
   .filter-label input:checked ~ .checkmark:after {
@@ -115,24 +115,56 @@
   }
 
   /* SLIDER */
-  .slider-wrapper {
-    @apply relative px-10;
+
+  .swiper-button-prev,
+  .swiper-button-next
+  {
+    @apply absolute top-1/2 cursor-pointer;
+    display: none !important;
   }
-  .slider-next,
-  .slider-prev {
-    @apply absolute top-1/2 transform -translate-y-1/2 w-10 h-10 bg-center bg-contain bg-no-repeat cursor-pointer;
+
+  .swiper-button-prev {
+    left: -64px !important;
   }
-  .slider-next {
-    @apply -right-4;
-    background-image: url("/images/public/right-arrow.svg");
+
+  .swiper-button-next {
+    right: -64px !important;
   }
-  .slider-prev {
-    @apply -left-4;
-    background-image: url("/images/public/left-arrow.svg");
+
+  @screen lg {
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+      @apply absolute top-1/2 cursor-pointer;
+      display: block !important;
+    }
   }
-  .slider-prev.swiper-button-disabled,
-  .slider-next.swiper-button-disabled {
-    @apply opacity-30 cursor-not-allowed;
+
+  .swiper-button-next::after {
+    display: none;
+  }
+
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: 63px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    background-color: #F9F9F9 !important;
+    opacity: 0.6 !important;
+    transform: scale(1) !important;
+    trasition: all 0.3s !important;
+    border-radius: 0px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
   }
 
   /* MENU */
