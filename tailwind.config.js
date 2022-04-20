@@ -49,7 +49,7 @@ module.exports = {
         'banner-eventos': 'url(/images/eventos/banner-eventos.svg)',
         'banner-programa': 'url(/images/sobre-programa/banner-sobre-el-programa.svg)',
         'newsletter': 'url(/images/home/newsletter.png)',
-        'banner-multimedia': 'url(/images/galeria/multimedia/banner-multimedia.svg)',
+        'banner-galeria': 'url(/images/galeria/banner-galeria.svg)',
       },
       colors: {
         'black': '#1A1A1A',

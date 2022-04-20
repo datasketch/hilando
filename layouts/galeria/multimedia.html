@@ -1,101 +1,204 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
-    <div class="bg-banner-multimedia bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
+    <div class="bg-banner-galeria bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
         <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
-            Galería <span class="block">Multimedia</span>
+            Multimedia
         </h1>
     </div>
     <!-- BANNER EVENTS END -->
-    <div class="lg:col-start-1 lg:col-end-13 pt-16 pb-24 lg:pt-16 lg:pb-32 xl:pt-20 xl:pb-40" style="background-color: #FAFAFA;" id="paginationScroll">
-        <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-8 gap-y-12">
+
+    <div class="lg:col-start-1 lg:col-end-13 py-12" style="background-color: #FAFAFA;" id="paginationScroll">
+        <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
                 <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
                     Filtros
                 </h3>
                 <!-- PARENT ELEMENT FILTERS -->
-                <div class="filters">
-                    <!-- DEPARTAMENTO -->
-                    <div class="mb-8">
-                        <button class="accordion" data-tab="0" style="background-color: #3A3C6A;">
-                            Departamento
+                <div class="filters space-y-8">
+                    <!-- TIPO GALERIAS -->
+                    <div>
+                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
+                            Galerías
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
-                            {{/*  {{ range sort (uniq $departamento) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . }}</span>
-                                <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
+                            <label class="filter-label text-lg" for="eventos">
+                                <span class="text-lg lg:text-xl">eventos</span>
+                                <input type="checkbox" name="galerias" id="eventos" value="eventos">
                                 <span class="checkmark"></span>
                             </label>
-                            {{ end }}  */}}
+                            <label class="filter-label text-lg" for="videos">
+                                <span class="text-lg lg:text-xl">videos</span>
+                                <input type="checkbox" name="galerias" id="videos" value="videos">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="filter-label text-lg" for="audios">
+                                <span class="text-lg lg:text-xl">audios</span>
+                                <input type="checkbox" name="galerias" id="audios" value="audios">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
-                    <!-- DEPARTAMENTO END -->
+                    <!-- TIPO GALERIAS END -->
+
 
                     <!-- MUNICIPIO -->
-                    <div class="mb-8">
-                        <button class="accordion" data-tab="1" style="background-color: #3A3C6A;">
+                    <div>
+                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
                             Municipio
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
-                            {{/*  {{ range sort (uniq $municipio) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . }}</span>
-                                <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
+                            <label class="filter-label text-lg" for="buenaventura">
+                                <span class="text-lg lg:text-xl">buenaventura</span>
+                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
                                 <span class="checkmark"></span>
                             </label>
-                            {{ end }}  */}}
+                            <label class="filter-label text-lg" for="buenaventura">
+                                <span class="text-lg lg:text-xl">buenaventura</span>
+                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="filter-label text-lg" for="buenaventura">
+                                <span class="text-lg lg:text-xl">buenaventura</span>
+                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="filter-label text-lg" for="buenaventura">
+                                <span class="text-lg lg:text-xl">buenaventura</span>
+                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="filter-label text-lg" for="buenaventura">
+                                <span class="text-lg lg:text-xl">buenaventura</span>
+                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                     <!-- MUNICIPIO END -->
 
-                    <!-- MES -->
-                    <div class="mb-8">
-                        <button class="accordion" data-tab="2" style="background-color: #3A3C6A;">
-                            Mes
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
-                            {{/*  {{ range sort (uniq $mes) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
-                                <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
-                            </label>
-                            {{ end }}  */}}
-                        </div>
-                    </div>
-                    <!-- MES END -->
-
-                    <!-- TIPO EVENTO -->
+                    <!-- COMUNIDAD -->
                     <div>
-                        <button class="accordion" data-tab="3" style="background-color: #3A3C6A;">
-                            Tipo de Evento
+                        <button class="accordion bg-transparent" data-tab="2" style="border: 1px solid #BABBC9;">
+                            Comunidad
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
-                        <div class="panel" style="background-color: #F0F0F2;">
-                            {{/*  {{ range sort (uniq $tipo) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . }}</span>
-                                <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
+                        <div class="panel" style="border: 1px solid #BABBC9;">
+                            <label class="filter-label text-lg" for="indigena">
+                                <span class="text-lg lg:text-xl">indigena</span>
+                                <input type="checkbox" name="comunidad" id="indigena" value="indigena">
                                 <span class="checkmark"></span>
                             </label>
-                            {{ end }}  */}}
                         </div>
                     </div>
-                    <!-- TIPO EVENTO END -->
+                    <!-- COMUNIDAD END -->
                 </div>
             </div>
             <div class="lg:col-start-4 lg:col-end-13">
-                <div class="text-right my-8">
-                    <h3 class="inline-block py-3 px-6 uppercase text-white font-black invisible" style="background-color: #3A3C6A;">ORDENAR POR</h3>
+                {{/*  <div class="event"></div>
+                <div class="pagination text-center mt-10 lg:mt-20"></div>  */}}
+                <div class="multimedia grid grid-cols-1 lg:grid-cols-2 gap-9 lg:pt-12">
+                    <div>
+                        <div class="relative">
+                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
+                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
+                        </div>
+                        <div class="bg-white-2 p-6 space-y-2">
+                            <h3 class="text-xl xl:text-2xl font-black">
+                                Nombre del video
+                            </h3>
+                            <p class="text-lg xl:text-xl">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <p class="italic">
+                                    Municipio - Departamento
+                                </p>
+                                <p class="text-space-cadet">
+                                    Comunidad focalizada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
+                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
+                        </div>
+                        <div class="bg-white-2 p-6 space-y-2">
+                            <h3 class="text-xl xl:text-2xl font-black">
+                                Nombre del video
+                            </h3>
+                            <p class="text-lg xl:text-xl">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <p class="italic">
+                                    Municipio - Departamento
+                                </p>
+                                <p class="text-space-cadet">
+                                    Comunidad focalizada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
+                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
+                        </div>
+                        <div class="bg-white-2 p-6 space-y-2">
+                            <h3 class="text-xl xl:text-2xl font-black">
+                                Nombre del video
+                            </h3>
+                            <p class="text-lg xl:text-xl">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <p class="italic">
+                                    Municipio - Departamento
+                                </p>
+                                <p class="text-space-cadet">
+                                    Comunidad focalizada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="relative">
+                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
+                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
+                        </div>
+                        <div class="bg-white-2 p-6 space-y-2">
+                            <h3 class="text-xl xl:text-2xl font-black">
+                                Nombre del video
+                            </h3>
+                            <p class="text-lg xl:text-xl">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <p class="italic">
+                                    Municipio - Departamento
+                                </p>
+                                <p class="text-space-cadet">
+                                    Comunidad focalizada
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="event"></div>
-                <div class="pagination text-center mt-10 lg:mt-20"></div>
             </div>
         </div>
     </div>
 </div>
+{{ end }}
+{{ define "js" }}
+{{ $multimedia := resources.Get "js/api/galeria/multimedia.js" | js.Build (dict "minify" hugo.IsProduction)}}
+<script src="{{ $multimedia.Permalink }}"></script>
 {{ end }}
