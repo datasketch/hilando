@@ -55,8 +55,8 @@
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $tipo) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
@@ -74,8 +74,8 @@
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $mes) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
@@ -92,8 +92,8 @@
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $departamento) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
@@ -110,8 +110,8 @@
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $municipio) "value" "asc" }}
-                            <label class="filter-label text-lg" for="{{ . }}">
-                                <span class="text-lg lg:text-xl">{{ . | humanize }}</span>
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
