@@ -72,3 +72,63 @@ export const renderPublicaciones = (parentEl, data) => {
     `;
   parentEl.insertAdjacentHTML('beforeend', html);
 };
+
+export const renderMultimedia = (parentEl, data) => {
+  let html = '';
+  if (data['tipo_multimedia'] === 'Video') {
+    html = `
+    <div class="multimedia__item">
+        <div class="relative">
+            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+            <button class="multimedia__button-play">
+                <img src="/images/public/button-play.svg" alt="button play">
+            </button>
+            <div class="multimedia__type" style="background-color: #D27028;">&nbsp;</div>
+        </div>
+        <div class="multimedia__details">
+            <h3 class="multimedia__title">
+                ${data.titulo}
+            </h3>
+            <p class="multimedia__description">
+                ${data.descripcion}
+            </p>
+            <div class="multimedia__lugar-comunidad">
+                <p class="italic">
+                ${data.municipio} - ${data.departamento}
+                </p>
+                <p class="text-space-cadet">
+                ${data.comunidad}
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+  } else if (data['tipo_multimedia'] === 'Fotografía') {
+    html = `
+    <div class="multimedia__item">
+        <div class="relative">
+            <img src="/images/galeria/multimedia/prueba-2.jpg" alt="prueba">
+            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #81A347;">Ver galería</button>
+            <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
+        </div>
+        <div class="multimedia__details">
+            <h3 class="multimedia__title">
+            ${data.titulo}
+            </h3>
+            <p class="multimedia__description">
+            ${data.descripcion}
+            </p>
+            <div class="multimedia__lugar-comunidad">
+                <p class="italic">
+                    ${data.municipio} - ${data.departamento}
+                </p>
+                <p class="text-space-cadet">
+                    ${data.comunidad}
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+  }
+  parentEl.insertAdjacentHTML('beforeend', html);
+};

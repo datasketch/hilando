@@ -1,13 +1,83 @@
+import {renderMultimedia} from '../utils/render';
+import {paginate, renderPaginationButtons} from '../utils/pagination';
+import Modal from '../utils/modal';
+import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
+
 // ELEMENTS
 const filters = document.querySelector('.filters');
 const panels = document.querySelectorAll('.panel');
 const images = document.querySelectorAll('.accordion--images');
-// const event = document.querySelector('.event');
-// const events = document.querySelector('.events');
-// const dataEl = document.querySelector('#data-eventos');
-// const pagination = document.querySelector('.pagination');
-// const scrollPagination = document.querySelector('#paginationScroll');
-// dataEl.remove();
+const multimedia = document.querySelector('.multimedia');
+const dataEl = document.querySelector('#data-multimedia');
+const pagination = document.querySelector('.pagination');
+const scrollPagination = document.querySelector('#paginationScroll');
+dataEl.remove();
+
+const state = {
+  originalData: JSON.parse(dataEl.value),
+  filteredData: null,
+  filters: {
+    municipio: [],
+    comunidad: [],
+    tipo: [],
+  },
+  itemsPerPagination: 6,
+  page: 1,
+};
+
+function filterData() {
+  multimedia.innerHTML = '';
+  const {filters, originalData} = state;
+  const hasMunicipioFilter = !!filters.municipio.length;
+  const hasComunidadFilter = !!filters.comunidad.length;
+  const hasTipoFilter = !!filters.tipo.length;
+  state.filteredData = originalData;
+
+  if (hasMunicipioFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.municipio.includes(item.municipio));
+  }
+
+  if (hasComunidadFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad));
+  }
+
+  if (hasTipoFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item['tipo_multimedia']));
+  }
+
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item));
+
+  pagination.insertAdjacentHTML(
+      'beforeend',
+      renderPaginationButtons(
+          pagination,
+          state.page,
+          state.itemsPerPagination,
+          state.filteredData,
+      ),
+  );
+}
+
+filters.addEventListener('change', function(e) {
+  const {name: key, value} = e.target;
+  const filterKeyValue = state.filters[key];
+  if (filterKeyValue.includes(value)) {
+    const index = filterKeyValue.findIndex((item) => item === value);
+    filterKeyValue.splice(index, 1);
+  } else {
+    filterKeyValue.push(value);
+  }
+  state.page = 1;
+  filterData();
+});
+
+pagination.addEventListener('click', (e) => {
+  const btn = e.target.closest('.pagination__button');
+  if (!btn) return;
+  state.page = +btn.dataset.page;
+  filterData();
+  scrollPagination.scrollIntoView({behavior: 'smooth'});
+});
 
 // EVENTS HANDLERS
 filters.addEventListener('click', function(e) {
@@ -25,4 +95,55 @@ filters.addEventListener('click', function(e) {
     panels[id].style.overflowY = 'scroll';
     images[id].style.transform = 'rotate(90deg)';
   }
+});
+
+multimedia.addEventListener('click', function(e) {
+  // get id
+  const id = e.target.closest('button')?.dataset.id;
+
+  // closure protection
+  if (!id) return;
+
+  // filter by id
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+
+  // call modal class
+  // eslint-disable-next-line no-unused-vars
+  const modal = new Modal(data[0], 'multimedia');
+
+  // swipper settings
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 3,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 640px
+      1366: {
+        slidesPerView: 5,
+      },
+    },
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  const swiper2 = new Swiper('.mySwiper2', {
+    modules: [Navigation, Thumbs, Autoplay],
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+});
+
+
+window.addEventListener('load', () => {
+  filterData();
 });

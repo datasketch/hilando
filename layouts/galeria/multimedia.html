@@ -1,4 +1,23 @@
 {{ define "main" }}
+
+{{ $data := index .Site.Data.multimedia }}
+{{ $tipo := slice }}
+{{ $municipio := slice }}
+{{ $comunidad := slice }}
+{{/* GET CATEGORIES */}}
+{{ range $data }}
+{{ if .tipo_multimedia }}
+{{ $tipo = $tipo | append .tipo_multimedia }}
+{{ end }}
+{{ if .municipio }}
+{{ $municipio = $municipio | append .municipio }}
+{{ end }}
+{{ if .comunidad }}
+{{ $comunidad = $comunidad | append .comunidad }}
+{{ end }}
+{{ end }}
+{{/* GET CATEGORIES END */}}
+
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
     <div class="bg-banner-galeria bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
@@ -16,189 +35,74 @@
                 </h3>
                 <!-- PARENT ELEMENT FILTERS -->
                 <div class="filters space-y-8">
-                    <!-- TIPO GALERIAS -->
-                    <div>
-                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
-                            Galerías
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            <label class="filter-label" for="eventos">
-                                <span class="text-lg">eventos</span>
-                                <input type="checkbox" name="galerias" id="eventos" value="eventos">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label" for="videos">
-                                <span class="text-lg">videos</span>
-                                <input type="checkbox" name="galerias" id="videos" value="videos">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label" for="audios">
-                                <span class="text-lg">audios</span>
-                                <input type="checkbox" name="galerias" id="audios" value="audios">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- TIPO GALERIAS END -->
-
-
                     <!-- MUNICIPIO -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
+                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
                             Municipio
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
-                            <label class="filter-label" for="buenaventura">
-                                <span class="text-lg">buenaventura</span>
-                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
+                            {{ range sort (uniq $municipio) "value" "asc" }}
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . }}</span>
+                                <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="filter-label" for="buenaventura">
-                                <span class="text-lg">buenaventura</span>
-                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label" for="buenaventura">
-                                <span class="text-lg">buenaventura</span>
-                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label" for="buenaventura">
-                                <span class="text-lg">buenaventura</span>
-                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="filter-label" for="buenaventura">
-                                <span class="text-lg">buenaventura</span>
-                                <input type="checkbox" name="municipio" id="buenaventura" value="buenaventura">
-                                <span class="checkmark"></span>
-                            </label>
+                            {{ end }}
                         </div>
                     </div>
                     <!-- MUNICIPIO END -->
 
-                    <!-- COMUNIDAD -->
+                    <!-- COMUNIDAD FOCALIZADA -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="2" style="border: 1px solid #BABBC9;">
-                            Comunidad
+                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
+                            Comunidad focalizada
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
-                            <label class="filter-label" for="indigena">
-                                <span class="text-lg">indigena</span>
-                                <input type="checkbox" name="comunidad" id="indigena" value="indigena">
+                            {{ range sort (uniq $comunidad) "value" "asc" }}
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . }}</span>
+                                <input type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}">
                                 <span class="checkmark"></span>
                             </label>
+                            {{ end }}
                         </div>
                     </div>
-                    <!-- COMUNIDAD END -->
+                    <!-- COMUNIDAD FOCALIZADA END -->
+
+                    <!-- TIPO DE MULTIMEDIA -->
+                    <div>
+                        <button class="accordion bg-transparent" data-tab="2" style="border: 1px solid #BABBC9;">
+                            Tipo de multimedia
+                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                        </button>
+                        <div class="panel" style="border: 1px solid #BABBC9;">
+                            {{ range sort (uniq $tipo) "value" "asc" }}
+                            <label class="filter-label" for="{{ . }}">
+                                <span class="text-lg">{{ . }}</span>
+                                <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
+                                <span class="checkmark"></span>
+                            </label>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <!-- TIPO DE MULTIMEDIA END -->
                 </div>
             </div>
             <div class="lg:col-start-4 lg:col-end-13">
-                {{/*  <div class="event"></div>
-                <div class="pagination text-center mt-10 lg:mt-20"></div>  */}}
-                <div class="multimedia grid grid-cols-1 lg:grid-cols-2 gap-9 lg:pt-12">
-                    <div>
-                        <div class="relative">
-                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
-                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
-                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
-                        </div>
-                        <div class="bg-white-2 p-6 space-y-2">
-                            <h3 class="text-xl xl:text-2xl font-black">
-                                Nombre del video
-                            </h3>
-                            <p class="text-lg xl:text-xl">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <p class="italic">
-                                    Municipio - Departamento
-                                </p>
-                                <p class="text-space-cadet">
-                                    Comunidad focalizada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="relative">
-                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
-                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
-                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
-                        </div>
-                        <div class="bg-white-2 p-6 space-y-2">
-                            <h3 class="text-xl xl:text-2xl font-black">
-                                Nombre del video
-                            </h3>
-                            <p class="text-lg xl:text-xl">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <p class="italic">
-                                    Municipio - Departamento
-                                </p>
-                                <p class="text-space-cadet">
-                                    Comunidad focalizada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="relative">
-                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
-                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
-                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
-                        </div>
-                        <div class="bg-white-2 p-6 space-y-2">
-                            <h3 class="text-xl xl:text-2xl font-black">
-                                Nombre del video
-                            </h3>
-                            <p class="text-lg xl:text-xl">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <p class="italic">
-                                    Municipio - Departamento
-                                </p>
-                                <p class="text-space-cadet">
-                                    Comunidad focalizada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="relative">
-                            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
-                            <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="/images/public/button-play.svg" alt="button play">
-                            <div class="absolute top-0 left-0 h-full w-3" style="background-color: #D27028;">&nbsp;</div>
-                        </div>
-                        <div class="bg-white-2 p-6 space-y-2">
-                            <h3 class="text-xl xl:text-2xl font-black">
-                                Nombre del video
-                            </h3>
-                            <p class="text-lg xl:text-xl">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…
-                            </p>
-                            <div class="flex justify-between items-center">
-                                <p class="italic">
-                                    Municipio - Departamento
-                                </p>
-                                <p class="text-space-cadet">
-                                    Comunidad focalizada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="multimedia"></div>
+                <div class="pagination text-center mt-10 lg:mt-20"></div>
             </div>
         </div>
     </div>
+    <input type="hidden" name="data" id="data-multimedia" value="{{ jsonify $data }}" />
 </div>
 {{ end }}
 {{ define "js" }}
 {{ $multimedia := resources.Get "js/api/multimedia.js" | js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $multimedia.Permalink }}"></script>
+{{ end }}
+{{ define "head" }}
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 {{ end }}

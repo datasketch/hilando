@@ -196,7 +196,15 @@
   /* MODAL */
 
   .modal {
-    @apply bg-white-2 h-auto w-10/12 max-w-screen-md mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 invisible opacity-0 scale-0 duration-300;
+    @apply bg-white-2 h-auto w-10/12 lg:w-full mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 invisible opacity-0 scale-0 duration-300;
+  }
+
+  .modal--events {
+    max-width: 830px;
+  }
+
+  .modal--multimedia {
+    max-width: 798px;
   }
 
   .modal--active {
@@ -214,6 +222,8 @@
   .modal__button-close {
       @apply cursor-pointer absolute -top-10 -right-8 z-10 px-2 py-1 bg-white text-2xl font-bold;
   }
+
+  /* PUBLICACIONES  */
 
   .publicaciones {
       @apply grid grid-cols-1 xl:grid-cols-2 gap-9 lg:pt-12;
@@ -247,6 +257,62 @@
       @apply py-2 px-6 uppercase text-xs font-bold text-white;
   }
 
+  /* PUBLICACIONES END  */
+
+  /* MULTIMEDIA  */
+  .multimedia {
+      @apply grid grid-cols-1 lg:grid-cols-2 gap-9 lg:pt-12;
+  }
+  .multimedia__button-play {
+      @apply cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .multimedia__type {
+      @apply absolute top-0 left-0 h-full w-3;
+  }
+  .multimedia__details {
+      @apply bg-white-2 p-6 space-y-2;
+  }
+  .multimedia__title {
+      @apply text-xl xl:text-2xl font-black;
+  }
+  .multimedia__description {
+      @apply text-lg xl:text-xl;
+  }
+  .multimedia__lugar-comunidad {
+      @apply flex justify-between items-center;
+  }
+  .multimedia__button-galeria {
+      @apply text-white font-bold uppercase py-2 cursor-pointer px-6 absolute bottom-0 right-0;
+  }
+  /* MULTIMEDIA END */
+
+  /* SWIPER THUMBS */
+  .mySwiper .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  /* SWIPER THUMBS END */
+
+  /* GALERIA */
+  .galeria__child-1 {
+      @apply py-4 px-6 border-t-2 border-b-2 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0;
+  }
+  .galeria__child-2 {
+      @apply py-4 px-6 border-b-2 flex flex-col lg:flex-row justify-between items-center space-y-2 lg:space-y-0;
+  }
+  .galeria__title {
+      @apply text-2xl xl:text-3xl font-black;
+  }
+  .galeria__description {
+      @apply text-xs text-center lg:text-left;
+  }
+  .galeria__comunidad-focalizada {
+      @apply text-purple underline italic text-base;
+  }
+  /* GALERIA END */
 }
 
 @layer utilities {
