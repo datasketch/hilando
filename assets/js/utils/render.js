@@ -20,7 +20,7 @@ export const renderEvent = (parentEl, data) => {
             </p>
         </div>
         <p class="text-lg xl:text-xl">
-            ${data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : data.descripcion }
+            ${data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : data.descripcion}
         </p>
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" href="#" style="background-color: #D27028;">Leer más</button>
     </div>
@@ -29,6 +29,46 @@ export const renderEvent = (parentEl, data) => {
         <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="#" style="background-color: #D27028;">Ver galería</a>
     </div>
   </div>
+    `;
+  parentEl.insertAdjacentHTML('beforeend', html);
+};
+
+export const renderPublicaciones = (parentEl, data) => {
+  const html = `
+    <div class="publicaciones__item">
+        <div class="publicaciones__municipio-comunidad">
+            <p>
+                ${data.municipio}
+            </p>
+            <p>
+                ${data.comunidad}   
+            </p>
+        </div>
+        <div class="px-3">
+            <img class="w-full" src="/images/galeria/publicaciones/sticky.svg" alt="sticky">
+        </div>
+        <div class="publicaciones__details">
+            <h3 class="publicaciones__title">
+                ${data.titulo}
+            </h3>
+            <p class="publicaciones__description">
+                ${data.descripcion}
+            </p>
+            <div class="publicaciones__autor-fecha">
+                <div class="italic">
+                    <p>
+                        Autor: ${data.autor}
+                    </p>
+                    <p>
+                        Fecha: ${data.fecha['mes'] + ' ' + data.fecha['dia'] + ' del ' + data.fecha['anio']}
+                    </p>
+                </div>
+                <div>
+                    <a class="publicaciones__download" href="${data.url}" style="background-color: #D27028;">Descargar</a>
+                </div>
+            </div>
+        </div>
+    </div>
     `;
   parentEl.insertAdjacentHTML('beforeend', html);
 };

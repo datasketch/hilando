@@ -199,6 +199,6 @@
 </div>
 {{ end }}
 {{ define "js" }}
-{{ $multimedia := resources.Get "js/api/galeria/multimedia.js" | js.Build (dict "minify" hugo.IsProduction)}}
+{{ $multimedia := resources.Get "js/api/multimedia.js" | js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $multimedia.Permalink }}"></script>
 {{ end }}
