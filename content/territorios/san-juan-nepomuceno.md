@@ -112,7 +112,6 @@ programas_usaid:
   - ' Riqueza Natural 2017-2022'
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
-comunidad_focalizada:
-  - San Pedro Consolado
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=San%20Juan%20Nepomuceno
+comunidad_focalizada: San Pedro Consolado
+
 ---

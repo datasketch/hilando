@@ -145,7 +145,6 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada:
-  - Borrachera y El Bongo
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=El%20Bagre
+comunidad_focalizada: Borrachera y El Bongo
+
 ---

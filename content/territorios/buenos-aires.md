@@ -127,7 +127,6 @@ programas_usaid:
   - ' Páramos y Bosques: Puracé y Totoró'
   - Juntos por la Transparencia
   - ' Jóvenes Resilientes'
-comunidad_focalizada:
-  - Alsacia
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Buenos%20Aires
+comunidad_focalizada: Alsacia
+
 ---

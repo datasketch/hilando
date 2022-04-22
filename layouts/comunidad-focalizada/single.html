@@ -4,15 +4,15 @@
         <div class="mx-auto w-10/12 xl:w-9/12">
             <div class="flex flex-col lg:flex-row lg:justify-between">
                 <div class="lg:w-7/12 text-white">
-                    <h1 class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto" style="max-width: 517px;">
-                        LA PAULINA
+                    <h1 class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto uppercase" style="max-width: 517px;">
+                        {{ .Params.nombre_comunidad }}
                         <span class="block text-3xl xl:text-4xl font-light">
-                            VALDIVIA - ANTIOQUIA
+                            {{ .Params.municipio }} - {{ .Params.Departamento }}
                         </span>
                     </h1>
                     <img class="w-full mt-6" src="/images/territorios/line-shape-2.svg" alt="line shape">
                     <p class="text-lg xl:text-xl -mt-2 mx-auto" style="max-width: 517px;">
-                        Es una comunidad dispersa en toda la vereda, casi el 80% a borde de carretera con familias muy numerosas (5 o 6 px). Cultivan cacao y tienen una asociación muy fuerte de productores. También tienen otros cultivos de pancoger y proyectos de piscicultura. Hay presencia de grupos armados no estatales y los jóvenes no pueden estar fuera después de las 6 pm.
+                        {{ .Params.Descripcion }}
                     </p>
                 </div>
                 <div class="lg:w-5/12">
@@ -29,7 +29,7 @@
                 </h3>
                 <img class="mx-auto" src="/images/territorios/person-blue.svg" alt="person">
                 <p class="text-3xl xl:text-4xl font-black">
-                    1250
+                    {{ .Params.num_personas }}
                     <span class="block text-sm">
                         PERSONAS
                     </span>
@@ -41,7 +41,7 @@
                 </h3>
                 <img class="mx-auto" src="/images/territorios/family.svg" alt="family">
                 <p class="text-3xl xl:text-4xl font-black">
-                    250
+                    {{ .Params.num_familias }}
                     <span class="block text-sm">
                         FAMILIAS
                     </span>
@@ -53,8 +53,8 @@
                 </h3>
                 <div class="text-3xl xl:text-4xl font-black mt-4">
                     <div class="inline-flex flex-col space-y-2">
-                        <p class="inline-flex items-center">45 <span class="text-sm font-normal ml-1">MINUTOS</span></p>
-                        <p class="inline-flex items-center">25 <span class="text-sm font-normal ml-1">KILOMETROS</span></p>
+                        <p class="inline-flex items-center">{{ .Params.min_distancia_casco_urbano }} <span class="text-sm font-normal ml-1">MINUTOS</span></p>
+                        <p class="inline-flex items-center">{{ .Params.km_distancia_casco_urbano }} <span class="text-sm font-normal ml-1">KILOMETROS</span></p>
                     </div>
                 </div>
                 <img class="mx-auto -mt-20" src="/images/territorios/distance.svg" alt="distance">
@@ -64,7 +64,7 @@
                     Vías de acceso
                 </h3>
                 <p class="text-lg xl:text-xl mx-auto lg:mx-0" style="max-width: 338px;">
-                    La vereda está sobre la via que conecta a al costa Atlántica, por lo que tiene carretera pero en condiciones regulares. Hay riesgos de deslizamientos, derrumbes e inundación.
+                    {{ .Params.vias_acceso }}
                 </p>
                 <img class="absolute -top-4 -right-0 h-full hidden lg:block" src="/images/territorios/hightwey.svg" alt="hightwey">
             </div>
@@ -73,19 +73,17 @@
                     <h3 class="text-xl xl:text-2xl font-black">
                         Infraestructura comunitaria
                     </h3>
+                    <p>
+                        {{ .Params.infraestructura_comunitaria }}
+                    </p>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.notas_infraestructura_comunitaria }}
+                        {{ with . }}
                         <li>
-                            Centro educativo rural La Paulina
+                            {{ . }}
                         </li>
-                        <li>
-                            Caseta comunal
-                        </li>
-                        <li>
-                            Sede ASOCAVAL
-                        </li>
-                        <li>
-                            IE con cancha de fútbol
-                        </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -93,9 +91,15 @@
                 <h3 class="text-xl xl:text-2xl font-black">
                     Educación e infraestructura educativa
                 </h3>
-                <p class="text-lg xl:text-xl mx-auto lg:mx-0" style="max-width: 439px;">
-                    Centro educativo rural La Paulina Primaria hasta el grado 8vo, 120 estudiantes, de 9 a 11 lo hacen en la IE de Puerto Valdivia (cuanta con 10 sedes en las veredas aledañas, en total en promedio 614 estudiantes)
-                </p>
+                <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                    {{ range .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
+                    {{ with . }}
+                    <li>
+                        {{ . }}
+                    </li>
+                    {{ end }}
+                    {{ end }}
+                </ul>
             </div>
             <div class="px-2 py-8 lg:py-10 xl:py-12" style="background-color: #F0F0F2;">
                 <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
@@ -103,15 +107,13 @@
                         Servicios Públicos
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.servicios_publicos_comunidades_focalizadas }}
+                        {{ with . }}
                         <li>
-                            &nbsp;
+                            {{ . }}
                         </li>
-                        <li>
-                            &nbsp;
-                        </li>
-                        <li>
-                            &nbsp;
-                        </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -120,16 +122,17 @@
                     <h3 class="text-xl xl:text-2xl font-black">
                         Infraestructura salud y atención psicosocial
                     </h3>
+                    <p class="text-lg xl:text-xl">
+                        {{ .Params.notas_infraestructura_salud_atencion_psicosocial }}
+                    </p>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.infraestructura_salud_atencion_psicosocial }}
+                        {{ with . }}
                         <li>
-                            &nbsp;
+                            {{ . }}
                         </li>
-                        <li>
-                            &nbsp;
-                        </li>
-                        <li>
-                            &nbsp;
-                        </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -139,18 +142,13 @@
                         Liderazgo en la comunidad
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.liderazgo_comunidad }}
+                        {{ with . }}
                         <li>
-                            Se identfican liderazgos importantes en el territorio.
+                            {{ . }}
                         </li>
-                        <li>
-                            La JAC es activa y funciona.
-                        </li>
-                        <li>
-                            Hay una Asociación muy representativa en la vereda y a nivel municipal llamada Asociación de cacaoteros de Valdivia (ASOCAVAL)
-                        </li>
-                        <li>
-                            Se rescata la práctica de juntanzas comunitarias.
-                        </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -160,26 +158,27 @@
                         Prácticas Organizativas
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.comunidades_focalizadas_practicas_organizativas }}
+                        {{ with . }}
                         <li>
-                            JAC
+                            {{ . }}
                         </li>
-                        <li>
-                            ASOCAVAL: Asociación de cacaoteros de Valdivia.
-                        </li>
-                        <li>
-                            Procesos en temas productivos y sociales
-                        </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 lg:grid lg:place-items-center" style="background-color: #3A3C6A;">
-        <div class="text-white space-y-4 w-10/12 mx-auto px-2 lg:w-auto lg:mx-0">
+        <div class="text-white space-y-4 w-10/12 mx-auto px-2 lg:w-4/12 lg:mx-0 text-center">
             <h3 class="text-xl xl:text-2xl font-black">
                 Inclusión, diversidad y género
             </h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+            <p class="text-lg xl:text-xl">
+                {{ .Params.inclusion_diversidad_genero }}
+            </p>
+            {{/* <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
                 <li>
                     Algunas mujeres hacen parte de ASOCAVAL.
                 </li>
@@ -189,7 +188,7 @@
                 <li>
                     No hay organizaciones de mujeres ni jóvenes
                 </li>
-            </ul>
+            </ul> */}}
         </div>
     </div>
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
@@ -206,14 +205,14 @@
                             </h3>
                             <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
                                 <li>
-                                    Regular
+                                    {{ .Params.conectividad_minima }}
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="p-4" style="border: 1px solid #D27028;">
                         <p class="text-lg xl:text-xl">
-                            En algunos espacios se cuenta con señal, en su mayoria debe ser con antena satelital
+                            {{ .Params.comentarios_conectividad }}
                         </p>
                     </div>
                 </div>
@@ -221,10 +220,17 @@
                     <h3 class="text-xl xl:text-2xl font-black">
                         Punto SOLE
                     </h3>
+                    <p class="text-lg xl:text-xl">
+                        {{ .Params.punto_SOLE }}
+                    </p>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.comentarios_punto_SOLE }}
+                        {{ with . }}
                         <li>
-                            Centro Educativo rural La paulina, punto de Vive Digital
+                            {{ . }}
                         </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -238,16 +244,24 @@
                         <h3 class="text-xl xl:text-2xl font-black">
                             Actividades económicas principales y vocación productiva
                         </h3>
+                        {{/* <p class="text-lg xl:text-xl">
+                            {{ .Params.ppales_actividades_economicas_vocacion_productiva }}
+                        </p> */}}
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                            {{/* {{ range .Params.comentarios_ppales_actividades_economicas_vocacion_productiva }}
+                            {{ with . }}
                             <li>
-                                Agricultura (cacao, plátano y yuca)
+                                {{ . }}
                             </li>
+                            {{ end }}
+                            {{ end }} */}}
+                            {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
+                            {{ with . }}
                             <li>
-                                Pesca
+                                {{ . }}
                             </li>
-                            <li>
-                                Mineria
-                            </li>
+                            {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                     <div class="space-y-4">
@@ -255,7 +269,7 @@
                             Comunidad sostenible y uso del suelo
                         </h3>
                         <p class="text-lg xl:text-xl">
-                            En el marco del proceso de sustitución de cultivos. Se legalizaron 68 predios lo que brinda sostenibilidad a la unidad productiva
+                            {{ .Params.comunidad_sostenible_uso_suelo }}
                         </p>
                     </div>
                     <div class="space-y-4">
@@ -281,18 +295,13 @@
                             Organizaciones con proyección
                         </h3>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                            {{ range .Params.org_con_proyeccion }}
+                            {{ with . }}
                             <li>
-                                ASOCAVAL Tiene alianzas tanto locales como departamentales y cuentan con un centro de acopio para el cacao. Brindan asistencia tecnica a Valdivia y a los municipios cercanos. Proyecto psicola (11 familias) Proyecto de un vivero en alianza con la Asociación Mujeres de Corazón
+                                {{ . }}
                             </li>
-                            <li>
-                                Brindan asistencia técnica a Valdivia y a los municipios cercanos.
-                            </li>
-                            <li>
-                                Proyecto psicola (11 familias)
-                            </li>
-                            <li>
-                                Proyecto de un vivero en alianza con la Asociación Mujeres de Corazón
-                            </li>
+                            {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                 </div>
@@ -308,9 +317,13 @@
                             Iniciativas productivas priorizadas
                         </h3>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                            {{ range .Params.iniciativas_priorizadas }}
+                            {{ with . }}
                             <li>
-                                Cacao
+                                {{ . }}
                             </li>
+                            {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                 </div>
@@ -320,9 +333,13 @@
                             Organizaciones focalizadas
                         </h3>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                            {{ range .Params.org_focalizada }}
+                            {{ with . }}
                             <li>
-                                ASOCAVAL
+                                {{ . }}
                             </li>
+                            {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                 </div>
@@ -338,7 +355,7 @@
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
                         <li>
-                            Alto
+                            {{ .Params.riesgo }}
                         </li>
                     </ul>
                 </div>
@@ -350,9 +367,13 @@
                         Otros programas USAID
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+                        {{ range .Params.otros_programas_USAID }}
+                        {{ with . }}
                         <li>
-                            No
+                            {{ . }}
                         </li>
+                        {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
                 <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
@@ -360,9 +381,20 @@
                         Alianzas y colaboradores
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                        <li>
-                            Empresa privada, alianza con Chocolates Colombia
-                        </li>
+                        {{ range .Params.alianzas_colaboradores_1 }}
+                            {{ with . }}
+                            <li>
+                                {{ . }}
+                            </li>
+                            {{ end }}
+                        {{ end }}
+                        {{ range .Params.alianzas_colaboradores_2 }}
+                            {{ with . }}
+                            <li>
+                                {{ . }}
+                            </li>
+                            {{ end }}
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -377,9 +409,13 @@
                             Actividades de ocio
                         </h3>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                            <li>
-                                Empresa privada, alianza con Chocolates Colombia
-                            </li>
+                            {{ range .Params.actividades_ocio }}
+                                {{ with . }}
+                                <li>
+                                    {{ . }}
+                                </li>
+                                {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                 </div>
@@ -389,23 +425,20 @@
                             Medios de comunicación
                         </h3>
                         <ul class="space-y-4 text-lg xl:text-xl">
+                            {{ range .Params.medios_comunicacion_narrativas_locales }}
+                            {{ with . }}
                             <li>
-                                <p>Televaldivia</p> 
-                                <p>321 7710083 </p>
-                                <p>televaldivia@cvcomunicaciones.org</p>
+                                {{ . }}
                             </li>
-                            <li>
-                                <p>Televaldivia</p> 
-                                <p>321 7710083 </p>
-                                <p>televaldivia@cvcomunicaciones.org</p>
-                            </li>
+                            {{ end }}
+                            {{ end }}
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {{/*  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
+    {{/* <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12" style="max-width: 406px;">
             <div class="flex justify-between items-center">
                 <div style="max-width: 278px;">
@@ -418,7 +451,7 @@
                 </div>
             </div>
         </div>
-    </div>  */}}
+    </div> */}}
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden" style="background-color: #F0F0F2;">
         <div class="mx-auto w-10/12 xl:w-9/12 flex">
             <div class="lg:w-6/12">
@@ -429,20 +462,16 @@
                     Descarga la información del municipio para conocer su contexto.
                 </p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg"
-                        href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}"
-                        style="background-color: #D27028;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}" style="background-color: #D27028;">
                         DESCARGA LA FICHA
                     </a>
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#"
-                        style="background-color: #C5296A;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #C5296A;">
                         DESCARGA LOS DATOS
                     </a>
                 </div>
             </div>
         </div>
-        <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg"
-            alt="line shape">
+        <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg" alt="line shape">
     </div>
 </div>
 {{ end }}

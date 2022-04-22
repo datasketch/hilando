@@ -118,7 +118,6 @@ iniciativas_org_sociedad_civil: '22'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
-comunidad_focalizada:
-  - El Paraiso
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Colos%C3%B3
+comunidad_focalizada: El Paraiso
+
 ---

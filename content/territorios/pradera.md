@@ -134,7 +134,6 @@ programas_usaid:
   - ' Programa de Alianzas Comerciales'
   - ' Iniciativa de Finanzas Rurales'
   - ' Pasos seguros'
-comunidad_focalizada:
-  - Resguardo Kwet-Wala
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Pradera
+comunidad_focalizada: Resguardo Kwet-Wala
+
 ---

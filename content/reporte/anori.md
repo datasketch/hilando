@@ -133,7 +133,6 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
-comunidad_focalizada:
-  - El Banco
+comunidad_focalizada: El Banco
 
 ---

@@ -243,7 +243,6 @@ programas_usaid:
   - ' Martin Luther King Scholarship Program -II'
   - ' Inclusive Education for Peace in the Pacific Coast'
   - ' Victims Participation and Collective Reparation Activity'
-comunidad_focalizada:
-  - Punta Soldado
+comunidad_focalizada: Punta Soldado
 
 ---

@@ -106,7 +106,6 @@ iniciativas_org_sociedad_civil: '26'
 programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
-comunidad_focalizada:
-  - La Ceiba
+comunidad_focalizada: La Ceiba
 
 ---

@@ -124,8 +124,6 @@ programas_usaid:
   - ' Somos Comunidad'
   - ' Fondo de Inversiones para la Paz'
   - ' Mujeres Poderosas'
-comunidad_focalizada:
-  - Casa de Piedra
-  - ' Las Mercedes'
+comunidad_focalizada: Casa de Piedra, Las Mercedes
 
 ---

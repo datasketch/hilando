@@ -115,7 +115,6 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada:
-  - Isla de la amargura
+comunidad_focalizada: Isla de la amargura
 
 ---
