@@ -94,6 +94,7 @@ infraestructura_salud_atencion_psicosocial:
   - ''
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 16
-url: comunidad-focaliza/la-paulina
+url: /comunidad-focaliza/la-paulina
+layout: comunidad
 
 ---

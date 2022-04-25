@@ -103,6 +103,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   de Puerto López) y del proceso de tejedores y tejedoras de la estrategia
   Entrelazando de la Unidad de Víctimas.
 num_visitas_predio: 20
-url: comunidad-focaliza/borrachera-y-la-bonga
+url: /comunidad-focaliza/borrachera-y-la-bonga
+layout: comunidad
 
 ---

@@ -129,6 +129,7 @@ notas_infraestructura_salud_atencion_psicosocial: |-
   Se ha tenido relación con la UARIV, pero la presencia es poca.
   No hay puesto de salud, la atención la reciben en San Jacinto
 num_visitas_predio: 0
-url: comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+url: /comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+layout: comunidad
 
 ---

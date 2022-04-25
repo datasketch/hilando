@@ -128,6 +128,7 @@ infraestructura_salud_atencion_psicosocial:
   - Promotora de salud
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 0
-url: comunidad-focaliza/vereda-el-turco
+url: /comunidad-focaliza/vereda-el-turco
+layout: comunidad
 
 ---

@@ -138,6 +138,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   empoderamiento de mujeres y reclutamiento forzado. Desde el proyecto Nasa se
   cuenta con un coordinador de salud y auxiliares comunitarios.
 num_visitas_predio: 0
-url: comunidad-focaliza/vereda-flayo-klayu
+url: /comunidad-focaliza/vereda-flayo-klayu
+layout: comunidad
 
 ---

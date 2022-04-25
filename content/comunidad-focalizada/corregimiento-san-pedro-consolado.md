@@ -112,6 +112,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Poca cobertura de acompañamiento psicosocial. En estos momentos se encuentra
   WLH.
 num_visitas_predio: 1
-url: comunidad-focaliza/corregimiento-san-pedro-consolado
+url: /comunidad-focaliza/corregimiento-san-pedro-consolado
+layout: comunidad
 
 ---

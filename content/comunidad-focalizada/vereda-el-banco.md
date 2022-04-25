@@ -92,6 +92,7 @@ infraestructura_salud_atencion_psicosocial:
   - ''
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 16
-url: comunidad-focaliza/vereda-el-banco
+url: /comunidad-focaliza/vereda-el-banco
+layout: comunidad
 
 ---

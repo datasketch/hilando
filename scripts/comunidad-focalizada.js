@@ -46,7 +46,8 @@ data.forEach((item) => {
     infraestructura_salud_atencion_psicosocial: item.infraestructura_salud_atencion_psicosocial.split(','),
     notas_infraestructura_salud_atencion_psicosocial: item.notas_infraestructura_salud_atencion_psicosocial,
     num_visitas_predio: item.num_visitas_predio,
-    url: `comunidad-focaliza/${filename}`,
+    url: `/comunidad-focaliza/${filename}`,
+    layout: 'comunidad',
   });
   const frontmatter = `---\n${metadata}\n---`;
   const pathToFile = join(__dirname, `../content/comunidad-focalizada/${filename}.md`);

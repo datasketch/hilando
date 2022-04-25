@@ -95,6 +95,7 @@ infraestructura_salud_atencion_psicosocial:
   - Presencia de la Alcaldía en atención psicosocial a jóvenes
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 4
-url: comunidad-focaliza/corregimiento-la-ceiba
+url: /comunidad-focaliza/corregimiento-la-ceiba
+layout: comunidad
 
 ---

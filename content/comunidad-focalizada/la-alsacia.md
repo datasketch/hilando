@@ -84,6 +84,7 @@ infraestructura_salud_atencion_psicosocial:
   - ''
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 0
-url: comunidad-focaliza/la-alsacia
+url: /comunidad-focaliza/la-alsacia
+layout: comunidad
 
 ---

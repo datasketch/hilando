@@ -109,6 +109,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Los proyectos agroforestales desarrollados han tenido apoyo psicosocial,
   actualmente no hay programas en curso.
 num_visitas_predio: 5
-url: comunidad-focaliza/vereda-paraiso
+url: /comunidad-focaliza/vereda-paraiso
+layout: comunidad
 
 ---

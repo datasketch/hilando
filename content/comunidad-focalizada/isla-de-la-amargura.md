@@ -110,6 +110,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Acompañamiento de la pastoral social y la UARIV en acciones puntales por el
   retorno.
 num_visitas_predio: 16
-url: comunidad-focaliza/isla-de-la-amargura
+url: /comunidad-focaliza/isla-de-la-amargura
+layout: comunidad
 
 ---

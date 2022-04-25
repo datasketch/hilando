@@ -139,6 +139,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   El centro de salud cuenta con 2 enfermeros y dos veces a la semana asiste el
   médico.
 num_visitas_predio: 19
-url: comunidad-focaliza/corregimiento-la-caucana
+url: /comunidad-focaliza/corregimiento-la-caucana
+layout: comunidad
 
 ---

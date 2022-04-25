@@ -114,6 +114,7 @@ infraestructura_salud_atencion_psicosocial:
   - Acompañamiento del PNUD
 notas_infraestructura_salud_atencion_psicosocial: Acompañamiento del PNUD (cerrado).
 num_visitas_predio: 5
-url: comunidad-focaliza/la-piche
+url: /comunidad-focaliza/la-piche
+layout: comunidad
 
 ---

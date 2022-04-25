@@ -72,6 +72,7 @@ infraestructura_salud_atencion_psicosocial:
   - ''
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 0
-url: comunidad-focaliza/punta-soldado
+url: /comunidad-focaliza/punta-soldado
+layout: comunidad
 
 ---
