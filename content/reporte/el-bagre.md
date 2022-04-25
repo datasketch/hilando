@@ -143,5 +143,6 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: Borrachera y El Bongo
+comunidad_focalizada_url: /comunidad-focaliza/borrachera-y-la-bonga
 
 ---

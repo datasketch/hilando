@@ -134,5 +134,6 @@ programas_usaid:
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
 comunidad_focalizada: El Banco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-el-banco
 
 ---

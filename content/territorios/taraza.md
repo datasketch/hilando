@@ -85,5 +85,6 @@ iniciativas_org_sociedad_civil: ''
 programas_usaid:
   - ''
 comunidad_focalizada: Corregimiento La Caucana
+comunidad_focalizada_url: /comunidad-focaliza/corregimiento-la-caucana
 
 ---

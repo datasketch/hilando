@@ -119,5 +119,6 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada: El Paraiso
+comunidad_focalizada_url: /comunidad-focaliza/vereda-paraiso
 
 ---

@@ -130,5 +130,6 @@ programas_usaid:
   - ' Yuca amarga para una dulce leche'
   - ' Fondo de Inversiones para la Paz'
 comunidad_focalizada: La Piche
+comunidad_focalizada_url: /comunidad-focaliza/la-piche
 
 ---

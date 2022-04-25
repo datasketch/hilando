@@ -28,8 +28,8 @@
                         {{ .Params.region }}
                     </p>
                 </div>
-                <div class="lg:col-start-8 lg:col-end-13 single-navigation">
-                    <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14">
+                <div class="lg:col-start-8 lg:col-end-13">
+                    <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14 single-navigation">
                         <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
                         <a href="#actividades-economicas"
@@ -46,7 +46,7 @@
                         <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
                         <div class="flex items-center space-x-4 text-white underline mb-4 lg:mb-6">
                             <img src="/images/territorios/sticky-person.svg" alt="sticky person">
-                            <a href="{{ relref . "comunidad-focalizada.md" }}" class="text-lg xl:text-xl">
+                            <a href="{{ .Params.comunidad_focalizada_url }}" class="text-lg xl:text-xl">
                                 {{ .Params.comunidad_focalizada }}
                             </a>
                         </div>

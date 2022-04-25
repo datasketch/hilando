@@ -44,7 +44,8 @@
         "espacios-socio-comunitarios": "Museo de ciencias e historia Julian Gonzalo, Biblioteca Comunitaria De San Francisco, Casa Social Cultural y Memoria, Estadio marino Klinger, Centro Cultural Buenaventura Banco De La Republica\nBIBLIOTECA PÚBLICA DISTRITAL FIDEL ORDOÑEZ SANTOS, BIBLIOTECA PALENQUE REGIONAL EL CONGAL, Club de Lectura Mariposas de Amor, Casa de la Cultura Margarita hurtado, Canchas Morumbi, Polideportivo Barrio El Cristal, Parque Ciudadela ColPuertos, Biblioteca Pública Distrital Torre Fuerte, Polideportivo La independencia, Cancha de futbol El Triunfo",
         "medios-comunicacion": "Emisora voces del Pacifico, RCN Radio Buenaventura, La Isla, Chimia del pacífico, Marina Stereo, Radio Policia Nacional, Periódico El Puerto, Buenaventura Viva, Buenaventura en línea",
         "iniciativas-org-sociedad-civil": "60",
-        "programas-usaid": "Active Buenaventura, Alianzas para la reconciliación, Juntos por la Transparencia, Martin Luther King Scholarship Program -II, Inclusive Education for Peace in the Pacific Coast, Victims Participation and Collective Reparation Activity"
+        "programas-usaid": "Active Buenaventura, Alianzas para la reconciliación, Juntos por la Transparencia, Martin Luther King Scholarship Program -II, Inclusive Education for Peace in the Pacific Coast, Victims Participation and Collective Reparation Activity",
+        "comunidad_focalizada_url": "/comunidad-focaliza/punta-soldado"
     },
     {
         "municipio": "Buenos Aires",
@@ -91,7 +92,8 @@
         "espacios-socio-comunitarios": "Biblioteca municipal de Gabriel García Márquez, Escuela de Música Municipal, Polideportivo en la vereda Mirasoles, Placa deportiva La Primavera, Centro recreativo con piscina, Polideportivo El Diamante, Polideportivo Ceral Munchique",
         "medios-comunicacion": "No se identificaron",
         "iniciativas-org-sociedad-civil": "6",
-        "programas-usaid": "Programa de Derechos Humanos, Territorios de Oportunidad: \"Fortalecer la capacidad de las comunidades López, Timbiquí, El Tambo, Guapi, Piamonte\", Programa de Alianzas Comerciales, Superando las Violencias contra las Mujeres, Justicia para una Paz Sostenible, Iniciativa de Finanzas Rurales, Programa de Reintegración y Prevención del Reclutamiento, Ser Más Maestro, Nuestra Tierra Próspera, Páramos y Bosques: Puracé y Totoró,Juntos por la Transparencia, Jóvenes Resilientes"
+        "programas-usaid": "Programa de Derechos Humanos, Territorios de Oportunidad: \"Fortalecer la capacidad de las comunidades López, Timbiquí, El Tambo, Guapi, Piamonte\", Programa de Alianzas Comerciales, Superando las Violencias contra las Mujeres, Justicia para una Paz Sostenible, Iniciativa de Finanzas Rurales, Programa de Reintegración y Prevención del Reclutamiento, Ser Más Maestro, Nuestra Tierra Próspera, Páramos y Bosques: Puracé y Totoró,Juntos por la Transparencia, Jóvenes Resilientes",
+        "comunidad_focalizada_url": "/comunidad-focaliza/la-alsacia"
     },
     {
         "municipio": "Pradera",
@@ -138,7 +140,8 @@
         "espacios-socio-comunitarios": "Parque Temático Mompaz, Biblioteca Pradera, Estadio Salustio, Casa de la cultura, Coliseo Pradera, Cancha Sintética, Parque Recreacional",
         "medios-comunicacion": "La pradereña Entérate Pradera, Pradera Radio Online, Cañaveral Stereo",
         "iniciativas-org-sociedad-civil": "23",
-        "programas-usaid": "Avanza Pacífico, Justicia para una Paz Sostenible, Programa de Alianzas Comerciales, Iniciativa de Finanzas Rurales, Pasos seguros"
+        "programas-usaid": "Avanza Pacífico, Justicia para una Paz Sostenible, Programa de Alianzas Comerciales, Iniciativa de Finanzas Rurales, Pasos seguros",
+        "comunidad_focalizada_url": "/comunidad-focaliza/kwala-la-fria-la-carbonera-y-el-nogal"
     },
     {
         "municipio": "Santander de Quilichao",
@@ -185,7 +188,8 @@
         "espacios-socio-comunitarios": "BIBLIOTECA PÚBLICA MUNICIPAL JORGE ELIECER GAITAN, BIBLIOTECA PÚBLICA CAMILO TORRES",
         "medios-comunicacion": "RADIO CELESTIAL, UMA KIWE-STEREO, EMISORA MONDOMO STEREO",
         "iniciativas-org-sociedad-civil": "41",
-        "programas-usaid": "Programa de Derechos Humanos, Iniciativa de Finanzas Rurales, Juntos por la Transparencia, Programa de Alianzas Comerciales, Nuestra Tierra Próspera, Emprendimientos Productivos para la Paz, Somos Comunidad, Justicia para una Paz Sostenible, Ser Más Maestro, Páramos y Bosques: Puracé y Totoró, Jóvenes Resilientes, Superando las Violencias contra las Mujeres, Inclusión para la Paz"
+        "programas-usaid": "Programa de Derechos Humanos, Iniciativa de Finanzas Rurales, Juntos por la Transparencia, Programa de Alianzas Comerciales, Nuestra Tierra Próspera, Emprendimientos Productivos para la Paz, Somos Comunidad, Justicia para una Paz Sostenible, Ser Más Maestro, Páramos y Bosques: Puracé y Totoró, Jóvenes Resilientes, Superando las Violencias contra las Mujeres, Inclusión para la Paz",
+        "comunidad_focalizada_url": "/comunidad-focaliza/vereda-el-turco"
     },
     {
         "municipio": "Toribío",
@@ -232,7 +236,8 @@
         "espacios-socio-comunitarios": "BIBLIOTECA PÚBLICA MUNICIPAL DE TORIBIO, Polideportivo, Centro Recreacional YURA",
         "medios-comunicacion": "NASA STEREO, Perifoneo",
         "iniciativas-org-sociedad-civil": "48",
-        "programas-usaid": "Programa de Derechos Humanos, Territorios de Oportunidad: \"Fortalecer la capacidad de las comunidades López, Timbiquí, El Tambo, Guapi, Piamonte\", Programa de Alianzas Comerciales, Superando las Violencias contra las Mujeres, Justicia para una Paz Sostenible, Iniciativa de Finanzas Rurales, Programa de Reintegración y Prevención del Reclutamiento, Ser Más Maestro, Nuestra Tierra Próspera, Páramos y Bosques: Puracé y Totoró, Juntos por la Transparencia, Jóvenes Resilientes"
+        "programas-usaid": "Programa de Derechos Humanos, Territorios de Oportunidad: \"Fortalecer la capacidad de las comunidades López, Timbiquí, El Tambo, Guapi, Piamonte\", Programa de Alianzas Comerciales, Superando las Violencias contra las Mujeres, Justicia para una Paz Sostenible, Iniciativa de Finanzas Rurales, Programa de Reintegración y Prevención del Reclutamiento, Ser Más Maestro, Nuestra Tierra Próspera, Páramos y Bosques: Puracé y Totoró, Juntos por la Transparencia, Jóvenes Resilientes",
+        "comunidad_focalizada_url": "/comunidad-focaliza/vereda-flayo-klayu"
     },
     {
         "municipio": "Anorí",
@@ -279,7 +284,8 @@
         "espacios-socio-comunitarios": "Casa de la cultura Pedro Nel Ospina, BIBLIOTECA PÚBLICA LEÓN ZAFIR, Polideportivo La Loma, Cancha “HECTOR EMILIO PIEDRAHÍTA CORREA” – B. Los Ángeles, Parque Educativo Pedro Nel Gómez, Ludoteca Municipal, Coliseo Municipal Rodrigo Cárdenas, Casa de la Justicia de Anorí",
         "medios-comunicacion": "Anorí Stereo, Aspanor TV, Tele Antioquia",
         "iniciativas-org-sociedad-civil": "23",
-        "programas-usaid": "Justicia para una Paz Sostenible, Colombia Transforma, Programa de Derechos Humanos, Mujeres de Oro, Oro Legal, Iniciativa de Finanzas Rurales, Programa de Alianzas Comerciales, Fortalecimiento Institucional a Víctimas"
+        "programas-usaid": "Justicia para una Paz Sostenible, Colombia Transforma, Programa de Derechos Humanos, Mujeres de Oro, Oro Legal, Iniciativa de Finanzas Rurales, Programa de Alianzas Comerciales, Fortalecimiento Institucional a Víctimas",
+        "comunidad_focalizada_url": "/comunidad-focaliza/vereda-el-banco"
     },
     {
         "municipio": "Cáceres",
@@ -326,7 +332,8 @@
         "espacios-socio-comunitarios": "Polideportivo Rumualdo Gallego Toro, Parque educativo La gran casa, Biblioteca León Gómez Palacios, Casa de la Cultura León Álvarez Palacios",
         "medios-comunicacion": "Cáceres Stereo",
         "iniciativas-org-sociedad-civil": "21",
-        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal"
+        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal",
+        "comunidad_focalizada_url": "/comunidad-focaliza/isla-de-la-amargura"
     },
     {
         "municipio": "El Bagre",
@@ -373,7 +380,8 @@
         "espacios-socio-comunitarios": "Biblioteca Municipal, Polideportivo, Casa de la cultura Celia maduro, Multideportivo, Casa Lúdica, La Casa de la Cultura San Pedro Claver, Coliseo",
         "medios-comunicacion": "Radio Vida, Red informativa y comercial El Bagre, Colombia Stereo, Bagre Digital Stereo, Corporación Bagre Digital Stereo Emisora Comunitaria, Emisora La Nuestra, Emisora Latina Stereo",
         "iniciativas-org-sociedad-civil": "6",
-        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal"
+        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal",
+        "comunidad_focalizada_url": "/comunidad-focaliza/borrachera-y-la-bonga"
     },
     {
         "municipio": "Nechí",
@@ -467,7 +475,8 @@
         "espacios-socio-comunitarios": "Casa de la Cultura Braulio Berrío, Biblioteca Centenario, Auditorio Municipal, Ludoteca y escuela de música",
         "medios-comunicacion": "Digital Stereo, TeleValdivia, Emisora Briceño Estéreo",
         "iniciativas-org-sociedad-civil": "8",
-        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal"
+        "programas-usaid": "Justicia para una Paz Sostenible, Mujeres de Oro, Colombia Transforma, Programa de Derechos Humanos, Oro Legal",
+        "comunidad_focalizada_url": "/comunidad-focaliza/la-paulina"
     },
     {
         "municipio": "Tarazá",
@@ -514,7 +523,8 @@
         "espacios-socio-comunitarios": "",
         "medios-comunicacion": "Morena Stéreo, La Bakanísima, Emisora Comunitaria de Tarazá",
         "iniciativas-org-sociedad-civil": "",
-        "programas-usaid": ""
+        "programas-usaid": "",
+        "comunidad_focalizada_url": "/comunidad-focaliza/corregimiento-la-caucana"
     },
     {
         "municipio": "Colosó",
@@ -561,7 +571,8 @@
         "espacios-socio-comunitarios": "Polideportivo España, Coliseo de Ferias y de toros Héctor Jose, Cancha de futbol Las campesinas, CASA ARANGO BIBLIOTECA PÚBLICA ANA MARÍA VERBEL DE VERBEL",
         "medios-comunicacion": "COLOSO STEREO (Ricaurte), Perifoneo",
         "iniciativas-org-sociedad-civil": "22",
-        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022"
+        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022",
+        "comunidad_focalizada_url": "/comunidad-focaliza/vereda-paraiso"
     },
     {
         "municipio": "Chalán",
@@ -608,7 +619,8 @@
         "espacios-socio-comunitarios": "BIBLIOTECA PÚBLICA MUNICIPAL GABRIEL GARCÍA MÁRQUEZ, Casa de la memoria y escuela popular \"El bonche\", Polideportivo Municipal, Parque principal",
         "medios-comunicacion": "Perifoneo, Volantes",
         "iniciativas-org-sociedad-civil": "26",
-        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022"
+        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022",
+        "comunidad_focalizada_url": "/comunidad-focaliza/corregimiento-la-ceiba"
     },
     {
         "municipio": "San Jacinto",
@@ -655,7 +667,8 @@
         "espacios-socio-comunitarios": "Campo de beisbol, Museo Arqueológico de San Jacinto, Biblioteca Municipal Emanuel Zabala, Campo de futbol la paz, Museo Comunitario",
         "medios-comunicacion": "Emisora de paz de Radio Nacional de Colombia, Tele San Jacinto, Emisora la San Jacintera, Digital San Jacinto",
         "iniciativas-org-sociedad-civil": "10",
-        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022,Iniciativa de Finanzas Rurales, Somos Comunidad, Fondo de Inversiones para la Paz, Mujeres Poderosas"
+        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022,Iniciativa de Finanzas Rurales, Somos Comunidad, Fondo de Inversiones para la Paz, Mujeres Poderosas",
+        "comunidad_focalizada_url": "/comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra"
     },
     {
         "municipio": "San Juan Nepomuceno",
@@ -702,7 +715,8 @@
         "espacios-socio-comunitarios": "Sala De Lectura - Tio Mane- San José Del Peñón, BIBLIOTECA PÚBLICA\" LUIS ROQUE BORRE\", Centro Cultural Julio Cesar Rojas Buendía",
         "medios-comunicacion": "Innovación Stereo, Asosanjuan",
         "iniciativas-org-sociedad-civil": "13",
-        "programas-usaid": "Nuestra Tierra Próspera, Juntos por la Transparencia, Riqueza Natural 2017-2022, Iniciativa de Finanzas Rurales, Mujeres Poderosas"
+        "programas-usaid": "Nuestra Tierra Próspera, Juntos por la Transparencia, Riqueza Natural 2017-2022, Iniciativa de Finanzas Rurales, Mujeres Poderosas",
+        "comunidad_focalizada_url": "/comunidad-focaliza/corregimiento-san-pedro-consolado"
     },
     {
         "municipio": "Toluviejo",
@@ -749,6 +763,7 @@
         "espacios-socio-comunitarios": "BIBLIOTECA PÚBLICA MUNICIPAL DE TOLUVIEJO, Cancha de microfutbol, Polideportivo, Casa Lúdica, Casa de la cultura",
         "medios-comunicacion": "LA NUEVA 100.7",
         "iniciativas-org-sociedad-civil": "52",
-        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022, Iniciativa de Finanzas Rurales, Yuca amarga para una dulce leche, Fondo de Inversiones para la Paz"
+        "programas-usaid": "Nuestra Tierra Próspera, Riqueza Natural 2017-2022, Iniciativa de Finanzas Rurales, Yuca amarga para una dulce leche, Fondo de Inversiones para la Paz",
+        "comunidad_focalizada_url": "/comunidad-focaliza/la-piche"
     }
 ]

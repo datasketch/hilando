@@ -113,5 +113,6 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
 comunidad_focalizada: San Pedro Consolado
+comunidad_focalizada_url: '/comunidad-focaliza/corregimiento-san-pedro-consolado'
 
 ---

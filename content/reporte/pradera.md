@@ -132,5 +132,6 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Pasos seguros'
 comunidad_focalizada: Resguardo Kwet-Wala
+comunidad_focalizada_url: /comunidad-focaliza/kwala-la-fria-la-carbonera-y-el-nogal
 
 ---

@@ -156,5 +156,6 @@ programas_usaid:
   - ' Juntos por la Transparencia'
   - ' Jóvenes Resilientes'
 comunidad_focalizada: Flayo, Resguardo de San Francisco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-flayo-klayu
 
 ---

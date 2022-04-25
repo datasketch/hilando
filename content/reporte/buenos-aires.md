@@ -125,5 +125,6 @@ programas_usaid:
   - Juntos por la Transparencia
   - ' Jóvenes Resilientes'
 comunidad_focalizada: Alsacia
+comunidad_focalizada_url: /comunidad-focaliza/la-alsacia
 
 ---
