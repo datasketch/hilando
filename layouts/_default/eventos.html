@@ -49,16 +49,16 @@
                 <div class="filters space-y-8">
                     <!-- TIPO EVENTO -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
                             Tipo de Evento
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $tipo) "value" "asc" }}
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--purple"></span>
                             </label>
                             {{ end }}
                         </div>
@@ -68,16 +68,16 @@
 
                     <!-- MES -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
                             Mes
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $mes) "value" "asc" }}
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--purple"></span>
                             </label>
                             {{ end }}
                         </div>
@@ -86,7 +86,7 @@
 
                     <!-- DEPARTAMENTO -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="2" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--trasparent" data-tab="2" style="border: 1px solid #BABBC9;">
                             Departamento
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
@@ -95,7 +95,7 @@
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--blue"></span>
                             </label>
                             {{ end }}
                         </div>
@@ -104,7 +104,7 @@
 
                     <!-- MUNICIPIO -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="3" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
                             Municipio
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
@@ -113,7 +113,7 @@
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . | humanize }}</span>
                                 <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--blue"></span>
                             </label>
                             {{ end }}
                         </div>

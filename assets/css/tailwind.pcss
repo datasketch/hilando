@@ -13,7 +13,13 @@
   /* ACCORDION COMPONENT */
 
   .accordion {
-      @apply uppercase font-black flex items-center py-2 px-6 w-full justify-between text-space-cadet text-sm duration-200;
+      @apply uppercase flex items-center py-2 px-6 w-full justify-between  text-sm font-black duration-200;
+  }
+  .accordion--trasparent {
+      @apply bg-transparent text-space-cadet
+  }
+  .accordion--purple {
+      @apply bg-purple text-white
   }
   .accordion--images {
     @apply duration-200;
@@ -33,10 +39,19 @@
     @apply hidden;
   }
   .filter-label .checkmark {
-    @apply w-5 h-5 flex-shrink-0 bg-space-cadet bg-opacity-60 relative duration-300;
+    @apply w-5 h-5 flex-shrink-0 relative duration-300;
   }
-  .filter-label:hover .checkmark {
+  .filter-label .checkmark--blue {
+    @apply bg-space-cadet bg-opacity-60;
+  }
+  .filter-label .checkmark--purple {
+    @apply bg-purple bg-opacity-60;
+  }
+  .filter-label:hover .checkmark--blue {
     @apply bg-space-cadet;
+  }
+  .filter-label:hover .checkmark--purple {
+    @apply bg-purple;
   }
   /* Create the checkmark/indicator (hidden when not checked) */
   .filter-label .checkmark:after {
@@ -45,8 +60,12 @@
     @apply absolute w-3 h-3 mt-1 ml-1 bg-center bg-contain hidden;
   }
 
-  .filter-label input:checked ~ .checkmark {
+  .filter-label input:checked ~ .checkmark--blue {
     @apply bg-space-cadet;
+  }
+
+  .filter-label input:checked ~ .checkmark--purple {
+    @apply bg-purple;
   }
 
   .filter-label input:checked ~ .checkmark:after {
