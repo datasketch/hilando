@@ -67,6 +67,8 @@ module.exports = {
         'multimedia__description',
         'multimedia__lugar-comunidad',
         'multimedia__button-galeria',
+        'sub-menu-icon--active',
+        'sub-menu-2--active',
       ],
     },
   },
