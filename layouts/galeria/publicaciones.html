@@ -33,7 +33,7 @@
                 <div class="filters space-y-8">
                     <!-- MUNICIPIO -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="0" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--transparent" data-tab="0" style="border: 1px solid #BABBC9;">
                             Municipio
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
@@ -42,7 +42,7 @@
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . }}</span>
                                 <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--blue"></span>
                             </label>
                             {{ end }}
                         </div>
@@ -51,7 +51,7 @@
 
                     <!-- COMUNIDAD FOCALIZADA -->
                     <div>
-                        <button class="accordion bg-transparent" data-tab="1" style="border: 1px solid #BABBC9;">
+                        <button class="accordion accordion--transparent" data-tab="1" style="border: 1px solid #BABBC9;">
                             Comunidad focalizada
                             <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                         </button>
@@ -60,7 +60,7 @@
                             <label class="filter-label" for="{{ . }}">
                                 <span class="text-lg">{{ . }}</span>
                                 <input type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark"></span>
+                                <span class="checkmark checkmark--blue"></span>
                             </label>
                             {{ end }}
                         </div>
