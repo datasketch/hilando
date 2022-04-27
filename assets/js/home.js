@@ -56,9 +56,41 @@ const swiper = new Swiper('.swiper', {
 
   // Responsive breakpoints
   breakpoints: {
-    1366: {
+    1024: {
       slidesPerView: 2,
       spaceBetween: 54.18,
+    },
+  },
+});
+
+// init Swiper: news
+
+// eslint-disable-next-line no-unused-vars
+const swiperNews = new Swiper('.swiper-news', {
+  // configure Swiper to use modules
+  modules: [Navigation, Autoplay],
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next-news',
+    prevEl: '.swiper-button-prev-news',
+    disabledClass: 'opacity-40',
+  },
+
+  // Autoplay
+  autoplay: {
+    delay: 5000,
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  // Responsive breakpoints
+  breakpoints: {
+    1366: {
+      slidesPerView: 2,
+      spaceBetween: 57.5,
     },
   },
 });
