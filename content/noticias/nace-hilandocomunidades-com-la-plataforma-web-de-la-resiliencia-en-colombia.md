@@ -3,15 +3,25 @@ title: "NACE HILANDOCOMUNIDADES.COM LA PLATAFORMA WEB DE LA RESILIENCIA EN COLOM
 date: 2022-03-17T16:14:55.394Z
 image: /images/uploads/banner.png
 description: >-
-  - El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM,
-  estrena plataforma web. 
+  · Se estrena plataforma www.hilandocomunidades.com, una iniciativa del
+  Programa Hilando Vidas y Esperanza (WLH), plataforma colaborativa y de
+  divulgación que visibiliza las iniciativas de salud mental, convivencia,
+  empoderamiento económico y comunicación para la paz promovidas junto a los
+  sobrevivientes resilientes del conflicto en Colombia. 
 
 
-  - A través de datos cuantitativos y cualitativos, la plataforma web ofrece nuevas miradas de tres regiones y 15 municipios focalizados en temas como salud mental, tejido social, empoderamiento económico y cultura de paz. 
+  · A partir de contar las historias y experiencias de los 15 territorios priorizados por el Programa WLH, la plataforma busca junto a diferentes socios inspirar, cambiar paradigmas, impulsar y exaltar a las comunidades resilientes de Colombia. 
 
-  - En este espacio digital los usuarios podrán conocer los avances y acciones en terreno y mantenerse al día en la agenda de actividades que promueven los sobrevivientes del conflicto junto a diferentes aliados de la cooperación, el sector privado, el gobierno, y la sociedad civil. 
+
+  · En este espacio digital los usuarios podrán conocer noticias, eventos, cubrimientos especiales, campañas, fotografías y videos de la comunidad WLH, siendo un espacio de co-creación que integra grupos muy diversos. 
 cms: true
 ---
+· Se estrena plataforma www.hilandocomunidades.com, una iniciativa del Programa Hilando Vidas y Esperanza (WLH), plataforma colaborativa y de divulgación que visibiliza las iniciativas de salud mental, convivencia, empoderamiento económico y comunicación para la paz promovidas junto a los sobrevivientes resilientes del conflicto en Colombia. 
+
+· A partir de contar las historias y experiencias de los 15 territorios priorizados por el Programa WLH, la plataforma busca junto a diferentes socios inspirar, cambiar paradigmas, impulsar y exaltar a las comunidades resilientes de Colombia. 
+
+· En este espacio digital los usuarios podrán conocer noticias, eventos, cubrimientos especiales, campañas, fotografías y videos de la comunidad WLH, siendo un espacio de co-creación que integra grupos muy diversos. 
+
 Ya está al aire la nueva plataforma web www.hilandocomunidades.com una iniciativa del Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM) de construir una plataforma colaborativa y de divulgación que visibilice las iniciativas de salud mental, convivencia, empoderamiento económico y comunicación para la paz promovidas junto a los sobrevivientes resilientes del conflicto en Colombia.   
 
 ![](/images/uploads/captura-de-pantalla-2022-04-21-a-las-4.43.41-p.m..png)
