@@ -1,5 +1,5 @@
 ---
-title: Así se conmemoró a la mujer en municipios de Antioquia y Bolívar
+title: ASÍ SE CONMEMORÓ A LA MUJER EN LOS MUNICIPIOS WLH DE ANTIOQUIA Y BOLÍVAR
 date: 2022-04-28T14:41:12.061Z
 image: /images/uploads/whatsapp-image-2022-03-27-at-9.14.44-am.jpeg
 description: >-
