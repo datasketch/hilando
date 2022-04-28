@@ -3,11 +3,11 @@ title: ASÍ SE CONMEMORÓ A LA MUJER EN LOS MUNICIPIOS WLH DE ANTIOQUIA Y BOLÍV
 date: 2022-04-28T14:41:12.061Z
 image: /images/uploads/whatsapp-image-2022-03-27-at-9.14.44-am.jpeg
 description: >-
-  •    Las actividades hacen parte de la agenda cultural del Programa WLH de
-  USAID, implementado por OIM.
+  Las actividades hacen parte de la agenda cultural del Programa WLH de USAID,
+  implementado por OIM.
 
 
-  •    Estos eventos hicieron visibles las luchas y resiliencia de las mujeres e incluyeron recitales de poesía, ofrendas y reconocimientos, marchas, presentaciones artísticas, ollas comunitarias, talleres de tejeduría y partidos de fútbol femenino.
+  Estos eventos hicieron visibles las luchas y resiliencia de las mujeres e incluyeron recitales de poesía, ofrendas y reconocimientos, marchas, presentaciones artísticas, ollas comunitarias, talleres de tejeduría y partidos de fútbol femenino.
 cms: true
 ---
 El Programa Hilando Vidas y Esperanza (WLH), de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), apoyó durante marzo y abril distintas actividades en el marco de conmemoración del Mes de la Mujer en las comunidades de La Borrachera y La Bonga en el Bagre, departamento de Antioquia; San Pedro Consolado en San Juan Nepomuceno, y Casa de Piedra y Las Mercedes en San Jacinto, en el departamento de Bolívar.
