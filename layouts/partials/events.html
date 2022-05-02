@@ -36,7 +36,11 @@
                             </div>
                         </div>
                         <div class="xl:w-1/2 order-1 xl:order-2">
+                            {{ if eq .imagen "" }}
+                            <img class="w-full object-cover object-center" style="height: 330px;" src="/images/eventos/prueba.jpg" alt="{{ .titulo }}">
+                            {{ else }}
                             <img class="w-full object-cover object-center" style="height: 330px;" src="{{ .imagen }}" alt="{{ .titulo }}">
+                            {{ end }}
                         </div>
                     </div>
                 </div>
