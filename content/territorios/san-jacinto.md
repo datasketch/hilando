@@ -127,8 +127,7 @@ programas_usaid:
   - ' Somos Comunidad'
   - ' Fondo de Inversiones para la Paz'
   - ' Mujeres Poderosas'
-comunidad_focalizada:
-  - Casa de Piedra
-  - ' Las Mercedes'
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=San%20Jacinto
+comunidad_focalizada: Casa de Piedra, Las Mercedes
+comunidad_focalizada_url: /comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+
 ---

@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "image": "/images/galeria/multimedia/prueba.jpg",
+        "titulo": "Nombre del video",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…",
+        "municipio": "Bogotá",
+        "departamento": "Cundinamarca",
+        "comunidad": "Comunidad 1",
+        "tipo_multimedia": "Video"
+    },
+    {
+        "id": 2,
+        "image": "/images/galeria/multimedia/prueba-2.jpg",
+        "titulo": "Nombre de la galería",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…",
+        "municipio": "Buenaventura",
+        "departamento": "Valle del cauca",
+        "comunidad": "Comunidad 2",
+        "tipo_multimedia": "Fotografía",
+        "galeria_images": [
+            "/images/galeria/multimedia/galeria-1.jpg",
+            "/images/galeria/multimedia/galeria-2.jpg",
+            "/images/galeria/multimedia/galeria-3.jpg",
+            "/images/galeria/multimedia/galeria-1.jpg",
+            "/images/galeria/multimedia/galeria-2.jpg",
+            "/images/galeria/multimedia/galeria-3.jpg",
+            "/images/galeria/multimedia/galeria-1.jpg"
+        ],
+        "nombre_galeria": "Nombre de la galería",
+        "descripcion_galeria": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree psum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…"
+    }
+]

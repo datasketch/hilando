@@ -155,8 +155,7 @@ programas_usaid:
   - ' Páramos y Bosques: Puracé y Totoró'
   - ' Juntos por la Transparencia'
   - ' Jóvenes Resilientes'
-comunidad_focalizada:
-  - Flayo
-  - ' Resguardo de San Francisco'
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Torib%C3%ADo
+comunidad_focalizada: Flayo, Resguardo de San Francisco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-flayo-klayu
+
 ---

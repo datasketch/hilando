@@ -16,7 +16,7 @@
                     <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
                         {{ .Params.description }}
                     </p>
-                    <div class="border border-white mb-4" id="territorio">
+                    <div class="border border-white mb-4">
                         {{ with .Params.grafica_ubicacion_geografica }}
                         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
                         {{ else }}
@@ -28,11 +28,8 @@
                         {{ .Params.region }}
                     </p>
                 </div>
-                <div class="lg:col-start-8 lg:col-end-13 single-navigation">
-                    <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14">
-                        <a href="#territorio"
-                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
-                            style="background-color: #C5296A;">TERRITORIO</a>
+                <div class="lg:col-start-8 lg:col-end-13">
+                    <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14 single-navigation">
                         <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
                         <a href="#actividades-economicas"
@@ -45,19 +42,28 @@
                             class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item"
                             style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
                     </div>
-                </div>
-                <div class="lg:col-start-1 lg:col-end-7">
-                    <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidades focalizadas</h3>
-                    <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
-                        {{ range .Params.comunidad_focalizada }}
-                        <li class="flex items-center">
-                            <img class="mr-2" src="/images/public/point.svg" alt="point">
-                            {{ . }}
-                        </li>
-                        {{ end }}
-                    </ul>
-                    <iframe class="mx-auto w-full h-96 mt-8 border border-white"
-                        src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>
+                    <div>
+                        <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
+                        <div class="flex items-center space-x-4 text-white underline mb-4 lg:mb-6">
+                            <img src="/images/territorios/sticky-person.svg" alt="sticky person">
+                            <a href="{{ .Params.comunidad_focalizada_url }}" class="text-lg xl:text-xl">
+                                {{ .Params.comunidad_focalizada }}
+                            </a>
+                        </div>
+                        <p class="text-white text-lg xl:text-xl">
+                            Texto descriptivo de la comunidad focalizada...
+                        </p>
+                        {{/*  <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
+                            {{ range .Params.comunidad_focalizada }}
+                            <li class="flex items-center">
+                                <img class="mr-2" src="/images/public/point.svg" alt="point">
+                                {{ . }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                        <iframe class="mx-auto w-full h-96 mt-8 border border-white"
+                            src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>  */}}
+                    </div>
                 </div>
             </div>
         </div>
@@ -635,7 +641,7 @@
     <!-- DATA EXPLORER END -->
 
     <!-- DOWNLOAD -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative" style="background-color: #F0F0F2;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden" style="background-color: #F0F0F2;">
         <div class="mx-auto w-10/12 xl:w-9/12 flex">
             <div class="lg:w-6/12">
                 <h2 class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black">

@@ -153,7 +153,7 @@ programas_usaid:
   - ' Jóvenes Resilientes'
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
-comunidad_focalizada:
-  - El Turco
+comunidad_focalizada: El Turco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-el-turco
 
 ---

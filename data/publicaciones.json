@@ -1,0 +1,132 @@
+[
+    {
+        "municipio": "Bogotá",
+        "comunidad": "Comunidad 1",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Buenaventura",
+        "comunidad": "Comunidad 2",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Caucasia",
+        "comunidad": "Comunidad 3",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "El bagre",
+        "comunidad": "Comunidad 4",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Pradera",
+        "comunidad": "Comunidad 5",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "San jacinto",
+        "comunidad": "Comunidad 6",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Toluviejo",
+        "comunidad": "Comunidad 7",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Bogotá",
+        "comunidad": "Comunidad 2",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Buenaventura",
+        "comunidad": "Comunidad 1",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    },
+    {
+        "municipio": "Caucasia",
+        "comunidad": "Comunidad 3",
+        "titulo": "Nombre de la publicacion",
+        "descripcion": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmodtempor invidunt u labore dolore magna aliquyam erat, sed Diam...",
+        "autor": "Nombre del autor",
+        "fecha": {
+            "dia": 15,
+            "mes": "marzo",
+            "anio": "2021"
+        },
+        "url": ""
+    }
+]

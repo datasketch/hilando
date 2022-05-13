@@ -109,7 +109,7 @@ programas_usaid:
   - ' Riqueza Natural 2017-2022'
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
-comunidad_focalizada:
-  - San Pedro Consolado
+comunidad_focalizada: San Pedro Consolado
+comunidad_focalizada_url: 'url: /comunidad-focaliza/corregimiento-san-pedro-consolado'
 
 ---

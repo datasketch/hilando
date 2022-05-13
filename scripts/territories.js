@@ -68,7 +68,8 @@ trrs.forEach((trr) => {
     medios_comunicacion: trr['medios-comunicacion'].split(','),
     iniciativas_org_sociedad_civil: trr['iniciativas-org-sociedad-civil'],
     programas_usaid: trr['programas-usaid'].split(','),
-    comunidad_focalizada: trr['comunidad-focalizada'].split(','),
+    comunidad_focalizada: trr['comunidad-focalizada'],
+    comunidad_focalizada_url: trr.comunidad_focalizada_url,
   };
   let metadata = yaml.dump(fields);
   writeFileSync(createPath('territorios', filename), `---\n${metadata}\n---`);

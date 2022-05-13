@@ -33,14 +33,7 @@
                 {{ with .Params.comunidad_focalizada }}
                     <div class="text-xs">
                         <p class="font-bold mt-5">Comunidad focalizada</p>
-                        <ul class="mt-2">
-                            {{ range . }}
-                                <li class="flex items-center space-x-2">
-                                    <img class="inline-block w-4" src="/images/public/comunidad-icon.png" alt="">
-                                    <span>{{ . }}</span>
-                                </li>
-                            {{ end }}
-                        </ul>
+                        <p class="mt-2">{{ . }}</p>
                     </div>
                 {{ end }}
             </div>

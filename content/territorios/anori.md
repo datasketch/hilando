@@ -136,7 +136,7 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
-comunidad_focalizada:
-  - El Banco
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Anor%C3%AD
+comunidad_focalizada: El Banco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-el-banco
+
 ---

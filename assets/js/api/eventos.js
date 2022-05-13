@@ -1,15 +1,50 @@
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
+import Swiper, {Navigation, Autoplay} from 'swiper';
+import Modal from '../utils/modal';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
 const panels = document.querySelectorAll('.panel');
 const images = document.querySelectorAll('.accordion--images');
 const event = document.querySelector('.event');
+const events = document.querySelector('.events');
 const dataEl = document.querySelector('#data-eventos');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
 dataEl.remove();
+
+// init Swiper:
+
+// eslint-disable-next-line no-unused-vars
+const swiper = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Autoplay],
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    disabledClass: 'opacity-40',
+  },
+
+  // Autoplay
+  autoplay: {
+    delay: 5000,
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  // Responsive breakpoints
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 54.18,
+    },
+  },
+});
 
 const state = {
   originalData: JSON.parse(dataEl.value),
@@ -20,7 +55,7 @@ const state = {
     mes: [],
     tipo: [],
   },
-  itemsPerPagination: 10,
+  itemsPerPagination: 3,
   page: 1,
 };
 
@@ -61,22 +96,19 @@ function filterData() {
 
 // EVENTS HANDLERS
 filters.addEventListener('click', function(e) {
-  try {
-    const child = e.target.closest('.accordion');
-    const id = child.getAttribute('data-tab');
-    if (panels[id].style.maxHeight) {
-      panels[id].style.maxHeight = null;
-      panels[id].style.padding = '0px 24px 0px 24px';
-      panels[id].style.overflowY = 'hidden';
-      images[id].style.transform = 'rotate(0deg)';
-    } else {
-      panels[id].style.maxHeight = 193 + 'px';
-      panels[id].style.padding = '16px 24px 8px 24px';
-      panels[id].style.overflowY = 'scroll';
-      images[id].style.transform = 'rotate(90deg)';
-    }
-  } catch {
-    return;
+  const child = e.target.closest('.accordion');
+  if (!child) return;
+  const id = child.getAttribute('data-tab');
+  if (panels[id].style.maxHeight) {
+    panels[id].style.maxHeight = null;
+    panels[id].style.padding = '0px 24px 0px 24px';
+    panels[id].style.overflowY = 'hidden';
+    images[id].style.transform = 'rotate(0deg)';
+  } else {
+    panels[id].style.maxHeight = 193 + 'px';
+    panels[id].style.padding = '16px 24px 8px 24px';
+    panels[id].style.overflowY = 'scroll';
+    images[id].style.transform = 'rotate(90deg)';
   }
 });
 
@@ -99,6 +131,36 @@ pagination.addEventListener('click', (e) => {
   state.page = +btn.dataset.page;
   filterData();
   scrollPagination.scrollIntoView({behavior: 'smooth'});
+});
+
+event.addEventListener('click', function(e) {
+  // get id
+  const id = e.target.closest('button')?.dataset.id;
+
+  // closure protection
+  if (!id) return;
+
+  // filter by id
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+
+  // call modal class
+  // eslint-disable-next-line no-unused-vars
+  const modal = new Modal(data[0]);
+});
+
+events.addEventListener('click', function(e) {
+  // get id
+  const id = e.target.closest('button')?.dataset.id;
+
+  // closure protection
+  if (!id) return;
+
+  // filter by id
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+
+  // call modal class
+  // eslint-disable-next-line no-unused-vars
+  const modal = new Modal(data[0]);
 });
 
 window.addEventListener('load', () => {

@@ -156,7 +156,7 @@ programas_usaid:
   - ' Jóvenes Resilientes'
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
-comunidad_focalizada:
-  - El Turco
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Santander%20de%20Quilichao 
+comunidad_focalizada: El Turco
+comunidad_focalizada_url: /comunidad-focaliza/vereda-el-turco
+
 ---

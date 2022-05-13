@@ -126,7 +126,7 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada:
-  - La Paulina
-app: https://datasketch.shinyapps.io/wlhApp/?mcipio=Valdivia 
+comunidad_focalizada: La Paulina
+comunidad_focalizada_url: /comunidad-focaliza/la-paulina
+
 ---
