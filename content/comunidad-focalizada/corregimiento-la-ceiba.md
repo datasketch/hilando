@@ -19,7 +19,7 @@ num_personas: 510
 num_familias: 120
 min_distancia_casco_urbano: 8
 km_distancia_casco_urbano: 5
-vias_acceso: >-
+vias_acceso: >
   Vía asfaltada, construida en el marco de “obras por impuestos” por la empresa
   DISELEC S.A, actuando como contribuyente, la obra la ejecutó Fiduciaria
   FIDUPREVISORA con la supervisión del Instituto Nacional de Vías.
@@ -73,10 +73,9 @@ otros_programas_USAID:
   - Nuestra Tierra Próspera
 alianzas_colaboradores_1:
   - Experiencia Casa de Memoria El Bonche
-  - ' para sororidad de mujeres'
-  - ' buen uso de parque y cancha en con ART en obras PDET'
-  - ' SENA en emprendimiento'
-  - colectivo de 25 jóvenes en articulación ICBF
+  - Buen uso de parque y cancha
+  - Emprendimiento
+  - Colectivo de jóvenes
 alianzas_colaboradores_2:
   - Experiencia Casa de Memoria El Bonche
   - Buen uso de parque y cancha
@@ -93,7 +92,7 @@ infraestructura_salud_atencion_psicosocial:
   - Poca cobertura en atención psicosocial
   - Participación conjunta de organizaciones
   - Presencia de la Alcaldía en atención psicosocial a jóvenes
-notas_infraestructura_salud_atencion_psicosocial: ''
+notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 4
 url: /comunidad-focaliza/corregimiento-la-ceiba
 layout: comunidad

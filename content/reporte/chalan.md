@@ -21,17 +21,17 @@ centros_poblados_corregimientos:
   - Nuevo Manzanares
   - Desbarrancado
   - Montebello
-distribucion_poblacional_hombres: '2362'
-distribucion_poblacional_mujeres: '2063'
-poblacion_discapacidad: '620'
+distribucion_poblacional_hombres: 2362
+distribucion_poblacional_mujeres: 2063
+poblacion_discapacidad: 620
 comunidades_etnicas_zona:
   - Chale
-asentamientos_indigenas: '1'
-resguardos_indigenas: ''
-consejos_comunitarios: ''
-total_poblacion_victima: '3889'
-num_sujetos_reparacion_colectiva: '0'
-num_planes_retorno_reubicacion_colectiva: '5'
+asentamientos_indigenas: 1
+resguardos_indigenas: null
+consejos_comunitarios: null
+total_poblacion_victima: 3889
+num_sujetos_reparacion_colectiva: 0
+num_planes_retorno_reubicacion_colectiva: 5
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -69,9 +69,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 73.9%
-pobreza_multidimensional_urbano: 71.7%
-pobreza_multidimensional_centro_poblado_rural_disperso: 78.0%
+total_pobreza_multidimensional: 7390%
+pobreza_multidimensional_urbano: 7170%
+pobreza_multidimensional_centro_poblado_rural_disperso: 7800%
 ppales_actividades_economicas:
   - Servicios
   - Agricultura
@@ -88,12 +88,12 @@ observaciones_ppales_actividades_economicas: |-
 ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 96.5%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9650%
 ppal_uso_suelo:
   - Servicios
   - Agricultura
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - BIBLIOTECA PÚBLICA MUNICIPAL GABRIEL GARCÍA MÁRQUEZ
   - ' Casa de la memoria y escuela popular "El bonche"'
@@ -107,6 +107,6 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada: La Ceiba
-comunidad_focalizada_url: 'url: /comunidad-focaliza/corregimiento-la-ceiba'
+comunidad_focalizada_url: la-ceiba
 
 ---

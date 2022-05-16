@@ -31,17 +31,15 @@ centros_poblados_corregimientos:
   - La Estacion
   - Marathon
   - Pueblo Nuevo
-distribucion_poblacional_hombres: '4098'
-distribucion_poblacional_mujeres: '3705'
-poblacion_discapacidad: '489'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: ''
-consejos_comunitarios: ''
-total_poblacion_victima: '6697'
-num_sujetos_reparacion_colectiva: '1'
-num_planes_retorno_reubicacion_colectiva: '10'
+distribucion_poblacional_hombres: 4098
+distribucion_poblacional_mujeres: 3705
+poblacion_discapacidad: 489
+asentamientos_indigenas: null
+resguardos_indigenas: null
+consejos_comunitarios: null
+total_poblacion_victima: 6697
+num_sujetos_reparacion_colectiva: 1
+num_planes_retorno_reubicacion_colectiva: 10
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -81,9 +79,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 69.6%
-pobreza_multidimensional_urbano: 56.2%
-pobreza_multidimensional_centro_poblado_rural_disperso: 62.2%
+total_pobreza_multidimensional: 6960%
+pobreza_multidimensional_urbano: 5620%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6220%
 ppales_actividades_economicas:
   - Sector Servicios y Comercio
   - Agricultura
@@ -99,13 +97,13 @@ observaciones_ppales_actividades_economicas: |-
 ppal_vocacion_mpio:
   - Agricultura
   - Agroforestal
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 94.1%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9410%
 ppal_uso_suelo:
   - Agricultura
   - Forestal
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Polideportivo España
   - ' Coliseo de Ferias y de toros Héctor Jose'
@@ -119,6 +117,6 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada: El Paraiso
-comunidad_focalizada_url: /comunidad-focaliza/vereda-paraiso
+comunidad_focalizada_url: el-paraiso
 
 ---

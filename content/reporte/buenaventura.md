@@ -108,21 +108,21 @@ centros_poblados_corregimientos:
   - Zaragoza Alto 1
   - Zaragoza Puente San Martín 1
   - Zaragoza Puente San Martín 2
-distribucion_poblacional_hombres: '122530'
-distribucion_poblacional_mujeres: '135915'
-poblacion_discapacidad: '19019'
+distribucion_poblacional_hombres: 122530
+distribucion_poblacional_mujeres: 135915
+poblacion_discapacidad: 19019
 comunidades_etnicas_zona:
   - Wounan
   - Embera Chamí
   - Nasa
   - Eperara Siapidara
   - Inga
-asentamientos_indigenas: '25'
-resguardos_indigenas: '11'
-consejos_comunitarios: '46'
-total_poblacion_victima: '171091'
-num_sujetos_reparacion_colectiva: '17'
-num_planes_retorno_reubicacion_colectiva: '7'
+asentamientos_indigenas: 25
+resguardos_indigenas: 11
+consejos_comunitarios: 46
+total_poblacion_victima: 171091
+num_sujetos_reparacion_colectiva: 17
+num_planes_retorno_reubicacion_colectiva: 7
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - >-
@@ -173,9 +173,9 @@ servicios_telemedicina_mpio_depto:
   - ELECTRODIAGNÓSTICO
   - NUTRICIÓN Y DIETÉTICA
   - PSICOLOGÍA
-total_pobreza_multidimensional: 41.0%
-pobreza_multidimensional_urbano: 35.6%
-pobreza_multidimensional_centro_poblado_rural_disperso: 67.4%
+total_pobreza_multidimensional: 4100%
+pobreza_multidimensional_urbano: 3560%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6740%
 ppales_actividades_economicas:
   - Agricultura
   - Minería
@@ -198,7 +198,7 @@ observaciones_ppales_actividades_economicas: >-
 ppal_vocacion_mpio:
   - Agroforestal
 observaciones_ppal_vocacion_mpio: La vocación forestal representa el 97 %.
-trabajo_informal: 88.6%
+trabajo_informal: 8860%
 ppal_uso_suelo:
   - Forestal
   - Agricultura
@@ -244,6 +244,6 @@ programas_usaid:
   - ' Inclusive Education for Peace in the Pacific Coast'
   - ' Victims Participation and Collective Reparation Activity'
 comunidad_focalizada: Punta Soldado
-comunidad_focalizada_url: /comunidad-focaliza/punta-soldado
+comunidad_focalizada_url: punta-soldado
 
 ---

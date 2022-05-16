@@ -10,7 +10,7 @@ descripcion: >-
   Forestal. Son apicultores y agricultores. Sobre sale la importancia de las
   juntanzas a ritos religiosos en la comunidad. las dos veredas hacen parte del
   proceso de Reparación Colectiva Corregimiento de Puerto lópez. hacen parte del
-  proceso de tejedores y tejedoras de Entrelazando de la Unidad de Víctimas.
+  proceso de tejedores y tejedoras de Entrelazando de la Unidad de Víctimas. 
 num_personas: 0
 num_familias: 90
 min_distancia_casco_urbano: 60
@@ -47,8 +47,6 @@ ppales_actividades_economicas_vocacion_productiva:
   - Pesca
   - Reserva Forestal
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - ''
 comunidad_sostenible_uso_suelo: >-
   Todo el territorio rural del Bagre se encuentra en reserva forestal, lo que
   limita el uso del suelo.
@@ -57,10 +55,6 @@ org_con_proyeccion:
   - Trópico Diverso
   - Campo Dulce
   - Unidad productiva de café
-servicios_publicos_comunidades_focalizadas:
-  - ''
-comunidades_focalizadas_educacion_infraestructura_educativa:
-  - ''
 comunidades_focalizadas_practicas_organizativas:
   - Junta de Acción Comunal
   - Cultos religiosos
@@ -77,12 +71,6 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - >-
-    Trópico diverso (Fondos OCAD-PAZ)- PDET Aula educativa para los estudiantes
-    de bachillerato
-alianzas_colaboradores_2:
-  - ''
 actividades_ocio:
   - Fútbol
   - Torneos deportivos

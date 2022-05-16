@@ -24,17 +24,17 @@ centros_poblados_corregimientos:
   - Tacueyó
   - Caloto Nuevo
   - El Huila
-distribucion_poblacional_hombres: '15544'
-distribucion_poblacional_mujeres: '15110'
-poblacion_discapacidad: '2931'
+distribucion_poblacional_hombres: 15544
+distribucion_poblacional_mujeres: 15110
+poblacion_discapacidad: 2931
 comunidades_etnicas_zona:
   - Nasa
-asentamientos_indigenas: ''
-resguardos_indigenas: '3'
-consejos_comunitarios: ''
-total_poblacion_victima: '9002'
-num_sujetos_reparacion_colectiva: '1'
-num_planes_retorno_reubicacion_colectiva: '0'
+asentamientos_indigenas: null
+resguardos_indigenas: 3
+consejos_comunitarios: null
+total_poblacion_victima: 9002
+num_sujetos_reparacion_colectiva: 1
+num_planes_retorno_reubicacion_colectiva: 0
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -85,9 +85,9 @@ rips_salud_mental_poblacion_general:
   - Trastornos mentales y del comportamiento debido al uso del alcohol
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 45.1%
-pobreza_multidimensional_urbano: 16.7%
-pobreza_multidimensional_centro_poblado_rural_disperso: 47.0%
+total_pobreza_multidimensional: 4510%
+pobreza_multidimensional_urbano: 1670%
+pobreza_multidimensional_centro_poblado_rural_disperso: 4700%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -104,7 +104,7 @@ observaciones_ppal_vocacion_mpio: >-
   del Ruíz, Río Paez, Río Cauca, Macizo Colombiano, páramo, lagos, lagunas,
   nacederos de agua. Lugares Comunales: Tul comunitario, potreros, bosques, y
   montañas.
-trabajo_informal: 95.5%
+trabajo_informal: 9550%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
@@ -156,6 +156,6 @@ programas_usaid:
   - ' Juntos por la Transparencia'
   - ' Jóvenes Resilientes'
 comunidad_focalizada: Flayo, Resguardo de San Francisco
-comunidad_focalizada_url: /comunidad-focaliza/vereda-flayo-klayu
+comunidad_focalizada_url: flayo-resguardo-de-san-francisco
 
 ---

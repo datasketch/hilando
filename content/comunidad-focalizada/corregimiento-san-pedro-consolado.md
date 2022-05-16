@@ -19,10 +19,8 @@ min_distancia_casco_urbano: 15
 km_distancia_casco_urbano: 25
 vias_acceso: >-
   Carretera pavimentada, en perfecto estado. Ubicación a 15 minutos de la
-  Cabecera municipal y a 10 min de la carretera troncal.
+  Cabecera municipal y a 10 min de la carretera troncal. 
 infraestructura_comunitaria: Instituciones educativas (IE)
-notas_infraestructura_comunitaria:
-  - ''
 liderazgo_comunidad:
   - >-
     La Asociación formalizada,además tienen un emprendimiento de vinos de
@@ -44,8 +42,6 @@ inclusion_diversidad_genero: >-
   detenerlos en la región a través del emprendimiento
 comentarios_conectividad: Parece que no funciona el internet- Racon proveedor
 punto_SOLE: Institución educativa
-comentarios_punto_SOLE:
-  - ''
 ppales_actividades_economicas_vocacion_productiva:
   - Turismo de naturaleza
   - Agricultura
@@ -79,11 +75,13 @@ riesgo: Bajo
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores_1:
-  - Municipio PDET
-  - ' articulación SENA'
-  - ' ICULTUR'
-  - ' Cámara de Comercio'
-  - ' Sec de Educación'
+  - Municipio PDET con articulación institucional
+  - Proyecto de innovación y formación tecnológica
+  - Fortalecemiento asistencia y mantenimiento de áreas
+  - Investigación del cacao
+  - Legalización de predios
+  - Producción de ñame
+  - Hectáreas de café
 alianzas_colaboradores_2:
   - Municipio PDET con articulación institucional
   - Proyecto de innovación y formación tecnológica
@@ -93,9 +91,10 @@ alianzas_colaboradores_2:
   - Producción de ñame
   - Hectáreas de café
 actividades_ocio:
-  - Semillero de grupo folclórico (pitos y tambores - falta instructor)
+  - '"Semillero de grupo folclórico (pitos y tambores'
+  - ' falta instructor)"'
 medios_comunicacion_narrativas_locales:
-  - Articulación con TEFA
+  - '"Articulación con TEFA'
   - ' colectivo de comunicaciones y cultura de San Juan Nepomuceno"'
   - Innovación Stereo
   - Asosanjuan

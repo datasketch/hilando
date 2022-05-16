@@ -18,17 +18,15 @@ grafica_negligencia_abandono: /charts/municipios/anori/negligencia_abandono.html
 ficha: /fichas/anori/ficha.pdf
 centros_poblados_corregimientos:
   - Liberia
-distribucion_poblacional_hombres: '6998'
-distribucion_poblacional_mujeres: '7504'
-poblacion_discapacidad: '1564'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: ''
-consejos_comunitarios: '3'
-total_poblacion_victima: '6008'
-num_sujetos_reparacion_colectiva: '0'
-num_planes_retorno_reubicacion_colectiva: '0'
+distribucion_poblacional_hombres: 6998
+distribucion_poblacional_mujeres: 7504
+poblacion_discapacidad: 1564
+asentamientos_indigenas: null
+resguardos_indigenas: null
+consejos_comunitarios: 3
+total_poblacion_victima: 6008
+num_sujetos_reparacion_colectiva: 0
+num_planes_retorno_reubicacion_colectiva: 0
 territorio_entidades_snariv_sivjrnr:
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
@@ -82,9 +80,9 @@ rips_salud_mental_poblacion_general:
   - Episodios depresivos
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 53.0%
-pobreza_multidimensional_urbano: 39.0%
-pobreza_multidimensional_centro_poblado_rural_disperso: 66.0%
+total_pobreza_multidimensional: 5300%
+pobreza_multidimensional_urbano: 3900%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6600%
 ppales_actividades_economicas:
   - Minería
   - Ganadería
@@ -103,13 +101,13 @@ ppal_vocacion_mpio:
   - Bosque o Áreas de protección y conservación
   - Agricultura
   - Pastos
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 89.0%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 8900%
 ppal_uso_suelo:
   - Minería
   - Agricultura
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Casa de la cultura Pedro Nel Ospina
   - ' BIBLIOTECA PÚBLICA LEÓN ZAFIR'
@@ -134,6 +132,6 @@ programas_usaid:
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
 comunidad_focalizada: El Banco
-comunidad_focalizada_url: /comunidad-focaliza/vereda-el-banco
+comunidad_focalizada_url: el-banco
 
 ---

@@ -8,7 +8,7 @@ descripcion: >-
   con familias muy numerosas (5 o 6 px). Cultivan cacao y tienen una asociación
   muy fuerte de productores. También tienen otros cultivos de pancoger y
   proyectos de piscicultura. Hay presencia de grupos armados no estatales y los
-  j��venes no pueden estar fuera después de las 6 pm.
+  jóvenes no pueden estar fuera después de las 6 pm. 
 num_personas: 1250
 num_familias: 250
 min_distancia_casco_urbano: 45
@@ -16,13 +16,10 @@ km_distancia_casco_urbano: 25
 vias_acceso: >-
   La vereda está sobre la via que conecta a al costa Atlántica, por lo que tiene
   carretera pero en condiciones regulares. Hay riesgos de deslizamientos,
-  derrumbes e inundación.
+  derrumbes e inundación. 
 infraestructura_comunitaria: Caseta comunal,Sede ASOCAVAL,Instituciones educativas (IE),Espacios deportivos
 notas_infraestructura_comunitaria:
   - 'IE: Centro educativo rural La Paulina'
-  - |-
-
-    IE con cancha de fútbol
   - ''
 liderazgo_comunidad:
   - Se identfican liderazgos importantes en el territorio
@@ -61,8 +58,6 @@ comunidad_sostenible_uso_suelo: >-
 org_con_proyeccion:
   - Asociación de cacaoteros de Valdivia (ASOCAVAL)
   - Proyecto piscícola
-servicios_publicos_comunidades_focalizadas:
-  - ''
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Centro educativo rural La Paulina
   - IE de Puerto Valdivia
@@ -78,21 +73,12 @@ org_focalizada:
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - Empresa privada
-  - ' alianza con Chocolates Colombia'
-alianzas_colaboradores_2:
-  - ''
-actividades_ocio:
-  - ''
 medios_comunicacion_narrativas_locales:
   - Televaldivia
   - CV Comunicaciones
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - ''
-notas_infraestructura_salud_atencion_psicosocial: ''
+notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 16
 url: /comunidad-focaliza/la-paulina
 layout: comunidad

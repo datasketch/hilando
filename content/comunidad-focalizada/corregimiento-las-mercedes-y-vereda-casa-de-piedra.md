@@ -48,10 +48,8 @@ inclusion_diversidad_genero: >-
   disminuido la comercialización.
 comentarios_conectividad: >-
   Hay acceso a internet pero en regular estado, hay una antena repetidora, pero
-  no funciona regularmente.
+  no funciona regularmente. 
 punto_SOLE: Punto Vive Digital
-comentarios_punto_SOLE:
-  - ''
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Turismo de naturaleza
@@ -96,22 +94,6 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - >-
-    Gobernación e impulso proyecto de innovación y formación tecnológica  de
-    cacao a partir de 25 jóvenes y fortalecer asistencia y mantenimiento de
-    áreas
-  - |2-
-     Trabajar el tema investigación con Agrosavia.
-    Se requiere apoyo para legalización de predios
-  - |2-
-     incluído el de la escuela (Unidad de Tierras-Nuestra tierra Póspera)
-    Producen ñame pero tienen dificultades con la comercialización.
-    Tienen 12a 15 Ha sembradas de café 50 mil palos
-  - ' café floreciendo'
-  - ' otros recien sembrados'
-alianzas_colaboradores_2:
-  - ''
 actividades_ocio:
   - Música de pitos y tambores
   - Torneos deportivos

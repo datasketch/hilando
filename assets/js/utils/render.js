@@ -3,17 +3,17 @@ export const renderEvent = (parentEl, data) => {
     <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
         <span class="event__municipio-departamento">
-            ${data.municipio} - ${data.departamento}
+            ${data.municipio} - ${data.macroregion}
         </span>
         <h3 class="event__titulo">
             <span class="event__nombre">
-            ${data.titulo}
+            ${data.nombre_evento}
             </span>
             <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="nombre evento">
         </h3>
         <div class="text-purple">
             <p class="font-bold text-xl xl:text-2xl">
-                02
+                ${data.dia_inicio}
             </p>
             <p class="-mt-2">  
             ${data.mes}
@@ -25,7 +25,7 @@ export const renderEvent = (parentEl, data) => {
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
     </div>
     <div class="event__container-right">
-        <img class="event__image" src="${data.imagen !== '' ? data.imagen : '/images/eventos/prueba.jpg'}" alt="prueba" style="height: 365px;">
+        <img class="event__image" src="${data.imagen ? data.imagen : '/images/eventos/prueba.jpg'}" alt="prueba" style="height: 365px;">
         <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="/galeria/multimedia/" style="background-color: #D27028;">Ver galería</a>
     </div>
   </div>

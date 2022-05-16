@@ -30,17 +30,17 @@ centros_poblados_corregimientos:
   - La Floresta
   - Los Altos
   - Nueva Esperanza
-distribucion_poblacional_hombres: '10216'
-distribucion_poblacional_mujeres: '9817'
-poblacion_discapacidad: '463'
+distribucion_poblacional_hombres: 10216
+distribucion_poblacional_mujeres: 9817
+poblacion_discapacidad: 463
 comunidades_etnicas_zona:
   - Yuma Zenú
-asentamientos_indigenas: ''
-resguardos_indigenas: '1'
-consejos_comunitarios: ''
-total_poblacion_victima: '11787'
-num_sujetos_reparacion_colectiva: '2'
-num_planes_retorno_reubicacion_colectiva: '7'
+asentamientos_indigenas: null
+resguardos_indigenas: 1
+consejos_comunitarios: null
+total_poblacion_victima: 11787
+num_sujetos_reparacion_colectiva: 2
+num_planes_retorno_reubicacion_colectiva: 7
 territorio_entidades_snariv_sivjrnr:
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -79,9 +79,9 @@ rips_salud_mental_poblacion_general:
   - Demencia
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 45.8%
-pobreza_multidimensional_urbano: 39.2%
-pobreza_multidimensional_centro_poblado_rural_disperso: 48.9%
+total_pobreza_multidimensional: 4580%
+pobreza_multidimensional_urbano: 3920%
+pobreza_multidimensional_centro_poblado_rural_disperso: 4890%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -89,31 +89,31 @@ ppales_actividades_economicas:
   - Artesanías
   - Turismo de Naturaleza y Rural
 observaciones_ppales_actividades_economicas: |-
-  Maíz Tradicional 
+  Maíz Tradicional
   Yuca
   Ñame
-  Ají tabasco 
+  Ají tabasco
   Tabaco Negro y Rubio
-  Arroz Secano 
-  Palma de Aceite 
+  Arroz Secano
+  Palma de Aceite
   Frutales (mango, patilla y plátano)
-  Cacao 
-  Miel 
-  Ganadería extensiva 
-  Acuicultura 
-  Artesanías como sombrero volteado y artesanías de totumo 
+  Cacao
+  Miel
+  Ganadería extensiva
+  Acuicultura
+  Artesanías como sombrero volteado y artesanías de totumo
   Turismo de naturaleza 
 ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
   - Bosque o Áreas de protección y conservación
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 91.1%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9110%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
   - Diversificación con avicultura y piscicultura
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - BIBLIOTECA PÚBLICA MUNICIPAL DE TOLUVIEJO
   - ' Cancha de microfutbol'
@@ -130,6 +130,6 @@ programas_usaid:
   - ' Yuca amarga para una dulce leche'
   - ' Fondo de Inversiones para la Paz'
 comunidad_focalizada: La Piche
-comunidad_focalizada_url: /comunidad-focaliza/la-piche
+comunidad_focalizada_url: la-piche
 
 ---

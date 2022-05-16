@@ -22,17 +22,15 @@ centros_poblados_corregimientos:
   - Puerto Valdivia
   - Raudal Viejo
   - Puerto Raudal
-distribucion_poblacional_hombres: '5791'
-distribucion_poblacional_mujeres: '5720'
-poblacion_discapacidad: '731'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: '1'
-consejos_comunitarios: ''
-total_poblacion_victima: '6310'
-num_sujetos_reparacion_colectiva: '0'
-num_planes_retorno_reubicacion_colectiva: '0'
+distribucion_poblacional_hombres: 5791
+distribucion_poblacional_mujeres: 5720
+poblacion_discapacidad: 731
+asentamientos_indigenas: null
+resguardos_indigenas: 1
+consejos_comunitarios: null
+total_poblacion_victima: 6310
+num_sujetos_reparacion_colectiva: 0
+num_planes_retorno_reubicacion_colectiva: 0
 territorio_entidades_snariv_sivjrnr:
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
   - >-
@@ -82,9 +80,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 59.3%
-pobreza_multidimensional_urbano: 35.5%
-pobreza_multidimensional_centro_poblado_rural_disperso: 68.4%
+total_pobreza_multidimensional: 5930%
+pobreza_multidimensional_urbano: 3550%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6840%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -103,13 +101,13 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
   - Bosque o Áreas de protección y conservación
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 91.5%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9150%
 ppal_uso_suelo:
   - Agricultura
   - Minería
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Casa de la Cultura Braulio Berrío
   - ' Biblioteca Centenario'
@@ -127,6 +125,6 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: La Paulina
-comunidad_focalizada_url: /comunidad-focaliza/la-paulina
+comunidad_focalizada_url: la-paulina
 
 ---

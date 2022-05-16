@@ -9,7 +9,7 @@
             <div class="swiper-slide">
                 <div class="bg-purple bg-opacity-75 text-white overflow-hidden" style="box-shadow: 0px 11px 11px #28202966;">
                     <h3 class="text-xl font-semibold relative p-6 pb-2">
-                        <span class="relative z-10">{{ .titulo | humanize | truncate 40 }}</span>
+                        <span class="relative z-10">{{ .nombre_evento | humanize | truncate 40 }}</span>
                         <img class="absolute top-4 sm:top-3 left-3" src="/images/public/sticky-title.svg" alt="sticky title">
                     </h3>
                     <div class="flex flex-col xl:flex-row relative">
@@ -18,7 +18,7 @@
                                 <div class="px-6">
                                     <div class="pt-5">
                                         <p class="text-xl xl:text-2xl font-bold">
-                                            02
+                                            {{ .dia_inicio }}
                                         </p>
                                         <p class="-mt-2 italic xl:text-lg">
                                             {{ .mes }}
@@ -27,7 +27,11 @@
                                 </div>
                                 <div class="p-6">
                                     <p class="text-sm">
-                                        {{ .descripcion | truncate 120 }}
+                                        {{ with .descripcion }}
+                                            {{ . | truncate 120 }}
+                                        {{ else }}
+                                            <p>No existe una descripción para este evento.</p>
+                                        {{ end }}
                                     </p>
                                 </div>
                                 <div class="absolute bottom-0 left-0">
@@ -36,10 +40,10 @@
                             </div>
                         </div>
                         <div class="xl:w-1/2 order-1 xl:order-2">
-                            {{ if eq .imagen "" }}
-                            <img class="w-full object-cover object-center" style="height: 330px;" src="/images/eventos/prueba.jpg" alt="{{ .titulo }}">
+                            {{ with .imagen }}
+                                <img class="w-full object-cover object-center" style="height: 330px;" src="{{ .nombre_evento }}" alt="{{ .titulo }}">
                             {{ else }}
-                            <img class="w-full object-cover object-center" style="height: 330px;" src="{{ .imagen }}" alt="{{ .titulo }}">
+                                <img class="w-full object-cover object-center" style="height: 330px;" src="/images/eventos/prueba.jpg" alt="{{ .nombre_evento }}">
                             {{ end }}
                         </div>
                     </div>

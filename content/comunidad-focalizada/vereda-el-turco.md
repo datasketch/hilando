@@ -3,7 +3,7 @@ title: Vereda el Turco
 nombre_comunidad: Vereda el Turco
 municipio: Santander de Quilichao
 departamento: Cauca
-descripcion: >-
+descripcion: >
   Es una comunidad ubicada a unos 40 minutos del casco urbano a través de vía
   terciaria. Cuenta con redes de distribución de agua potable y energía. Se
   dedican principalmente a la agricultura, (producción, comercialización y
@@ -18,24 +18,18 @@ vias_acceso: >-
 infraestructura_comunitaria: Instituciones educativas (IE),Puestos de Salud,Iglesias,Espacios deportivos
 notas_infraestructura_comunitaria:
   - Escuela básica primaria y Colegio básica secundaria
-  - |-
-
-    Iglesia Cristiana e iglesia Católica
-  - |-
-
-    Dos Canchas Deportivas
   - ''
 liderazgo_comunidad:
   - Se destaca un liderazgo en varios grupos etarios
   - ' Acostumbran a realizar mingas'
-inclusion_diversidad_genero: ''
+inclusion_diversidad_genero: null
 comentarios_conectividad: >-
   Los pobladores de la vereda cuentan con dispositivos móviles
 
   No tienen la posibilidad de acceder a una red por ausencia de puntos vive
   digital y zonas wifi en la vereda.
 
-  Servicios de internet con operadores móviles particulares.
+  Servicios de internet con operadores móviles particulares. 
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
   - No Hay computadores en el Punto Vive Digital
@@ -52,7 +46,7 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
   - ' avistamiento de aves'
   - ' artesanos'
   - ' pajareros de oro).'
-comunidad_sostenible_uso_suelo: ''
+comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - Proyecto de caficultura
   - Proyecto de apicultura
@@ -63,8 +57,6 @@ servicios_publicos_comunidades_focalizadas:
   - Acueducto-Santander de Quilichao
   - Energía-Santander de Quilichao
   - Recolección de basuras-Santander de Quilichao
-comunidades_focalizadas_educacion_infraestructura_educativa:
-  - ''
 comunidades_focalizadas_practicas_organizativas:
   - Junta de Acción Comunal
   - Asociación de cultivos transitorios
@@ -87,37 +79,17 @@ otros_programas_USAID:
     Gobernabilidad Regional (RGA) de USAID y aprobado para ser financiado con
     recursos del Sistema General de Regalías
 alianzas_colaboradores_1:
-  - En alianza con la Juntas de Acción Comunal
-  - ' la Asociación de Juntas'
-  - ' la Administración Municipal y bajo el liderazgo del Gobierno Departamental'
-  - ' se participa en el Programa "Camino de Oportunidades" cuya finalidad es la conservación de las vías a través de actividades de: rocería'
-  - ' drenaje'
-  - ' podas de vegetación'
-  - |2-
-     bacheos y procesos de conservación de recursos naturales.
-    Ciudades
-  - ' entornos y ruralidades saludables-Planes de Acción Comunitarios territoriales de oportunidades sostenibles (Taller Casa Pintada; Muralismo; Grupos de ayuda mutua; Proyectos de intervención comunitaria en atención de necesidades psicosociales'
-  - ' saneamiento básico'
-  - ' infraestructura'
-  - ' arte'
-  - >2-
-     cultura y deporte.
-    Iniciativa de la administración municipal que arrancó con un pilotaje en la
-    zona urbana y podría revisarse la posibilidad de articulación para la zona
-    rural.
-
-    Universidades: Univalle; Universidad Nacional; UNAD.
-
-    SENA: Formación Técnica
-  - ' Tecnológica y complementaria.'
-alianzas_colaboradores_2:
-  - Programa ""Camino de Oportunidades"""
+  - '"Programa ""Camino de Oportunidades"""'
   - '"Ciudades'
   - ' entornos y ruralidades saludables"'
   - '"Formación Técnica'
-  - ' Tecnológica y complementaria'
-actividades_ocio:
-  - ''
+  - ' Tecnológica y complementaria"'
+alianzas_colaboradores_2:
+  - '"Programa ""Camino de Oportunidades"""'
+  - '"Ciudades'
+  - ' entornos y ruralidades saludables"'
+  - '"Formación Técnica'
+  - ' Tecnológica y complementaria"'
 medios_comunicacion_narrativas_locales:
   - UMA KIWE-STEREO
   - EMISORA MONDOMO STEREO
@@ -126,7 +98,7 @@ num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial:
   - Centro de salud
   - Promotora de salud
-notas_infraestructura_salud_atencion_psicosocial: ''
+notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 0
 url: /comunidad-focaliza/vereda-el-turco
 layout: comunidad

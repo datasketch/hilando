@@ -51,29 +51,29 @@ ${this.sectionName === 'eventos' ?
     <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
       <div class="event__container-left">
         <span class="event__municipio-departamento">
-            ${this.data.municipio} - ${this.data.departamento}
+            ${this.data.municipio} - ${this.data.macroregion}
         </span>
         <h3 class="event__titulo">
             <span class="event__nombre">
-             ${this.data.titulo}
+             ${this.data.nombre_evento}
             </span>
             <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="nombre evento">
         </h3>
         <div class="text-purple">
             <p class="font-bold text-xl xl:text-2xl">
-                02
+                ${this.data.dia_inicio || '&nbsp;'}
             </p>
             <p class="-mt-2">  
-            ${this.data.mes}
+            ${this.data.mes || '&nbsp;'}
             </p>
         </div>
         <p class="text-lg xl:text-xl">
-          ${this.data.descripcion}
+          ${this.data.descripcion || '&nbsp;'}
         </p>
         <div class="flex justify-between">
             <div>
                 <p class="italic text-lg xl:text-xl text-purple">
-                  ${this.data.tipo}
+                  ${this.data.tipo_agenda || '&nbsp;'}
                 </p>
             </div>
             <div>
@@ -84,7 +84,7 @@ ${this.sectionName === 'eventos' ?
         </div>
       </div>
       <div class="event__container-right">
-        <img class="event__image" src="${this.data.imagen !== '' ? this.data.imagen : '/images/eventos/prueba.jpg'}" alt="${this.data.titulo}">
+        <img class="event__image" src="${this.data.imagen ? this.data.imagen : '/images/eventos/prueba.jpg'}" alt="${this.data.titulo}">
         <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="/galeria/multimedia/" style="background-color: #D27028;">Ver galería</a>
       </div>
     </div>

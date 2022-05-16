@@ -29,18 +29,18 @@ centros_poblados_corregimientos:
   - Paloblanco
   - La Esperanza
   - Munchique
-distribucion_poblacional_hombres: '12616'
-distribucion_poblacional_mujeres: '12641'
-poblacion_discapacidad: '2220'
+distribucion_poblacional_hombres: 12616
+distribucion_poblacional_mujeres: 12641
+poblacion_discapacidad: 2220
 comunidades_etnicas_zona:
   - Nasa
   - Afrocolombianos
-asentamientos_indigenas: ''
-resguardos_indigenas: '3'
-consejos_comunitarios: '5'
-total_poblacion_victima: '8962'
-num_sujetos_reparacion_colectiva: '7'
-num_planes_retorno_reubicacion_colectiva: '1'
+asentamientos_indigenas: null
+resguardos_indigenas: 3
+consejos_comunitarios: 5
+total_poblacion_victima: 8962
+num_sujetos_reparacion_colectiva: 7
+num_planes_retorno_reubicacion_colectiva: 1
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -78,9 +78,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 42.5%
-pobreza_multidimensional_urbano: 23.1%
-pobreza_multidimensional_centro_poblado_rural_disperso: 43.4%
+total_pobreza_multidimensional: 4250%
+pobreza_multidimensional_urbano: 2310%
+pobreza_multidimensional_centro_poblado_rural_disperso: 4340%
 ppales_actividades_economicas:
   - Agricultura
   - Minería
@@ -93,12 +93,12 @@ observaciones_ppales_actividades_economicas: |-
 ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 90.5%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9050%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Biblioteca municipal de Gabriel García Márquez
   - ' Escuela de Música Municipal'
@@ -128,6 +128,6 @@ programas_usaid:
   - Juntos por la Transparencia
   - ' Jóvenes Resilientes'
 comunidad_focalizada: Alsacia
-comunidad_focalizada_url: /comunidad-focaliza/la-alsacia
+comunidad_focalizada_url: alsacia
 
 ---

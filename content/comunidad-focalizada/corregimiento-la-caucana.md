@@ -23,33 +23,13 @@ infraestructura_comunitaria: >-
   comunitaria,Espacios deportivos,Iglesias,Plaza de mercado
 notas_infraestructura_comunitaria:
   - CDI (Mal estado)
-  - |-
-
-    Caseta comunal (Mal estado)
-  - |-
-
-    Centro día (Mal estado)
-  - |-
-
-    Centro integración comunitaria (Coliseo)
-  - >-
-
-    Canchas de futbol (una en excelente estado y “Una de las mejores del  Bajo
-    Cauca” según la comunidad)
-  - |-
-
-    Iglesia católica e iglesias cristianas
-  - >-
-
-    Plaza de mercado recientemente reformada (31 locales) en el marco de un
-    proyecto con PNUD
   - ''
 liderazgo_comunidad:
   - Se identifican liderazgos representativos
   - ' y  representación de todos los liderazgos presentes, (Padre, pastores, mujeres, jóvenes, representantes de asociaciones)'
 inclusion_diversidad_genero: >-
   Se identifica una participación de jóvenes por medio de los colectivos y de
-  mujeres en asociaciones productivas
+  mujeres en asociaciones productivas 
 comentarios_conectividad: La señal es inestable, con acceso limitado.
 punto_SOLE: Salón Parroquial con internet
 comentarios_punto_SOLE:
@@ -77,15 +57,13 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
   - |2-
      cerdos y piscicultura) y ganadería doble propósito
     Minería artesanal
-comunidad_sostenible_uso_suelo: ''
+comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - ASUPRACA
   - ACATA
   - Proceso de sustitución de cultivos
   - AGROAPITA
   - Piscicultura y proyectos de seguridad alimentaria
-servicios_publicos_comunidades_focalizadas:
-  - ''
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
 comunidades_focalizadas_practicas_organizativas:
@@ -109,11 +87,11 @@ riesgo: Medio
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores_1:
-  - PDET está adelantando varias acciones en el corregimiento (Placa huella
-  - |2-
-     fortalecimiento cacao)
-    Gobernación -Fedecacao
-    Administración municipal (Linea productiva plátano)
+  - Empresa privada
+  - Aula educativa para los estudiantes de bachillerato
+  - Placa huella
+  - Fortalecimiento del cultivo de cacao
+  - Linea productiva del plátano
 alianzas_colaboradores_2:
   - Empresa privada
   - Aula educativa para los estudiantes de bachillerato
@@ -122,8 +100,8 @@ alianzas_colaboradores_2:
   - Linea productiva del plátano
 actividades_ocio:
   - Fútbol
-  - '"Huellas ecológicas (Grupo de niños y niñas que tienen un vivero'
-  - ' hacen reforestación y jornadas de limpieza)'
+  - '"Huellas ecológicas (Grupo de niños y niñas quetienen un vivero'
+  - ' hacen reforestación y jornadas de limpieza)"'
 medios_comunicacion_narrativas_locales:
   - Cáceres Stereo
   - Red de comunicaciones Bajo Cauca- Semillero El Jardín

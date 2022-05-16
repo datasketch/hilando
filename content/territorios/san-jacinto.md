@@ -28,17 +28,15 @@ centros_poblados_corregimientos:
   - Las Charquitas
   - Paraíso
   - Las Mercedes
-distribucion_poblacional_hombres: '12071'
-distribucion_poblacional_mujeres: '11505'
-poblacion_discapacidad: '2921'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: ''
-consejos_comunitarios: '2'
-total_poblacion_victima: '19127'
-num_sujetos_reparacion_colectiva: '4'
-num_planes_retorno_reubicacion_colectiva: '5'
+distribucion_poblacional_hombres: 12071
+distribucion_poblacional_mujeres: 11505
+poblacion_discapacidad: 2921
+asentamientos_indigenas: null
+resguardos_indigenas: null
+consejos_comunitarios: 2
+total_poblacion_victima: 19127
+num_sujetos_reparacion_colectiva: 4
+num_planes_retorno_reubicacion_colectiva: 5
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -78,9 +76,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 60.3%
-pobreza_multidimensional_urbano: 57.8%
-pobreza_multidimensional_centro_poblado_rural_disperso: 78.0%
+total_pobreza_multidimensional: 6030%
+pobreza_multidimensional_urbano: 5780%
+pobreza_multidimensional_centro_poblado_rural_disperso: 7800%
 ppales_actividades_economicas:
   - Artesanías
   - Agricultura
@@ -101,13 +99,13 @@ ppal_vocacion_mpio:
   - Ganadería
   - Agricultura
   - Oferta ambiental y paisajista
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 94.0%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9400%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
   - Servicios
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Campo de beisbol
   - ' Museo Arqueológico de San Jacinto'
@@ -128,6 +126,6 @@ programas_usaid:
   - ' Fondo de Inversiones para la Paz'
   - ' Mujeres Poderosas'
 comunidad_focalizada: Casa de Piedra, Las Mercedes
-comunidad_focalizada_url: /comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+comunidad_focalizada_url: casa-de-piedra-las-mercedes
 
 ---

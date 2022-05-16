@@ -26,18 +26,18 @@ centros_poblados_corregimientos:
   - Las Pampas
   - Nicaragua
   - Puerto Santo
-distribucion_poblacional_hombres: '13794'
-distribucion_poblacional_mujeres: '12666'
-poblacion_discapacidad: '2422'
+distribucion_poblacional_hombres: 13794
+distribucion_poblacional_mujeres: 12666
+poblacion_discapacidad: 2422
 comunidades_etnicas_zona:
   - Zenú
   - Embera Chamí
-asentamientos_indigenas: '10'
-resguardos_indigenas: '4'
-consejos_comunitarios: '3'
-total_poblacion_victima: '10368'
-num_sujetos_reparacion_colectiva: '1'
-num_planes_retorno_reubicacion_colectiva: '1'
+asentamientos_indigenas: 10
+resguardos_indigenas: 4
+consejos_comunitarios: 3
+total_poblacion_victima: 10368
+num_sujetos_reparacion_colectiva: 1
+num_planes_retorno_reubicacion_colectiva: 1
 territorio_entidades_snariv_sivjrnr:
   - Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) (SIVJRNR)
   - Instituto Colombiano de Bienestar Familiar (ICBF) (SNARIV)
@@ -81,9 +81,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 66.4%
-pobreza_multidimensional_urbano: 60.9%
-pobreza_multidimensional_centro_poblado_rural_disperso: 67.8%
+total_pobreza_multidimensional: 6640%
+pobreza_multidimensional_urbano: 6090%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6780%
 ppales_actividades_economicas:
   - Minería
   - Agricultura
@@ -94,13 +94,13 @@ ppal_vocacion_mpio:
   - Minería
   - Agricultura
   - Ganadería
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 93.2%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9320%
 ppal_uso_suelo:
   - Minería
   - Agricultura
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Polideportivo Rumualdo Gallego Toro
   - ' Parque educativo La gran casa'
@@ -116,6 +116,6 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: Isla de la amargura
-comunidad_focalizada_url: /comunidad-focaliza/isla-de-la-amargura
+comunidad_focalizada_url: isla-de-la-amargura
 
 ---

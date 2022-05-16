@@ -4,7 +4,7 @@ menu:
   region:
     parent: bajo-cauca-y-nordeste-antioqueno
 departamento: Antioquia
-description: ''
+description: null
 grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 grafica_comunidades_focalizadas: /charts/municipios/taraza/comunidades_focalizadas.html
 grafica_poblacion_genero: /charts/municipios/taraza/poblacion_genero.html
@@ -22,19 +22,16 @@ centros_poblados_corregimientos:
   - El Doce
   - Barro Blanco
   - El Guáimaro
-distribucion_poblacional_hombres: ''
-distribucion_poblacional_mujeres: ''
-poblacion_discapacidad: '529'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: ''
-consejos_comunitarios: ''
-total_poblacion_victima: '0'
-num_sujetos_reparacion_colectiva: ''
-num_planes_retorno_reubicacion_colectiva: ''
-territorio_entidades_snariv_sivjrnr:
-  - ''
+distribucion_poblacional_hombres: null
+distribucion_poblacional_mujeres: null
+poblacion_discapacidad: 529
+asentamientos_indigenas: null
+resguardos_indigenas: null
+consejos_comunitarios: null
+total_poblacion_victima: 0
+num_sujetos_reparacion_colectiva: null
+num_planes_retorno_reubicacion_colectiva: null
+territorio_entidades_snariv_sivjrnr: []
 priorizacion_convivencia_social_salud_mental: >-
   Consumo de SPA,"Violencia de Género, intrafamiliar y contra la mujer",Lesiones
   autoinfringidas intencionalmente
@@ -62,29 +59,19 @@ rips_salud_mental_poblacion_general:
   - Trastornos mentales y de comportamiento no especificados
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: ''
-pobreza_multidimensional_urbano: ''
-pobreza_multidimensional_centro_poblado_rural_disperso: ''
-ppales_actividades_economicas:
-  - ''
-observaciones_ppales_actividades_economicas: ''
-ppal_vocacion_mpio:
-  - ''
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: ''
-ppal_uso_suelo:
-  - ''
-observaciones_ppal_uso_suelo: ''
-espacios_socio_comunitarios:
-  - ''
+total_pobreza_multidimensional: null
+pobreza_multidimensional_urbano: null
+pobreza_multidimensional_centro_poblado_rural_disperso: null
+observaciones_ppales_actividades_economicas: null
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: null
+observaciones_ppal_uso_suelo: null
 medios_comunicacion:
   - Morena Stéreo
   - ' La Bakanísima'
   - ' Emisora Comunitaria de Tarazá'
-iniciativas_org_sociedad_civil: ''
-programas_usaid:
-  - ''
+iniciativas_org_sociedad_civil: null
 comunidad_focalizada: Corregimiento La Caucana
-comunidad_focalizada_url: /comunidad-focaliza/corregimiento-la-caucana
+comunidad_focalizada_url: corregimiento-la-caucana
 
 ---

@@ -1,7 +1,9 @@
 ---
 title: Vereda Paraiso
 nombre_comunidad: Vereda Paraiso
-municipio: Colosó
+municipio: |+
+  Colosó
+
 departamento: Sucre
 descripcion: >-
   La vereda cuenta con dos sectores, Paraiso 1 y paraiso 2. Tiene acueducto por
@@ -59,7 +61,7 @@ org_con_proyeccion:
   - Asoapicol
 servicios_publicos_comunidades_focalizadas:
   - |-
-    Acueducto-""Colosó
+    "Acueducto-""Colosó
 
     """
   - |-
@@ -69,7 +71,7 @@ servicios_publicos_comunidades_focalizadas:
   - |-
     "Gas-""Colosó
 
-    ""
+    """
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
 comunidades_focalizadas_practicas_organizativas:
@@ -87,8 +89,9 @@ riesgo: Bajo
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores_1:
-  - Cursos apicolas con otras asociaciones
-  - ' están formulando proyectos en OCAD paz: Cosecha de agua con silvo pastoril (Jaguey y riego) y (cosecha de agua con limón tahití)'
+  - Cursos apÍcolas
+  - Cosecha de agua con silvo pastoril
+  - Cosecha de agua con limón tahití
 alianzas_colaboradores_2:
   - Cursos apÍcolas
   - Cosecha de agua con silvo pastoril

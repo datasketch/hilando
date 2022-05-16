@@ -8,8 +8,8 @@
 
 {{/* GET CATEGORIES */}}
 {{ range $data }}
-{{ if .departamento }}
-{{ $departamento = $departamento | append .departamento }}
+{{ if .macroregion }}
+{{ $departamento = $departamento | append .macroregion }}
 {{ end }}
 {{ if .municipio }}
 {{ $municipio = $municipio | append .municipio }}
@@ -17,8 +17,8 @@
 {{ if .mes }}
 {{ $mes = $mes | append .mes }}
 {{ end }}
-{{ if .tipo }}
-{{ $tipo = $tipo | append .tipo }}
+{{ if .tipo_agenda }}
+{{ $tipo = $tipo | append .tipo_agenda }}
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}

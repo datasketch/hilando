@@ -10,7 +10,7 @@ descripcion: >-
   relación entre comunidad indígena y campesina, pero al interior de ellas se
   encuentran muy cohesionados. Sufren de muchas inundaciones y actualmente
   tienen un problema de plaga en casi todos sus cultivos. Hay presencia de
-  grupor armados no estatales, se debe informar el ingreso.
+  grupor armados no estatales, se debe informar el ingreso. 
 num_personas: 0
 num_familias: 196
 min_distancia_casco_urbano: 50
@@ -35,7 +35,7 @@ liderazgo_comunidad:
   - |-
 
     Hay varias asociaciones y grupos con liderazgos representativos
-    Se caracteriza por solidaridad y apoyo
+    Se caracteriza por solidaridad y apoyo 
 inclusion_diversidad_genero: >-
   Hay liderazgos representativos por parte de algunas mujeres de la vereda
 
@@ -67,13 +67,11 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
   - |2-
      frutales)
     Avicultura (Pollos de engorde y gallinas ponedoras)
-comunidad_sostenible_uso_suelo: ''
+comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - Agropaisa
   - Asopeisla
   - Aproaca
-servicios_publicos_comunidades_focalizadas:
-  - ''
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
   - Institución educativa Guarumo
@@ -85,21 +83,13 @@ conectividad_minima: Bueno
 iniciativas_priorizadas:
   - Plátano
   - Cacao
-org_focalizada:
-  - ''
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - 'No'
-alianzas_colaboradores_2:
-  - ''
 actividades_ocio:
   - Fútbol
   - Dibujo
   - Baile (sin monitores)
-medios_comunicacion_narrativas_locales:
-  - ''
 num_visitas_realizadas: 5
 num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial:

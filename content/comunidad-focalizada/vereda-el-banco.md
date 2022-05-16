@@ -7,7 +7,7 @@ descripcion: >-
   Vereda con una JAC activa y presencia de varios liderazgos juveniles. En su
   mayoría, la vereda está compuesta por personas de la misma familia, Sus
   actividades económicas están basada en el café, y la minería sobre el río
-  anorí.
+  anorí. 
 num_personas: 0
 num_familias: 45
 min_distancia_casco_urbano: 60
@@ -36,7 +36,7 @@ comentarios_conectividad: >-
   Mala señal solo funciona con antena
 
   La JAC gestionó un proyecto con la gobernación de Antioquia que ya fue
-  aprobado para un Aula digital
+  aprobado para un Aula digital 
 punto_SOLE: Aula Digital
 comentarios_punto_SOLE:
   - Aula Digital en COREDI
@@ -57,11 +57,7 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
     Minería (río Anorí)
     Avicultura (Pollos de engorde y gallinas ponedoras)
     Piscicultura (tres estanques en mal estado)
-comunidad_sostenible_uso_suelo: ''
-org_con_proyeccion:
-  - ''
-servicios_publicos_comunidades_focalizadas:
-  - ''
+comunidad_sostenible_uso_suelo: null
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Insitución Educativa para básica primaria
   - Sede de COREDÍ
@@ -71,15 +67,9 @@ comunidades_focalizadas_practicas_organizativas:
 conectividad_minima: Regular
 iniciativas_priorizadas:
   - Café
-org_focalizada:
-  - ''
 riesgo: Medio
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - ''
-alianzas_colaboradores_2:
-  - ''
 actividades_ocio:
   - Fútbol
 medios_comunicacion_narrativas_locales:
@@ -88,9 +78,7 @@ medios_comunicacion_narrativas_locales:
   - Tele Antioquia
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - ''
-notas_infraestructura_salud_atencion_psicosocial: ''
+notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 16
 url: /comunidad-focaliza/vereda-el-banco
 layout: comunidad

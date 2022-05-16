@@ -33,18 +33,18 @@ centros_poblados_corregimientos:
   - Borrachera
   - Caño Claro
   - Los Almendros
-distribucion_poblacional_hombres: '14326'
-distribucion_poblacional_mujeres: '15262'
-poblacion_discapacidad: '1019'
+distribucion_poblacional_hombres: 14326
+distribucion_poblacional_mujeres: 15262
+poblacion_discapacidad: 1019
 comunidades_etnicas_zona:
   - Zenú
   - Emberá Katios
-asentamientos_indigenas: '11'
-resguardos_indigenas: ''
-consejos_comunitarios: '12'
-total_poblacion_victima: '18249'
-num_sujetos_reparacion_colectiva: '3'
-num_planes_retorno_reubicacion_colectiva: '0'
+asentamientos_indigenas: 11
+resguardos_indigenas: null
+consejos_comunitarios: 12
+total_poblacion_victima: 18249
+num_sujetos_reparacion_colectiva: 3
+num_planes_retorno_reubicacion_colectiva: 0
 territorio_entidades_snariv_sivjrnr:
   - >-
     "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No
@@ -99,9 +99,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 53.7%
-pobreza_multidimensional_urbano: 43.0%
-pobreza_multidimensional_centro_poblado_rural_disperso: 71.1%
+total_pobreza_multidimensional: 5370%
+pobreza_multidimensional_urbano: 4300%
+pobreza_multidimensional_centro_poblado_rural_disperso: 7110%
 ppales_actividades_economicas:
   - Minería
   - Agricultura
@@ -115,13 +115,13 @@ ppal_vocacion_mpio:
   - Agricultura
   - Minería
 observaciones_ppal_vocacion_mpio: Minería Aurífera - Río Nechí
-trabajo_informal: 91.7%
+trabajo_informal: 9170%
 ppal_uso_suelo:
   - Minería
   - Agricultura
   - Forestal
   - Ganadería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - Biblioteca Municipal
   - ' Polideportivo'
@@ -146,6 +146,6 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: Borrachera y El Bongo
-comunidad_focalizada_url: /comunidad-focaliza/borrachera-y-la-bonga
+comunidad_focalizada_url: borrachera-y-el-bongo
 
 ---

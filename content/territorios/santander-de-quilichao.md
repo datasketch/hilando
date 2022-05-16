@@ -49,17 +49,17 @@ centros_poblados_corregimientos:
   - San José
   - Vilachí
   - Bellavista
-distribucion_poblacional_hombres: '46855'
-distribucion_poblacional_mujeres: '49177'
-poblacion_discapacidad: '6923'
+distribucion_poblacional_hombres: 46855
+distribucion_poblacional_mujeres: 49177
+poblacion_discapacidad: 6923
 comunidades_etnicas_zona:
   - Nasa
-asentamientos_indigenas: ''
-resguardos_indigenas: '5'
-consejos_comunitarios: '6'
-total_poblacion_victima: '15935'
-num_sujetos_reparacion_colectiva: '6'
-num_planes_retorno_reubicacion_colectiva: '2'
+asentamientos_indigenas: null
+resguardos_indigenas: 5
+consejos_comunitarios: 6
+total_poblacion_victima: 15935
+num_sujetos_reparacion_colectiva: 6
+num_planes_retorno_reubicacion_colectiva: 2
 territorio_entidades_snariv_sivjrnr:
   - Alcaldía municipal (SNARIV)
   - Secretarías municipales (SNARIV)
@@ -112,9 +112,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
   - PSIQUIATRÍA - JULIO EDUARDO VILLAQUIRAN BURBANO
-total_pobreza_multidimensional: 23.8%
-pobreza_multidimensional_urbano: 15.7%
-pobreza_multidimensional_centro_poblado_rural_disperso: 31.7%
+total_pobreza_multidimensional: 2380%
+pobreza_multidimensional_urbano: 1570%
+pobreza_multidimensional_centro_poblado_rural_disperso: 3170%
 ppales_actividades_economicas:
   - Industria y manufactura
   - Agricultura
@@ -127,13 +127,13 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
   - Agroforestal
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 85.8%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 8580%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
   - Minería
-observaciones_ppal_uso_suelo: ''
+observaciones_ppal_uso_suelo: null
 espacios_socio_comunitarios:
   - BIBLIOTECA PÚBLICA MUNICIPAL JORGE ELIECER GAITAN
   - ' BIBLIOTECA PÚBLICA CAMILO TORRES'
@@ -157,6 +157,6 @@ programas_usaid:
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
 comunidad_focalizada: El Turco
-comunidad_focalizada_url: /comunidad-focaliza/vereda-el-turco
+comunidad_focalizada_url: el-turco
 
 ---

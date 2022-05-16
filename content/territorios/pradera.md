@@ -28,17 +28,15 @@ centros_poblados_corregimientos:
   - El Recreo
   - La Feria
   - La Cruz
-distribucion_poblacional_hombres: '20895'
-distribucion_poblacional_mujeres: '22657'
-poblacion_discapacidad: '4574'
-comunidades_etnicas_zona:
-  - ''
-asentamientos_indigenas: ''
-resguardos_indigenas: '1'
-consejos_comunitarios: '7'
-total_poblacion_victima: '7391'
-num_sujetos_reparacion_colectiva: '4'
-num_planes_retorno_reubicacion_colectiva: '2'
+distribucion_poblacional_hombres: 20895
+distribucion_poblacional_mujeres: 22657
+poblacion_discapacidad: 4574
+asentamientos_indigenas: null
+resguardos_indigenas: 1
+consejos_comunitarios: 7
+total_poblacion_victima: 7391
+num_sujetos_reparacion_colectiva: 4
+num_planes_retorno_reubicacion_colectiva: 2
 territorio_entidades_snariv_sivjrnr:
   - >-
     Unidad para la Atención y Reparación Integral a las víctimas (UARIV)
@@ -92,9 +90,9 @@ rips_salud_mental_poblacion_general:
   - Trastornos emocionales y del comportamiento
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 24.8%
-pobreza_multidimensional_urbano: 24.0%
-pobreza_multidimensional_centro_poblado_rural_disperso: 31.0%
+total_pobreza_multidimensional: 2480%
+pobreza_multidimensional_urbano: 2400%
+pobreza_multidimensional_centro_poblado_rural_disperso: 3100%
 ppales_actividades_economicas:
   - Agricultura
   - Servicios
@@ -105,8 +103,8 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
   - Bosque o Áreas de protección y conservación
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 77.9%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 7790%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería
@@ -135,6 +133,6 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Pasos seguros'
 comunidad_focalizada: Resguardo Kwet-Wala
-comunidad_focalizada_url: /comunidad-focaliza/kwala-la-fria-la-carbonera-y-el-nogal
+comunidad_focalizada_url: resguardo-kwet-wala
 
 ---

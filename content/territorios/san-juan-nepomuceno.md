@@ -25,17 +25,17 @@ centros_poblados_corregimientos:
   - San Agustín
   - San Cayetano
   - San Pedro Consolado
-distribucion_poblacional_hombres: '18152'
-distribucion_poblacional_mujeres: '17286'
-poblacion_discapacidad: '489'
+distribucion_poblacional_hombres: 18152
+distribucion_poblacional_mujeres: 17286
+poblacion_discapacidad: 489
 comunidades_etnicas_zona:
   - Zenú
-asentamientos_indigenas: ''
-resguardos_indigenas: ''
-consejos_comunitarios: '2'
-total_poblacion_victima: '20907'
-num_sujetos_reparacion_colectiva: '1'
-num_planes_retorno_reubicacion_colectiva: '6'
+asentamientos_indigenas: null
+resguardos_indigenas: null
+consejos_comunitarios: 2
+total_poblacion_victima: 20907
+num_sujetos_reparacion_colectiva: 1
+num_planes_retorno_reubicacion_colectiva: 6
 territorio_entidades_snariv_sivjrnr:
   - Alcaldía municipal (SNARIV)
   - Servicio Nacional de Aprendizaje (SENA) (SNARIV)
@@ -75,9 +75,9 @@ rips_salud_mental_poblacion_general:
   - Esquizofrenia paranoide
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 56.2%
-pobreza_multidimensional_urbano: 54.0%
-pobreza_multidimensional_centro_poblado_rural_disperso: 62.8%
+total_pobreza_multidimensional: 5620%
+pobreza_multidimensional_urbano: 5400%
+pobreza_multidimensional_centro_poblado_rural_disperso: 6280%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -91,8 +91,8 @@ observaciones_ppales_actividades_economicas: >-
 ppal_vocacion_mpio:
   - Agricultura
   - Agroforestal
-observaciones_ppal_vocacion_mpio: ''
-trabajo_informal: 92.9%
+observaciones_ppal_vocacion_mpio: null
+trabajo_informal: 9290%
 ppal_uso_suelo:
   - Forestal
   - Agricultura
@@ -113,6 +113,6 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
 comunidad_focalizada: San Pedro Consolado
-comunidad_focalizada_url: '/comunidad-focaliza/corregimiento-san-pedro-consolado'
+comunidad_focalizada_url: san-pedro-consolado
 
 ---
