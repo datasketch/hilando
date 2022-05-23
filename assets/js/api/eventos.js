@@ -69,7 +69,7 @@ function filterData() {
   state.filteredData = originalData;
 
   if (hasDepartamentoFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.departamento.includes(item.departamento));
+    state.filteredData = state.filteredData.filter((item) => filters.departamento.includes(item.macroregion));
   }
   if (hasMunicipioFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.municipio.includes(item.municipio));
@@ -78,7 +78,7 @@ function filterData() {
     state.filteredData = state.filteredData.filter((item) => filters.mes.includes(item.mes));
   }
   if (hasTipoFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo));
+    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo_agenda));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderEvent(event, item));

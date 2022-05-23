@@ -25,14 +25,16 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
-    <div class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
+    <div
+        class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
         <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
             Eventos
         </h1>
     </div>
     <!-- BANNER EVENTS END -->
-    
-    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20" style="background-color: #FAFAFA;">
+
+    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20"
+        style="background-color: #FAFAFA;">
         <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
             Próximamente
         </h2>
@@ -51,7 +53,8 @@
                     <div>
                         <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
                             Tipo de Evento
-                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
+                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
+                                alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $tipo) "value" "asc" }}
@@ -70,7 +73,8 @@
                     <div>
                         <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
                             Mes
-                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
+                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
+                                alt="arrow right">
                         </button>
                         <div class="panel" style="border: 1px solid #BABBC9;">
                             {{ range sort (uniq $mes) "value" "asc" }}
