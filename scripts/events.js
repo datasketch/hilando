@@ -7,7 +7,7 @@ const dataEvents=data.map((item) => {
     ...item,
     mes: item.mes.trim(),
     foto: (JSON.parse(item.foto))?.map((fot) => fot.url) || [],
-    thumbnail: (JSON.parse(item.foto))?.map((fot) => fot.url)[0] || null,
+    thumbnail: (JSON.parse(item.foto))?.map((fot) => fot.url)[0] || '/images/eventos/prueba.jpg',
   };
 });
 
