@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 const data = require('../data/eventos.json');
 const path = require('path');
 
-const dataEvents=data.map((item) => {
+const dataEvents = data.map((item) => {
   return {
     ...item,
     mes: item.mes.trim(),
