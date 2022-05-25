@@ -5,6 +5,8 @@ const trrs = require('../data/territorios.json');
 
 const slugList = trrs.map((trr) => trr.municipio.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, ''));
 
+const domain = 'https://www.hilandocomunidades.com';
+
 (async () => {
   try {
     const browser = await puppeteer.launch({
@@ -17,7 +19,7 @@ const slugList = trrs.map((trr) => trr.municipio.toLowerCase().replace(/\s/g, '-
     const page = await browser.newPage();
     for (let index = 0; index < slugList.length; index++) {
       console.log(`Generando PDF (${slugList[index]})`);
-      await page.goto(`http://localhost:1313/reporte/${slugList[index]}/`, {
+      await page.goto(`${domain}/reporte/${slugList[index]}/`, {
         waitUntil: 'networkidle0',
       });
       const pdf = await page.pdf({

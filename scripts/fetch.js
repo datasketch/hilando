@@ -27,7 +27,7 @@ async function run() {
       JSON.stringify(events.data.list),
   );
   fs.writeFile(
-      getFilePath('_territorios.json'),
+      getFilePath('territorios.json'),
       JSON.stringify(trrs.data.list),
   );
 }

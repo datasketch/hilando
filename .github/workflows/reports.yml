@@ -1,7 +1,7 @@
-name: Update site data
+name: Update reports
 on:
   schedule:
-    - cron: 0 */24 * * *
+    - cron: 5 */24 * * *
 
 jobs:
   build_and_deploy:
@@ -24,4 +24,6 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git commit --allow-empty -m "Build site [gh-action]"
-          git push
+          git push 
+
+    

@@ -3,7 +3,7 @@ const {join} = require('path');
 const yaml = require('js-yaml');
 const slugify = require('slugify');
 
-const trrs = require('../data/_territorios.json');
+const trrs = require('../data/territorios.json');
 
 function createPath(folder, name) {
   return join(__dirname, `../content/${folder}/${name}.md`);
