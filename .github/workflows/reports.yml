@@ -16,14 +16,14 @@ jobs:
           cache: 'npm'
       - name: Install deps
         run: npm install
-      - name: Refresh data
-        run: npm run gen:content
+      - name: Generate reports
+        run: npm run gen:reports
       - name: Commit changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit --allow-empty -m "Build site [gh-action]"
+          git commit --allow-empty -m "Update reports [gh-action]"
           git push 
 
     
