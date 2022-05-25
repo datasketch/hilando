@@ -13,8 +13,6 @@ const dataEl = document.querySelector('#data-eventos');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
 dataEl.remove();
-console.log(events);
-// console.log(event);
 
 // init Swiper:
 
