@@ -1,4 +1,4 @@
-<footer class="py-12 lg:py-16 xl:py-20 mx-auto max-w-screen-2xl" style="background-color: #FAFAFA;">
+<footer class="py-12 lg:py-16 xl:py-20 mx-auto" style="background-color: #FAFAFA;">
     <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-10 xl:gap-x-12">
         <div class="order-3 lg:order-1 lg:col-start-1 lg:col-end-8 mx-auto w-11/12 lg:w-full">
             <p class="text-sm text-center lg:text-left mb-4 lg:mb-0">
@@ -8,8 +8,9 @@
             </p>
             <img src="/images/public/logo-entities.png" alt="logo entities">
         </div>
-        <ul class="order-1 text-center lg:text-left lg:order-2 mx-auto lg:col-start-8 lg:col-end-11" style="color: #3A3C6A;">
-            <li class="mb-5"><a class="font-bold" href="{{ relref . "sobre-nosotros.md" }}">SOBRE NOSOTROS</a>
+        <ul class="order-1 text-center lg:text-left lg:order-2 mx-auto lg:col-start-8 lg:col-end-11"
+            style="color: #3A3C6A;">
+            <li class="mb-5"><a class="font-bold" href="{{ relref . " sobre-nosotros.md" }}">SOBRE NOSOTROS</a>
             </li>
             <li class="mb-5"><a class="font-bold" href="{{ relref . " territorios/_index.md" }}">TERRITORIOS</a></li>
             <li class="mb-5"><a class="font-bold" href="{{ relref . " eventos.md" }}">EVENTOS</a></li>
@@ -32,10 +33,11 @@
             </div>
             <div class="mt-8">
                 <p class="mb-3 font-bold">SUSCRÍBETE</p>
-                <a class="fot-bold bg-space-cadet text-white py-2 px-4 inline-flex space-x-2" href="{{ relref . " boletin.md" }}">
+                {{/* <a class="font-bold bg-space-cadet text-white py-2 px-4 inline-flex space-x-2" href="{{ relref . "
+                    boletin.md" }}">
                     <span>Boletín WLH</span>
                     <img src="/images/public/arrow-newsletter.svg" alt="arrow">
-                </a>
+                </a> */}}
             </div>
         </div>
     </div>

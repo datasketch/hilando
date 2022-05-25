@@ -2,12 +2,12 @@ const fs = require('fs/promises');
 const data = require('../data/eventos.json');
 const path = require('path');
 
-const dataEvents = data.map((item) => {
+const dataEvents=data.map((item) => {
   return {
     ...item,
     mes: item.mes.trim(),
     foto: (JSON.parse(item.foto))?.map((fot) => fot.url) || [],
-    thumbnail: (JSON.parse(item.foto))?.map((fot) => fot.url)[0] || null,
+    thumbnail: (JSON.parse(item.foto))?.map((fot) => fot.url)[0] || '/images/eventos/prueba.jpg',
   };
 });
 

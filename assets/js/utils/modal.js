@@ -84,7 +84,7 @@ ${this.sectionName === 'eventos' ?
         </div>
       </div>
       <div class="event__container-right">
-        <img class="event__image" src="${this.data.thumbnail ? this.data.thumbnail : ''}" alt="${this.data.titulo}">
+        <img class="event__image" src="${this.data.thumbnail}" alt="${this.data.titulo}">
         <a class="inline-block uppercase py-2 px-4 font-semibold text-white absolute bottom-0 right-0" href="/galeria/multimedia/" style="background-color: #D27028;">Ver galería</a>
       </div>
     </div>
