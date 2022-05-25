@@ -17,6 +17,7 @@ const getFilePath = (filename) => {
 async function run() {
   const communities = await req.get('/comunidades?limit=100');
   const events = await req.get('/eventos?limit=100');
+  const eventsMunicipalities = await req.get('/eventos_municipios?limit=100');
   const trrs = await req.get('/fichas_municipio');
   fs.writeFile(
       getFilePath('comunidades-focalizadas.json'),
@@ -25,6 +26,10 @@ async function run() {
   fs.writeFile(
       getFilePath('eventos.json'),
       JSON.stringify(events.data.list),
+  );
+  fs.writeFile(
+      getFilePath('eventos_municipios.json'),
+      JSON.stringify(eventsMunicipalities.data.list),
   );
   fs.writeFile(
       getFilePath('territorios.json'),

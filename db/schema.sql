@@ -111,3 +111,15 @@ CREATE TABLE IF NOT EXISTS eventos (
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS eventos_municipios (
+	id SERIAL PRIMARY KEY,
+	municipio TEXT,
+	departamento TEXT,
+	nombre_evento TEXT,
+	mes TEXT,
+	tipo_evento TEXT,
+	fecha_inicio TEXT,
+	fecha_finalizacion TEXT
+);
+
