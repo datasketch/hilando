@@ -18,6 +18,8 @@ jobs:
         run: npm install
       - name: Refresh data
         run: npm run gen:content
+        env:
+          NOCODB_TOKEN: ${{ secrets.NOCODB_TOKEN }}
       - name: Commit changes
         run: |
           git config user.name github-actions
