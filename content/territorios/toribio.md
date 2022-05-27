@@ -156,6 +156,3 @@ programas_usaid:
   - ' Juntos por la Transparencia'
   - ' Jóvenes Resilientes'
 comunidad_focalizada: Vereda Flayo-Klayu
-comunidad_focalizada_url: /comunidad-focaliza/vereda-flayo-klayu
-
----
