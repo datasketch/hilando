@@ -79,7 +79,7 @@ trrs.forEach((trr) => {
     iniciativas_org_sociedad_civil: trr.iniciativas_org_sociedad_civil,
     programas_usaid: trr.programas_usaid?.split(','),
     comunidad_focalizada: trr.comunidad_focalizada,
-    comunidad_focalizada_url: communitySlug,
+    comunidad_focalizada_url: '/comunidad-focaliza/' + communitySlug,
   };
   let metadata = yaml.dump(fields);
   writeFileSync(createPath('territorios', filename), `---\n${metadata}\n---`);

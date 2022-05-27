@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
-import Swiper, {Navigation, Autoplay} from 'swiper';
+import Swiper, {Navigation, Pagination, Thumbs, Autoplay, FreeMode} from 'swiper';
 import Modal from '../utils/modal';
 
 // ELEMENTS
@@ -141,11 +142,74 @@ event.addEventListener('click', function(e) {
   if (!id) return;
 
   // filter by id
-  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
 
   // call modal class
   // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data[0]);
+  const modal = new Modal(data);
+
+  // call slider library
+  // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');
+  // const swiperMain = swiperGalleryMain('.swiperMain');
+
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+
+  const swiperMain = new Swiper('.swiperMain', {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });
 
 events.addEventListener('click', function(e) {
@@ -161,6 +225,69 @@ events.addEventListener('click', function(e) {
   // call modal class
   // eslint-disable-next-line no-unused-vars
   const modal = new Modal(data[0]);
+
+  // call slider library
+  // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');
+  // const swiperMain = swiperGalleryMain('.swiperMain');
+
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+
+  const swiperMain = new Swiper('.swiperMain', {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });
 
 window.addEventListener('load', () => {

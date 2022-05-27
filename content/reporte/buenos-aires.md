@@ -124,7 +124,7 @@ programas_usaid:
   - ' Páramos y Bosques: Puracé y Totoró'
   - Juntos por la Transparencia
   - ' Jóvenes Resilientes'
-comunidad_focalizada: Alsacia
-comunidad_focalizada_url: alsacia
+comunidad_focalizada: La Alsacia
+comunidad_focalizada_url: /comunidad-focaliza/la-alsacia
 
 ---

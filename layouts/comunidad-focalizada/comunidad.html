@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $data := .Site.Data.eventos }}
+{{ $municipio := .Params.municipio }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer" style="background-color: #3A3D81;">
         <div class="mx-auto w-10/12 xl:w-9/12">
@@ -382,18 +384,18 @@
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
                         {{ range .Params.alianzas_colaboradores_1 }}
-                            {{ with . }}
-                            <li>
-                                {{ . }}
-                            </li>
-                            {{ end }}
+                        {{ with . }}
+                        <li>
+                            {{ . }}
+                        </li>
+                        {{ end }}
                         {{ end }}
                         {{ range .Params.alianzas_colaboradores_2 }}
-                            {{ with . }}
-                            <li>
-                                {{ . }}
-                            </li>
-                            {{ end }}
+                        {{ with . }}
+                        <li>
+                            {{ . }}
+                        </li>
+                        {{ end }}
                         {{ end }}
                     </ul>
                 </div>
@@ -410,11 +412,11 @@
                         </h3>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
                             {{ range .Params.actividades_ocio }}
-                                {{ with . }}
-                                <li>
-                                    {{ . }}
-                                </li>
-                                {{ end }}
+                            {{ with . }}
+                            <li>
+                                {{ . }}
+                            </li>
+                            {{ end }}
                             {{ end }}
                         </ul>
                     </div>
@@ -438,20 +440,32 @@
             </div>
         </div>
     </div>
-    {{/* <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12" style="max-width: 406px;">
-            <div class="flex justify-between items-center">
-                <div style="max-width: 278px;">
-                    <h4 class="text-lg xl:text-xl">
-                        Número de visitas realizadas. (En referencia al resultado 2)
-                    </h4>
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 relative overflow-x-hidden" style="background-color: #FAFAFA;">
+        <div class="mx-auto w-10/12 xl:w-9/12">
+            <div class="space-y-12 mx-auto">
+                <div class="text-center">
+                    <h2 class="text-fern-green font-bold text-2xl xl:text-3xl">
+                        Eventos significativos de la vida comunitaria
+                    </h2>
                 </div>
-                <div style="max-width: 128px;">
-
+                <div class="space-y-8 text-center mx-auto" style="max-width: 550px;">
+                    {{ range where $data "municipio" $municipio }}
+                    <div class="relative space-y-2">
+                        <h3 class="text-2xl xl:text-3xl relative z-10">
+                            {{ .nombre_evento }}
+                        </h3>
+                        <div class="bg-fern-green" style="height: 2px;">&nbsp;</div>
+                        <p class="text-xl xl:text-2xl">
+                            {{ .mes }}
+                        </p>
+                        <img class="absolute -top-6 xl:-top-5 w-14 h-14" src="/images/territorios/triangle-green.svg" alt="triangle">
+                        <img class="absolute -bottom-5 xl:-bottom-4 right-0 w-14 h-14 transform rotate-180" src="/images/territorios/triangle-green.svg" alt="triangle">
+                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
-    </div> */}}
+    </div>
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden" style="background-color: #F0F0F2;">
         <div class="mx-auto w-10/12 xl:w-9/12 flex">
             <div class="lg:w-6/12">

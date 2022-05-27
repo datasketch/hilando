@@ -244,6 +244,6 @@ programas_usaid:
   - ' Inclusive Education for Peace in the Pacific Coast'
   - ' Victims Participation and Collective Reparation Activity'
 comunidad_focalizada: Punta Soldado
-comunidad_focalizada_url: punta-soldado
+comunidad_focalizada_url: /comunidad-focaliza/punta-soldado
 
 ---

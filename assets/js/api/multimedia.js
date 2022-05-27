@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import {renderMultimedia} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
-import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
+import Swiper, {Navigation, Thumbs, Autoplay} from 'swiper';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -105,11 +106,12 @@ multimedia.addEventListener('click', function(e) {
   if (!id) return;
 
   // filter by id
-  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
+  console.log(data);
 
   // call modal class
   // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data[0], 'multimedia');
+  const modal = new Modal(data, 'multimedia');
 
   // swipper settings
   const swiper = new Swiper('.mySwiper', {
@@ -123,12 +125,14 @@ multimedia.addEventListener('click', function(e) {
     },
     spaceBetween: 10,
     freeMode: true,
+    loop: true,
     watchSlidesProgress: true,
   });
 
   const swiper2 = new Swiper('.mySwiper2', {
     modules: [Navigation, Thumbs, Autoplay],
     spaceBetween: 10,
+    loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -138,7 +142,7 @@ multimedia.addEventListener('click', function(e) {
       swiper: swiper,
     },
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
   });
 });

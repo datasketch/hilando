@@ -125,6 +125,6 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: La Paulina
-comunidad_focalizada_url: la-paulina
+comunidad_focalizada_url: /comunidad-focaliza/la-paulina
 
 ---

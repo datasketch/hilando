@@ -1,31 +1,152 @@
-import SwiperCore, {Navigation, Pagination, Swiper, Autoplay} from 'swiper/core';
+import Swiper, {Navigation, Pagination, Thumbs, Autoplay, FreeMode} from 'swiper';
 
-SwiperCore.use([Navigation, Pagination, Autoplay]);
 
-function setupSlider(el, opts = {}) {
-  const wrapperEl = document.querySelector(el);
+// swiper banner
+export const swiperBanner = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination, Autoplay],
 
-  if (!wrapperEl) return;
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
 
-  const swiperEl = wrapperEl.querySelector('.swiper-container');
-  const paginationEl = wrapperEl.querySelector('.slider-pagination');
-  const prevSlideEl = wrapperEl.querySelector('.slider-prev');
-  const nextSlideEl = wrapperEl.querySelector('.slider-next');
-
-  const config = {
+    // Pagination
     pagination: {
-      el: paginationEl,
+      el: '.swiper-pagination',
       clickable: true,
     },
-    navigation: {
-      nextEl: nextSlideEl,
-      prevEl: prevSlideEl,
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
     },
-    ...opts,
-  };
+  });
+};
 
-  const swiper = new Swiper(swiperEl, config);
-  return swiper;
-}
+// swiper news feature
+export const swiperNews = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
 
-export {setupSlider};
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next-news',
+      prevEl: '.swiper-button-prev-news',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    // Responsive breakpoints
+    breakpoints: {
+      1366: {
+        slidesPerView: 2,
+        spaceBetween: 57.5,
+      },
+    },
+  });
+};
+
+export const swiperEvents = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 54.18,
+      },
+    },
+  });
+};
+
+
+export const swiperGalleryThumbs = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+};
+
+export const swiperGalleryMain = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 3000,
+    },
+  });
+};
+

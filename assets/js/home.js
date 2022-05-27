@@ -1,99 +1,21 @@
-import Swiper, {Navigation, Autoplay, Pagination} from 'swiper';
+/* eslint-disable no-unused-vars */
 import Modal from './utils/modal';
+import {swiperBanner, swiperNews, swiperEvents, swiperGalleryThumbs, swiperGalleryMain} from './lib/slider';
+import Swiper, {Navigation, Pagination, Thumbs, Autoplay, FreeMode} from 'swiper';
 
 const events = document.querySelector('.events');
 const dataEl = document.querySelector('#data-eventos');
 dataEl.remove();
 
-// init Swiper: banners
+// Slider banner home page
+const sliderHomeBanner = swiperBanner('.swiper-banner');
 
-// eslint-disable-next-line no-unused-vars
-const swiperBanner = new Swiper('.swiper-banner', {
-  // configure Swiper to use modules
-  modules: [Navigation, Pagination, Autoplay],
+// Slider news
+const sliderNews = swiperNews('.swiper-news');
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    disabledClass: 'opacity-40',
-  },
+// Slider events
+const sliderEvents = swiperEvents('.swiper-events');
 
-  // Pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-
-  // Autoplay
-  autoplay: {
-    delay: 5000,
-  },
-});
-
-// init Swiper: events
-
-// eslint-disable-next-line no-unused-vars
-const swiper = new Swiper('.swiper', {
-  // configure Swiper to use modules
-  modules: [Navigation, Autoplay],
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    disabledClass: 'opacity-40',
-  },
-
-  // Autoplay
-  autoplay: {
-    delay: 5000,
-  },
-
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 10,
-
-  // Responsive breakpoints
-  breakpoints: {
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 54.18,
-    },
-  },
-});
-
-// init Swiper: news
-
-// eslint-disable-next-line no-unused-vars
-const swiperNews = new Swiper('.swiper-news', {
-  // configure Swiper to use modules
-  modules: [Navigation, Autoplay],
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next-news',
-    prevEl: '.swiper-button-prev-news',
-    disabledClass: 'opacity-40',
-  },
-
-  // Autoplay
-  autoplay: {
-    delay: 5000,
-  },
-
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 10,
-
-  // Responsive breakpoints
-  breakpoints: {
-    1366: {
-      slidesPerView: 2,
-      spaceBetween: 57.5,
-    },
-  },
-});
 
 events.addEventListener('click', function(e) {
   // get id
@@ -103,9 +25,71 @@ events.addEventListener('click', function(e) {
   if (!id) return;
 
   // filter by id
-  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id);
+  const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
 
   // call modal class
-  // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data[0]);
+  const modal = new Modal(data, 'eventos');
+
+  // call slider library
+  // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');
+  // const swiperMain = swiperGalleryMain('.swiperMain');
+
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+
+  const swiperMain = new Swiper('.swiperMain', {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });

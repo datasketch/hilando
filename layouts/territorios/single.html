@@ -1,10 +1,9 @@
 {{ define "main" }}
-{{ $data := .Site.Data.eventos }}
+{{ $data := .Site.Data.eventos_municipios }}
 {{ $municipio := .Title }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
     {{/* BANNER PRADERA DEL VALLE CAUCA */}}
-    <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer"
-        style="background-color: #5F2161;">
+    <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer" style="background-color: #5F2161;">
         <div class="mx-auto w-10/12 xl:w-9/12">
             <h1 class="tk-mr-eaves-sans tex-2xl lg:text-3xl xl:text-4xl uppercase text-white mb-4 lg:mb-6 xl:mb-8">
                 <span class="tex-3xl lg:text-4xl xl:text-5xl font-bold block">{{ .Title }}</span>
@@ -20,8 +19,7 @@
                         {{ with .Params.grafica_ubicacion_geografica }}
                         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"></iframe>
                         {{ else }}
-                        <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg"
-                            alt="pradera map">
+                        <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg" alt="pradera map">
                         {{ end }}
                     </div>
                     <p class="text-white lg:text-lg xl:text-xl text-center">
@@ -30,17 +28,10 @@
                 </div>
                 <div class="lg:col-start-8 lg:col-end-13">
                     <div class="flex flex-col text-center lg:w-10/12 mb-10 lg:mb-12 xl:mb-14 single-navigation">
-                        <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
-                            style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
-                        <a href="#actividades-economicas"
-                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
-                            style="background-color: #C5296A;">DESARROLLO ECONÓMICO</a>
-                        <a href="#tejido-social-productivo"
-                            class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item"
-                            style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</a>
-                        <a href="#explora-datos"
-                            class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item"
-                            style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
+                        <a href="#salud" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item" style="background-color: #C5296A;">SALUD MENTAL Y ATENCIÓN PSICOLÓGICA</a>
+                        <a href="#actividades-economicas" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item" style="background-color: #C5296A;">DESARROLLO ECONÓMICO</a>
+                        <a href="#tejido-social-productivo" class="text-white xl:text-lg py-2 mb-8 cursor-pointer single-navigation__item" style="background-color: #C5296A;">TEJIDO SOCIAL Y PRODUCTIVO</a>
+                        <a href="#explora-datos" class="text-white xl:text-lg py-2 cursor-pointer single-navigation__item" style="background-color: #C5296A;">EXPLORAR LOS DATOS</a>
                     </div>
                     <div>
                         <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
@@ -53,7 +44,7 @@
                         <p class="text-white text-lg xl:text-xl">
                             Texto descriptivo de la comunidad focalizada...
                         </p>
-                        {{/*  <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
+                        {{/* <ul class="grid grid-cols-2 text-white xl:text-lg gap-4">
                             {{ range .Params.comunidad_focalizada }}
                             <li class="flex items-center">
                                 <img class="mr-2" src="/images/public/point.svg" alt="point">
@@ -61,8 +52,7 @@
                             </li>
                             {{ end }}
                         </ul>
-                        <iframe class="mx-auto w-full h-96 mt-8 border border-white"
-                            src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe>  */}}
+                        <iframe class="mx-auto w-full h-96 mt-8 border border-white" src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0"></iframe> */}}
                     </div>
                 </div>
             </div>
@@ -170,8 +160,7 @@
                 {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
-                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-6 lg:mb-8 xl:mb-10 text-center"
-                    style="color: #963B62;">
+                <h4 class="text-xl lg:text-2xl xl:text-3xl font-black mb-6 lg:mb-8 xl:mb-10 text-center" style="color: #963B62;">
                     Población étnica
                 </h4>
                 {{ with .Params.grafica_pertenencia_etnica }}
@@ -201,16 +190,14 @@
                 </div>
                 <div>
                     <div class="flex mb-6 lg:mb-8 xl:mb-10">
-                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10"
-                            style="color: #3A3C6A;">
+                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
                             Sujetos de reparación <span class="block">colectiva</span>
                         </h4>
                         <p class="font-black ml-8 text-2xl lg:text-3xl xl:text-4xl text-black">{{
                             .Params.num_sujetos_reparacion_colectiva }}</p>
                     </div>
                     <div class="flex">
-                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10"
-                            style="color: #3A3C6A;">
+                        <h4 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
                             Planes de retorno y <span class="block">reubicación colectiva</span>
                         </h4>
                         <p class="font-black ml-8 text-2xl lg:text-3xl xl:text-4xl text-black">{{
@@ -239,8 +226,7 @@
     {{/* SECTION END */}}
 
     <!-- SECTION -->
-    <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" id="salud"
-        style="background-color: #FAFAFA;">
+    <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13" id="salud" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12">
             <h2 class="lg:text-xl xl:text-2xl font-black text-center mb-8 lg:mb-10 xl:mb-12" style="color: #C5296A;">
                 Priorización de los efectos en salud para WLH
@@ -291,8 +277,7 @@
                 violencia</h3>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
                 <div>
-                    <h4
-                        class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
+                    <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia sexual</h4>
                     {{ with .Params.grafica_violencia_sexual }}
                     <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
@@ -301,8 +286,7 @@
                     {{ end }}
                 </div>
                 <div>
-                    <h4
-                        class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
+                    <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia física</h4>
                     {{ with .Params.grafica_violencia_fisica }}
                     <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
@@ -311,8 +295,7 @@
                     {{ end }}
                 </div>
                 <div>
-                    <h4
-                        class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
+                    <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Negligencia y abandono</h4>
                     {{ with .Params.grafica_negligencia_abandono }}
                     <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
@@ -321,8 +304,7 @@
                     {{ end }}
                 </div>
                 <div>
-                    <h4
-                        class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
+                    <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia psicológica</h4>
                     {{ with .Params.grafica_violencia_psicologica }}
                     <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"></iframe>
@@ -336,8 +318,7 @@
     <!-- SECTION END -->
 
     <!-- SECTION -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 grid grid-cols-1 lg:grid-cols-12"
-        style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 grid grid-cols-1 lg:grid-cols-12" style="background-color: #FAFAFA;">
         <div class="lg:col-start-4 lg:col-end-13 mx-auto w-10/12 xl:w-9/12">
             <h3 class="font-black lg:text-lg xl:text-xl mb-4 lg:mb-5 xl:mb-6" style="color: #1A1A1A;">Eventos en salud
                 pública predominantes</h3>
@@ -426,8 +407,7 @@
     <!-- SECTION END -->
 
     <!-- SECTION -->
-    <div class="lg:col-start-1 lg:col-end-12 py-12 lg:py-16 xl:py-20" id="actividades-economicas"
-        style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-12 py-12 lg:py-16 xl:py-20" id="actividades-economicas" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-20 xl:gap-y-24">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5" style="color: #4F7435;">
@@ -447,8 +427,7 @@
                 {{ end }}
             </div>
             <div class="lg:col-start-8 lg:col-end-13">
-                <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5 text-center"
-                    style="color: #4F7435;">
+                <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5 text-center" style="color: #4F7435;">
                     Trabajo informal</h3>
                 <div class="flex items-center justify-center">
                     <img src="/images/territorios/triangle-green.svg" alt="triangle">
@@ -503,27 +482,33 @@
                     <li>
                         <div class="flex justify-between border-b py-2" style="border-color: #81A347;">
                             <h3 class="text-lg lg:text-xl xl:text-2xl font-black">
-                                {{ .titulo }}
+                                {{ .nombre_evento }}
                             </h3>
                             <span class="lg:text-lg xl:text-xl">Tipo</span>
                         </div>
                         <div class="flex justify-between py-2">
+                            {{ if .mes }}
                             <span class="lg:text-lg xl:text-xl">{{ .mes }}</span>
-                            <span class="lg:text-lg xl:text-xl">{{ .tipo }}</span>
+                            {{ else }}
+                            <span class="lg:text-lg xl:text-xl">Sin definir</span>
+                            {{ end }}
+                            {{ if .tipo_evento }}
+                            <span class="lg:text-lg xl:text-xl">{{ .tipo_evento }}</span>
+                            {{ else }}
+                            <span class="lg:text-lg xl:text-xl">Sin definir</span>
+                            {{ end }}
                         </div>
                     </li>
                     {{ end }}
                 </ul>
             </div>
         </div>
-        <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center"
-            src="/images/territorios/events.svg" alt="events">
+        <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center" src="/images/territorios/events.svg" alt="events">
     </div>
     <!-- SECTION END -->
 
     <!-- SECTION -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" id="tejido-social-productivo"
-        style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" id="tejido-social-productivo" style="background-color: #FAFAFA;">
         <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-7">
                 <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5">
@@ -595,8 +580,7 @@
                     </span>
                 </p>
                 <details class="text-center text-lg">
-                    <summary class="inline-block  cursor-pointer uppercase text-white py-2 px-6 xl:text-lg"
-                        style="background-color: #C5296A;">CÓMO UTILIZAR ESTA HERRAMIENTA</summary>
+                    <summary class="inline-block  cursor-pointer uppercase text-white py-2 px-6 xl:text-lg" style="background-color: #C5296A;">CÓMO UTILIZAR ESTA HERRAMIENTA</summary>
                     <div class="mt-14 space-y-8">
                         <p>
                             Esta herramienta de visualización de datos para explorar la información relacionada con los
@@ -633,8 +617,7 @@
                     </div>
                 </details>
             </div>
-            <iframe class="mx-auto w-11/12 h-screen" src="{{ .Params.app }}"
-                frameborder="0"></iframe>
+            <iframe class="mx-auto w-11/12 h-screen" src="{{ .Params.app }}" frameborder="0"></iframe>
         </div>
     </div>
     {{ end }}
@@ -651,20 +634,16 @@
                     Descarga la información del municipio para conocer su contexto.
                 </p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg"
-                        href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}"
-                        style="background-color: #D27028;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}" style="background-color: #D27028;">
                         DESCARGA LA FICHA
                     </a>
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#"
-                        style="background-color: #C5296A;">
+                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #C5296A;">
                         DESCARGA LOS DATOS
                     </a>
                 </div>
             </div>
         </div>
-        <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg"
-            alt="line shape">
+        <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg" alt="line shape">
     </div>
     <!-- DOWNLOAD END -->
 </div>

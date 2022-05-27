@@ -72,6 +72,6 @@ medios_comunicacion:
   - ' Emisora Comunitaria de Tarazá'
 iniciativas_org_sociedad_civil: null
 comunidad_focalizada: Corregimiento La Caucana
-comunidad_focalizada_url: corregimiento-la-caucana
+comunidad_focalizada_url: /comunidad-focaliza/corregimiento-la-caucana
 
 ---
