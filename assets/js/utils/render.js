@@ -1,9 +1,55 @@
+import {parseISO, addDays, format} from 'date-fns';
+
+const months = {
+  enero: '01',
+  febrero: '02',
+  marzo: '03',
+  abril: '04',
+  mayo: '05',
+  junio: '06',
+  julio: '07',
+  agosto: '08',
+  septiembre: '09',
+  octubre: '10',
+  noviembre: '11',
+  diciembre: '12',
+};
+
+function addLeadingZero(num) {
+  return num.toString().padStart(2, '0');
+}
+
+function createCalendarLink(event) {
+  if (!event.dia_inicio) return;
+  const base = new URL('https://calendar.google.com/calendar/render');
+  const year = new Date().getFullYear();
+  const month = months[event['mes'].toLowerCase().trim()];
+  const startDay = Number(event.dia_inicio);
+  const startDate = parseISO(`${year}-${month}-${addLeadingZero(startDay)}`);
+  let endDate;
+  if (event.dia_finalizacion) {
+    const endDay = Number(event.dia_finalizacion);
+    if (startDay === endDay) {
+      endDate = addDays(startDate, 1);
+    } else {
+      endDate = parseISO(`${year}-${month}-${addLeadingZero(endDay)}`);
+    }
+  }
+  const startStr = format(startDate, 'yyyy-MM-dd').replace(/-/g, '');
+  const endStr = format(endDate, 'yyyy-MM-dd').replace(/-/g, '');
+  base.searchParams.append('action', 'TEMPLATE');
+  base.searchParams.append('text', event.nombre_evento);
+  base.searchParams.append('dates', `${startStr}/${endStr}`);
+  base.searchParams.append('details', event.descripcion || '');
+  return base.toString();
+}
+
 export const renderEvent = (parentEl, data) => {
   const html = `
     <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
         <span class="event__municipio-departamento">
-            ${data.municipio} - ${data.macroregion}
+            ${data.municipio || ''} - ${data.macroregion || ''}
         </span>
         <h3 class="event__titulo">
             <span class="event__nombre">
@@ -13,7 +59,7 @@ export const renderEvent = (parentEl, data) => {
         </h3>
         <div class="text-purple">
             <p class="font-bold text-xl xl:text-2xl">
-                ${data.dia_inicio}
+                ${data.dia_inicio || ''}
             </p>
             <p class="-mt-2">  
             ${data.mes}
@@ -22,6 +68,7 @@ export const renderEvent = (parentEl, data) => {
         <p class="text-lg xl:text-xl">
             ${data.descripcion && data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : 'No hay descripcion'}
         </p>
+        ${createCalendarLink(data) ? `<p><a class="underline" target="_blank" href="${createCalendarLink(data)}">Agregar a Google Calendar</a></p>` : ''}
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
     </div>
     <div class="event__container-right">
