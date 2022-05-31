@@ -168,7 +168,7 @@ event.addEventListener('click', function(e) {
       delay: 5000,
     },
 
-    loop: true,
+    // loop: true,
 
     // Default parameters
     slidesPerView: 3,

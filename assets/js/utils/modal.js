@@ -39,7 +39,9 @@ export default class Modal {
       urlImages.forEach((urlImage, index) => {
         html += `
               <div class="swiper-slide">
-                <img class="swiper__image--events" src="${urlImage}" alt="${nameImages}-${index + 1}" style="max-width: 622px; max-height: 350.27px;">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img class="object-contain object-center" src="${urlImage}" alt="${nameImages}-${index + 1}">
+                </div>
                </div>
               `;
       });

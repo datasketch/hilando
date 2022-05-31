@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === 'production',
-    content: ['./layouts/**/*.html'],
+    content: ['./layouts/**/*.html', './assets/js/**/*.js'],
     options: {
       safelist: [
         'header--active',
@@ -84,7 +84,6 @@ module.exports = {
         'event__modal-italic',
         'event__modal--text-purple',
         'swiper__image--thumbs',
-        'swiper__image--events',
         'swiper__image--multimedia',
         'swiperThumbs--events',
         'swiper-slide-thumb-active',
