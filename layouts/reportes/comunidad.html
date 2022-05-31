@@ -302,7 +302,7 @@
             </div>
         </div>
     </div>
-    <img class="absolute left-1/2 bottom-0 transform -translate-x-1/2" src="/images/logo-datasketch.svg" alt="logo datasketch">
+    <img class="absolute left-1/2 bottom-4 transform -translate-x-1/2" src="/images/logo-datasketch.svg" alt="logo datasketch">
 </section>
 <!-- 2 -->
 <section class="page-a4 relative">
@@ -572,33 +572,58 @@
             </div>
         </div>
     </div>
-    <div class="relative">
-        <div class="bg-banner-eventos-significativos bg-cover bg-center text-center py-2.5">
-            <h3 class="text-xxs text-blue font-bold">
-                Eventos significativos de la vida comunitaria
-            </h3>
-        </div>
-        <div class="bg-white-3 pt-3 pb-5">
+    <img class="absolute left-1/2 bottom-4 transform -translate-x-1/2" src="/images/logo-datasketch.svg" alt="logo datasketch">
+</section>
+<!-- 3 -->
+<section class="page-a4 relative">
+    <div class="space-y-8">
+        <div class="relative bg-white pt-4 pb-2">
             <div class="mx-auto w-10/12">
-                <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                    {{ range where $data "municipio" $municipio }}
-                    <div class="relative space-y-1">
-                        <h3 class="text-xxs font-bold relative z-10 pl-3">
-                            {{ .nombre_evento }}
-                        </h3>
-                        <div class="bg-blue" style="height: 1px;">&nbsp;</div>
-                        <p class="pl-3 text-xxs">
-                            {{ .mes }}
-                        </p>
-                        <img class="absolute w-4 h-4 top-0" src="/images/triangle-blue.svg" alt="triangle">
-                        <img class="absolute w-4 h-4 right-0 bottom-0.5 transform rotate-180" src="/images/triangle-blue.svg" alt="triangle">
+                <div class="grid grid-cols-2">
+                    <div class="bg-blue py-2 px-7">
+                        <div class="tk-mr-eaves-sans text-white">
+                            <h2 class="text-2xl font-black uppercase">
+                                {{ .Title }}
+                            </h2>
+                            <h3 class="text-xxs uppercase">
+                                {{ .Params.municipio }} - {{ .Params.departamento }}
+                            </h3>
+                        </div>
                     </div>
-                    {{ end }}
+                    <div class="grid place-items-center" style="border: 0.5px solid #5F2161;">
+                        <img src="/images/Logos USAID-OIM-WLH.png" alt="Logos USAID-OIM-WLH">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="bg-banner-eventos-significativos bg-cover bg-center text-center py-2.5">
+                <h3 class="text-xxs text-blue font-bold">
+                    Eventos significativos de la vida comunitaria
+                </h3>
+            </div>
+            <div class="bg-white-3 py-8">
+                <div class="mx-auto w-10/12">
+                    <div class="grid grid-cols-2 gap-y-5 gap-x-10">
+                        {{ range where $data "municipio" $municipio }}
+                        <div class="relative space-y-1">
+                            <h3 class="text-xxs font-bold relative z-10 pl-3">
+                                {{ .nombre_evento }}
+                            </h3>
+                            <div class="bg-blue" style="height: 1px;">&nbsp;</div>
+                            <p class="pl-3 text-xxs">
+                                {{ .mes }}
+                            </p>
+                            <img class="absolute w-4 h-4 top-0" src="/images/triangle-blue.svg" alt="triangle">
+                            <img class="absolute w-4 h-4 right-0 bottom-0.5 transform rotate-180" src="/images/triangle-blue.svg" alt="triangle">
+                        </div>
+                        {{ end }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 bg-white pt-4 pb-3">
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white pt-4 pb-3">
         <div class="text-blue text-center space-y-2">
             <h3 class="tk-mr-eaves-sans uppercase text-xxs">
                 WEAVING LIVES AND HOPE
