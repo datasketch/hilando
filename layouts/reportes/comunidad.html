@@ -5,7 +5,7 @@
 <section class="page-a4 relative">
     <div class="bg-blue py-6">
         <div class="mx-auto w-10/12">
-            <div class="space-y-1">
+            <div class="space-y-4">
                 <div class="flex justify-end">
                     <div class="flex justify-between items-center space-x-2">
                         <div class="tk-mr-eaves-sans text-white text-xxs">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="flex justify-between">
                     <div class="w-full" style="max-width: 241.11px;">
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <div class="tk-mr-eaves-sans text-white">
                                 <h1 class="inline-block relative">
                                     <span class="text-2xl font-black uppercase">
@@ -85,7 +85,7 @@
         <div class="mx-auto w-10/12 relative z-10">
             <div class="flex justify-between">
                 <div class="w-full" style="max-width: 192.64px;">
-                    <div class="space-y-0.5">
+                    <div class="space-y-1">
                         <h3 class="text-xxs text-blue font-bold">
                             Vías de acceso
                         </h3>
@@ -95,11 +95,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-0.5">
+                    <div class="space-y-1">
                         <h3 class="text-xxs text-blue font-bold">
                             Distancia del casco urbano
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             <li>
                                 <p>
                                     <span class="font-bold">
@@ -126,13 +126,13 @@
     </div>
     <div class="relative bg-white pt-4">
         <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-2 gap-y-4 gap-x-10">
+            <div class="grid grid-cols-2 gap-y-5 gap-x-10">
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Infraestructura comunitaria
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ $infraestructura_comunitaria := split .Params.infraestructura_comunitaria "," }}
                             {{ range $infraestructura_comunitaria }}
                             <li class="flex items-center space-x-2">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Educación e infraestructura educativa
                         </h3>
@@ -158,11 +158,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Servicios Públicos
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.servicios_publicos_comunidades_focalizadas }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -177,11 +177,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Infraestructura salud y atención psicosocial
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.infraestructura_salud_atencion_psicosocial }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -196,11 +196,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Liderazgo en la comunidad
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.liderazgo_comunidad }}
                             {{ $liderazgo := split . "." }}
                             {{ range $liderazgo }}
@@ -220,11 +220,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Prácticas Organizativas
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.comunidades_focalizadas_practicas_organizativas }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -240,11 +240,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Inclusión, diversidad y género
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
                                     &nbsp;
@@ -273,11 +273,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Conectividad
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
                                     &nbsp;
@@ -324,13 +324,13 @@
                         <img src="/images/Logos USAID-OIM-WLH.png" alt="Logos USAID-OIM-WLH">
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-y-4 gap-x-10">
+                <div class="grid grid-cols-2 gap-y-5 gap-x-10">
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Actividades económicas principales y vocación productiva
                             </h3>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -345,11 +345,11 @@
                         </div>
                     </div>
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Punto SOLE
                             </h3>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.comentarios_punto_SOLE }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -364,11 +364,11 @@
                         </div>
                     </div>
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Iniciativas productivas priorizadas
                             </h3>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.iniciativas_priorizadas }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -383,7 +383,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Iniciativas productivas priorizadas
                             </h3>
@@ -393,11 +393,11 @@
                         </div>
                     </div>
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Oportunidades de innovación
                             </h3>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
                                         &nbsp;
@@ -418,11 +418,11 @@
                         </div>
                     </div>
                     <div>
-                        <div class="space-y-1">
+                        <div class="space-y-2">
                             <h3 class="text-xxs text-blue font-bold">
                                 Organizaciones con proyección
                             </h3>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.org_con_proyeccion }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -442,13 +442,13 @@
     </div>
     <div class="relative bg-white-3 pt-4 pb-8">
         <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-2 gap-y-4 gap-x-10">
+            <div class="grid grid-cols-2 gap-y-5 gap-x-10">
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Organizaciones focalizadas
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.org_focalizada }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -463,11 +463,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Actividades de ocio
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.actividades_ocio }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -482,11 +482,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Riesgo
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
                                     &nbsp;
@@ -499,11 +499,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Medios de comunicación
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.medios_comunicacion_narrativas_locales }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -518,11 +518,11 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Otros programas USAID
                         </h3>
-                        <ul class="text-xxs space-y-0.5">
+                        <ul class="text-xxs space-y-1">
                             {{ range .Params.otros_programas_USAID }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -537,12 +537,12 @@
                     </div>
                 </div>
                 <div>
-                    <div class="space-y-1">
+                    <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
                             Alianzas y colaboradores
                         </h3>
-                        <div class="space-y-1">
-                            <ul class="text-xxs space-y-0.5">
+                        <div class="space-y-2">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.alianzas_colaboradores_1 }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -554,7 +554,7 @@
                                 </li>
                                 {{ end }}
                             </ul>
-                            <ul class="text-xxs space-y-0.5">
+                            <ul class="text-xxs space-y-1">
                                 {{ range .Params.alianzas_colaboradores_2 }}
                                 <li class="flex items-center space-x-2">
                                     <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
@@ -580,9 +580,9 @@
         </div>
         <div class="bg-white-3 pt-3 pb-5">
             <div class="mx-auto w-10/12">
-                <div class="grid grid-cols-2 gap-y-4 gap-x-10">
+                <div class="grid grid-cols-2 gap-y-5 gap-x-10">
                     {{ range where $data "municipio" $municipio }}
-                    <div class="relative space-y-0.5">
+                    <div class="relative space-y-1">
                         <h3 class="text-xxs font-bold relative z-10 pl-3">
                             {{ .nombre_evento }}
                         </h3>
@@ -599,7 +599,7 @@
         </div>
     </div>
     <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2 bg-white pt-4 pb-3">
-        <div class="text-blue text-center space-y-1">
+        <div class="text-blue text-center space-y-2">
             <h3 class="tk-mr-eaves-sans uppercase text-xxs">
                 WEAVING LIVES AND HOPE
             </h3>
