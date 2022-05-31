@@ -33,6 +33,7 @@ vias_acceso: >-
   predominando un terreno montañoso, en estado regular que es transitado en moto
   y/o en mula que son los medios de transporte utilizados por los pobladores. 
 infraestructura_comunitaria: Iglesias,Juntas de Acción Comunal (JAC),Tiendas,Espacios deportivos
+notas_infraestructura_comunitaria: []
 liderazgo_comunidad:
   - >-
     hay un movimiento de líderes fuertes organizados a partir del proyecto de
@@ -53,9 +54,7 @@ comentarios_conectividad: >-
   las carteleras.
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
-  - Punto vive digital con 10 computadores
-  - ' La señal es regular'
-  - ''
+  - Punto vive digital con 10 computadores. La señal es regular.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Piscicultura
@@ -73,6 +72,7 @@ servicios_publicos_comunidades_focalizadas:
   - Energía-Toribío
   - Acueducto-Toribío
   - Recolección de basuras-Toribío
+comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas:
   - Autoridad Indígena
   - Junta de Acción Comunal
@@ -113,6 +113,7 @@ alianzas_colaboradores_2:
   - >-
     Corporación para la Sostenibilidad de la Subcuenca del Río Palo en el
     departamento del Cauca (CORPOPALO)
+actividades_ocio: []
 medios_comunicacion_narrativas_locales:
   - Nasa Stereo
 num_visitas_realizadas: 20
@@ -126,7 +127,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   empoderamiento de mujeres y reclutamiento forzado. Desde el proyecto Nasa se
   cuenta con un coordinador de salud y auxiliares comunitarios.
 num_visitas_predio: 0
-url: /comunidad-focaliza/vereda-flayo-klayu
-layout: comunidad
+url: /comunidad-focalizada/vereda-flayo-klayu
+layout: single
+download_file: /reportes/vereda-flayo-klayu.pdf
 
 ---

@@ -113,6 +113,7 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
 comunidad_focalizada: Corregimiento San Pedro Consolado
-comunidad_focalizada_url: /comunidad-focaliza/corregimiento-san-pedro-consolado
+comunidad_focalizada_url: /comunidad-focalizada/corregimiento-san-pedro-consolado
+download_file: /reportes/san-juan-nepomuceno.pdf
 
 ---

@@ -20,14 +20,11 @@ vias_acceso: >-
   en 4*4 ya que el estado de la vía es regular y hay riesgos de derrumbe
 infraestructura_comunitaria: Instituciones educativas (IE),Espacios deportivos,Caseta comunal
 notas_infraestructura_comunitaria:
-  - Caseta comunal en las dos veredas
-  - ''
+  - Caseta comunal en las dos veredas.
 liderazgo_comunidad:
-  - >-
-    La JAC está funcionando en las dos veredas, y están conformados los comites
-    de trabajo, salud y convivencia
-  - ' La unidad productiva Apicola ha permitido que las familias trabajen en ambas comunidades'
-  - ''
+  - La JAC está funcionando en las dos veredas
+  - ' y están conformados los comites de trabajo'
+  - ' salud y convivencia. La unidad productiva Apicola ha permitido que las familias trabajen en ambas comunidades.'
 inclusion_diversidad_genero: >-
   Hay una organización de mujeres que se conformó  hace 9 meses para la
   participación de un proyecto, pero en el momento no funciona, no hay
@@ -39,14 +36,14 @@ comentarios_conectividad: >-
   una montaña
 punto_SOLE: Institución educativa
 comentarios_punto_SOLE:
-  - Institución Educativa Borrachera
-  - ''
+  - Institución Educativa Borrachera.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Apicultura
   - Pesca
   - Reserva Forestal
   - Minería
+comentarios_ppales_actividades_economicas_vocacion_productiva: []
 comunidad_sostenible_uso_suelo: >-
   Todo el territorio rural del Bagre se encuentra en reserva forestal, lo que
   limita el uso del suelo.
@@ -55,6 +52,8 @@ org_con_proyeccion:
   - Trópico Diverso
   - Campo Dulce
   - Unidad productiva de café
+servicios_publicos_comunidades_focalizadas: []
+comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas:
   - Junta de Acción Comunal
   - Cultos religiosos
@@ -71,6 +70,8 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
 actividades_ocio:
   - Fútbol
   - Torneos deportivos
@@ -91,7 +92,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   de Puerto López) y del proceso de tejedores y tejedoras de la estrategia
   Entrelazando de la Unidad de Víctimas.
 num_visitas_predio: 20
-url: /comunidad-focaliza/borrachera-y-la-bonga
-layout: comunidad
+url: /comunidad-focalizada/borrachera-y-la-bonga
+layout: single
+download_file: /reportes/borrachera-y-la-bonga.pdf
 
 ---

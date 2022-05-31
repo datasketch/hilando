@@ -17,14 +17,12 @@ vias_acceso: >-
   en 4*4 ya que el estado de la vía es regular y hay riesgos de derrumbe
 infraestructura_comunitaria: Instituciones educativas (IE),Sede de COREDÍ,Espacios deportivos
 notas_infraestructura_comunitaria:
-  - Cancha en estado regular
-  - ''
+  - Cancha en estado regular.
 liderazgo_comunidad:
-  - >-
-    Hay una JAC activa (60 personas), conformada por comites de salud, deporte y
-    trabajo
-  - >-
-
+  - Hay una JAC activa (60 personas)
+  - ' conformada por comites de salud'
+  - >2-
+     deporte y trabajo.
     Presencia de liderazgos juveniles acompañados por COREDI (Corporación
     Educativa para el Desarrollo Integral)
 
@@ -39,8 +37,7 @@ comentarios_conectividad: >-
   aprobado para un Aula digital 
 punto_SOLE: Aula Digital
 comentarios_punto_SOLE:
-  - Aula Digital en COREDI
-  - ''
+  - Aula Digital en COREDI.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Ganadería
@@ -58,6 +55,8 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
     Avicultura (Pollos de engorde y gallinas ponedoras)
     Piscicultura (tres estanques en mal estado)
 comunidad_sostenible_uso_suelo: null
+org_con_proyeccion: []
+servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Insitución Educativa para básica primaria
   - Sede de COREDÍ
@@ -67,9 +66,12 @@ comunidades_focalizadas_practicas_organizativas:
 conectividad_minima: Regular
 iniciativas_priorizadas:
   - Café
+org_focalizada: []
 riesgo: Medio
 otros_programas_USAID:
   - 'No'
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
 actividades_ocio:
   - Fútbol
 medios_comunicacion_narrativas_locales:
@@ -78,9 +80,11 @@ medios_comunicacion_narrativas_locales:
   - Tele Antioquia
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 16
-url: /comunidad-focaliza/vereda-el-banco
-layout: comunidad
+url: /comunidad-focalizada/vereda-el-banco
+layout: single
+download_file: /reportes/vereda-el-banco.pdf
 
 ---

@@ -19,21 +19,17 @@ vias_acceso: >-
   derrumbes e inundación. 
 infraestructura_comunitaria: Caseta comunal,Sede ASOCAVAL,Instituciones educativas (IE),Espacios deportivos
 notas_infraestructura_comunitaria:
-  - 'IE: Centro educativo rural La Paulina'
-  - ''
+  - 'IE: Centro educativo rural La Paulina.'
 liderazgo_comunidad:
-  - Se identfican liderazgos importantes en el territorio
-  - |-
-
-    La JAC es activa y funciona
   - >-
+    Se identfican liderazgos importantes en el territorio.
+
+    La JAC es activa y funciona.
 
     Hay una Asociación muy representativa en la vereda y a nivel municipal
-    llamada Asociación de cacaoteros de Valdivia (ASOCAVAL)
-  - |-
+    llamada Asociación de cacaoteros de Valdivia (ASOCAVAL).
 
-    Se rescata la práctica de juntanzas comunitarias
-  - ''
+    Se rescata la práctica de juntanzas comunitarias.
 inclusion_diversidad_genero: |-
   Algunas mujeres hacen parte de ASOCAVAL.
   La JAC tiene una presidenta mujer
@@ -43,8 +39,7 @@ comentarios_conectividad: >-
   satelital
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
-  - Punto de Vive Digital del Centro Educativo rural La paulina
-  - ''
+  - Punto de Vive Digital del Centro Educativo rural La paulina.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Pesca
@@ -58,6 +53,7 @@ comunidad_sostenible_uso_suelo: >-
 org_con_proyeccion:
   - Asociación de cacaoteros de Valdivia (ASOCAVAL)
   - Proyecto piscícola
+servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Centro educativo rural La Paulina
   - IE de Puerto Valdivia
@@ -73,14 +69,19 @@ org_focalizada:
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
+actividades_ocio: []
 medios_comunicacion_narrativas_locales:
   - Televaldivia
   - CV Comunicaciones
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 16
-url: /comunidad-focaliza/la-paulina
-layout: comunidad
+url: /comunidad-focalizada/la-paulina
+layout: single
+download_file: /reportes/la-paulina.pdf
 
 ---

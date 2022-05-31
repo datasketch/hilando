@@ -79,11 +79,13 @@ trrs.forEach((trr) => {
     iniciativas_org_sociedad_civil: trr.iniciativas_org_sociedad_civil,
     programas_usaid: trr.programas_usaid?.split(','),
     comunidad_focalizada: trr.comunidad_focalizada,
-    comunidad_focalizada_url: '/comunidad-focaliza/' + communitySlug,
+    comunidad_focalizada_url: '/comunidad-focalizada/' + communitySlug,
+    download_file: `/reportes/${filename}.pdf`,
   };
   let metadata = yaml.dump(fields);
   writeFileSync(createPath('territorios', filename), `---\n${metadata}\n---`);
   delete fields.menu;
+  fields.layout = 'territorio';
   metadata = yaml.dump(fields);
-  writeFileSync(createPath('reporte', filename), `---\n${metadata}\n---`);
+  writeFileSync(createPath('reportes', filename), `---\n${metadata}\n---`);
 });

@@ -22,19 +22,23 @@ infraestructura_comunitaria: >-
   Integral (CDI),Caseta comunal,Centro día,Centro integración
   comunitaria,Espacios deportivos,Iglesias,Plaza de mercado
 notas_infraestructura_comunitaria:
-  - CDI (Mal estado)
-  - ''
+  - CDI (Mal estado).
 liderazgo_comunidad:
-  - Se identifican liderazgos representativos
-  - ' y  representación de todos los liderazgos presentes, (Padre, pastores, mujeres, jóvenes, representantes de asociaciones)'
+  - >-
+    Se identifican liderazgos representativos. y  representación de todos los
+    liderazgos presentes
+  - ' (Padre'
+  - ' pastores'
+  - ' mujeres'
+  - ' jóvenes'
+  - ' representantes de asociaciones)'
 inclusion_diversidad_genero: >-
   Se identifica una participación de jóvenes por medio de los colectivos y de
   mujeres en asociaciones productivas 
 comentarios_conectividad: La señal es inestable, con acceso limitado.
 punto_SOLE: Salón Parroquial con internet
 comentarios_punto_SOLE:
-  - Salón Parroquial con internet gracias al programa de Microsoft y USAID
-  - ''
+  - Salón Parroquial con internet gracias al programa de Microsoft y USAID.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Avicultura
@@ -64,6 +68,7 @@ org_con_proyeccion:
   - Proceso de sustitución de cultivos
   - AGROAPITA
   - Piscicultura y proyectos de seguridad alimentaria
+servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
 comunidades_focalizadas_practicas_organizativas:
@@ -100,8 +105,9 @@ alianzas_colaboradores_2:
   - Linea productiva del plátano
 actividades_ocio:
   - Fútbol
-  - '"Huellas ecológicas (Grupo de niños y niñas quetienen un vivero'
-  - ' hacen reforestación y jornadas de limpieza)"'
+  - >-
+    "Huellas ecológicas (Grupo de niños y niñas quetienen un vivero, hacen
+    reforestación y jornadas de limpieza)"
 medios_comunicacion_narrativas_locales:
   - Cáceres Stereo
   - Red de comunicaciones Bajo Cauca- Semillero El Jardín
@@ -117,7 +123,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   El centro de salud cuenta con 2 enfermeros y dos veces a la semana asiste el
   médico.
 num_visitas_predio: 19
-url: /comunidad-focaliza/corregimiento-la-caucana
-layout: comunidad
+url: /comunidad-focalizada/corregimiento-la-caucana
+layout: single
+download_file: /reportes/corregimiento-la-caucana.pdf
 
 ---

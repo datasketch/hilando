@@ -26,21 +26,18 @@ vias_acceso: >
   https://n9.cl/y7nqf
 infraestructura_comunitaria: Parque,Instituciones educativas (IE),Salón comunitario,Puestos de Salud
 notas_infraestructura_comunitaria:
-  - IE hasta 7 grado
-  - ''
+  - IE hasta 7 grado.
 liderazgo_comunidad:
   - >-
     Hay un liderazgo fuerte y varias asociaciones y organizaciones con las
-    cuales trabajar
-  - ''
+    cuales trabajar.
 inclusion_diversidad_genero: >-
   Participación activa de jóvenes, mujeres, campesinos. No hay grupos étnicos
   identificados
 comentarios_conectividad: Hay acceso a internet, pero deficiente en algunas zonas
 punto_SOLE: Caseta comunal
 comentarios_punto_SOLE:
-  - Caseta comunal requiere de instalación de conexión a internet
-  - ''
+  - Caseta comunal requiere de instalación de conexión a internet.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Porcicultura
@@ -94,7 +91,8 @@ infraestructura_salud_atencion_psicosocial:
   - Presencia de la Alcaldía en atención psicosocial a jóvenes
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 4
-url: /comunidad-focaliza/corregimiento-la-ceiba
-layout: comunidad
+url: /comunidad-focalizada/corregimiento-la-ceiba
+layout: single
+download_file: /reportes/corregimiento-la-ceiba.pdf
 
 ---

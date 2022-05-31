@@ -117,6 +117,7 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada: Vereda Paraiso
-comunidad_focalizada_url: /comunidad-focaliza/vereda-paraiso
+comunidad_focalizada_url: /comunidad-focalizada/vereda-paraiso
+download_file: /reportes/coloso.pdf
 
 ---

@@ -18,18 +18,16 @@ vias_acceso: >-
 
   mototaxi
 infraestructura_comunitaria: Instituciones educativas (IE),Centros de convivencia,Puestos de Salud
+notas_infraestructura_comunitaria: []
 liderazgo_comunidad:
-  - Se observa una gran asociactividad y muchos procesos juveniles
-  - ''
+  - Se observa una gran asociactividad y muchos procesos juveniles.
 inclusion_diversidad_genero: null
 comentarios_conectividad: null
 punto_SOLE: Institución educativa
 comentarios_punto_SOLE:
-  - La Sala de Internet de la IE es Punto vive digital
-  - ' La JAC es la responsable de ella'
-  - ' Parece que no funciona el internet'
-  - ' Se puede contratar con Claro'
-  - ''
+  - >-
+    La Sala de Internet de la IE es Punto vive digital. La JAC es la responsable
+    de ella. Parece que no funciona el internet. Se puede contratar con Claro.
 ppales_actividades_economicas_vocacion_productiva:
   - Agroforestal
   - Minería
@@ -44,9 +42,11 @@ comentarios_ppales_actividades_economicas_vocacion_productiva:
     Carbono).
 
 comunidad_sostenible_uso_suelo: null
+org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
   - Energía-Buenos Aires
   - Acueducto-Buenos Aires
+comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas:
   - Consejo Comunitario
   - Asociación
@@ -63,11 +63,18 @@ org_focalizada:
   - Asociación de mujeres por un mejor vivir
   - Consejo Comunitario
 riesgo: null
+otros_programas_USAID: []
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
+actividades_ocio: []
+medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 18
 num_diagnosticos_rurales_participativos_realizados: 1
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 0
-url: /comunidad-focaliza/la-alsacia
-layout: comunidad
+url: /comunidad-focalizada/la-alsacia
+layout: single
+download_file: /reportes/la-alsacia.pdf
 
 ---

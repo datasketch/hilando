@@ -107,6 +107,7 @@ module.exports = {
         'banner-programa': 'url(/images/sobre-programa/banner-sobre-el-programa.svg)',
         'newsletter': 'url(/images/home/newsletter.png)',
         'banner-galeria': 'url(/images/galeria/banner-galeria.svg)',
+        'banner-eventos-significativos': 'url(/images/eventos-significativos.svg)',
       },
       colors: {
         'black': '#1A1A1A',
@@ -117,6 +118,9 @@ module.exports = {
         'fern-green': '#4F7435',
         'magenta': '#963B62',
         'white-2': '#F0F0F2',
+        'blue': '#3A3D81',
+        'orange': '#D27028',
+        'white-3': '#F8F8F9',
       },
       screens: {
         'sm': '640px',

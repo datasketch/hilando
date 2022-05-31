@@ -16,20 +16,29 @@ min_distancia_casco_urbano: null
 km_distancia_casco_urbano: null
 vias_acceso: null
 infraestructura_comunitaria: Puestos de Salud,Instituciones educativas (IE),Caseta comunal
+notas_infraestructura_comunitaria: []
 liderazgo_comunidad:
-  - Consejo Comunitario-máxima autoridad en territorio
-  - ' Se pueden adelantar procesos organizativos con grupo de piangueras, asociación de pescadores, guías turísticos, grupo de residuos sólidos y gastronomía'
-  - |+
-
+  - >-
+    Consejo Comunitario-máxima autoridad en territorio. Se pueden adelantar
+    procesos organizativos con grupo de piangueras
+  - ' asociación de pescadores'
+  - ' guías turísticos'
+  - |2
+     grupo de residuos sólidos y gastronomía.
 inclusion_diversidad_genero: null
 comentarios_conectividad: null
 punto_SOLE: null
+comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Piscicultura
   - Agricultura
 comentarios_ppales_actividades_economicas_vocacion_productiva:
   - Pesca (98%).
 comunidad_sostenible_uso_suelo: null
+org_con_proyeccion: []
+servicios_publicos_comunidades_focalizadas: []
+comunidades_focalizadas_educacion_infraestructura_educativa: []
+comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: null
 iniciativas_priorizadas:
   - Turismo
@@ -47,11 +56,17 @@ otros_programas_USAID:
   - >-
     Fortalecimiento de la junta administradora del servicio-JASE como eje de
     desarrollo económico y ambiental (Convocatoria USAID-IPA)
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
+actividades_ocio: []
+medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 10
 num_diagnosticos_rurales_participativos_realizados: 1
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 0
-url: /comunidad-focaliza/punta-soldado
-layout: comunidad
+url: /comunidad-focalizada/punta-soldado
+layout: single
+download_file: /reportes/punta-soldado.pdf
 
 ---

@@ -137,6 +137,7 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidad_focalizada: null
-comunidad_focalizada_url: /comunidad-focaliza/
+comunidad_focalizada_url: /comunidad-focalizada/
+download_file: /reportes/nechi.pdf
 
 ---

@@ -17,20 +17,20 @@ km_distancia_casco_urbano: 8
 vias_acceso: 'via principal  pavimentada en mal estado '
 infraestructura_comunitaria: Instituciones educativas (IE),Espacios deportivos,Casa Indígena,Hostal
 notas_infraestructura_comunitaria:
-  - Cancha de fútbol con pantalla y cancha con pasto natural
-  - ''
+  - Cancha de fútbol con pantalla y cancha con pasto natural.
 liderazgo_comunidad:
-  - >-
-    Asociaciones de productores que trabajan por sus objetivos individuales, más
-    no tienen tejido entre sí, la base social es amplia y en temas ambientales,
-    productivos y comunitarios
-
+  - Asociaciones de productores que trabajan por sus objetivos individuales
+  - ' más no tienen tejido entre sí'
+  - ' la base social es amplia y en temas ambientales'
+  - |2-
+     productivos y comunitarios
     se requiere fortalecer comunitariamente
-
-    Producción artesanal asociada para talla de la piedra,
+    Producción artesanal asociada para talla de la piedra
+  - >-
 
     Satisfacción de FDS (explicar siglas) en metodologias de diálogo comunitario
-    para usar el arte, la lúdica y cultura para hacer procesos de sanación 
+    para usar el arte
+  - ' la lúdica y cultura para hacer procesos de sanación '
 inclusion_diversidad_genero: >-
   Niños y jóvenes en hijos de luz, apoyo de "roca madre"
 
@@ -43,8 +43,7 @@ inclusion_diversidad_genero: >-
 comentarios_conectividad: Hay acceso a internet, se mantiene estable si hay energía eléctrica
 punto_SOLE: Institución educativa
 comentarios_punto_SOLE:
-  - INSTITUCIÓN EDUCATIVA LA PICHE
-  - ''
+  - INSTITUCIÓN EDUCATIVA LA PICHE.
 ppales_actividades_economicas_vocacion_productiva:
   - Turismo de naturaleza
   - Minería
@@ -95,13 +94,15 @@ actividades_ocio:
   - >-
     "Proyecto ""Hijos de la luz"" (Grupo folclórico con propietaria de Roca
     Madre)"
+medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 40
 num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial:
   - Acompañamiento del PNUD
 notas_infraestructura_salud_atencion_psicosocial: Acompañamiento del PNUD (cerrado).
 num_visitas_predio: 5
-url: /comunidad-focaliza/la-piche
-layout: comunidad
+url: /comunidad-focalizada/la-piche
+layout: single
+download_file: /reportes/la-piche.pdf
 
 ---

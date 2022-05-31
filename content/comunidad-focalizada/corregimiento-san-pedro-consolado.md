@@ -21,16 +21,15 @@ vias_acceso: >-
   Carretera pavimentada, en perfecto estado. Ubicación a 15 minutos de la
   Cabecera municipal y a 10 min de la carretera troncal. 
 infraestructura_comunitaria: Instituciones educativas (IE)
+notas_infraestructura_comunitaria: []
 liderazgo_comunidad:
-  - >-
-    La Asociación formalizada,además tienen un emprendimiento de vinos de
-    Rosaida
-
-
-    Crearon la JAC para que no se perdiera la personería jurídica, la quieren
-    reestructurar y apoyar
+  - La Asociación formalizada
   - |-
+    además tienen un emprendimiento de vinos de Rosaida
 
+    Crearon la JAC para que no se perdiera la personería jurídica
+  - |2-
+     la quieren reestructurar y apoyar.
 
     Hay un creciente liderazgo femenino
 inclusion_diversidad_genero: >-
@@ -42,6 +41,7 @@ inclusion_diversidad_genero: >-
   detenerlos en la región a través del emprendimiento
 comentarios_conectividad: Parece que no funciona el internet- Racon proveedor
 punto_SOLE: Institución educativa
+comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Turismo de naturaleza
   - Agricultura
@@ -91,11 +91,11 @@ alianzas_colaboradores_2:
   - Producción de ñame
   - Hectáreas de café
 actividades_ocio:
-  - '"Semillero de grupo folclórico (pitos y tambores'
-  - ' falta instructor)"'
+  - '"Semillero de grupo folclórico (pitos y tambores, falta instructor)"'
 medios_comunicacion_narrativas_locales:
-  - '"Articulación con TEFA'
-  - ' colectivo de comunicaciones y cultura de San Juan Nepomuceno"'
+  - >-
+    "Articulación con TEFA, colectivo de comunicaciones y cultura de San Juan
+    Nepomuceno"
   - Innovación Stereo
   - Asosanjuan
   - Emisora comunitaria de San Juan Nepomuceno productivo
@@ -111,7 +111,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Poca cobertura de acompañamiento psicosocial. En estos momentos se encuentra
   WLH.
 num_visitas_predio: 1
-url: /comunidad-focaliza/corregimiento-san-pedro-consolado
-layout: comunidad
+url: /comunidad-focalizada/corregimiento-san-pedro-consolado
+layout: single
+download_file: /reportes/corregimiento-san-pedro-consolado.pdf
 
 ---

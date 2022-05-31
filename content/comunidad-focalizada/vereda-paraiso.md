@@ -16,20 +16,18 @@ km_distancia_casco_urbano: 3
 vias_acceso: Vía asfaltada hasta la comunidad y destapada entre un sector y otro
 infraestructura_comunitaria: Instituciones educativas (IE)
 notas_infraestructura_comunitaria:
-  - IE hasta 5°
-  - ''
+  - IE hasta 5°.
 liderazgo_comunidad:
-  - Su asociación de productores de miel y apicultura tiene 16 años de trabajo
-  - ' hay un liderazgo importante'
-  - |2-
-     Tienen base social para sostenibilidad productiva y social
-    Se requiere relevo generacional
   - >-
+    Su asociación de productores de miel y apicultura tiene 16 años de trabajo.
+    hay un liderazgo importante. Tienen base social para sostenibilidad
+    productiva y social
 
-    La comunidad es activa para participar, en especial los hombres en el
-    horario de la tarde que vienen de trabajar
-  - |-
+    Se requiere relevo generacional.
 
+    La comunidad es activa para participar
+  - |2-
+     en especial los hombres en el horario de la tarde que vienen de trabajar.
     las JAC están constituidas aunque algo inactivas
 inclusion_diversidad_genero: >-
   Las mujeres participan en familias en acción, familias en su tierra y algunas
@@ -45,8 +43,7 @@ comentarios_conectividad: >-
   mayoría la gente tiene
 punto_SOLE: Institución educativa
 comentarios_punto_SOLE:
-  - INSTITUCIÓN EDUCATIVA VEREDA EL PARAISO
-  - ''
+  - INSTITUCIÓN EDUCATIVA VEREDA EL PARAISO.
 ppales_actividades_economicas_vocacion_productiva:
   - Apicultura
   - Agroforestal
@@ -112,7 +109,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Los proyectos agroforestales desarrollados han tenido apoyo psicosocial,
   actualmente no hay programas en curso.
 num_visitas_predio: 5
-url: /comunidad-focaliza/vereda-paraiso
-layout: comunidad
+url: /comunidad-focalizada/vereda-paraiso
+layout: single
+download_file: /reportes/vereda-paraiso.pdf
 
 ---

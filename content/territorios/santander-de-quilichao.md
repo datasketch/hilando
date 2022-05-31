@@ -157,6 +157,7 @@ programas_usaid:
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
 comunidad_focalizada: Vereda El Turco
-comunidad_focalizada_url: /comunidad-focaliza/vereda-el-turco
+comunidad_focalizada_url: /comunidad-focalizada/vereda-el-turco
+download_file: /reportes/santander-de-quilichao.pdf
 
 ---

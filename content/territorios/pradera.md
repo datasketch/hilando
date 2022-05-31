@@ -133,6 +133,7 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Pasos seguros'
 comunidad_focalizada: 'Kwet Wala '
-comunidad_focalizada_url: /comunidad-focaliza/kwet-wala
+comunidad_focalizada_url: /comunidad-focalizada/kwet-wala
+download_file: /reportes/pradera.pdf
 
 ---

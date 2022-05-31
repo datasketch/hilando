@@ -126,6 +126,7 @@ programas_usaid:
   - ' Fondo de Inversiones para la Paz'
   - ' Mujeres Poderosas'
 comunidad_focalizada: Corregimiento Las Mercedes y Vereda Casa de Piedra
-comunidad_focalizada_url: /comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+comunidad_focalizada_url: /comunidad-focalizada/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+download_file: /reportes/san-jacinto.pdf
 
 ---

@@ -128,6 +128,7 @@ programas_usaid:
   - Juntos por la Transparencia
   - ' Jóvenes Resilientes'
 comunidad_focalizada: La Alsacia
-comunidad_focalizada_url: /comunidad-focaliza/la-alsacia
+comunidad_focalizada_url: /comunidad-focalizada/la-alsacia
+download_file: /reportes/buenos-aires.pdf
 
 ---

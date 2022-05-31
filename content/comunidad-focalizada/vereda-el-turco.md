@@ -17,11 +17,11 @@ vias_acceso: >-
   encuentran en buen estado.
 infraestructura_comunitaria: Instituciones educativas (IE),Puestos de Salud,Iglesias,Espacios deportivos
 notas_infraestructura_comunitaria:
-  - Escuela básica primaria y Colegio básica secundaria
-  - ''
+  - Escuela básica primaria y Colegio básica secundaria.
 liderazgo_comunidad:
-  - Se destaca un liderazgo en varios grupos etarios
-  - ' Acostumbran a realizar mingas'
+  - >-
+    Se destaca un liderazgo en varios grupos etarios. Acostumbran a realizar
+    mingas
 inclusion_diversidad_genero: null
 comentarios_conectividad: >-
   Los pobladores de la vereda cuentan con dispositivos móviles
@@ -32,8 +32,7 @@ comentarios_conectividad: >-
   Servicios de internet con operadores móviles particulares. 
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
-  - No Hay computadores en el Punto Vive Digital
-  - ''
+  - No Hay computadores en el Punto Vive Digital.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Apicultura
@@ -57,6 +56,7 @@ servicios_publicos_comunidades_focalizadas:
   - Acueducto-Santander de Quilichao
   - Energía-Santander de Quilichao
   - Recolección de basuras-Santander de Quilichao
+comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas:
   - Junta de Acción Comunal
   - Asociación de cultivos transitorios
@@ -80,16 +80,13 @@ otros_programas_USAID:
     recursos del Sistema General de Regalías
 alianzas_colaboradores_1:
   - '"Programa ""Camino de Oportunidades"""'
-  - '"Ciudades'
-  - ' entornos y ruralidades saludables"'
-  - '"Formación Técnica'
-  - ' Tecnológica y complementaria"'
+  - '"Ciudades, entornos y ruralidades saludables"'
+  - '"Formación Técnica, Tecnológica y complementaria"'
 alianzas_colaboradores_2:
   - '"Programa ""Camino de Oportunidades"""'
-  - '"Ciudades'
-  - ' entornos y ruralidades saludables"'
-  - '"Formación Técnica'
-  - ' Tecnológica y complementaria"'
+  - '"Ciudades, entornos y ruralidades saludables"'
+  - '"Formación Técnica, Tecnológica y complementaria"'
+actividades_ocio: []
 medios_comunicacion_narrativas_locales:
   - UMA KIWE-STEREO
   - EMISORA MONDOMO STEREO
@@ -100,7 +97,8 @@ infraestructura_salud_atencion_psicosocial:
   - Promotora de salud
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 0
-url: /comunidad-focaliza/vereda-el-turco
-layout: comunidad
+url: /comunidad-focalizada/vereda-el-turco
+layout: single
+download_file: /reportes/vereda-el-turco.pdf
 
 ---

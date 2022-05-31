@@ -25,15 +25,13 @@ infraestructura_comunitaria: >-
   Caseta comunal,Instituciones educativas (IE),Iglesias,Espacios
   deportivos,Tiendas
 notas_infraestructura_comunitaria:
-  - Dos Iglesias evangélicas
-  - ''
+  - Dos Iglesias evangélicas.
 liderazgo_comunidad:
   - |-
     JAC activa
-    Conformada por comités de salud, deporte y trabajo
-  - ' Estos dos ultimos son los más activos'
-  - |-
-
+    Conformada por comités de salud
+  - |2-
+     deporte y trabajo. Estos dos ultimos son los más activos.
     Hay varias asociaciones y grupos con liderazgos representativos
     Se caracteriza por solidaridad y apoyo 
 inclusion_diversidad_genero: >-
@@ -53,8 +51,7 @@ comentarios_conectividad: >-
   en el marco del convenio Claro -Mintic
 punto_SOLE: Institución educativa,Caseta comunal
 comentarios_punto_SOLE:
-  - Institución educativa con Claro y MINTIC
-  - ''
+  - Institución educativa con Claro y MINTIC.
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Piscicultura
@@ -72,6 +69,7 @@ org_con_proyeccion:
   - Agropaisa
   - Asopeisla
   - Aproaca
+servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
   - Institución educativa Guarumo
@@ -83,13 +81,17 @@ conectividad_minima: Bueno
 iniciativas_priorizadas:
   - Plátano
   - Cacao
+org_focalizada: []
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
 actividades_ocio:
   - Fútbol
   - Dibujo
   - Baile (sin monitores)
+medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 5
 num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial:
@@ -100,7 +102,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Acompañamiento de la pastoral social y la UARIV en acciones puntales por el
   retorno.
 num_visitas_predio: 16
-url: /comunidad-focaliza/isla-de-la-amargura
-layout: comunidad
+url: /comunidad-focalizada/isla-de-la-amargura
+layout: single
+download_file: /reportes/isla-de-la-amargura.pdf
 
 ---

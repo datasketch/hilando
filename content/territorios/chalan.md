@@ -110,6 +110,7 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidad_focalizada: Corregimiento La Ceiba
-comunidad_focalizada_url: /comunidad-focaliza/corregimiento-la-ceiba
+comunidad_focalizada_url: /comunidad-focalizada/corregimiento-la-ceiba
+download_file: /reportes/chalan.pdf
 
 ---

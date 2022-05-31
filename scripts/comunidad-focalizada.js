@@ -5,6 +5,15 @@ const slugify = require('slugify');
 
 const data = require('../data/comunidades-focalizadas.json');
 
+function createPath(folder, name) {
+  return join(__dirname, `../content/${folder}/${name}.md`);
+}
+
+function splitList(input) {
+  if (!input) return [];
+  return input.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+}
+
 data.forEach((item) => {
   const filename = slugify(item.nombre_comunidad, {
     lower: true,
@@ -12,7 +21,7 @@ data.forEach((item) => {
     remove: /[:,]/g,
   }).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-  const metadata = yaml.dump({
+  const fields = {
     title: item.nombre_comunidad,
     nombre_comunidad: item.nombre_comunidad,
     municipio: item.municipio,
@@ -24,37 +33,41 @@ data.forEach((item) => {
     km_distancia_casco_urbano: item.km_distancia_casco_urbano,
     vias_acceso: item.vias_acceso,
     infraestructura_comunitaria: item.infraestructura_comunitaria,
-    notas_infraestructura_comunitaria: item.notas_infraestructura_comunitaria?.split('.'),
-    liderazgo_comunidad: item.liderazgo_comunidad?.split('.'),
+    notas_infraestructura_comunitaria: splitList(item.notas_infraestructura_comunitaria),
+    liderazgo_comunidad: splitList(item.liderazgo_comunidad),
     inclusion_diversidad_genero: item.inclusion_diversidad_genero,
     comentarios_conectividad: item.comentarios_conectividad,
     punto_SOLE: item.punto_sole,
-    comentarios_punto_SOLE: item.comentarios_punto_sole?.split('.'),
-    ppales_actividades_economicas_vocacion_productiva: item.ppales_actividades_economicas_vocacion_productiva?.split(','),
-    comentarios_ppales_actividades_economicas_vocacion_productiva: item.comentarios_ppales_actividades_economicas_vocacion_productiva?.split(','),
+    comentarios_punto_SOLE: splitList(item.comentarios_punto_sole),
+    ppales_actividades_economicas_vocacion_productiva: splitList(item.ppales_actividades_economicas_vocacion_productiva),
+    comentarios_ppales_actividades_economicas_vocacion_productiva: splitList(item.comentarios_ppales_actividades_economicas_vocacion_productiva),
     comunidad_sostenible_uso_suelo: item.comunidad_sostenible_uso_suelo,
-    org_con_proyeccion: item.org_con_proyeccion?.split(','),
-    servicios_publicos_comunidades_focalizadas: item.servicios_publicos_comunidades_focalizadas?.split(','),
-    comunidades_focalizadas_educacion_infraestructura_educativa: item.comunidades_focalizadas_educacion_infraestructura_educativa?.split(','),
-    comunidades_focalizadas_practicas_organizativas: item.comunidades_focalizadas_practicas_organizativas?.split(','),
+    org_con_proyeccion: splitList(item.org_con_proyeccion),
+    servicios_publicos_comunidades_focalizadas: splitList(item.servicios_publicos_comunidades_focalizadas),
+    comunidades_focalizadas_educacion_infraestructura_educativa: splitList(item.comunidades_focalizadas_educacion_infraestructura_educativa),
+    comunidades_focalizadas_practicas_organizativas: splitList(item.comunidades_focalizadas_practicas_organizativas),
     conectividad_minima: item.conectividad,
-    iniciativas_priorizadas: item.iniciativas_productivas_priorizadas?.split(','),
-    org_focalizada: item.org_focalizada?.split(','),
+    iniciativas_priorizadas: splitList(item.iniciativas_productivas_priorizadas),
+    org_focalizada: splitList(item.org_focalizada),
     riesgo: item.riesgo,
-    otros_programas_USAID: item.otros_programas_usaid?.split(','),
-    alianzas_colaboradores_1: item.posibilidad_iniciativas_conjuntas_aliados_2?.split(','),
-    alianzas_colaboradores_2: item.posibilidad_iniciativas_conjuntas_aliados_2?.split(','),
-    actividades_ocio: item.actividades_ocio?.split(','),
-    medios_comunicacion_narrativas_locales: item.medios_comunicacion_narrativas_locales?.split(','),
+    otros_programas_USAID: splitList(item.otros_programas_usaid),
+    alianzas_colaboradores_1: splitList(item.posibilidad_iniciativas_conjuntas_aliados_2),
+    alianzas_colaboradores_2: splitList(item.posibilidad_iniciativas_conjuntas_aliados_2),
+    actividades_ocio: splitList(item.actividades_ocio),
+    medios_comunicacion_narrativas_locales: splitList(item.medios_comunicacion_narrativas_locales),
     num_visitas_realizadas: item.num_visitas_realizadas,
     num_diagnosticos_rurales_participativos_realizados: item.num_diagnosticos_rurales_participativos_realizados,
-    infraestructura_salud_atencion_psicosocial: item.infraestructura_salud_atencion_psicosocial?.split(','),
+    infraestructura_salud_atencion_psicosocial: splitList(item.infraestructura_salud_atencion_psicosocial),
     notas_infraestructura_salud_atencion_psicosocial: item.notas_infraestructura_salud_atencion_psicosocial,
     num_visitas_predio: item.num_visitas_predio,
-    url: `/comunidad-focaliza/${filename}`,
-    layout: 'comunidad',
-  });
-  const frontmatter = `---\n${metadata}\n---`;
-  const pathToFile = join(__dirname, `../content/comunidad-focalizada/${filename}.md`);
-  writeFileSync(pathToFile, frontmatter);
+    url: `/comunidad-focalizada/${filename}`,
+    layout: 'single',
+    download_file: `/reportes/${filename}.pdf`,
+  };
+  let metadata = yaml.dump(fields);
+  writeFileSync(createPath('comunidad-focalizada', filename), `---\n${metadata}\n---`);
+  fields.url = `/reportes/${filename}`;
+  fields.layout = 'comunidad';
+  metadata = yaml.dump(fields);
+  writeFileSync(createPath('reportes', filename), `---\n${metadata}\n---`);
 });

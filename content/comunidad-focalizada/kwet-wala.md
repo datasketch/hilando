@@ -20,6 +20,7 @@ min_distancia_casco_urbano: 60
 km_distancia_casco_urbano: 15
 vias_acceso: null
 infraestructura_comunitaria: Casa Indígena,Instituciones educativas (IE)
+notas_infraestructura_comunitaria: []
 liderazgo_comunidad:
   - La Autoridad es Indígena-Gobernador
 inclusion_diversidad_genero: Prevalece la población étnica
@@ -27,6 +28,7 @@ comentarios_conectividad: >-
   Ausencia de cobertura de servicios de conectividad e infraestructura que
   limita el uso de estos servicios en esta zona. 
 punto_SOLE: No hay espacio con internet
+comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
 comentarios_ppales_actividades_economicas_vocacion_productiva:
@@ -44,7 +46,10 @@ servicios_publicos_comunidades_focalizadas:
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Escuela
   - Escuela
+comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
+iniciativas_priorizadas: []
+org_focalizada: []
 riesgo: Bajo
 otros_programas_USAID:
   - Construcción de la Casa Indígena en el año 2004
@@ -71,7 +76,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 
   Mantienen la intervención a través del médico tradicional del KWALA.
 num_visitas_predio: 0
-url: /comunidad-focaliza/kwet-wala
-layout: comunidad
+url: /comunidad-focalizada/kwet-wala
+layout: single
+download_file: /reportes/kwet-wala.pdf
 
 ---

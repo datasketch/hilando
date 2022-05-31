@@ -18,19 +18,17 @@ vias_acceso: >-
   colectivos
 infraestructura_comunitaria: Instituciones educativas (IE),Iglesias
 notas_infraestructura_comunitaria:
-  - 3 iglesias
-  - ''
+  - 3 iglesias.
 liderazgo_comunidad:
-  - JAC en Casa de Piedra, pero está inactiva
-  - >-
-
+  - JAC en Casa de Piedra
+  - >2-
+     pero está inactiva.
     Asociación de caficultores de Montes de María pero aún no tienen claridad de
-    la comercialización del café, (un año en promedio en el proceso)
-  - >-
-
+    la comercialización del café
+  - >2-
+     (un año en promedio en el proceso).
     Tienen un piloto de transformación de cacao de empresa Latin cacao con
-    productos provinientes de la región
-  - ''
+    productos provinientes de la región.
 inclusion_diversidad_genero: >-
   Niños y jóvenes participan en campeonatos deportivos con el liderazgo de
   jóvenes de la comunidad. Muchos jóvenes viven en San Jacinto, pero vienen a
@@ -50,6 +48,7 @@ comentarios_conectividad: >-
   Hay acceso a internet pero en regular estado, hay una antena repetidora, pero
   no funciona regularmente. 
 punto_SOLE: Punto Vive Digital
+comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Turismo de naturaleza
@@ -94,6 +93,8 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
+alianzas_colaboradores_1: []
+alianzas_colaboradores_2: []
 actividades_ocio:
   - Música de pitos y tambores
   - Torneos deportivos
@@ -111,7 +112,8 @@ notas_infraestructura_salud_atencion_psicosocial: |-
   Se ha tenido relación con la UARIV, pero la presencia es poca.
   No hay puesto de salud, la atención la reciben en San Jacinto
 num_visitas_predio: 0
-url: /comunidad-focaliza/corregimiento-las-mercedes-y-vereda-casa-de-piedra
-layout: comunidad
+url: /comunidad-focalizada/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+layout: single
+download_file: /reportes/corregimiento-las-mercedes-y-vereda-casa-de-piedra.pdf
 
 ---
