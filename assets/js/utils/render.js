@@ -62,6 +62,7 @@ function createCalendar(event) {
 
 export const renderEvent = (parentEl, data) => {
   const calendar = createCalendar(data);
+  // ${calendar ? `<p><button class="download-ics underline" data-ics='${JSON.stringify(calendar.ics || {})}'>Descargar .ics</button></p>` : ''}
   const html = `
     <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
@@ -87,7 +88,6 @@ export const renderEvent = (parentEl, data) => {
         </p>
         <div class="flex space-x-2">
             ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
-            ${calendar ? `<p><button class="download-ics underline" data-ics='${JSON.stringify(calendar.ics || {})}'>Descargar .ics</button></p>` : ''}
         </div>
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
     </div>
