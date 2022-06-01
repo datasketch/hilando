@@ -118,8 +118,10 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada: Isla de la amargura
-comunidad_focalizada_url: /comunidad-focalizada/isla-de-la-amargura
+comunidades:
+  - label: Isla de la amargura
+    slug: isla-de-la-amargura
+    permalink: /comunidad-focalizada/isla-de-la-amargura
 download_file: /reportes/caceres.pdf
 
 ---

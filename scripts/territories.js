@@ -14,15 +14,26 @@ function splitList(input) {
   return input.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
 }
 
+function normalize(str) {
+  return str.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 trrs.forEach((trr) => {
-  const filename = trr.municipio.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const filename = normalize(trr.municipio);
   const total = trr.hombres_victimas_conflicto + trr.intersexuales_victimas_conflicto + trr.lgbt_victimas_conflicto + trr.mujeres_victimas_conflicto + trr.no_informa_victimas_conflicto;
 
-  const communitySlug = trr.comunidad_focalizada ? slugify(trr.comunidad_focalizada, {
-    lower: true,
-    replacement: '-',
-    remove: /[:,]/g,
-  }).normalize('NFD').replace(/[\u0300-\u036f]/g, '') : '';
+  const communities = (trr.comunidad_focalizada?.split(',') || []).map((commnunity) => {
+    const slug = normalize(slugify(commnunity, {
+      lower: true,
+      replacement: '-',
+      remove: /[:,]/g,
+    }));
+    return {
+      label: commnunity,
+      slug,
+      permalink: `/comunidad-focalizada/${slug}`,
+    };
+  });
 
   const fields = {
     title: trr.municipio,
@@ -78,8 +89,7 @@ trrs.forEach((trr) => {
     medios_comunicacion: trr.medios_comunicacion?.split(','),
     iniciativas_org_sociedad_civil: trr.iniciativas_org_sociedad_civil,
     programas_usaid: trr.programas_usaid?.split(','),
-    comunidad_focalizada: trr.comunidad_focalizada,
-    comunidad_focalizada_url: '/comunidad-focalizada/' + communitySlug,
+    comunidades: communities,
     download_file: `/reportes/${filename}.pdf`,
   };
   let metadata = yaml.dump(fields);

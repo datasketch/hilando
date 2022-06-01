@@ -134,8 +134,10 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
-comunidad_focalizada: Vereda El Banco
-comunidad_focalizada_url: /comunidad-focalizada/vereda-el-banco
+comunidades:
+  - label: Vereda El Banco
+    slug: vereda-el-banco
+    permalink: /comunidad-focalizada/vereda-el-banco
 download_file: /reportes/anori.pdf
 
 ---

@@ -243,8 +243,10 @@ programas_usaid:
   - ' Martin Luther King Scholarship Program -II'
   - ' Inclusive Education for Peace in the Pacific Coast'
   - ' Victims Participation and Collective Reparation Activity'
-comunidad_focalizada: Punta Soldado
-comunidad_focalizada_url: /comunidad-focalizada/punta-soldado
+comunidades:
+  - label: Punta Soldado
+    slug: punta-soldado
+    permalink: /comunidad-focalizada/punta-soldado
 download_file: /reportes/buenaventura.pdf
 layout: territorio
 

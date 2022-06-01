@@ -71,8 +71,10 @@ medios_comunicacion:
   - ' La Bakanísima'
   - ' Emisora Comunitaria de Tarazá'
 iniciativas_org_sociedad_civil: null
-comunidad_focalizada: Corregimiento La Caucana
-comunidad_focalizada_url: /comunidad-focalizada/corregimiento-la-caucana
+comunidades:
+  - label: Corregimiento La Caucana
+    slug: corregimiento-la-caucana
+    permalink: /comunidad-focalizada/corregimiento-la-caucana
 download_file: /reportes/taraza.pdf
 
 ---

@@ -35,15 +35,17 @@
                     </div>
                     <div>
                         <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
-                        <div class="flex items-center space-x-4 text-white underline mb-4 lg:mb-6">
-                            <img src="/images/territorios/sticky-person.svg" alt="sticky person">
-                            <a href="{{ .Params.comunidad_focalizada_url }}" class="text-lg xl:text-xl">
-                                {{ .Params.comunidad_focalizada }}
-                            </a>
-                        </div>
-                        <p class="text-white text-lg xl:text-xl">
+                        {{ range .Params.comunidades }}
+                            <div class="flex items-center space-x-4 text-white underline mb-4 lg:mb-6">
+                                <img src="/images/territorios/sticky-person.svg" alt="sticky person">
+                                <a href="{{ .permalink }}" class="text-lg xl:text-xl">
+                                    {{ .label }}
+                                </a>
+                            </div>
+                        {{ end }}
+                        <!-- <p class="text-white text-lg xl:text-xl">
                             Texto descriptivo de la comunidad focalizada...
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>

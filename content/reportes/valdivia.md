@@ -121,8 +121,10 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada: La Paulina
-comunidad_focalizada_url: /comunidad-focalizada/la-paulina
+comunidades:
+  - label: La Paulina
+    slug: la-paulina
+    permalink: /comunidad-focalizada/la-paulina
 download_file: /reportes/valdivia.pdf
 layout: territorio
 

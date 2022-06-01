@@ -192,6 +192,7 @@
     </div>  */}}
 </div>
 {{ end }}
+
 {{ define "js" }}
 {{ $eventos := resources.Get "js/api/eventos.js" | js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $eventos.Permalink }}"></script>

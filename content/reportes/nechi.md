@@ -133,8 +133,7 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada: null
-comunidad_focalizada_url: /comunidad-focalizada/
+comunidades: []
 download_file: /reportes/nechi.pdf
 layout: territorio
 

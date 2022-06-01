@@ -129,8 +129,10 @@ programas_usaid:
   - ' Programa de Alianzas Comerciales'
   - ' Iniciativa de Finanzas Rurales'
   - ' Pasos seguros'
-comunidad_focalizada: 'Kwet Wala '
-comunidad_focalizada_url: /comunidad-focalizada/kwet-wala
+comunidades:
+  - label: 'Kwet Wala '
+    slug: kwet-wala
+    permalink: /comunidad-focalizada/kwet-wala
 download_file: /reportes/pradera.pdf
 layout: territorio
 

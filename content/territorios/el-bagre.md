@@ -145,8 +145,10 @@ programas_usaid:
   - ' Colombia Transforma'
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
-comunidad_focalizada: Borrachera y La Bonga
-comunidad_focalizada_url: /comunidad-focalizada/borrachera-y-la-bonga
+comunidades:
+  - label: Borrachera y La Bonga
+    slug: borrachera-y-la-bonga
+    permalink: /comunidad-focalizada/borrachera-y-la-bonga
 download_file: /reportes/el-bagre.pdf
 
 ---

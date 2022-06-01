@@ -112,8 +112,10 @@ programas_usaid:
   - ' Riqueza Natural 2017-2022'
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
-comunidad_focalizada: Corregimiento San Pedro Consolado
-comunidad_focalizada_url: /comunidad-focalizada/corregimiento-san-pedro-consolado
+comunidades:
+  - label: Corregimiento San Pedro Consolado
+    slug: corregimiento-san-pedro-consolado
+    permalink: /comunidad-focalizada/corregimiento-san-pedro-consolado
 download_file: /reportes/san-juan-nepomuceno.pdf
 
 ---

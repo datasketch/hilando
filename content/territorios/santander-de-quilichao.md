@@ -156,8 +156,10 @@ programas_usaid:
   - ' Jóvenes Resilientes'
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
-comunidad_focalizada: Vereda El Turco
-comunidad_focalizada_url: /comunidad-focalizada/vereda-el-turco
+comunidades:
+  - label: Vereda El Turco
+    slug: vereda-el-turco
+    permalink: /comunidad-focalizada/vereda-el-turco
 download_file: /reportes/santander-de-quilichao.pdf
 
 ---

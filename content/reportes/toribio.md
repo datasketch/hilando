@@ -152,8 +152,10 @@ programas_usaid:
   - ' Páramos y Bosques: Puracé y Totoró'
   - ' Juntos por la Transparencia'
   - ' Jóvenes Resilientes'
-comunidad_focalizada: Vereda Flayo-Klayu
-comunidad_focalizada_url: /comunidad-focalizada/vereda-flayo-klayu
+comunidades:
+  - label: Vereda Flayo-Klayu
+    slug: vereda-flayo-klayu
+    permalink: /comunidad-focalizada/vereda-flayo-klayu
 download_file: /reportes/toribio.pdf
 layout: territorio
 

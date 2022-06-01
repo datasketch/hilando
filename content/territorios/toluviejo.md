@@ -132,8 +132,10 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Yuca amarga para una dulce leche'
   - ' Fondo de Inversiones para la Paz'
-comunidad_focalizada: La Piche
-comunidad_focalizada_url: /comunidad-focalizada/la-piche
+comunidades:
+  - label: La Piche
+    slug: la-piche
+    permalink: /comunidad-focalizada/la-piche
 download_file: /reportes/toluviejo.pdf
 
 ---
