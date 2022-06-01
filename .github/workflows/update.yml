@@ -1,29 +1,29 @@
-name: Update site data
-on:
-  schedule:
-    - cron: 0 */24 * * *
+# name: Update site data
+# on:
+#   schedule:
+#     - cron: 0 */24 * * *
 
-jobs:
-  build_and_deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install deps
-        run: npm install
-      - name: Refresh data
-        run: npm run gen:content
-        env:
-          NOCODB_TOKEN: ${{ secrets.NOCODB_TOKEN }}
-      - name: Commit changes
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit --allow-empty -m "Build site [gh-action]"
-          git push
+# jobs:
+#   build_and_deploy:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - name: Check out repository code
+#         uses: actions/checkout@v3
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: '14'
+#           cache: 'npm'
+#       - name: Install deps
+#         run: npm install
+#       - name: Refresh data
+#         run: npm run gen:content
+#         env:
+#           NOCODB_TOKEN: ${{ secrets.NOCODB_TOKEN }}
+#       - name: Commit changes
+#         run: |
+#           git config user.name github-actions
+#           git config user.email github-actions@github.com
+#           git add .
+#           git commit --allow-empty -m "Build site [gh-action]"
+#           git push
