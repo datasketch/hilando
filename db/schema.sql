@@ -123,3 +123,21 @@ CREATE TABLE IF NOT EXISTS eventos_municipios (
 	fecha_finalizacion TEXT
 );
 
+CREATE TABLE IF NOT EXISTS publicaciones (
+	id SERIAL PRIMARY KEY,
+	nombre_publicacion TEXT,
+	tema TEXT,
+	autor TEXT,
+	fecha TEXT,
+	descripcion TEXT
+);
+
+CREATE TABLE IF NOT EXISTS multimedia (
+	id SERIAL PRIMARY KEY,
+	nombre_galeria TEXT,
+	municipio TEXT,
+	departamento TEXT,
+	comunidad_focalizada TEXT,
+	descripcion TEXT,
+	tipo_galeria TEXT
+);
