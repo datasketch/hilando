@@ -19,32 +19,49 @@ function addLeadingZero(num) {
   return num.toString().padStart(2, '0');
 }
 
-function createCalendarLink(event) {
+function getGoogleCalendar(data) {
+  const gcURL = new URL('https://calendar.google.com/calendar/render');
+  const startStr = data.start.replace(/-/g, '');
+  const endStr = data.end.replace(/-/g, '');
+  gcURL.searchParams.append('action', 'TEMPLATE');
+  gcURL.searchParams.append('text', data.name);
+  gcURL.searchParams.append('dates', `${startStr}/${endStr}`);
+  gcURL.searchParams.append('details', data.description || '');
+  return gcURL.toString();
+}
+
+function createCalendar(event) {
   if (!event.dia_inicio) return;
-  const base = new URL('https://calendar.google.com/calendar/render');
   const year = new Date().getFullYear();
   const month = months[event['mes'].toLowerCase().trim()];
   const startDay = Number(event.dia_inicio);
   const startDate = parseISO(`${year}-${month}-${addLeadingZero(startDay)}`);
   let endDate;
-  if (event.dia_finalizacion) {
-    const endDay = Number(event.dia_finalizacion);
-    if (startDay === endDay) {
-      endDate = addDays(startDate, 1);
-    } else {
-      endDate = parseISO(`${year}-${month}-${addLeadingZero(endDay)}`);
-    }
+  if ((event.dia_finalizacion && startDay === Number(event.dia_finalizacion)) || !event.dia_finalizacion) {
+    endDate = addDays(startDate, 1);
+  } else {
+    endDate = parseISO(`${year}-${month}-${addLeadingZero(Number(event.dia_finalizacion))}`);
   }
-  const startStr = format(startDate, 'yyyy-MM-dd').replace(/-/g, '');
-  const endStr = format(endDate, 'yyyy-MM-dd').replace(/-/g, '');
-  base.searchParams.append('action', 'TEMPLATE');
-  base.searchParams.append('text', event.nombre_evento);
-  base.searchParams.append('dates', `${startStr}/${endStr}`);
-  base.searchParams.append('details', event.descripcion || '');
-  return base.toString();
+  return {
+    gc: getGoogleCalendar({
+      name: event.nombre_evento,
+      start: format(startDate, 'yyyy-MM-dd'),
+      end: format(endDate, 'yyyy-MM-dd'),
+      description: event.descripcion,
+    }),
+    ics: {
+      title: event.nombre_evento,
+      description: event.descripcion || '',
+      start: [startDate.getFullYear(), startDate.getMonth() + 1, startDate.getDate()],
+      end: [endDate.getFullYear(), endDate.getMonth() + 1, endDate.getDate()],
+      status: 'CONFIRMED',
+      busyStatus: 'BUSY',
+    },
+  };
 }
 
 export const renderEvent = (parentEl, data) => {
+  const calendar = createCalendar(data);
   const html = `
     <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
@@ -68,7 +85,10 @@ export const renderEvent = (parentEl, data) => {
         <p class="text-lg xl:text-xl">
             ${data.descripcion && data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : 'No hay descripcion'}
         </p>
-        ${createCalendarLink(data) ? `<p><a class="underline" target="_blank" href="${createCalendarLink(data)}">Agregar a Google Calendar</a></p>` : ''}
+        <div class="flex space-x-2">
+            ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
+            ${calendar ? `<p><button class="download-ics underline" data-ics='${JSON.stringify(calendar.ics || {})}'>Descargar .ics</button></p>` : ''}
+        </div>
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
     </div>
     <div class="event__container-right">

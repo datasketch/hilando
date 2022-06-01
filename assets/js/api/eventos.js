@@ -2,6 +2,7 @@
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Swiper, {Navigation, Pagination, Thumbs, Autoplay, FreeMode} from 'swiper';
+import ics from 'ics';
 import Modal from '../utils/modal';
 
 // ELEMENTS
@@ -292,4 +293,23 @@ events.addEventListener('click', function(e) {
 
 window.addEventListener('load', () => {
   filterData();
+  const downloadICS = Array.from(document.querySelectorAll('.download-ics'));
+  downloadICS.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      try {
+        const data = JSON.parse(e.target.dataset.ics);
+        ics.createEvent(data, (err, value) => {
+          if (err) {
+            console.log(error);
+            alert('Se ha producido un error');
+            return;
+          }
+          window.open( 'data:text/calendar;charset=utf8,' + encodeURIComponent(value));
+        });
+      } catch (error) {
+        console.log(error);
+        alert('Se ha producido un error');
+      }
+    });
+  });
 });
