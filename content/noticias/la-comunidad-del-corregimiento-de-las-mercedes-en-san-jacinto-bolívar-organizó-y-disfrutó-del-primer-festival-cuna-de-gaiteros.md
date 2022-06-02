@@ -1,6 +1,6 @@
 ---
-title: "La comunidad del corregimiento de Las Mercedes, en San Jacinto (Bolívar)
-  organizó y disfrutó del Primer Festival Cuna de Gaiteros "
+title: EL CORREGIMIENTO DE LAS MERCEDES EN SAN JACINTO ORGANIZÓ Y DISFRUTÓ DEL
+  PRIMER FESTIVAL CUNA DE GAITEROS
 date: 2022-04-18T14:57:09.643Z
 image: /images/uploads/whatsapp-image-2022-04-15-at-8.07.04-am-6-.jpeg
 description: >-
