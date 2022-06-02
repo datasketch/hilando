@@ -1,7 +1,7 @@
 name: Update reports
 on:
   schedule:
-    - cron: 10 */24 * * *
+    - cron: 30 20 * * *
 
 jobs:
   build_and_deploy:

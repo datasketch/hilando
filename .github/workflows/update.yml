@@ -1,7 +1,7 @@
 name: Update site data
 on:
   schedule:
-    - cron: 0 */24 * * *
+    - cron: 0 20 * * *
 
 jobs:
   build_and_deploy:
