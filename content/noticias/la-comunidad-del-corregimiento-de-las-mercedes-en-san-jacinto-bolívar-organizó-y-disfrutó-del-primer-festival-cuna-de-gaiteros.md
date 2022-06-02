@@ -12,6 +12,9 @@ description: >-
   El Festival rindió homenaje a los maestros vivos y fallecidos, oriundos de la comunidad de Las Mercedes, que han llevado la música de gaitas, la cumbia y el folclore Caribe a nivel nacional e internacional.
 cms: true
 ---
+* El Festival Cuna de Gaiteros fue apoyado por la Alcaldía municipal de San Jacinto y por la agenda cultural del Programa WLH de USAID, implementado por OIM.  
+* El Festival rindió homenaje a los maestros vivos y fallecidos, oriundos de la comunidad de Las Mercedes, que han llevado la música de gaitas, la cumbia y el folclore Caribe a nivel nacional e internacional.
+
 No es casualidad que el Primer Festival Cuna de Gaiteros se realice en el corregimiento de Las Mercedes, en San Jacinto, Bolívar. Este territorio ha visto nacer y crecer a grandes juglares y representantes del folclore Caribe, que han llevado la música de gaitas por todo el mundo.   
 
 El pasado 14 de abril se llevó a cabo el Primer Festival Cuna de Gaiteros, que reunió en el mismo escenario a los auténticos gaiteros de San Jacinto, el decimero Rafael Pérez, la familia Rodríguez, Nelson Leones, Yeison Landero “el heredero de la cumbia”, y muchas agrupaciones tradicionales que reafirmaron porqué Las Mercedes y San Jacinto son cuna de los mejores expositores de la música de gaitas, la cumbia y de la cultura caribe.   
