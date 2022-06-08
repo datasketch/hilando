@@ -104,10 +104,10 @@ export const renderPublicaciones = (parentEl, data) => {
     <div class="publicaciones__item">
         <div class="publicaciones__municipio-comunidad">
             <p>
-                ${data.municipio}
+                ${data.municipio ? data.municipio : 'Municipio'}
             </p>
             <p>
-                ${data.comunidad}   
+                ${data.comunidad ? data.comunidad : 'Comunidad'}   
             </p>
         </div>
         <div class="px-3">
@@ -115,22 +115,25 @@ export const renderPublicaciones = (parentEl, data) => {
         </div>
         <div class="publicaciones__details">
             <h3 class="publicaciones__title">
-                ${data.titulo}
+                ${data.nombre_publicacion}
             </h3>
+            <p>
+            ${data.tema}
+            </p>
             <p class="publicaciones__description">
                 ${data.descripcion}
             </p>
             <div class="publicaciones__autor-fecha">
                 <div class="italic">
                     <p>
-                        Autor: ${data.autor}
+                        Autor: ${data.autor ? data.autor : 'Sin autor'}
                     </p>
                     <p>
-                        Fecha: ${data.fecha['mes'] + ' ' + data.fecha['dia'] + ' del ' + data.fecha['anio']}
+                        Fecha: ${data.fecha}
                     </p>
                 </div>
                 <div>
-                    <a class="publicaciones__download" href="${data.url}" style="background-color: #D27028;">Descargar</a>
+                    <a class="publicaciones__download" href="${data.archivo_pdf}" style="background-color: #D27028;">Descargar</a>
                 </div>
             </div>
         </div>
