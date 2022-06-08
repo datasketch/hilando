@@ -185,7 +185,7 @@ export const renderMultimedia = (parentEl, data) => {
             ${data.titulo}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion}
+            ${data.descripcion.substring(0, 120) + '...'}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">

@@ -12,8 +12,8 @@
     {
         "id": 2,
         "image": "/images/galeria/multimedia/prueba-2.jpg",
-        "titulo": "Nombre de la galería",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…",
+        "titulo": "TALLER DE INSPIRACIÓN SOLE + WLH",
+        "descripcion": "Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje.",
         "municipio": "Buenaventura",
         "departamento": "Valle del cauca",
         "comunidad": "Comunidad 2",
@@ -27,7 +27,7 @@
             "/images/galeria/multimedia/galeria-3.jpg",
             "/images/galeria/multimedia/galeria-1.jpg"
         ],
-        "nombre_galeria": "Nombre de la galería",
+        "nombre_galeria": "TALLER DE INSPIRACIÓN SOLE + WLH",
         "descripcion_galeria": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoree psum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…"
     }
 ]

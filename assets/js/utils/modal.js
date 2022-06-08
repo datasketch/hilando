@@ -138,68 +138,78 @@ export default class Modal {
         `;
     } else if (this.modalSection === 'multimedia') {
       html = `
-      <div class="modal modal--events">
+        <div class="modal modal--events">
         <div class="modal__button-close">
             X
         </div>
-        <div class="pt-12 pb-6">
-                    <div class="space-y-6 px-8 pb-6">
-                        <!-- Slider main container -->
-                        <div class="swiper mySwiper2">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                ${this.#renderImageSwiperSlide(this.data['galeria_images'], this.data.nombre_galeria, 'multimedia')}
-                            </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev" style="left: 40px !important;">
-                                <img src="/images/galeria/multimedia/arrow-left.svg" alt="arrow left">
-                            </div>
-                            <div class="swiper-button-next" style="right: 40px !important;">
-                                <img src="/images/galeria/multimedia/arrow-right.svg" alt="arrow right">
-                            </div>
-                        </div>
-
-                        <!-- Slider main container -->
-                        <div thumbsSlider="" class="swiper mySwiper" style="height: 105px;">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                ${this.#renderImageSwiperSlide(this.data['galeria_images'], this.data.nombre_galeria, 'thumbs')}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="galeria">
-                        <div class="galeria__child-1" style="border-color: #DBDBDB;">
-                            <div style="max-width: 249px;">
-                                <h4 class="galeria__title">
-                                    ${this.data['nombre_galeria']}
-                                </h4>
-                            </div>
-                            <div style="max-width: 475px;">
-                                <p class="galeria__description">
-                                    ${this.data['descripcion_galeria']}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="galeria__child-2" style="border-color: #DBDBDB;">
-                            <div>
-                                <a href="" class="galeria__comunidad-focalizada">
-                                    ${this.data.comunidad}
-                                </a>
-                            </div>
-                            <div>
-                                <p>
-                                    ${this.data.municipio} - ${this.data.departamento}
-                                </p>
-                            </div>
+        <div class="event__modal-panel">
+            <div class="event__modal--flex-justify">
+                <div class="event__modal-left" style="max-width: 71px;">
+                    <!-- Slider main container -->
+                    <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            ${this.data.galeria_images.length > 0 ? this.#renderImageSwiperSlide(this.data.galeria_images, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.image], this.data.titulo, 'thumbs')}
                         </div>
                     </div>
                 </div>
-      </div>
-      <div class="modal__overlay">
-          &nbsp;
-      </div>
+                <div class="event__modal-right" style="max-width: 622px;">
+                    <div class="event__modal--space-y-5">
+                        <div class="event__modal--space-y-2">
+                            <div class="event__modal--flex-justify">
+                                <div class="event__modal--flex-center event__modal--space-x-3">
+                                    <img src="/images/eventos/icon-location.svg" alt="location icon">
+                                    <p class="event__modal-paragraph">
+                                        ${this.data.departamento}, ${this.data.municipio}
+                                    </p>
+                                </div>
+                                <div class="event__modal--flex-center event__modal--space-x-2">
+                                    <img src="/images/eventos/calendar.svg" alt="calendar icon">
+                                    <p class="event__modal-paragraph text-purple font-medium italic">
+                                        ${this.data.mes ? this.data.mes : 'Sin definir'}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="event__modal-flex-responsive">
+                                <div>
+                                    <h3 class="event__modal-title">
+                                        ${this.data.nombre_galeria}
+                                    </h3>
+                                </div>
+                                <div>
+                                    <p class="event__modal-italic">
+                                        <span class="event__modal--text-purple">
+                                            Comunidad:
+                                        </span>
+                                        ${this.data.comunidad ? this.data.comunidad : 'Sin definir'}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Slider main container -->
+                            <div class="swiper swiperMain">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    ${this.data.galeria_images.length > 0 ? this.#renderImageSwiperSlide(this.data.galeria_images, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.image], this.data.titulo, 'thumbs')}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                ${this.data.descripcion}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal__overlay">
+        &nbsp;
+    </div>
         `;
     }
     return document.body.insertAdjacentHTML('beforeend', html);

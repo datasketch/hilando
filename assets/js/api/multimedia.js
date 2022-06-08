@@ -2,7 +2,7 @@
 import {renderMultimedia} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
-import Swiper, {Navigation, Thumbs, Autoplay} from 'swiper';
+import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -110,40 +110,71 @@ multimedia.addEventListener('click', function(e) {
   console.log(data);
 
   // call modal class
+
   // eslint-disable-next-line no-unused-vars
   const modal = new Modal(data, 'multimedia');
 
-  // swipper settings
-  const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 3,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 640px
-      1366: {
-        slidesPerView: 5,
-      },
-    },
-    spaceBetween: 10,
-    freeMode: true,
-    loop: true,
-    watchSlidesProgress: true,
-  });
+  // call slider library
+  // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');
+  // const swiperMain = swiperGalleryMain('.swiperMain');
 
-  const swiper2 = new Swiper('.mySwiper2', {
-    modules: [Navigation, Thumbs, Autoplay],
-    spaceBetween: 10,
-    loop: true,
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
       disabledClass: 'opacity-40',
     },
-    thumbs: {
-      swiper: swiper,
-    },
+
+    // Autoplay
     autoplay: {
       delay: 5000,
     },
+
+    // loop: true,
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+
+    // Responsive breakpoints
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+
+  const swiperMain = new Swiper('.swiperMain', {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
   });
 });
 
