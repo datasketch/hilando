@@ -88,6 +88,8 @@ module.exports = {
         'swiperThumbs--events',
         'swiper-slide-thumb-active',
         'swiper-slide',
+        'swiper-button-prev-events',
+        'swiper-button-next-events',
       ],
     },
   },

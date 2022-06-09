@@ -155,14 +155,7 @@ event.addEventListener('click', function(e) {
 
   const swiperThumbs = new Swiper('.swiperThumbs', {
     // configure Swiper to use modules
-    modules: [Navigation, Autoplay, FreeMode],
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      disabledClass: 'opacity-40',
-    },
+    modules: [Autoplay, FreeMode],
 
     // Autoplay
     autoplay: {
@@ -193,9 +186,8 @@ event.addEventListener('click', function(e) {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      disabledClass: 'opacity-40',
+      nextEl: '.swiper-button-next-events',
+      prevEl: '.swiper-button-prev-events',
     },
 
     // Default parameters
@@ -271,9 +263,8 @@ events.addEventListener('click', function(e) {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      disabledClass: 'opacity-40',
+      nextEl: '.swiper-button-next-events',
+      prevEl: '.swiper-button-prev-events',
     },
 
     // Default parameters

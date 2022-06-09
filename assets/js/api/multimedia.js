@@ -158,9 +158,8 @@ multimedia.addEventListener('click', function(e) {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-      disabledClass: 'opacity-40',
+      nextEl: '.swiper-button-next-events',
+      prevEl: '.swiper-button-prev-events',
     },
 
     // Default parameters

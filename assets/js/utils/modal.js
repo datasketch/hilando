@@ -71,6 +71,9 @@ export default class Modal {
             <div class="event__modal--flex-justify">
                 <div class="event__modal-left" style="max-width: 71px;">
                     <!-- Slider main container -->
+                    <button class="swiper-button-prev-events">
+                        <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    </button>
                     <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -78,6 +81,9 @@ export default class Modal {
                             ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.nombre_evento, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_evento, 'thumbs')}
                         </div>
                     </div>
+                    <button class="swiper-button-next-events">
+                        <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    </button>
                 </div>
                 <div class="event__modal-right" style="max-width: 622px;">
                     <div class="event__modal--space-y-5">
@@ -146,6 +152,9 @@ export default class Modal {
             <div class="event__modal--flex-justify">
                 <div class="event__modal-left" style="max-width: 71px;">
                     <!-- Slider main container -->
+                    <button class="swiper-button-prev-events">
+                    <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    </button>
                     <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -153,6 +162,9 @@ export default class Modal {
                             ${this.data.galeria_images.length > 0 ? this.#renderImageSwiperSlide(this.data.galeria_images, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.image], this.data.titulo, 'thumbs')}
                         </div>
                     </div>
+                    <button class="swiper-button-next-events">
+                    <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    </button>
                 </div>
                 <div class="event__modal-right" style="max-width: 622px;">
                     <div class="event__modal--space-y-5">
