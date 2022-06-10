@@ -9,14 +9,15 @@ const publicaciones = document.querySelector('.publicaciones');
 const dataEl = document.querySelector('#data-publicaciones');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
+const search = document.querySelector('#search');
 dataEl.remove();
 
 const state = {
   originalData: JSON.parse(dataEl.value),
   filteredData: null,
   filters: {
-    municipio: [],
-    comunidad: [],
+    tema: [],
+    query: '',
   },
   itemsPerPagination: 6,
   page: 1,
@@ -25,16 +26,16 @@ const state = {
 function filterData() {
   publicaciones.innerHTML = '';
   const {filters, originalData} = state;
-  const hasMunicipioFilter = !!filters.municipio.length;
-  const hasComunidadFilter = !!filters.comunidad.length;
+  const hasTemaFilter = !!filters.tema.length;
+  const hasQueryFilter = !!filters.query.length;
   state.filteredData = originalData;
 
-  if (hasMunicipioFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.municipio.includes(item.municipio));
+  if (hasTemaFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.tema.includes(item.tema));
   }
 
-  if (hasComunidadFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad));
+  if (hasQueryFilter) {
+    state.filteredData = state.filteredData.filter((item) => item.nombre_publicacion.includes(filters.query));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderPublicaciones(publicaciones, item));
@@ -87,6 +88,11 @@ filters.addEventListener('click', function(e) {
     panels[id].style.overflowY = 'scroll';
     images[id].style.transform = 'rotate(90deg)';
   }
+});
+
+search.addEventListener('input', (e) => {
+  state.filters.query = e.target.value;
+  filterData();
 });
 
 window.addEventListener('load', () => {

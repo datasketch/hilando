@@ -1,15 +1,11 @@
 {{ define "main" }}
 
 {{ $data := index .Site.Data.publicaciones }}
-{{ $municipio := slice }}
-{{ $comunidad := slice }}
+{{ $tema := slice }}
 {{/* GET CATEGORIES */}}
 {{ range $data }}
-{{ if .municipio }}
-{{ $municipio = $municipio | append .municipio }}
-{{ end }}
-{{ if .comunidad }}
-{{ $comunidad = $comunidad | append .comunidad }}
+{{ if .tema }}
+{{ $tema = $tema | append .tema }}
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}
@@ -23,49 +19,38 @@
     </div>
     <!-- BANNER EVENTS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13 py-12" style="background-color: #FAFAFA;" id="paginationScroll">
+    <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-24 xl:py-32" style="background-color: #FAFAFA;" id="paginationScroll">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
-                <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
-                    Filtros
-                </h3>
-                <!-- PARENT ELEMENT FILTERS -->
-                <div class="filters space-y-8">
-                    <!-- MUNICIPIO -->
+                <div class="space-y-9">
+                    <div class="relative">
+                        <input id="search" class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border" type="text" placeholder="Buscar">
+                    </div>
                     <div>
-                        <button class="accordion accordion--transparent" data-tab="0" style="border: 1px solid #BABBC9;">
-                            Municipio
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $municipio) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . }}</span>
-                                <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--blue"></span>
-                            </label>
-                            {{ end }}
+                        <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
+                            Filtros
+                        </h3>
+                        <!-- PARENT ELEMENT FILTERS -->
+                        <div class="filters space-y-8">
+                            <!-- TEMA -->
+                            <div>
+                                <button class="accordion accordion--transparent" data-tab="0" style="border: 1px solid #BABBC9;">
+                                    Tema
+                                    <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                                </button>
+                                <div class="panel" style="border: 1px solid #BABBC9;">
+                                    {{ range sort (uniq $tema) "value" "asc" }}
+                                    <label class="filter-label" for="{{ . }}">
+                                        <span class="text-lg">{{ . }}</span>
+                                        <input type="checkbox" name="tema" id="{{ . }}" value="{{ . }}">
+                                        <span class="checkmark checkmark--blue"></span>
+                                    </label>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            <!-- TEMA END -->
                         </div>
                     </div>
-                    <!-- MUNICIPIO END -->
-
-                    <!-- COMUNIDAD FOCALIZADA -->
-                    <div>
-                        <button class="accordion accordion--transparent" data-tab="1" style="border: 1px solid #BABBC9;">
-                            Comunidad focalizada
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $comunidad) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . }}</span>
-                                <input type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--blue"></span>
-                            </label>
-                            {{ end }}
-                        </div>
-                    </div>
-                    <!-- COMUNIDAD FOCALIZADA END -->
                 </div>
             </div>
             <div class="lg:col-start-4 lg:col-end-13">

@@ -1,4 +1,4 @@
-import {parseISO, addDays, format} from 'date-fns';
+import {parseISO, addDays, format, intlFormat} from 'date-fns';
 
 const months = {
   enero: '01',
@@ -101,41 +101,28 @@ export const renderEvent = (parentEl, data) => {
 
 export const renderPublicaciones = (parentEl, data) => {
   const html = `
-    <div class="publicaciones__item">
-        <div class="publicaciones__municipio-comunidad">
-            <p>
-                ${data.municipio ? data.municipio : 'Municipio'}
-            </p>
-            <p>
-                ${data.comunidad ? data.comunidad : 'Comunidad'}   
-            </p>
+      <div class="publicaciones__item">
+        <div>
+          <p class="publicaciones__tema">
+          ${data.tema}
+          </p>
+          <div class="publicaciones--mt-4">
+              <img class="w-full" src="/images/galeria/publicaciones/sticky.svg" alt="sticky">
+          </div>
+          <h3 class="publicaciones__nombre-publicacion publicaciones---mt-8">
+          ${data.nombre_publicacion}
+          </h3>
         </div>
-        <div class="px-3">
-            <img class="w-full" src="/images/galeria/publicaciones/sticky.svg" alt="sticky">
-        </div>
-        <div class="publicaciones__details">
-            <h3 class="publicaciones__title">
-                ${data.nombre_publicacion}
-            </h3>
-            <p>
-            ${data.tema}
-            </p>
-            <p class="publicaciones__description">
-                ${data.descripcion}
-            </p>
-            <div class="publicaciones__autor-fecha">
-                <div class="italic">
-                    <p>
-                        Autor: ${data.autor ? data.autor : 'Sin autor'}
-                    </p>
-                    <p>
-                        Fecha: ${data.fecha}
-                    </p>
-                </div>
-                <div>
-                    <a class="publicaciones__download" href="${data.archivo_pdf}" style="background-color: #D27028;">Descargar</a>
-                </div>
-            </div>
+        <p class="publicaciones__descripcion publicaciones--mt-4">
+        ${data.descripcion}
+        </p>
+        <div>
+          <p class="publicaciones__fecha publicaciones--mt-4">
+              Fecha: ${new Intl.DateTimeFormat('es-CO', {dateStyle: 'full'}).format(new Date(data.fecha))}
+          </p>
+          <div class="publicaciones__text-right publicaciones--mt-2">
+          <a class="publicaciones__download" href="${data.archivo_pdf}" style="background-color: #D27028;">Descargar</a>
+          </div>
         </div>
     </div>
     `;
