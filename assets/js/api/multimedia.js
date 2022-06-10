@@ -108,11 +108,13 @@ multimedia.addEventListener('click', function(e) {
   // filter by id
   const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
   console.log(data);
+  const getMultimediaType = data.tipo_multimedia.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  console.log(getMultimediaType);
 
   // call modal class
 
   // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data, 'multimedia');
+  const modal = new Modal(data, getMultimediaType);
 
   // call slider library
   // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');

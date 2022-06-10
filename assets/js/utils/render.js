@@ -136,7 +136,7 @@ export const renderMultimedia = (parentEl, data) => {
     <div class="multimedia__item">
         <div class="relative">
             <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
-            <button class="multimedia__button-play">
+            <button data-id="${data.id}" class="multimedia__button-play">
                 <img src="/images/public/button-play.svg" alt="button play">
             </button>
             <div class="multimedia__type" style="background-color: #D27028;">&nbsp;</div>
@@ -146,7 +146,7 @@ export const renderMultimedia = (parentEl, data) => {
                 ${data.titulo}
             </h3>
             <p class="multimedia__description">
-                ${data.descripcion}
+                ${data.descripcion.substring(0, 120) + '...'}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">

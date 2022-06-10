@@ -2,12 +2,13 @@
     {
         "id": 1,
         "image": "/images/galeria/multimedia/prueba.jpg",
-        "titulo": "Nombre del video",
-        "descripcion": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet…",
+        "titulo": "Testimonios Hilando Juntos Montes de María",
+        "descripcion": "La estrategia de Hilando Juntos, estrategia Psicosocial del programa Hilando Vidas y Esperanza ha logrado trabajar con grupos muy diferentes quehan encontrado en los ejercicios de respiración de meditación y de expresión artistica, herramientas para administrar sus emociones.",
         "municipio": "Bogotá",
         "departamento": "Cundinamarca",
         "comunidad": "Comunidad 1",
-        "tipo_multimedia": "Video"
+        "tipo_multimedia": "Video",
+        "url": "/videos/prueba.mov"
     },
     {
         "id": 2,

@@ -142,7 +142,7 @@ export default class Modal {
         &nbsp;
     </div>
         `;
-    } else if (this.modalSection === 'multimedia') {
+    } else if (this.modalSection === 'fotografia') {
       html = `
         <div class="modal modal--events">
         <div class="modal__button-close">
@@ -223,6 +223,60 @@ export default class Modal {
         &nbsp;
     </div>
         `;
+    } else if (this.modalSection === 'video') {
+      html = `
+          <div class="modal modal--video">
+          <div class="modal__button-close">
+              X
+          </div>
+          <div class="video">
+            <div class="video__left">
+                &nbsp;
+            </div>
+            <div class="video__right">
+                <div class="video--space-y-8">
+                    <div>
+                        <div class="video--flex video--items-center video--space-x">
+                            <div>
+                                <img src="/images/eventos/icon-location.svg" alt="location icon" />
+                            </div>
+                            <div>
+                                <p class="video--text-purple video--italic">
+                                    ${this.data.comunidad}, ${this.data.municipio}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="video--flex video--justify-between video--items-center">
+                            <div>
+                                <h3 class="video--font-size-22 video--font-bold">
+                                    ${this.data.titulo}
+                                </h3>
+                            </div>
+                            <div>
+                                <p class="video--text-purple video--italic">
+                                    ${this.data.tipo_multimedia}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video--w-full">
+                        <video controls>
+                            <source src="${this.data.url}" type="video/mp4">
+                        </video>  
+                    </div>
+                    <div>
+                        <p>
+                            ${this.data.descripcion}
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          </div>
+          <div class="modal__overlay">
+             &nbsp;
+          </div>
+          `;
     }
     return document.body.insertAdjacentHTML('beforeend', html);
   }
