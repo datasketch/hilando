@@ -107,9 +107,7 @@ multimedia.addEventListener('click', function(e) {
 
   // filter by id
   const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
-  console.log(data);
   const getMultimediaType = data.tipo_multimedia.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
-  console.log(getMultimediaType);
 
   // call modal class
 
