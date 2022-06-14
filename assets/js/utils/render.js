@@ -60,11 +60,11 @@ function createCalendar(event) {
   };
 }
 
-export const renderEvent = (parentEl, data) => {
+export const renderEvent = (parentEl, data, classNames = '') => {
   const calendar = createCalendar(data);
   // ${calendar ? `<p><button class="download-ics underline" data-ics='${JSON.stringify(calendar.ics || {})}'>Descargar .ics</button></p>` : ''}
   const html = `
-    <div class="event__item" style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
+    <div class=${`'event__item ${classNames}'`} style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
         <span class="event__municipio-departamento">
             ${data.municipio || ''} - ${data.macroregion || ''}
@@ -187,4 +187,17 @@ export const renderMultimedia = (parentEl, data) => {
     `;
   }
   parentEl.insertAdjacentHTML('beforeend', html);
+};
+
+export const renderType = (type, parentEl, data) => {
+  switch (type) {
+    case 'evento':
+      return renderEvent(parentEl, data, 'lg:col-start-1 lg:col-end-3');
+    case 'fotografia':
+      return renderMultimedia(parentEl, data);
+    case 'video':
+      return renderMultimedia(parentEl, data);
+    default:
+      return renderEvent(parentEl, data);
+  }
 };

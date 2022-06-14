@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {renderMultimedia} from '../utils/render';
+import {renderType} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
@@ -12,7 +12,6 @@ const multimedia = document.querySelector('.multimedia');
 const dataEl = document.querySelector('#data-multimedia');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
-dataEl.remove();
 
 const state = {
   originalData: JSON.parse(dataEl.value),
@@ -46,7 +45,7 @@ function filterData() {
     state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item['tipo_multimedia']));
   }
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item));
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderType(item.type, multimedia, item));
 
   pagination.insertAdjacentHTML(
       'beforeend',
@@ -107,12 +106,12 @@ multimedia.addEventListener('click', function(e) {
 
   // filter by id
   const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
-  const getMultimediaType = data.tipo_multimedia.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, '');
+  const getType = data.type;
 
   // call modal class
 
   // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data, getMultimediaType);
+  const modal = new Modal(data, getType);
 
   // call slider library
   // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');

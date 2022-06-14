@@ -61,7 +61,7 @@ export default class Modal {
 
   _renderModal() {
     let html = '';
-    if (this.modalSection === 'eventos') {
+    if (this.modalSection === 'eventos' || this.modalSection === 'evento') {
       html = `
         <div class="modal modal--events">
         <div class="modal__button-close">

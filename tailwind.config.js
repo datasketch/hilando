@@ -106,6 +106,8 @@ module.exports = {
         'video--font-size-22',
         'video--font-bold',
         'video--w-full',
+        'col-start-1',
+        'col-end-3',
       ],
     },
   },
