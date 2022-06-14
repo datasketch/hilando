@@ -70,6 +70,7 @@ module.exports = {
         'multimedia__description',
         'multimedia__lugar-comunidad',
         'multimedia__button-galeria',
+        'multimedia__image',
         'sub-menu-icon--active',
         'sub-menu-2--active',
         'event__modal-panel',

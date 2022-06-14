@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import {renderType} from '../utils/render';
+import {renderMultimedia} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
@@ -45,7 +45,7 @@ function filterData() {
     state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item['tipo_multimedia']));
   }
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderType(item.type, multimedia, item));
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item, item.type));
 
   pagination.insertAdjacentHTML(
       'beforeend',
@@ -178,5 +178,6 @@ multimedia.addEventListener('click', function(e) {
 
 
 window.addEventListener('load', () => {
+  console.log(state.originalData);
   filterData();
 });

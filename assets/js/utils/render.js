@@ -1,4 +1,4 @@
-import {parseISO, addDays, format, intlFormat} from 'date-fns';
+import {parseISO, addDays, format} from 'date-fns';
 
 const months = {
   enero: '01',
@@ -129,9 +129,9 @@ export const renderPublicaciones = (parentEl, data) => {
   parentEl.insertAdjacentHTML('beforeend', html);
 };
 
-export const renderMultimedia = (parentEl, data) => {
+export const renderMultimedia = (parentEl, data, type) => {
   let html = '';
-  if (data['tipo_multimedia'] === 'Video') {
+  if (data['tipo_multimedia'] === 'Video' && type === 'video') {
     html = `
     <div class="multimedia__item">
         <div class="relative">
@@ -159,7 +159,7 @@ export const renderMultimedia = (parentEl, data) => {
         </div>
     </div>
     `;
-  } else if (data['tipo_multimedia'] === 'Fotografía') {
+  } else if (data['tipo_multimedia'] === 'Fotografía' && type === 'fotografia') {
     html = `
     <div class="multimedia__item">
         <div class="relative">
@@ -185,19 +185,32 @@ export const renderMultimedia = (parentEl, data) => {
         </div>
     </div>
     `;
+  } else if (data['tipo_multimedia'] === 'Fotografía' && type === 'evento') {
+    html = `
+    <div class="multimedia__item">
+        <div class="relative">
+            <img class="multimedia__image" src="${data.thumbnail}" alt="prueba">
+            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #81A347;">Ver galería</button>
+            <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
+        </div>
+        <div class="multimedia__details">
+            <h3 class="multimedia__title">
+            ${data.nombre_evento}
+            </h3>
+            <p class="multimedia__description">
+            ${data.descripcion?.substring(0, 110) + '...'}
+            </p>
+            <div class="multimedia__lugar-comunidad">
+                <p class="italic">
+                    ${data.municipio} - ${data.macroregion}
+                </p>
+                <p class="text-space-cadet">
+                    ${data.comunidad}
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
   }
   parentEl.insertAdjacentHTML('beforeend', html);
-};
-
-export const renderType = (type, parentEl, data) => {
-  switch (type) {
-    case 'evento':
-      return renderEvent(parentEl, data, 'lg:col-start-1 lg:col-end-3');
-    case 'fotografia':
-      return renderMultimedia(parentEl, data);
-    case 'video':
-      return renderMultimedia(parentEl, data);
-    default:
-      return renderEvent(parentEl, data);
-  }
 };
