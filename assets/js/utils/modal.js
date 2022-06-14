@@ -130,7 +130,7 @@ export default class Modal {
                         </div>
                         <div>
                             <p>
-                                ${this.data.descripcion}
+                                ${this.data.descripcion ? this.data.descripcion : ''}
                             </p>
                         </div>
                     </div>

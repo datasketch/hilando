@@ -195,17 +195,17 @@ export const renderMultimedia = (parentEl, data, type) => {
         </div>
         <div class="multimedia__details">
             <h3 class="multimedia__title">
-            ${data.nombre_evento}
+            ${data.nombre_evento?.substring(0, 40) + '...'}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion?.substring(0, 110) + '...'}
+            ${data.descripcion ? data.descripcion?.substring(0, 110) + '...' : ''}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                    ${data.municipio} - ${data.macroregion}
+                    ${data.municipio ? data.municipio : 'empty'} - ${data.macroregion ? data.macroregion : 'empty'}
                 </p>
                 <p class="text-space-cadet">
-                    ${data.comunidad}
+                    ${data.comunidad ? data.comunidad?.substring(0, 40) + '...' : 'empty'}
                 </p>
             </div>
         </div>
