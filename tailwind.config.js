@@ -122,6 +122,8 @@ module.exports = {
       },
       backgroundImage: {
         'banner-home': 'url(/images/home/banner-home.png)',
+        'banner-home-2': 'url(/images/home/banner-home-2.png)',
+        'banner-home-3': 'url(/images/home/banner-home-3.png)',
         'banner-territorios': 'url(/images/territorios/banner-territorios.svg)',
         'banner-noticias': 'url(/images/noticias/banner-noticias.svg)',
         'banner-eventos': 'url(/images/eventos/banner-eventos.svg)',
