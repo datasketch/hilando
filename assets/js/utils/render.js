@@ -131,7 +131,7 @@ export const renderPublicaciones = (parentEl, data) => {
 
 export const renderMultimedia = (parentEl, data, type) => {
   let html = '';
-  if (data['tipo_multimedia'] === 'Video' && type === 'video') {
+  if (data['tipo_multimedia'] === 'Video' && type === 'video' || data['tipo_multimedia'] === 'Audio' && type === 'audio') {
     html = `
     <div class="multimedia__item">
         <div class="relative">
