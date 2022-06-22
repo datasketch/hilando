@@ -133,8 +133,7 @@
                             Infraestructura comunitaria
                         </h3>
                         <ul class="text-xxs space-y-1">
-                            {{ $infraestructura_comunitaria := split .Params.infraestructura_comunitaria "," }}
-                            {{ range $infraestructura_comunitaria }}
+                            {{ range .Params.infraestructura_comunitaria }}
                             <li class="flex items-center space-x-2">
                                 <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
                                     &nbsp;
