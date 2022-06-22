@@ -11,6 +11,7 @@ const images = document.querySelectorAll('.accordion--images');
 const multimedia = document.querySelector('.multimedia');
 const dataEl = document.querySelector('#data-multimedia');
 const pagination = document.querySelector('.pagination');
+const search = document.querySelector('#search');
 const scrollPagination = document.querySelector('#paginationScroll');
 
 const state = {
@@ -20,6 +21,7 @@ const state = {
     municipio: [],
     comunidad: [],
     tipo: [],
+    query: '',
   },
   itemsPerPagination: 6,
   page: 1,
@@ -31,6 +33,7 @@ function filterData() {
   const hasMunicipioFilter = !!filters.municipio.length;
   const hasComunidadFilter = !!filters.comunidad.length;
   const hasTipoFilter = !!filters.tipo.length;
+  const hasQueryFilter = !!filters.query.length;
   state.filteredData = originalData;
 
   if (hasMunicipioFilter) {
@@ -43,6 +46,10 @@ function filterData() {
 
   if (hasTipoFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item['tipo_multimedia']));
+  }
+
+  if (hasQueryFilter) {
+    state.filteredData = state.filteredData.filter((item) => item.nombre_evento?.toLowerCase().includes(filters.query.toLowerCase()) || item.titulo?.toLowerCase().includes(filters.query.toLowerCase()));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item, item.type));
@@ -176,8 +183,12 @@ multimedia.addEventListener('click', function(e) {
   });
 });
 
+search.addEventListener('input', (e) => {
+  state.filters.query = e.target.value;
+  filterData();
+});
+
 
 window.addEventListener('load', () => {
-  console.log(state.originalData);
   filterData();
 });

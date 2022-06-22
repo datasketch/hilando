@@ -12,19 +12,26 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
-    <div class="bg-banner-galeria bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
-        <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center mx-auto" style="max-width: 360px;">
+    <div
+        class="bg-banner-galeria bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
+        <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center mx-auto"
+            style="max-width: 360px;">
             Galería de publicaciones
         </h1>
     </div>
     <!-- BANNER EVENTS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-24 xl:py-32" style="background-color: #FAFAFA;" id="paginationScroll">
+    <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-24 xl:py-32" style="background-color: #FAFAFA;"
+        id="paginationScroll">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
                 <div class="space-y-9">
                     <div class="relative">
-                        <input id="search" class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border" type="text" placeholder="Buscar">
+                        <input id="search"
+                            class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border"
+                            type="text" placeholder="Buscar">
+                        <img class="absolute right-3 top-1/2 transform -translate-y-1/2"
+                            src="/images/public/search-icon.svg" alt="search icon">
                     </div>
                     <div>
                         <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
@@ -34,9 +41,11 @@
                         <div class="filters space-y-8">
                             <!-- TEMA -->
                             <div>
-                                <button class="accordion accordion--transparent" data-tab="0" style="border: 1px solid #BABBC9;">
+                                <button class="accordion accordion--transparent" data-tab="0"
+                                    style="border: 1px solid #BABBC9;">
                                     Tema
-                                    <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                                    <img class="accordion--images" src="/images/eventos/arrow-right.svg"
+                                        alt="arrow right">
                                 </button>
                                 <div class="panel" style="border: 1px solid #BABBC9;">
                                     {{ range sort (uniq $tema) "value" "asc" }}

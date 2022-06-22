@@ -14,6 +14,7 @@ const events = document.querySelector('.events');
 const dataEl = document.querySelector('#data-eventos');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
+const search = document.querySelector('#search');
 dataEl.remove();
 
 // init Swiper:
@@ -56,6 +57,7 @@ const state = {
     municipio: [],
     mes: [],
     tipo: [],
+    query: '',
   },
   itemsPerPagination: 3,
   page: 1,
@@ -68,6 +70,7 @@ function filterData() {
   const hasMunicipioFilter = !!filters.municipio.length;
   const hasMesFilter = !!filters.mes.length;
   const hasTipoFilter = !!filters.tipo.length;
+  const hasQueryFilter = !!filters.query.length;
   state.filteredData = originalData;
 
   if (hasDepartamentoFilter) {
@@ -81,6 +84,9 @@ function filterData() {
   }
   if (hasTipoFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo_agenda));
+  }
+  if (hasQueryFilter) {
+    state.filteredData = state.filteredData.filter((item) => item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderEvent(event, item));
@@ -282,6 +288,11 @@ events.addEventListener('click', function(e) {
   });
 });
 
+search.addEventListener('input', (e) => {
+  state.filters.query = e.target.value;
+  filterData();
+});
+
 window.addEventListener('load', () => {
   filterData();
   const downloadICS = Array.from(document.querySelectorAll('.download-ics'));
@@ -295,7 +306,7 @@ window.addEventListener('load', () => {
             alert('Se ha producido un error');
             return;
           }
-          window.open( 'data:text/calendar;charset=utf8,' + encodeURIComponent(value));
+          window.open('data:text/calendar;charset=utf8,' + encodeURIComponent(value));
         });
       } catch (error) {
         console.log(error);

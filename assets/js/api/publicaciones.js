@@ -35,7 +35,7 @@ function filterData() {
   }
 
   if (hasQueryFilter) {
-    state.filteredData = state.filteredData.filter((item) => item.nombre_publicacion.includes(filters.query));
+    state.filteredData = state.filteredData.filter((item) => item.nombre_publicacion.toLowerCase().includes(filters.query.toLowerCase()));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderPublicaciones(publicaciones, item));

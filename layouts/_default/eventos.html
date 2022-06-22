@@ -25,14 +25,16 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
     <!-- BANNER EVENTS -->
-    <div class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
+    <div
+        class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
         <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
             Eventos
         </h1>
     </div>
     <!-- BANNER EVENTS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20" style="background-color: #FAFAFA;">
+    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20"
+        style="background-color: #FAFAFA;">
         <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
             Próximamente
         </h2>
@@ -42,83 +44,95 @@
     <div class="lg:col-start-1 lg:col-end-13 pb-12" style="background-color: #FAFAFA;" id="paginationScroll">
         <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
             <div class="lg:col-start-1 lg:col-end-4">
-                <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
-                    Filtros
-                </h3>
-                <!-- PARENT ELEMENT FILTERS -->
-                <div class="filters space-y-8">
-                    <!-- TIPO EVENTO -->
-                    <div>
-                        <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
-                            Tipo de Evento
-                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $tipo) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . | humanize }}</span>
-                                <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--purple"></span>
-                            </label>
-                            {{ end }}
-                        </div>
+                <div class="space-y-9">
+                    <div class="relative">
+                        <input id="search"
+                            class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border"
+                            type="text" placeholder="Buscar">
+                        <img class="absolute right-3 top-1/2 transform -translate-y-1/2" src="/images/public/search-icon.svg" alt="search icon">
                     </div>
-                    <!-- TIPO EVENTO END -->
+                    <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
+                        Filtros
+                    </h3>
+                    <!-- PARENT ELEMENT FILTERS -->
+                    <div class="filters space-y-8">
+                        <!-- TIPO EVENTO -->
+                        <div>
+                            <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
+                                Tipo de Evento
+                                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
+                                    alt="arrow right">
+                            </button>
+                            <div class="panel" style="border: 1px solid #BABBC9;">
+                                {{ range sort (uniq $tipo) "value" "asc" }}
+                                <label class="filter-label" for="{{ . }}">
+                                    <span class="text-lg">{{ . | humanize }}</span>
+                                    <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
+                                    <span class="checkmark checkmark--purple"></span>
+                                </label>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <!-- TIPO EVENTO END -->
 
 
-                    <!-- MES -->
-                    <div>
-                        <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
-                            Mes
-                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $mes) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . | humanize }}</span>
-                                <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--purple"></span>
-                            </label>
-                            {{ end }}
+                        <!-- MES -->
+                        <div>
+                            <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+                                Mes
+                                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
+                                    alt="arrow right">
+                            </button>
+                            <div class="panel" style="border: 1px solid #BABBC9;">
+                                {{ range sort (uniq $mes) "value" "asc" }}
+                                <label class="filter-label" for="{{ . }}">
+                                    <span class="text-lg">{{ . | humanize }}</span>
+                                    <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
+                                    <span class="checkmark checkmark--purple"></span>
+                                </label>
+                                {{ end }}
+                            </div>
                         </div>
-                    </div>
-                    <!-- MES END -->
+                        <!-- MES END -->
 
-                    <!-- DEPARTAMENTO -->
-                    <div>
-                        <button class="accordion accordion--trasparent" data-tab="2" style="border: 1px solid #BABBC9;">
-                            Departamento
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $departamento) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . | humanize }}</span>
-                                <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--blue"></span>
-                            </label>
-                            {{ end }}
+                        <!-- DEPARTAMENTO -->
+                        <div>
+                            <button class="accordion accordion--trasparent" data-tab="2"
+                                style="border: 1px solid #BABBC9;">
+                                Departamento
+                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                            </button>
+                            <div class="panel" style="border: 1px solid #BABBC9;">
+                                {{ range sort (uniq $departamento) "value" "asc" }}
+                                <label class="filter-label" for="{{ . }}">
+                                    <span class="text-lg">{{ . | humanize }}</span>
+                                    <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
+                                    <span class="checkmark checkmark--blue"></span>
+                                </label>
+                                {{ end }}
+                            </div>
                         </div>
-                    </div>
-                    <!-- DEPARTAMENTO END -->
+                        <!-- DEPARTAMENTO END -->
 
-                    <!-- MUNICIPIO -->
-                    <div>
-                        <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
-                            Municipio
-                            <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                        </button>
-                        <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range sort (uniq $municipio) "value" "asc" }}
-                            <label class="filter-label" for="{{ . }}">
-                                <span class="text-lg">{{ . | humanize }}</span>
-                                <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
-                                <span class="checkmark checkmark--blue"></span>
-                            </label>
-                            {{ end }}
+                        <!-- MUNICIPIO -->
+                        <div>
+                            <button class="accordion accordion--trasparent" data-tab="3"
+                                style="border: 1px solid #BABBC9;">
+                                Municipio
+                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                            </button>
+                            <div class="panel" style="border: 1px solid #BABBC9;">
+                                {{ range sort (uniq $municipio) "value" "asc" }}
+                                <label class="filter-label" for="{{ . }}">
+                                    <span class="text-lg">{{ . | humanize }}</span>
+                                    <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
+                                    <span class="checkmark checkmark--blue"></span>
+                                </label>
+                                {{ end }}
+                            </div>
                         </div>
+                        <!-- MUNICIPIO END -->
                     </div>
-                    <!-- MUNICIPIO END -->
                 </div>
             </div>
             <div class="lg:col-start-4 lg:col-end-13">
@@ -132,7 +146,7 @@
     </div>
     <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
 
-    {{/*  <div class="modal modal--active modal--events">
+    {{/* <div class="modal modal--active modal--events">
         <div class="modal__button-close">
             X
         </div>
@@ -175,11 +189,16 @@
                             </div>
                         </div>
                         <div>
-                            <img class="w-full h-full object-center object-cover" style="max-width: 622px; max-height: 436px;" src="/images/eventos/prueba.jpg" alt="prueba">
+                            <img class="w-full h-full object-center object-cover"
+                                style="max-width: 622px; max-height: 436px;" src="/images/eventos/prueba.jpg"
+                                alt="prueba">
                         </div>
                         <div>
                             <p>
-                                Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de la metodología de autoaprendizaje.
+                                Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser
+                                embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio
+                                recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de
+                                la metodología de autoaprendizaje.
                             </p>
                         </div>
                     </div>
@@ -189,7 +208,7 @@
     </div>
     <div class="modal__overlay modal__overlay--active">
         &nbsp;
-    </div>  */}}
+    </div> */}}
 </div>
 {{ end }}
 
