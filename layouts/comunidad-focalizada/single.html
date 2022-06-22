@@ -75,11 +75,11 @@
                     <h3 class="text-xl xl:text-2xl font-black">
                         Infraestructura comunitaria
                     </h3>
-                    <p>
-                        {{ .Params.infraestructura_comunitaria }}
+                    <p class="text-lg xl:text-xl">
+                        {{ .Params.notas_infraestructura_comunitaria }}
                     </p>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                        {{ range .Params.notas_infraestructura_comunitaria }}
+                        {{ range .Params.infraestructura_comunitaria }}
                         {{ with . }}
                         <li>
                             {{ . }}
@@ -172,7 +172,7 @@
             </div>
         </div>
     </div>
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 lg:grid lg:place-items-center" style="background-color: #3A3C6A;">
+    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 lg:grid lg:place-items-center bg-banner-inclusion-diversidad-genero bg-cover bg-center">
         <div class="text-white space-y-4 w-10/12 mx-auto px-2 lg:w-4/12 lg:mx-0 text-center">
             <h3 class="text-xl xl:text-2xl font-black">
                 Inclusión, diversidad y género
@@ -180,17 +180,6 @@
             <p class="text-lg xl:text-xl">
                 {{ .Params.inclusion_diversidad_genero }}
             </p>
-            {{/* <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                <li>
-                    Algunas mujeres hacen parte de ASOCAVAL.
-                </li>
-                <li>
-                    La JAC tiene una presidenta mujer
-                </li>
-                <li>
-                    No hay organizaciones de mujeres ni jóvenes
-                </li>
-            </ul> */}}
         </div>
     </div>
     <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
@@ -246,17 +235,10 @@
                         <h3 class="text-xl xl:text-2xl font-black">
                             Actividades económicas principales y vocación productiva
                         </h3>
-                        {{/* <p class="text-lg xl:text-xl">
-                            {{ .Params.ppales_actividades_economicas_vocacion_productiva }}
-                        </p> */}}
+                        <p class="text-lg xl:text-xl">
+                            {{ .Params.comentarios_ppales_actividades_economicas_vocacion_productiva }}
+                        </p>
                         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                            {{/* {{ range .Params.comentarios_ppales_actividades_economicas_vocacion_productiva }}
-                            {{ with . }}
-                            <li>
-                                {{ . }}
-                            </li>
-                            {{ end }}
-                            {{ end }} */}}
                             {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
                             {{ with . }}
                             <li>
@@ -383,14 +365,14 @@
                         Alianzas y colaboradores
                     </h3>
                     <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                        {{ range .Params.alianzas_colaboradores_1 }}
+                        {{ range .Params.alianzas_colaboradores }}
                         {{ with . }}
                         <li>
                             {{ . }}
                         </li>
                         {{ end }}
                         {{ end }}
-                        {{ range .Params.alianzas_colaboradores_2 }}
+                        {{ range .Params.posibilidad_iniciativas_conjuntas_aliados_2 }}
                         {{ with . }}
                         <li>
                             {{ . }}
@@ -426,7 +408,7 @@
                         <h3 class="text-xl xl:text-2xl font-black">
                             Medios de comunicación
                         </h3>
-                        <ul class="space-y-4 text-lg xl:text-xl">
+                        <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
                             {{ range .Params.medios_comunicacion_narrativas_locales }}
                             {{ with . }}
                             <li>
@@ -444,22 +426,21 @@
         <div class="mx-auto w-10/12 xl:w-9/12">
             <div class="space-y-12 mx-auto">
                 <div class="text-center">
-                    <h2 class="text-fern-green font-bold text-2xl xl:text-3xl">
+                    <h2 class="text-magenta font-bold text-2xl xl:text-3xl">
                         Eventos significativos de la vida comunitaria
                     </h2>
                 </div>
-                <div class="space-y-8 text-center mx-auto" style="max-width: 550px;">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 lg:gap-y-12">
                     {{ range where $data "municipio" $municipio }}
-                    <div class="relative space-y-2">
-                        <h3 class="text-2xl xl:text-3xl relative z-10">
+                    <div class="relative space-y-2 bg-white-2 p-8">
+                        <p class="text-lg xl:text-xl">
+                            {{ .mes | humanize }}
+                        </p>
+                        <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
                             {{ .nombre_evento }}
                         </h3>
-                        <div class="bg-fern-green" style="height: 2px;">&nbsp;</div>
-                        <p class="text-xl xl:text-2xl">
-                            {{ .mes }}
-                        </p>
-                        <img class="absolute -top-6 xl:-top-5 w-14 h-14" src="/images/territorios/triangle-green.svg" alt="triangle">
-                        <img class="absolute -bottom-5 xl:-bottom-4 right-0 w-14 h-14 transform rotate-180" src="/images/territorios/triangle-green.svg" alt="triangle">
+                        <div class="bg-magenta" style="height: 2px;">&nbsp;</div>
+                        <img src="{{ .thumbnail }}" alt="">
                     </div>
                     {{ end }}
                 </div>

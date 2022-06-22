@@ -32,8 +32,12 @@ vias_acceso: >-
   identificándose inicialmente una carretera en afirmado y en tierra,
   predominando un terreno montañoso, en estado regular que es transitado en moto
   y/o en mula que son los medios de transporte utilizados por los pobladores. 
-infraestructura_comunitaria: Iglesias,Juntas de Acción Comunal (JAC),Tiendas,Espacios deportivos
-notas_infraestructura_comunitaria: []
+infraestructura_comunitaria:
+  - Iglesias
+  - Juntas de Acción Comunal (JAC)
+  - Tiendas
+  - Espacios deportivos
+notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
     hay un movimiento de líderes fuertes organizados a partir del proyecto de
@@ -58,10 +62,9 @@ comentarios_punto_SOLE:
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Piscicultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - |-
-    Agricultura (Café y Mora).
-    Piscicultura (10 familias).
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  Agricultura (Café y Mora).
+  Piscicultura (10 familias).
 comunidad_sostenible_uso_suelo: >-
   En la parte alta presencia de árboles y se tiene planteado un proyecto de
   reforestación para la conservación y cuidado del medio ambiente. 
@@ -93,17 +96,23 @@ otros_programas_USAID:
   - >-
     Fertilización para el cultivo de café en el 2017 y charlas para la
     utilización de los insumos
-alianzas_colaboradores_1:
-  - Estructuración de un apoyo de emergencia para la bocatoma del acueducto
-  - Asistencia técnica
-  - Propuesta de intervención
-  - Placa Huellas
-  - Central Cooperativa Indígena del Cauca (CENCOIC)
-  - Comité de Cafeteros
+alianzas_colaboradores:
   - >-
-    Corporación para la Sostenibilidad de la Subcuenca del Río Palo en el
-    departamento del Cauca (CORPOPALO)
-alianzas_colaboradores_2:
+    Administración municipal: Estructuración de un apoyo de emergencia para la
+    bocatoma del acueducto; asistencia técnica de la UMATA que además apoya
+    proyectos productivos de algunas familias y en articulación con la
+    Gobernación del Cauca se está haciendo una propuesta de intervención para
+    presentar al Ministerio de Agricultura.
+
+    Iniciativa PDET: Placa Huellas.
+
+    CENCOIC: Central Cooperativa Indígena del Cauca.
+
+    Comité de Cafeteros
+
+    CORPOPALO: Corporación para la Sostenibilidad de la Subcuenca del Río Palo
+    en el departamento del Cauca.                                       
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Estructuración de un apoyo de emergencia para la bocatoma del acueducto
   - Asistencia técnica
   - Propuesta de intervención

@@ -15,9 +15,11 @@ km_distancia_casco_urbano: 20
 vias_acceso: >-
   Se puede acceder mediante carretera destapada, por lo que se aconseja llegar
   en 4*4 ya que el estado de la vía es regular y hay riesgos de derrumbe
-infraestructura_comunitaria: Instituciones educativas (IE),Sede de COREDÍ,Espacios deportivos
-notas_infraestructura_comunitaria:
-  - Cancha en estado regular.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Sede de COREDÍ
+  - Espacios deportivos
+notas_infraestructura_comunitaria: Cancha en estado regular.
 liderazgo_comunidad:
   - Hay una JAC activa (60 personas)
   - ' conformada por comites de salud'
@@ -44,16 +46,11 @@ ppales_actividades_economicas_vocacion_productiva:
   - Minería
   - Avicultura
   - Piscicultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (yuca
-  - ' plátano'
-  - ' maíz'
-  - ' fríjol'
-  - |2-
-     café y huertos caseros)
-    Minería (río Anorí)
-    Avicultura (Pollos de engorde y gallinas ponedoras)
-    Piscicultura (tres estanques en mal estado)
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  Agricultura (yuca, plátano, maíz, fríjol, café y huertos caseros)
+  Minería (río Anorí)
+  Avicultura (Pollos de engorde y gallinas ponedoras)
+  Piscicultura (tres estanques en mal estado)
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
@@ -70,8 +67,8 @@ org_focalizada: []
 riesgo: Medio
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores: []
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - Fútbol
 medios_comunicacion_narrativas_locales:

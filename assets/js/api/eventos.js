@@ -83,7 +83,7 @@ function filterData() {
     state.filteredData = state.filteredData.filter((item) => filters.mes.includes(item.mes));
   }
   if (hasTipoFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo_agenda));
+    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo_evento));
   }
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter((item) => item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()));

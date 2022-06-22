@@ -15,8 +15,11 @@ num_familias: 100
 min_distancia_casco_urbano: null
 km_distancia_casco_urbano: null
 vias_acceso: null
-infraestructura_comunitaria: Puestos de Salud,Instituciones educativas (IE),Caseta comunal
-notas_infraestructura_comunitaria: []
+infraestructura_comunitaria:
+  - Puestos de Salud
+  - Instituciones educativas (IE)
+  - Caseta comunal
+notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
     Consejo Comunitario-máxima autoridad en territorio. Se pueden adelantar
@@ -32,8 +35,7 @@ comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Piscicultura
   - Agricultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Pesca (98%).
+comentarios_ppales_actividades_economicas_vocacion_productiva: Pesca (98%).
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
@@ -56,8 +58,8 @@ otros_programas_USAID:
   - >-
     Fortalecimiento de la junta administradora del servicio-JASE como eje de
     desarrollo económico y ambiental (Convocatoria USAID-IPA)
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores: []
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 10

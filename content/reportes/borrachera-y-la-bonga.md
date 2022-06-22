@@ -18,9 +18,11 @@ km_distancia_casco_urbano: 18
 vias_acceso: >-
   Se puede acceder mediante carretera destapada, por lo que se aconseja llegar
   en 4*4 ya que el estado de la vía es regular y hay riesgos de derrumbe
-infraestructura_comunitaria: Instituciones educativas (IE),Espacios deportivos,Caseta comunal
-notas_infraestructura_comunitaria:
-  - Caseta comunal en las dos veredas.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Espacios deportivos
+  - Caseta comunal
+notas_infraestructura_comunitaria: Caseta comunal en las dos veredas.
 liderazgo_comunidad:
   - La JAC está funcionando en las dos veredas
   - ' y están conformados los comites de trabajo'
@@ -43,7 +45,7 @@ ppales_actividades_economicas_vocacion_productiva:
   - Pesca
   - Reserva Forestal
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva: []
+comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: >-
   Todo el territorio rural del Bagre se encuentra en reserva forestal, lo que
   limita el uso del suelo.
@@ -70,8 +72,11 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores:
+  - >-
+    Trópico diverso (Fondos OCAD-PAZ)- PDET Aula educativa para los estudiantes
+    de bachillerato
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - Fútbol
   - Torneos deportivos

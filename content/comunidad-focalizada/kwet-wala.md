@@ -19,8 +19,10 @@ num_familias: 56
 min_distancia_casco_urbano: 60
 km_distancia_casco_urbano: 15
 vias_acceso: null
-infraestructura_comunitaria: Casa Indígena,Instituciones educativas (IE)
-notas_infraestructura_comunitaria: []
+infraestructura_comunitaria:
+  - Casa Indígena
+  - Instituciones educativas (IE)
+notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - La Autoridad es Indígena-Gobernador
 inclusion_diversidad_genero: Prevalece la población étnica
@@ -31,10 +33,8 @@ punto_SOLE: No hay espacio con internet
 comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (café
-  - |2
-     musáceas y Pancoger).
+comentarios_ppales_actividades_economicas_vocacion_productiva: |
+  Agricultura (café, musáceas y Pancoger).
 comunidad_sostenible_uso_suelo: |-
   Asentamiento Humano (Resguardo Kwala)
   Actividades agropecuarias. 
@@ -53,9 +53,11 @@ org_focalizada: []
 riesgo: Bajo
 otros_programas_USAID:
   - Construcción de la Casa Indígena en el año 2004
-alianzas_colaboradores_1:
-  - Adecuación de vías con placa huellas
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - >-
+    Esta proyectada la adecuación de vías a través de placa huellas hacia la
+    parte de la Fría con el PDET.
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Adecuación de vías con placa huellas
 actividades_ocio:
   - Mingas

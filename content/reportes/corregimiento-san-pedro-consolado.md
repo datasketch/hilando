@@ -20,8 +20,9 @@ km_distancia_casco_urbano: 25
 vias_acceso: >-
   Carretera pavimentada, en perfecto estado. Ubicación a 15 minutos de la
   Cabecera municipal y a 10 min de la carretera troncal. 
-infraestructura_comunitaria: Instituciones educativas (IE)
-notas_infraestructura_comunitaria: []
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - La Asociación formalizada
   - |-
@@ -46,8 +47,7 @@ ppales_actividades_economicas_vocacion_productiva:
   - Turismo de naturaleza
   - Agricultura
   - Vinicultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Pancoger
+comentarios_ppales_actividades_economicas_vocacion_productiva: Pancoger
 comunidad_sostenible_uso_suelo: >-
   Las prácticas agrícolas son rudimentarias con cultivos de pancoger y baja
   intensidad. Algunas técnicas aplicadas como la quema no son sostenibles, uso
@@ -74,15 +74,13 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - Municipio PDET con articulación institucional
-  - Proyecto de innovación y formación tecnológica
-  - Fortalecemiento asistencia y mantenimiento de áreas
-  - Investigación del cacao
-  - Legalización de predios
-  - Producción de ñame
-  - Hectáreas de café
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - Municipio PDET
+  - ' articulación SENA'
+  - ' ICULTUR'
+  - ' Cámara de Comercio'
+  - ' Sec de Educación'
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Municipio PDET con articulación institucional
   - Proyecto de innovación y formación tecnológica
   - Fortalecemiento asistencia y mantenimiento de áreas

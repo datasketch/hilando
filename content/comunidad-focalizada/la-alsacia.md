@@ -17,8 +17,11 @@ vias_acceso: >-
   servicio privado a través de Jeep,
 
   mototaxi
-infraestructura_comunitaria: Instituciones educativas (IE),Centros de convivencia,Puestos de Salud
-notas_infraestructura_comunitaria: []
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Centros de convivencia
+  - Puestos de Salud
+notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - Se observa una gran asociactividad y muchos procesos juveniles.
 inclusion_diversidad_genero: null
@@ -33,13 +36,11 @@ ppales_actividades_economicas_vocacion_productiva:
   - Minería
   - Agricultura
   - Reforestación
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (Cacao
-  - ' Papachina'
-  - >2+
-     Arroz y Caña).
-    Reforestación (Proyecto REDD+ para la conservación del bosque y Bonos de
-    Carbono).
+comentarios_ppales_actividades_economicas_vocacion_productiva: >+
+  Agricultura (Cacao, Papachina, Arroz y Caña).
+
+  Reforestación (Proyecto REDD+ para la conservación del bosque y Bonos de
+  Carbono).
 
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
@@ -64,8 +65,8 @@ org_focalizada:
   - Consejo Comunitario
 riesgo: null
 otros_programas_USAID: []
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores: []
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 18

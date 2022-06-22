@@ -15,9 +15,12 @@ km_distancia_casco_urbano: 28
 vias_acceso: >-
   vía terciaria, la mitad está pavimentada y la otra mitad en afirmado. Se
   encuentran en buen estado.
-infraestructura_comunitaria: Instituciones educativas (IE),Puestos de Salud,Iglesias,Espacios deportivos
-notas_infraestructura_comunitaria:
-  - Escuela básica primaria y Colegio básica secundaria.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Puestos de Salud
+  - Iglesias
+  - Espacios deportivos
+notas_infraestructura_comunitaria: Escuela básica primaria y Colegio básica secundaria.
 liderazgo_comunidad:
   - >-
     Se destaca un liderazgo en varios grupos etarios. Acostumbran a realizar
@@ -37,14 +40,12 @@ ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Apicultura
   - Turismo de naturaleza
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (producción
-  - |2-
-     comercialización y consumo del café; Producción de panela; Cultivo de musáceas y Pancoger).
-    Servicios agroecoturísticos (caminatas ecológicas
-  - ' avistamiento de aves'
-  - ' artesanos'
-  - ' pajareros de oro).'
+comentarios_ppales_actividades_economicas_vocacion_productiva: >-
+  Agricultura (producción, comercialización y consumo del café; Producción de
+  panela; Cultivo de musáceas y Pancoger).
+
+  Servicios agroecoturísticos (caminatas ecológicas, avistamiento de aves,
+  artesanos, pajareros de oro).
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - Proyecto de caficultura
@@ -78,11 +79,31 @@ otros_programas_USAID:
     Proyecto de sistema de acueducto y alcantarillad apoyado por el Programa de
     Gobernabilidad Regional (RGA) de USAID y aprobado para ser financiado con
     recursos del Sistema General de Regalías
-alianzas_colaboradores_1:
-  - '"Programa ""Camino de Oportunidades"""'
-  - '"Ciudades, entornos y ruralidades saludables"'
-  - '"Formación Técnica, Tecnológica y complementaria"'
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - En alianza con la Juntas de Acción Comunal
+  - ' la Asociación de Juntas'
+  - ' la Administración Municipal y bajo el liderazgo del Gobierno Departamental'
+  - ' se participa en el Programa "Camino de Oportunidades" cuya finalidad es la conservación de las vías a través de actividades de: rocería'
+  - ' drenaje'
+  - ' podas de vegetación'
+  - |2-
+     bacheos y procesos de conservación de recursos naturales.
+    Ciudades
+  - ' entornos y ruralidades saludables-Planes de Acción Comunitarios territoriales de oportunidades sostenibles (Taller Casa Pintada; Muralismo; Grupos de ayuda mutua; Proyectos de intervención comunitaria en atención de necesidades psicosociales'
+  - ' saneamiento básico'
+  - ' infraestructura'
+  - ' arte'
+  - >2-
+     cultura y deporte.
+    Iniciativa de la administración municipal que arrancó con un pilotaje en la
+    zona urbana y podría revisarse la posibilidad de articulación para la zona
+    rural.
+
+    Universidades: Univalle; Universidad Nacional; UNAD.
+
+    SENA: Formación Técnica
+  - ' Tecnológica y complementaria. '
+posibilidad_iniciativas_conjuntas_aliados_2:
   - '"Programa ""Camino de Oportunidades"""'
   - '"Ciudades, entornos y ruralidades saludables"'
   - '"Formación Técnica, Tecnológica y complementaria"'

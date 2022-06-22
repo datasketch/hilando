@@ -17,9 +17,12 @@ vias_acceso: >-
   La vereda está sobre la via que conecta a al costa Atlántica, por lo que tiene
   carretera pero en condiciones regulares. Hay riesgos de deslizamientos,
   derrumbes e inundación. 
-infraestructura_comunitaria: Caseta comunal,Sede ASOCAVAL,Instituciones educativas (IE),Espacios deportivos
-notas_infraestructura_comunitaria:
-  - 'IE: Centro educativo rural La Paulina.'
+infraestructura_comunitaria:
+  - Caseta comunal
+  - Sede ASOCAVAL
+  - Instituciones educativas (IE)
+  - Espacios deportivos
+notas_infraestructura_comunitaria: 'IE: Centro educativo rural La Paulina.'
 liderazgo_comunidad:
   - >-
     Se identfican liderazgos importantes en el territorio.
@@ -44,9 +47,7 @@ ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Pesca
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (cacao
-  - ' plátano y yuca).'
+comentarios_ppales_actividades_economicas_vocacion_productiva: Agricultura (cacao, plátano y yuca).
 comunidad_sostenible_uso_suelo: >-
   En el marco del proceso de sustitución de cultivos, se legalizaron 68 predios,
   lo que brinda sostenibilidad a la unidad productiva.
@@ -69,8 +70,10 @@ org_focalizada:
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores:
+  - Empresa privada
+  - ' alianza con Chocolates Colombia'
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales:
   - Televaldivia

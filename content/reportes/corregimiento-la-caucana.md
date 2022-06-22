@@ -17,12 +17,18 @@ km_distancia_casco_urbano: 25
 vias_acceso: >-
   La mayoría de carretera es destapada y es muy pantanosa lo cual hace que haya
   riesgo de accidentes.
-infraestructura_comunitaria: >-
-  Instituciones educativas (IE),Vivero,Centro de salud,Centro de Desarrollo
-  Integral (CDI),Caseta comunal,Centro día,Centro integración
-  comunitaria,Espacios deportivos,Iglesias,Plaza de mercado
-notas_infraestructura_comunitaria:
-  - CDI (Mal estado).
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Vivero
+  - Centro de salud
+  - Centro de Desarrollo Integral (CDI)
+  - Caseta comunal
+  - Centro día
+  - Centro integración comunitaria
+  - Espacios deportivos
+  - Iglesias
+  - Plaza de mercado
+notas_infraestructura_comunitaria: CDI (Mal estado).
 liderazgo_comunidad:
   - >-
     Se identifican liderazgos representativos. y  representación de todos los
@@ -46,21 +52,11 @@ ppales_actividades_economicas_vocacion_productiva:
   - Piscicultura
   - Ganadería
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - >-
-    El Caucho y la ganadería componen la segunda línea productiva en
-    importancia.
-
-    Agricultura (cacao
-  - ' café plátano'
-  - ' yuca'
-  - ' maíz'
-  - |2-
-     ñame).
-    Especies menores (Pollos
-  - |2-
-     cerdos y piscicultura) y ganadería doble propósito
-    Minería artesanal
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  El Caucho y la ganadería componen la segunda línea productiva en importancia.
+  Agricultura (cacao, café plátano, yuca, maíz, ñame).
+  Especies menores (Pollos, cerdos y piscicultura) y ganadería doble propósito
+  Minería artesanal
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - ASUPRACA
@@ -91,13 +87,13 @@ org_focalizada:
 riesgo: Medio
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - Empresa privada
-  - Aula educativa para los estudiantes de bachillerato
-  - Placa huella
-  - Fortalecimiento del cultivo de cacao
-  - Linea productiva del plátano
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - PDET está adelantando varias acciones en el corregimiento (Placa huella
+  - |2-
+     fortalecimiento cacao)
+    Gobernación -Fedecacao
+    Administración municipal (Linea productiva plátano)
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Empresa privada
   - Aula educativa para los estudiantes de bachillerato
   - Placa huella

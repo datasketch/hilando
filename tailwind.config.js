@@ -131,6 +131,7 @@ module.exports = {
         'newsletter': 'url(/images/home/newsletter.png)',
         'banner-galeria': 'url(/images/galeria/banner-galeria.svg)',
         'banner-eventos-significativos': 'url(/images/eventos-significativos.svg)',
+        'banner-inclusion-diversidad-genero': 'url(/images/inclusion-diversidad-genero.svg)',
       },
       colors: {
         'black': '#1A1A1A',

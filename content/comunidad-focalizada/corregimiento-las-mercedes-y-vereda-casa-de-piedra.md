@@ -16,9 +16,10 @@ km_distancia_casco_urbano: 17
 vias_acceso: >-
   Vía destapada en buen estado. Cuando llueve se suspende el servicio de
   colectivos
-infraestructura_comunitaria: Instituciones educativas (IE),Iglesias
-notas_infraestructura_comunitaria:
-  - 3 iglesias.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Iglesias
+notas_infraestructura_comunitaria: 3 iglesias.
 liderazgo_comunidad:
   - JAC en Casa de Piedra
   - >2-
@@ -52,12 +53,7 @@ comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Turismo de naturaleza
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (Cacao
-  - ' Arroz'
-  - ' Maíz'
-  - ' Aguacate criollo'
-  - ' Ñame y Yuca).'
+comentarios_ppales_actividades_economicas_vocacion_productiva: Agricultura (Cacao, Arroz, Maíz, Aguacate criollo, Ñame y Yuca).
 comunidad_sostenible_uso_suelo: >-
   Proyectan cultivo de arroz organico
 
@@ -93,8 +89,21 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores:
+  - >-
+    Gobernación e impulso proyecto de innovación y formación tecnológica  de
+    cacao a partir de 25 jóvenes y fortalecer asistencia y mantenimiento de
+    áreas
+  - |2-
+     Trabajar el tema investigación con Agrosavia.
+    Se requiere apoyo para legalización de predios
+  - |2-
+     incluído el de la escuela (Unidad de Tierras-Nuestra tierra Póspera)
+    Producen ñame pero tienen dificultades con la comercialización.
+    Tienen 12a 15 Ha sembradas de café 50 mil palos
+  - ' café floreciendo'
+  - ' otros recien sembrados'
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - Música de pitos y tambores
   - Torneos deportivos

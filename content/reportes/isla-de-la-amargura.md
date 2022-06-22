@@ -21,11 +21,13 @@ vias_acceso: >-
 
   Luego  lancha por 20 minutos sobre el rio Cauca y corre el riesgo de
   crecientes (Las lanchas son pequeñas)
-infraestructura_comunitaria: >-
-  Caseta comunal,Instituciones educativas (IE),Iglesias,Espacios
-  deportivos,Tiendas
-notas_infraestructura_comunitaria:
-  - Dos Iglesias evangélicas.
+infraestructura_comunitaria:
+  - Caseta comunal
+  - Instituciones educativas (IE)
+  - Iglesias
+  - Espacios deportivos
+  - Tiendas
+notas_infraestructura_comunitaria: Dos Iglesias evangélicas.
 liderazgo_comunidad:
   - |-
     JAC activa
@@ -56,14 +58,9 @@ ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Piscicultura
   - Avicultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (Yuca
-  - ' Plátano'
-  - ' Maíz'
-  - ' Arroz'
-  - |2-
-     frutales)
-    Avicultura (Pollos de engorde y gallinas ponedoras)
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  Agricultura (Yuca, Plátano, Maíz, Arroz, frutales)
+  Avicultura (Pollos de engorde y gallinas ponedoras)
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion:
   - Agropaisa
@@ -85,8 +82,9 @@ org_focalizada: []
 riesgo: Alto
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1: []
-alianzas_colaboradores_2: []
+alianzas_colaboradores:
+  - 'No'
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - Fútbol
   - Dibujo

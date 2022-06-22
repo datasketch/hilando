@@ -24,9 +24,12 @@ vias_acceso: >
   DISELEC S.A, actuando como contribuyente, la obra la ejecutó Fiduciaria
   FIDUPREVISORA con la supervisión del Instituto Nacional de Vías.
   https://n9.cl/y7nqf
-infraestructura_comunitaria: Parque,Instituciones educativas (IE),Salón comunitario,Puestos de Salud
-notas_infraestructura_comunitaria:
-  - IE hasta 7 grado.
+infraestructura_comunitaria:
+  - Parque
+  - Instituciones educativas (IE)
+  - Salón comunitario
+  - Puestos de Salud
+notas_infraestructura_comunitaria: IE hasta 7 grado.
 liderazgo_comunidad:
   - >-
     Hay un liderazgo fuerte y varias asociaciones y organizaciones con las
@@ -41,8 +44,7 @@ comentarios_punto_SOLE:
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Porcicultura
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura (Maíz y Cacao).
+comentarios_ppales_actividades_economicas_vocacion_productiva: Agricultura (Maíz y Cacao).
 comunidad_sostenible_uso_suelo: Producción agropecuaria
 org_con_proyeccion:
   - Asojuventud
@@ -68,12 +70,13 @@ riesgo: Medio
 otros_programas_USAID:
   - Riqueza Natural
   - Nuestra Tierra Próspera
-alianzas_colaboradores_1:
+alianzas_colaboradores:
   - Experiencia Casa de Memoria El Bonche
-  - Buen uso de parque y cancha
-  - Emprendimiento
-  - Colectivo de jóvenes
-alianzas_colaboradores_2:
+  - ' para sororidad de mujeres'
+  - ' buen uso de parque y cancha en con ART en obras PDET'
+  - ' SENA en emprendimiento'
+  - colectivo de 25 jóvenes en articulación ICBF
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Experiencia Casa de Memoria El Bonche
   - Buen uso de parque y cancha
   - Emprendimiento

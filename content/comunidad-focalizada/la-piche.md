@@ -15,9 +15,12 @@ num_familias: 235
 min_distancia_casco_urbano: 12
 km_distancia_casco_urbano: 8
 vias_acceso: 'via principal  pavimentada en mal estado '
-infraestructura_comunitaria: Instituciones educativas (IE),Espacios deportivos,Casa Indígena,Hostal
-notas_infraestructura_comunitaria:
-  - Cancha de fútbol con pantalla y cancha con pasto natural.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+  - Espacios deportivos
+  - Casa Indígena
+  - Hostal
+notas_infraestructura_comunitaria: Cancha de fútbol con pantalla y cancha con pasto natural.
 liderazgo_comunidad:
   - Asociaciones de productores que trabajan por sus objetivos individuales
   - ' más no tienen tejido entre sí'
@@ -47,10 +50,9 @@ comentarios_punto_SOLE:
 ppales_actividades_economicas_vocacion_productiva:
   - Turismo de naturaleza
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - |-
-    Turismo de naturaleza.
-    Minería artesanal.
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  Turismo de naturaleza.
+  Minería artesanal.
 comunidad_sostenible_uso_suelo: |-
   Zona de amortiguamiento de Serrania de Coraza
   Minería artesanal
@@ -86,9 +88,14 @@ riesgo: Bajo
 otros_programas_USAID:
   - Nuestra Tierra Próspera
   - Riqueza Natural
-alianzas_colaboradores_1:
-  - Empresas de minería
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - Hay 6 empresas de minería
+  - ' 3 comunitarias'
+  - ' y tres independientes'
+  - ' Pedramar'
+  - ' Ecomarmol'
+  - ' No han tenido intervención del SENA Ni trabajan articuladamente. (generan 100 empleos aproximadamente). Están en proceso de licencia ambiental y consulta previa. Han recibido apoyo de PNUD '
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Empresas de minería
 actividades_ocio:
   - >-

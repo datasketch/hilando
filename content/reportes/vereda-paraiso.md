@@ -14,9 +14,9 @@ num_familias: 70
 min_distancia_casco_urbano: 5
 km_distancia_casco_urbano: 3
 vias_acceso: Vía asfaltada hasta la comunidad y destapada entre un sector y otro
-infraestructura_comunitaria: Instituciones educativas (IE)
-notas_infraestructura_comunitaria:
-  - IE hasta 5°.
+infraestructura_comunitaria:
+  - Instituciones educativas (IE)
+notas_infraestructura_comunitaria: IE hasta 5°.
 liderazgo_comunidad:
   - >-
     Su asociación de productores de miel y apicultura tiene 16 años de trabajo.
@@ -47,10 +47,9 @@ comentarios_punto_SOLE:
 ppales_actividades_economicas_vocacion_productiva:
   - Apicultura
   - Agroforestal
-comentarios_ppales_actividades_economicas_vocacion_productiva:
-  - |-
-    Agricultura (Cacao y Yuca Amarga).
-    Producción de miel (estacional).
+comentarios_ppales_actividades_economicas_vocacion_productiva: |-
+  Agricultura (Cacao y Yuca Amarga).
+  Producción de miel (estacional).
 comunidad_sostenible_uso_suelo: >-
   La producción de miel hace parte de la cadena apícola de Sucre. tienen 200
   colmenas aproximadamente / 3 toneladas anuales
@@ -85,11 +84,10 @@ org_focalizada:
 riesgo: Bajo
 otros_programas_USAID:
   - 'No'
-alianzas_colaboradores_1:
-  - Cursos apÍcolas
-  - Cosecha de agua con silvo pastoril
-  - Cosecha de agua con limón tahití
-alianzas_colaboradores_2:
+alianzas_colaboradores:
+  - Cursos apicolas con otras asociaciones
+  - ' están formulando proyectos en OCAD paz: Cosecha de agua con silvo pastoril (Jaguey y riego) y (cosecha de agua con limón tahití)'
+posibilidad_iniciativas_conjuntas_aliados_2:
   - Cursos apÍcolas
   - Cosecha de agua con silvo pastoril
   - Cosecha de agua con limón tahití
