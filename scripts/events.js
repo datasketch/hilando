@@ -1,8 +1,8 @@
 const fs = require('fs/promises');
 const data = require('../data/eventos.json');
-const path = require('path');
+const {getFilePath} = require('./utils');
 
-const dataEvents=data.map((item) => {
+const dataEvents = data.map((item) => {
   return {
     ...item,
     mes: item.mes.trim(),
@@ -10,10 +10,6 @@ const dataEvents=data.map((item) => {
     thumbnail: (JSON.parse(item.foto))?.map((fot) => fot.url)[0] || '/images/eventos/prueba.jpg',
   };
 });
-
-const getFilePath = (filename) => {
-  return path.join(__dirname, '..', 'data', filename);
-};
 
 async function run() {
   fs.writeFile(
