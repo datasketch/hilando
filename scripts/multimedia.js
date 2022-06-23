@@ -27,14 +27,17 @@ const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => 
   };
 });
 
+const base = eventsDataSummarized.length;
+
 const multimediaDataSummarized = multimediaData.map((record, index) => ({
-  id: eventsDataSummarized.length + index + 1,
   ...record,
+  id: base + index + 1,
   type: record.tipo_multimedia ? record.tipo_multimedia.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
   thumbnail: '/images/eventos/prueba.jpg',
   fotos: (JSON.parse(record.fotos))?.map((fot) => fot.url) || [],
+  tipo_multimedia: record.tipo_galeria,
 }));
 
 const newData = [...eventsDataSummarized, ...multimediaDataSummarized];
 
-writeFileSync(join(__dirname, '..', 'data', 'multimediaCOPY.json'), JSON.stringify(newData));
+writeFileSync(join(__dirname, '..', 'data', 'eventos_multimedia.json'), JSON.stringify(newData));
