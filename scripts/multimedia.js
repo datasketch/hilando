@@ -1,30 +1,40 @@
-// export module fs.writefilesync
 const {writeFileSync} = require('fs');
-
-// export module path.join
 const {join} = require('path');
+const groupBy = require('lodash.groupby');
 
-// import events and multimedia json data
-
-// events data
 const eventsData = require('../data/eventos.json');
-// console.log(eventsData); check
+const multimediaData = require('../data/_multimedia.json');
 
-// multimedia data
-const multimediaData = require('../data/multimedia.json');
-// console.log(multimediaData); check
+const eventsDataGrouped = groupBy(eventsData.filter((event) => event.comunidad), 'comunidad');
 
-// use spread operator to merge events and multimedia data
-const newData = [...eventsData, ...multimediaData];
-// console.log(newData); check
-
-// add new property to each object in newData
-newData.forEach((item, index) => {
-  item.id = index + 1;
-  item.type = item.tipo_multimedia ? item.tipo_multimedia.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'evento';
-  item.tipo_multimedia = item.tipo_multimedia ? item.tipo_multimedia : 'Fotografía';
+const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => {
+  const data = eventsDataGrouped[key];
+  const [first] = data;
+  const fotos = data.map((record) => record.foto).flat();
+  const thumbnails = data.map((record) => record.thumbnail);
+  const events = data.map((record) => record.nombre_evento);
+  return {
+    id: index + 1,
+    nombre_galeria: key,
+    municipio: first.municipio,
+    departamento: '',
+    comunidad_focalizada: key,
+    descripcion: `Fotos de los eventos:\n${events.join('\n')}`.trim(),
+    fotos,
+    type: 'evento',
+    tipo_multimedia: 'Fotografía',
+    thumbnail: thumbnails.find((t) => t),
+  };
 });
-// console.log(newData); check
 
-// write new data to new file
+const multimediaDataSummarized = multimediaData.map((record, index) => ({
+  id: eventsDataSummarized.length + index + 1,
+  ...record,
+  type: record.tipo_multimedia ? record.tipo_multimedia.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
+  thumbnail: '/images/eventos/prueba.jpg',
+  fotos: (JSON.parse(record.fotos))?.map((fot) => fot.url) || [],
+}));
+
+const newData = [...eventsDataSummarized, ...multimediaDataSummarized];
+
 writeFileSync(join(__dirname, '..', 'data', 'multimediaCOPY.json'), JSON.stringify(newData));

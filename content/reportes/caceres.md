@@ -116,7 +116,7 @@ programas_usaid:
   - ' Programa de Derechos Humanos'
   - ' Oro Legal'
 comunidades:
-  - label: Isla de la amargura
+  - label: Isla de la Amargura
     slug: isla-de-la-amargura
     permalink: /comunidad-focalizada/isla-de-la-amargura
 download_file: /reportes/caceres.pdf

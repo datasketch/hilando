@@ -1,6 +1,6 @@
 ---
-title: Corregimiento Las Mercedes y Vereda Casa de piedra
-nombre_comunidad: Corregimiento Las Mercedes y Vereda Casa de piedra
+title: Corregimiento Las Mercedes y Vereda Casa de Piedra
+nombre_comunidad: Corregimiento Las Mercedes y Vereda Casa de Piedra
 municipio: San Jacinto
 departamento: Bolívar
 descripcion: >-

@@ -20,6 +20,7 @@ async function run() {
   const eventsMunicipalities = await req.get('/eventos_municipios?limit=100');
   const trrs = await req.get('/fichas_municipio');
   const publications = await req.get('/publicaciones');
+  const multimedia = await req.get('/multimedia');
   fs.writeFile(
       getFilePath('comunidades-focalizadas.json'),
       JSON.stringify(communities.data.list),
@@ -39,6 +40,10 @@ async function run() {
   fs.writeFile(
       getFilePath('publicaciones.json'),
       JSON.stringify(publications.data.list),
+  );
+  fs.writeFile(
+      getFilePath('_multimedia.json'),
+      JSON.stringify(multimedia.data.list),
   );
 }
 
