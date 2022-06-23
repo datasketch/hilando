@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gen:content": "node scripts/fetch && node scripts/comunidad-focalizada && node scripts/territories && node scripts/events.js && node scripts/multimedia.js",
+    "gen:content": "node scripts/fetch && node scripts/comunidad-focalizada && node scripts/territories && node scripts/events.js && node scripts/multimedia.js && node scripts/publications.js",
     "gen:reports": "node scripts/reports.js"
   },
   "repository": {

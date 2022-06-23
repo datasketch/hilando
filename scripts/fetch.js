@@ -1,7 +1,7 @@
 require('dotenv').config();
 const axios = require('axios');
 const fs = require('fs/promises');
-const path = require('path');
+const {getFilePath} = require('./utils');
 
 const req = axios.create({
   baseURL: 'https://hilando.datasketch.co/api/v1/db/data/noco/Proyecto',
@@ -9,10 +9,6 @@ const req = axios.create({
     'xc-auth': process.env.NOCODB_TOKEN,
   },
 });
-
-const getFilePath = (filename) => {
-  return path.join(__dirname, '..', 'data', filename);
-};
 
 async function run() {
   const communities = await req.get('/comunidades?limit=100');
