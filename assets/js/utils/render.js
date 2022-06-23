@@ -136,7 +136,7 @@ export const renderMultimedia = (parentEl, data, type) => {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            <img src="/images/galeria/multimedia/prueba.jpg" alt="prueba">
+            <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'}">
             <button data-id="${data.id}" class="multimedia__button-play">
                 <img src="/images/public/button-play.svg" alt="button play">
             </button>
@@ -164,7 +164,7 @@ export const renderMultimedia = (parentEl, data, type) => {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            <img src="/images/galeria/multimedia/prueba-2.jpg" alt="prueba">
+            <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'}">
             <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #81A347;">Ver galería</button>
             <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
         </div>
