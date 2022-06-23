@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $data := index .Site.Data.multimedia }}
+{{ $data := index .Site.Data.eventos_multimedia }}
 {{ $tipo := slice }}
 {{ $municipio := slice }}
 {{ $comunidad := slice }}
@@ -12,8 +12,8 @@
 {{ if .municipio }}
 {{ $municipio = $municipio | append .municipio }}
 {{ end }}
-{{ if .comunidad }}
-{{ $comunidad = $comunidad | append .comunidad }}
+{{ if .comunidad_focalizada }}
+{{ $comunidad = $comunidad | append .comunidad_focalizada }}
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}

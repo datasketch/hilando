@@ -41,7 +41,7 @@ function filterData() {
   }
 
   if (hasComunidadFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad));
+    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad_focalizada));
   }
 
   if (hasTipoFilter) {
@@ -49,7 +49,7 @@ function filterData() {
   }
 
   if (hasQueryFilter) {
-    state.filteredData = state.filteredData.filter((item) => item.nombre_evento?.toLowerCase().includes(filters.query.toLowerCase()) || item.titulo?.toLowerCase().includes(filters.query.toLowerCase()));
+    state.filteredData = state.filteredData.filter((item) => item.nombre_galeria?.toLowerCase().includes(filters.query.toLowerCase()) || item.titulo?.toLowerCase().includes(filters.query.toLowerCase()));
   }
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item, item.type));

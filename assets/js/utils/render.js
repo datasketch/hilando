@@ -143,7 +143,7 @@ export const renderMultimedia = (parentEl, data, type) => {
         </div>
         <div class="multimedia__details">
             <h3 class="multimedia__title">
-                ${data.titulo}
+                ${data.nombre_galeria}
             </h3>
             <p class="multimedia__description">
                 ${data.descripcion.substring(0, 120) + '...'}
@@ -153,13 +153,13 @@ export const renderMultimedia = (parentEl, data, type) => {
                 ${data.municipio} - ${data.departamento}
                 </p>
                 <p class="text-space-cadet">
-                ${data.comunidad}
+                ${data.comunidad_focalizada}
                 </p>
             </div>
         </div>
     </div>
     `;
-  } else if (data['tipo_multimedia'] === 'Fotografía' && type === 'fotografia') {
+  } else if (data['tipo_multimedia'] === 'Fotografía') {
     html = `
     <div class="multimedia__item">
         <div class="relative">
@@ -169,43 +169,16 @@ export const renderMultimedia = (parentEl, data, type) => {
         </div>
         <div class="multimedia__details">
             <h3 class="multimedia__title">
-            ${data.titulo}
+            ${data.nombre_galeria}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion.substring(0, 120) + '...'}
+            ${data.descripcion.substring(0, 80) + '...'}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                    ${data.municipio} - ${data.departamento}
-                </p>
+                    ${data.municipio} - ${Array.isArray(data.departamento) ? [...new Set(data.departamento)].join(' - ') : data.departamento}
                 <p class="text-space-cadet">
-                    ${data.comunidad}
-                </p>
-            </div>
-        </div>
-    </div>
-    `;
-  } else if (data['tipo_multimedia'] === 'Fotografía' && type === 'evento') {
-    html = `
-    <div class="multimedia__item">
-        <div class="relative">
-            <img class="multimedia__image" src="${data.thumbnail}" alt="prueba">
-            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #81A347;">Ver galería</button>
-            <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
-        </div>
-        <div class="multimedia__details">
-            <h3 class="multimedia__title">
-            ${data.nombre_evento?.substring(0, 40) + '...'}
-            </h3>
-            <p class="multimedia__description">
-            ${data.descripcion ? data.descripcion?.substring(0, 110) + '...' : ''}
-            </p>
-            <div class="multimedia__lugar-comunidad">
-                <p class="italic">
-                    ${data.municipio ? data.municipio : 'empty'} - ${data.macroregion ? data.macroregion : 'empty'}
-                </p>
-                <p class="text-space-cadet">
-                    ${data.comunidad ? data.comunidad?.substring(0, 40) + '...' : 'empty'}
+                    ${data.comunidad_focalizada}
                 </p>
             </div>
         </div>

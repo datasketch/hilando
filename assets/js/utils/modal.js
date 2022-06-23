@@ -78,7 +78,7 @@ export default class Modal {
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.nombre_evento, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_evento, 'thumbs')}
+                            ${this.data.fotos.length > 0 ? this.#renderImageSwiperSlide(this.data.fotos, this.data.nombre_galeria, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
                         </div>
                     </div>
                     <button class="swiper-button-next-events">
@@ -92,20 +92,20 @@ export default class Modal {
                                 <div class="event__modal--flex-center event__modal--space-x-3">
                                     <img src="/images/eventos/icon-location.svg" alt="location icon">
                                     <p class="event__modal-paragraph">
-                                        ${this.data.comunidad}, ${this.data.municipio}
+                                        ${this.data.comunidad_focalizada}, ${this.data.municipio}
                                     </p>
                                 </div>
                                 <div class="event__modal--flex-center event__modal--space-x-2">
                                     <img src="/images/eventos/calendar.svg" alt="calendar icon">
                                     <p class="event__modal-paragraph text-purple font-medium italic">
-                                        ${this.data.mes}
+                                        ${this.data.mes ? this.data.mes : 'empty'}
                                     </p>
                                 </div>
                             </div>
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
-                                        ${this.data.nombre_evento}
+                                        ${this.data.nombre_galeria}
                                     </h3>
                                 </div>
                                 <div>
@@ -113,7 +113,7 @@ export default class Modal {
                                         <span class="event__modal--text-purple">
                                             Tipo de evento:
                                         </span>
-                                        ${this.data.tipo_evento ? this.data.tipo_evento : 'Sin definir'}
+                                        ${this.data.tipo_evento ? this.data.tipo_evento : 'empty'}
                                     </p>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@ export default class Modal {
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
-                                    ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.nombre_evento, 'events') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_evento, 'events')}
+                                    ${this.data.fotos.length > 0 ? this.#renderImageSwiperSlide(this.data.fotos, this.data.nombre_galeria, 'events') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'events')}
                                 </div>
                             </div>
                         </div>
@@ -242,14 +242,14 @@ export default class Modal {
                             </div>
                             <div>
                                 <p class="video--text-purple video--italic">
-                                    ${this.data.comunidad}, ${this.data.municipio}
+                                    ${this.data.comunidad_focalizada}, ${this.data.municipio}
                                 </p>
                             </div>
                         </div>
                         <div class="video--flex video--justify-between video--items-center">
                             <div>
                                 <h3 class="video--font-size-22 video--font-bold">
-                                    ${this.data.titulo}
+                                    ${this.data.nombre_galeria}
                                 </h3>
                             </div>
                             <div>
@@ -261,7 +261,7 @@ export default class Modal {
                     </div>
                     <div class="video--w-full">
                         <video controls>
-                            <source src="${this.data.url}" type="video/mp4">
+                            <source src="${this.data.enlace_video_audio}" type="video/mp4">
                         </video>  
                     </div>
                     <div>
@@ -296,14 +296,14 @@ export default class Modal {
                               </div>
                               <div>
                                   <p class="video--text-purple video--italic">
-                                      ${this.data.comunidad}, ${this.data.municipio}
+                                      ${this.data.comunidad_focalizada}, ${this.data.municipio}
                                   </p>
                               </div>
                           </div>
                           <div class="video--flex video--justify-between video--items-center">
                               <div>
                                   <h3 class="video--font-size-22 video--font-bold">
-                                      ${this.data.titulo}
+                                      ${this.data.nombre_galeria}
                                   </h3>
                               </div>
                               <div>
@@ -314,7 +314,7 @@ export default class Modal {
                           </div>
                       </div>
                       <div class="video--w-full">
-                      <audio src="${this.data.url}" controls></audio>
+                      <audio src="${this.data.enlace_video_audio}" controls></audio>
                       </div>
                       <div>
                           <p>
