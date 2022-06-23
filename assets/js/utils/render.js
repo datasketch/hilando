@@ -100,6 +100,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
 };
 
 export const renderPublicaciones = (parentEl, data) => {
+  const files = JSON.parse(data.archivo_pdf) || [];
   const html = `
       <div class="publicaciones__item">
         <div>
@@ -121,7 +122,7 @@ export const renderPublicaciones = (parentEl, data) => {
               Fecha: ${new Intl.DateTimeFormat('es-CO', {dateStyle: 'full'}).format(new Date(data.fecha))}
           </p>
           <div class="publicaciones__text-right publicaciones--mt-2">
-          <a class="publicaciones__download" href="${data.archivo_pdf}" style="background-color: #D27028;">Descargar</a>
+          ${files ? files.map((f) => `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #D27028;" download="${f.title}" target="_blank">Descargar</a>`) : ''}
           </div>
         </div>
     </div>
