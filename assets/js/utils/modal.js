@@ -95,26 +95,12 @@ export default class Modal {
                                         ${this.data.comunidad_focalizada}, ${this.data.municipio}
                                     </p>
                                 </div>
-                                <div class="event__modal--flex-center event__modal--space-x-2">
-                                    <img src="/images/eventos/calendar.svg" alt="calendar icon">
-                                    <p class="event__modal-paragraph text-purple font-medium italic">
-                                        ${this.data.mes ? this.data.mes : 'empty'}
-                                    </p>
-                                </div>
                             </div>
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
                                         ${this.data.nombre_galeria}
                                     </h3>
-                                </div>
-                                <div>
-                                    <p class="event__modal-italic">
-                                        <span class="event__modal--text-purple">
-                                            Tipo de evento:
-                                        </span>
-                                        ${this.data.tipo_evento ? this.data.tipo_evento : 'empty'}
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -176,26 +162,12 @@ export default class Modal {
                                         ${this.data.departamento}, ${this.data.municipio}
                                     </p>
                                 </div>
-                                <div class="event__modal--flex-center event__modal--space-x-2">
-                                    <img src="/images/eventos/calendar.svg" alt="calendar icon">
-                                    <p class="event__modal-paragraph text-purple font-medium italic">
-                                        ${this.data.mes ? this.data.mes : 'Sin definir'}
-                                    </p>
-                                </div>
                             </div>
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
                                         ${this.data.nombre_galeria}
                                     </h3>
-                                </div>
-                                <div>
-                                    <p class="event__modal-italic">
-                                        <span class="event__modal--text-purple">
-                                            Comunidad:
-                                        </span>
-                                        ${this.data.comunidad ? this.data.comunidad : 'Sin definir'}
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -251,11 +223,6 @@ export default class Modal {
                                 <h3 class="video--font-size-22 video--font-bold">
                                     ${this.data.nombre_galeria}
                                 </h3>
-                            </div>
-                            <div>
-                                <p class="video--text-purple video--italic">
-                                    ${this.data.tipo_multimedia}
-                                </p>
                             </div>
                         </div>
                     </div>
