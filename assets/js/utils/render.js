@@ -151,10 +151,10 @@ export const renderMultimedia = (parentEl, data, type) => {
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                ${data.municipio} - ${data.departamento}
+                ${data.municipio || ''} - ${data.departamento || ''}
                 </p>
                 <p class="text-space-cadet">
-                ${data.comunidad_focalizada}
+                ${data.comunidad_focalizada || ''}
                 </p>
             </div>
         </div>

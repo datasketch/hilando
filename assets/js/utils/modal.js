@@ -145,7 +145,7 @@ export default class Modal {
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            ${this.data.galeria_images.length > 0 ? this.#renderImageSwiperSlide(this.data.galeria_images, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.image], this.data.titulo, 'thumbs')}
+                            ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
                         </div>
                     </div>
                     <button class="swiper-button-next-events">
@@ -159,14 +159,14 @@ export default class Modal {
                                 <div class="event__modal--flex-center event__modal--space-x-3">
                                     <img src="/images/eventos/icon-location.svg" alt="location icon">
                                     <p class="event__modal-paragraph">
-                                        ${this.data.departamento}, ${this.data.municipio}
+                                        ${this.data.departamento || 'empty'}, ${this.data.municipio || 'empty'}
                                     </p>
                                 </div>
                             </div>
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
-                                        ${this.data.nombre_evento}
+                                        ${this.data.nombre_galeria}
                                     </h3>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@ export default class Modal {
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
-                                    ${this.data.galeria_images.length > 0 ? this.#renderImageSwiperSlide(this.data.galeria_images, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.image], this.data.titulo, 'thumbs')}
+                                    ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
                                 </div>
                             </div>
                         </div>
@@ -214,14 +214,14 @@ export default class Modal {
                             </div>
                             <div>
                                 <p class="video--text-purple video--italic">
-                                    ${this.data.comunidad}, ${this.data.municipio}
+                                    ${this.data.comunidad_focalizada || 'empty'}, ${this.data.municipio || 'empty'}
                                 </p>
                             </div>
                         </div>
                         <div class="video--flex video--justify-between video--items-center">
                             <div>
                                 <h3 class="video--font-size-22 video--font-bold">
-                                    ${this.data.nombre_evento}
+                                    ${this.data.nombre_galeria}
                                 </h3>
                             </div>
                         </div>
