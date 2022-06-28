@@ -13,6 +13,7 @@ const req = axios.create({
 async function run() {
   const communities = await req.get('/comunidades?limit=100');
   const events = await req.get('/eventos?limit=100');
+
   const eventsMunicipalities = await req.get('/eventos_municipios?limit=100');
   const trrs = await req.get('/fichas_municipio');
   const publications = await req.get('/publicaciones');
@@ -38,7 +39,7 @@ async function run() {
       JSON.stringify(publications.data.list),
   );
   fs.writeFile(
-      getFilePath('_multimedia.json'),
+      getFilePath('multimedia.json'),
       JSON.stringify(multimedia.data.list),
   );
 }

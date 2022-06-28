@@ -31,8 +31,6 @@ events.addEventListener('click', function(e) {
   const modal = new Modal(data, 'eventos');
 
   // call slider library
-  // const swiperThumbs = swiperGalleryThumbs('.swiperThumbs');
-  // const swiperMain = swiperGalleryMain('.swiperMain');
 
   const swiperThumbs = new Swiper('.swiperThumbs', {
     // configure Swiper to use modules

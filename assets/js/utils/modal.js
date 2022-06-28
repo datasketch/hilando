@@ -78,7 +78,7 @@ export default class Modal {
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            ${this.data.fotos.length > 0 ? this.#renderImageSwiperSlide(this.data.fotos, this.data.nombre_galeria, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
+                            ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.nombre_evento, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_evento, 'thumbs')}
                         </div>
                     </div>
                     <button class="swiper-button-next-events">
@@ -92,14 +92,14 @@ export default class Modal {
                                 <div class="event__modal--flex-center event__modal--space-x-3">
                                     <img src="/images/eventos/icon-location.svg" alt="location icon">
                                     <p class="event__modal-paragraph">
-                                        ${this.data.comunidad_focalizada}, ${this.data.municipio}
+                                        ${this.data.comunidad || this.data.comunidad_focalizada}, ${this.data.municipio}
                                     </p>
                                 </div>
                             </div>
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
-                                        ${this.data.nombre_galeria}
+                                        ${this.data.nombre_evento || this.data.nombre_galeria}
                                     </h3>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@ export default class Modal {
                                 <!-- Additional required wrapper -->
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
-                                    ${this.data.fotos.length > 0 ? this.#renderImageSwiperSlide(this.data.fotos, this.data.nombre_galeria, 'events') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'events')}
+                                    ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.nombre_evento, 'events') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_evento, 'events')}
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export default class Modal {
                             <div class="event__modal-flex-responsive">
                                 <div>
                                     <h3 class="event__modal-title">
-                                        ${this.data.nombre_galeria}
+                                        ${this.data.nombre_evento}
                                     </h3>
                                 </div>
                             </div>
@@ -214,14 +214,14 @@ export default class Modal {
                             </div>
                             <div>
                                 <p class="video--text-purple video--italic">
-                                    ${this.data.comunidad_focalizada}, ${this.data.municipio}
+                                    ${this.data.comunidad}, ${this.data.municipio}
                                 </p>
                             </div>
                         </div>
                         <div class="video--flex video--justify-between video--items-center">
                             <div>
                                 <h3 class="video--font-size-22 video--font-bold">
-                                    ${this.data.nombre_galeria}
+                                    ${this.data.nombre_evento}
                                 </h3>
                             </div>
                         </div>
@@ -263,14 +263,14 @@ export default class Modal {
                               </div>
                               <div>
                                   <p class="video--text-purple video--italic">
-                                      ${this.data.comunidad_focalizada}, ${this.data.municipio}
+                                      ${this.data.comunidad}, ${this.data.municipio}
                                   </p>
                               </div>
                           </div>
                           <div class="video--flex video--justify-between video--items-center">
                               <div>
                                   <h3 class="video--font-size-22 video--font-bold">
-                                      ${this.data.nombre_galeria}
+                                      ${this.data.nombre_evento}
                                   </h3>
                               </div>
                               <div>

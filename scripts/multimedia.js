@@ -10,9 +10,9 @@ const eventsDataGrouped = groupBy(eventsData.filter((event) => event.comunidad),
 const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => {
   const data = eventsDataGrouped[key];
   const [first] = data;
-  const fotos = data.map((record) => record.foto).flat();
+  const foto = data.map((record) => record.foto).flat();
   const thumbnails = data.map((record) => record.thumbnail);
-  const events = data.map((record) => record.nombre_evento);
+  // const events = data.map((record) => record.nombre_evento);
   const departments = data.map(((record) => record.macroregion));
   return {
     id: index + 1,
@@ -20,8 +20,8 @@ const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => 
     municipio: first.municipio,
     departamento: departments,
     comunidad_focalizada: key,
-    descripcion: `Fotos de los eventos:\n${events.join('\n')}`.trim(),
-    fotos,
+    descripcion: `Esta es la galería de las actividades realizadas en ${key}.`,
+    foto,
     type: 'evento',
     tipo_multimedia: 'Fotografía',
     thumbnail: thumbnails.find((t) => t),
@@ -33,10 +33,10 @@ const base = eventsDataSummarized.length;
 const multimediaDataSummarized = multimediaData.map((record, index) => ({
   ...record,
   id: base + index + 1,
-  type: record.tipo_multimedia ? record.tipo_multimedia.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
+  type: record.tipo_multimedia ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
   thumbnail: '/images/eventos/prueba.jpg',
-  fotos: record.fotos,
-  tipo_multimedia: record.tipo_multimedia,
+  foto: record.fotos,
+  tipo_multimedia: record.tipo_galeria,
 }));
 
 const newData = [...eventsDataSummarized, ...multimediaDataSummarized];

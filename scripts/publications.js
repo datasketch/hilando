@@ -13,7 +13,7 @@ async function run() {
     };
   });
   fs.writeFile(
-      getFilePath('eventos.json'),
+      getFilePath('publicaciones.json'),
       JSON.stringify(publications),
   );
 }

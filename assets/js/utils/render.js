@@ -100,7 +100,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
 };
 
 export const renderPublicaciones = (parentEl, data) => {
-  const files = JSON.parse(data.archivo_pdf) || [];
+  const files = data.archivo_pdf || [];
   const html = `
       <div class="publicaciones__item">
         <div>
@@ -173,7 +173,7 @@ export const renderMultimedia = (parentEl, data, type) => {
             ${data.nombre_galeria}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion.substring(0, 80) + '...'}
+            ${data.descripcion.toLowerCase()}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
