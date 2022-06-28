@@ -33,7 +33,7 @@ const base = eventsDataSummarized.length;
 const multimediaDataSummarized = multimediaData.map((record, index) => ({
   ...record,
   id: base + index + 1,
-  type: record.tipo_multimedia ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
+  type: record.tipo_galeria ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
   thumbnail: '/images/eventos/prueba.jpg',
   foto: record.fotos,
   tipo_multimedia: record.tipo_galeria,

@@ -3,6 +3,7 @@ import {renderMultimedia} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
+const orderBy = require('lodash.orderby');
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -34,7 +35,7 @@ function filterData() {
   const hasComunidadFilter = !!filters.comunidad.length;
   const hasTipoFilter = !!filters.tipo.length;
   const hasQueryFilter = !!filters.query.length;
-  state.filteredData = originalData;
+  state.filteredData = orderBy(originalData, 'id', 'desc');
 
   if (hasMunicipioFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.municipio.includes(item.municipio));
@@ -51,6 +52,8 @@ function filterData() {
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter((item) => item.nombre_galeria?.toLowerCase().includes(filters.query.toLowerCase()) || item.titulo?.toLowerCase().includes(filters.query.toLowerCase()));
   }
+
+  // state.filteredData = orderBy(state.filteredData, 'id', 'desc');
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item, item.type));
 
