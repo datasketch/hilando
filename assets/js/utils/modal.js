@@ -69,7 +69,7 @@ export default class Modal {
         </div>
         <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
-                <div class="event__modal-left" style="max-width: 71px;">
+                <div class="event__modal-left ${!!this.data.foto.length ? 'visible' : 'invisible'}" style="max-width: 71px;">
                     <!-- Slider main container -->
                     <button class="swiper-button-prev-events">
                         <img src="/images/public/right-arrow.svg" alt="arrow" />
@@ -136,7 +136,7 @@ export default class Modal {
         </div>
         <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
-                <div class="event__modal-left" style="max-width: 71px;">
+                <div class="event__modal-left ${!!this.data.foto.length ? 'visible' : 'invisible'}" style="max-width: 71px;">
                     <!-- Slider main container -->
                     <button class="swiper-button-prev-events">
                     <img src="/images/public/right-arrow.svg" alt="arrow" />

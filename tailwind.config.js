@@ -110,6 +110,8 @@ module.exports = {
         'video--w-full',
         'col-start-1',
         'col-end-3',
+        'invisible',
+        'visible',
       ],
     },
   },
