@@ -39,6 +39,6 @@ const multimediaDataSummarized = multimediaData.map((record, index) => ({
   tipo_multimedia: record.tipo_galeria,
 }));
 
-const newData = [...eventsDataSummarized, ...multimediaDataSummarized];
+const newData = [...multimediaDataSummarized, ...eventsDataSummarized];
 
 writeFileSync(join(__dirname, '..', 'data', 'eventos_multimedia.json'), JSON.stringify(newData));

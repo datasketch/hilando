@@ -173,13 +173,13 @@ export const renderMultimedia = (parentEl, data, type) => {
             ${data.nombre_galeria}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion.toLowerCase()}
+            ${data.descripcion}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                    ${data.municipio} - ${Array.isArray(data.departamento) ? [...new Set(data.departamento)].join(' - ') : data.departamento}
+                    ${data.municipio || ''} - ${(Array.isArray(data.departamento) ? [...new Set(data.departamento)].join(' - ') : data.departamento) || ''}
                 <p class="text-space-cadet">
-                    ${data.comunidad_focalizada}
+                    ${data.comunidad_focalizada || ''}
                 </p>
             </div>
         </div>
