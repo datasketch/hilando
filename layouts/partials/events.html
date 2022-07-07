@@ -1,17 +1,35 @@
 {{ $data := .Site.Data.eventos }}
+{{ $monthNamesEN := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "Octuber"
+"November" "December" }}
+{{ $monthNamesES := slice "Enero" "Febrero" "Marzo" "Abril" "Mayo" "Junio" "Julio" "Agosto" "Septiembre" "Octubre"
+"Noviembre" "Diciembre" }}
+
+{{ $currentMonth := now.Format "January"}}
+{{ $currentMonths := slice }}
+
+{{ range $index, $month := $monthNamesEN }}
+{{ if eq $month $currentMonth }}
+{{ $currentMonths = $currentMonths | append (index $monthNamesES $index )}}
+{{ $currentMonths = $currentMonths | append (index $monthNamesES (add $index 1) )}}
+{{ end }}
+{{ end }}
 <div class="mx-auto w-11/12 lg:w-10/12 relative">
     <!-- Slider main container -->
     <div class="swiper swiper-events events">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
+            {{ range $month := $currentMonths }}
+            {{ $month = lower $month }}
             {{ range $data }}
-            {{ if .foto }}
-                <!-- Slides -->
+            {{ if eq $month (lower .mes) }}
+            <!-- Slides -->
             <div class="swiper-slide">
-                <div class="bg-purple bg-opacity-75 text-white overflow-hidden" style="box-shadow: 0px 11px 11px #28202966;">
+                <div class="bg-purple bg-opacity-75 text-white overflow-hidden"
+                    style="box-shadow: 0px 11px 11px #28202966;">
                     <h3 class="text-xl font-semibold relative p-6 pb-2">
                         <span class="relative z-10">{{ .nombre_evento | truncate 40 }}</span>
-                        <img class="absolute top-4 sm:top-3 left-3" src="/images/public/sticky-title.svg" alt="sticky title">
+                        <img class="absolute top-4 sm:top-3 left-3" src="/images/public/sticky-title.svg"
+                            alt="sticky title">
                     </h3>
                     <div class="flex flex-col xl:flex-row relative">
                         <div class="xl:w-1/2 pb-12 order-2 xl:order-1">
@@ -36,7 +54,8 @@
                                     </p>
                                 </div>
                                 <div class="absolute bottom-0 left-0">
-                                    <button data-id="{{ .id }}" class="cursor-pointer inline-block uppercase py-2 px-6 bg-purple font-bold">Conoce
+                                    <button data-id="{{ .id }}"
+                                        class="cursor-pointer inline-block uppercase py-2 px-6 bg-purple font-bold">Conoce
                                         más</button>
                                 </div>
                             </div>
@@ -45,15 +64,18 @@
                             {{ $evento := .nombre_evento }}
                             {{ with .Params.foto }}
                             {{ range first 1 . }}
-                            <img class="w-full h-full object-cover object-center" style="height: 330px;" src="{{ . }}" alt="{{ $evento }}">
+                            <img class="w-full h-full object-cover object-center" style="height: 330px;" src="{{ . }}"
+                                alt="{{ $evento }}">
                             {{ end }}
                             {{ else }}
-                            <img class="w-full h-full object-cover object-center" style="height: 330px;" src="{{ .thumbnail }}" alt="{{ $evento }}">
+                            <img class="w-full h-full object-cover object-center" style="height: 330px;"
+                                src="{{ .thumbnail }}" alt="{{ $evento }}">
                             {{ end }}
                         </div>
                     </div>
                 </div>
             </div>
+            {{ end }}
             {{ end }}
             {{ end }}
         </div>

@@ -57,6 +57,7 @@ const state = {
     municipio: [],
     mes: [],
     tipo: [],
+    comunidad: [],
     query: '',
   },
   itemsPerPagination: 3,
@@ -70,6 +71,7 @@ function filterData() {
   const hasMunicipioFilter = !!filters.municipio.length;
   const hasMesFilter = !!filters.mes.length;
   const hasTipoFilter = !!filters.tipo.length;
+  const hasComunidadFilter = !!filters.comunidad.length;
   const hasQueryFilter = !!filters.query.length;
   state.filteredData = originalData;
 
@@ -84,6 +86,9 @@ function filterData() {
   }
   if (hasTipoFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item.tipo_evento));
+  }
+  if (hasComunidadFilter) {
+    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad));
   }
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter((item) => item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()));

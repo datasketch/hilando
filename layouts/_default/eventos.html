@@ -5,6 +5,7 @@
 {{ $municipio := slice }}
 {{ $mes := slice }}
 {{ $tipo := slice }}
+{{ $comunidad := slice }}
 
 {{/* GET CATEGORIES */}}
 {{ range $data }}
@@ -19,6 +20,9 @@
 {{ end }}
 {{ if .tipo_evento }}
 {{ $tipo = $tipo | append .tipo_evento }}
+{{ end }}
+{{ if .comunidad }}
+{{ $comunidad = $comunidad | append .comunidad }}
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}
@@ -95,11 +99,11 @@
                         </div>
                         <!-- MES END -->
 
-                        <!-- DEPARTAMENTO -->
+                        <!-- MACROREGION -->
                         <div>
                             <button class="accordion accordion--trasparent" data-tab="2"
                                 style="border: 1px solid #BABBC9;">
-                                Departamento
+                                MacroRegión
                                 <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
                             </button>
                             <div class="panel" style="border: 1px solid #BABBC9;">
@@ -112,7 +116,7 @@
                                 {{ end }}
                             </div>
                         </div>
-                        <!-- DEPARTAMENTO END -->
+                        <!-- MACROREGION END -->
 
                         <!-- MUNICIPIO -->
                         <div>
@@ -132,6 +136,25 @@
                             </div>
                         </div>
                         <!-- MUNICIPIO END -->
+
+                        <!-- COMUNIDAD -->
+                        <div>
+                            <button class="accordion accordion--trasparent" data-tab="4"
+                                style="border: 1px solid #BABBC9;">
+                                Comunidad
+                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                            </button>
+                            <div class="panel" style="border: 1px solid #BABBC9;">
+                                {{ range sort (uniq $comunidad) "value" "asc" }}
+                                <label class="filter-label" for="{{ . }}">
+                                    <span class="text-lg">{{ .  }}</span>
+                                    <input type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}">
+                                    <span class="checkmark checkmark--blue"></span>
+                                </label>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <!-- COMUNIDAD END -->
                     </div>
                 </div>
             </div>

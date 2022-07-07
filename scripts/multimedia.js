@@ -1,6 +1,7 @@
 const {writeFileSync} = require('fs');
 const {join} = require('path');
 const groupBy = require('lodash.groupby');
+const orderBy = require('lodash.orderby');
 
 const eventsData = require('../data/eventos.json');
 const multimediaData = require('../data/multimedia.json');
@@ -39,6 +40,8 @@ const multimediaDataSummarized = multimediaData.map((record, index) => ({
   tipo_multimedia: record.tipo_galeria,
 }));
 
-const newData = [...multimediaDataSummarized, ...eventsDataSummarized];
+const multimediaDataSummarizedDesc = orderBy(multimediaDataSummarized, 'id', 'desc');
+
+const newData = [...multimediaDataSummarizedDesc, ...eventsDataSummarized];
 
 writeFileSync(join(__dirname, '..', 'data', 'eventos_multimedia.json'), JSON.stringify(newData));
