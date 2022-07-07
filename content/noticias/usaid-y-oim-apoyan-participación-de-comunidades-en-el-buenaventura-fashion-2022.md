@@ -1,13 +1,13 @@
 ---
-title: USAID y OIM apoyan participación de comunidades en el Buenaventura Fashion 2022
+title: USAID y OIM APOYAN PARTICIPACIÓN DE COMUNIDADES EN EL BUENAVENTURA FASHION 2022
 date: 2022-06-30T21:09:47.196Z
 image: /images/uploads/whatsapp-image-2022-06-13-at-8.25.02-am.jpeg
 description: >-
-  *•    Con un stand de artesanías y un espacio en la pasarela, comunidades afro
+  •    Con un stand de artesanías y un espacio en la pasarela, comunidades afro
   e indígenas del Pacífico visibilizó su riqueza e impulsaron su empoderamiento
-  económico. \
+  económico.
 
-  •    Desde 2020, el Buenaventura Fashion se ha posicionado como uno de los escenarios culturales y de moda más importantes del Pacífico.*
+  •    Desde 2020, el Buenaventura Fashion se ha posicionado como uno de los escenarios culturales y de moda más importantes del Pacífico.
 cms: true
 ---
 *•    Con un stand de artesanías y un espacio en la pasarela, comunidades afro e indígenas del Pacífico visibilizó su riqueza e impulsaron su empoderamiento económico. \
