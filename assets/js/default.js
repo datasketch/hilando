@@ -56,6 +56,13 @@ btnUp.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
+btnUp.addEventListener('keydown', (e) => {
+  if (e.key!=='Enter') {
+    return;
+  }
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
 subMenuList.forEach((menuList, idx) => menuList.addEventListener('click', function() {
   // open menu list
   subMenu2[idx].classList.toggle('sub-menu-2--active');
