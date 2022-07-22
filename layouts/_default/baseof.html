@@ -14,7 +14,7 @@
     </main>
     {{ partial "footer.html" . }}
     <div class="overlay"></div>
-    <div class="btn-up" tabindex="0">&uparrow;</div>
+    <button class="btn-up">&uparrow;</button>
     {{ block "js" . }}{{ end }}
     {{ $default := resources.Get "js/default.js" | js.Build (dict "minify" hugo.IsProduction) }}
     <script src="{{ $default.Permalink }}"></script>
