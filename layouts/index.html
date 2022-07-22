@@ -5,6 +5,15 @@
     <div class="lg:col-start-1 lg:col-end-13">
         <!-- Slider main container -->
         <div class="relative swiper swiper-banner overflow-x-hidden">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-pagination-banner"></div>
+            <!-- If we need navigation buttons -->
+            <button class="swiper-button-prev" style="left: 109px !important;">
+                <img src="/images/home/arrow-left-home.svg" alt="arrow left">
+            </button>
+            <button class="swiper-button-next" style="right: 109px !important;">
+                <img src="/images/home/arrow-right-home.svg" alt="arrow right">
+            </button>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -38,16 +47,6 @@
                     </div>
                     <!-- BANNER HOME PAGE END -->
                 </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination swiper-pagination-banner"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev" style="left: 109px !important;">
-                <img src="/images/home/arrow-left-home.svg" alt="arrow left">
-            </div>
-            <div class="swiper-button-next" style="right: 109px !important;">
-                <img src="/images/home/arrow-right-home.svg" alt="arrow right">
             </div>
         </div>
     </div>
@@ -263,6 +262,15 @@
                 <span class="px-1" style="background-color: #9EB290;">Noticias</span> destacadas
             </h2>
             <div class="mb-12 lg:mb-16 xl:mb-20 relative">
+                <div class="z-20">
+                    <!-- If we need navigation buttons -->
+                    <button class="swiper-button-prev swiper-button-prev-news">
+                        <img src="/images/public/left-arrow-green.svg" alt="left arrow">
+                    </button>
+                    <button class="swiper-button-next swiper-button-next-news">
+                        <img src="/images/public/right-arrow-green.svg" alt="right arrow">
+                    </button>
+                </div>
                 <!-- Slider main container -->
                 <div class="swiper swiper-news">
                     <!-- Additional required wrapper -->
@@ -289,15 +297,6 @@
                         </div>
                         {{ end }}
                         {{ end }}
-                    </div>
-                </div>
-                <div class="z-20">
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev swiper-button-prev-news">
-                        <img src="/images/public/left-arrow-green.svg" alt="left arrow">
-                    </div>
-                    <div class="swiper-button-next swiper-button-next-news">
-                        <img src="/images/public/right-arrow-green.svg" alt="right arrow">
                     </div>
                 </div>
             </div>
