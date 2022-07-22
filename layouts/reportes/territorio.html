@@ -41,7 +41,7 @@
             </div>
             <div class="w-2/5">
                 <div class="aspect-w-3 aspect-h-2 border border-white">
-                    <iframe src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0" title="Grafica comunidades focalizadas"></iframe>
+                    <iframe src="{{ .Params.grafica_comunidades_focalizadas }}" frameborder="0" title="Gráfica comunidades focalizadas"></iframe>
                 </div>
                 <p class="text-center text-xxs italic mt-2">{{ .Params.region }}</p>
             </div>
@@ -87,10 +87,10 @@
                     <tbody>
                         <tr>
                             <td class="border border-space-cadet">
-                                <iframe src="{{ .Params.grafica_poblacion_genero }}" frameborder="0" class="h-64 w-full" title="Grafica de poblacion por genero" ></iframe>
+                                <iframe src="{{ .Params.grafica_poblacion_genero }}" frameborder="0" class="h-64 w-full" title="Gráfica de población por genero" ></iframe>
                             </td>
                             <td class="border border-space-cadet">
-                                <iframe src="{{ .Params.grafica_area_geografica_genero }}" frameborder="0" class="h-64 w-full" title="Grafica area geografica genero" ></iframe>
+                                <iframe src="{{ .Params.grafica_area_geografica_genero }}" frameborder="0" class="h-64 w-full" title="Gráfica area geográfica genero" ></iframe>
                             </td>
                         </tr>
                         {{ $comunidades_etnicas := slice }}
@@ -123,7 +123,7 @@
                                         </ul>
                                     </div>
                                     <div class="w-1/2">
-                                        <iframe src="{{ .Params.grafica_pertenencia_etnica }}" frameborder="0" class="h-64 w-full" title="Grafica de pertenencia etnica"></iframe> 
+                                        <iframe src="{{ .Params.grafica_pertenencia_etnica }}" frameborder="0" class="h-64 w-full" title="Gráfica de pertenencia étnica"></iframe> 
                                     </div>
                                 </div>
                             </td>
@@ -167,7 +167,7 @@
                 </div>
                 {{ with .Params.grafica_conflicto_identidad }}
                     <div class="aspect-w-4 aspect-h-3 border border-space-cadet mt-5">
-                        <iframe src="{{ . }}" frameborder="0" title="Grafica de conflicto de identidad"></iframe>
+                        <iframe src="{{ . }}" frameborder="0" title="Gráfica de conflicto de identidad"></iframe>
                     </div>
                 {{ end }}
             </div>
@@ -242,16 +242,16 @@
             </p>
             <div class="grid grid-cols-2 gap-10 mt-10">
                 <div>
-                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_sexual }}" frameborder="0" title="Grafiac de violencia sexual"></iframe>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_sexual }}" frameborder="0" title="Gráfica de violencia sexual"></iframe>
                 </div>
                 <div>
-                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_fisica }}" frameborder="0" title="Grafiac de violencia física"></iframe>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_fisica }}" frameborder="0" title="Gráfica de violencia física"></iframe>
                 </div>
                 <div>
-                    <iframe class="w-full h-80" src="{{ .Params.grafica_negligencia_abandono }}" frameborder="0" title="Grafiac de negligencia y abandono"></iframe>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_negligencia_abandono }}" frameborder="0" title="Gráfica de negligencia y abandono"></iframe>
                 </div>
                 <div>
-                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_psicologica }}" frameborder="0" title="Grafiac de violencia psicológica"></iframe>
+                    <iframe class="w-full h-80" src="{{ .Params.grafica_violencia_psicologica }}" frameborder="0" title="Gráfica de violencia psicológica"></iframe>
                 </div>
             </div>
         </div>

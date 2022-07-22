@@ -17,7 +17,7 @@
                     </p>
                     <div class="border border-white mb-4">
                         {{ with .Params.grafica_ubicacion_geografica }}
-                        <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Grafica de ubicacion geografica"></iframe>
+                        <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Gráfica de ubicación geográfica"></iframe>
                         {{ else }}
                         <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg" alt="pradera map">
                         {{ end }}
@@ -93,14 +93,14 @@
             </div>
             <div class="mx-auto">
                 {{ with .Params.grafica_poblacion_genero }}
-                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Grafica de la distribucion por genero"></iframe>
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Gráfica de la distribución por género"></iframe>
                 {{ else }}
                 <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
                 {{ end }}
             </div>
             <div class="mx-auto">
                 {{ with .Params.grafica_area_geografica_genero }}
-                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Grafica de Mujeres y hombres por area geografica"></iframe>
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Gráfica de mujeres y hombres por area geográfica"></iframe>
                 {{ else }}
                 <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
                 {{ end }}
@@ -159,7 +159,7 @@
                     Población étnica
                 </h4>
                 {{ with .Params.grafica_pertenencia_etnica }}
-                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Grafica de la cantidad de personas por tipo de pertenencia étnica"></iframe>
+                <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0" title="Gráfica de la cantidad de personas por tipo de pertenencia étnica"></iframe>
                 {{ else }}
                 <img class="mx-auto" src="/images/territorios/graphic.svg" alt="graphic">
                 {{ end }}
@@ -178,7 +178,7 @@
                             .Params.total_poblacion_victima }}</span>
                     </h4>
                     {{ with .Params.grafica_conflicto_identidad }}
-                    <iframe class="w-full h-96" src="{{ . }}" frameborder="0" title="Grafica de las victimas de conflicto armado según su sexo u orientación sexual e identidad de género"></iframe>
+                    <iframe class="w-full h-96" src="{{ . }}" frameborder="0" title="Gráfica de las víctimas de conflicto armado según su sexo u orientación sexual e identidad de género"></iframe>
                     {{ else }}
                     <img src="/images/territorios/chart.svg" alt="chart">
                     {{ end }}
@@ -275,7 +275,7 @@
                     <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia sexual</h4>
                     {{ with .Params.grafica_violencia_sexual }}
-                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Grafica de violencia sexual"></iframe>
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Gráfica de violencia sexual"></iframe>
                     {{ else }}
                     <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
                     {{ end }}
@@ -284,7 +284,7 @@
                     <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia física</h4>
                     {{ with .Params.grafica_violencia_fisica }}
-                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Grafica de Violencia física"></iframe>
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Gráfica de Violencia física"></iframe>
                     {{ else }}
                     <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
                     {{ end }}
@@ -293,7 +293,7 @@
                     <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Negligencia y abandono</h4>
                     {{ with .Params.grafica_negligencia_abandono }}
-                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Grafica de negligencia y abandono"></iframe>
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Gráfica de negligencia y abandono"></iframe>
                     {{ else }}
                     <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
                     {{ end }}
@@ -302,7 +302,7 @@
                     <h4 class="text-white text-lg lg:text-xl xl:text-2xl font-black text-center mb-10 lg:mb-12 xl:mb-16">
                         Violencia psicológica</h4>
                     {{ with .Params.grafica_violencia_psicologica }}
-                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Grafica de violencia psicológica"></iframe>
+                    <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0" title="Gráfica de violencia psicológica"></iframe>
                     {{ else }}
                     <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
                     {{ end }}
@@ -612,7 +612,8 @@
                     </div>
                 </details>
             </div>
-            <iframe class="mx-auto w-11/12 h-screen" src="{{ .Params.app }}" frameborder="0"></iframe>
+            Luis
+            <iframe class="mx-auto w-11/12 h-screen" src="{{ .Params.app }}" frameborder="0" title="Aplicación"></iframe>
         </div>
     </div>
     {{ end }}
