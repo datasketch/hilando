@@ -89,7 +89,7 @@ export default class Modal {
                     <div class="event__modal--space-y-5">
                         <div class="event__modal--space-y-2">
                             <div class="event__modal--flex-justify">
-                                <div class="event__modal--flex-center event__modal--space-x-3">
+                                <div class="event__modal--flex-center event__modal--space-x-3 ${this.data.comunidad || this.data.comunidad_focalizada ? '' : 'hidden'}">
                                     <img src="/images/eventos/icon-location.svg" alt="location icon">
                                     <p class="event__modal-paragraph">
                                         ${this.data.comunidad || this.data.comunidad_focalizada}, ${this.data.municipio}
@@ -156,10 +156,10 @@ export default class Modal {
                     <div class="event__modal--space-y-5">
                         <div class="event__modal--space-y-2">
                             <div class="event__modal--flex-justify">
-                                <div class="event__modal--flex-center event__modal--space-x-3">
+                                <div class="event__modal--flex-center event__modal--space-x-3 ${this.data.departamento ? '' : 'hidden'}">
                                     <img src="/images/eventos/icon-location.svg" alt="location icon">
                                     <p class="event__modal-paragraph">
-                                        ${this.data.departamento || 'empty'}, ${this.data.municipio || 'empty'}
+                                        ${this.data.departamento || ''}, ${this.data.municipio || ''}
                                     </p>
                                 </div>
                             </div>
@@ -208,13 +208,13 @@ export default class Modal {
             <div class="video__right">
                 <div class="video--space-y-8">
                     <div>
-                        <div class="video--flex video--items-center video--space-x">
+                        <div class="video--flex video--items-center video--space-x ${this.data.comunidad_focalizada ? '' : 'hidden'}">
                             <div>
                                 <img src="/images/eventos/icon-location.svg" alt="location icon" />
                             </div>
                             <div>
                                 <p class="video--text-purple video--italic">
-                                    ${this.data.comunidad_focalizada || 'empty'}, ${this.data.municipio || 'empty'}
+                                    ${this.data.comunidad_focalizada}, ${this.data.municipio}
                                 </p>
                             </div>
                         </div>
@@ -257,7 +257,7 @@ export default class Modal {
               <div class="video__right">
                   <div class="video--space-y-8">
                       <div>
-                          <div class="video--flex video--items-center video--space-x">
+                          <div class="video--flex video--items-center video--space-x ${this.data.comunidad ? '' : 'hidden'}">
                               <div>
                                   <img src="/images/eventos/icon-location.svg" alt="location icon" />
                               </div>

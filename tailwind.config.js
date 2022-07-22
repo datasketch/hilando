@@ -112,6 +112,7 @@ module.exports = {
         'col-end-3',
         'invisible',
         'visible',
+        'hidden',
       ],
     },
   },
