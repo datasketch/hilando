@@ -72,7 +72,7 @@ export default class Modal {
                 <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}" style="max-width: 71px;">
                     <!-- Slider main container -->
                     <button class="swiper-button-prev-events">
-                        <img src="/images/public/right-arrow.svg" alt="arrow" />
+                        <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                     </button>
                     <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
                         <!-- Additional required wrapper -->
@@ -82,7 +82,7 @@ export default class Modal {
                         </div>
                     </div>
                     <button class="swiper-button-next-events">
-                        <img src="/images/public/right-arrow.svg" alt="arrow" />
+                        <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                     </button>
                 </div>
                 <div class="event__modal-right" style="max-width: 622px;">
@@ -139,7 +139,7 @@ export default class Modal {
                 <div class="event__modal-left ${!!this.data.foto.length ? 'visible' : 'invisible'}" style="max-width: 71px;">
                     <!-- Slider main container -->
                     <button class="swiper-button-prev-events">
-                    <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                     </button>
                     <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
                         <!-- Additional required wrapper -->
@@ -149,7 +149,7 @@ export default class Modal {
                         </div>
                     </div>
                     <button class="swiper-button-next-events">
-                    <img src="/images/public/right-arrow.svg" alt="arrow" />
+                    <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                     </button>
                 </div>
                 <div class="event__modal-right" style="max-width: 622px;">

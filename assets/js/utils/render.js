@@ -73,7 +73,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             <span class="event__nombre">
             ${data.nombre_evento}
             </span>
-            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="nombre evento">
+            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${data.nombre_evento}">
         </h3>
         <div class="text-purple">
             <p class="font-bold text-xl xl:text-2xl">
@@ -92,7 +92,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
         <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
     </div>
     <div class="event__container-right">
-        <img class="event__image" src="${data.thumbnail}" alt="prueba" style="height: 365px;">
+        <img class="event__image" src="${data.thumbnail}" alt="imagen de evento" style="height: 365px;">
     </div>
   </div>
     `;
