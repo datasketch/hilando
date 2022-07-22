@@ -1,7 +1,7 @@
 <header class="header">
     <div class="mx-auto">
         <div class="flex justify-between items-center">
-            <a href="{{ relref . " /" }}">
+            <a href="{{ relref . " /" }}" aria-label="Página de inicio">
                 <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
             </a>
             <nav class="tk-mr-eaves-sans text-white font-bold self-end">
@@ -11,15 +11,19 @@
                     {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
                     <div class="menu relative">
-                        <li class="mr-20">
-                            {{ if (eq .Title "Territorios") }}
-                            <a class="uppercase border-b-2 border-transparent pb-1 duration-300" href="{{ .URL }}">{{
-                                .Title }}</a>
-                            {{ else }}
-                            <span class="cursor-pointer uppercase border-b-2 border-transparent pb-1 duration-300">{{
-                                .Title }}</span>
-                            {{ end }}
-                        </li>
+                        <ul>
+                            <li class="mr-20">
+                                {{ if (eq .Title "Territorios") }}
+                                <a class="uppercase border-b-2 border-transparent pb-1 duration-300"
+                                    href="{{ .URL }}">{{
+                                    .Title }}</a>
+                                {{ else }}
+                                <a class="uppercase border-b-2 border-transparent pb-1 duration-300"
+                                    href="#">{{
+                                    .Title }}</a>
+                                {{ end }}
+                            </li>
+                        </ul>
                         <ul class="sub-menu transform -left-12 w-48">
                             {{ if eq .Page.Section "territorios" }}
                             {{ range $.Site.Menus.region }}
@@ -83,7 +87,9 @@
                     {{ else }}
                     {{ if eq .Title "Galería" }}
                     <details class="flex flex-col justify-center space-y-8">
-                        <summary class="inline-block uppercase text-xl border-b-2 pb-1 border-transparent cursor-pointer duration-300">{{ .Title }}</summary>
+                        <summary
+                            class="inline-block uppercase text-xl border-b-2 pb-1 border-transparent cursor-pointer duration-300">
+                            {{ .Title }}</summary>
                         <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
                             href="/galeria/multimedia">
                             Multimedia
@@ -92,7 +98,7 @@
                             href="/galeria/publicaciones">
                             Publicaciones
                         </a>
-                      </details>
+                    </details>
                     {{ else }}
                     <li>
                         <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
