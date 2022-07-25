@@ -51,6 +51,11 @@
     z-index: 50;
     transition: all .3s;
 }
+@media only screen and (min-width: 1024px) {
+    .nav {
+        display: none;
+    }
+}
 .nav--active {
     left: 0;
 }
