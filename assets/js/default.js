@@ -56,8 +56,9 @@ btnUp.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
-subMenuList.forEach((menuList, idx) => menuList.addEventListener('click', function() {
-  // open menu list
-  subMenu2[idx].classList.toggle('sub-menu-2--active');
-  subMenuIcon[idx].classList.toggle('sub-menu-icon--active');
-}));
+subMenuList.forEach((menuList, idx) => {
+  menuList.addEventListener('click', function() {
+    subMenu2[idx].classList.toggle('sub-menu-2--active');
+    subMenuIcon[idx].classList.toggle('sub-menu-icon--active');
+  });
+});

@@ -1,121 +1,116 @@
 <header class="header">
-    <div class="mx-auto">
-        <div class="flex justify-between items-center">
-            <a href="{{ relref . " /" }}" aria-label="Página de inicio">
-                <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
-            </a>
-            <nav class="tk-mr-eaves-sans text-white font-bold self-end">
-                {{ $currentPage := . }}
-                <!-- NAV DESKTOP -->
-                <ul class="hidden lg:flex items-center">
-                    {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                    <div class="menu relative">
-                        <ul>
-                            <li class="mr-20">
-                                {{ if (eq .Title "Territorios") }}
-                                <a class="uppercase border-b-2 border-transparent pb-1 duration-300"
-                                    href="{{ .URL }}">{{
-                                    .Title }}</a>
-                                {{ else }}
-                                <a class="uppercase border-b-2 border-transparent pb-1 duration-300"
-                                    href="#">{{
-                                    .Title }}</a>
-                                {{ end }}
-                            </li>
-                        </ul>
-                        <ul class="sub-menu transform -left-12 w-48">
-                            {{ if eq .Page.Section "territorios" }}
-                            {{ range $.Site.Menus.region }}
-                            <li class="py-4 px-4 border-t border-white sub-menu-list">
-                                <div class="flex justify-between items-center">
-                                    <p class="text-base">{{ .Name }}</p>
-                                    <img class="w-2 h-2 duration-300 sub-menu-icon" src="/images/public/arrow-menu.svg"
-                                        alt="arrow menu">
-                                </div>
-                                {{ if .HasChildren }}
-                                <ul class="sub-menu-2 border-t border-white mt-2 pt-2">
-                                    {{ range .Children }}
-                                    <li>
-                                        <a class="text-base" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                                    </li>
-                                    {{ end }}
-                                </ul>
-                                {{ end }}
-                            </li>
-                            {{ end }}
-                            {{ else }}
-                            {{ range .Children }}
-                            <li>
-                                <a href="{{ .URL }}" class="block text-base py-4 px-4 border-t border-white">{{ .Name
-                                    }}</a>
-                            </li>
-                            {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                    {{ else }}
-                    {{ $menu_item_url := .URL | relLangURL }}
-                    {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
-                    {{ if eq $menu_item_url $page_url }}
-                    <li class="mr-20">
-                        <a class="uppercase border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title
-                            }}</a>
-                    </li>
-                    {{ else }}
-                    <li class="mr-20">
-                        <a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300"
-                            href="{{ .URL }}">{{ .Title }}</a>
+  <div class="mx-auto">
+    <div class="flex justify-between items-center">
+      <a href="{{ relref . " /" }}" aria-label="Página de inicio">
+        <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
+      </a>
+      <nav class="tk-mr-eaves-sans text-white font-bold self-end">
+        {{ $currentPage := . }}
+        <!-- NAV DESKTOP -->
+        <ul class="hidden lg:flex items-center">
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+            <li class="mr-20 menu relative">
+              {{ if (eq .Title "Territorios") }}
+                <a class="uppercase border-b-2 border-transparent pb-1 duration-300" href="{{ .URL }}">
+                  {{ .Title }}
+                </a>
+              {{ else }}
+                <a class="uppercase border-b-2 border-transparent pb-1 duration-300" href="#">
+                  {{ .Title }}
+                </a>
+              {{ end }}
+              <ul class="sub-menu transform -left-12 w-48">
+                {{ if eq .Page.Section "territorios" }}
+                {{ range $.Site.Menus.region }}
+                <li class="py-4 px-4 border-t border-white sub-menu-list">
+                  <button class="flex justify-between items-center text-left font-bold" aria-label="{{ .Name }}">
+                    <p class="text-base">{{ .Name }}</p>
+                    <img class="w-2 h-2 duration-300 sub-menu-icon" src="/images/public/arrow-menu.svg" alt="arrow menu">
+                  </button>
+                  {{ if .HasChildren }}
+                  <ul class="sub-menu-2 border-t border-white mt-2 pt-2">
+                    {{ range .Children }}
+                    <li>
+                      <a class="text-base" href="{{ .URL | absURL }}">{{ .Name }}</a>
                     </li>
                     {{ end }}
-                    {{ end }}
-                    {{ end }}
-                </ul>
-                <!-- NAV DESKTOP END -->
+                  </ul>
+                  {{ end }}
+                </li>
+                {{ end }}
+                {{ else }}
+                {{ range .Children }}
+                <li>
+                  <a href="{{ .URL }}" class="block text-base py-4 px-4 border-t border-white">{{ .Name
+                    }}</a>
+                </li>
+                {{ end }}
+                {{ end }}
+              </ul>
+            </li>
+          {{ else }}
+          {{ $menu_item_url := .URL | relLangURL }}
+          {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+          {{ if eq $menu_item_url $page_url }}
+          <li class="mr-20">
+            <a class="uppercase border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title
+              }}</a>
+          </li>
+          {{ else }}
+          <li class="mr-20">
+            <a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300" href="{{ .URL }}">{{
+              .Title }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <!-- NAV DESKTOP END -->
 
-                <!-- NAV MOBILE -->
-                <ul class="nav">
-                    {{ range .Site.Menus.main }}
-                    {{ $menu_item_url := .URL | relLangURL }}
-                    {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
-                    {{ if eq $menu_item_url $page_url }}
-                    <li>
-                        <a class="uppercase text-xl border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">
-                            {{.Title}}
-                        </a>
-                    </li>
-                    {{ else }}
-                    {{ if eq .Title "Galería" }}
-                    <details class="flex flex-col justify-center space-y-8">
-                        <summary
-                            class="inline-block uppercase text-xl border-b-2 pb-1 border-transparent cursor-pointer duration-300">
-                            {{ .Title }}</summary>
-                        <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
-                            href="/galeria/multimedia">
-                            Multimedia
-                        </a>
-                        <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
-                            href="/galeria/publicaciones">
-                            Publicaciones
-                        </a>
-                    </details>
-                    {{ else }}
-                    <li>
-                        <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
-                            href="{{ .URL }}">{{ .Title }}
-                        </a>
-                    </li>
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-                </ul>
-                <!-- NAV MOBILE END -->
-            </nav>
-            <!-- MENU BUTTON -->
-            <div class="menu-button py-4">
-                <span class="menu-icon" id="menu-icon"></span>
-            </div>
-            <!-- MENU BUTTON END -->
-        </div>
+        <!-- NAV MOBILE -->
+        <ul class="nav">
+          {{ range .Site.Menus.main }}
+          {{ $menu_item_url := .URL | relLangURL }}
+          {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+          {{ if eq $menu_item_url $page_url }}
+          <li>
+            <a class="uppercase text-xl border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">
+              {{.Title}}
+            </a>
+          </li>
+          {{ else }}
+          {{ if eq .Title "Galería" }}
+          <details class="flex flex-col justify-center space-y-8">
+            <summary
+              class="inline-block uppercase text-xl border-b-2 pb-1 border-transparent cursor-pointer duration-300">
+              {{ .Title }}</summary>
+            <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
+              href="/galeria/multimedia">
+              Multimedia
+            </a>
+            <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
+              href="/galeria/publicaciones">
+              Publicaciones
+            </a>
+          </details>
+          {{ else }}
+          <li>
+            <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
+              href="{{ .URL }}">{{ .Title }}
+            </a>
+          </li>
+          {{ end }}
+          {{ end }}
+          {{ end }}
+        </ul>
+        <!-- NAV MOBILE END -->
+      </nav>
+      <!-- MENU BUTTON -->
+      <div class="menu-button py-4">
+        <span class="menu-icon" id="menu-icon"></span>
+      </div>
+      <!-- MENU BUTTON END -->
     </div>
+  </div>
 </header>
