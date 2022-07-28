@@ -1,9 +1,12 @@
-const {writeFileSync} = require('fs');
+const {writeFileSync, readdirSync, unlinkSync} = require('fs');
 const {join} = require('path');
 const yaml = require('js-yaml');
 const slugify = require('slugify');
+const {difference} = require('lodash');
 
 const trrs = require('../data/territorios.json');
+
+const filenames = ['_index.md', 'bajo-cauca-y-nordeste-antioqueno', 'montes-de-maria', 'pacifico-medio'];
 
 function createPath(folder, name) {
   return join(__dirname, `../content/${folder}/${name}.md`);
@@ -21,6 +24,8 @@ function normalize(str) {
 trrs.forEach((trr) => {
   const filename = normalize(trr.municipio);
   const total = trr.hombres_victimas_conflicto + trr.intersexuales_victimas_conflicto + trr.lgbt_victimas_conflicto + trr.mujeres_victimas_conflicto + trr.no_informa_victimas_conflicto;
+
+  filenames.push(`${filename}.md`);
 
   const communities = (trr.comunidad_focalizada?.split(',') || []).map((commnunity) => {
     const slug = normalize(slugify(commnunity, {
@@ -98,4 +103,13 @@ trrs.forEach((trr) => {
   fields.layout = 'territorio';
   metadata = yaml.dump(fields);
   writeFileSync(createPath('reportes', filename), `---\n${metadata}\n---`);
+});
+
+const filesInFolder = readdirSync(join(__dirname, `../content/territorios/`));
+const filesToDelete = difference(filesInFolder, filenames);
+
+filesToDelete.forEach((filename) => {
+  const target = filename.replace('.md', '');
+  unlinkSync(createPath('territorios', target));
+  unlinkSync(createPath('reportes', target));
 });

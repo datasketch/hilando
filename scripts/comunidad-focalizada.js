@@ -1,7 +1,8 @@
-const {writeFileSync} = require('fs');
+const {writeFileSync, readdirSync, unlinkSync} = require('fs');
 const {join} = require('path');
 const yaml = require('js-yaml');
 const slugify = require('slugify');
+const {difference} = require('lodash');
 
 const data = require('../data/comunidades-focalizadas.json');
 
@@ -14,12 +15,16 @@ function splitList(input) {
   return input.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
 }
 
+const filenames = ['_index.md'];
+
 data.forEach((item) => {
   const filename = slugify(item.nombre_comunidad, {
     lower: true,
     replacement: '-',
     remove: /[:,]/g,
   }).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  filenames.push(`${filename}.md`);
 
   const fields = {
     title: item.nombre_comunidad,
@@ -70,4 +75,13 @@ data.forEach((item) => {
   fields.layout = 'comunidad';
   metadata = yaml.dump(fields);
   writeFileSync(createPath('reportes', filename), `---\n${metadata}\n---`);
+});
+
+const filesInFolder = readdirSync(join(__dirname, `../content/comunidad-focalizada/`));
+const filesToDelete = difference(filesInFolder, filenames);
+
+filesToDelete.forEach((filename) => {
+  const target = filename.replace('.md', '');
+  unlinkSync(createPath('comunidad-focalizada', target));
+  unlinkSync(createPath('reportes', target));
 });
