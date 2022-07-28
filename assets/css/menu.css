@@ -37,7 +37,7 @@
 
 .nav {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
@@ -48,7 +48,7 @@
     height: 100vh;
     padding: 64px;
     padding-bottom: 32px;
-    z-index: 50;
+    z-index: 40;
     transition: all .3s;
 }
 @media only screen and (min-width: 1024px) {
@@ -57,10 +57,11 @@
     }
 }
 .nav--active {
+    display: flex;
     left: 0;
 }
 .menu-button {
-    position: relative;
+    // position: relative;
     cursor: pointer;
     z-index: 50;
 }

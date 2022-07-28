@@ -1,9 +1,16 @@
 <header class="header">
   <div class="mx-auto">
     <div class="flex justify-between items-center">
-      <a href="{{ relref . " /" }}" aria-label="Página de inicio">
-        <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
-      </a>
+      <div class="flex-1 lg:w-auto">
+        <a class="inline-block" href="{{ relref . " /" }}" aria-label="Página de inicio">
+          <img src="/images/public/logo-hilando.svg" alt="Logo Hilando Vidas">
+        </a>
+      </div>
+      <!-- MENU BUTTON -->
+      <button tabindex="0" class="menu-button py-4" aria-label="Abrir menú">
+        <span class="menu-icon" id="menu-icon"></span>
+      </button>
+      <!-- MENU BUTTON END -->
       <nav class="tk-mr-eaves-sans text-white font-bold self-end">
         {{ $currentPage := . }}
         <!-- NAV DESKTOP -->
@@ -106,11 +113,6 @@
         </ul>
         <!-- NAV MOBILE END -->
       </nav>
-      <!-- MENU BUTTON -->
-      <div class="menu-button py-4">
-        <span class="menu-icon" id="menu-icon"></span>
-      </div>
-      <!-- MENU BUTTON END -->
     </div>
   </div>
 </header>
