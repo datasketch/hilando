@@ -117,11 +117,13 @@ filters.addEventListener('click', function(e) {
     panels[id].style.padding = '0px 24px 0px 24px';
     panels[id].style.overflowY = 'hidden';
     images[id].style.transform = 'rotate(0deg)';
+    panels[id].querySelectorAll('input').forEach((input) => input.setAttribute('disabled', 'true'));
   } else {
     panels[id].style.maxHeight = 193 + 'px';
     panels[id].style.padding = '16px 24px 8px 24px';
     panels[id].style.overflowY = 'scroll';
     images[id].style.transform = 'rotate(90deg)';
+    panels[id].querySelectorAll('input').forEach((input) => input.removeAttribute('disabled'));
   }
 });
 

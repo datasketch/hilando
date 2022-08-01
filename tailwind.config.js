@@ -170,9 +170,12 @@ module.exports = {
   variants: {
     extend: {
       borderWidth: ['last'],
+      backgroundOpacity: ['checked'],
+      backgroundColor: ['checked'],
     },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
   ],
 };

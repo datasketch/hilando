@@ -28,207 +28,211 @@
 {{/* GET CATEGORIES END */}}
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
-    <!-- BANNER EVENTS -->
-    <div
-        class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
-        <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
-            Eventos
-        </h1>
-    </div>
-    <!-- BANNER EVENTS END -->
+  <!-- BANNER EVENTS -->
+  <div
+    class="bg-banner-eventos bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
+    <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
+      Eventos
+    </h1>
+  </div>
+  <!-- BANNER EVENTS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20"
-        style="background-color: #FAFAFA;">
-        <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
-            Próximamente
-        </h2>
-        {{ partial "partials/events.html" . }}
-    </div>
+  <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20"
+    style="background-color: #FAFAFA;">
+    <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
+      Próximamente
+    </h2>
+    {{ partial "partials/events.html" . }}
+  </div>
 
-    <div class="lg:col-start-1 lg:col-end-13 pb-12" style="background-color: #FAFAFA;" id="paginationScroll">
-        <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
-            <div class="lg:col-start-1 lg:col-end-4">
-                <div class="space-y-9">
-                    <div class="relative">
-                        <input id="search"
-                            class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border"
-                            type="text" placeholder="Buscar">
-                        <img class="absolute right-3 top-1/2 transform -translate-y-1/2" src="/images/public/search-icon.svg" alt="search icon">
-                    </div>
-                    <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
-                        Filtros
-                    </h3>
-                    <!-- PARENT ELEMENT FILTERS -->
-                    <div class="filters space-y-8">
-                        <!-- TIPO EVENTO -->
-                        <div>
-                            <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
-                                Tipo de Evento
-                                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
-                                    alt="arrow right">
-                            </button>
-                            <div class="panel" style="border: 1px solid #BABBC9;">
-                                {{ range sort (uniq $tipo) "value" "asc" }}
-                                <label class="filter-label" for="{{ . }}">
-                                    <span class="text-lg">{{ . }}</span>
-                                    <input type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}">
-                                    <span class="checkmark checkmark--purple"></span>
-                                </label>
-                                {{ end }}
-                            </div>
-                        </div>
-                        <!-- TIPO EVENTO END -->
-
-
-                        <!-- MES -->
-                        <div>
-                            <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
-                                Mes
-                                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg"
-                                    alt="arrow right">
-                            </button>
-                            <div class="panel" style="border: 1px solid #BABBC9;">
-                                {{ range sort (uniq $mes) "value" "asc" }}
-                                <label class="filter-label" for="{{ . }}">
-                                    <span class="text-lg">{{ . }}</span>
-                                    <input type="checkbox" name="mes" id="{{ . }}" value="{{ . }}">
-                                    <span class="checkmark checkmark--purple"></span>
-                                </label>
-                                {{ end }}
-                            </div>
-                        </div>
-                        <!-- MES END -->
-
-                        <!-- MACROREGION -->
-                        <div>
-                            <button class="accordion accordion--trasparent" data-tab="2"
-                                style="border: 1px solid #BABBC9;">
-                                MacroRegión
-                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                            </button>
-                            <div class="panel" style="border: 1px solid #BABBC9;">
-                                {{ range sort (uniq $departamento) "value" "asc" }}
-                                <label class="filter-label" for="{{ . }}">
-                                    <span class="text-lg">{{ . }}</span>
-                                    <input type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}">
-                                    <span class="checkmark checkmark--blue"></span>
-                                </label>
-                                {{ end }}
-                            </div>
-                        </div>
-                        <!-- MACROREGION END -->
-
-                        <!-- MUNICIPIO -->
-                        <div>
-                            <button class="accordion accordion--trasparent" data-tab="3"
-                                style="border: 1px solid #BABBC9;">
-                                Municipio
-                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                            </button>
-                            <div class="panel" style="border: 1px solid #BABBC9;">
-                                {{ range sort (uniq $municipio) "value" "asc" }}
-                                <label class="filter-label" for="{{ . }}">
-                                    <span class="text-lg">{{ .  }}</span>
-                                    <input type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}">
-                                    <span class="checkmark checkmark--blue"></span>
-                                </label>
-                                {{ end }}
-                            </div>
-                        </div>
-                        <!-- MUNICIPIO END -->
-
-                        <!-- COMUNIDAD -->
-                        <div>
-                            <button class="accordion accordion--trasparent" data-tab="4"
-                                style="border: 1px solid #BABBC9;">
-                                Comunidad
-                                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
-                            </button>
-                            <div class="panel" style="border: 1px solid #BABBC9;">
-                                {{ range sort (uniq $comunidad) "value" "asc" }}
-                                <label class="filter-label" for="{{ . }}">
-                                    <span class="text-lg">{{ .  }}</span>
-                                    <input type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}">
-                                    <span class="checkmark checkmark--blue"></span>
-                                </label>
-                                {{ end }}
-                            </div>
-                        </div>
-                        <!-- COMUNIDAD END -->
-                    </div>
-                </div>
+  <div class="lg:col-start-1 lg:col-end-13 pb-12" style="background-color: #FAFAFA;" id="paginationScroll">
+    <div class="mx-auto w-11/12 lg:w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-x-14 gap-y-12">
+      <div class="lg:col-start-1 lg:col-end-4">
+        <div class="space-y-9">
+          <div class="relative">
+            <input id="search" class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border"
+              type="text" placeholder="Buscar">
+            <img class="absolute right-3 top-1/2 transform -translate-y-1/2" src="/images/public/search-icon.svg"
+              alt="search icon">
+          </div>
+          <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black" style="color: #3A3C6A;">
+            Filtros
+          </h3>
+          <!-- PARENT ELEMENT FILTERS -->
+          <div class="filters space-y-8">
+            <!-- TIPO EVENTO -->
+            <div>
+              <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
+                Tipo de Evento
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $tipo) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--purple"></span> -->
+                </label>
+                {{ end }}
+              </div>
             </div>
-            <div class="lg:col-start-4 lg:col-end-13">
-                <div class="event"></div>
-                <div class="pagination text-center mt-10 lg:mt-20"></div>
-            </div>
-        </div>
-    </div>
-    <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
+            <!-- TIPO EVENTO END -->
 
-    {{/* <div class="modal modal--active modal--events">
-        <div class="modal__button-close">
-            X
-        </div>
-        <div class="bg-white-2 py-6 pr-14 pl-16">
-            <div class="flex items-center justify-between">
-                <div class="hidden lg:block w-full bg-red-200 self-stretch" style="max-width: 71px;">
-                    &nbsp;
-                </div>
-                <div class="w-full" style="max-width: 622px;">
-                    <div class="space-y-5">
-                        <div class="space-y-2 lg:space-y-0">
-                            <div class="flex justify-between items-center">
-                                <div class="flex items-center space-x-3">
-                                    <img src="/images/eventos/icon-location.svg" alt="location icon">
-                                    <p class="text-purple font-medium italic">
-                                        La Piche, Toluviejo
-                                    </p>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <img src="/images/eventos/calendar.svg" alt="calendar icon">
-                                    <p class="text-purple font-medium italic">
-                                        Marzo
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="flex flex-col lg:flex-row justify-between items-center">
-                                <div>
-                                    <h3 class="text-center lg:flex-row text-xl xl:text-2xl font-bold">
-                                        Taller de inspiración SOLE + WLH
-                                    </h3>
-                                </div>
-                                <div>
-                                    <p class="font-medium italic">
-                                        <span class="text-purple ">
-                                            Tipo de evento:
-                                        </span>
-                                        Formación
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <img class="w-full h-full object-center object-cover"
-                                style="max-width: 622px; max-height: 436px;" src="/images/eventos/prueba.jpg"
-                                alt="prueba">
-                        </div>
-                        <div>
-                            <p>
-                                Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser
-                                embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio
-                                recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de
-                                la metodología de autoaprendizaje.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+            <!-- MES -->
+            <div>
+              <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+                Mes
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $mes) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="mes" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--purple"></span> -->
+                </label>
+                {{ end }}
+              </div>
             </div>
+            <!-- MES END -->
+
+            <!-- MACROREGION -->
+            <div>
+              <button class="accordion accordion--trasparent" data-tab="2" style="border: 1px solid #BABBC9;">
+                MacroRegión
+                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $departamento) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- MACROREGION END -->
+
+            <!-- MUNICIPIO -->
+            <div>
+              <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
+                Municipio
+                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $municipio) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-space-cadet bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-space-cadet"
+                    type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- MUNICIPIO END -->
+
+            <!-- COMUNIDAD -->
+            <div>
+              <button class="accordion accordion--trasparent" data-tab="4" style="border: 1px solid #BABBC9;">
+                Comunidad
+                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $comunidad) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-space-cadet bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-space-cadet"
+                    type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- COMUNIDAD END -->
+          </div>
         </div>
+      </div>
+      <div class="lg:col-start-4 lg:col-end-13">
+        <div class="event"></div>
+        <div class="pagination text-center mt-10 lg:mt-20"></div>
+      </div>
     </div>
-    <div class="modal__overlay modal__overlay--active">
-        &nbsp;
-    </div> */}}
+  </div>
+  <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
+
+  {{/* <div class="modal modal--active modal--events">
+    <div class="modal__button-close">
+      X
+    </div>
+    <div class="bg-white-2 py-6 pr-14 pl-16">
+      <div class="flex items-center justify-between">
+        <div class="hidden lg:block w-full bg-red-200 self-stretch" style="max-width: 71px;">
+          &nbsp;
+        </div>
+        <div class="w-full" style="max-width: 622px;">
+          <div class="space-y-5">
+            <div class="space-y-2 lg:space-y-0">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                  <img src="/images/eventos/icon-location.svg" alt="location icon">
+                  <p class="text-purple font-medium italic">
+                    La Piche, Toluviejo
+                  </p>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <img src="/images/eventos/calendar.svg" alt="calendar icon">
+                  <p class="text-purple font-medium italic">
+                    Marzo
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div>
+                  <h3 class="text-center lg:flex-row text-xl xl:text-2xl font-bold">
+                    Taller de inspiración SOLE + WLH
+                  </h3>
+                </div>
+                <div>
+                  <p class="font-medium italic">
+                    <span class="text-purple ">
+                      Tipo de evento:
+                    </span>
+                    Formación
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img class="w-full h-full object-center object-cover" style="max-width: 622px; max-height: 436px;"
+                src="/images/eventos/prueba.jpg" alt="prueba">
+            </div>
+            <div>
+              <p>
+                Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser
+                embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio
+                recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de
+                la metodología de autoaprendizaje.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal__overlay modal__overlay--active">
+    &nbsp;
+  </div> */}}
 </div>
 {{ end }}
 
