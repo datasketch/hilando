@@ -29,7 +29,6 @@ function filterData() {
   const hasTemaFilter = !!filters.tema.length;
   const hasQueryFilter = !!filters.query.length;
   state.filteredData = originalData;
-  console.log(state.filteredData);
 
   if (hasTemaFilter) {
     state.filteredData = state.filteredData.filter((item) => filters.tema.includes(item.tema));

@@ -119,7 +119,6 @@ multimedia.addEventListener('click', function(e) {
   // filter by id
   const data = JSON.parse(dataEl.value).filter((item) => item.id === +id)[0];
   const getType = data.type;
-  console.log(getType);
 
   // call modal class
 
