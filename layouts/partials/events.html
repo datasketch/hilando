@@ -4,6 +4,8 @@
 {{ $monthNamesES := slice "Enero" "Febrero" "Marzo" "Abril" "Mayo" "Junio" "Julio" "Agosto" "Septiembre" "Octubre"
 "Noviembre" "Diciembre" }}
 
+{{ $hasResult := false }}
+
 {{ $currentMonth := now.Format "January"}}
 {{ $currentMonths := slice }}
 
@@ -11,9 +13,17 @@
 {{ if eq $month $currentMonth }}
 {{ $currentMonths = $currentMonths | append (index $monthNamesES $index )}}
 {{ $currentMonths = $currentMonths | append (index $monthNamesES (add $index 1) )}}
+
+{{ range $currentMonths }}
+{{ range where $data "mes" . }}
+{{ $hasResult = true }}
+{{ end }}
+{{ end }}
+
 {{ end }}
 {{ end }}
 <div class="mx-auto w-11/12 lg:w-10/12 relative">
+    {{ if $hasResult }}
     <!-- Slider main container -->
     <div class="swiper swiper-events events">
         <!-- Additional required wrapper -->
@@ -87,4 +97,11 @@
     <div class="swiper-button-next">
         <img src="/images/public/right-arrow.svg" alt="arrow right">
     </div>
+    {{ else }}
+    <div>
+        <p>
+            No hay eventos
+        </p>
+    </div>
+    {{ end }}
 </div>
