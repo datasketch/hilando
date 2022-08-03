@@ -25,7 +25,7 @@
                 </div>
                 <div class="swiper-slide">
                     <!-- BANNER HOME PAGE -->
-                    <div class="relative bg-banner-home-2 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
+                    <div class="relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
                         style="height: 550px;">
                         <div class="mx-auto w-10/12 lg:w-full">
                             <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
@@ -71,8 +71,8 @@
                 y OIM trabajan para tejer vida y esperanza en Colombia.
             </p>
             <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
-            <a class="uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " sobre-nosotros.md" }}"
-                style="background-color: #D27028;">Sobre
+            <a class="uppercase text-white font-bold py-2 px-6 xl:text-lg" href="{{ relref . " sobre-nosotros.md" }}"
+                style="background-color: #3A3C6A;">Sobre
                 el programa</a>
         </div>
     </div>
@@ -190,7 +190,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 text-white gap-y-12 lg:gap-x-16 xl:gap-x-28">
                 <div class="lg:col-start-1 lg:col-end-7 text-center lg:text-left space-y-12">
                     <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl">
-                        <span class="px-1" style="background-color: #81A347;">Tecnología</span> al servicio de lo social
+                        <span class="px-1" style="background-color: #38601E;">Tecnología</span> al servicio de lo social
                     </h2>
                     <p class="text-lg xl:text-xl">
                         Buscando promover el diálogo entre diferentes puntos de vista y el análisis comparativo entre
@@ -276,14 +276,14 @@
                                 <img class="h-52 w-full object-cover object-center" src="{{ .Params.image }}"
                                     alt="notice">
                                 <p class="text-sm lg:text-base italic">Fecha: {{ .Date | time.Format ":date_long" }}</p>
-                                <h3 class="text-lg xl:text-xl font-black" style="color: #4F7435;">
+                                <h3 class="text-lg xl:text-xl font-black" style="color: #1A1A1A;">
                                     {{ .Title | safeHTML | truncate 60 }}
                                 </h3>
                                 <p class="text-lg xl:text-xl">
                                     {{ .Description | safeHTML | truncate 130 }}
                                 </p>
                                 <a class="inline-block py-2 px-8 uppercase text-white font-bold"
-                                    style="background-color: #D27028;" href="{{ .RelPermalink }}">Ver todo</a>
+                                    style="background-color: #3A3C6A;" href="{{ .RelPermalink }}">Ver todo</a>
                                 <img class="absolute right-0 -top-4" src="/images/public/sticky.svg" alt="sticky">
                             </div>
                         </div>
@@ -331,7 +331,7 @@
                         poblacional que incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas,
                         jóvenes y personas con discapacidad.
                     </p>
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
+                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
                         Explorar datos
                     </a>
                 </div>
@@ -351,7 +351,7 @@
                         las prioridades en salud establecidas por las autoridades sanitarias municipales y relacionadas
                         con las dimensiones de intervención del Programa y que hacen parte del Plan Decenal de Salud.
                     </p>
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
+                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
                         Explorar datos
                     </a>
                 </div>
@@ -366,7 +366,7 @@
                         tradición en la agricultura y la producción de artesanías. Existen procesos incipientes de
                         industrialización en algunos municipios e incentivos para el emprendimiento campesino.
                     </p>
-                    <a class="uppercase text-white py-2 px-6 xl:text-lg" href="#" style="background-color: #D27028;">
+                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
                         Explorar datos
                     </a>
                 </div>
@@ -393,11 +393,11 @@
         <div class="bg-newsletter bg-cover bg-center h-72 grid place-items-center">
             <div class="text-center space-y-6 max-w-sm">
                 <h3 class="text-white font-bold tk-mr-eaves-sans text-3xl lg:text-4xl">
-                    Conoce nuestro boletín
+                    Conoce el boletín de Hilando vidas y esperanza
                 </h3>
                 <a class="inline-block uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " boletin.md" }}"
-                    style="background-color: #D27028;">
-                    Suscríbete
+                    style="background-color: #C5296A;">
+                    SUSCRÍBETE AL BOLETÍN
                 </a>
             </div>
         </div>

@@ -89,7 +89,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
         <div class="flex space-x-2">
             ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
         </div>
-        <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #D27028;">Leer más</button>
+        <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
         <img class="event__image" src="${data.thumbnail}" alt="imagen de evento" style="height: 365px;">
@@ -122,7 +122,7 @@ export const renderPublicaciones = (parentEl, data) => {
               Fecha: ${new Intl.DateTimeFormat('es-CO', {dateStyle: 'full'}).format(new Date(data.fecha))}
           </p>
           <div class="publicaciones__text-right publicaciones--mt-2">
-          ${files ? files.map((f) => `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #D27028;" download="${f.title}" target="_blank">Descargar</a>`) : ''}
+          ${files ? files.map((f) => `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #C5296A;" download="${f.title}" target="_blank">Descargar</a>`) : ''}
           </div>
         </div>
     </div>
@@ -165,7 +165,7 @@ export const renderMultimedia = (parentEl, data, type) => {
     <div class="multimedia__item">
         <div class="relative">
             <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'}">
-            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #81A347;">Ver galería</button>
+            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #3A3C6A;">Ver galería</button>
             <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
         </div>
         <div class="multimedia__details">

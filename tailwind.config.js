@@ -148,6 +148,7 @@ module.exports = {
         'blue': '#3A3D81',
         'orange': '#D27028',
         'white-3': '#F8F8F9',
+        'purple-opacity': 'rgb(126, 62, 107)',
       },
       screens: {
         'sm': '640px',

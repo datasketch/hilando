@@ -7,8 +7,8 @@
         <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12">
             <div class="lg:col-start-1 lg:col-end-10">
                 <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10"
-                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #D27028;">
-                    <img class="mr-3 h-3" src="/images/public/left-arrow.svg" alt="left arrow">
+                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #3A3C6A;">
+                    <img class="mr-3 h-3" src="/images/public/left-arrow-white.svg" alt="left arrow">
                     <span>Volver</span></a>
                 <span class="block italic mb-3 lg:mb-4">Fecha: {{ .Date | time.Format ":date_long"}}</span>
                 <h1 class="text-2xl lg:text-3xl font-black mb-4 lg:mb-5">{{ .Title }}</h1>
@@ -16,7 +16,7 @@
                     {{ .Content | safeHTML }}
                 </div>
                 <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10"
-                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #D27028;">Más noticias</a>
+                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #C5296A;">Más noticias</a>
             </div>
         </div>
     </div>
