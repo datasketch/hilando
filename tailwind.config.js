@@ -113,6 +113,7 @@ module.exports = {
         'invisible',
         'visible',
         'hidden',
+        'swiper-slide--thumbs',
       ],
     },
   },

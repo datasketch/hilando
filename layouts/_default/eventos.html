@@ -6,6 +6,9 @@
 {{ $mes := slice }}
 {{ $tipo := slice }}
 {{ $comunidad := slice }}
+{{ $months := slice "Enero" "Febrero" "Marzo" "Abril" "Mayo" "Junio" "Julio" "Agosto" "Septiembre" "Octubre" "Noviembre"
+"Diciembre" }}
+{{ $newMonths := slice }}
 
 {{/* GET CATEGORIES */}}
 {{ range $data }}
@@ -26,6 +29,18 @@
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}
+
+{{/*  SORT BY MONTHS  */}}
+{{ range $months }}
+{{ $var := . }}
+{{ range $mes }}
+{{ $var2 := . }}
+{{ if eq $var $var2 }}
+{{ $newMonths = $newMonths | append $var2 }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{/*  SORT BY MONTHS END */}}
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <!-- BANNER EVENTS -->
@@ -91,7 +106,7 @@
                 <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="arrow right">
               </button>
               <div class="panel" style="border: 1px solid #BABBC9;">
-                {{ range sort (uniq $mes) "value" "asc" }}
+                {{ range (uniq $newMonths) }}
                 <label class="filter-label focus-within:outline-black" for="{{ . }}">
                   <span class="text-lg">{{ . }}</span>
                   <input

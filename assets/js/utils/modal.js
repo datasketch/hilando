@@ -59,7 +59,7 @@ export default class Modal {
     if (opc === 'thumbs') {
       urlImages.forEach((urlImage, index) => {
         html += `
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-slide--thumbs">
             <img class="swiper__image--thumbs" src="${urlImage}" alt="${nameImages}-${index + 1}">
            </div>
           `;
