@@ -25,20 +25,21 @@ const eventsDataSummarized = Object.keys(eventsByCommunity).map((key, index) => 
     foto,
     type: 'evento',
     tipo_multimedia: 'Fotografía',
-    thumbnail: thumbnails.find((t) => t),
+    thumbnail: thumbnails.find((t) => t) || '/images/default_thumbnail.jpeg',
   };
 });
 
 const base = eventsDataSummarized.length;
 
 const multimediaDataSummarized = multimediaData.map((record, index) => {
-  const photos = JSON.parse(record.fotos);
+  const parsedPhotos = JSON.parse(record.fotos);
+  const photos = Array.isArray(parsedPhotos) ? parsedPhotos.map((p) => p.url) : [];
   return {
     ...record,
     id: base + index + 1,
     type: record.tipo_galeria ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
-    thumbnail: '/images/eventos/prueba.jpg',
-    foto: Array.isArray(photos) ? photos.map((p) => p.url) : [],
+    foto: photos,
+    thumbnail: photos[0] || '/images/default_thumbnail.jpeg',
     tipo_multimedia: record.tipo_galeria,
   };
 });
