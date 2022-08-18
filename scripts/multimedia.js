@@ -6,10 +6,10 @@ const orderBy = require('lodash.orderby');
 const eventsData = require('../data/eventos.json');
 const multimediaData = require('../data/multimedia.json');
 
-const eventsDataGrouped = groupBy(eventsData.filter((event) => event.comunidad), 'comunidad');
+const eventsByCommunity = groupBy(eventsData.filter((event) => event.comunidad), 'comunidad');
 
-const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => {
-  const data = eventsDataGrouped[key];
+const eventsDataSummarized = Object.keys(eventsByCommunity).map((key, index) => {
+  const data = eventsByCommunity[key];
   const [first] = data;
   const foto = data.map((record) => record.foto).flat();
   const thumbnails = data.map((record) => record.thumbnail);
@@ -31,14 +31,17 @@ const eventsDataSummarized = Object.keys(eventsDataGrouped).map((key, index) => 
 
 const base = eventsDataSummarized.length;
 
-const multimediaDataSummarized = multimediaData.map((record, index) => ({
-  ...record,
-  id: base + index + 1,
-  type: record.tipo_galeria ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
-  thumbnail: '/images/eventos/prueba.jpg',
-  foto: record.fotos || [],
-  tipo_multimedia: record.tipo_galeria,
-}));
+const multimediaDataSummarized = multimediaData.map((record, index) => {
+  const photos = JSON.parse(record.fotos);
+  return {
+    ...record,
+    id: base + index + 1,
+    type: record.tipo_galeria ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
+    thumbnail: '/images/eventos/prueba.jpg',
+    foto: Array.isArray(photos) ? photos.map((p) => p.url) : [],
+    tipo_multimedia: record.tipo_galeria,
+  };
+});
 
 const multimediaDataSummarizedDesc = orderBy(multimediaDataSummarized, 'id', 'desc');
 
