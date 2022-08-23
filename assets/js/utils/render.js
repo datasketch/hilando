@@ -89,7 +89,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
         <div class="flex space-x-2">
             ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
         </div>
-        <button data-id="${data.id}" class="cursor-pointer inline-block uppercase py-2 px-6 font-semibold text-white absolute bottom-0 left-0" style="background-color: #C5296A;">Leer más</button>
+        <button data-id="${data.id}" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
         <img class="event__image" src="${data.thumbnail}" alt="imagen de evento" style="height: 365px;">

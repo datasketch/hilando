@@ -78,6 +78,20 @@ export default class Modal {
     return html;
   }
 
+  #renderObjectSwiperSlide(urlObjects) {
+    let html = '';
+    urlObjects.forEach((urlObject) => {
+      html += `
+            <div class="swiper-slide">
+              <div class="video-w-full">
+                 <object data="${urlObject}" width="100%" height="384px"></object>
+              </div>
+             </div>
+            `;
+    });
+    return html;
+  }
+
   // render modal
   _renderModal() {
     let html = '';
@@ -154,7 +168,7 @@ export default class Modal {
           </button>
           <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
-              <div class="event__modal-left ${!!this.data.foto.length ? 'visible' : 'invisible'}" style="max-width: 71px;">
+              <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}" style="max-width: 71px;">
                 <!-- Slider main container -->
                 <button class="swiper-button-prev-events" aria-label="Imagen anterior">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
@@ -211,7 +225,7 @@ export default class Modal {
         &nbsp;
       </div>
     `;
-    } else if (this.modalSection === 'video') {
+    } else if (this.modalSection === 'video' || this.modalSection === 'audio') {
       html = `
         <div class="modal modal--video">
           <button class="modal__button-close" aria-label="Cerrar">
@@ -242,11 +256,34 @@ export default class Modal {
                   </div>
                 </div>
               </div>
-              <div class="video--w-full">
-                <video controls>
-                  <source src="${this.data.enlace_video_audio}" type="video/mp4">
-                </video>
-              </div>
+              ${
+                this.data.enlace_video_audio.length > 1 ? (
+                  `
+                  <!-- Slider main container -->
+                  <div class="swiper swiperVideoAudio" style="position: relative;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        ${this.#renderObjectSwiperSlide(this.data.enlace_video_audio)}
+                    </div>
+                    <div class="video--custom-button">
+                    <button class="swiper-button-prev--video-audio">
+                      <img src="/images/public/left-arrow.svg" alt="arrow left">
+                    </button>
+                    <button class="swiper-button-next--video-audio">
+                      <img src="/images/public/right-arrow.svg" alt="arrow right">
+                    </button>
+                    </div>
+                  </div>
+                  `
+                ) : (
+                  `
+                  <div class="video-w-full">
+                    <object data="${this.data.enlace_video_audio[0]}" width="100%" height="384px"></object>
+                  </div>
+                  `
+                )
+}
               <div>
                 <p>${this.data.descripcion}</p>
               </div>
@@ -258,58 +295,6 @@ export default class Modal {
         &nbsp;
       </div>
     `;
-    } else if (this.modalSection === 'audio') {
-      html = `
-            <div class="modal modal--video">
-            <div class="modal__button-close">
-                X
-            </div>
-            <div class="video">
-              <div class="video__left">
-                  &nbsp;
-              </div>
-              <div class="video__right">
-                  <div class="video--space-y-8">
-                      <div>
-                          <div class="video--flex video--items-center video--space-x ${this.data.comunidad ? '' : 'hidden'}">
-                              <div>
-                                  <img src="/images/eventos/icon-location.svg" alt="location icon" />
-                              </div>
-                              <div>
-                                  <p class="video--text-purple video--italic">
-                                      ${this.data.comunidad}, ${this.data.municipio}
-                                  </p>
-                              </div>
-                          </div>
-                          <div class="video--flex video--justify-between video--items-center">
-                              <div>
-                                  <h3 class="video--font-size-22 video--font-bold">
-                                      ${this.data.nombre_evento}
-                                  </h3>
-                              </div>
-                              <div>
-                                  <p class="video--text-purple video--italic">
-                                      ${this.data.tipo_multimedia}
-                                  </p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="video--w-full">
-                      <audio src="${this.data.enlace_video_audio}" controls></audio>
-                      </div>
-                      <div>
-                          <p>
-                              ${this.data.descripcion}
-                          </p>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            </div>
-            <div class="modal__overlay">
-               &nbsp;
-            </div>
-            `;
     }
     return document.body.insertAdjacentHTML('beforeend', html);
   }

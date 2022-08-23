@@ -186,6 +186,26 @@ multimedia.addEventListener('click', function(e) {
 
     loop: true,
   });
+
+  const swiper = new Swiper('.swiperVideoAudio', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next--video-audio',
+      prevEl: '.swiper-button-prev--video-audio',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });
 
 search.addEventListener('input', (e) => {
