@@ -94,7 +94,7 @@ function filterData() {
     state.filteredData = state.filteredData.filter((item) => item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()));
   }
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderEvent(event, item));
+  paginate(state.page, state.itemsPerPagination, state.filteredData.sort((a, b) => new Date(b.date) - new Date(a.date))).forEach((item) => renderEvent(event, item));
 
   pagination.insertAdjacentHTML(
       'beforeend',
