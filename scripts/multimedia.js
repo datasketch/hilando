@@ -41,6 +41,7 @@ const multimediaDataSummarized = multimediaData.map((record, index) => {
     foto: photos,
     thumbnail: photos[0] || '/images/default_thumbnail.jpeg',
     tipo_multimedia: record.tipo_galeria,
+    enlace_video_audio: record.enlace_video_audio?.split(' ') || [],
   };
 });
 
