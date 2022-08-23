@@ -74,14 +74,6 @@ export default class Modal {
                </div>
               `;
       });
-    } else if (opc === 'multimedia') {
-      urlImages.forEach((urlImage, index) => {
-        html += `
-              <div class="swiper-slide">
-                <img class="swiper__image--multimedia" src="${urlImage}" alt="${nameImages}-${index + 1}">
-               </div>
-              `;
-      });
     }
     return html;
   }
@@ -203,7 +195,7 @@ export default class Modal {
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
-                        ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
+                        ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'events') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'events')}
                     </div>
                   </div>
                 </div>
