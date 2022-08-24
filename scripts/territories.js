@@ -21,7 +21,9 @@ function normalize(str) {
   return str.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
-trrs.forEach((trr) => {
+const filteredTrrs = trrs.slice().filter((record) => record.ocultar !== true);
+
+filteredTrrs.forEach((trr) => {
   const filename = normalize(trr.municipio);
   const total = trr.hombres_victimas_conflicto + trr.intersexuales_victimas_conflicto + trr.lgbt_victimas_conflicto + trr.mujeres_victimas_conflicto + trr.no_informa_victimas_conflicto;
 
