@@ -25,7 +25,7 @@ const eventsDataSummarized = Object.keys(eventsByCommunity).map((key, index) => 
     foto,
     type: 'evento',
     tipo_multimedia: 'Fotografía',
-    thumbnail: thumbnails.find((t) => t) || '/images/default_thumbnail.jpeg',
+    thumbnail: thumbnails.find((t) => t) || '/images/eventos/prueba.jpg',
   };
 });
 
@@ -39,7 +39,7 @@ const multimediaDataSummarized = multimediaData.map((record, index) => {
     id: base + index + 1,
     type: record.tipo_galeria ? record.tipo_galeria.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '') : 'fotografia',
     foto: photos,
-    thumbnail: photos[0] || '/images/default_thumbnail.jpeg',
+    thumbnail: photos[0] || '/images/eventos/prueba.jpg',
     tipo_multimedia: record.tipo_galeria,
     enlace_video_audio: record.enlace_video_audio?.split(' ') || [],
   };
