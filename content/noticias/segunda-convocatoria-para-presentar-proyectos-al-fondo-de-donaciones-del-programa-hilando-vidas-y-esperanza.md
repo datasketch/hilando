@@ -2,7 +2,7 @@
 title: SEGUNDA CONVOCATORIA PARA PRESENTAR PROYECTOS AL FONDO DE DONACIONES DEL
   PROGRAMA HILANDO VIDAS Y ESPERANZA
 date: 2022-09-09T17:27:24.143Z
-image: /images/uploads/img_8067.jpg
+image: /images/uploads/whatsapp-image-2022-08-08-at-11.48.14-am.jpeg
 description: >-
   • El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, abre
   convocatoria para financiar proyectos que busquen mejorar la salud mental y el
