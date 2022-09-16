@@ -278,8 +278,8 @@ export default class Modal {
                   `
                 ) : (
                   `
-                  <div class="video-w-full">
-                    <object data="${this.data.enlace_video_audio[0]}" width="100%" height="384px"></object>
+                  <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="${this.data.enlace_video_audio[0]}"></iframe>
                   </div>
                   `
                 )

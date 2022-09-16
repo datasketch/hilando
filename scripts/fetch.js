@@ -15,9 +15,9 @@ async function run() {
   const events = await req.get('/eventos?limit=100');
 
   const eventsMunicipalities = await req.get('/eventos_municipios?limit=100');
-  const trrs = await req.get('/fichas_municipio');
-  const publications = await req.get('/publicaciones');
-  const multimedia = await req.get('/multimedia');
+  const trrs = await req.get('/fichas_municipio?limit=100');
+  const publications = await req.get('/publicaciones?limit=100');
+  const multimedia = await req.get('/multimedia?limit=100');
   fs.writeFile(
       getFilePath('comunidades-focalizadas.json'),
       JSON.stringify(communities.data.list),
