@@ -17,7 +17,7 @@ const sliderNews = swiperNews('.swiper-news');
 const sliderEvents = swiperEvents('.swiper-events');
 
 
-events.addEventListener('click', function(e) {
+events?.addEventListener('click', function(e) {
   // get id
   const id = e.target.closest('button')?.dataset.id;
 
