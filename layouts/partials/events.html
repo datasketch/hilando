@@ -1,5 +1,5 @@
 {{ $data := .Site.Data.eventos }}
-{{ $monthNamesEN := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "Octuber"
+{{ $monthNamesEN := slice "January" "February" "March" "April" "May" "June" "July" "August" "September" "October"
 "November" "December" }}
 {{ $monthNamesES := slice "Enero" "Febrero" "Marzo" "Abril" "Mayo" "Junio" "Julio" "Agosto" "Septiembre" "Octubre"
 "Noviembre" "Diciembre" }}
@@ -11,8 +11,9 @@
 
 {{ range $index, $month := $monthNamesEN }}
 {{ if eq $month $currentMonth }}
-{{ $currentMonths = $currentMonths | append (index $monthNamesES $index )}}
-{{ $currentMonths = $currentMonths | append (index $monthNamesES (add $index 1) )}}
+{{ $mod_index := mod $index 12 }}
+{{ $currentMonths = $currentMonths | append (index $monthNamesES $mod_index)}}
+{{ $currentMonths = $currentMonths | append (index $monthNamesES (mod (add $mod_index 1) 12) )}}
 
 {{ range $currentMonths }}
 {{ range where $data "mes" . }}
