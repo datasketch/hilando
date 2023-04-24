@@ -1,5 +1,5 @@
 ---
-title: Mujeres sobrevivientes del conflicto estarán en Expoartesanías 2022
+title: MUJERES SOBREVIVIENTES DEL CONFLICTO ESTARAN EN EXPOARTESANIAS 2022
 date: 2022-12-14T15:03:50.801Z
 image: /images/uploads/img_2354-2-acomp.jpeg
 description: Dos organizaciones de mujeres artesanas sobrevivientes del
