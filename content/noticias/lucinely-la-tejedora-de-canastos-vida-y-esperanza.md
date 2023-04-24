@@ -1,6 +1,6 @@
 ---
 title: "LUCINELY: LA TEJEDORA DE CANASTOS, VIDA Y ESPERANZA"
-date: 2023-04-24T17:13:48.455Z
+date: 2023-01-20T17:13:48.455Z
 image: /images/uploads/img_2556banner3_0.jpeg
 description: “Vendí mucho y hablé mucho de cómo es mi comunidad, saludé a la
   gente en mi lengua para que conozcan la historia detrás de la canasta”
