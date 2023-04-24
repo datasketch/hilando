@@ -1,6 +1,6 @@
 ---
 title: Mujeres sobrevivientes del conflicto estarán en Expoartesanías 2022
-date: 2023-04-24T15:03:50.801Z
+date: 2022-12-14T15:03:50.801Z
 image: /images/uploads/img_2354-2-acomp.jpeg
 description: Dos organizaciones de mujeres artesanas sobrevivientes del
   conflicto armado, que han sido apoyadas por el Programa WLH, estarán del 7 al
