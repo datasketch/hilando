@@ -1,6 +1,6 @@
 ---
 title: OLA SOLERA
-date: 2023-06-26T19:56:15.921Z
+date: 2023-05-15T19:56:15.921Z
 image: /images/uploads/img_3903.jpeg
 description: Entre marzo y mayo la Ola SOLEra llegó a los hermosos territorios
   del Cauca, Valle del Cauca, Antioquia y Montes de María. Nos reunimos el
