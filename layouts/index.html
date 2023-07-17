@@ -2,410 +2,409 @@
 {{ $data := index .Site.Data.eventos }}
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
-    <div class="lg:col-start-1 lg:col-end-13">
+  <div class="lg:col-start-1 lg:col-end-13">
+    <!-- Slider main container -->
+    <div class="relative swiper swiper-banner overflow-x-hidden">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <!-- BANNER HOME PAGE -->
+          <div class="relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
+            style="height: 550px;">
+            <div class="mx-auto w-10/12 lg:w-full">
+              <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
+                HILANDO COMUNIDADES
+                <span class="block font-extralight">
+
+                </span>
+              </h1>
+            </div>
+          </div>
+          <!-- BANNER HOME PAGE END -->
+        </div>
+        <div class="swiper-slide">
+          <!-- BANNER HOME PAGE -->
+          <div class="relative bg-banner-home-2 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
+            style="height: 550px;">
+            <div class="mx-auto w-10/12 lg:w-full">
+              <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
+                HILANDO COMUNIDADES
+                <span class="block font-extralight">
+
+                </span>
+              </h1>
+            </div>
+          </div>
+          <!-- BANNER HOME PAGE END -->
+        </div>
+        <div class="swiper-slide">
+          <!-- BANNER HOME PAGE -->
+          <div class="relative bg-banner-home-3 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
+            style="height: 550px;">
+            <div class="mx-auto w-10/12 lg:w-full">
+              <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
+                HILANDO COMUNIDADES
+                <span class="block font-extralight">
+
+                </span>
+              </h1>
+            </div>
+          </div>
+          <!-- BANNER HOME PAGE END -->
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination swiper-pagination-banner"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev" style="left: 109px !important;">
+        <img src="/images/home/arrow-left-home.svg" alt="arrow left">
+      </div>
+      <div class="swiper-button-next" style="right: 109px !important;">
+        <img src="/images/home/arrow-right-home.svg" alt="arrow right">
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT THE PROGRAM -->
+  <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-20 bg-cultured">
+    <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 text-center">
+      <p class="text-lg xl:text-xl mb-4">
+        Hilando Comunidades nació como iniciativa del Programa Hilando Vidas y Esperanza (WLH) de la Agencia de
+        Estados Unidos
+        para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las
+        Migraciones (OIM), como una plataforma
+        colaborativa y de divulgación que visibilice las iniciativas de salud mental, convivencia,
+        empoderamiento económico y comunicación para la
+        paz desarrolladas junto a los sobrevivientes resilientes del conflicto en Colombia.
+      </p>
+      <p class="text-lg xl:text-xl mb-8">
+        www.hilandocomunidades.com es la red que agrupa los esfuerzos de diversas personas, organizaciones e
+        instituciones de 15 municipios
+        afectados por la violencia (priorizados en los Planes de Desarrollo con Enfoque Territorial (PDET)), que
+        junto al Programa WLH de USAID
+        y OIM trabajan para tejer vida y esperanza en Colombia.
+      </p>
+      <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
+      <a class="uppercase text-white font-bold py-2 px-6 xl:text-lg bg-space-cadet"
+        href='{{ relref . "sobre-nosotros.md" }}'>
+        Sobre el programa
+      </a>
+    </div>
+  </div>
+  <!-- ABOUT THE PROGRAM END -->
+
+  <!-- TARGET POPULATION -->
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-magenta">
+    <div class="mx-auto w-10/12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-start-1 lg:col-end-13">
+          <img class="w-full h-full object-cover object-center" src="/images/home/target-population.jpg"
+            alt="target population">
+        </div>
+        <div class="lg:col-start-1 lg:col-end-7 text-white space-y-6">
+          <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
+            <span class="px-1 bg-rose">Nuestra</span> red
+          </h2>
+          <p class="text-lg xl:text-xl">
+            En este espacio de divulgación encontrarás noticias, eventos, cubrimientos especiales, campañas,
+            fotografías y videos
+            de la comunidad WLH, siendo un espacio de co-creación que integra grupos juveniles y de mujeres;
+            grupos étnicos;
+            poblaciones diversas; iniciativas culturales y de comunicación; asociaciones campesinas; y
+            organizaciones de la sociedad
+            civil que trabajan en proyectos productivos, derechos humanos, género e inclusión, y protección
+            del medio ambiente.
+          </p>
+          <p class="text-lg xl:text-xl">
+            Esta plataforma web promueve el aprendizaje entre pares, el co-diseño, el empoderamiento del
+            conocimiento local,
+            el aprendizaje experiencial, los intercambios de conocimiento, la mentoría uno-a-uno y la
+            comunicación para el cambio social.
+          </p>
+        </div>
+        <div class="lg:col-start-7 lg:col-end-13 text-white space-y-6">
+          <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
+            <span class="px-1 bg-rose">¿Quiénes</span> somos?
+          </h2>
+          <p class="text-lg xl:text-xl">
+            Somos una plataforma colaborativa y de divulgación, que nace como iniciativa del Programa
+            Hilando Vidas y Esperanza
+            (WLH) de USAID, implementado por OIM, con el fin de contribuir a resignificar las víctimas del
+            conflicto como
+            sobrevivientes destacando su resiliencia y capacidades para transformar sus comunidades.
+            Buscamos transformar
+            imaginarios y visibilizar las iniciativas que contribuyen a que los sobrevivientes del conflicto
+            vivan una más vida
+            tranquila, productiva y en paz. </p>
+          <p class="text-lg xl:text-xl">
+            A partir de contar las historias y experiencias 15 territorios priorizados por el Programa WLH,
+            buscamos junto a
+            diferentes socios inspirar, cambiar paradigmas, impulsar y exaltar a las comunidades resilientes
+            de Colombia.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TARGET POPULATION END -->
+
+  <!-- TARGETED TERRITORIES -->
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
+    <div class="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8">
+      <div class="lg:col-start-1 lg:col-end-6">
+        <div class="text-center lg:text-left">
+          <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
+            <span class="px-1 bg-thulian-pink">Tres Nodos,</span> muchas relaciones
+          </h2>
+          <p class="text-lg xl:text-xl mb-4 lg:mb-6">
+            Hilando Comunidades agrupa las experiencias de tres regiones gravemente afectadas por el
+            conflicto armado:
+            <b>1) Bajo Cauca y Nordeste Antioqueño; 2) Montes de María, y 3) Pacífico Medio, Alto Patía y
+              Norte del Cauca.</b>
+            En cada región, priorizamos 15 municipios con quienes desde el Programa Hilando Vidas y
+            Esperanza de USAID,
+            implementado por OIM, generamos alianzas (con la sociedad civil, el sector público y el sector
+            privado) para
+            trabajar juntos en torno a la salud mental, el liderazgo, la generación de ingresos, la
+            resolución de conflictos
+            y la comunicación buscando desarrollar capacidades locales, promover la resiliencia e impulsar
+            transformaciones
+            sociales para la convivencia pacífica.
+          </p>
+        </div>
+      </div>
+      <div class="lg:col-start-8 lg:col-end-13">
+        <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/mapa-home.jpg" alt="mapa home">
+      </div>
+      <div class="lg:col-start-1 lg:col-end-13">
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          {{ $territories := where .Site.RegularPages "Section" "territorios" }}
+          {{ range $territories.GroupByParam "region" }}
+          <div>
+            <h3 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
+              {{ .Key }}
+            </h3>
+            <ul class="space-y-4 mb-10 lg:mb-8 xl:mb-10 ">
+              {{ range .Pages }}
+              <li class="line">
+                <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}">{{ .Title }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TARGETED TERRITORIES END -->
+
+  <!-- PROGRAM IMPACT -->
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green">
+    <div class="mx-auto w-10/12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 text-white gap-y-12 lg:gap-x-16 xl:gap-x-28">
+        <div class="lg:col-start-1 lg:col-end-7 text-center lg:text-left space-y-12">
+          <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl">
+            <span class="px-1 bg-dark-moss-green">Tecnología</span> al servicio de lo social
+          </h2>
+          <p class="text-lg xl:text-xl">
+            Buscando promover el diálogo entre diferentes puntos de vista y el análisis comparativo entre
+            las diferentes realidades
+            y procesos locales, hemos creado un espacio para la exploración investigativa a partir de datos
+            de quince municipios
+            priorizados. Esta sección permite accedan a información comparativa entre regiones, municipios y
+            comunidades que detone
+            reflexión, promueva la innovación y genere oportunidades impulsar transformaciones sociales para
+            la convivencia pacífica
+            y el desarrollo sostenible.
+          </p>
+          <img class="mx-auto lg:mx-0" src="/images/home/program-impact.jpg" alt="program impact">
+        </div>
+        <div class="lg:col-start-7 lg:col-end-13 space-y-12">
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Distribución poblacional rural
+            </h3>
+            <p class="text-lg xl:text-xl">
+              Recopilamos la información de quince municipios, principalmente rurales, con una
+              distribución poblacional que
+              incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas, jóvenes y
+              personas con discapacidad.
+              Aquí podrás conocer su tamaño.
+
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Panorama de la salud mental
+            </h3>
+            <p class="text-lg xl:text-xl">
+              A partir del Registro Individual de Prestación (RIPS), realizamos un comparativo entre los
+              principales diagnósticos de salud
+              mental atendidos durante el 2020 por el Sistema General de Seguridad Social Salud (SGSSS) en
+              los quince municipios priorizados.
+              De igual manera, revisamos las prioridades en salud establecidas por las autoridades
+              sanitarias municipales y relacionadas con
+              las dimensiones de intervención del Programa WLH y que hacen parte del Plan Decenal de
+              Salud.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Economías tradicionales
+            </h3>
+            <p class="text-lg xl:text-xl">
+              Los quince municipios priorizados son predominantemente agrícolas y forestales, con una
+              potencia para la piscicultura,
+              apicultura y otras prácticas que protegen el medio ambiente. También, se encuentran en zonas
+              de extracción minera, y
+              tienen tradición en la agricultura y la producción de artesanías. Existen procesos
+              incipientes de industrialización en
+              algunos municipios e incentivos para el emprendimiento campesino. Conozca más sobre los
+              procesos de empoderamiento económico
+              que impulsan la resiliencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PROGRAM IMPACT END -->
+
+  <!-- OUTSTANDING NEWS -->
+  <div class="lg:col-start-1 lg:col-end-13 py-16 xl:py-20 bg-cultured">
+    <div class="mx-auto w-10/12 lg:w-8/12">
+      <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
+        <span class="px-1 bg-cambridge-blue">Noticias</span> destacadas
+      </h2>
+      <div class="mb-12 lg:mb-16 xl:mb-20 relative">
         <!-- Slider main container -->
-        <div class="relative swiper swiper-banner overflow-x-hidden">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <!-- BANNER HOME PAGE -->
-                    <div class="relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-                        style="height: 550px;">
-                        <div class="mx-auto w-10/12 lg:w-full">
-                            <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
-                                HILANDO COMUNIDADES
-                                <span class="block font-extralight">
-
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
-                    <!-- BANNER HOME PAGE END -->
-                </div>
-                <div class="swiper-slide">
-                    <!-- BANNER HOME PAGE -->
-                    <div class="relative bg-banner-home-2 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-                        style="height: 550px;">
-                        <div class="mx-auto w-10/12 lg:w-full">
-                            <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
-                                HILANDO COMUNIDADES
-                                <span class="block font-extralight">
-
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
-                    <!-- BANNER HOME PAGE END -->
-                </div>
-                <div class="swiper-slide">
-                    <!-- BANNER HOME PAGE -->
-                    <div class="relative bg-banner-home-3 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-                        style="height: 550px;">
-                        <div class="mx-auto w-10/12 lg:w-full">
-                            <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
-                                HILANDO COMUNIDADES
-                                <span class="block font-extralight">
-
-                                </span>
-                            </h1>
-                        </div>
-                    </div>
-                    <!-- BANNER HOME PAGE END -->
-                </div>
+        <div class="swiper swiper-news">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            {{ range where .Pages "Section" "noticias" }}
+            {{ range .Pages }}
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="relative border-t-2 p-10 hover:shadow-lg duration-300 space-y-4 bg-white-2 border-olivine">
+                <img class="h-52 w-full object-cover object-center" src="{{ .Params.image }}" alt="notice">
+                <p class="text-sm lg:text-base italic">Fecha: {{ .Date | time.Format ":date_long" }}</p>
+                <h3 class="text-lg xl:text-xl font-black" style="color: #1A1A1A;">
+                  {{ .Title | safeHTML | truncate 60 }}
+                </h3>
+                <p class="text-lg xl:text-xl">
+                  {{ .Description | safeHTML | truncate 130 }}
+                </p>
+                <a class="inline-block py-2 px-8 uppercase text-white font-bold bg-space-cadet" href="{{ .RelPermalink }}">Ver todo</a>
+                <img class="absolute right-0 -top-4" src="/images/public/sticky.svg" alt="sticky">
+              </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination swiper-pagination-banner"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev" style="left: 109px !important;">
-                <img src="/images/home/arrow-left-home.svg" alt="arrow left">
-            </div>
-            <div class="swiper-button-next" style="right: 109px !important;">
-                <img src="/images/home/arrow-right-home.svg" alt="arrow right">
-            </div>
+            {{ end }}
+            {{ end }}
+          </div>
         </div>
-    </div>
-    <!-- ABOUT THE PROGRAM -->
-    <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 text-center">
-            <p class="text-lg xl:text-xl mb-4">
-                Hilando Comunidades nació como iniciativa del Programa Hilando Vidas y Esperanza (WLH) de la Agencia de
-                Estados Unidos
-                para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las
-                Migraciones (OIM), como una plataforma
-                colaborativa y de divulgación que visibilice las iniciativas de salud mental, convivencia,
-                empoderamiento económico y comunicación para la
-                paz desarrolladas junto a los sobrevivientes resilientes del conflicto en Colombia.
-            </p>
-            <p class="text-lg xl:text-xl mb-8">
-                www.hilandocomunidades.com es la red que agrupa los esfuerzos de diversas personas, organizaciones e
-                instituciones de 15 municipios
-                afectados por la violencia (priorizados en los Planes de Desarrollo con Enfoque Territorial (PDET)), que
-                junto al Programa WLH de USAID
-                y OIM trabajan para tejer vida y esperanza en Colombia.
-            </p>
-            <img class="mx-auto mb-12 lg:mb-10" src="/images/home/about-program.svg" alt="about the program">
-            <a class="uppercase text-white font-bold py-2 px-6 xl:text-lg" href="{{ relref . " sobre-nosotros.md" }}"
-                style="background-color: #3A3C6A;">Sobre
-                el programa</a>
+        <div class="z-20">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-prev-news">
+            <img src="/images/public/left-arrow-green.svg" alt="left arrow">
+          </div>
+          <div class="swiper-button-next swiper-button-next-news">
+            <img src="/images/public/right-arrow-green.svg" alt="right arrow">
+          </div>
         </div>
+      </div>
+      <div class="text-center">
+        <a class="uppercase text-white py-2 px-6 xl:text-lg bg-rose" href='{{ relref . "noticias/_index.md" }}'>Conoce Más</a>
+      </div>
     </div>
-    <!-- ABOUT THE PROGRAM END -->
+  </div>
+  <!-- OUTSTANDING NEWS END -->
 
-    <!-- TARGET POPULATION -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #963B62;">
-        <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div class="lg:col-start-1 lg:col-end-13">
-                    <img class="w-full h-full object-cover object-center" src="/images/home/target-population.jpg"
-                        alt="target population">
-                </div>
-                <div class="lg:col-start-1 lg:col-end-7 text-white space-y-6">
-                    <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
-                        <span class="px-1" style="background-color: #C5296A;">Nuestra</span> red
-                    </h2>
-                    <p class="text-lg xl:text-xl">
-                        En este espacio de divulgación encontrarás noticias, eventos, cubrimientos especiales, campañas,
-                        fotografías y videos
-                        de la comunidad WLH, siendo un espacio de co-creación que integra grupos juveniles y de mujeres;
-                        grupos étnicos;
-                        poblaciones diversas; iniciativas culturales y de comunicación; asociaciones campesinas; y
-                        organizaciones de la sociedad
-                        civil que trabajan en proyectos productivos, derechos humanos, género e inclusión, y protección
-                        del medio ambiente.
-                    </p>
-                    <p class="text-lg xl:text-xl">
-                        Esta plataforma web promueve el aprendizaje entre pares, el co-diseño, el empoderamiento del
-                        conocimiento local,
-                        el aprendizaje experiencial, los intercambios de conocimiento, la mentoría uno-a-uno y la
-                        comunicación para el cambio social.
-                    </p>
-                </div>
-                <div class="lg:col-start-7 lg:col-end-13 text-white space-y-6">
-                    <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
-                        <span class="px-1" style="background-color: #C5296A;">¿Quiénes</span> somos?
-                    </h2>
-                    <p class="text-lg xl:text-xl">
-                        Somos una plataforma colaborativa y de divulgación, que nace como iniciativa del Programa
-                        Hilando Vidas y Esperanza
-                        (WLH) de USAID, implementado por OIM, con el fin de contribuir a resignificar las víctimas del
-                        conflicto como
-                        sobrevivientes destacando su resiliencia y capacidades para transformar sus comunidades.
-                        Buscamos transformar
-                        imaginarios y visibilizar las iniciativas que contribuyen a que los sobrevivientes del conflicto
-                        vivan una más vida
-                        tranquila, productiva y en paz. </p>
-                    <p class="text-lg xl:text-xl">
-                        A partir de contar las historias y experiencias 15 territorios priorizados por el Programa WLH,
-                        buscamos junto a
-                        diferentes socios inspirar, cambiar paradigmas, impulsar y exaltar a las comunidades resilientes
-                        de Colombia.
-                    </p>
-                </div>
-            </div>
+  <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
+    <img class="mx-auto w-11/12 md:w-9/12 lg:w-auto" src="/images/public/logo-hilando-2.svg" alt="hilando">
+  </div>
+
+  <!-- LOREM IPSUM -->
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
+    <div class="mx-auto w-10/12">
+      <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
+        <span class="px-1 bg-puce">Mapeo</span> social
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
+        <div class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            Distribución <span class="pl-1 pr-2 bg-puce">poblacional rural</span>
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            De los quince municipios focalizados, WLH trabaja con comunidades específicas quienes participan
+            de una intervención integral. Estas comunidades son principalmente rurales con una distribución
+            poblacional que incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas,
+            jóvenes y personas con discapacidad.
+          </p>
+          <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose" href="#">
+            Explorar datos
+          </a>
         </div>
-    </div>
-    <!-- TARGET POPULATION END -->
-
-    <!-- TARGETED TERRITORIES -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8">
-            <div class="lg:col-start-1 lg:col-end-6">
-                <div class="text-center lg:text-left">
-                    <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4">
-                        <span class="px-1" style="background-color: #D7729C;">Tres Nodos,</span> muchas relaciones
-                    </h2>
-                    <p class="text-lg xl:text-xl mb-4 lg:mb-6">
-                        Hilando Comunidades agrupa las experiencias de tres regiones gravemente afectadas por el
-                        conflicto armado:
-                        <b>1) Bajo Cauca y Nordeste Antioqueño; 2) Montes de María, y 3) Pacífico Medio, Alto Patía y
-                            Norte del Cauca.</b>
-                        En cada región, priorizamos 15 municipios con quienes desde el Programa Hilando Vidas y
-                        Esperanza de USAID,
-                        implementado por OIM, generamos alianzas (con la sociedad civil, el sector público y el sector
-                        privado) para
-                        trabajar juntos en torno a la salud mental, el liderazgo, la generación de ingresos, la
-                        resolución de conflictos
-                        y la comunicación buscando desarrollar capacidades locales, promover la resiliencia e impulsar
-                        transformaciones
-                        sociales para la convivencia pacífica.
-                    </p>
-                </div>
-            </div>
-            <div class="lg:col-start-8 lg:col-end-13">
-                <img class="mx-auto lg:col-start-8 lg:col-end-13" src="/images/home/mapa-home.jpg" alt="mapa home">
-            </div>
-            <div class="lg:col-start-1 lg:col-end-13">
-                <div class="grid grid-cols-1 lg:grid-cols-3">
-                    {{ $territories := where .Site.RegularPages "Section" "territorios" }}
-                    {{ range $territories.GroupByParam "region" }}
-                    <div>
-                        <h3 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
-                            {{ .Key }}
-                        </h3>
-                        <ul class="space-y-4 mb-10 lg:mb-8 xl:mb-10 ">
-                            {{ range .Pages }}
-                            <li class="line">
-                                <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}">{{ .Title }}</a>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
+        <iframe class="order-1 lg:order-2 mx-auto self-end w-full" style="height: 400px;"
+          src="/charts/home/distribucion_poblacion_total.html" frameborder="0"
+          title="Distribución de población urbana y rural en los municipios priorizados."></iframe>
+        <iframe class="order-3 mx-auto self-end w-full" style="height: 400px;"
+          src="/charts/home/top_diagnosticos_total.html" frameborder="0"
+          title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"></iframe>
+        <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            Panorama de la
+            <span class="pl-1 pr-2 bg-puce"> salud mental</span>
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            A partir del Registro Individual de Prestación (RIPS), realizamos un comparativo entre los
+            principales diagnósticos de salud mental atendidos durante el 2020 por el Sistema General de
+            Seguridad Social Salud (SGSSS) en los quince municipios focalizados. De igual manera, revisamos
+            las prioridades en salud establecidas por las autoridades sanitarias municipales y relacionadas
+            con las dimensiones de intervención del Programa y que hacen parte del Plan Decenal de Salud.
+          </p>
+          <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose" href="#">
+            Explorar datos
+          </a>
         </div>
-    </div>
-    <!-- TARGETED TERRITORIES END -->
-
-    <!-- PROGRAM IMPACT -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #4F7435;">
-        <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 text-white gap-y-12 lg:gap-x-16 xl:gap-x-28">
-                <div class="lg:col-start-1 lg:col-end-7 text-center lg:text-left space-y-12">
-                    <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl">
-                        <span class="px-1" style="background-color: #38601E;">Tecnología</span> al servicio de lo social
-                    </h2>
-                    <p class="text-lg xl:text-xl">
-                        Buscando promover el diálogo entre diferentes puntos de vista y el análisis comparativo entre
-                        las diferentes realidades
-                        y procesos locales, hemos creado un espacio para la exploración investigativa a partir de datos
-                        de quince municipios
-                        priorizados. Esta sección permite accedan a información comparativa entre regiones, municipios y
-                        comunidades que detone
-                        reflexión, promueva la innovación y genere oportunidades impulsar transformaciones sociales para
-                        la convivencia pacífica
-                        y el desarrollo sostenible.
-                    </p>
-                    <img class="mx-auto lg:mx-0" src="/images/home/program-impact.jpg" alt="program impact">
-                </div>
-                <div class="lg:col-start-7 lg:col-end-13 space-y-12">
-                    <div class="space-y-4">
-                        <h3 class="text-xl xl:text-2xl font-bold">
-                            Distribución poblacional rural
-                        </h3>
-                        <p class="text-lg xl:text-xl">
-                            Recopilamos la información de quince municipios, principalmente rurales, con una
-                            distribución poblacional que
-                            incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas, jóvenes y
-                            personas con discapacidad.
-                            Aquí podrás conocer su tamaño.
-
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <h3 class="text-xl xl:text-2xl font-bold">
-                            Panorama de la salud mental
-                        </h3>
-                        <p class="text-lg xl:text-xl">
-                            A partir del Registro Individual de Prestación (RIPS), realizamos un comparativo entre los
-                            principales diagnósticos de salud
-                            mental atendidos durante el 2020 por el Sistema General de Seguridad Social Salud (SGSSS) en
-                            los quince municipios priorizados.
-                            De igual manera, revisamos las prioridades en salud establecidas por las autoridades
-                            sanitarias municipales y relacionadas con
-                            las dimensiones de intervención del Programa WLH y que hacen parte del Plan Decenal de
-                            Salud.
-                        </p>
-                    </div>
-                    <div class="space-y-4">
-                        <h3 class="text-xl xl:text-2xl font-bold">
-                            Economías tradicionales
-                        </h3>
-                        <p class="text-lg xl:text-xl">
-                            Los quince municipios priorizados son predominantemente agrícolas y forestales, con una
-                            potencia para la piscicultura,
-                            apicultura y otras prácticas que protegen el medio ambiente. También, se encuentran en zonas
-                            de extracción minera, y
-                            tienen tradición en la agricultura y la producción de artesanías. Existen procesos
-                            incipientes de industrialización en
-                            algunos municipios e incentivos para el emprendimiento campesino. Conozca más sobre los
-                            procesos de empoderamiento económico
-                            que impulsan la resiliencia.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            <span class="pl-1 pr-2 bg-puce">Economías</span> tradicionales
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            Los quince municipios PDET en los que trabajaremos hasta el 2026, son predominantemente
+            agrícolas y forestales, con una potencia para la piscicultura, apicultura y otras prácticas que
+            protegen el medio ambiente. También, se encuentran en zonas de extracción minera, y tienen
+            tradición en la agricultura y la producción de artesanías. Existen procesos incipientes de
+            industrialización en algunos municipios e incentivos para el emprendimiento campesino.
+          </p>
+          <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose" href="#">
+            Explorar datos
+          </a>
         </div>
+        <iframe class="order-5 lg:order-6 mx-auto self-end w-full" style="height: 400px;"
+          src="/charts/home/actividades_economicas_total.html" frameborder="0"
+          title="Gráfica de actividades económicas totales"></iframe>
+      </div>
     </div>
-    <!-- PROGRAM IMPACT END -->
+  </div>
+  <!-- LOREM IPSUM END -->
+  <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
+    <img src="/images/home/sticky.svg" alt="sticky">
+  </div>
+  <!-- UPCOMING EVENTS -->
+  <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20 bg-cultured">
+    <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
+      Próximos <span class="inline-block px-1 bg-puce">eventos</span>
+    </h2>
+    {{ partial "events" . }}
+  </div>
+  <!-- UPCOMING EVENTS END -->
 
-    <!-- OUTSTANDING NEWS -->
-    <div class="lg:col-start-1 lg:col-end-13 py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12 lg:w-8/12">
-            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
-                <span class="px-1" style="background-color: #9EB290;">Noticias</span> destacadas
-            </h2>
-            <div class="mb-12 lg:mb-16 xl:mb-20 relative">
-                <!-- Slider main container -->
-                <div class="swiper swiper-news">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        {{ range where .Pages "Section" "noticias" }}
-                        {{ range .Pages }}
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="relative border-t-2 p-10 hover:shadow-lg duration-300 space-y-4"
-                                style="background-color: #F0F0F2; border-color: #B0C58F;">
-                                <img class="h-52 w-full object-cover object-center" src="{{ .Params.image }}"
-                                    alt="notice">
-                                <p class="text-sm lg:text-base italic">Fecha: {{ .Date | time.Format ":date_long" }}</p>
-                                <h3 class="text-lg xl:text-xl font-black" style="color: #1A1A1A;">
-                                    {{ .Title | safeHTML | truncate 60 }}
-                                </h3>
-                                <p class="text-lg xl:text-xl">
-                                    {{ .Description | safeHTML | truncate 130 }}
-                                </p>
-                                <a class="inline-block py-2 px-8 uppercase text-white font-bold"
-                                    style="background-color: #3A3C6A;" href="{{ .RelPermalink }}">Ver todo</a>
-                                <img class="absolute right-0 -top-4" src="/images/public/sticky.svg" alt="sticky">
-                            </div>
-                        </div>
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </div>
-                <div class="z-20">
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev swiper-button-prev-news">
-                        <img src="/images/public/left-arrow-green.svg" alt="left arrow">
-                    </div>
-                    <div class="swiper-button-next swiper-button-next-news">
-                        <img src="/images/public/right-arrow-green.svg" alt="right arrow">
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a class="uppercase text-white py-2 px-6 xl:text-lg" href="{{ relref . " noticias/_index.md" }}"
-                    style="background-color: #C5296A;">Conoce Más</a>
-            </div>
-        </div>
-    </div>
-    <!-- OUTSTANDING NEWS END -->
 
-    <div class="lg:col-start-1 lg:col-end-13" style="background-color: #FAFAFA;">
-        <img class="mx-auto w-11/12 md:w-9/12 lg:w-auto" src="/images/public/logo-hilando-2.svg" alt="hilando">
-    </div>
-
-    <!-- LOREM IPSUM -->
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12">
-            <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center">
-                <span class="px-1" style="background-color: #C493A8;">Mapeo</span> social
-            </h2>
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center">
-                <div class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full">
-                    <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-                        Distribución <span class="pl-1 pr-2" style="background-color: #B97D97;">poblacional rural</span>
-                    </h3>
-                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        De los quince municipios focalizados, WLH trabaja con comunidades específicas quienes participan
-                        de una intervención integral. Estas comunidades son principalmente rurales con una distribución
-                        poblacional que incluye víctimas del conflicto, comunidades étnicas, mujeres, niños, niñas,
-                        jóvenes y personas con discapacidad.
-                    </p>
-                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
-                        Explorar datos
-                    </a>
-                </div>
-                <iframe class="order-1 lg:order-2 mx-auto self-end w-full" style="height: 400px;"
-                    src="/charts/home/distribucion_poblacion_total.html" frameborder="0" title="Distribución de población urbana y rural en los municipios priorizados."></iframe>
-                <iframe class="order-3 mx-auto self-end w-full" style="height: 400px;"
-                    src="/charts/home/top_diagnosticos_total.html" frameborder="0" title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"></iframe>
-                <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
-                    <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-                        Panorama de la
-                        <span class="pl-1 pr-2" style="background-color: #B97D97;"> salud mental</span>
-                    </h3>
-                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        A partir del Registro Individual de Prestación (RIPS), realizamos un comparativo entre los
-                        principales diagnósticos de salud mental atendidos durante el 2020 por el Sistema General de
-                        Seguridad Social Salud (SGSSS) en los quince municipios focalizados. De igual manera, revisamos
-                        las prioridades en salud establecidas por las autoridades sanitarias municipales y relacionadas
-                        con las dimensiones de intervención del Programa y que hacen parte del Plan Decenal de Salud.
-                    </p>
-                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
-                        Explorar datos
-                    </a>
-                </div>
-                <div class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full">
-                    <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-                        <span class="pl-1 pr-2" style="background-color: #B97D97;">Economías</span> tradicionales
-                    </h3>
-                    <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-                        Los quince municipios PDET en los que trabajaremos hasta el 2026, son predominantemente
-                        agrícolas y forestales, con una potencia para la piscicultura, apicultura y otras prácticas que
-                        protegen el medio ambiente. También, se encuentran en zonas de extracción minera, y tienen
-                        tradición en la agricultura y la producción de artesanías. Existen procesos incipientes de
-                        industrialización en algunos municipios e incentivos para el emprendimiento campesino.
-                    </p>
-                    <a class="uppercase font-bold text-white py-2 px-7 xl:text-lg" href="#" style="background-color: #C5296A;">
-                        Explorar datos
-                    </a>
-                </div>
-                <iframe class="order-5 lg:order-6 mx-auto self-end w-full" style="height: 400px;"
-                    src="/charts/home/actividades_economicas_total.html" frameborder="0" title="Gráfica de actividades económicas totales"></iframe>
-            </div>
-        </div>
-    </div>
-    <!-- LOREM IPSUM END -->
-    <div class="lg:col-start-1 lg:col-end-13" style="background-color: #FAFAFA;">
-        <img src="/images/home/sticky.svg" alt="sticky">
-    </div>
-    <!-- UPCOMING EVENTS -->
-    <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20"
-        style="background-color: #FAFAFA;">
-        <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
-            Próximos <span class="inline-block px-1" style="background-color: #BF8EA4;">eventos</span>
-        </h2>
-        {{ partial "events" . }}
-    </div>
-    <!-- UPCOMING EVENTS END -->
-
-    
-    <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
+  <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
 </div>
 {{ end }}
 {{ define "head" }}

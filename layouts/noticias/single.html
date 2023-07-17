@@ -1,24 +1,22 @@
 {{ define "main" }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
-    <div class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
-        style="height: 201px;">
-    </div>
-    <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20" style="background-color: #FAFAFA;">
-        <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12">
-            <div class="lg:col-start-1 lg:col-end-10">
-                <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10"
-                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #3A3C6A;">
-                    <img class="mr-3 h-3" src="/images/public/left-arrow-white.svg" alt="left arrow">
-                    <span>Volver</span></a>
-                <span class="block italic mb-3 lg:mb-4">Fecha: {{ .Date | time.Format ":date_long"}}</span>
-                <h1 class="text-2xl lg:text-3xl font-black mb-4 lg:mb-5">{{ .Title }}</h1>
-                <div class="text-lg lg:text-xl mb-6 lg:mb-8 space-y-8">
-                    {{ .Content | safeHTML }}
-                </div>
-                <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10"
-                    href="{{ relref . " noticias/_index.md" }}" style="background-color: #C5296A;">Más noticias</a>
-            </div>
+  <div class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
+    style="height: 201px;">
+  </div>
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured" >
+    <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12">
+      <div class="lg:col-start-1 lg:col-end-10">
+        <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10 bg-space-cadet" href='{{ relref . "noticias/_index.md" }}'>
+          <img class="mr-3 h-3" src="/images/public/left-arrow-white.svg" alt="left arrow">
+          <span>Volver</span></a>
+        <span class="block italic mb-3 lg:mb-4">Fecha: {{ .Date | time.Format ":date_long"}}</span>
+        <h1 class="text-2xl lg:text-3xl font-black mb-4 lg:mb-5">{{ .Title }}</h1>
+        <div class="text-lg lg:text-xl mb-6 lg:mb-8 space-y-8">
+          {{ .Content | safeHTML }}
         </div>
+        <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10 bg-rose" href='{{ relref . "noticias/_index.md" }}'>Más noticias</a>
+      </div>
     </div>
+  </div>
 </div>
 {{ end }}
