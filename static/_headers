@@ -1,10 +1,11 @@
 /*
   Content-Security-Policy: default-src 'self' hilando.datasketch.co *.typekit.net
   Content-Security-Policy: media-src *
-  Content-Security-Policy: script-src 'self' 'unsafe-inline' https://www.googletagmanager.com
-  Content-Security-Policy: style-src 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net https://fonts.googleapis.com
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' www.googletagmanager.com
   Content-Security-Policy: img-src 'self' www.googletagmanager.com
-  Content-Security-Policy: style-src-elem 'self' data:
+  Content-Security-Policy: style-src *
+  Content-Security-Policy: style-src-elem *
+  Content-Security-Policy: font-src *
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), camera=(), microphone=()
