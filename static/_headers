@@ -1,5 +1,8 @@
 /*
-  Content-Security-Policy: default-src 'self' hilando.datasketch.co *.typekit.net unpkg.com; media-src *; script-src 'self' www.googletagmanager.com identity.netlify.com unpkg.com; style-src-elem 'self' *.typekit.net; style-src 'self' *.typekit.net unpkg.com fonts.googleapis.com
+  Content-Security-Policy: default-src 'self' hilando.datasketch.co *.typekit.net unpkg.com
+  Content-Security-Policy: media-src *
+  Content-Security-Policy: script-src 'self' 'nonce-2726c7f26c' https://www.googletagmanager.com https://identity.netlify.com https://unpkg.com
+  Content-Security-Policy: style-src 'self' https://use.typekit.net https://unpkg.com https://fonts.googleapis.com
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), camera=(), microphone=()
