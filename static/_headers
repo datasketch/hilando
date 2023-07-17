@@ -3,9 +3,9 @@
   Content-Security-Policy: media-src *
   Content-Security-Policy: script-src 'self' 'unsafe-inline' www.googletagmanager.com
   Content-Security-Policy: img-src 'self' www.googletagmanager.com
-  Content-Security-Policy: style-src *
-  Content-Security-Policy: style-src-elem *
-  Content-Security-Policy: font-src *
+  Content-Security-Policy: style-src * 'unsafe-inline'
+  Content-Security-Policy: style-src-elem * 'unsafe-inline'
+  Content-Security-Policy: font-src * 'unsafe-inline'
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), camera=(), microphone=()
