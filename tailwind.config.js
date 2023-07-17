@@ -122,6 +122,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        400: '400px',
+        550: '550px',
+      },
       fontSize: {
         xxxs: '0.5rem',
         xxs: '0.625rem',

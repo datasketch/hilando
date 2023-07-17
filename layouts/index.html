@@ -10,8 +10,7 @@
         <!-- Slides -->
         <div class="swiper-slide">
           <!-- BANNER HOME PAGE -->
-          <div class="relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-            style="height: 550px;">
+          <div class="relative bg-banner-home bg-cover bg-center py-60 lg:py-72 xl:py-80 observer h-550">
             <div class="mx-auto w-10/12 lg:w-full">
               <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
                 HILANDO COMUNIDADES
@@ -25,8 +24,7 @@
         </div>
         <div class="swiper-slide">
           <!-- BANNER HOME PAGE -->
-          <div class="relative bg-banner-home-2 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-            style="height: 550px;">
+          <div class="relative bg-banner-home-2 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer h-550">
             <div class="mx-auto w-10/12 lg:w-full">
               <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
                 HILANDO COMUNIDADES
@@ -40,8 +38,7 @@
         </div>
         <div class="swiper-slide">
           <!-- BANNER HOME PAGE -->
-          <div class="relative bg-banner-home-3 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer"
-            style="height: 550px;">
+          <div class="relative bg-banner-home-3 bg-cover bg-center py-60 lg:py-72 xl:py-80 observer h-550">
             <div class="mx-auto w-10/12 lg:w-full">
               <h1 class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center">
                 HILANDO COMUNIDADES
@@ -290,7 +287,7 @@
               <div class="relative border-t-2 p-10 hover:shadow-lg duration-300 space-y-4 bg-white-2 border-olivine">
                 <img class="h-52 w-full object-cover object-center" src="{{ .Params.image }}" alt="notice">
                 <p class="text-sm lg:text-base italic">Fecha: {{ .Date | time.Format ":date_long" }}</p>
-                <h3 class="text-lg xl:text-xl font-black" style="color: #1A1A1A;">
+                <h3 class="text-lg xl:text-xl font-black text-black">
                   {{ .Title | safeHTML | truncate 60 }}
                 </h3>
                 <p class="text-lg xl:text-xl">
@@ -347,12 +344,8 @@
             Explorar datos
           </a>
         </div>
-        <iframe class="order-1 lg:order-2 mx-auto self-end w-full" style="height: 400px;"
-          src="/charts/home/distribucion_poblacion_total.html" frameborder="0"
-          title="Distribución de población urbana y rural en los municipios priorizados."></iframe>
-        <iframe class="order-3 mx-auto self-end w-full" style="height: 400px;"
-          src="/charts/home/top_diagnosticos_total.html" frameborder="0"
-          title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"></iframe>
+        <iframe class="order-1 lg:order-2 mx-auto self-end w-full h-400" src="/charts/home/distribucion_poblacion_total.html" frameborder="0" title="Distribución de población urbana y rural en los municipios priorizados."></iframe>
+        <iframe class="order-3 mx-auto self-end w-full h-400" src="/charts/home/top_diagnosticos_total.html" frameborder="0" title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"></iframe>
         <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
           <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
             Panorama de la
@@ -384,9 +377,7 @@
             Explorar datos
           </a>
         </div>
-        <iframe class="order-5 lg:order-6 mx-auto self-end w-full" style="height: 400px;"
-          src="/charts/home/actividades_economicas_total.html" frameborder="0"
-          title="Gráfica de actividades económicas totales"></iframe>
+        <iframe class="order-5 lg:order-6 mx-auto self-end w-full h-400" src="/charts/home/actividades_economicas_total.html" frameborder="0" title="Gráfica de actividades económicas totales"></iframe>
       </div>
     </div>
   </div>
