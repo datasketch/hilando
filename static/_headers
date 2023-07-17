@@ -2,6 +2,7 @@
   Content-Security-Policy: default-src 'self' hilando.datasketch.co *.typekit.net
   Content-Security-Policy: media-src *
   Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com
+  Content-Security-Policy: script-src-elem 'self' data:
   Content-Security-Policy: img-src 'self' www.googletagmanager.com
   Content-Security-Policy: style-src * 'unsafe-inline'
   Content-Security-Policy: style-src-elem * 'unsafe-inline'
