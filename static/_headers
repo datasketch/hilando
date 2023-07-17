@@ -3,7 +3,7 @@
   Content-Security-Policy: media-src *
   Content-Security-Policy: script-src 'self' 'unsafe-inline' www.googletagmanager.com
   Content-Security-Policy: img-src 'self' www.googletagmanager.com
-  Content-Security-Policy: style-src 'unsafe-inline'
+  Content-Security-Policy: style-src * 'unsafe-inline'
   Content-Security-Policy: style-src-elem * 'unsafe-inline'
   Content-Security-Policy: font-src * 'unsafe-inline'
   X-Frame-Options: SAMEORIGIN
