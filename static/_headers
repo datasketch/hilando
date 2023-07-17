@@ -3,7 +3,7 @@
   Content-Security-Policy: media-src *
   Content-Security-Policy: script-src 'self' https://www.googletagmanager.com
   Content-Security-Policy: style-src 'self' https://use.typekit.net https://p.typekit.net https://fonts.googleapis.com
-  Content-Security-Policy: img-src www.googletagmanager.com
+  Content-Security-Policy: img-src 'self' www.googletagmanager.com
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), camera=(), microphone=()
