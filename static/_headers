@@ -5,3 +5,4 @@
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(), camera=(), microphone=()
   Referrer-Policy: same-origin
+  X-XSS-Protection: 1; mode=block
