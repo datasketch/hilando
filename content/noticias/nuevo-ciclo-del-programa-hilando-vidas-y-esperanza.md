@@ -15,7 +15,7 @@ Las veredas y corregimientos focalizados hacen parte de los territorios incluido
 
 La población campesina focalizada en Montes de María se destaca por su proceso de liderazgo y búsqueda del bienestar de más de 500 familias de la zona.  A lo largo de los años, estas personas han resistido pacíficamente a las afectaciones de la violencia y le han apostado a la construcción de paz con cultivos de cacao, yuca, maíz y fríjol. Este colectivo, tiene grandes expectativas sobre las acciones dirigidas a sanar las heridas del pasado; y han expresado su interés por fortalecer los procesos con mujeres, jóvenes, y niños y niñas. 
 
-![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/WhatsApp%20Image%202023-01-12%20at%204.22.14%20PM%20(2).jpeg)
+![Grupo de mujeres, hombres y niños y niñas del Corregimiento Negro de Calle Larga Buenaventura](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/WhatsApp%20Image%202023-01-12%20at%204.22.14%20PM%20(2).jpeg "Grupo de mujeres, hombres y niños y niñas del Corregimiento Negro de Calle Larga Buenaventura")
 
 Las veredas y corregimientos son: La Siria, en Toluviejó, Sucre; Las veredas Manzanares y Montebello, en Chalán, Sucre ; La Estación, en Colosó, Sucre; El Bongal, Arroyo de María del Corregimiento Paraíso, en San Jacinto, Bolívar; y La Haya, en San Juan Nepomuceno, Bolívar.
 
@@ -25,7 +25,7 @@ Las veredas y corregimientos son: La Capilla y Villa Grande, en El Bagre; el cor
 
 Para los departamentos del Valle del Cauca y Cauca, fueron elegidos sujetos de reparación colectiva, consejos comunitarios afrocolombianos y comunidades campesinas, entre otras. 
 
-![Mapa WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/Mapa-WLH.jpg)
+![Mapa de las tres regiones donde trabaja WLH: Montes de Maria, Bajo Cauca y Nordeste Antioqueño y Paciifico, Alto Patia y Norte de Cauca](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/Mapa-WLH.jpg "Mapa de las tres regiones donde trabaja WLH: Montes de Maria, Bajo Cauca y Nordeste Antioqueño y Paciifico, Alto Patia y Norte de Cauca")
 
 Las más de 900 familias que harán parte del Programa WLH en 2023 han sido resilientes ante las consecuencias de la guerra, que ha sido particularmente cruda en estos departamentos. Entre sus iniciativas de construcción de paz se encuentran grupos de apoyo para sobrevivientes del conflicto, proyectos productivos de café, piña, cacao y panela, que buscan fortalecer  la  identidad y el arraigo cultural de estos pueblos. 
 
