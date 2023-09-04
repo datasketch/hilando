@@ -24,7 +24,7 @@ Pero la música, además de ser una parte vital de la cultura de Los Montes de M
 
 **“La gaita es una cultura, es algo esencial, nos transmite unos conocimientos que nosotros tenemos, nos toca el corazón, nos toca el alma”, dice Pedro Pablo. Para él, revivir espacios donde suenen sus instrumentos, sin miedo, es vital para mostrarle a las nuevas generaciones algunas de las prácticas culturales con las que, quizás, no crecieron.**
 
-![](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/styles/max_1300x1300/public/stories/img_017401banner2.png?itok=pNSccBCI)
+![Gaitero Pedro Pablo tocando tambor en el escenario](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/styles/max_1300x1300/public/stories/img_017401banner2.png?itok=pNSccBCI "Gaitero Pedro Pablo tocando tambor en el escenario")
 
 \
 Involucrar a niños, niñas y jóvenes en el folclor de la región es importante, según cuenta Pedro Pablo, porque “inculcamos que aprendan a tocar estos instrumentos y estamos evitando que vayan por el camino de la ilegalidad y brindando oportunidades de vida”. El programa Hilando Vidas y Esperanza de USAID, implementado por OIM, también ha apoyado talleres de gaitas con las personas más jóvenes de Las Mercedes.
