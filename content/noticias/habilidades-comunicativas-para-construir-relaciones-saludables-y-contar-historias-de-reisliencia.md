@@ -1,6 +1,6 @@
 ---
 title: HABILIDADES COMUNICATIVAS PARA CONSTRUIR RELACIONES SALUDABLES Y CONTAR
-  HISTORIAS DE REISLIENCIA
+  HISTORIAS DE RESILIENCIA
 date: 2022-11-14T17:09:21.615Z
 image: /images/uploads/whatsapp-image-2022-08-01-at-11.28.19-am.jpeg
 description: >+
@@ -22,7 +22,7 @@ Para Oscar Baena, integrante del colectivo “CV Comunicaciones” del municipio
 
 Entre las temáticas tratadas durante el taller de audiovisual se encuentran: creación de escaletas, reconocimiento de planos, manejo de cámara e iluminación, ley de tercios y sugerencias de programas de edición. En cuanto al taller de radio se abordan temas relacionados con el cuidado de la voz, la escritura de libretos, reconocimiento de formatos radiales y técnicas para la realización de entrevistas.
 
-![](/images/uploads/img_0241.jpg)
+![Jovenes toman clases de video como parte del programa Resilientes](/images/uploads/img_0241.jpg "Jovenes toman clases de video como parte del programa Resilientes")
 
 A partir de los aprendizajes compartidos durante el ejercicio pedagógico, cada colectivo invitado ha propuesto el cubrimiento local sobre aspectos relevantes en sus comunidades, entre ellos el rescate de saberes ancestrales, cultura propia, historias de vida, resiliencia y cuidado del territorio. Entre los productos de comunicación planteados por los colectivos de comunicación y cuya realización también será apoyada por el Programa Hilando Vidas y Esperanza y Pacifista, se encuentran cortometrajes, filminutos, video reportajes, vox pop, postales sonoras, exposiciones fotográficas y minidocumentales. Los contenidos serán producidos y difundidos entre septiembre y octubre de este año bajo el hashtag #ResilientES.
 
