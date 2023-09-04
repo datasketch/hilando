@@ -15,7 +15,7 @@ En el mes de marzo, el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de
 
 El Programa WLH ha acompañado la adopción y adaptación de la Política Pública de Salud Mental en otros municipios históricamente afectados por la violencia como: San Juan Nepomuceno y San Jacinto, en Bolívar; Toluviejo, Chalán y Colosó, en Sucre; Toribio, en Cauca; y Pradera, en Valle del Cauca en donde ya se firmaron sus respectivos actos administrativos. En Buenaventura, la OIM y USAID apoyaron la actualización de los lineamientos que ya existían.
 
-![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/image-1.jpeg)
+![Evento de socializacion de los avances en politias publicas ](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/image-1.jpeg "Evento de socializacion de los avances en politias publicas")
 
 Estos documentos municipales son el primer paso para la implementación de la política nacional sobre salud mental en los territorios, y tienen en cuenta las particularidades y contextos de cada región. Por ejemplo, en Santander de Quilichao y Toribío, Cauca las conversaciones alrededor de la construcción de este documento contó con la participación activa de las autoridades étnicas y étnico-territoriales, para integrar sus formas de sanación ancestrales.
 
@@ -23,6 +23,6 @@ En Antioquia, donde los cinco municipios priorizados por el Programa (Valdivia, 
 
 A estas actividades del ámbito institucional se suman otros esfuerzos del Programa como son la puesta en funcionamiento de Salas Psicosociales, Servicios de Rehabilitación Física, y equipos de telemedicina para consultas remotas en los territorios focalizados; y el trabajo directo con las comunidades a través del Modelo de Intervención Psicosocial Integral Hilando Juntos. 
 
-![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/image-3bannervisp.jpg)
+![Firma simbolica del acuerdo para mejorar el acceso de los sobrevivientes a servicios psicosociales y de salud mental](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/image-3bannervisp.jpg "Firma simbolica del acuerdo para mejorar el acceso de los sobrevivientes a servicios psicosociales y de salud mental")
 
 En suma, todos estos esfuerzos hacen parte del Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, que busca mejorar el acceso de los sobrevivientes del conflicto y comunidades vulnerables a Servicios Psicosociales y de Salud Mental; apoyarlas en la superación del trauma; y permitirles vivir una vida productiva y en paz.
