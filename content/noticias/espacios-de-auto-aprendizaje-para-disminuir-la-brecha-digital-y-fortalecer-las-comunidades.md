@@ -23,7 +23,7 @@ Estos espacios de auto aprendizaje consisten en que a partir de la formulación 
 
 En un SOLE, se reúnen niños y niñas, jóvenes y adultos alrededor de un computador y logran investigar la respuesta a la pregunta que entre todos han elegido. Después, se conectan de manera remota con una persona en el extranjero, denominada como “abuelita”, para contarle y socializar lo qué han encontrado. 
 
-![Taller_sole_isla](/images/uploads/20220405_104510.jpg)
+![Dos asistentes al encuentro Sole en la isla de la Amargura presentando sus respuestas](/images/uploads/20220405_104510.jpg "Dos asistentes al encuentro Sole en la isla de la Amargura presentando sus respuestas")
 
 A lo largo del año, se han instalado y acompañado 32 encuentros SOLE, en los que han participado alrededor de 400 personas de las comunidades focalizadas. Además de los encuentros, 74 personas se han formado como Embajadores SOLE, para trabajar de la mano con Instituciones educativas y las Juntas de Acción Comunal de cada corregimiento y continuar replicando estos espacios. 
 
@@ -31,4 +31,4 @@ Este es el caso de Orcelis, Embajadora de la comunidad de San Pedro Consolado en
 
 En los próximos meses, el Programa WLH, junto a la Fundación SOLE Colombia, continuará acompañando y motivando a los embajadores de cada región para que los SOLE continúen y lleguen a más personas. Además de continuar con la entrega de computadores para lograr comunidades más equitativas y conectadas.  
 
-![taller_sole_san_pedro](/images/uploads/whatsapp-image-2022-03-24-at-5.12.29-pm-2-.jpeg)
+![Una embajadora de San Pedro Consolado sonrie por haber realizado el SOLE con exito](/images/uploads/whatsapp-image-2022-03-24-at-5.12.29-pm-2-.jpeg "Una embajadora de San Pedro Consolado sonrie por haber realizado el SOLE con exito")
