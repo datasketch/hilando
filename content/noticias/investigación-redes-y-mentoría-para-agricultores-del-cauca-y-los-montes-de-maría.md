@@ -12,8 +12,6 @@ description: >-
   25 personas de los Montes de María y el Cauca participaron en visitas a asociaciones de producción de café y maíz para intercambiar conocimiento técnico y fortalecer sus redes comerciales.  
 cms: true
 ---
-
-
 * Con dos giras de conocimiento, el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, fortalece capacidades en agricultores para su empoderamiento económico. 
 * 25 personas de los Montes de María y el Cauca participaron en visitas a asociaciones de producción de café y maíz para intercambiar conocimiento técnico y fortalecer sus redes comerciales.  
 
@@ -21,7 +19,7 @@ Quince productores de maíz de la comunidad de La Ceiba, municipio de Chalán, S
 
 Estas giras de conocimiento, como se llama esta iniciativa del Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), buscan fortalecer capacidades de producción agrícola del campesinado mediante intercambios con los centros de investigación de sus regiones.  
 
-![Investigación, redes y mentoría para agricultores del Cauca y Los Montes de María ](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras4.png)
+![Agricultores del Cauca y Montes de Maria tomando capacitacion sobre el maiz](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras4.png "Agricultores del Cauca y Montes de Maria tomando capacitacion sobre el maiz")
 
 Las actividades hacen parte de las estrategias para el empoderamiento económico de comunidades sobrevivientes del conflicto armado en Colombia. En cada región, los participantes propusieron el producto que querían potenciar, con base en sus contextos locales, y el Programa WLH gestionó encuentros con pequeños y medianos productores para fortalecer su conocimiento técnico y las redes de contactos de agricultores en la industria de sus regiones.  
 
@@ -29,7 +27,7 @@ El maíz: Una apuesta para el desarrollo en los Montes de María 
 
 La producción de maíz es importante para la cultura y economía de los Montes de María, a pesar de su baja producción. Por eso, los habitantes de La Ceiba propusieron este producto como apuesta de empoderamiento económico. El apoyo del Programa WLH busca que la comunidad pueda apropiarse de una nueva variedad de maíz amarillo, denominado Corpoica V-114, desarrollada por Agrosavia; una organización que trabaja por la generación de conocimiento científico que sirva a las industrias agropecuarias del país. La nueva semilla fue adaptada para soportar las condiciones del caribe húmedo. 
 
-![El maíz: Una apuesta para el desarrollo en los Montes de María](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras3.png)
+![Agricultores del Cauca y Montes de Maria visitando cultivo de maiz](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras3.png "Agricultores del Cauca y Montes de Maria visitando cultivo de maiz")
 
 Quince agricultores se vincularon al proceso para sembrar al menos una hectárea de esta nueva semilla de maíz en sus fincas. Así, en los últimos meses, avanzaron en el proceso de siembra de este producto, que promete tener un mejor rendimiento y ser más amigable con el ecosistema de la región. Se espera que, por medio de la capacitación, seguimiento y asistencia técnica a los agricultores, la producción se aumente sustancialmente. 
 
@@ -41,7 +39,7 @@ En el Norte del Cauca, diez productores de café de las comunidades indígenas N
 
 La visita fortaleció sus conocimientos sobre la siembra, el manejo de cultivos, el aprovechamiento de subproductos y la catación de café. Los agricultores indígenas también conocieron los procesos productivos en la finca La Alejandría, en Santander de Quilichao. Allí, compartieron experiencias con los pequeños productores detrás de esta exitosa iniciativa cafetera para iniciar un proceso de mentoría entre pares. 
 
-![Comunidades indígenas en el Cauca trabajan por una caficultura sostenible](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras2.png)
+![Comunidades indígenas en el Cauca toman capacitacion para mejoras sus cultivos de cafe](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/giras2.png "Comunidades indígenas en el Cauca toman capacitacion para mejoras sus cultivos de cafe")
 
 Además de la gira de conocimiento, el Programa WLH de USAID y OIM ha apoyado el empoderamiento económico de estas comunidades fuertemente golpeadas por la violencia en la región, por medio de alianzas con el comité de Cafeteros del Cauca y la Cooperativa de Caficultores del Norte del Cauca (Cafinorte), con el fin de mejorar la calidad del café; implementar nuevas tecnologías para el desarrollo de cafés especiales y/o nuevas técnicas de postcosecha; y realizar análisis de calidad de grano y taza. El programa también ha promovido el uso de la aplicación móvil “Agenda Cafetera” para que jóvenes productores mejoren los procesos organizativos dentro de las fincas. 
 
