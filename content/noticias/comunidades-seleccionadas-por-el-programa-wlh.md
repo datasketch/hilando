@@ -20,7 +20,7 @@ cms: true
 
 La historia de los sobrevivientes del conflicto armado está llena de iniciativas y procesos locales que muestran la resiliencia de las comunidades en medio del conflicto. Luego de completar su fase de mapeo social, validación conceptual y acercamiento, el Programa Hilando Vidas y Esperanza (WLH, por sus siglas en inglés), de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), priorizó las primeras 15 comunidades con quienes iniciará un trabajo conjunto que fortalezca y potencie los procesos locales.  
 
-![](/images/uploads/imagen1.png)
+![Beneficiario de WLH con un mapa que refleja su territorio](/images/uploads/imagen1.png "Beneficiario de WLH con un mapa que refleja su territorio")
 
 En la región de Montes de María, zona de gaitas y tamboras, se identificaron iniciativas de jóvenes y un gran liderazgo femenino y de las personas LGBTQ+. Su entorno natural (con montañas, bosques y ríos) la hace fértil para los proyectos productivos y de servicios, con una apuesta especial por el turismo de naturaleza, de aventura y el fortalecimiento de la cultura local. En la zona, el Programa también espera apoyar la exploración, transformación y comercialización de piedra caliza, la apicultura, la producción de cacao y maíz. Es una región con retos de conectividad y oportunidades para mejorar los servicios de salud y apoyo psicosocial. En esta región, WLH trabajará con las siguientes comunidades:  
 
