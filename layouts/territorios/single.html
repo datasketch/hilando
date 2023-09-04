@@ -9,7 +9,7 @@
         <span class="tex-3xl lg:text-4xl xl:text-5xl font-bold block">{{ .Title }}</span>
         {{ .Params.departamento }}
       </h1>
-      <img class="w-full" src="/images/territorios/line-shape.svg" alt="line shape">
+      <img class="w-full" src="/images/territorios/line-shape.svg" alt="">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 lg:gap-y-10 xl:gap-y-12">
         <div class="lg:col-start-1 lg:col-end-7">
           <p class="text-white lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-14">
@@ -20,7 +20,7 @@
             <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"
               title="Gráfica de ubicación geográfica"></iframe>
             {{ else }}
-            <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg" alt="pradera map">
+            <img class="mx-auto mb-6 lg:mb-8 xl:mb-10" src="/images/territorios/pradera-map.svg" alt="Mapa de Pradera">
             {{ end }}
           </div>
           <p class="text-white lg:text-lg xl:text-xl text-center">
@@ -47,7 +47,7 @@
             <h3 class="text-white text-xl lg:text-2xl font-black mb-4 lg:mb-6">Comunidad focalizada</h3>
             {{ range .Params.comunidades }}
             <div class="flex items-center space-x-4 text-white underline mb-4 lg:mb-6">
-              <img src="/images/territorios/sticky-person.svg" alt="sticky person">
+              <img src="/images/territorios/sticky-person.svg" alt="">
               <a href="{{ .permalink }}" class="text-lg xl:text-xl">
                 {{ .label }}
               </a>
@@ -72,14 +72,14 @@
         </h3>
         <div class="flex items-center">
           <div class="flex items-center mr-8">
-            <img src="/images/territorios/women-icon.svg" alt="women icon">
+            <img src="/images/territorios/women-icon.svg" alt="">
             <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
               {{ .Params.distribucion_poblacional_mujeres }}
               <span class="block font-normal lg:text-lg xl:text-2xl">Mujeres</span>
             </h4>
           </div>
           <div class="flex items-center">
-            <img src="/images/territorios/men-icon.svg" alt="men icon">
+            <img src="/images/territorios/men-icon.svg" alt="">
             <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
               {{ .Params.distribucion_poblacional_hombres }}
               <span class="block font-normal lg:text-lg xl:text-2xl">Hombres</span>
@@ -92,7 +92,7 @@
           Población con discapacidad
         </h3>
         <div class="flex items-center mr-8">
-          <img src="/images/territorios/disability.svg" alt="disability icon">
+          <img src="/images/territorios/disability.svg" alt="">
           <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-10">
             {{ .Params.poblacion_discapacidad }}
             <span class="block font-normal text-sm">PERSONAS EN CONDICIÓN <br> DE DISCAPACIDAD</span>
@@ -104,7 +104,7 @@
         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"
           title="Gráfica de la distribución por género"></iframe>
         {{ else }}
-        <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
+        <img class="mx-auto" src="/images/territorios/chart.svg" alt="">
         {{ end }}
       </div>
       <div class="mx-auto">
@@ -112,7 +112,7 @@
         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"
           title="Gráfica de mujeres y hombres por area geográfica"></iframe>
         {{ else }}
-        <img class="mx-auto" src="/images/territorios/chart.svg" alt="chart">
+        <img class="mx-auto" src="/images/territorios/chart.svg" alt="">
         {{ end }}
       </div>
     </div>
@@ -130,7 +130,7 @@
           {{ range .Params.comunidades_etnicas_zona }}
           {{ if . }}
           <li class="flex items-center mb-3 lg:mb-4 leading-tight">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -139,7 +139,7 @@
         {{ if .Params.asentamientos_indigenas }}
         <div class="flex items-center mb-4 lg:mb-6">
           <div class="flex items-center mr-2">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             <h4 class="text-xl lg:text-2xl">Asentamientos indígenas:</h4>
           </div>
           <p class="text-xl lg:text-2xl font-bold">{{ .Params.asentamientos_indigenas }}</p>
@@ -148,7 +148,7 @@
         {{ if .Params.resguardos_indigenas }}
         <div class="flex items-center mb-4 lg:mb-6">
           <div class="flex items-center mr-2">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             <h4 class="text-xl lg:text-2xl">Resguardos indígenas:</h4>
           </div>
           <p class="text-xl lg:text-2xl font-bold">{{ .Params.resguardos_indigenas }}</p>
@@ -157,7 +157,7 @@
         {{ if .Params.consejos_comunitarios }}
         <div class="flex items-center">
           <div class="flex items-center mr-2">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             <h4 class="text-xl lg:text-2xl">Consejos comunitarios:</h4>
           </div>
           <p class="text-xl lg:text-2xl font-bold">{{ .Params.consejos_comunitarios }}</p>
@@ -173,7 +173,7 @@
         <iframe class="mx-auto w-full h-96" src="{{ . }}" frameborder="0"
           title="Gráfica de la cantidad de personas por tipo de pertenencia étnica"></iframe>
         {{ else }}
-        <img class="mx-auto" src="/images/territorios/graphic.svg" alt="graphic">
+        <img class="mx-auto" src="/images/territorios/graphic.svg" alt="">
         {{ end }}
       </div>
     </div>
@@ -193,7 +193,7 @@
           <iframe class="w-full h-96" src="{{ . }}" frameborder="0"
             title="Gráfica de las víctimas de conflicto armado según su sexo u orientación sexual e identidad de género"></iframe>
           {{ else }}
-          <img src="/images/territorios/chart.svg" alt="chart">
+          <img src="/images/territorios/chart.svg" alt="">
           {{ end }}
         </div>
         <div>
@@ -213,7 +213,7 @@
           </div>
         </div>
       </div>
-      <img class="lg:col-start-4 lg:col-end-13" src="/images/territorios/person.svg" alt="person image">
+      <img class="lg:col-start-4 lg:col-end-13" src="/images/territorios/person.svg" alt="">
       <div class="lg:col-start-4 lg:col-end-13">
         <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-6 lg:mb-8 xl:mb-10" style="color: #3A3C6A;">
           Entidades del Sistema Nacional de Atención y Reparación
@@ -222,7 +222,7 @@
           <ul class="grid grid-cols-1 gap-y-3 lg:gap-y-4">
             {{ range .Params.territorio_entidades_snariv_sivjrnr }}
             <li class="flex items-center lg:text-lg xl:text-xl">
-              <img class="mr-2" src="/images/public/point-black.svg" alt="point">
+              <img class="mr-2" src="/images/public/point-black.svg" alt="">
               {{ . }}
             </li>
             {{ end }}
@@ -274,7 +274,7 @@
         </div>
       </div>
     </div>
-    <img class="absolute -top-24 left-0" src="/images/territorios/heal.svg" alt="hearth">
+    <img class="absolute -top-24 left-0" src="/images/territorios/heal.svg" ="">
   </div>
   <!-- SECTION END -->
 
@@ -291,7 +291,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de violencia sexual"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
           {{ end }}
         </div>
         <div>
@@ -301,7 +301,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de Violencia física"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
           {{ end }}
         </div>
         <div>
@@ -311,7 +311,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de negligencia y abandono"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
           {{ end }}
         </div>
         <div>
@@ -321,7 +321,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de violencia psicológica"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="chart">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
           {{ end }}
         </div>
       </div>
@@ -337,7 +337,7 @@
       <ul class="grid grid-cols-2 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
         {{ range .Params.eventos_salud_publica_predominantes }}
         <li class="flex items-center lg:text-lg xl:text-xl">
-          <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+          <img class="mr-2" src="/images/public/point-black.svg" ="">
           {{ . }}
         </li>
         {{ end }}
@@ -349,7 +349,7 @@
       <ul class="grid grid-cols-1 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
         {{ range .Params.rips_salud_mental_poblacion_general }}
         <li class="flex items-center lg:text-lg xl:text-xl">
-          <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+          <img class="mr-2" src="/images/public/point-black.svg" ="">
           {{ . }}
         </li>
         {{ end }}
@@ -359,7 +359,7 @@
       <ul class="grid grid-cols-1 gap-y-4 gap-x-12 mb-8">
         {{ range .Params.servicios_telemedicina_mpio_depto }}
         <li class="flex items-center lg:text-lg xl:text-xl">
-          <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+          <img class="mr-2" src="/images/public/point-black.svg" alt="">
           {{ . }}
         </li>
         {{ end }}
@@ -376,7 +376,7 @@
           Pobreza multidimensional
         </h3>
         <div class="flex items-center mb-8">
-          <img src="/images/territorios/triangle-green.svg" alt="triangle">
+          <img src="/images/territorios/triangle-green.svg" alt="">
           <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
             {{ .Params.total_pobreza_multidimensional }}
             <span class="block font-normal lg:text-lg xl:text-2xl">TOTAL</span>
@@ -384,14 +384,14 @@
         </div>
         <div class="grid grid-cols-2">
           <div class="flex items-center">
-            <img src="/images/territorios/triangle-green.svg" alt="triangle">
+            <img src="/images/territorios/triangle-green.svg" alt="">
             <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
               {{ .Params.pobreza_multidimensional_urbano }}
               <span class="block font-normal lg:text-lg xl:text-2xl">URBANO</span>
             </h4>
           </div>
           <div class="flex items-center">
-            <img src="/images/territorios/triangle-green.svg" alt="triangle">
+            <img src="/images/territorios/triangle-green.svg" alt="">
             <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12 text-white">
               {{ .Params.pobreza_multidimensional_centro_poblado_rural_disperso }}
               <span class="block font-normal text-sm">CENTRO POBLADO <br> Y RURAL DISPERSO</span>
@@ -427,7 +427,7 @@
         <ul class="grid grid-cols-1 gap-y-4 mb-3 lg:mb-4 xl:mb-5">
           {{ range .Params.ppales_actividades_economicas }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -442,7 +442,7 @@
         <h3 class="text-lg lg:text-xl xl:text-2xl font-black mb-3 lg:mb-4 xl:mb-5 text-center" style="color: #4F7435;">
           Trabajo informal</h3>
         <div class="flex items-center justify-center">
-          <img src="/images/territorios/triangle-green.svg" alt="triangle">
+          <img src="/images/territorios/triangle-green.svg" alt="">
           <h4 class="uppercase font-black text-2xl lg:text-3xl xl:text-4xl -ml-12">
             {{ .Params.trabajo_informal }}
             <span class="block font-normal text-lg lg:text-xl xl:text-2xl">TOTAL</span>
@@ -455,7 +455,7 @@
         <ul class="grid grid-cols-1 gap-y-4 mb-3 lg:mb-4 xl:mb-5">
           {{ range .Params.ppal_vocacion_mpio }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -472,7 +472,7 @@
         <ul class="grid grid-cols-1 gap-y-4">
           {{ range .Params.ppal_uso_suelo }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -516,7 +516,7 @@
       </div>
     </div>
     <img class="lg:col-start-7 lg:col-end-13 w-full h-full object-cover object-center"
-      src="/images/territorios/events.svg" alt="events">
+      src="/images/territorios/events.svg" alt="">
   </div>
   <!-- SECTION END -->
 
@@ -529,7 +529,7 @@
         <ul class="grid grid-cols-1 gap-y-4">
           {{ range .Params.espacios_socio_comunitarios }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -541,7 +541,7 @@
         <ul class="grid grid-cols-1 gap-y-4">
           {{ range .Params.medios_comunicacion }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point-black.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point-black.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
@@ -567,13 +567,13 @@
         <ul class="grid grid-cols-1 gap-y-4">
           {{ range .Params.programas_usaid }}
           <li class="flex items-center lg:text-lg xl:text-xl">
-            <img class="mr-2" src="/images/public/point.svg" alt="point black">
+            <img class="mr-2" src="/images/public/point.svg" alt="">
             {{ . }}
           </li>
           {{ end }}
         </ul>
       </div>
-      <img class="lg:col-start-1 lg:col-end-13 mx-auto" src="/images/territorios/person-purple.svg" alt="person">
+      <img class="lg:col-start-1 lg:col-end-13 mx-auto" src="/images/territorios/person-purple.svg" alt="">
     </div>
   </div>
   <!-- SECTION END -->
@@ -587,7 +587,7 @@
           EXPLORA LOS TERRITORIOS
         </h2>
         <p class="lg:text-lg xl:text-xl relative px-8 py-4 lg:py-6 mb-4 lg:mb-6 xl:mb-8 mx-auto lg:w-10/12">
-          <img class="w-full absolute top-0 left-0" src="/images/public/shape-gray.svg" alt="shape gray">
+          <img class="w-full absolute top-0 left-0" src="/images/public/shape-gray.svg" alt="">
           <span class="relative">
             Explora la información de todos los territorios por temáticas.
           </span>
@@ -611,7 +611,7 @@
               sección tiene un menú desplegable de información de interés con diferentes variables para
               contemplar.
             </p>
-            <img class="mx-auto" src="/gifs/primer-panel-wlh.gif" alt="gif 1">
+            <img class="mx-auto" src="/gifs/primer-panel-wlh.gif" alt="imagen animada mostrando el funcionamiento">
             <p>
               En el segundo panel se podrán visualizar los cambios que se realizan en el primer panel, se
               puede
@@ -622,12 +622,12 @@
               se
               desee.
             </p>
-            <img class="mx-auto" src="/gifs/segundo-panel-wlh.gif" alt="gif 2">
+            <img class="mx-auto" src="/gifs/segundo-panel-wlh.gif" alt="imagen animada mostrando el funcionamiento">
             <p>
               El tercer panel permitirá que el usuario dé clic a algún dato dentro de la gráfica y obtener
               información de detalle de los datos tratados en la gráfica.
             </p>
-            <img class="mx-auto" src="/gifs/tercer-panel-wlh.gif" alt="gif 3">
+            <img class="mx-auto" src="/gifs/tercer-panel-wlh.gif" alt="imagen animada mostrando el funcionamiento">
           </div>
         </details>
       </div>
@@ -660,7 +660,7 @@
       </div>
     </div>
     <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg"
-      alt="line shape">
+      alt="">
   </div>
   <!-- DOWNLOAD END -->
 </div>
