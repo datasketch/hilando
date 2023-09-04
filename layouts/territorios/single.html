@@ -2,7 +2,7 @@
 {{ $data := .Site.Data.eventos_municipios }}
 {{ $municipio := .Title }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
-  {{/* BANNER PRADERA DEL VALLE CAUCA */}}
+  <!-- BANNER  -->
   <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer bg-purple">
     <div class="mx-auto w-10/12 xl:w-9/12">
       <h1 class="tk-mr-eaves-sans tex-2xl lg:text-3xl xl:text-4xl uppercase text-white mb-4 lg:mb-6 xl:mb-8">
@@ -61,9 +61,9 @@
       </div>
     </div>
   </div>
-  {{/* BANNER PRADERA DEL VALLE CAUCA END */}}
+  <!-- BANNER PRADERA DEL VALLE CAUCA END -->
 
-  {{/* SECTION */}}
+  <!-- SECTION -->
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-2 lg:gap-20 xl:gap-24">
       <div class="mx-auto">
@@ -117,9 +117,9 @@
       </div>
     </div>
   </div>
-  {{/* SECTION END */}}
+  <!-- SECTION END -->
 
-  {{/* SECTION */}}
+  <!-- SECTION -->
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-white-2">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 mx-auto w-10/12 xl:w-9/12">
       <div class="lg:col-start-1 lg:col-end-6">
@@ -178,9 +178,9 @@
       </div>
     </div>
   </div>
-  {{/* SECTION END */}}
+  <!-- SECTION END -->
 
-  {{/* SECTION */}}
+  <!-- SECTION -->
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-y-16 xl:gap-y-20">
       <div class="lg:col-start-4 lg:col-end-13 grid grid-cols-1 lg:grid-cols-2">
@@ -231,7 +231,7 @@
       </div>
     </div>
   </div>
-  {{/* SECTION END */}}
+  <!-- SECTION END -->
 
   <!-- SECTION -->
   <div class="relative py-12 lg:py-16 l:py-20 lg:col-start-1 lg:col-end-13 bg-cultured" id="salud">
@@ -274,7 +274,7 @@
         </div>
       </div>
     </div>
-    <img class="absolute -top-24 left-0" src="/images/territorios/heal.svg" ="">
+    <img class="absolute -top-24 left-0" src="/images/territorios/heal.svg" alt="">
   </div>
   <!-- SECTION END -->
 
@@ -291,7 +291,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de violencia sexual"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="">
           {{ end }}
         </div>
         <div>
@@ -301,7 +301,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de Violencia física"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="">
           {{ end }}
         </div>
         <div>
@@ -311,7 +311,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de negligencia y abandono"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="">
           {{ end }}
         </div>
         <div>
@@ -321,7 +321,7 @@
           <iframe class="w-full h-96 mx-auto" src="{{ . }}" frameborder="0"
             title="Gráfica de violencia psicológica"></iframe>
           {{ else }}
-          <img class="mx-auto" src="/images/territorios/chart-orange.svg" ="">
+          <img class="mx-auto" src="/images/territorios/chart-orange.svg" alt="">
           {{ end }}
         </div>
       </div>
@@ -337,7 +337,7 @@
       <ul class="grid grid-cols-2 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
         {{ range .Params.eventos_salud_publica_predominantes }}
         <li class="flex items-center lg:text-lg xl:text-xl">
-          <img class="mr-2" src="/images/public/point-black.svg" ="">
+          <img class="mr-2" src="/images/public/point-black.svg" alt="">
           {{ . }}
         </li>
         {{ end }}
@@ -349,7 +349,7 @@
       <ul class="grid grid-cols-1 gap-y-4 gap-x-12 mb-8 lg:mb-12 xl:mb-16">
         {{ range .Params.rips_salud_mental_poblacion_general }}
         <li class="flex items-center lg:text-lg xl:text-xl">
-          <img class="mr-2" src="/images/public/point-black.svg" ="">
+          <img class="mr-2" src="/images/public/point-black.svg" alt="">
           {{ . }}
         </li>
         {{ end }}
