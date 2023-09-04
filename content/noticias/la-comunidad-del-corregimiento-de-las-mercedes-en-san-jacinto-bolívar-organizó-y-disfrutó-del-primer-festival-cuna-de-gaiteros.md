@@ -12,7 +12,7 @@ description: >-
   El Festival rindió homenaje a los maestros vivos y fallecidos, oriundos de la comunidad de Las Mercedes, que han llevado la música de gaitas, la cumbia y el folclore Caribe a nivel nacional e internacional.
 cms: true
 ---
-![semillero_jovenes_bailando_cuna_gaiteros](/images/uploads/whatsapp-image-2022-04-15-at-8.07.04-am-6-.jpeg)
+![semillero_jovenes_bailando_cuna_gaiteros](/images/uploads/whatsapp-image-2022-04-15-at-8.07.04-am-6-.jpeg "Jovenes del semillero bailando en cuna de gaiteros")
 
 * El Festival Cuna de Gaiteros fue apoyado por la Alcaldía municipal de San Jacinto y por la agenda cultural del Programa WLH de USAID, implementado por OIM.  
 * El Festival rindió homenaje a los maestros vivos y fallecidos, oriundos de la comunidad de Las Mercedes, que han llevado la música de gaitas, la cumbia y el folclore Caribe a nivel nacional e internacional.
@@ -25,6 +25,6 @@ En el evento, que reunió a más de doscientas personas de la comunidad y tambi�
 
 El Festival también fue la oportunidad para desplegar lo mejor de los platos típicos del corregimiento y realizar una muestra de las artesanías y tejidos elaborados por las personas de la comunidad. El corregimiento de las Mercedes y Casa de Piedra, en el municipio de San Jacinto, son dos de las comunidades priorizadas y acompañadas por El Programa Hilando Vidas y Esperanza (WLH), de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM). El apoyo a este tipo de eventos que congregan a la comunidad hace parte de las estrategias del programa para fortalecer la reconciliación y la convivencia, el acceso a la salud mental y el empoderamiento económico.  
 
-![](/images/uploads/whatsapp-image-2022-03-31-at-6.35.39-pm.jpeg)
+![Tejido mochilas y tambores en la Cunda Gaitas en Las Mercedes](/images/uploads/whatsapp-image-2022-03-31-at-6.35.39-pm.jpeg "Tejido mochilas y tambores en la Cunda Gaitas en Las Mercedes")
 
 Además del Festival Cuna de Gaiteros, la agenda cultural del programa WLH en articulación con el equipo territorial, están apoyando el proceso de formación en música de gaitas para niños y niñas de las comunidades de Casa de Piedra y Las Mercedes, al igual que procesos de tejeduría en telar vertical con las mujeres y el fortalecimiento de los escenarios deportivos juveniles.
