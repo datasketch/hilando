@@ -31,7 +31,7 @@
               <input id="search" class="w-full py-3 px-5 focus:outline-none rounded-xl  border-space-cadet border"
                 type="text" placeholder="Palabras clave">
               <img class="absolute right-3 top-1/2 transform -translate-y-1/2" src="/images/public/search-icon.svg"
-                alt="search icon">
+                alt="">
             </div>
           </div>
           <div>
@@ -44,7 +44,7 @@
               <div>
                 <button class="accordion accordion--transparent" data-tab="0" style="border: 1px solid #BABBC9;">
                   Tema
-                  <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="arrow right">
+                  <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
                 </button>
                 <div class="panel" style="border: 1px solid #BABBC9;">
                   {{ range sort (uniq $tema) "value" "asc" }}
