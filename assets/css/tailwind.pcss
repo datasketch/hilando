@@ -9,6 +9,14 @@
 }
 
 @layer components {
+  #skip-to-content a {
+    @apply absolute -top-full left-0 bg-white px-4 py-2 text-purple font-bold text-lg;
+    z-index: 100;
+  }
+
+  #skip-to-content a:focus {
+    @apply top-0;
+  }
 
   .boletin {
     height: 770px;

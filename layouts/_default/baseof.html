@@ -4,12 +4,15 @@
 <head>
     {{ partial "head.html" . }}
     {{ block "head" . }}{{ end }}
-    <title>{{ .Title }}</title>
+    <title>{{ .Title }} | Hilando comunidades</title>
 </head>
 
 <body class="tk-futura-pt text-black overflow-x-hidden">
+    <div id="skip-to-content">
+        <a href="#main-content">Saltar al contenido principal</a>
+    </div>
     {{ partial "navbar.html" . }}
-    <main class="mx-auto">
+    <main class="mx-auto" id="main-content">
         {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
