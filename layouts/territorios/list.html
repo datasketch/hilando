@@ -58,7 +58,7 @@
           <ul class="p-8 text-white grid gap-y-8 overflow-y-scroll bg-space-cadet h-80">
             {{ range where .RegularPages "Section" "territorios" }}
             <li class="text-lg">
-              <a href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' download="Ficha-{{ .Title }}">{{ .Title
+              <a href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' target="_blank">{{ .Title
                 }}</a>
             </li>
             {{ end }}
