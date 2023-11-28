@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src * 'self' data: 'unsafe-inline' 'unsafe-eval'
+  Content-Security-Policy: default-src * 'self' blob: data: 'unsafe-inline' 'unsafe-eval'
   Content-Security-Policy: media-src *
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
