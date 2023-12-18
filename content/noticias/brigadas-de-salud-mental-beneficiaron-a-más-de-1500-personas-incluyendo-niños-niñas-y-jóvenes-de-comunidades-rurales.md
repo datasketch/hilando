@@ -1,7 +1,7 @@
 ---
 title: Brigadas de salud mental beneficiaron a más de 1500 personas, incluyendo
   niños, niñas y jóvenes de comunidades rurales
-date: 2023-12-18T21:03:33.953Z
+date: 2023-09-27T21:03:33.953Z
 image: /images/uploads/bannersaludmental.jpeg
 description: >-
   -    El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM,
