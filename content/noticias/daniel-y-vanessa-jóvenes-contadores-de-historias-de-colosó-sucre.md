@@ -1,7 +1,7 @@
 ---
 title: DANIEL Y VANESSA, JÓVENES CONTADORES DE HISTORIAS DE COLOSÓ, SUCRE
 date: 2023-10-31T20:03:32.132Z
-image: /images/uploads/20220405_104510.jpg
+image: /images/uploads/dnielayvanessa.jpeg
 description: El Paraíso es “un territorio habitado por gente humilde,
   trabajadora, berraca y unida”. Como muchos otros en la Región de los Montes de
   María, se caracteriza también por sus procesos organizativos consolidados,
