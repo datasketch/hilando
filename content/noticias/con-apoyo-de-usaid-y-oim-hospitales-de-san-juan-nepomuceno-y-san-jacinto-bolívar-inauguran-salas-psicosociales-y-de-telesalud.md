@@ -2,7 +2,7 @@
 title: CON APOYO DE USAID Y OIM, HOSPITALES DE SAN JUAN NEPOMUCENO Y SAN
   JACINTO, BOLÍVAR INAUGURAN SALAS PSICOSOCIALES Y DE TELESALUD
 date: 2023-05-31T01:28:09.620Z
-image: /images/uploads/image-1.jpeg
+image: /images/uploads/image.jpeg
 description: >-
   •    El 30 de mayo se realizará la inauguración de dos espacios para la
   atención psicosocial y de telesalud en los hospitales de San Jacinto y San
