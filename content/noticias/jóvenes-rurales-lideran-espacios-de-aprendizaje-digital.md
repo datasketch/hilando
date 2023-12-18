@@ -1,6 +1,6 @@
 ---
 title: Jóvenes rurales lideran espacios de aprendizaje digital
-date: 2023-12-18T20:43:39.762Z
+date: 2023-08-30T20:43:39.762Z
 image: /images/uploads/20230722_solewlh_recargatusole_v_c_2web.jpeg
 description: >-
   En 2023, con el apoyo del Programa WLH, de USAID implementado por OIM, jóvenes
