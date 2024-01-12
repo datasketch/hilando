@@ -71,9 +71,8 @@ iniciativas_priorizadas:
   - Turismo
 org_focalizada:
   - Asociación de guías
-riesgo: Bajo
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores:
   - Municipio PDET
   - ' articulación SENA'

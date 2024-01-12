@@ -64,9 +64,8 @@ conectividad_minima: Regular
 iniciativas_priorizadas:
   - Café
 org_focalizada: []
-riesgo: Medio
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores: []
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:

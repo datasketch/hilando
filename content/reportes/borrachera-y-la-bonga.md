@@ -69,7 +69,7 @@ org_focalizada:
   - Asociación de apicultores del bajo Cauca y sur de Bolívar
   - Campo Dulce
   - Trópico Diverso
-riesgo: Bajo
+riesgo: ''
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores:

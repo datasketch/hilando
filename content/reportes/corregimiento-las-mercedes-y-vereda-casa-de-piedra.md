@@ -7,7 +7,7 @@ descripcion: >-
   Comunidad unida especialmente a través de la Asociación Campesina Las
   mercedes. Es muy importante el culto y existen tres iglesias diferentes en la
   comunidad. Son principalemnte agricultores de arroz, maíz, cacao y aguacate.
-  están buscando ser destino turístico pero aún carecen de infraestructyra como
+  están buscando ser destino turístico pero aún carecen de infraestructura como
   vías y acueductos
 num_personas: 280
 num_familias: 70
@@ -86,9 +86,8 @@ iniciativas_priorizadas:
   - Arroz
 org_focalizada:
   - Asoprocoas
-riesgo: Bajo
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores:
   - >-
     Gobernación e impulso proyecto de innovación y formación tecnológica  de

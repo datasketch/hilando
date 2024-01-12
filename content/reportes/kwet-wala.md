@@ -11,9 +11,8 @@ descripcion: >-
   y Bolívar. En términos económicos, se dedican a la Caficultura y poseen una
   marca propia de café orgánico. Elaboración de propias fábricas de abono,
   biopreparados a través de la transformación de la pulpa y manejo de aguas
-  residuales para que se descontaminen antes de llegar a los ríos. No se
-  registra presencia de grupos armados, y se avanza en el desminado humanitario.
-  El camino entre cada comunidad es aproximadamente de una hora.
+  residuales para que se descontaminen antes de llegar a los ríos. El camino
+  entre cada comunidad es aproximadamente de una hora.
 num_personas: 250
 num_familias: 56
 min_distancia_casco_urbano: 60
@@ -50,7 +49,7 @@ comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
 iniciativas_priorizadas: []
 org_focalizada: []
-riesgo: Bajo
+riesgo: ''
 otros_programas_USAID:
   - Construcción de la Casa Indígena en el año 2004
 alianzas_colaboradores:

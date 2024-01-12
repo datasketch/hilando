@@ -73,7 +73,7 @@ iniciativas_priorizadas:
 org_focalizada:
   - Asproam
   - Agrovida
-riesgo: Bajo
+riesgo: ''
 otros_programas_USAID:
   - >-
     Proyecto de sistema de acueducto y alcantarillad apoyado por el Programa de
@@ -104,7 +104,7 @@ alianzas_colaboradores:
     SENA: Formación Técnica
   - ' Tecnológica y complementaria. '
 posibilidad_iniciativas_conjuntas_aliados_2:
-  - '"Programa ""Camino de Oportunidades"""'
+  - '"Programa ""Camino de Oportunidades""'
   - '"Ciudades, entornos y ruralidades saludables"'
   - '"Formación Técnica, Tecnológica y complementaria"'
 actividades_ocio: []

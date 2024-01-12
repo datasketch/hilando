@@ -9,9 +9,6 @@ descripcion: >-
   y existe la Asociación de Mujeres Empoderadas de La Ceiba (AMUCECH), la
   Asociación de productores APROSER (maíz, pan coger) y ASOJUVENTUD (Cacao).
 
-  Habitan 15 familias de reincorporados.
-
-
   Tiene Puesto de salud, pero poca cobertura en atención psicosocial. Si
   institución educativa va hasta 7 grado. Tienen trabajo en conjunto con la Casa
   de Memoria El Bonche, para sororidad de mujeres.
@@ -66,7 +63,7 @@ iniciativas_priorizadas:
   - Maíz
 org_focalizada:
   - Asociación productores agropecuario La ceiba
-riesgo: Medio
+riesgo: ''
 otros_programas_USAID:
   - Riqueza Natural
   - Nuestra Tierra Próspera

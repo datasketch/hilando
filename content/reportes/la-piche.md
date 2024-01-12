@@ -84,7 +84,7 @@ org_focalizada:
   - Ecorruta
   - ASOMIL
   - Asociación Artesanos
-riesgo: Bajo
+riesgo: ''
 otros_programas_USAID:
   - Nuestra Tierra Próspera
   - Riqueza Natural

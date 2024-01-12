@@ -6,7 +6,7 @@ municipio: |+
 
 departamento: Sucre
 descripcion: >-
-  La vereda cuenta con dos sectores, Paraiso 1 y paraiso 2. Tiene acueducto por
+  La vereda cuenta con dos sectores, Paraíso 1 y Paraíso 2. Tiene acueducto por
   gravedad y energía. No cuentan con servicio de gas. Se dedican principalmente
   a la apicultura, y en menor medida producción de cacao y yuca amarga
 num_personas: 210
@@ -57,17 +57,9 @@ org_con_proyeccion:
   - Asoapicol
 servicios_publicos_comunidades_focalizadas:
   - |-
-    "Acueducto-""Colosó
-
-    """
-  - |-
-    "Energía-""Colosó
-
-    """
-  - |-
-    "Gas-""Colosó
-
-    """
+    Acueducto
+    Energía
+    Gas
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
 comunidades_focalizadas_practicas_organizativas:
@@ -81,9 +73,8 @@ iniciativas_priorizadas:
   - Piscicultura
 org_focalizada:
   - Asoapicol
-riesgo: Bajo
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores:
   - Cursos apicolas con otras asociaciones
   - ' están formulando proyectos en OCAD paz: Cosecha de agua con silvo pastoril (Jaguey y riego) y (cosecha de agua con limón tahití)'

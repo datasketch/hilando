@@ -6,10 +6,9 @@ departamento: Antioquia
 descripcion: >-
   Son cerca de 600 familias, y se identifica  como una comunidad fuerte
   organizativamente, con procesos incipientes de asociaciones juveniles y de
-  mujeres. Fueron desplazados en 2019-2020 por presencia de grupos armados y
-  actualmente están retornando. Se dedican principalmente a la agricultura
-  (cacao, caucho y pancoger) y cultivo de especies menores (ganadería doble
-  propósito, apicultura y piscicultura)
+  mujeres. Se dedican principalmente a la agricultura (cacao, caucho y pancoger)
+  y cultivo de especies menores (ganadería doble propósito, apicultura y
+  piscicultura)
 num_personas: 2500
 num_familias: 600
 min_distancia_casco_urbano: 60
@@ -84,9 +83,8 @@ org_focalizada:
   - Asociacion Campesina Bajo Cauca
   - ASOPRACAC
   - ACATA
-riesgo: Medio
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores:
   - PDET está adelantando varias acciones en el corregimiento (Placa huella
   - |2-

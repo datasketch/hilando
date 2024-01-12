@@ -91,7 +91,7 @@ org_focalizada:
   - Asofromora
   - Asofruth
   - Fxize
-riesgo: Medio
+riesgo: ''
 otros_programas_USAID:
   - >-
     Fertilización para el cultivo de café en el 2017 y charlas para la

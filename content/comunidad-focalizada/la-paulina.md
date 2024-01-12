@@ -7,8 +7,7 @@ descripcion: >-
   Es una comunidad dispersa en toda la vereda, casi el 80% a borde de carretera
   con familias muy numerosas (5 o 6 px). Cultivan cacao y tienen una asociación
   muy fuerte de productores. También tienen otros cultivos de pancoger y
-  proyectos de piscicultura. Hay presencia de grupos armados no estatales y los
-  jóvenes no pueden estar fuera después de las 6 pm. 
+  proyectos de piscicultura. 
 num_personas: 1250
 num_familias: 250
 min_distancia_casco_urbano: 45
@@ -67,7 +66,7 @@ iniciativas_priorizadas:
   - Cacao
 org_focalizada:
   - ASOCAVAL
-riesgo: Alto
+riesgo: ''
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores:

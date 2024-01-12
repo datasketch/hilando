@@ -9,8 +9,7 @@ descripcion: >-
   el 2020. Tienen fuerte presencia de la iglesia evangélica. no hay mucha
   relación entre comunidad indígena y campesina, pero al interior de ellas se
   encuentran muy cohesionados. Sufren de muchas inundaciones y actualmente
-  tienen un problema de plaga en casi todos sus cultivos. Hay presencia de
-  grupor armados no estatales, se debe informar el ingreso. 
+  tienen un problema de plaga en casi todos sus cultivos.
 num_personas: 0
 num_familias: 196
 min_distancia_casco_urbano: 50
@@ -79,9 +78,8 @@ iniciativas_priorizadas:
   - Plátano
   - Cacao
 org_focalizada: []
-riesgo: Alto
-otros_programas_USAID:
-  - 'No'
+riesgo: ''
+otros_programas_USAID: []
 alianzas_colaboradores:
   - 'No'
 posibilidad_iniciativas_conjuntas_aliados_2: []
