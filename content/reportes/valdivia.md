@@ -125,6 +125,9 @@ comunidades:
   - label: La Paulina
     slug: la-paulina
     permalink: /comunidad-focalizada/la-paulina
+  - label: Montefrío
+    slug: montefrio
+    permalink: /comunidad-focalizada/montefrio
 download_file: /reportes/valdivia.pdf
 layout: territorio
 
