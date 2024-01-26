@@ -1,7 +1,7 @@
 ---
 title: Juan Pablo y su lucha por el Orgullo en el Bajo Cauca Antioqueño
 date: 2023-11-15T20:03:53.170Z
-image: /images/uploads/bannerwebpetronio1.jpeg
+image: /images/uploads/img_8055.jpeg
 description: "Juan Pablo Valencia nació en Tarazá, un pequeño municipio del Bajo
   Cauca Antioqueño. Vivía con su abuela cuando hizo pública ante su familia su
   orientación sexual: ser joven gay."
