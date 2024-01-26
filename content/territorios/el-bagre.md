@@ -149,6 +149,12 @@ comunidades:
   - label: Borrachera y La Bonga
     slug: borrachera-y-la-bonga
     permalink: /comunidad-focalizada/borrachera-y-la-bonga
+  - label: La Capilla
+    slug: la-capilla
+    permalink: /comunidad-focalizada/la-capilla
+  - label: Villagrande
+    slug: villagrande
+    permalink: /comunidad-focalizada/villagrande
 download_file: /reportes/el-bagre.pdf
 
 ---

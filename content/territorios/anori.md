@@ -138,6 +138,12 @@ comunidades:
   - label: Vereda El Banco
     slug: vereda-el-banco
     permalink: /comunidad-focalizada/vereda-el-banco
+  - label: La Meseta
+    slug: la-meseta
+    permalink: /comunidad-focalizada/la-meseta
+  - label: La Guayana
+    slug: la-guayana
+    permalink: /comunidad-focalizada/la-guayana
 download_file: /reportes/anori.pdf
 
 ---

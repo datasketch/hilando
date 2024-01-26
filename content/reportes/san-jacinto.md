@@ -126,6 +126,9 @@ comunidades:
   - label: Corregimiento Las Mercedes y Vereda Casa de Piedra
     slug: corregimiento-las-mercedes-y-vereda-casa-de-piedra
     permalink: /comunidad-focalizada/corregimiento-las-mercedes-y-vereda-casa-de-piedra
+  - label: Vereda El Bongal
+    slug: vereda-el-bongal
+    permalink: /comunidad-focalizada/vereda-el-bongal
 download_file: /reportes/san-jacinto.pdf
 layout: territorio
 

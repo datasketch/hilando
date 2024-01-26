@@ -160,6 +160,12 @@ comunidades:
   - label: Vereda El Turco
     slug: vereda-el-turco
     permalink: /comunidad-focalizada/vereda-el-turco
+  - label: Vereda Dominguillo
+    slug: vereda-dominguillo
+    permalink: /comunidad-focalizada/vereda-dominguillo
+  - label: Resguardo Nasa Kiwe
+    slug: resguardo-nasa-kiwe
+    permalink: /comunidad-focalizada/resguardo-nasa-kiwe
 download_file: /reportes/santander-de-quilichao.pdf
 
 ---

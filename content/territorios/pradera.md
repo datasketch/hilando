@@ -136,6 +136,9 @@ comunidades:
   - label: 'Kwet Wala '
     slug: kwet-wala
     permalink: /comunidad-focalizada/kwet-wala
+  - label: ' Corregimiento La Floresta y Lomitas'
+    slug: corregimiento-la-floresta-y-lomitas
+    permalink: /comunidad-focalizada/corregimiento-la-floresta-y-lomitas
 download_file: /reportes/pradera.pdf
 
 ---

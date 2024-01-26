@@ -122,6 +122,12 @@ comunidades:
   - label: Isla de la Amargura
     slug: isla-de-la-amargura
     permalink: /comunidad-focalizada/isla-de-la-amargura
+  - label: Corregimiento Puerto Bélgica
+    slug: corregimiento-puerto-belgica
+    permalink: /comunidad-focalizada/corregimiento-puerto-belgica
+  - label: Kilómetro 15
+    slug: kilometro-15
+    permalink: /comunidad-focalizada/kilometro-15
 download_file: /reportes/caceres.pdf
 
 ---
