@@ -1,7 +1,7 @@
 ---
 title: Ruby Ariza Rodríguez, una líder social que teje la paz en los Montes de María
 date: 2023-07-26T14:33:00.362Z
-image: /images/uploads/ruby-ariza-1.jpeg
+image: /images/uploads/ruby-ariza-3.jpeg
 description: >-
   Mientras se balancea en la mecedora de madera en la que reposa, Ruby Ariza
   Rodríguez, evoca tristes momentos que le dejó el conflicto armado, pero
@@ -35,7 +35,7 @@ Ruby cree firmemente en la paz y día tras día trabaja para que San Jacinto sea
 
 “Para mí la paz es un estado de tranquilidad, donde todos podamos hablar sin miedo. Creo en la paz porque es algo que empieza por nosotros. En San Jacinto se construye paz respetando la opinión de los demás y si nosotros unificamos conocimientos los resultados son cien por ciento positivos. Lo primero que debemos mantener los líderes es poder hablar sin temor. Mi gran sueño como líder social es ver totalmente transformado a San Jacinto y como municipio piloto en la implementación de los acuerdos de paz y sobre todo con los jóvenes empoderados con todos estos temas”, sostiene esta mujer que ya suma nueve años ejerciendo el liderazgo social.
 
-![](/images/uploads/ruby-ariza-3.jpeg)
+![](/images/uploads/ruby-ariza-1.jpeg)
 
 Ruby aplaude y resalta la labor que vienen realizando en San Jacinto, Bolívar y en los Montes de María, organizaciones como la OIM (Organización Internacional para las Migraciones) y USAID (Agencia de Estados Unidos para el Desarrollo Internacional).
 
