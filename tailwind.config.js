@@ -130,6 +130,9 @@ module.exports = {
         xxxs: '0.5rem',
         xxs: '0.625rem',
       },
+      fontFamily: {
+        'encode-sans': ['Encode Sans Semi Expanded', 'sans-serif'],
+      },
       backgroundImage: {
         'banner-home': 'url(/images/home/banner-home.png)',
         'banner-home-2': 'url(/images/home/banner-home-2.png)',
@@ -142,6 +145,7 @@ module.exports = {
         'banner-galeria': 'url(/images/galeria/banner-galeria.svg)',
         'banner-eventos-significativos': 'url(/images/eventos-significativos.svg)',
         'banner-inclusion-diversidad-genero': 'url(/images/inclusion-diversidad-genero.svg)',
+        'banner-resilientes': 'url(/images/resilientes/header-1536x864.jpg)',
       },
       colors: {
         'black': '#1A1A1A',
@@ -164,6 +168,7 @@ module.exports = {
         'platinum': '#E6E6E6',
         'tea-green': '#C3D3A9',
         'seasalt': '#F7F8F9',
+        'navy-blue': '#00007E',
       },
       screens: {
         'sm': '640px',
