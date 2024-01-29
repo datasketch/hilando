@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/images/resilientes/favicon.png"
+      type="image/x-icon"
+    />
+
+    {{ $css := resources.Get "css/tailwind.pcss" | toCSS | postCSS | minify }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    {{ $swiper := resources.Get "css/swiper.css" | postCSS | fingerprint }}
+    <link rel="stylesheet" href="{{ $swiper.Permalink }}" />
+
+    <style>
+      .resilientes-view {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .resilientes-view__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .resilientes-view__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        background-color: transparent;
+        display: inline-grid;
+        place-items: center;
+        padding: 0px 32px;
+        transition: all 500ms;
+      }
+
+      .resilientes-view:hover .resilientes-view__content {
+        opacity: 100%;
+        visibility: visible;
+        background-color: rgba(80, 76, 76, 0.5);
+      }
+    </style>
+
+    <title>#Resilientes</title>
+  </head>
+  <body class="font-encode-sans text-navy-blue font-light">
+    <header
+      class="fixed top-0 left-1/2 transform -translate-x-1/2 bg-white w-full p-2.5 z-50"
+      style="
+        border-radius: 0 0 30px 30px;
+        max-width: 380px;
+        box-shadow: -5px 3px 0px 3px rgba(0, 0, 0, 0.21);
+      "
+    >
+      <nav>
+        <h1 class="text-center font-bold text-4xl lg:text-5xl">
+          <a href="#"> #ResilientES </a>
+        </h1>
+        <ul class="flex items-center justify-center font-medium">
+          <li>
+            <a
+              class="inline-block py-2.5 px-1.5 lg:px-3 xl:px-4 transform hover:scale-125 duration-300"
+              href="#"
+            >
+              Historias
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-2.5 px-1.5 lg:px-3 xl:px-4 transform hover:scale-125 duration-300"
+              href="#"
+            >
+              Escuchar
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-2.5 px-1.5 lg:px-3 xl:px-4 transform hover:scale-125 duration-300"
+              href="#"
+            >
+              Ver
+            </a>
+          </li>
+          <li>
+            <a
+              class="inline-block py-2.5 px-1.5 lg:px-3 xl:px-4 transform hover:scale-125 duration-300"
+              href="#"
+            >
+              Leer
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="bg-banner-resilientes bg-cover bg-bottom lg:bg-center bg-fixed h-96 md:h-screen"
+      ></div>
+      <div
+        class="transform -translate-y-24 bg-white max-w-3xl px-5 py-4 md:rounded-tr-3xl"
+      >
+        <ul class="grid grid-cols-2 md:grid-cols-4 items-center">
+          <li class="flex justify-center items-center">
+            <a class="inline-block" href="#">
+              <img
+                class="h-16"
+                src="/images/resilientes/usaid-300x114.png"
+                alt="logo USAID"
+              />
+            </a>
+          </li>
+          <li class="flex justify-center items-center">
+            <a class="inline-block" href="#">
+              <img
+                class="h-16"
+                src="/images/resilientes/oim-300x145.png"
+                alt="logo OIM"
+              />
+            </a>
+          </li>
+          <li class="flex justify-center items-center">
+            <a class="inline-block" href="#">
+              <img
+                class="h-16"
+                src="/images/resilientes/hilando-300x130.png"
+                alt="logo Hilando"
+              />
+            </a>
+          </li>
+          <li class="flex justify-center items-center">
+            <a class="inline-block" href="#">
+              <img
+                class="h-16"
+                src="/images/resilientes/pacifista-300x101.png"
+                alt="logo Pacifista"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-white -mt-12 py-12">
+        <div class="mx-auto px-2.5" style="max-width: 1140px">
+          <div>
+            <iframe
+              class="overflow-hidden"
+              style="border-radius: 30px"
+              width="100%"
+              height="630"
+              src="https://www.youtube.com/embed/_Vs-WVsOtWs?si=iNgBMZzs7LazMaNV"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mt-12">
+            <div class="text-center">
+              <h2 class="text-3xl lg:text-4xl font-semibold">
+                En Colombia todos los días nacen nuevas historias
+              </h2>
+              <div class="mt-8 text-2xl lg:text-3xl">
+                <p>
+                  ¿Qué tanto conoces de la cultura de los festivales en el país?
+                </p>
+                <h3 class="font-semibold mt-2">
+                  ¿Te has preguntado cuál es el rol de la cultura en la
+                  construcción de paz?
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="text-center">
+              <h2
+                class="text-3xl lg:text-4xl px-5 py-2 border border-navy-blue inline-block rounded-2xl"
+                style="box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.2)"
+              >
+                <span class="font-semibold">Historias de</span> #ResilientES
+              </h2>
+              <h3 class="font-semibold mt-6 text-3xl lg:text-4xl">
+                En Colombia, la resistencia es lo primero.
+              </h3>
+              <p class="text-2xl lg:text-3xl mt-7">
+                El paso por cada uno de los territorios rurales muestra cómo el
+                poder colectivo construye tejido social y comunitario. Acá
+                encontrarás historias de unidad, amor y compromiso con las
+                causas sociales.
+              </p>
+            </div>
+            <div class="mt-12 relative px-10 xl:px-0">
+              <!-- Slider main container -->
+              <div class="swiper swiper-resilientes-histories">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/pacifista_col/reel/Cjnw5mYgcFK/"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/resilientes01.jpg"
+                        alt="resilientes 1"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/Cj3os2njLYh/?igshid=YmMyMTA2M2Y"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/resilientes02.jpg"
+                        alt="resilientes 2"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/Cj9BOLVg5Zm/?igshid=YmMyMTA2M2Y"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/resilientes03-1.jpg"
+                        alt="resilientes 3"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/CkBNRxGAuOZ/?igshid=YmMyMTA2M2Y%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/resilientes04.jpg"
+                        alt="resilientes 4"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/CkJ4gT-gl8R/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        class="h-full"
+                        src="/images/resilientes/ludica-para-sanar.png"
+                        alt="ludica para sanar"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/CkPRSJvgrO8/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/El-legado-del-canto.png"
+                        alt="ludica para sanar"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/CkcAhwWgRSy/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/Las-manos-son-el-tesoro.jpg"
+                        alt="las manos son el tesoro"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/CkeMQxgjszK/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/El-poeta-de-los-montes-de-Maria.jpg"
+                        alt="el poerta de los montes de maria"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/ClCkWfBgppJ/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/La-pasion-por-el-futbol.png"
+                        alt="la pasion por el futbol"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/pacifista_col/reel/ClhtO4wgOBR/"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/La-gaita-es-el-corazon.png"
+                        alt="la gaita es el corazon"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/ClmH-w_A3iJ/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/La-gaita-es-el-alma.png"
+                        alt="la gaita es el alma"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      class="flex items-center justify-center rounded-3xl overflow-hidden"
+                      href="https://www.instagram.com/reel/ClmH-w_A3iJ/?igshid=N2ZiY2E3YmU%3D"
+                      target="_blank"
+                    >
+                      <img
+                        class="w-full mx-auto"
+                        style="height: 630px"
+                        src="/images/resilientes/Sofia-Landero-y-la-herencia.jpg"
+                        alt="sofia landero y la herencia"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="z-20">
+                <!-- If we need navigation buttons -->
+                <div
+                  class="swiper-button-prev-histories cursor-pointer absolute top-1/2 left-0 xl:-left-10 transform -translate-y-1/2"
+                >
+                  <svg
+                    class="h-10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#00007E"
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="swiper-button-next-histories cursor-pointer absolute top-1/2 right-0 xl:-right-10 transform -translate-y-1/2"
+                >
+                  <svg
+                    class="h-10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#00007E"
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="text-center">
+              <h2
+                class="text-3xl lg:text-4xl px-5 py-2 border border-navy-blue inline-block rounded-2xl"
+                style="box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.2)"
+              >
+                <span class="font-semibold">Escuchar</span> #ResilientES
+              </h2>
+              <h3 class="font-semibold mt-6 text-3xl lg:text-4xl">
+                En el podcast Resilientes, les contamos historias inspiradoras
+                de Colombia
+              </h3>
+              <p class="text-2xl lg:text-3xl mt-7">
+                Del calor a la selva, de la montaña al caribe, recorremos el
+                Bajo Cauca y Nordeste Antioqueño, el Pacífico Medio, Alto Patía,
+                Norte del Cauca y los Montes de María, para preservar
+                tradiciones y crear nuevas.
+              </p>
+            </div>
+            <div class="mt-12">
+              <div class="mx-auto w-full" style="max-width: 600px">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/episode/2o5zg78Qrfx6K4OzstGugz?utm_source=generator"
+                  width="100%"
+                  height="352"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="mx-auto w-full" style="max-width: 986px">
+              <div class="text-center">
+                <h2
+                  class="text-3xl lg:text-4xl px-5 py-2 border border-navy-blue inline-block rounded-2xl"
+                  style="box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.2)"
+                >
+                  <span class="font-semibold">Ver</span> #ResilientES
+                </h2>
+                <h3 class="font-semibold mt-6 text-3xl lg:text-4xl">
+                  En Colombia todos los días nacen nuevas historias
+                </h3>
+                <p class="text-2xl lg:text-3xl mt-7">
+                  ¿Qué tanto conoces de la cultura de los festivales en el país?
+                </p>
+              </div>
+              <div class="mt-6 relative px-10 xl:px-0">
+                <!-- Slider main container -->
+                <div class="swiper swiper-resilientes-views">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/header-1536x864.jpg"
+                          alt="header"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://www.instagram.com/reel/CjlzxMEgdTO/?igshid=YmMyMTA2M2Y%3D"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            #ResilientES | Así es Colombia cuando se reconstruye
+                            y se escucha. Las historias que están cambiando
+                            vidas están acá y ahora. #ResilientES es una campaña
+                            de homenaje a las personas que día a día están
+                            transformando a Colombia. Ven, escucha, conoce y
+                            difunde
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/STILLS.00_06_46_25.Imagen-fija027.jpg"
+                          alt="stills"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://www.youtube.com/watch?v=7FrJ119g_7c&feature=youtu.be"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            En el día del compositor/a les compartimos el
+                            documental "Las Gaitas" este conmemora la cultura
+                            colombiana sanjacintera que año tras año mantiene el
+                            legado cultural de la música tradicional. La
+                            historia que va en la sangre de las persona
+                            Sanjacinteras es lo que mantiene vivo nuestro
+                            patriminio. Tocar la gaita es un estilo de vida que
+                            corre en el corazón y las venas.
+                            #HistoriasResilientES - Un proyecto colaborativo
+                            apoyado por #USAID #OIM y producido por #Pacifista
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/STILLS.00_06_52_20.Imagen-fija028.jpg"
+                          alt="stills 2"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://www.youtube.com/watch?v=kjZq0q8_wPk&feature=youtu.be"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            En el día del compositor/a les compartimos el
+                            documental "Las Gaitas" este conmemora la cultura
+                            colombiana sanjacintera que año tras año mantiene el
+                            legado cultural de la música tradicional. La
+                            historia que va en la sangre de las persona
+                            Sanjacinteras es lo que mantiene vivo nuestro
+                            patrimonio.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/9-3.jpg"
+                          alt="Pre Alvaro unir todo"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://www.youtube.com/watch?v=PxJSATWZImM&feature=youtu.be"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            Les presentamos en documental - PreAlvaro Unir todo,
+                            valorarlo todo. La historia de una tradición grande
+                            y de Alvaro Ulcué un lider de la comunidad NASA. Un
+                            ejemplo de resistencia por culturas ancentrales en
+                            Colombia.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/1-10.jpg"
+                          alt="rostros la resistencia"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://youtu.be/GNHOfY9al_I?si=tB64Ou4wPQmSV1Na"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            Les presentamos los rostros de la resistencia en
+                            Colombia, seguir fortaleciendo nuestras culturas,
+                            las tradiciones de los ancentros para resistir al
+                            conflicto, para apoyar la juventud, para perdonar y
+                            sanar.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/documentalcolectivo1.jpg"
+                          alt="documental colectivo"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://youtu.be/RYWTh-3Zr7g?si=mh_eCoKt4opdWv4M"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            El conflicto armado dejó heridas profundas en la
+                            sociedad colombiana , sueños que cambiaron y se
+                            transformaron el desplazamiento forzado. Les
+                            compartimos el documental "Silencio para soñar"
+                            realizado por el colectivo de comunicaciones "Gente
+                            y Bosques" de El Bagre, Antioquia que hace parte de
+                            nuestra red de comunicaciones resilientes.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="resilientes-view">
+                        <img
+                          class="resilientes-view__image"
+                          src="/images/resilientes/Slide-4-1.jpg"
+                          alt="Paraiso mi tierra querida"
+                        />
+                        <a
+                          class="resilientes-view__content"
+                          href="https://youtu.be/HckJLsF7m9I?si=-q1Lvn08KJdeeh1l"
+                          target="_blank"
+                        >
+                          <p
+                            class="text-white font-bold text-center text-xs sm:text-sm md:text-lg lg:text-xl"
+                          >
+                            Les compartimos el documental "Paraíso mi tierra
+                            querida" del colectivo comunicaciones NP del
+                            Municipio de Colosó, Sucre. Otro colectivo aliado en
+                            nuestra red de ResilientES. La historia de vida del
+                            día a día en distintas regiones del país permite
+                            conocer la realidad de nuestro país.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="z-20">
+                  <!-- If we need navigation buttons -->
+                  <div
+                    class="swiper-button-prev-views cursor-pointer absolute top-1/2 left-0 xl:-left-10 transform -translate-y-1/2"
+                  >
+                    <svg
+                      class="h-10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        fill="#00007E"
+                        d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="swiper-button-next-views cursor-pointer absolute top-1/2 right-0 xl:-right-10 transform -translate-y-1/2"
+                  >
+                    <svg
+                      class="h-10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        fill="#00007E"
+                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <div class="text-center space-y-8 text-lg lg:text-xl">
+                  <p>
+                    En esta sección encontrarás historias de distintos
+                    festivales autóctonos del país. Además de las historias de
+                    resistencia de liderazgos comunitarios que perseveran en
+                    mantener sus legados.
+                  </p>
+                  <p>
+                    En esta sección también encontrarán productos audiovisuales
+                    realizados por colectivos de comunicación que hacen parte de
+                    la red de creadores ResilientES.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="mx-auto w-full" style="max-width: 986px">
+              <div class="text-center">
+                <h2
+                  class="text-3xl lg:text-4xl px-5 py-2 border border-navy-blue inline-block rounded-2xl"
+                  style="box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.2)"
+                >
+                  <span class="font-semibold">Leer</span> #ResilientES
+                </h2>
+                <h3 class="font-semibold mt-6 text-3xl lg:text-4xl">
+                  La resiliencia con lupa
+                </h3>
+                <p class="text-2xl lg:text-3xl mt-7">
+                  En esta sección podrán encontrar algunos reportajes escritos
+                  en el desarrollo del proyecto así como también los comunicados
+                  de prensa.
+                </p>
+              </div>
+              <div class="mt-6 px-10 xl:px-0 relative">
+                <div class="mx-auto" style="max-width: 880px">
+                  <!-- Slider main container -->
+                  <div class="swiper swiper-resilientes-read">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="relative">
+                          <img
+                            src="/images/resilientes/portada-1.png"
+                            alt="portada 1"
+                          />
+                          <div
+                            class="bg-black bg-opacity-60 absolute top-0 left-0 h-full w-full z-10"
+                          >
+                            &nbsp;
+                          </div>
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full"
+                          >
+                            <div class="text-center text-white space-y-6">
+                              <h3 class="text-2xl lg:text-3xl font-bold">
+                                Habilidades comunicativas para construir
+                                relaciones saludables y contar historias de
+                                resiliencia
+                              </h3>
+                              <p class="lg:text-lg">Nelsy Guevara</p>
+                              <a
+                                class="inline-block py-2 px-6 border-2 border-white font-semibold"
+                                href="https://pacifista.tv/notas/habilidades-comunicativas-para-construir-relaciones-saludables-y-contar-historias-de-resiliencia/"
+                                target="_blank"
+                                >Leer más</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="relative">
+                          <img
+                            src="/images/resilientes/mainbanner.jpg"
+                            alt="main banner"
+                          />
+                          <div
+                            class="bg-black bg-opacity-60 absolute top-0 left-0 h-full w-full z-10"
+                          >
+                            &nbsp;
+                          </div>
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full"
+                          >
+                            <div class="text-center text-white space-y-6">
+                              <h3 class="text-2xl lg:text-3xl font-bold">
+                                LAS MANOS DE UNA VIDA
+                              </h3>
+                              <p class="lg:text-lg">Colectivo</p>
+                              <a
+                                class="inline-block py-2 px-6 border-2 border-white font-semibold"
+                                href="https://pacifista.tv/notas/las-manos-de-una-vida/"
+                                target="_blank"
+                                >Leer más</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="relative">
+                          <img
+                            src="/images/resilientes/portada-1.png"
+                            alt="portada 2"
+                          />
+                          <div
+                            class="bg-black bg-opacity-60 absolute top-0 left-0 h-full w-full z-10"
+                          >
+                            &nbsp;
+                          </div>
+                          <div
+                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full"
+                          >
+                            <div class="text-center text-white space-y-6">
+                              <h3 class="text-2xl lg:text-3xl font-bold">
+                                LA DANZA DEL QUESO
+                              </h3>
+                              <p class="lg:text-lg">
+                                Chalán, Sucre – Montes de María – Colectivo El
+                                Bonche.
+                              </p>
+                              <a
+                                class="inline-block py-2 px-6 border-2 border-white font-semibold"
+                                href="https://pacifista.tv/notas/la-danza-del-queso/"
+                                target="_blank"
+                                >Leer más</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="z-20">
+                    <!-- If we need navigation buttons -->
+                    <div
+                      class="swiper-button-prev-read cursor-pointer absolute top-1/2 left-0 transform -translate-y-1/2"
+                    >
+                      <svg
+                        class="h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          fill="#00007E"
+                          d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="swiper-button-next-read cursor-pointer absolute top-1/2 right-0 transform -translate-y-1/2"
+                    >
+                      <svg
+                        class="h-10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                      >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                          fill="#00007E"
+                          d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="mx-auto w-full" style="max-width: 1120px">
+              <!-- Slider main container -->
+              <div class="swiper swiper-resilientes-entities">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-20"
+                      src="/images/resilientes/Logo-Coloso.jpeg"
+                      alt="logo coloso"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-20"
+                      src="/images/resilientes/Logo-GenteyBosque.jpeg"
+                      alt="logo gente y bosque"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-20"
+                      src="/images/resilientes/Logo-Jagua.jpeg"
+                      alt="logo jagua"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-12"
+                      src="/images/resilientes/Logo1ElBonche-1.png"
+                      alt="logo el bonche"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-20"
+                      src="/images/resilientes/logo-Tejido-de-Comunicacion-acin.png"
+                      alt="logo tejido de comunicacion"
+                    />
+                  </div>
+                  <div
+                    class="swiper-slide grid place-items-center"
+                    style="height: 100px"
+                  >
+                    <img
+                      class="h-20"
+                      src="/images/resilientes/Logo-Nasa2.jpeg"
+                      alt="logo nasa"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-24">
+            <div class="mx-auto" style="max-width: 1120px">
+              <div class="text-center">
+                <p>
+                  La información publicada en este sitio web no es información
+                  oficial del gobierno de Estados Unidos y no representa los
+                  puntos de vista o posiciones de la Agencia de Estados Unidos
+                  para el Desarrollo Internacional (USAID) o del gobierno de los
+                  Estados Unidos.
+                </p>
+              </div>
+              <div class="mt-12">
+                <div class="mx-auto" style="max-width: 700px">
+                  <ul
+                    class="grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-x-12 gap-y-6"
+                  >
+                    <li>
+                      <a href="https://www.usaid.gov/" target="_blank">
+                        <img
+                          class="h-12 lg:h-auto mx-auto"
+                          src="/images/resilientes/usaid-300x114.png"
+                          alt="logo usaid"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.iom.int/es" target="_blank">
+                        <img
+                          class="h-12 lg:h-20 mx-auto"
+                          src="/images/resilientes/oim-300x145.png"
+                          alt="logo oim"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.hilandocomunidades.com/"
+                        target="_blank"
+                      >
+                        <img
+                          class="h-12 lg:h-20 mx-auto"
+                          src="/images/resilientes/hilando-300x130.png"
+                          alt="logo hilando"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://pacifista.tv/" target="_blank">
+                        <img
+                          class="h-12 lg:h-20 mx-auto"
+                          src="/images/resilientes/pacifista-300x101.png"
+                          alt="logo pacifista"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {{ $resilientes := resources.Get "js/resilientes.js" | js.Build (dict
+    "minify" true) }}
+    <script src="{{ $resilientes.Permalink }}"></script>
+  </body>
+</html>
