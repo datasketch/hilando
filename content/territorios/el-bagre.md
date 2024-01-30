@@ -98,7 +98,11 @@ rips_salud_mental_poblacion_general:
   - Trastorno de ansiedad generalizada
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - >-
+    ESE HOSPITAL NUESTRA SEÑORA DEL CARMEN
+
+    Actualmente cuenta con el servicio de telemedicina para psicología y
+    psiquiatría.
 total_pobreza_multidimensional: 5370%
 pobreza_multidimensional_urbano: 4300%
 pobreza_multidimensional_centro_poblado_rural_disperso: 7110%

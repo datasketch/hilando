@@ -71,7 +71,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno de ansiedad generalizada
   - Esquizofrenia paranoide
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    E.S.E. HOSPITAL LOCAL DE SAN JUAN NEPOMUCENO
+    Actualmente habilitado servicio de psicología y fisioterapia.
 total_pobreza_multidimensional: 5620%
 pobreza_multidimensional_urbano: 5400%
 pobreza_multidimensional_centro_poblado_rural_disperso: 6280%

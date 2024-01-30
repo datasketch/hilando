@@ -83,7 +83,10 @@ rips_salud_mental_poblacion_general:
   - Episodio depresivo moderado
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    ESE HOSPITAL ISABEL LA CATOLICA
+    Actualmente cuenta con el servicio de telemedicina para psicología
+  - ' psiquiatría y fisioterapia.'
 total_pobreza_multidimensional: 6640%
 pobreza_multidimensional_urbano: 6090%
 pobreza_multidimensional_centro_poblado_rural_disperso: 6780%

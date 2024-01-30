@@ -72,7 +72,9 @@ eventos_salud_publica_predominantes:
 rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    E.S.E. HOSPITAL LOCAL DEL MUNICIPIO DE SAN JACINTO
+    Actualmente tiene habilitado el servicio de psicología
 total_pobreza_multidimensional: 6030%
 pobreza_multidimensional_urbano: 5780%
 pobreza_multidimensional_centro_poblado_rural_disperso: 7800%

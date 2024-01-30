@@ -164,15 +164,10 @@ eventos_salud_publica_predominantes:
 rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
 servicios_telemedicina_mpio_depto:
-  - CARDIOLOGÍA
-  - MEDICINA FÍSICA Y REHABILITACIÓN
-  - NEUMOLOGÍA
-  - NEUROLOGÍA
-  - CARDIOLOGÍA PEDIÁTRICA
-  - DIAGNÓSTICO CARDIOVASCULAR
-  - ELECTRODIAGNÓSTICO
-  - NUTRICIÓN Y DIETÉTICA
-  - PSICOLOGÍA
+  - |-
+    HOSPITAL DISTRITAL LUIS ABLANQUE DE LA PLATA
+    Habilitado servicio de psicología
+  - ' fisioterapia y fonoaudiología.'
 total_pobreza_multidimensional: 4100%
 pobreza_multidimensional_urbano: 3560%
 pobreza_multidimensional_centro_poblado_rural_disperso: 6740%

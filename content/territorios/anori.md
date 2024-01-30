@@ -82,7 +82,11 @@ rips_salud_mental_poblacion_general:
   - Trastorno afectivo bipolar
   - Episodios depresivos
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    ESE HOSPITAL SAN JUAN DE DIOS
+    Actualmente cuenta con servicios de telemedicina para psiquiatría
+  - ' psicología y fisioterapia'
+  - ''
 total_pobreza_multidimensional: 5300%
 pobreza_multidimensional_urbano: 3900%
 pobreza_multidimensional_centro_poblado_rural_disperso: 6600%

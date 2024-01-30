@@ -64,7 +64,11 @@ rips_salud_mental_poblacion_general:
   - trastornos mentales y de comportamiento
   - ' trastornos mentales y del comportamiento por consumo de sustancias psicoactivas; y  epilepsia.'
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E
+    Actualmente tiene el servicio de telemedicina para psiquiatría y psicología
+  - ' y cuenta con servicio de fisioterapia'
+  - ' fonoaudiología y terapia ocupacional.'
 total_pobreza_multidimensional: ''
 pobreza_multidimensional_urbano: ''
 pobreza_multidimensional_centro_poblado_rural_disperso: ''

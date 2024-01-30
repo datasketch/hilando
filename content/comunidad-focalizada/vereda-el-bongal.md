@@ -68,7 +68,7 @@ alianzas_colaboradores:
     FEDECACAO
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - "\"* Fiestas patronales\n* Campeonato de softbol y futbol entre las dos comunidades\n* Celebración San Francisco\_\n* Escuela de cacaoteritos (lúdico-educativo)\n* Artesanías elaboradas por mujeres\_(mochilas y hamacas)\_"
+  - "* Fiestas patronales\n* Campeonato de softbol y futbol entre las dos comunidades\n* Celebración San Francisco\_\n* Escuela de cacaoteritos (lúdico-educativo)\n* Artesanías elaboradas por mujeres\_(mochilas y hamacas)\_"
 medios_comunicacion_narrativas_locales:
   - Emisora Comunitaria
 num_visitas_realizadas: null

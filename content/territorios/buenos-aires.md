@@ -77,7 +77,10 @@ rips_salud_mental_poblacion_general:
   - Trastorno de ansiedad generalizada
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    ESE NORTE UNO
+    Actualmente habilitado servicio de psicología
+  - ' fonoaudiología y fisioterapía.'
 total_pobreza_multidimensional: 4250%
 pobreza_multidimensional_urbano: 2310%
 pobreza_multidimensional_centro_poblado_rural_disperso: 4340%

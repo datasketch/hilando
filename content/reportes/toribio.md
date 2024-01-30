@@ -81,7 +81,10 @@ rips_salud_mental_poblacion_general:
   - Insomnio no orgánico
   - Trastornos mentales y del comportamiento debido al uso del alcohol
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    CXAYU`CE JXUT EMPRESA SOCIAL DEL ESTADO UNIDAD DE ATENCIÓN EN SALUD
+    Habilitado el servicio de psicología
+  - ' fisioterapia y fonoaudología.'
 total_pobreza_multidimensional: 4510%
 pobreza_multidimensional_urbano: 1670%
 pobreza_multidimensional_centro_poblado_rural_disperso: 4700%

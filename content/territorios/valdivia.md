@@ -79,7 +79,11 @@ rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - >-
+    CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E
+
+    Actualmente ya cuenta con servicio de Telemedicina para psiquiatría y
+    psicología.
 total_pobreza_multidimensional: 5930%
 pobreza_multidimensional_urbano: 3550%
 pobreza_multidimensional_centro_poblado_rural_disperso: 6840%

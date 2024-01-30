@@ -108,7 +108,18 @@ rips_salud_mental_poblacion_general:
     adultos
   - Trastorno afectivo bipolar
 servicios_telemedicina_mpio_depto:
-  - PSIQUIATRÍA - JULIO EDUARDO VILLAQUIRAN BURBANO
+  - |-
+    QUILISALUD E.S.E. UNIDAD DE ATENCION EN SALUD ANTONIO NARIÑO
+    Actualmente tiene habilitado el servicio de psicología
+  - ' terapia ocupacional'
+  - >2-
+     fonoaudiología y fisioterapía.
+    ESE HOSPITAL FRANCISCO DE PAULA SANTANDER
+
+    Habilitado el servicio de telemedicina para psiquiatría. presta servicios de
+    terapia ocupacional
+  - ' fonoaudiología'
+  - ' fisioterapia y psicología. '
 total_pobreza_multidimensional: 2380%
 pobreza_multidimensional_urbano: 1570%
 pobreza_multidimensional_centro_poblado_rural_disperso: 3170%

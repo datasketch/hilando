@@ -81,7 +81,11 @@ rips_salud_mental_poblacion_general:
   - Trastorno afectivo bipolar
   - Demencia
 servicios_telemedicina_mpio_depto:
-  - No hay habilitados servicios aún
+  - |-
+    CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E
+    Actualmente cuenta con servicios de psicología
+  - ' fisioterapia'
+  - ' terapia ocupación y fonoaudiología.'
 total_pobreza_multidimensional: 4580%
 pobreza_multidimensional_urbano: 3920%
 pobreza_multidimensional_centro_poblado_rural_disperso: 4890%
