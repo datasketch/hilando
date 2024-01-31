@@ -11,6 +11,7 @@ navigation.addEventListener('click', (e) => {
   e.preventDefault();
   const link = e.target.closest('a');
   const id = link.getAttribute('href');
+
   const coords = document.querySelector(id).getBoundingClientRect();
   window.scrollTo({
     left: (coords.left + window.scrollX) - 130,

@@ -14,10 +14,10 @@
       <nav class="tk-mr-eaves-sans text-white font-bold self-end">
         {{ $currentPage := . }}
         <!-- NAV DESKTOP -->
-        <ul class="hidden lg:flex items-center">
+        <ul class="hidden lg:flex lg:items-center lg:gap-x-12 xl:gap-x-16">
           {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
-            <li class="mr-20 menu relative">
+            <li class="menu relative">
               {{ if (eq .Title "Territorios") }}
                 <a class="uppercase border-b-2 border-transparent pb-1 duration-300" href="{{ .URL }}">
                   {{ .Title }}
@@ -60,12 +60,12 @@
           {{ $menu_item_url := .URL | relLangURL }}
           {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
           {{ if eq $menu_item_url $page_url }}
-          <li class="mr-20">
+          <li class="">
             <a class="uppercase border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">{{ .Title
               }}</a>
           </li>
           {{ else }}
-          <li class="mr-20">
+          <li class="">
             <a class="uppercase border-b-2 border-transparent hover:border-white pb-1 duration-300" href="{{ .URL }}">{{
               .Title }}</a>
           </li>
