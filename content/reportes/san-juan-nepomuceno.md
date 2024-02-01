@@ -74,9 +74,9 @@ servicios_telemedicina_mpio_depto:
   - |-
     E.S.E. HOSPITAL LOCAL DE SAN JUAN NEPOMUCENO
     Actualmente habilitado servicio de psicología y fisioterapia.
-total_pobreza_multidimensional: 5620%
-pobreza_multidimensional_urbano: 5400%
-pobreza_multidimensional_centro_poblado_rural_disperso: 6280%
+total_pobreza_multidimensional: 56,20%
+pobreza_multidimensional_urbano: 54,00%
+pobreza_multidimensional_centro_poblado_rural_disperso: 62,80%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -91,7 +91,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Agroforestal
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9290%
+trabajo_informal: 92,90%
 ppal_uso_suelo:
   - Forestal
   - Agricultura

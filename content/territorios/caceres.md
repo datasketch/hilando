@@ -87,9 +87,9 @@ servicios_telemedicina_mpio_depto:
     ESE HOSPITAL ISABEL LA CATOLICA
     Actualmente cuenta con el servicio de telemedicina para psicología
   - ' psiquiatría y fisioterapia.'
-total_pobreza_multidimensional: 6640%
-pobreza_multidimensional_urbano: 6090%
-pobreza_multidimensional_centro_poblado_rural_disperso: 6780%
+total_pobreza_multidimensional: 66,40%
+pobreza_multidimensional_urbano: 60,90%
+pobreza_multidimensional_centro_poblado_rural_disperso: 67,80%
 ppales_actividades_economicas:
   - Minería
   - Agricultura
@@ -101,7 +101,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9320%
+trabajo_informal: 93,20%
 ppal_uso_suelo:
   - Minería
   - Agricultura

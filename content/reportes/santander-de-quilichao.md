@@ -120,9 +120,9 @@ servicios_telemedicina_mpio_depto:
     terapia ocupacional
   - ' fonoaudiología'
   - ' fisioterapia y psicología. '
-total_pobreza_multidimensional: 2380%
-pobreza_multidimensional_urbano: 1570%
-pobreza_multidimensional_centro_poblado_rural_disperso: 3170%
+total_pobreza_multidimensional: 23,80%
+pobreza_multidimensional_urbano: 15,70%
+pobreza_multidimensional_centro_poblado_rural_disperso: 31,70%
 ppales_actividades_economicas:
   - Industria y manufactura
   - Agricultura
@@ -136,7 +136,7 @@ ppal_vocacion_mpio:
   - Ganadería
   - Agroforestal
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 8580%
+trabajo_informal: 85,80%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería

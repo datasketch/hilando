@@ -76,9 +76,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno mixto de ansiedad y depresión
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 6960%
-pobreza_multidimensional_urbano: 5620%
-pobreza_multidimensional_centro_poblado_rural_disperso: 6220%
+total_pobreza_multidimensional: 69,60%
+pobreza_multidimensional_urbano: 56,20%
+pobreza_multidimensional_centro_poblado_rural_disperso: 62,20%
 ppales_actividades_economicas:
   - Sector Servicios y Comercio
   - Agricultura
@@ -95,7 +95,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Agroforestal
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9410%
+trabajo_informal: 94,10%
 ppal_uso_suelo:
   - Agricultura
   - Forestal

@@ -78,9 +78,9 @@ servicios_telemedicina_mpio_depto:
     ESE NORTE UNO
     Actualmente habilitado servicio de psicología
   - ' fonoaudiología y fisioterapía.'
-total_pobreza_multidimensional: 4250%
-pobreza_multidimensional_urbano: 2310%
-pobreza_multidimensional_centro_poblado_rural_disperso: 4340%
+total_pobreza_multidimensional: 42,50%
+pobreza_multidimensional_urbano: 23,10%
+pobreza_multidimensional_centro_poblado_rural_disperso: 43,40%
 ppales_actividades_economicas:
   - Agricultura
   - Minería
@@ -94,7 +94,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9050%
+trabajo_informal: 90,50%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería

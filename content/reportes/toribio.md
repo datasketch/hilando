@@ -85,9 +85,9 @@ servicios_telemedicina_mpio_depto:
     CXAYU`CE JXUT EMPRESA SOCIAL DEL ESTADO UNIDAD DE ATENCIÓN EN SALUD
     Habilitado el servicio de psicología
   - ' fisioterapia y fonoaudología.'
-total_pobreza_multidimensional: 4510%
-pobreza_multidimensional_urbano: 1670%
-pobreza_multidimensional_centro_poblado_rural_disperso: 4700%
+total_pobreza_multidimensional: 45,10%
+pobreza_multidimensional_urbano: 16,70%
+pobreza_multidimensional_centro_poblado_rural_disperso: 47,00%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -104,7 +104,7 @@ observaciones_ppal_vocacion_mpio: >-
   del Ruíz, Río Paez, Río Cauca, Macizo Colombiano, páramo, lagos, lagunas,
   nacederos de agua. Lugares Comunales: Tul comunitario, potreros, bosques, y
   montañas.
-trabajo_informal: 9550%
+trabajo_informal: 95,50%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería

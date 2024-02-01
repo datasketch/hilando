@@ -84,9 +84,9 @@ servicios_telemedicina_mpio_depto:
     Actualmente cuenta con servicios de telemedicina para psiquiatría
   - ' psicología y fisioterapia'
   - ''
-total_pobreza_multidimensional: 5300%
-pobreza_multidimensional_urbano: 3900%
-pobreza_multidimensional_centro_poblado_rural_disperso: 6600%
+total_pobreza_multidimensional: 53,00%
+pobreza_multidimensional_urbano: 39,00%
+pobreza_multidimensional_centro_poblado_rural_disperso: 66,00%
 ppales_actividades_economicas:
   - Minería
   - Ganadería
@@ -106,7 +106,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Pastos
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 8900%
+trabajo_informal: 89,00%
 ppal_uso_suelo:
   - Minería
   - Agricultura

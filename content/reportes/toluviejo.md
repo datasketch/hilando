@@ -83,9 +83,9 @@ servicios_telemedicina_mpio_depto:
     Actualmente cuenta con servicios de psicología
   - ' fisioterapia'
   - ' terapia ocupación y fonoaudiología.'
-total_pobreza_multidimensional: 4580%
-pobreza_multidimensional_urbano: 3920%
-pobreza_multidimensional_centro_poblado_rural_disperso: 4890%
+total_pobreza_multidimensional: 45,80%
+pobreza_multidimensional_urbano: 39,20%
+pobreza_multidimensional_centro_poblado_rural_disperso: 48,90%
 ppales_actividades_economicas:
   - Agricultura
   - Ganadería
@@ -112,7 +112,7 @@ ppal_vocacion_mpio:
   - Ganadería
   - Bosque o Áreas de protección y conservación
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9110%
+trabajo_informal: 91,10%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería

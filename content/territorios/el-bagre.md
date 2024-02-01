@@ -103,9 +103,9 @@ servicios_telemedicina_mpio_depto:
 
     Actualmente cuenta con el servicio de telemedicina para psicología y
     psiquiatría.
-total_pobreza_multidimensional: 5370%
-pobreza_multidimensional_urbano: 4300%
-pobreza_multidimensional_centro_poblado_rural_disperso: 7110%
+total_pobreza_multidimensional: 53,70%
+pobreza_multidimensional_urbano: 43,00%
+pobreza_multidimensional_centro_poblado_rural_disperso: 71,10%
 ppales_actividades_economicas:
   - Minería
   - Agricultura
@@ -119,7 +119,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Minería
 observaciones_ppal_vocacion_mpio: Minería Aurífera - Río Nechí
-trabajo_informal: 9170%
+trabajo_informal: 91,70%
 ppal_uso_suelo:
   - Minería
   - Agricultura

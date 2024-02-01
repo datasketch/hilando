@@ -69,9 +69,9 @@ rips_salud_mental_poblacion_general:
   - Trastorno de pánico
 servicios_telemedicina_mpio_depto:
   - No hay habilitados servicios aún
-total_pobreza_multidimensional: 7390%
-pobreza_multidimensional_urbano: 7170%
-pobreza_multidimensional_centro_poblado_rural_disperso: 7800%
+total_pobreza_multidimensional: 73,90%
+pobreza_multidimensional_urbano: 71,70%
+pobreza_multidimensional_centro_poblado_rural_disperso: 78,00%
 ppales_actividades_economicas:
   - Servicios
   - Agricultura
@@ -89,7 +89,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Ganadería
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9650%
+trabajo_informal: 96,50%
 ppal_uso_suelo:
   - Servicios
   - Agricultura

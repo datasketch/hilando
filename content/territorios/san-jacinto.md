@@ -78,9 +78,9 @@ servicios_telemedicina_mpio_depto:
   - |-
     E.S.E. HOSPITAL LOCAL DEL MUNICIPIO DE SAN JACINTO
     Actualmente tiene habilitado el servicio de psicología
-total_pobreza_multidimensional: 6030%
-pobreza_multidimensional_urbano: 5780%
-pobreza_multidimensional_centro_poblado_rural_disperso: 7800%
+total_pobreza_multidimensional: 60,30%
+pobreza_multidimensional_urbano: 57,80%
+pobreza_multidimensional_centro_poblado_rural_disperso: 78,00%
 ppales_actividades_economicas:
   - Artesanías
   - Agricultura
@@ -102,7 +102,7 @@ ppal_vocacion_mpio:
   - Agricultura
   - Oferta ambiental y paisajista
 observaciones_ppal_vocacion_mpio: null
-trabajo_informal: 9400%
+trabajo_informal: 94,00%
 ppal_uso_suelo:
   - Agricultura
   - Ganadería

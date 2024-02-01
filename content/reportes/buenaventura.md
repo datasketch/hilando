@@ -168,9 +168,9 @@ servicios_telemedicina_mpio_depto:
     HOSPITAL DISTRITAL LUIS ABLANQUE DE LA PLATA
     Habilitado servicio de psicología
   - ' fisioterapia y fonoaudiología.'
-total_pobreza_multidimensional: 4100%
-pobreza_multidimensional_urbano: 3560%
-pobreza_multidimensional_centro_poblado_rural_disperso: 6740%
+total_pobreza_multidimensional: 41,00%
+pobreza_multidimensional_urbano: 35,60%
+pobreza_multidimensional_centro_poblado_rural_disperso: 67,40%
 ppales_actividades_economicas:
   - Agricultura
   - Minería
@@ -193,7 +193,7 @@ observaciones_ppales_actividades_economicas: >-
 ppal_vocacion_mpio:
   - Agroforestal
 observaciones_ppal_vocacion_mpio: La vocación forestal representa el 97 %.
-trabajo_informal: 8860%
+trabajo_informal: 88,60%
 ppal_uso_suelo:
   - Forestal
   - Agricultura
