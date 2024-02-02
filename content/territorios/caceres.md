@@ -128,9 +128,9 @@ comunidades:
   - label: Corregimiento Puerto Bélgica
     slug: corregimiento-puerto-belgica
     permalink: /comunidad-focalizada/corregimiento-puerto-belgica
-  - label: Kilómetro 15
-    slug: kilometro-15
-    permalink: /comunidad-focalizada/kilometro-15
+  - label: ' Altos del tigre'
+    slug: altos-del-tigre
+    permalink: /comunidad-focalizada/altos-del-tigre
 download_file: /reportes/caceres.pdf
 
 ---

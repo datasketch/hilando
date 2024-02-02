@@ -1,7 +1,14 @@
 ---
 title: Tarazá
 departamento: Antioquia
-description: null
+description: >-
+  Tarazá es un municipio de Colombia, localizado en la subregión del Bajo Cauca
+  del departamento de Antioquia. Limita por el norte con el departamento de
+  Córdoba y el municipio de Cáceres, por el este con el municipio de Cáceres,
+  por el sur con los municipios de Anorí y Valdivia y por el oeste con el
+  municipio de Ituango. Su cabecera dista 222 kilómetros de la ciudad de
+  Medellín, capital de Antioquia. El municipio posee una extensión de 1.569
+  kilómetros cuadrados.
 grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 grafica_comunidades_focalizadas: /charts/municipios/taraza/comunidades_focalizadas.html
 grafica_poblacion_genero: /charts/municipios/taraza/poblacion_genero.html
@@ -72,6 +79,9 @@ comunidades:
   - label: Corregimiento La Caucana
     slug: corregimiento-la-caucana
     permalink: /comunidad-focalizada/corregimiento-la-caucana
+  - label: ' Las Delicias - Piedras'
+    slug: las-delicias-piedras
+    permalink: /comunidad-focalizada/las-delicias-piedras
 download_file: /reportes/taraza.pdf
 layout: territorio
 

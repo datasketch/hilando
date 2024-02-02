@@ -137,6 +137,9 @@ comunidades:
   - label: La Piche
     slug: la-piche
     permalink: /comunidad-focalizada/la-piche
+  - label: ' Corregimiento La Siria'
+    slug: corregimiento-la-siria
+    permalink: /comunidad-focalizada/corregimiento-la-siria
 download_file: /reportes/toluviejo.pdf
 layout: territorio
 

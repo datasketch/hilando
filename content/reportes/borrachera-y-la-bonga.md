@@ -7,10 +7,15 @@ descripcion: >-
   Son dos comunidades que quedan muy cerca, en total 90 familias (60 en la
   borrachera y 30 en La bonga), ubicada a 60 minutos de  la cabecera municipal
   por carretera destapada.  La mayoría del suelo de la comunidad está en reserva
-  Forestal. Son apicultores y agricultores. Sobre sale la importancia de las
-  juntanzas a ritos religiosos en la comunidad. las dos veredas hacen parte del
-  proceso de Reparación Colectiva Corregimiento de Puerto lópez. hacen parte del
-  proceso de tejedores y tejedoras de Entrelazando de la Unidad de Víctimas. 
+  Forestal por lo que es un territorio con pequeñas montañas, bosques, pastos y
+  abundante agua de quebradas cristalinas, gran variedad de especies de aves,
+  reptiles, mamíferos y  peces nativos.  
+
+
+  Son Apicultores y agricultores. Sobre sale la importancia de las juntanzas a
+  ritos religiosos en la comunidad. Las dos veredas hacen parte del proceso de
+  Reparación Colectiva Corregimiento de Puerto López y del proceso de tejedores
+  y tejedoras de Entrelazando de la Unidad de Víctimas. 
 num_personas: 0
 num_familias: 90
 min_distancia_casco_urbano: 60
@@ -24,21 +29,20 @@ infraestructura_comunitaria:
   - Caseta comunal
 notas_infraestructura_comunitaria: Caseta comunal en las dos veredas.
 liderazgo_comunidad:
-  - La JAC está funcionando en las dos veredas
-  - ' y están conformados los comites de trabajo'
-  - ' salud y convivencia. La unidad productiva Apicola ha permitido que las familias trabajen en ambas comunidades.'
+  - >-
+    La JAC está funcionando en las dos veredas y están conformados los comités
+    de trabajo salud y convivencia. La unidad productiva apícola ha permitido
+    que las familias trabajen en ambas comunidades.
 inclusion_diversidad_genero: >-
-  Hay una organización de mujeres que se conformó  hace 9 meses para la
-  participación de un proyecto, pero en el momento no funciona, no hay
+  Hay una organización de mujeres que se conformó  hace poco para la
+  participación de un proyecto, pero en el momento no funciona, No hay
   organización de  jóvenes
 comentarios_conectividad: >-
-  No hay acceso a intenet solo funciona con antenas satelitales que algunas
-  familias compran y venden los datos, En la IE están instalando una antena pero
-  según el técnico, ésta no funcionará adecuadamente por una interferencia con
-  una montaña
-punto_SOLE: Institución educativa
+  No hay acceso a internet solo funciona con antenas satelitales que algunas
+  familias compran y venden los datos.
+punto_SOLE: Institución Educativa Borrachera.
 comentarios_punto_SOLE:
-  - Institución Educativa Borrachera.
+  - https://padlet.com/comunidadelbagre/2owcca0zayiza2pq
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Apicultura
@@ -46,9 +50,7 @@ ppales_actividades_economicas_vocacion_productiva:
   - Reserva Forestal
   - Minería
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
-comunidad_sostenible_uso_suelo: >-
-  Todo el territorio rural del Bagre se encuentra en reserva forestal, lo que
-  limita el uso del suelo.
+comunidad_sostenible_uso_suelo: ''
 org_con_proyeccion:
   - Gente y Bosque
   - Trópico Diverso
@@ -63,7 +65,9 @@ comunidades_focalizadas_practicas_organizativas:
   - Proyecto productivo Apícola
 conectividad_minima: Malo
 iniciativas_priorizadas:
-  - Apicultura
+  - >-
+    Fortalecimiento integral y ampliación de la cadena apícola y la organización
+    de pequeños productores de Gente y Bosque  
 org_focalizada:
   - Gente y bosque
   - Asociación de apicultores del bajo Cauca y sur de Bolívar
@@ -87,15 +91,10 @@ medios_comunicacion_narrativas_locales:
   - Emisora Latina Stereo
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - Proceso de reparación colectiva
-  - >-
-    Proceso de tejedores y tejedoras de la estrategia Entrelazando de la Unidad
-    de Víctimas
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: >-
-  Las dos veredas hacen parte del proceso de reparación colectiva (Corregimiento
-  de Puerto López) y del proceso de tejedores y tejedoras de la estrategia
-  Entrelazando de la Unidad de Víctimas.
+  A través del convenio HOMO USAID OIM el ESE HOSPITAL NUESTRA SEÑORA DEL CARMEN
+  ofrece servicio de telemedicina para psiquiatría y psicología. 
 num_visitas_predio: 20
 url: /reportes/borrachera-y-la-bonga
 layout: comunidad

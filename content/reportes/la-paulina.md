@@ -16,12 +16,10 @@ vias_acceso: >-
   La vereda está sobre la via que conecta a al costa Atlántica, por lo que tiene
   carretera pero en condiciones regulares. Hay riesgos de deslizamientos,
   derrumbes e inundación. 
-infraestructura_comunitaria:
-  - Caseta comunal
-  - Sede ASOCAVAL
-  - Instituciones educativas (IE)
-  - Espacios deportivos
-notas_infraestructura_comunitaria: 'IE: Centro educativo rural La Paulina.'
+infraestructura_comunitaria: []
+notas_infraestructura_comunitaria: >-
+  Caseta comunal, Sede ASOCAVAL,Instituciones educativas (IE),Espacios
+  deportivos
 liderazgo_comunidad:
   - >-
     Se identfican liderazgos importantes en el territorio.
@@ -39,20 +37,18 @@ inclusion_diversidad_genero: |-
 comentarios_conectividad: >-
   En algunos espacios se cuenta con señal,  en su mayoria debe ser con antena
   satelital
-punto_SOLE: Punto Vive Digital
+punto_SOLE: Centro Educativo rural La Paulina.
 comentarios_punto_SOLE:
-  - Punto de Vive Digital del Centro Educativo rural La paulina.
+  - https://padlet.com/comunidadlapaulina/s51n6u4s7s5vukgz
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura
   - Pesca
   - Minería
-comentarios_ppales_actividades_economicas_vocacion_productiva: Agricultura (cacao, plátano y yuca).
+comentarios_ppales_actividades_economicas_vocacion_productiva: ''
 comunidad_sostenible_uso_suelo: >-
   En el marco del proceso de sustitución de cultivos, se legalizaron 68 predios,
   lo que brinda sostenibilidad a la unidad productiva.
-org_con_proyeccion:
-  - Asociación de cacaoteros de Valdivia (ASOCAVAL)
-  - Proyecto piscícola
+org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Centro educativo rural La Paulina
@@ -63,24 +59,37 @@ comunidades_focalizadas_practicas_organizativas:
   - Procesos en temas productivos y sociales
 conectividad_minima: Regular
 iniciativas_priorizadas:
-  - Cacao
-org_focalizada:
-  - ASOCAVAL
+  - 'Asocaval: Apoyo en Mejorar la calidad del grano de cacao'
+  - ' la planeación'
+  - ' la gestión socio empresarial y los niveles de competitividad de ASOCAVAL en el sector cacaotero del municipio de Valdivia'
+  - ' Antioquia'
+  - ' a través del desarrollo de micro central de beneficio con capacidad de 50 ton /año'
+  - ' inicialmente para cacao de comercio justo y posteriormente caco orgánico'
+  - ' además se realizara el fortalecimiento de ASOCAVAL como organización asociativa'
+  - ' comercializadora de cacao y la administradora de la central de beneficio'
+  - ' contribuyendo de esta forma a responder a las exigencias de mercado interno y externo'
+  - ' mejorar la cantidad y calidad de la materia prima que se  ofertará'
+  - ' y por ende mejorar las condiciones socio económicas de los asociados.'
+org_focalizada: []
 riesgo: ''
 otros_programas_USAID:
   - 'No'
 alianzas_colaboradores:
-  - Empresa privada
-  - ' alianza con Chocolates Colombia'
+  - Fedecacao
+  - ' Casa Luker'
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales:
-  - Televaldivia
   - CV Comunicaciones
 num_visitas_realizadas: 4
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial: []
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial:
+  - |+
+
+notas_infraestructura_salud_atencion_psicosocial: >-
+  Servicio habilitado de telemedicina para salud mental a través del convenio
+  HOMO - USAID - OIM en el E.S.E HOSPITAL SAN JUAN DE DIOS, en la cabecera
+  municipal de Valdivia. 
 num_visitas_predio: 16
 url: /reportes/la-paulina
 layout: comunidad

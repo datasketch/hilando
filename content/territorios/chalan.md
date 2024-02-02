@@ -113,6 +113,15 @@ comunidades:
   - label: Corregimiento La Ceiba
     slug: corregimiento-la-ceiba
     permalink: /comunidad-focalizada/corregimiento-la-ceiba
+  - label: ' Vereda Nuevo Manzanares'
+    slug: vereda-nuevo-manzanares
+    permalink: /comunidad-focalizada/vereda-nuevo-manzanares
+  - label: ' Vereda Montebello'
+    slug: vereda-montebello
+    permalink: /comunidad-focalizada/vereda-montebello
+  - label: ' Vereda Alemania y Rancho Rojo'
+    slug: vereda-alemania-y-rancho-rojo
+    permalink: /comunidad-focalizada/vereda-alemania-y-rancho-rojo
 download_file: /reportes/chalan.pdf
 
 ---

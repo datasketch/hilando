@@ -132,6 +132,9 @@ comunidades:
   - label: Montefrío
     slug: montefrio
     permalink: /comunidad-focalizada/montefrio
+  - label: ' Valdivia Km15'
+    slug: valdivia-km15
+    permalink: /comunidad-focalizada/valdivia-km15
 download_file: /reportes/valdivia.pdf
 layout: territorio
 

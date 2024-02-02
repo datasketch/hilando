@@ -27,42 +27,25 @@ infraestructura_comunitaria:
   - Espacios deportivos
   - Iglesias
   - Plaza de mercado
-notas_infraestructura_comunitaria: CDI (Mal estado).
+notas_infraestructura_comunitaria: ''
 liderazgo_comunidad:
-  - >-
-    Se identifican liderazgos representativos. y  representación de todos los
-    liderazgos presentes
-  - ' (Padre'
-  - ' pastores'
-  - ' mujeres'
-  - ' jóvenes'
-  - ' representantes de asociaciones)'
+  - 'Se identifican liderazgos representativos. '
 inclusion_diversidad_genero: >-
   Se identifica una participación de jóvenes por medio de los colectivos y de
   mujeres en asociaciones productivas 
 comentarios_conectividad: La señal es inestable, con acceso limitado.
-punto_SOLE: Salón Parroquial con internet
+punto_SOLE: Salón Parroquial
 comentarios_punto_SOLE:
-  - Salón Parroquial con internet gracias al programa de Microsoft y USAID.
-ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura
-  - Avicultura
-  - Porcicultura
-  - Piscicultura
-  - Ganadería
-  - Minería
+  - >-
+    https://padlet.com/comunidadlacaucana/sole-comunidad-la-caucana-16ywkkdppg0nuqyk
+ppales_actividades_economicas_vocacion_productiva: []
 comentarios_ppales_actividades_economicas_vocacion_productiva: |-
   El Caucho y la ganadería componen la segunda línea productiva en importancia.
   Agricultura (cacao, café plátano, yuca, maíz, ñame).
   Especies menores (Pollos, cerdos y piscicultura) y ganadería doble propósito
   Minería artesanal
 comunidad_sostenible_uso_suelo: null
-org_con_proyeccion:
-  - ASUPRACA
-  - ACATA
-  - Proceso de sustitución de cultivos
-  - AGROAPITA
-  - Piscicultura y proyectos de seguridad alimentaria
+org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución educativa
@@ -74,17 +57,17 @@ comunidades_focalizadas_practicas_organizativas:
   - Junta de Acción Comunal
 conectividad_minima: Regular
 iniciativas_priorizadas:
-  - Cacao
-  - Yuca Brava
-  - Microemprendimientos
-org_focalizada:
-  - Mesa Integral de Desarrollo
-  - AGROPITA
-  - Asociacion Campesina Bajo Cauca
-  - ASOPRACAC
-  - ACATA
+  - >-
+    En esta comunidad el programa WLH trabajó con microemprendimientos para
+    construir habilidades y competencias que les permita fortalecer su pequeño
+    negocio
+  - ' y de esta forma contribuir al mejoramiento de los medios de vida'
+  - ' por medio de negocios viables'
+  - ' rentables y sostenibles.'
+org_focalizada: []
 riesgo: ''
-otros_programas_USAID: []
+otros_programas_USAID:
+  - 'No'
 alianzas_colaboradores:
   - PDET está adelantando varias acciones en el corregimiento (Placa huella
   - |2-
@@ -103,19 +86,16 @@ actividades_ocio:
     "Huellas ecológicas (Grupo de niños y niñas quetienen un vivero, hacen
     reforestación y jornadas de limpieza)"
 medios_comunicacion_narrativas_locales:
-  - Cáceres Stereo
-  - Red de comunicaciones Bajo Cauca- Semillero El Jardín
-  - Zona Activa
-  - CMT Colectivos de comunicaciones
-  - Emisora comunitaria Morena Estéreo
+  - |-
+    Emisora la Caucana
+    Semillero Protegiendo lo nuestro
 num_visitas_realizadas: 3
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - Centro de salud
-  - Presencia de Cruz Roja Colombiana
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: >-
-  El centro de salud cuenta con 2 enfermeros y dos veces a la semana asiste el
-  médico.
+  Gracias al convenio USAID - OIM - HOMO, el ESE HOSPITAL SAN ANTONIO ofrece
+  servicio de telemedicina para psiquiatría y psicología. También ya habilitó el
+  servicio presencial de fisioterapia, terapia ocupacional y fonoaudiología. 
 num_visitas_predio: 19
 url: /comunidad-focalizada/corregimiento-la-caucana
 layout: single

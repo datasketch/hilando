@@ -117,6 +117,15 @@ comunidades:
   - label: Vereda Paraiso
     slug: vereda-paraiso
     permalink: /comunidad-focalizada/vereda-paraiso
+  - label: ' Vereda Coraza'
+    slug: vereda-coraza
+    permalink: /comunidad-focalizada/vereda-coraza
+  - label: ' Vereda La Estación'
+    slug: vereda-la-estacion
+    permalink: /comunidad-focalizada/vereda-la-estacion
+  - label: ' Vereda La Esmeralda'
+    slug: vereda-la-esmeralda
+    permalink: /comunidad-focalizada/vereda-la-esmeralda
 download_file: /reportes/coloso.pdf
 layout: territorio
 

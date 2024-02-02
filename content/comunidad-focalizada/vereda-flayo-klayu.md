@@ -5,20 +5,15 @@ municipio: Toribío
 departamento: Cauca
 descripcion: >-
   Comunidad en su mayoría étnica, origen NASA. Prevalece la caficultura, la
-  psiciultura y el cultivo de Mora. El ingreso a la vereda el Flayo es
-  montañoso, en estado regular que es transitado en moto y/o en mula que son los
-  medios de transporte utilizados por los pobladores. Existen redes de energía y
-  para el abastecimiento de agua se cuenta con un acueducto veredal por el cual
-  cada familia debe pagar $3.000 para las labores de mantenimiento y tratamiento
-  del agua la cual es tomada de la quebrada El Cedro.
-
-  No existen sistema de recolección de basuras, ni tratamiento de residuos
-  sólidos, por ello, los pobladores optan por utilizar los residuos orgánicos
-  para el compostaje y, las demás basuras se queman o se entierran al interior
-  de las fincas.
-
-  Se tiene planteado un proyecto de reforestación para la conservación y cuidado
-  del medio ambiente. 
+  psiciultura y el cultivo de Mora. El ingreso a la vereda el Flayó es
+  montañoso,.Existen redes de energía y para el abastecimiento de agua se cuenta
+  con un acueducto veredal por el cual cada familia debe pagar para las labores
+  de mantenimiento y tratamiento del agua la cual es tomada de la quebrada El
+  Cedro. La vereda el flayo en nuestro idioma KLAYU ya que cuentan los mayores,
+  era un territorio era amplio ya que no había tanta población y se criaba mucho
+  el ganado, este ganado pertenecía a los lugares altos de la vereda y bajaba a
+  la parte baja a tomar agua salada. Como los españoles no podían pronunciar
+  Klayu decidieron llamarlo el Flayó.
 num_personas: 1050
 num_familias: 300
 min_distancia_casco_urbano: 20
@@ -27,8 +22,7 @@ vias_acceso: >-
   Vía Toribio - Jambaló. En regular estado ya que es hecho de balastro lo que
   produce hueco, se puede transitar con precaución.
 
-
-  El ingreso a la vereda el Flayo se realiza a través de vía terciaria,
+  El ingreso a la vereda el Flayó se realiza a través de vía terciaria,
   identificándose inicialmente una carretera en afirmado y en tierra,
   predominando un terreno montañoso, en estado regular que es transitado en moto
   y/o en mula que son los medios de transporte utilizados por los pobladores. 
@@ -40,101 +34,66 @@ infraestructura_comunitaria:
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
-    hay un movimiento de líderes fuertes organizados a partir del proyecto de
+    Hay un movimiento de líderes fuertes organizados a partir del proyecto de
     vida NASA
 
-    Trabajan en mingas
-
-    Se reunen en Tulpas
+    Trabajan en mingas y se reunen en Tulpas.
 inclusion_diversidad_genero: null
 comentarios_conectividad: >-
   Ausencia de cobertura de servicios de conectividad e infraestructura que
   limita el uso de estos servicios en esta zona.
 
-  Algunos habitantes de la vereda cuentan con dispositivos móviles que les
-  permite establecer comunicación porque acceden a servicios de internet de
-  manera particular a través de la contratación del servicio con operadores. 
-  móviles. Al interior de la comunidad se maneja el voz a voz, el perifoneo y
-  las carteleras.
+  Algunos habitantes de la vereda cuentan con dispositivos móviles y acceden a
+  servicios de internet de manera particular a través de la contratación del
+  servicio con operadores.  móviles. Al interior de la comunidad se maneja el
+  voz a voz, el perifoneo y las carteleras.
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
-  - Punto vive digital con 10 computadores. La señal es regular.
-ppales_actividades_economicas_vocacion_productiva:
-  - Agricultura
-  - Piscicultura
+  - https://padlet.com/comunidadflayo/comunidad-de-el-flayo-lphqazcgtm1qz8h2
+ppales_actividades_economicas_vocacion_productiva: []
 comentarios_ppales_actividades_economicas_vocacion_productiva: |-
   Agricultura (Café y Mora).
   Piscicultura (10 familias).
 comunidad_sostenible_uso_suelo: >-
   En la parte alta presencia de árboles y se tiene planteado un proyecto de
   reforestación para la conservación y cuidado del medio ambiente. 
-org_con_proyeccion:
-  - Proyecto de caficultura
-  - Proyecto de piscicultura
+org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - Energía-Toribío
-  - Acueducto-Toribío
-  - Recolección de basuras-Toribío
+  - Energía
+  - Acueducto
+  - Recolección de basuras
 comunidades_focalizadas_educacion_infraestructura_educativa: []
-comunidades_focalizadas_practicas_organizativas:
-  - Autoridad Indígena
-  - Junta de Acción Comunal
-  - Organización de Mujeres y jóvenes
-  - Movimiento Juvenil
+comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
 iniciativas_priorizadas:
-  - Café
-  - Mora
-org_focalizada:
-  - Sicet
-  - Cencoic
-  - Asofromora
-  - Asofruth
-  - Fxize
+  - >-
+    A partir de WLH se fortalecieron las prácticas principales  de productividad
+    en la finca y los procesos de post cosecha para alcanzar un mejor grano de
+    café y mercados diferenciales.
+org_focalizada: []
 riesgo: ''
 otros_programas_USAID:
   - >-
     Fertilización para el cultivo de café en el 2017 y charlas para la
     utilización de los insumos
-alianzas_colaboradores:
-  - >-
-    Administración municipal: Estructuración de un apoyo de emergencia para la
-    bocatoma del acueducto; asistencia técnica de la UMATA que además apoya
-    proyectos productivos de algunas familias y en articulación con la
-    Gobernación del Cauca se está haciendo una propuesta de intervención para
-    presentar al Ministerio de Agricultura.
-
-    Iniciativa PDET: Placa Huellas.
-
-    CENCOIC: Central Cooperativa Indígena del Cauca.
-
-    Comité de Cafeteros
-
-    CORPOPALO: Corporación para la Sostenibilidad de la Subcuenca del Río Palo
-    en el departamento del Cauca.                                       
-posibilidad_iniciativas_conjuntas_aliados_2:
-  - Estructuración de un apoyo de emergencia para la bocatoma del acueducto
-  - Asistencia técnica
-  - Propuesta de intervención
-  - Placa Huellas
-  - Central Cooperativa Indígena del Cauca (CENCOIC)
-  - Comité de Cafeteros
-  - >-
-    Corporación para la Sostenibilidad de la Subcuenca del Río Palo en el
-    departamento del Cauca (CORPOPALO)
+alianzas_colaboradores: []
+posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales:
   - Nasa Stereo
 num_visitas_realizadas: 20
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - Sistema Indígena de Salud Propio Intercultural (SISPI)
+infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: >-
   Cuentan con el Sistema Indígena de Salud Propio Intercultural (SISPI), que
   parte de sabedores ancestrales. "Formación de líderes" se encarga del centro
   de formación de recuperación del idioma. Allí abordan temas de género,
   empoderamiento de mujeres y reclutamiento forzado. Desde el proyecto Nasa se
   cuenta con un coordinador de salud y auxiliares comunitarios.
+
+  Gracias al programa el CXAYU`CE JXUT EMPRESA SOCIAL DEL ESTADO UNIDAD DE
+  ATENCIÓN EN SALUD ofrece el servicio de psicología de manera presencia en la
+  cabecera municipal de Toribio.
 num_visitas_predio: 0
 url: /comunidad-focalizada/vereda-flayo-klayu
 layout: single
