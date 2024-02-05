@@ -15,6 +15,8 @@ cms: true
 ---
 **Por Rosember Anaya Ramírez**
 
+![](/images/uploads/ruby-ariza-3.jpeg)
+
 Mientras se balancea en la mecedora de madera en la que reposa, Ruby Ariza Rodríguez, evoca tristes momentos que le dejó el conflicto armado, pero también recuerda los bellos episodios   vividos en San Jacinto, Bolívar. A esta mujer de 47 años y de tez morena, le tocó huir de Zambrano, Bolívar, su tierra natal. Corría el mes de abril del año 2003 cuando Ruby tuvo que salir corriendo por amenazas a su esposo.
 
 “Fue algo muy doloroso, triste. Me tocó dejar a mi familia, especialmente a mis padres. Yo salí de Zambrano porque como mi esposo es de San Jacinto y a los sanjacinteros los tildaban de guerrilleros, nos tocó huir. Antes mi hermano había sido secuestrado y lo mataron. Nos dieron pocas horas para salir de Zambrano”, narra con nostalgia, mientras sus manos aprietan fuerte los brazos de la mecedora.
