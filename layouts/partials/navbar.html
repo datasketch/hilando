@@ -87,27 +87,11 @@
             </a>
           </li>
           {{ else }}
-          {{ if eq .Title "Galería" }}
-          <details class="flex flex-col justify-center space-y-8">
-            <summary
-              class="inline-block uppercase text-xl border-b-2 pb-1 border-transparent cursor-pointer duration-300">
-              {{ .Title }}</summary>
-            <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
-              href="/galeria/multimedia">
-              Multimedia
-            </a>
-            <a class="inline-block uppercase text-xl border-b-2 border-transparent pb-1 duration-300"
-              href="/galeria/publicaciones">
-              Publicaciones
-            </a>
-          </details>
-          {{ else }}
           <li>
             <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
               href="{{ .URL }}">{{ .Title }}
             </a>
-          </li>
-          {{ end }}
+          </li> 
           {{ end }}
           {{ end }}
         </ul>

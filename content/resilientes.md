@@ -1,6 +1,6 @@
 ---
 title: Resilientes
-weight: 7
+weight: 6
 menu: main
 layout: resilientes
 ---

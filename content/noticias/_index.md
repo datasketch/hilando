@@ -1,6 +1,6 @@
 ---
 title: Noticias
-weight: 6
+weight: 2
 menu: main
 cms: false
 ---

@@ -1,52 +1,58 @@
-{{ define "main" }}
-{{ $data := .Site.Data.eventos }}
-{{ $municipio := .Params.municipio }}
+{{ define "main" }} {{ $data := .Site.Data.eventos }} {{ $municipio :=
+.Params.municipio }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
-  <div class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer bg-blue">
+  <div
+    class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer bg-blue"
+  >
     <div class="mx-auto w-10/12 xl:w-9/12">
       <div class="flex flex-col lg:flex-row lg:justify-between">
         <div class="lg:w-7/12 text-white">
-          <h1 class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto uppercase" style="max-width: 517px;">
+          <h1
+            class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto uppercase"
+            style="max-width: 517px"
+          >
             {{ .Params.nombre_comunidad }}
             <span class="block text-3xl xl:text-4xl font-light">
               {{ .Params.municipio }} - {{ .Params.Departamento }}
             </span>
           </h1>
-          <img class="w-full mt-6" src="/images/territorios/line-shape-2.svg" alt="">
-          <p class="text-lg xl:text-xl -mt-2 mx-auto" style="max-width: 517px;">
+          <img
+            class="w-full mt-6"
+            src="/images/territorios/line-shape-2.svg"
+            alt=""
+          />
+          <p class="text-lg xl:text-xl -mt-2 mx-auto" style="max-width: 517px">
             {{ .Params.Descripcion }}
           </p>
         </div>
         <div class="lg:w-5/12">
-          <img class="mx-auto" src="/images/territorios/pradera-map.svg" alt="imagen mapa pradera">
+          <img
+            class="mx-auto"
+            src="/images/territorios/pradera-map.svg"
+            alt="imagen mapa pradera"
+          />
         </div>
       </div>
     </div>
   </div>
   <div class="lg:col-start-1 lg:col-end-13">
     <div class="grid grid-cols-1 lg:grid-cols-2">
-      <div class="px-2 py-8 lg:py-10 xl:py-12 text-center space-y-4 bg-platinum">
-        <h3 class="text-xl xl:text-2xl font-black">
-          Cantidad de habitantes
-        </h3>
-        <img class="mx-auto" src="/images/territorios/person-blue.svg" alt="">
+      <div
+        class="px-2 py-8 lg:py-10 xl:py-12 text-center space-y-4 bg-platinum"
+      >
+        <h3 class="text-xl xl:text-2xl font-black">Cantidad de habitantes</h3>
+        <img class="mx-auto" src="/images/territorios/person-blue.svg" alt="" />
         <p class="text-3xl xl:text-4xl font-black">
           {{ .Params.num_personas }}
-          <span class="block text-sm">
-            PERSONAS
-          </span>
+          <span class="block text-sm"> PERSONAS </span>
         </p>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 text-center space-y-4 bg-white-2">
-        <h3 class="text-xl xl:text-2xl font-black">
-          Cantidad de familias
-        </h3>
-        <img class="mx-auto" src="/images/territorios/family.svg" alt="">
+        <h3 class="text-xl xl:text-2xl font-black">Cantidad de familias</h3>
+        <img class="mx-auto" src="/images/territorios/family.svg" alt="" />
         <p class="text-3xl xl:text-4xl font-black">
           {{ .Params.num_familias }}
-          <span class="block text-sm">
-            FAMILIAS
-          </span>
+          <span class="block text-sm"> FAMILIAS </span>
         </p>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 text-center relative bg-cultured">
@@ -55,24 +61,34 @@
         </h3>
         <div class="text-3xl xl:text-4xl font-black mt-4">
           <div class="inline-flex flex-col space-y-2">
-            <p class="inline-flex items-center">{{ .Params.min_distancia_casco_urbano }} <span
-                class="text-sm font-normal ml-1">MINUTOS</span></p>
-            <p class="inline-flex items-center">{{ .Params.km_distancia_casco_urbano }} <span
-                class="text-sm font-normal ml-1">KILOMETROS</span></p>
+            <p class="inline-flex items-center">
+              {{ .Params.min_distancia_casco_urbano }}
+              <span class="text-sm font-normal ml-1">MINUTOS</span>
+            </p>
+            <p class="inline-flex items-center">
+              {{ .Params.km_distancia_casco_urbano }}
+              <span class="text-sm font-normal ml-1">KILOMETROS</span>
+            </p>
           </div>
         </div>
-        <img class="mx-auto -mt-20" src="/images/territorios/distance.svg" alt="">
+        <img
+          class="mx-auto -mt-20"
+          src="/images/territorios/distance.svg"
+          alt=""
+        />
       </div>
       <div
-        class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 space-y-4 overflow-hidden text-center lg:text-left relative bg-tea-green">
-        <h3 class="text-xl xl:text-2xl font-black">
-          Vías de acceso
-        </h3>
-        <p class="text-lg xl:text-xl mx-auto lg:mx-0" style="max-width: 338px;">
+        class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 space-y-4 overflow-hidden text-center lg:text-left relative bg-tea-green"
+      >
+        <h3 class="text-xl xl:text-2xl font-black">Vías de acceso</h3>
+        <p class="text-lg xl:text-xl mx-auto lg:mx-0" style="max-width: 338px">
           {{ .Params.vias_acceso }}
         </p>
-        <img class="absolute -top-4 -right-0 h-full hidden lg:block" src="/images/territorios/hightwey.svg"
-          alt="">
+        <img
+          class="absolute -top-4 -right-0 h-full hidden lg:block"
+          src="/images/territorios/hightwey.svg"
+          alt=""
+        />
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-cultured">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
@@ -83,47 +99,40 @@
             {{ .Params.notas_infraestructura_comunitaria }}
           </p>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.infraestructura_comunitaria }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.infraestructura_comunitaria }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
           </ul>
         </div>
       </div>
-      <div class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 space-y-4 overflow-hidden text-center lg:text-left bg-cultured">
+      <div
+        class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 space-y-4 overflow-hidden text-center lg:text-left bg-cultured"
+      >
         <h3 class="text-xl xl:text-2xl font-black">
           Educación e infraestructura educativa
         </h3>
         <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-          {{ range .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
+          {{ range
+          .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
           {{ with . }}
-          <li>
-            {{ . }}
-          </li>
-          {{ end }}
-          {{ end }}
+          <li>{{ . }}</li>
+          {{ end }} {{ end }}
         </ul>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-white-2">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Servicios Públicos
-          </h3>
+          <h3 class="text-xl xl:text-2xl font-black">Servicios Públicos</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.servicios_publicos_comunidades_focalizadas }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.servicios_publicos_comunidades_focalizadas }} {{
+            with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
           </ul>
         </div>
       </div>
-      <div class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 overflow-hidden bg-white-2">
+      <div
+        class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 overflow-hidden bg-white-2"
+      >
         <div class="w-10/12 lg:w-auto mx-auto space-y-4">
           <h3 class="text-xl xl:text-2xl font-black">
             Infraestructura salud y atención psicosocial
@@ -132,101 +141,108 @@
             {{ .Params.notas_infraestructura_salud_atencion_psicosocial }}
           </p>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.infraestructura_salud_atencion_psicosocial }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.infraestructura_salud_atencion_psicosocial }} {{
+            with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
           </ul>
         </div>
       </div>
-      <div class="px-2 py-8 lg:py-10 xl:py-12 bg-cultured">
-        <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Liderazgo en la comunidad
-          </h3>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.liderazgo_comunidad }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 overflow-hidden bg-cultured">
-        <div class="w-10/12 lg:w-auto mx-auto space-y-4">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Prácticas Organizativas
-          </h3>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.comunidades_focalizadas_practicas_organizativas }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 lg:grid lg:place-items-center bg-banner-inclusion-diversidad-genero bg-cover bg-center">
-    <div class="text-white space-y-4 w-10/12 mx-auto px-2 lg:w-4/12 lg:mx-0 text-center">
-      <h3 class="text-xl xl:text-2xl font-black">
-        Inclusión, diversidad y género
-      </h3>
-      <p class="text-lg xl:text-xl">
-        {{ .Params.inclusion_diversidad_genero }}
-      </p>
     </div>
   </div>
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 lg:w-9/12 xl:w-8/12">
-      <div class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0">
-        <div class="space-y-8 lg:w-5/12">
+      <div class="flex flex-col space-y-8 lg:space-y-12">
+        <div class="space-y-8">
           <div class="flex items-center space-x-4">
             <div class="flex-shrink-0">
-              <img src="/images/territorios/wifi.svg" alt="">
+              <img src="/images/territorios/wifi.svg" alt="" />
             </div>
             <div class="space-y-2">
-              <h3 class="text-xl xl:text-2xl font-black">
-                Conectividad
-              </h3>
+              <h3 class="text-xl xl:text-2xl font-black">Conectividad</h3>
               <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-                <li>
-                  {{ .Params.conectividad_minima }}
-                </li>
+                <li>{{ .Params.conectividad_minima }}</li>
               </ul>
             </div>
           </div>
-          <div class="p-4" style="border: 1px solid #D27028;">
+          <div class="p-4" style="border: 1px solid #d27028">
             <p class="text-lg xl:text-xl">
               {{ .Params.comentarios_conectividad }}
             </p>
           </div>
         </div>
-        <div class="space-y-6 lg:w-5/12">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Punto SOLE
-          </h3>
-          <p class="text-lg xl:text-xl">
-            {{ .Params.punto_SOLE }}
-          </p>
+        <div class="space-y-6">
+          <h3 class="text-xl xl:text-2xl font-black">Punto SOLE</h3>
+          <p class="text-lg xl:text-xl">{{ .Params.punto_SOLE }}</p>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.comentarios_punto_SOLE }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.comentarios_punto_SOLE }} {{ if strings.Contains .
+            "padlet" }}
+            <div
+              class="padlet-embed"
+              style="
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 2px;
+                box-sizing: border-box;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                background: #f4f4f4;
+              "
+            >
+              <p style="padding: 0; margin: 0">
+                <iframe
+                  src="{{ . }}"
+                  frameborder="0"
+                  allow="camera;microphone;geolocation"
+                  style="
+                    width: 100%;
+                    height: 608px;
+                    display: block;
+                    padding: 0;
+                    margin: 0;
+                  "
+                ></iframe>
+              </p>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: end;
+                  margin: 0;
+                  height: 28px;
+                "
+              >
+                <a
+                  href="https://padlet.com?ref=embed"
+                  style="
+                    display: block;
+                    flex-grow: 0;
+                    margin: 0;
+                    border: none;
+                    padding: 0;
+                    text-decoration: none;
+                  "
+                  target="_blank"
+                  ><div style="display: flex; align-items: center">
+                    <img
+                      src="https://padlet.net/embeds/made_with_padlet_2022.png"
+                      width="114"
+                      height="28"
+                      style="
+                        padding: 0;
+                        margin: 0;
+                        background: 0 0;
+                        border: none;
+                        box-shadow: none;
+                      "
+                      alt="Hecho con Padlet"
+                    /></div
+                ></a>
+              </div>
+            </div>
+            {{ else }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }} {{ end }}
           </ul>
         </div>
       </div>
@@ -234,64 +250,24 @@
   </div>
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-magenta">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div class="text-white flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-8 lg:space-y-0">
+      <div
+        class="text-white flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-8 lg:space-y-0"
+      >
         <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
           <div class="space-y-4">
             <h3 class="text-xl xl:text-2xl font-black">
               Actividades económicas principales y vocación productiva
             </h3>
             <p class="text-lg xl:text-xl">
-              {{ .Params.comentarios_ppales_actividades_economicas_vocacion_productiva }}
+              {{
+              .Params.comentarios_ppales_actividades_economicas_vocacion_productiva
+              }}
             </p>
             <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
-            </ul>
-          </div>
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Comunidad sostenible y uso del suelo
-            </h3>
-            <p class="text-lg xl:text-xl">
-              {{ .Params.comunidad_sostenible_uso_suelo }}
-            </p>
-          </div>
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Oportunidades de innovación
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              <li>
-                Ruta del cacao: Experiencia turística desde la siembra hasta su transformación
-              </li>
-              <li>
-                Escuela de cacaoteritos: Ubicada en el IE El pital como estrategia para relevo
-                generacional
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div>
-            <img src="/images/territorios/person-purple.svg" alt="">
-          </div>
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Organizaciones con proyección
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.org_con_proyeccion }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
+              {{ range .Params.ppales_actividades_economicas_vocacion_productiva
+              }} {{ with . }}
+              <li>{{ . }}</li>
+              {{ end }} {{ end }}
             </ul>
           </div>
         </div>
@@ -300,36 +276,18 @@
   </div>
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0">
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0"
+      >
         <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
           <div class="space-y-4">
             <h3 class="text-xl xl:text-2xl font-black">
               Iniciativas productivas priorizadas
             </h3>
             <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.iniciativas_priorizadas }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
-            </ul>
-          </div>
-        </div>
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Organizaciones focalizadas
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.org_focalizada }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
+              {{ range .Params.iniciativas_priorizadas }} {{ with . }}
+              <li>{{ . }}</li>
+              {{ end }} {{ end }}
             </ul>
           </div>
         </div>
@@ -338,32 +296,15 @@
   </div>
   <div class="lg:col-start-1 lg:col-end-13">
     <div class="flex flex-col lg:flex-row lg:justify-between">
-      <div class="lg:w-6/12 space-y-8 lg:space-y-12 xl:space-y-16 py-12 lg:py-16 xl:py-20 px-2 relative bg-white-2">
-        <div class="space-y-4 w-10/12 lg:w-8/12 xl:w-6/12 mx-auto">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Riesgo
-          </h3>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            <li>
-              {{ .Params.riesgo }}
-            </li>
-          </ul>
-        </div>
-        <img class="absolute bottom-0 left-0 hidden lg:block w-full" src="/images/territorios/riesgo.svg" alt="">
-      </div>
-      <div class="lg:w-6/12 space-y-8 lg:space-y-12 xl:space-y-16 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green">
+      <div
+        class="lg:w-6/12 space-y-8 lg:space-y-12 xl:space-y-16 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green"
+      >
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Otros programas USAID
-          </h3>
+          <h3 class="text-xl xl:text-2xl font-black">Otros programas USAID</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.otros_programas_USAID }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.otros_programas_USAID }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
           </ul>
         </div>
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
@@ -371,41 +312,31 @@
             Alianzas y colaboradores
           </h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.alianzas_colaboradores }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
-            {{ range .Params.posibilidad_iniciativas_conjuntas_aliados_2 }}
-            {{ with . }}
-            <li>
-              {{ . }}
-            </li>
-            {{ end }}
-            {{ end }}
+            {{ range .Params.alianzas_colaboradores }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }} {{ range
+            .Params.posibilidad_iniciativas_conjuntas_aliados_2 }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green">
+  <div
+    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green"
+  >
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 text-white">
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 text-white"
+      >
         <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
           <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Actividades de ocio
-            </h3>
+            <h3 class="text-xl xl:text-2xl font-black">Actividades de ocio</h3>
             <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.actividades_ocio }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
+              {{ range .Params.actividades_ocio }} {{ with . }}
+              <li>{{ . }}</li>
+              {{ end }} {{ end }}
             </ul>
           </div>
         </div>
@@ -415,20 +346,19 @@
               Medios de comunicación
             </h3>
             <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
-              {{ range .Params.medios_comunicacion_narrativas_locales }}
-              {{ with . }}
-              <li>
-                {{ . }}
-              </li>
-              {{ end }}
-              {{ end }}
+              {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with
+              . }}
+              <li>{{ . }}</li>
+              {{ end }} {{ end }}
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 relative overflow-x-hidden bg-cultured">
+  <div
+    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 relative overflow-x-hidden bg-cultured"
+  >
     <div class="mx-auto w-10/12 xl:w-9/12">
       <div class="space-y-12 mx-auto">
         <div class="text-center">
@@ -439,31 +369,39 @@
         <div class="container x mandatory-scroll-snapping" dir="ltr">
           {{ range where $data "municipio" $municipio }}
           <div class="relative space-y-2 bg-white-2 p-8">
-            <p class="text-lg xl:text-xl">
-              {{ .mes | humanize }}
-            </p>
+            <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
             <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
               {{ .nombre_evento }}
             </h3>
-            <div class="bg-magenta" style="height: 2px;">&nbsp;</div>
-            <img src="{{ .thumbnail }}" alt="">
+            <div class="bg-magenta" style="height: 2px">&nbsp;</div>
+            <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+              <img class="w-full h-full object-cover object-center" src="{{ .thumbnail }}" alt="" />
+            </div>
           </div>
           {{ end }}
         </div>
       </div>
     </div>
   </div>
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden bg-white-2">
+  <div
+    class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden bg-white-2"
+  >
     <div class="mx-auto w-10/12 xl:w-9/12 flex">
       <div class="lg:w-6/12">
-        <h2 class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black">
+        <h2
+          class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black"
+        >
           DESCARGA
         </h2>
         <p class="xl:text-xl lg:text-lg mb-7">
           Descarga la información del municipio para conocer su contexto.
         </p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-center">
-          <a class="uppercase text-white py-2 px-6 xl:text-lg bg-rose" href='{{ .Params.download_file }}' target="_blank">
+          <a
+            class="uppercase text-white py-2 px-6 xl:text-lg bg-rose"
+            href="{{ .Params.download_file }}"
+            target="_blank"
+          >
             DESCARGA LA FICHA
           </a>
           <!-- <a class="uppercase text-white py-2 px-6 xl:text-lg bg-space-cadet" href="#">
@@ -472,8 +410,11 @@
         </div>
       </div>
     </div>
-    <img class="absolute top-0 lg:-right-16 h-full hidden lg:block" src="/images/public/line-shape-2.svg"
-      alt="">
+    <img
+      class="absolute top-0 lg:-right-16 h-full hidden lg:block"
+      src="/images/public/line-shape-2.svg"
+      alt=""
+    />
   </div>
 </div>
 {{ end }}
