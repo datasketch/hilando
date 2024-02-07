@@ -1,18 +1,16 @@
 ---
-title: Las Delicias, Piedras
-nombre_comunidad: Las Delicias, Piedras
+title: Las Delicias - Piedras
+nombre_comunidad: Las Delicias - Piedras
 municipio: Tarazá
 departamento: Antioquia
 descripcion: >-
   Las Delicias Piedras se encuentra ubicada en la llamada troncal de occidente a
-  cinco minutos del Municipio de Tarazá. 
-
-  Una parte de a población vive en en centro poblado y otras al borde de
-  carretera.  A pesar de ello, logran llegar a las familias que no estan en el
-  centro poblado con información e involucran a los habitantes en diferentes
-  iniciativas de la junta. Esto evidencia que hay un nivel de cohesión
-  comunitaria significativo, en tanto, promueven el sentido de pertenencia con
-  la vereda. 
+  cinco minutos del Municipio de Tarazá. Una parte de a población vive en en
+  centro poblado y otras al borde de carretera.  A pesar de ello, logran llegar
+  a las familias que no están en el centro poblado con información e involucran
+  a los habitantes en diferentes iniciativas de la junta. Esto evidencia que hay
+  un nivel de cohesión comunitaria significativo, en tanto, promueven el sentido
+  de pertenencia con la vereda. 
 
   La pandemia del covid-19 y las contingencias ocasionadas por la hidroeléctrica
   han afectado a la población en general dando lugar a la zozobra. 
@@ -28,7 +26,6 @@ infraestructura_comunitaria:
   - |-
     * Caseta comunitaria
      * Parroquia
-     * Institución educativa  de preescolar  hasta 10° (300 estudiantes aproximadamente) y jornadas sabatinas
     * Puesto de salud (médico va cada 15 días)
     * Cancha  futbol
     * Lugares turísticos
@@ -44,41 +41,42 @@ liderazgo_comunidad:
      gestionar espacios y recursos.
     Liderazgo de mujeres: se identificaron mujeres de la comunidad que trabajan
     o han realizado acciones para fortalecer el bienestar comunitario
-  - |2-
-     es el caso de expresidentas de la JAC de los barrios y la actual líder encargada del adulto mayor. También en este rol esta la cacica del resguardo indígena y la presidenta del concejo comunitario.
-    Existen liderazgos masculinos como el presidente de JAC
   - >2-
-     secretarios y sabios del resguardo indígena.
-    Con respecto a los jóvenes existe un líder comunitario encargado del trabajo
-    con esta población.
+     es el caso de expresidentas de la JAC de los barrios y la actual líder encargada del adulto mayor. También en este rol esta la cacica del resguardo indígena y la presidenta del concejo comunitario.
+    Existen liderazgos masculinos como el presidente de JAC; secretarios y
+    sabios del resguardo indígena. Con respecto a los jóvenes existe un líder
+    comunitario encargado del trabajo con esta población.
 inclusion_diversidad_genero: >-
   Población multicultural donde se evidencian relaciones interétnicas,. En el
   mismo territorio confluye población afrodescendiente, población indígena Zenú
-  y población campesina.
-
-  Se evidencia una población joven activa organizada y con capacidad de
-  autogestión.
-
-  Las mujeres se destacan por agruparse en asociaciones productivas y que van en
-  linea de la seguridad alimentaria y el cuidado del territorio.
-comentarios_conectividad: |-
-  Acceso las señales de todos los operadores. 
-  Internet en  la Institución Educativa.
+  y población campesina. Se evidencia una población joven activa organizada y
+  con capacidad de autogestión. Las mujeres se destacan por agruparse en
+  asociaciones productivas y que van en línea de la seguridad alimentaria y el
+  cuidado del territorio.
+comentarios_conectividad: Acceso las señales de todos los operadores.
 punto_SOLE: Caseta Comunal
-comentarios_punto_SOLE: []
+comentarios_punto_SOLE:
+  - >-
+    https://padlet.com/lasdeliciascomunidad/sole-comunidad-las-delicias-piedras-sheap633o5mwyexj
 ppales_actividades_economicas_vocacion_productiva:
-  - Su economía está basada en la agricultura
+  - agricultura
   - ' ganadería'
   - ' minería'
-  - ' especies menores (avicultura) y piscicultura.'
+  - ' especies menores (avicultura)'
+  - piscicultura.
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: Suelo con vocación agropecuaria y minería.
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
-comunidades_focalizadas_educacion_infraestructura_educativa: []
+comunidades_focalizadas_educacion_infraestructura_educativa:
+  - ' * Institución educativa  de preescolar  hasta 10° (300 estudiantes aproximadamente) y jornadas sabatinas'
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
-iniciativas_priorizadas: []
+iniciativas_priorizadas:
+  - >-
+    Fortalecimiento de la piscicultura en la comunidad Las Delicias piedras con
+    visión de cadena productiva y sostenible ambiental
+  - ' económica y socialmente'
 org_focalizada: []
 riesgo: null
 otros_programas_USAID:
@@ -93,21 +91,13 @@ actividades_ocio:
   - ' fiesta popular'
   - ' herencia paisa.'
 medios_comunicacion_narrativas_locales:
-  - Cáceres Stereo
-  - " Radio \t\nRed de comunicaciones Bajo Cauca- Semillero El Jardín\t"
+  - "Red de comunicaciones Bajo Cauca- Semillero El Jardín\t"
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial:
-  - >-
-    El corregimiento cuenta con un centro de salud que tiene enfermera
-    permanente y brinda servicios primarios en salud.
-
-    Los habitantes tienen como ruta de atención primero asistir a los servicios
-    de consulta externa del hospital de Cáceres
-  - >2-
-     para ser evaluados y remitidos a los especialistas requeridos. Luego de la remisión a los pacientes se les asignan citas en las ciudades de Medellín y Montería.
-    En el momento no hay programas o acciones enfocadas a la atención
-    psicosocial.
+  - Gracias al convenio USAID - OIM - HOMO
+  - ' el ESE HOSPITAL SAN ANTONIO en la cabecera municipal ofrece servicio de telemedicina para psiquiatría y psicología. También ya habilitó el servicio presencial de fisioterapia'
+  - ' terapia ocupacional y fonoaudiología'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 url: /reportes/las-delicias-piedras

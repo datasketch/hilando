@@ -23,13 +23,12 @@ num_familias: 60
 min_distancia_casco_urbano: 60
 km_distancia_casco_urbano: 15
 vias_acceso: >-
-  Via en regular estado. Se encuentra ubicada a una hora de la cabecera
+  Vía en regular estado. Se encuentra ubicada a una hora de la cabecera
   municipal 
 infraestructura_comunitaria:
   - "* La Institución Educativa es el centro de concentración de la comunidad.\_ \n* Hay un espacio para eventos deportivos (arquerías)."
 notas_infraestructura_comunitaria: null
-liderazgo_comunidad:
-  - ASODECABOM
+liderazgo_comunidad: []
 inclusion_diversidad_genero: null
 comentarios_conectividad: null
 punto_SOLE: Centro Educativo El Paraíso
@@ -51,9 +50,10 @@ comunidades_focalizadas_educacion_infraestructura_educativa:
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Bueno
 iniciativas_priorizadas:
-  - |-
-    ASODECABON. Organización de Arroyo María y EL Bongal. 
-    ASOPROCOAS 
+  - >-
+    Se trabajó por mejorar la cadena productiva del cacao y fortalecer las
+    asociaciones de productores ASODECABON y ASOPROCOAS en las veredas Arroyo de
+    María y el Bongal del municipio de San Jacinto – Bolívar
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
@@ -70,13 +70,13 @@ posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - "* Fiestas patronales\n* Campeonato de softbol y futbol entre las dos comunidades\n* Celebración San Francisco\_\n* Escuela de cacaoteritos (lúdico-educativo)\n* Artesanías elaboradas por mujeres\_(mochilas y hamacas)\_"
 medios_comunicacion_narrativas_locales:
-  - Emisora Comunitaria
+  - Fundación Tierra Montemariana
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial:
-  - >-
-    EPs Mutual Ser. Las Urgencias se atienden en la cabecera municipal de San
-    jacinto 
+  - A través del programa
+  - ' el E.S.E. HOSPITAL LOCAL DEL MUNICIPIO DE SAN JACINTO habilitó. el servicio de psicología. Aún se está trabajando por habilitar otros servicios así como la consulta por telemedicina. por el momento'
+  - ' deben desplazarse a la cabecera municipal de San Jacinto'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 url: /comunidad-focalizada/vereda-el-bongal

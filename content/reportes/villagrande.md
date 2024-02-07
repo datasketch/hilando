@@ -26,11 +26,10 @@ infraestructura_comunitaria:
     * Cancha de fútbol.
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
-  - Es un consejo comunitario reconocido
-  - |2-
-     lo que ha llevado a crear unos vínculos muy cercanos. Comparten un territorio y tienen actividades que los integran como comunidad. Cuentan con espacios colectivos para los encuentros.
-    Las actividades principales de los pobladores se relacionan con la minería
-  - ' el moto taxismo y el “rebusque “ dejando de lado un poco la agricultura.'
+  - >-
+    Es un consejo comunitario reconocido lo que ha llevado a crear unos vínculos
+    muy cercanos. Comparten un territorio y tienen actividades que los integran
+    como comunidad. Cuentan con espacios colectivos para los encuentros.
 inclusion_diversidad_genero: >-
   Consejo comunitario que está organizado y legalmente constituido se reconoce
   como comunidad afrodescendiente. Las mujeres participaron en un proceso de
@@ -68,12 +67,16 @@ comunidades_focalizadas_educacion_infraestructura_educativa:
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Malo
 iniciativas_priorizadas:
-  - 'Grupo de mujeres emprendedoras de Villa Grande: Piscicultura y Ají blanco '
+  - >-
+    Fortalecimiento de los medios de vida de familias campesinas de las veredas
+    Villa Grande y La Capilla municipio de El Bagre  generación de capacidades
+    y  habilidades técnicas
+  - ' comerciales y financieras necesarias para la reactivación de la piscicultura y transferencia  tecnológico y estrategias comerciales locales para los cultivos de sandía y ají bajo un modelo de sostenibilidad ambiental.'
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
 alianzas_colaboradores:
-  - '"* UARIV: Reparación colectiva'
+  - '* UARIV: Reparación colectiva'
   - ' estrategia Entrelazando. '
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
@@ -86,24 +89,15 @@ actividades_ocio:
     Encuentros religiosos 
   - ' deportivos y culturales. '
 medios_comunicacion_narrativas_locales:
-  - Medio Municipal http://www.elbagre.com.co/
+  - Colectivo Gente y Bosques
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial:
   - >-
-    La comunidad Villagrande los habitantes tienen poco acceso a servicios de
-    salud
-  - |2-
-     por  falta recurso económico para el desplazamiento y la distancia al casco urbano.
-    Participan de la brigada de salud mental que hace la Cruz Roja Colombiana
-  - ' 1 o 2 veces por año siendo una oportunidad de acceder a los servicios de odontología'
-  - ' medicina general'
-  - ' crecimiento y desarrollo'
-  - >2-
-     citología.
     Participación en el proceso de rehabilitación psicosocial (Estrategia
-    Entrelazando)
-  - ' liderada por la unidad de víctimas en el marco del proceso de reparación colectiva de sujetos étnicos.'
+    Entrelazando) liderada por la unidad de víctimas en el marco del proceso de
+    reparación colectiva de sujetos étnicos
+  - ' A través del convenio HOMO USAID OIM el ESE HOSPITAL NUESTRA SEÑORA DEL CARMEN ofrece servicio de telemedicina para psiquiatría y psicología.'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 url: /reportes/villagrande

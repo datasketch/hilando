@@ -16,10 +16,12 @@ vias_acceso: >-
   La vereda está sobre la via que conecta a al costa Atlántica, por lo que tiene
   carretera pero en condiciones regulares. Hay riesgos de deslizamientos,
   derrumbes e inundación. 
-infraestructura_comunitaria: []
-notas_infraestructura_comunitaria: >-
-  Caseta comunal, Sede ASOCAVAL,Instituciones educativas (IE),Espacios
-  deportivos
+infraestructura_comunitaria:
+  - Caseta comunal
+  - ' Sede ASOCAVAL'
+  - Instituciones educativas (IE)
+  - Espacios deportivos
+notas_infraestructura_comunitaria: ''
 liderazgo_comunidad:
   - >-
     Se identfican liderazgos importantes en el territorio.
@@ -59,21 +61,21 @@ comunidades_focalizadas_practicas_organizativas:
   - Procesos en temas productivos y sociales
 conectividad_minima: Regular
 iniciativas_priorizadas:
-  - 'Asocaval: Apoyo en Mejorar la calidad del grano de cacao'
-  - ' la planeación'
-  - ' la gestión socio empresarial y los niveles de competitividad de ASOCAVAL en el sector cacaotero del municipio de Valdivia'
-  - ' Antioquia'
-  - ' a través del desarrollo de micro central de beneficio con capacidad de 50 ton /año'
-  - ' inicialmente para cacao de comercio justo y posteriormente caco orgánico'
-  - ' además se realizara el fortalecimiento de ASOCAVAL como organización asociativa'
-  - ' comercializadora de cacao y la administradora de la central de beneficio'
-  - ' contribuyendo de esta forma a responder a las exigencias de mercado interno y externo'
-  - ' mejorar la cantidad y calidad de la materia prima que se  ofertará'
-  - ' y por ende mejorar las condiciones socio económicas de los asociados.'
+  - >-
+    Apoyo en Mejorar la calidad del grano de cacao - la planeación - la gestión
+    socio empresarial y los niveles de competitividad de ASOCAVAL en el sector
+    cacaotero del municipio de Valdivia - Antioquia a través del desarrollo de
+    micro central de beneficio con capacidad de 50 ton /año inicialmente para
+    cacao de comercio justo y posteriormente cacao orgánico. Además se realizó
+    el fortalecimiento de ASOCAVAL como organización asociativa;
+    comercializadora de cacao y la administradora de la central de beneficio;
+    contribuyendo de esta forma a responder a las exigencias de mercado interno
+    y externo; mejorar la cantidad y calidad de la materia prima que se 
+    ofertará y mejorar las condiciones socio económicas de los asociados.
 org_focalizada: []
 riesgo: ''
 otros_programas_USAID:
-  - 'No'
+  - 'no'
 alianzas_colaboradores:
   - Fedecacao
   - ' Casa Luker'

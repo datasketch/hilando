@@ -20,71 +20,67 @@ min_distancia_casco_urbano: 45
 km_distancia_casco_urbano: 11
 vias_acceso: ' La forma de transportarse la comunidad es mediante jeeps en rutas desde Piendamó'
 infraestructura_comunitaria:
-  - |-
-    * Escuela El Agrado
-    * Salón JAC
-    * Cancha futbol
-    * Patio deportivo
-    * Hogar infantil
+  - Escuela El Agrado
+  - ' Salón JAC'
+  - Cancha fútbol
+  - Patio deportivo
+  - Hogar infantil
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
     Se tiene un liderazgo en la Junta de Acción comunal de la vereda y cuenta
-    con espacio de caseta comunal. Esta junta está organizada por comités. 
-
-    Participación de asambleas y mingas de manera asertiva 
-
-    Grupo de danza juvenil
+    con espacio de caseta comunal
+  - ' Esta junta está organizada por comités'
+  - Participación de asambleas y mingas de manera asertiva
+  - Grupo de danza juvenil
+  - ' Campeonatos de fútbol niños y adultos'
   - |2
-     campeonatos de futbol niños y adultos grupo cultural.
+     grupo cultural.
 inclusion_diversidad_genero: |-
   Población mestiza
   Población con integrantes con algun tipo de discapacidad 
   Población diversa no es identificada hasta el momento.
-comentarios_conectividad: Regular
+comentarios_conectividad: ''
 punto_SOLE: IE El Carmen
 comentarios_punto_SOLE:
   - https://padlet.com/comunidadelagrado/sole-el-agrado-3j9kwcarx602yuug
 ppales_actividades_economicas_vocacion_productiva:
-  - |-
-    * Prácticas Agrícolas basadas en caficultura. 
-    * Caña: cuentan con dos trapiches paneleros.
-    * Cuatro familias trabajan en la cadena del gusano de seda.
+  - Prácticas Agrícolas (caficultura
+  - ' Caña (cuentan con dos trapiches paneleros)'
+  - Cuatro familias trabajan en la cadena del gusano de seda
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - |-
-    * Acueducto regional Piendamó - Morales. 
-    * Energía eléctrica CEO.
+  - Acueducto regional Piendamó - Morales
+  - Energía eléctrica CEO
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - >-
     La vereda cuenta con una institución educativa con énfasis agrícola hasta el
     grado quinto de primaria. Para el Bachillerato se dirigen a la institución
-    educativa del  Carmen y San Isidro. 
+    educativa del Carmen y San Isidro. 
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
-iniciativas_priorizadas: []
+iniciativas_priorizadas:
+  - >-
+    Se trabajó por fortalecer las capacidades productivas y manejo colectivo de
+    la producción de café con un enfoque de calidad y  sostenibilidad  en la
+    vereda El Agrado - Municipio de Piendamó
+  - ' Cauca através de ADENSA.'
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
 alianzas_colaboradores:
-  - |-
-    * Familias en Acción. 
-    * De Cero a Siempre.
+  - Familias en Acción
+  - De Cero a Siempre.
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - >-
-    * Grupo cultural: tambores, flauta, guitarra, maracas. 
-
-    * Carnavales, fiestas comunitarias. 
-
-    * Grupo deportivo.
-
-    * Fiesta religiosa del patrono  SAGRADO CORAZON esta actividad se realiza
-    con fondos de la comunidad.
-
-    * Comité fiestero (carnavales de Blancos y Negros)."
+  - Grupo cultural (tambores - flauta - guitarra - maracas)
+  - ' Carnavales'
+  - ' fiestas comunitarias'
+  - Grupo deportivo
+  - ' Fiesta religiosa del patrono  SAGRADO CORAZON'
+  - ' Comité fiestero (carnavales de Blancos y Negros)'
 medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null

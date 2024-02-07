@@ -6,10 +6,7 @@ departamento: Valle del Cauca
 descripcion: >-
   Comunidad ubicada en la cuenca baja del río Anchicaya al frente de la Bocana.
   Forma parte de la Bahía de Buenaventura a 13 km de la vía marítima del
-  embarcadero. Su mayor autoridad es el consejo comunitario. Su vocación es la
-  piscicultura y puede adelantarse trabajo con el grupo de piangueras y
-  pescadores que es muy activo en la zona. Hay áreas de oportunidad en el
-  trabajo de manejo de residuos.
+  embarcadero. Su mayor autoridad es el consejo comunitario. 
 num_personas: 370
 num_familias: 100
 min_distancia_casco_urbano: null
@@ -21,30 +18,35 @@ infraestructura_comunitaria:
   - Caseta comunal
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
-  - >-
-    Consejo Comunitario-máxima autoridad en territorio. Se pueden adelantar
-    procesos organizativos con grupo de piangueras
-  - ' asociación de pescadores'
-  - ' guías turísticos'
-  - |2
-     grupo de residuos sólidos y gastronomía.
+  - Consejo Comunitario-máxima autoridad en territorio.
+  - >
+    Se pueden adelantar procesos organizativos con grupo de piangueras -
+    asociación de pescadores - guías turísticos - grupo de residuos sólidos y
+    gastronomía.
 inclusion_diversidad_genero: null
-comentarios_conectividad: null
-punto_SOLE: null
-comentarios_punto_SOLE: []
+comentarios_conectividad: Solo satelital en la cancha.
+punto_SOLE: Caseta Comunal
+comentarios_punto_SOLE:
+  - >-
+    https://padlet.com/comunidadpuntas/comunidad-de-punta-soldado-suselk3hh3khx7hl
 ppales_actividades_economicas_vocacion_productiva:
   - Piscicultura
   - Agricultura
-comentarios_ppales_actividades_economicas_vocacion_productiva: Pesca (98%).
+comentarios_ppales_actividades_economicas_vocacion_productiva: ''
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas: []
-conectividad_minima: null
+conectividad_minima: Malo
 iniciativas_priorizadas:
-  - Turismo
-  - Pesca
+  - >-
+    Este proyecto tiene por objetivo generar articulación y complementariedad
+    con las acciones de la instituciones del Distrito de Buenaventura y del
+    nivel regional o nacional para avanzar en la construcción y puesta en marcha
+    del proyecto de etno turismo de naturaleza y cultural de Punta Soldado. Se
+    trabajara los ejes de Gobernanza del turismo en el Consejo Comunitario
+  - ' Fortalecimiento de Experiencias y Servicios; Fortalecimiento de competencias individuales y colectivas y Estrategias de divulgación  y comercialización.'
 org_focalizada:
   - Consejo Comunitartio Punta Soldado
 riesgo: null
@@ -65,7 +67,10 @@ medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: 10
 num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial: []
-notas_infraestructura_salud_atencion_psicosocial: null
+notas_infraestructura_salud_atencion_psicosocial: >-
+  A través del programa, el HOSPITAL DISTRITAL LUIS ABLANQUE DE LA PLATA en el
+  Distrito de Buenaventura, habilitó el servicio de psicología, fonoaudiología y
+  fisioterapia.
 num_visitas_predio: 0
 url: /comunidad-focalizada/punta-soldado
 layout: single

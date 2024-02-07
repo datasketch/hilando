@@ -71,13 +71,14 @@ alianzas_colaboradores:
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - "* Fiestas patronales\n* Campeonato de softbol y futbol entre las dos comunidades\n* Celebración San Francisco\_\n* Escuela de cacaoteritos (lúdico-educativo)\n* Artesanías elaboradas por mujeres\_(mochilas y hamacas)"
-medios_comunicacion_narrativas_locales: []
+medios_comunicacion_narrativas_locales:
+  - Fundación Tierra Montemariana
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial:
-  - >-
-    *EPS Mutual Ser. Las Urgencias se atienden en la cabecera municipal de San
-    jacinto 
+  - A través del programa
+  - ' el E.S.E. HOSPITAL LOCAL DEL MUNICIPIO DE SAN JACINTO habilitó. el servicio de psicología. Aún se está trabajando por habilitar otros servicios así como la consulta por telemedicina. por el momento'
+  - ' deben desplazarse a La cabecera municipal de San Jacinto'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 url: /comunidad-focalizada/arroyo-de-maria

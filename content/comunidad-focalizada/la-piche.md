@@ -80,12 +80,12 @@ medios_comunicacion_narrativas_locales:
   - Comunicarte
 num_visitas_realizadas: 40
 num_diagnosticos_rurales_participativos_realizados: 1
-infraestructura_salud_atencion_psicosocial:
-  - A través del programa
-  - ' el CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E habilitó los servicios de psicología'
-  - ' fisioterapia'
-  - ' terapia ocupacional y fonoaudología. Todas por el momento de manera presencial en la cabecera municipal de Toluviejo. '
-notas_infraestructura_salud_atencion_psicosocial: Acompañamiento del PNUD (cerrado).
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  A través del programa, el CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E habilitó
+  los servicios de psicología, fisioterapia, terapia ocupacional y
+  fonoaudología. Todas por el momento de manera presencial en la cabecera
+  municipal de Toluviejo. 
 num_visitas_predio: 5
 url: /comunidad-focalizada/la-piche
 layout: single

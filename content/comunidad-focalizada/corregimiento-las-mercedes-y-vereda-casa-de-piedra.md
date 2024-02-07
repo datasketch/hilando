@@ -78,16 +78,7 @@ otros_programas_USAID:
 alianzas_colaboradores:
   - >-
     Gobernación impulsó proyecto de innovación y formación tecnológica  de cacao
-    a partir de 25 jóvenes y fortalecer asistencia y mantenimiento de áreas
-  - |2-
-     Trabajar el tema investigación con Agrosavia.
-    Se requiere apoyo para legalización de predios
-  - |2-
-     incluído el de la escuela (Unidad de Tierras-Nuestra tierra Póspera)
-    Producen ñame pero tienen dificultades con la comercialización.
-    Tienen 12a 15 Ha sembradas de café 50 mil palos
-  - ' café floreciendo'
-  - ' otros recien sembrados'
+    a partir de 25 jóvenes y fortalecer asistencia y mantenimiento de áreas.
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
   - Música de pitos y tambores

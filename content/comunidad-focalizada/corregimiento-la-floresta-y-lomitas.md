@@ -20,58 +20,38 @@ vias_acceso: >-
   conocida como Lucitania.
 infraestructura_comunitaria:
   - >-
-    * Sede de la escuela primaria que está proyectada para como Casa cultural y
-    Comunitaria  para el corregimiento.
-
-    * Capilla iglesia católica
-
-    * Cancha de fútbol
-
-    * Institución Educativa Antonio Nariño
-  - |2-
-     Sede Francisco Antonio Zea
-    * Sede Junta de Acción Comunal
+    Sede de la escuela primaria que está proyectada para como Casa cultural y
+    Comunitaria
+  - '  Capilla iglesia católica'
+  - ' Cancha de fútbol'
+  - ' Institución Educativa Antonio Nariño - Sede Francisco Antonio Zea'
+  - ' Sede Junta de Acción Comunal'
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
-  - >-
-    Juntas de acción Comunal activas. Participación activa en el Consejo
-    Municipal de Desarrollo Rural. Organizaciones de base como Agrosima
-  - ' Asopiernechucha'
-  - ' Asociación de Campesinos Unidos por un Buen Futuro - ACUBF y Asomujelo.'
+  - Juntas de acción Comunal activas
+  - 'Participación activa en el Consejo Municipal de Desarrollo Rural. '
 inclusion_diversidad_genero: >-
   Comunidad que se reconoce como población campesina. Mujeres organizadas y con
   liderazgos representativos en la zona. Se observa población en condición de
   discapacidad principalmente cognitiva.
 comentarios_conectividad: Internet satelital
-punto_SOLE: |-
-  Colegio abandonado que usa la JAC para reuniones
-  IE Antonio Nariño (Sede Primaria)
+punto_SOLE: Colegio abandonado que usa la JAC para reuniones
 comentarios_punto_SOLE:
   - >-
     https://padlet.com/comunidadlaflorestavyc/sole-la-floresta-y-lomitas-rf4asnn778840rvq
 ppales_actividades_economicas_vocacion_productiva:
   - Agropecuaria
   - ' ganadería de ceba'
-  - ' cultivos transitorios y frutales (frijol'
-  - ' yuca'
-  - ' cilantro'
-  - ' ají dulce'
-  - ' habichuela'
-  - ' tomate'
-  - ' banano'
-  - ' aguacate'
-  - ' zapote y naranjas)'
-  - ' Realizan procesos de comercialización directa en el Municipio de Pradera. '
+  - ' cultivos transitorios y frutales (frijol - yuca - cilantro - ají dulce - habichuela - tomate - banano - aguacate - zapote y naranjas)'
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: >-
   En la zona hay extensos cultivos de caña de azúcar, elemento que es percibido
   por la comunidad, como generador de impactos negativos
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - |-
-    Acueducto: AcuaValle
-    Energía Eléctrica
-    No cuenta con alcantarillado
+  - 'Acueducto: AcuaValle'
+  - ' Energía Eléctrica'
+  - No cuenta con alcantarillado
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución Educativa Antonio Nariño
   - >2-
@@ -81,33 +61,35 @@ comunidades_focalizadas_educacion_infraestructura_educativa:
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Bueno
 iniciativas_priorizadas:
-  - |-
-    Asopiernechucha: 24 asociados
-    Agrosima: 19 Asociados"
+  - >-
+    Fortalecer los agronegocios de pequeños productores de hortalizas de 
+    ASOPIERNECHUCHA -Asociación de Productores Comercializadores y Procesadores
+    de Productos Agropecuarios de la Floresta
+  - ' ubicadas en el corregimiento Floresta y hortalizas de AGROSIMA -Asociación de Campesinos Productores Agropecuarios de la Sima ubicada en el corregimiento de Lomitas mediante el incremento de las capacidades técnico productivos'
+  - ' y comerciales'
+  - ' buscando mayor competitividad y sostenibilidad ambiental'
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
 alianzas_colaboradores: []
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - |-
-    "Fiesta del Campesino.
-    Semana Santa
-    Fiesta de San Pedro y San Pablo
-    Cuadrangulares de fútbol (mixto
+  - Fiesta del Campesino
+  - Semana Santa
+  - ' Fiesta de San Pedro y San Pablo'
+  - ' Cuadrangulares de fútbol (mixto'
   - ' hombres'
   - ' mujeres'
   - |2
-     Solteros y casados)
+     solteros y casados)
 medios_comunicacion_narrativas_locales:
-  - >-
-    Proceso de jóvenes que hacen cine al aire libre “hagamos cine”  como
-    estrategia de vinculo y convivencia.
+  - Casa Zambo
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial:
-  - No tiene puesto de salud. La atención de urgencias
-  - ' medicina general y odontología se brinda en la cabecera municipal en el Hospital San Roque.'
+  - >-
+    A través del programa se habilitó servicio de psicología de manera
+    presencial en la cabecera municipal en el ESE CENTRO UNO.
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 url: /comunidad-focalizada/corregimiento-la-floresta-y-lomitas

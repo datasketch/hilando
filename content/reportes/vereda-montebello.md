@@ -17,7 +17,7 @@ km_distancia_casco_urbano: 1
 vias_acceso: Calles sin pavimentar transitables, algunos pasos con placa huella.
 infraestructura_comunitaria:
   - >-
-    * Escuelas hasta 5° (Aprox 70 estudiantes). Cuentan con terreno comunitario
+    * Escuela hasta 5° (Aprox 70 estudiantes). Cuentan con terreno comunitario
     en el cual plantean hacer una nueva sede del colegio que se encuentra en mal
     estado
 
@@ -36,15 +36,9 @@ comentarios_punto_SOLE:
   - >-
     https://es.padlet.com/diazfarasicakevinalexander/sole-monte-bello-y-nuevo-manzanares-gs0qih57w1o0zz79
 ppales_actividades_economicas_vocacion_productiva:
-  - '* Cuenta con una gran canasta agropecuaria: Maíz'
-  - ' Frijol'
-  - " Ganadería y tabaco. Pequeños proyectos\_de hortalizas en las parcelas con las que salen a ventas.\n* Cuenta con más de 30 pequeños ganaderos doble propósito"
-  - |2-
-     no están agremiados.
-    * Cuenta con tractor y aperos para preparación de terreno (disco
-  - ' cincel'
-  - " desgranadora y zorro de cargue).\n* Las familias cuentan con\_3.5 a 5 Has disponibles para rotación de cultivos de frijol-maíz (FENALCE)."
-comentarios_ppales_actividades_economicas_vocacion_productiva: null
+  - 'agropecuaria (Maíz - Frijol - tabaco - hortalizas) '
+  - ' Ganadería'
+comentarios_ppales_actividades_economicas_vocacion_productiva: "* Las familias cuentan con\_3.5 a 5 Has disponibles para rotación de cultivos de frijol-maíz (FENALCE)."
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
@@ -57,8 +51,9 @@ comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Bueno
 iniciativas_priorizadas:
   - >-
-    * ASOAGROMON: Tiene cultivos de maíz - variedad de Frijol.  Algunos
-    productores tienen miel pero las colmenas no están en la zona.
+    Se trabajó por mejorar la cadena productiva del cacao y fortalecer las
+    asociaciones de productores ASODECABON y ASOPROCOAS en las veredas Arroyo de
+    María y el Bongal.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
@@ -74,12 +69,11 @@ actividades_ocio:
      por medio de estos últimos las comunidades se integran y tienen actividades en simultáneo. 
     * Juegos tradicionales en las fiestas patronales.
 medios_comunicacion_narrativas_locales:
-  - Emisora Latina Stereo
+  - Colectivo de comunicadores y comunicadoras populares Altavoces - EL BONCHE
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - "* EPS Mutual Ser. \n* No hay centro de salud.La atención de urgencias, medicina general y odontología se brinda en la cabecera municipal de Chalán desde la IPS Integral Futuro. \n* La IPS tiene convenio con la EPS.\_ \n* La atención especializada se brinda en la ciudad de Sincelejo.\_\""
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: "* EPS Mutual Ser. \n* No hay centro de salud. La atención de urgencias - medicina general y odontología se brinda en la cabecera municipal de Chalán desde la IPS Integral Futuro. \n* La IPS tiene convenio con la EPS.\_ \n* La atención especializada se brinda en la ciudad de Sincelejo."
 num_visitas_predio: null
 url: /reportes/vereda-montebello
 layout: comunidad

@@ -25,17 +25,11 @@ min_distancia_casco_urbano: 10
 km_distancia_casco_urbano: 7
 vias_acceso: "Desde Sincelejo a la comunidad – 25km. Ubicada sobre la vía Toluviejo - Colosó. Vías en regular estado, son transitables.\_A nivel urbano hay una calle principal con 100% de pavimentación en regular estado.\_"
 infraestructura_comunitaria:
-  - >-
-    * Parque infantil: se encuentra en reubicación y está en buen estado.
-
-    * Se encuentra en obra PDET construcción de cancha para micro fútbol. 
-
-    * Cancha comunitaria de fútbol donde hacen eventos para la comunidad (tienen
-    espacios óptimos de recreación). 
-
-    * Institución Educativa Heriberto Garcia Garrido Sede La Siria 
-
-    * 2 hogares comunitarios.
+  - 'Parque infantil:'
+  - ' obra PDET construcción de cancha para micro fútbol'
+  - Cancha comunitaria de fútbol donde hacen eventos para la comunidad
+  - ' Institución Educativa '
+  - ' 2 hogares comunitarios.'
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad: []
 inclusion_diversidad_genero: null
@@ -46,47 +40,49 @@ punto_SOLE: 'IE Heriberto García Garrido sede La Siria '
 comentarios_punto_SOLE:
   - https://es.padlet.com/comunidadlasiria/sole-la-siria-fea4lie9rhz855y4
 ppales_actividades_economicas_vocacion_productiva:
-  - "* Cuentan con una gran canasta agrícola.\n* Manejo de alianzas comerciales sector Yuca y Forestal (ASOPROYUS).\_ \n* Acciones de protección del Bosque Seco Tropical.\_\n* Tienen parcelaciones de reforma agraria (INCORA).\n* Tienen áreas destinadas a pequeña ganadería. "
+  - agrícultura (yuca)
+  - protección del Bosque Seco Tropical
+  - 'ganadería '
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - >-
-    * No cuentan con acueducto
-
-    * Cuentan con alcantarillado construido por la comunidad. Tienen la práctica
-    de cosecha de agua y en época seca se abastecen de represa comunitaria.
+  - No cuentan con acueducto
+  - ' Cuentan con alcantarillado construido por la comunidad'
+  - ' Tienen la práctica de cosecha de agua y en época seca se abastecen de represa comunitaria.'
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - >-
-    * Institución Educativa Heriberto Garcia Garrido Sede La Siria aprox. 35
+    Institución Educativa Heriberto Garcia Garrido Sede La Siria aprox. 35
     estudiantes (Preescolar hasta 5°).
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
 iniciativas_priorizadas:
   - >-
-    Asociación de Productores de Yuca (ASOPROYUS): en la asociación cuentan con
-    Bodega - oficina
-  - ' picadora de Yuca'
-  - ' pistas de secado  para postcosecha además de cultivos tradicionales y reforestación de Serranía La Coraza. '
+    Junto a la Asociación de Productores de Yuca (ASOPROYUS) se trabajó en
+    fortalecer los medios de vida de familias campesinas en el Corregimiento La
+    Siria de Toluviejo
+  - ' implementando una alianza con entidades privadas en el marco de la línea productiva de yuca amarga '
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
 alianzas_colaboradores: []
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - |-
-    * Fiestas patronales Divino Niño
-    * Eventos de Maratón de la Lectura
-    * Eventos deportivos-futbol y softbol
-    * Juegos tradicionales
-    * Semana Santa cultural.
-medios_comunicacion_narrativas_locales: []
+  - Fiestas patronales Divino Niño
+  - ' Eventos de Maratón de la Lectura'
+  - ' Eventos deportivos-futbol y sóftbol'
+  - ' Juegos tradicionales'
+  - ' Semana Santa cultural.'
+medios_comunicacion_narrativas_locales:
+  - Comunicarte
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - '* No hay centro de salud.La atención de urgencias'
-  - ' medicina general y odontología se brinda en la cabecera municipal.'
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  A través del programa; el CENTRO DE SALUD SAN JOSE DE TOLUVIEJO E.S.E habilitó
+  los servicios de psicología - fisioterapia - terapia ocupacional y
+  fonoaudología. Todas por el momento de manera presencial en la cabecera
+  municipal de Toluviejo.
 num_visitas_predio: null
 url: /reportes/corregimiento-la-siria
 layout: comunidad

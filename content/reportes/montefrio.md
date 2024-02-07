@@ -25,15 +25,11 @@ vias_acceso: >-
   la caseta comunal. Es una vía pendiente y con curvas pronunciadas.
 infraestructura_comunitaria:
   - >-
-    * Caseta comunitaria que a la vez la disponen para dar clases a los niños y
-    niñas de preescolar a 5to grado.
-
-    * Cancha de fútbol (en proceso de adecuación por parte de Colombia Responde)
-
-    * COREDI 
-  - |2-
-     brinda la educación de bachillerato 
-    * Finca Don Matias (Espacio de encuentro- Granja productiva)
+    Caseta comunitaria que a la vez la disponen para dar clases a los niños y
+    niñas de preescolar a 5to grado
+  - ' Cancha de fútbol (en proceso de adecuación por parte de Colombia Responde)'
+  - ' COREDI  - brinda la educación de bachillerato'
+  - Finca Don Matias (Espacio de encuentro- Granja productiva)
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
@@ -50,37 +46,25 @@ comentarios_conectividad: >-
   con antena satelital.
 punto_SOLE: Caseta Comunal
 comentarios_punto_SOLE:
-  - XX embajadores
+  - >-
+    https://padlet.com/montefriocomunidad/sole-comunidad-montefr-o-g3acyq7qhz991k24
 ppales_actividades_economicas_vocacion_productiva:
-  - Su economía está basada en la agricultura
+  - agricultura
   - ' ganadería'
   - ' minería'
-  - ' espacies menores (avicultura) y piscicultura.'
+  - ' espacies menores (avicultura)'
+  - piscicultura.
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: Suelo con vocación agropecuaria, minería
-org_con_proyeccion:
-  - >-
-    "* Fundación Mujeres Emprendedoras de Taraza: Es una asociación municipal
-    con 52 asociados de los cuales 15 tienen un proyecto psicola en Piedras; 9
-    familias pertenecen a esta comunidad. Iniciaron haces 6 meses en una finca
-    en comodato por 5 años. En el momento cuenta con 6 estanques
-  - ' solo están utilizando 3.  En promedio tienen 2'
-  - >-
-    500 alevinos en el momento.
-
-    * Asopiedras: cuenta con 12 socios activos quienes explotan la piscicultura
-    en 40 estanques ubicados en las viviendas.  Transforman el pescado en
-    chorizo y butifarra; en el momento tienen el registro INVIMA vencido. Están
-    a la espera de recibir unas semillas y capacitación por la UNAD.
+org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - >-
-    * Institución educativa  de preescolar  hasta 10° (300 estudiantes
+    Institución educativa  de preescolar  hasta 10° (300 estudiantes
     aproximadamente) y jornadas sabatinas.
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Malo
-iniciativas_priorizadas:
-  - Piscicultura
+iniciativas_priorizadas: []
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
@@ -91,18 +75,19 @@ actividades_ocio:
   - ' fiestas del agua'
   - ' fiestas parroquiales'
 medios_comunicacion_narrativas_locales:
-  - "Zona Activa\t\nCMT Colectivos de comunicaciones\t\nEmisora comunitaria Morena Estéreo "
+  - CV Comunicaciones
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - >-
-    La vereda no cuenta con infraestructura para acceder a servicios de salud.
-    La comunidad se dirige al corregimiento de Puerto Valdivia o a la cebecera
-    municipal para estos servicios.
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  En la comunidad está la presencia de la Organización Humanizarte que desde
+  hace varios años está trabajando el tema psicosocial principalmente con las
+  mujeres creando una red llamada Mujeres Violetas que busca empoderar a la
+  mujer desde diferentes dimensiones. 
 
-    En cuanto la atención psicosocial
-  - ' en la comunidad está la presencia de la Organización Humanizarte que desde hace varios años está trabajando el tema psicosocial principalmente con las mujeres creando una red llamada Mujeres Violetas que busca empoderar a la mujer desde diferentes dimensiones.'
-notas_infraestructura_salud_atencion_psicosocial: null
+  Servicio habilitado de telemedicina para salud mental a través del convenio
+  HOMO - USAID - OIM en el E.S.E HOSPITAL SAN JUAN DE DIOS, en la cabecera
+  municipal de Valdivia.
 num_visitas_predio: null
 url: /reportes/montefrio
 layout: comunidad
