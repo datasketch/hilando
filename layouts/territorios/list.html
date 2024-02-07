@@ -2,8 +2,11 @@
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <!-- BANNER TERRITORIES -->
   <div
-    class="bg-banner-territorios bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer">
-    <h1 class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center">
+    class="bg-banner-territorios bg-cover bg-center lg:col-start-1 lg:col-end-13 pt-48 pb-20 md:pt-52 md:pb-24 lg:pt-56 lg:pb-28 xl:pt-60 xl:pb-32 observer"
+  >
+    <h1
+      class="tk-mr-eaves-sans uppercase text-white text-3xl lg:text-4xl xl:text-5xl font-black text-center"
+    >
       Territorios
     </h1>
   </div>
@@ -11,22 +14,31 @@
 
   <!-- TERRITORIES -->
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
-    <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mb-10 lg:mb-12 xl:mb-16">
+    <div
+      class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mb-10 lg:mb-12 xl:mb-16"
+    >
       <p class="lg:text-lg xl:text-xl text-center">
-        Conoce y compara los territorios a través de varias categorías
-        como características de la población, infraestructura tecnológica, tasas de violencia, vocación del
-        municipio, emprendimiento, celebraciones destacadas, y muchos más. Entérate de los proyectos que estamos
+        Conoce y compara los territorios a través de varias categorías como
+        características de la población, infraestructura tecnológica, tasas de
+        violencia, vocación del municipio, emprendimiento, celebraciones
+        destacadas, y muchos más. Entérate de los proyectos que estamos
         ejecutando con las comunidades en cada una de las regiones.
       </p>
     </div>
-    <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 xl:gap-x-12 gap-y-10">
+    <div
+      class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 xl:gap-x-12 gap-y-10"
+    >
       {{ range .Pages.GroupByParam "region" }}
       <div>
-        <h3 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">{{ .Key }}</h3>
+        <h3 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
+          {{ .Key }}
+        </h3>
         <ul class="grid grid-cols-1 gap-y-4">
           {{ range .Pages }}
           <li class="line">
-            <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}">{{ .Title }}</a>
+            <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}"
+              >{{ .Title }}</a
+            >
           </li>
           {{ end }}
         </ul>
@@ -36,37 +48,131 @@
   </div>
   <!-- TERRITORIES END -->
 
+  <!-- PROGRAM IMPACT -->
+  <div
+    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green"
+  >
+    <div class="mx-auto w-10/12">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 text-white gap-y-12 lg:gap-x-16 xl:gap-x-28"
+      >
+        <div
+          class="lg:col-start-1 lg:col-end-7 text-center lg:text-left space-y-12"
+        >
+          <h2 class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl">
+            <span class="px-1 bg-dark-moss-green">Tecnología</span> al servicio
+            de lo social
+          </h2>
+          <p class="text-lg xl:text-xl">
+            Buscando promover el diálogo entre diferentes puntos de vista y el
+            análisis comparativo entre las diferentes realidades y procesos
+            locales, hemos creado un espacio para la exploración investigativa a
+            partir de datos de quince municipios priorizados. Esta sección
+            permite accedan a información comparativa entre regiones, municipios
+            y comunidades que detone reflexión, promueva la innovación y genere
+            oportunidades impulsar transformaciones sociales para la convivencia
+            pacífica y el desarrollo sostenible.
+          </p>
+          <img
+            class="mx-auto lg:mx-0"
+            src="/images/home/program-impact.jpg"
+            alt="Visita al apiario del Colectivo Medioambiental Gente y Bosques, 2022"
+          />
+        </div>
+        <div class="lg:col-start-7 lg:col-end-13 space-y-12">
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Distribución poblacional rural
+            </h3>
+            <p class="text-lg xl:text-xl">
+              Recopilamos la información de quince municipios, principalmente
+              rurales, con una distribución poblacional que incluye víctimas del
+              conflicto, comunidades étnicas, mujeres, niños, niñas, jóvenes y
+              personas con discapacidad. Aquí podrás conocer su tamaño.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Panorama de la salud mental
+            </h3>
+            <p class="text-lg xl:text-xl">
+              A partir del Registro Individual de Prestación (RIPS), realizamos
+              un comparativo entre los principales diagnósticos de salud mental
+              atendidos durante el 2020 por el Sistema General de Seguridad
+              Social Salud (SGSSS) en los quince municipios priorizados. De
+              igual manera, revisamos las prioridades en salud establecidas por
+              las autoridades sanitarias municipales y relacionadas con las
+              dimensiones de intervención del Programa WLH y que hacen parte del
+              Plan Decenal de Salud.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-bold">
+              Economías tradicionales
+            </h3>
+            <p class="text-lg xl:text-xl">
+              Los quince municipios priorizados son predominantemente agrícolas
+              y forestales, con una potencia para la piscicultura, apicultura y
+              otras prácticas que protegen el medio ambiente. También, se
+              encuentran en zonas de extracción minera, y tienen tradición en la
+              agricultura y la producción de artesanías. Existen procesos
+              incipientes de industrialización en algunos municipios e
+              incentivos para el emprendimiento campesino. Conozca más sobre los
+              procesos de empoderamiento económico que impulsan la resiliencia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PROGRAM IMPACT END -->
+
   <!-- DATA EXPLORER -->
   {{ partial "partials/data-explorer.html" . }}
   <!-- DATA EXPLORER END -->
 
   <!-- DOWNLOAD -->
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden bg-white-2">
+  <div
+    class="lg:col-start-1 lg:col-end-13 py-12 lg:pt-16 xl:py-20 relative overflow-x-hidden bg-white-2"
+  >
     <div class="mx-auto w-10/12 xl:w-9/12 flex">
       <div class="md:w-6/12 lg:w-5/12">
-        <h2 class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black">
+        <h2
+          class="tk-mr-eaves-sans mb-4 lg:mb-6 text-3xl lg:text-4xl xl:text-5xl font-black"
+        >
           DESCARGA
         </h2>
         <p class="xl:text-xl lg:text-lg mb-7">
-          Descarga la información de los diferentes municipios priorizados para conocer el contexto de cada uno de
-          ellos.
+          Descarga la información de los diferentes municipios priorizados para
+          conocer el contexto de cada uno de ellos.
         </p>
         <details class="inline-block">
-          <summary class="inline-block cursor-pointer uppercase text-white py-2 px-8 xl:text-lg bg-space-cadet">
+          <summary
+            class="inline-block cursor-pointer uppercase text-white py-2 px-8 xl:text-lg bg-space-cadet"
+          >
             Descarga las fichas
           </summary>
-          <ul class="p-8 text-white grid gap-y-8 overflow-y-scroll bg-space-cadet h-80">
+          <ul
+            class="p-8 text-white grid gap-y-8 overflow-y-scroll bg-space-cadet h-80"
+          >
             {{ range where .RegularPages "Section" "territorios" }}
             <li class="text-lg">
-              <a href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}' target="_blank">{{ .Title
-                }}</a>
+              <a
+                href='{{ print "/reportes/" .File.BaseFileName ".pdf" }}'
+                target="_blank"
+                >{{ .Title }}</a
+              >
             </li>
             {{ end }}
           </ul>
         </details>
       </div>
     </div>
-    <img class="absolute top-0 -right-44 md:-right-16 h-full" src="/images/public/line-shape-2.svg" alt="">
+    <img
+      class="absolute top-0 -right-44 md:-right-16 h-full"
+      src="/images/public/line-shape-2.svg"
+      alt=""
+    />
   </div>
   <!-- DOWNLOAD END -->
 </div>
