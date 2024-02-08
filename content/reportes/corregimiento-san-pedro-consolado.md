@@ -89,7 +89,9 @@ medios_comunicacion_narrativas_locales:
 num_visitas_realizadas: 44
 num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial: []
-notas_infraestructura_salud_atencion_psicosocial: ''
+notas_infraestructura_salud_atencion_psicosocial: >-
+  Gracias al programa, el E.S.E. HOSPITAL LOCAL DE SAN JUAN NEPOMUCENO ofrece
+  psicología y fisioterapia de manera presencial en la cabecera municipal.
 num_visitas_predio: 1
 url: /reportes/corregimiento-san-pedro-consolado
 layout: comunidad
