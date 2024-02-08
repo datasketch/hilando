@@ -248,57 +248,43 @@
       </div>
     </div>
   </div>
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-magenta">
+  <div class="lg:col-start-1 lg:col-end-7 py-12 lg:py-16 xl:py-20 bg-magenta">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div
-        class="text-white flex flex-col lg:flex-row lg:justify-between lg:items-center space-y-8 lg:space-y-0"
-      >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Actividades económicas principales y vocación productiva
-            </h3>
-            <p class="text-lg xl:text-xl">
-              {{
-              .Params.comentarios_ppales_actividades_economicas_vocacion_productiva
-              }}
-            </p>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.ppales_actividades_economicas_vocacion_productiva
-              }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
+      <div class="space-y-4 text-white">
+        <h3 class="text-xl xl:text-2xl font-black">
+          Actividades económicas principales y vocación productiva
+        </h3>
+        <p class="text-lg xl:text-xl">
+          {{
+          .Params.comentarios_ppales_actividades_economicas_vocacion_productiva
+          }}
+        </p>
+        <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+          {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
+          {{ with . }}
+          <li>{{ . }}</li>
+          {{ end }} {{ end }}
+        </ul>
       </div>
     </div>
   </div>
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
+  <div class="lg:col-start-7 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div
-        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0"
-      >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Iniciativas productivas priorizadas
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.iniciativas_priorizadas }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
+      <div class="space-y-4">
+        <h3 class="text-xl xl:text-2xl font-black">
+          Iniciativas productivas priorizadas
+        </h3>
+        <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+          {{ range .Params.iniciativas_priorizadas }} {{ with . }}
+          <li>{{ . }}</li>
+          {{ end }} {{ end }}
+        </ul>
       </div>
     </div>
   </div>
   <div class="lg:col-start-1 lg:col-end-13">
     <div class="flex flex-col lg:flex-row lg:justify-between">
-      <div
-        class="lg:w-6/12 space-y-8 lg:space-y-12 xl:space-y-16 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green"
-      >
+      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green">
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
           <h3 class="text-xl xl:text-2xl font-black">Otros programas USAID</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
@@ -307,6 +293,8 @@
             {{ end }} {{ end }}
           </ul>
         </div>
+      </div>
+      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2">
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
           <h3 class="text-xl xl:text-2xl font-black">
             Alianzas y colaboradores
@@ -375,7 +363,11 @@
             </h3>
             <div class="bg-magenta" style="height: 2px">&nbsp;</div>
             <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-              <img class="w-full h-full object-cover object-center" src="{{ .thumbnail }}" alt="" />
+              <img
+                class="w-full h-full object-cover object-center"
+                src="{{ .thumbnail }}"
+                alt=""
+              />
             </div>
           </div>
           {{ end }}
