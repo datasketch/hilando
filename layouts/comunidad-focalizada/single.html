@@ -111,13 +111,13 @@
         <h3 class="text-xl xl:text-2xl font-black">
           Educación e infraestructura educativa
         </h3>
-        <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+        <ul class="space-y-2 text-lg xl:text-xl">
           {{ range
           .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
           {{ with . }}
           <li>{{ . }}</li>
           {{ end }} {{ end }}
-        </ul>
+          </ul>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-white-2">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
@@ -140,12 +140,12 @@
           <p class="text-lg xl:text-xl">
             {{ .Params.notas_infraestructura_salud_atencion_psicosocial }}
           </p>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+          <ul class="space-y-2 text-lg xl:text-xl">
             {{ range .Params.infraestructura_salud_atencion_psicosocial }} {{
             with . }}
             <li>{{ . }}</li>
             {{ end }} {{ end }}
-          </ul>
+            </ul>
         </div>
       </div>
     </div>
@@ -270,15 +270,21 @@
   </div>
   <div class="lg:col-start-7 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div class="space-y-4">
-        <h3 class="text-xl xl:text-2xl font-black">
-          Iniciativas productivas priorizadas
-        </h3>
-        <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-          {{ range .Params.iniciativas_priorizadas }} {{ with . }}
-          <li>{{ . }}</li>
-          {{ end }} {{ end }}
-        </ul>
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0"
+      >
+        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
+          <div class="space-y-4">
+            <h3 class="text-xl xl:text-2xl font-black">
+              Iniciativas productivas priorizadas
+            </h3>
+            <ul class="space-y-2 text-lg xl:text-xl">
+              {{ range .Params.iniciativas_priorizadas }} {{ with . }}
+              <li>{{ . }}</li>
+              {{ end }} {{ end }}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
