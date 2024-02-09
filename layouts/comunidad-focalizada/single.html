@@ -140,12 +140,12 @@
           <p class="text-lg xl:text-xl">
             {{ .Params.notas_infraestructura_salud_atencion_psicosocial }}
           </p>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+          <div class="space-y-2 text-lg xl:text-xl">
             {{ range .Params.infraestructura_salud_atencion_psicosocial }} {{
             with . }}
-            <li>{{ . }}</li>
+            {{ . }}
             {{ end }} {{ end }}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
