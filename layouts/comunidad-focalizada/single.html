@@ -111,13 +111,13 @@
         <h3 class="text-xl xl:text-2xl font-black">
           Educación e infraestructura educativa
         </h3>
-        <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
+        <div class="space-y-2 text-lg xl:text-xl">
           {{ range
           .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
           {{ with . }}
-          <li>{{ . }}</li>
+          {{ . }}
           {{ end }} {{ end }}
-        </ul>
+          </div>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-white-2">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
