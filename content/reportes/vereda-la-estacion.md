@@ -19,7 +19,7 @@ km_distancia_casco_urbano: 9
 vias_acceso: 'Via en regular estado, sin pavimentar,  desde Sincelejo son 34 km.  '
 infraestructura_comunitaria:
   - Centro Educativo hasta 5°
-  - ' Tiene un parque en buen estado'
+  - ' Parque en buen estado'
   - ' Cancha en regular estado'
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad: []
@@ -39,19 +39,18 @@ conectividad_minima: Regular
 iniciativas_priorizadas: []
 org_focalizada: []
 riesgo: null
-otros_programas_USAID: []
+otros_programas_USAID:
+  - 'no'
 alianzas_colaboradores: []
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio: []
 medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - EPS Mutual Ser
-  - ' No hay centro de salud'
-  - La atención de urgencias
-  - ' medicina general y odontología se brinda en la cabecera municipal.'
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  La atención de urgencias, medicina general y odontología se brinda en la
+  cabecera municipal.
 num_visitas_predio: null
 url: /reportes/vereda-la-estacion
 layout: comunidad

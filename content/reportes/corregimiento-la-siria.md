@@ -59,9 +59,9 @@ conectividad_minima: Regular
 iniciativas_priorizadas:
   - >-
     Junto a la Asociación de Productores de Yuca (ASOPROYUS) se trabajó en
-    fortalecer los medios de vida de familias campesinas en el Corregimiento La
-    Siria de Toluviejo
-  - ' implementando una alianza con entidades privadas en el marco de la línea productiva de yuca amarga '
+    fortalecer los medios de vida de familias campesinas  implementando una
+    alianza con entidades privadas en el marco de la línea productiva de yuca
+    amarga 
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []

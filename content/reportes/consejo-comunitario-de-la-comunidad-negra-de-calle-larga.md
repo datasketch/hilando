@@ -44,9 +44,10 @@ conectividad_minima: Bueno
 iniciativas_priorizadas:
   - >-
     Se trabajó enortalecer las capacidades productivas y comerciales de 47
-    familias con liderazgo femenino
-  - ' afrodescendientes e indígenas de la Asociación de Mujeres Campesinas Negras e Indígenas de Buenaventura- AMUCB'
-  - ' mediante el establecimiento del cultivo de papa china y su comercialización permitiendo dinamizar la economía de las familias.'
+    familias con liderazgo femenino afrodescendientes e indígenas de la
+    Asociación de Mujeres Campesinas Negras e Indígenas de Buenaventura- AMUCB
+    mediante el establecimiento del cultivo de papa china y su comercialización
+    permitiendo dinamizar la economía de las familias.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []

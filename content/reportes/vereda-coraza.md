@@ -22,7 +22,7 @@ vias_acceso: >-
   cabecera municipal 10 km.
 infraestructura_comunitaria:
   - Centro Educativo hasta 5
-  - ' Tienen un parque en buen estado'
+  - ' parque en buen estado'
   - Cancha en regular estado
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
@@ -44,13 +44,9 @@ comentarios_punto_SOLE: []
 ppales_actividades_economicas_vocacion_productiva:
   - Agricultura (popocho - plátano - batata)
 comentarios_ppales_actividades_economicas_vocacion_productiva: >-
-  * 40 familias en la producción de popocho y plátano. Manejan aprox. 30
-  hectáreas establecidas y tienen comercialización con Sincelejo- Mercado
-  Regional.
-
-  * Cuenta con pequeñas parcelas donde cultivan maíz, ñame y batata (más de 8
-  hectáreas cultivadas- batata) con mercado potencial en Medellín. Aliado
-  identificado con la central mayorista
+  40 familias en la producción de popocho y plátano. Tienen comercialización con
+  Sincelejo- Mercado Regional. Más de 8 hectáreas cultivadas- batata) con
+  mercado potencial 
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
@@ -86,12 +82,10 @@ medios_comunicacion_narrativas_locales:
   - NP Comunicaciones
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - |-
-    * EPS Mutual Ser. 
-    * No hay centro de salud. La atención de urgencias
-  - ' medicina general y odontología se brinda en la cabecera municipal. '
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  La atención de urgencias, medicina general y odontología se brinda en la
+  cabecera municipal. 
 num_visitas_predio: null
 url: /reportes/vereda-coraza
 layout: comunidad

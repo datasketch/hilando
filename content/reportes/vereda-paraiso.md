@@ -35,19 +35,18 @@ punto_SOLE: INSTITUCIÓN EDUCATIVA VEREDA EL PARAISO.
 comentarios_punto_SOLE:
   - >-
     https://padlet.com/comunidadelparaisocoloso/sole-qu-hace-nica-a-mi-comunidad-5g845lorbybqysif
-ppales_actividades_economicas_vocacion_productiva: []
-comentarios_ppales_actividades_economicas_vocacion_productiva: |-
-  Agricultura (Cacao y Yuca Amarga).
-  Producción de miel (estacional).
+ppales_actividades_economicas_vocacion_productiva:
+  - Agricultura (Cacao y Yuca Amarga)
+  - Producción de miel (estacional)
+comentarios_ppales_actividades_economicas_vocacion_productiva: ''
 comunidad_sostenible_uso_suelo: >-
   La producción de miel hace parte de la cadena apícola de Sucre. Tienen 200
   colmenas aproximadamente / 3 toneladas anuales.
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - |-
-    Acueducto
-    Energía
-    Gas
+  - Acueducto
+  - Energía
+  - Gas
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - IE hasta 5°.
 comunidades_focalizadas_practicas_organizativas: []
@@ -57,10 +56,12 @@ iniciativas_priorizadas:
     Desde el programa se impulsó el fortalecimiento organizacional y la
     generación de ingresos con  unidades apícolas como un modelo de negocios
     para 25 familias de pequeños productores a partir del fortalecimiento de sus
-    apiarios
-  - ' mediante la implementación de un paquete tecnológico para sanidad'
-  - ' suplemento alimentario de baja floración. Tema que se complementa con la entrega de colmenas nuevas con sus núcleos biológicos'
-  - ' dotaciones de seguridad y la implementación de un programa de capacitación que permita el fortalecimiento integral  de la organización ASOAPICOL  y el posicionamiento de su producto en el mercado.'
+    apiarios mediante la implementación de un paquete tecnológico para sanidad;
+    suplemento alimentario de baja floración. Tema que se complementa con la
+    entrega de colmenas nuevas con sus núcleos biológicos; dotaciones de
+    seguridad y la implementación de un programa de capacitación que permita el
+    fortalecimiento integral  de la organización ASOAPICOL  y el posicionamiento
+    de su producto en el mercado.
 org_focalizada:
   - Asoapicol
 riesgo: ''

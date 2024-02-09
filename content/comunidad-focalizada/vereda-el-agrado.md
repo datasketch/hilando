@@ -65,8 +65,7 @@ iniciativas_priorizadas:
   - >-
     Se trabajó por fortalecer las capacidades productivas y manejo colectivo de
     la producción de café con un enfoque de calidad y  sostenibilidad  en la
-    vereda El Agrado - Municipio de Piendamó
-  - ' Cauca através de ADENSA.'
+    vereda El Agrado - Municipio de Piendamó - Cauca a través de ADENSA.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []

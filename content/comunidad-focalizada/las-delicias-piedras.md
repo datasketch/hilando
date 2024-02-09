@@ -23,12 +23,11 @@ vias_acceso: >-
   de casco urbano de Tarazá. La caseta comunal se encuentra  a 3 minutos de la
   troncal. 
 infraestructura_comunitaria:
-  - |-
-    * Caseta comunitaria
-     * Parroquia
-    * Puesto de salud (médico va cada 15 días)
-    * Cancha  futbol
-    * Lugares turísticos
+  - Caseta comunitaria
+  - ' Parroquia'
+  - Puesto de salud (médico va cada 15 días)
+  - Cancha  fútbol
+  - ' Lugares turísticos.'
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
@@ -59,24 +58,25 @@ comentarios_punto_SOLE:
   - >-
     https://padlet.com/lasdeliciascomunidad/sole-comunidad-las-delicias-piedras-sheap633o5mwyexj
 ppales_actividades_economicas_vocacion_productiva:
-  - agricultura
-  - ' ganadería'
-  - ' minería'
-  - ' especies menores (avicultura)'
-  - piscicultura.
+  - Agricultura
+  - ' Ganadería'
+  - ' Minería'
+  - ' Especies menores (avicultura)'
+  - Piscicultura.
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: Suelo con vocación agropecuaria y minería.
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
-  - ' * Institución educativa  de preescolar  hasta 10° (300 estudiantes aproximadamente) y jornadas sabatinas'
+  - >-
+    Institución educativa de preescolar hasta 10° (300 estudiantes
+    aproximadamente) y jornadas sabatinas
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
 iniciativas_priorizadas:
   - >-
     Fortalecimiento de la piscicultura en la comunidad Las Delicias piedras con
-    visión de cadena productiva y sostenible ambiental
-  - ' económica y socialmente'
+    visión de cadena productiva y sostenible ambiental; económica y socialmente
 org_focalizada: []
 riesgo: null
 otros_programas_USAID:
@@ -88,17 +88,17 @@ actividades_ocio:
   - ' fiestas patronales Perpetuó Socorro'
   - ' Virgen del Carmen'
   - ' San Isidro'
-  - ' fiesta popular'
-  - ' herencia paisa.'
+  - ' fiesta popular de herencia paisa'
 medios_comunicacion_narrativas_locales:
   - "Red de comunicaciones Bajo Cauca- Semillero El Jardín\t"
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
-infraestructura_salud_atencion_psicosocial:
-  - Gracias al convenio USAID - OIM - HOMO
-  - ' el ESE HOSPITAL SAN ANTONIO en la cabecera municipal ofrece servicio de telemedicina para psiquiatría y psicología. También ya habilitó el servicio presencial de fisioterapia'
-  - ' terapia ocupacional y fonoaudiología'
-notas_infraestructura_salud_atencion_psicosocial: null
+infraestructura_salud_atencion_psicosocial: []
+notas_infraestructura_salud_atencion_psicosocial: >-
+  Gracias al convenio USAID - OIM - HOMO, el ESE HOSPITAL SAN ANTONIO en la
+  cabecera municipal ofrece servicio de telemedicina para psiquiatría y
+  psicología. También ya habilitó el servicio presencial de fisioterapia,
+  terapia ocupacional y fonoaudiología.
 num_visitas_predio: null
 url: /comunidad-focalizada/las-delicias-piedras
 layout: single

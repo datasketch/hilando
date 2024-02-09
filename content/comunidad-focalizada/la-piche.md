@@ -59,10 +59,9 @@ iniciativas_priorizadas:
   - >-
     Con el programa se trabajó en fortalecer las capacidades de las
     organizaciones comunitarias de turismo comunidades para generar una
-    propuesta de valor en torno a las actividades de turismo de naturaleza
-  - ' regenerativo y cultural'
-  - ' en  los corregimientos de La Piche ( Ecorruta) y San Pedro Consolado (Asoturcon)'
-  - ' que generen nuevas experiencias turísticas vivenciales'
+    propuesta de valor en torno a las actividades de turismo de naturaleza;
+    regenerativo y cultural en  la Piche ( Ecorruta) que generen nuevas
+    experiencias turísticas vivenciales
   - ' vinculando a diferentes actores y sectores de la población. '
 org_focalizada: []
 riesgo: ''

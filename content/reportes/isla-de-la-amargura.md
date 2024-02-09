@@ -72,8 +72,10 @@ conectividad_minima: Bueno
 iniciativas_priorizadas:
   - >-
     Se trabajó con ASOMUE Productores en mejorar capacidades y conocimientos
-    técnicos de las familias campesinas
-  - ' a través del fortalecimiento de las unidades productivas de plátano mediante acompañamiento técnico y la implementación de un programa de capacitación. También se entregó una trilladora de arroz comunitaria.'
+    técnicos de las familias campesinas a través del fortalecimiento de las
+    unidades productivas de plátano mediante acompañamiento técnico y la
+    implementación de un programa de capacitación. También se entregó una
+    trilladora de arroz comunitaria.
 org_focalizada: []
 riesgo: ''
 otros_programas_USAID: []

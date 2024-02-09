@@ -45,9 +45,9 @@ comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
-  - ' la escuela de la vereda hasta que cursan el grado 5'
-  - ' cuando entran a cursar la secundaria'
-  - ' deben trasladarse hasta la cabecera municipal.'
+  - >-
+    La escuela de la vereda hasta que cursan el grado 5. Cuando entran a la
+    secundaria deben trasladarse hasta la cabecera municipal.
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: null
 iniciativas_priorizadas: []
@@ -61,7 +61,9 @@ medios_comunicacion_narrativas_locales: []
 num_visitas_realizadas: null
 num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial: []
-notas_infraestructura_salud_atencion_psicosocial: null
+notas_infraestructura_salud_atencion_psicosocial: >-
+  La atención de urgencias medicina general y odontología se brinda en la
+  cabecera municipal.
 num_visitas_predio: null
 url: /comunidad-focalizada/vereda-la-esmeralda
 layout: single

@@ -68,12 +68,11 @@ comunidades_focalizadas_educacion_infraestructura_educativa: []
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Regular
 iniciativas_priorizadas:
-  - Construir habilidades
-  - ' competencias empresariales y apoyo de capitalización a  micro empresarios de Puerto Bélgica'
-  - '  que les permita fortalecer su pequeño negocio'
-  - ' y de esta forma contribuir al mejoramiento de los medios de vida'
-  - ' por medio de negocios viables'
-  - ' rentables y sostenibles.'
+  - >-
+    Construir habilidades - competencias empresariales y apoyo de capitalización
+    a  micro empresarios de Puerto Bélgica  que les permita fortalecer su
+    pequeño negocios y de esta forma contribuir al mejoramiento de los medios de
+    vida - por medio de negocios viables; rentables y sostenibles.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID:

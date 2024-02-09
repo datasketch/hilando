@@ -50,10 +50,10 @@ comentarios_conectividad: >-
 punto_SOLE: Punto Vive Digital
 comentarios_punto_SOLE:
   - https://padlet.com/comunidadflayo/comunidad-de-el-flayo-lphqazcgtm1qz8h2
-ppales_actividades_economicas_vocacion_productiva: []
-comentarios_ppales_actividades_economicas_vocacion_productiva: |-
-  Agricultura (Café y Mora).
-  Piscicultura (10 familias).
+ppales_actividades_economicas_vocacion_productiva:
+  - Agricultura (Café y Mora)
+  - Piscicultura (10 familias)
+comentarios_ppales_actividades_economicas_vocacion_productiva: ''
 comunidad_sostenible_uso_suelo: >-
   En la parte alta presencia de árboles y se tiene planteado un proyecto de
   reforestación para la conservación y cuidado del medio ambiente. 

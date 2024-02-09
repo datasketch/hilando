@@ -60,11 +60,9 @@ iniciativas_priorizadas:
   - >-
     A través del programa WLH se focalizó el turismo comunitario para fortalecer
     las capacidades de las organizaciones y que pudieran generar una propuesta
-    de valor en torno a las actividades de turismo de naturaleza
-  - ' regenerativo y cultural'
-  - ' en  los corregimientos de La Piche (Ecoruta) y San Pedro Consolado (Asoturcon)'
-  - ' que generen nuevas experiencias turísticas vivenciales'
-  - ' vinculando a diferentes actores y sectores de la población.'
+    de valor en torno a las actividades de turismo de naturaleza; regenerativo y
+    cultural que generen nuevas experiencias turísticas vivenciales; vinculando
+    a diferentes actores y sectores de la población.
 org_focalizada: []
 riesgo: ''
 otros_programas_USAID: []

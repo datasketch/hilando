@@ -64,9 +64,10 @@ iniciativas_priorizadas:
   - >-
     Fortalecer los agronegocios de pequeños productores de hortalizas de 
     ASOPIERNECHUCHA -Asociación de Productores Comercializadores y Procesadores
-    de Productos Agropecuarios de la Floresta
-  - ' ubicadas en el corregimiento Floresta y hortalizas de AGROSIMA -Asociación de Campesinos Productores Agropecuarios de la Sima ubicada en el corregimiento de Lomitas mediante el incremento de las capacidades técnico productivos'
-  - ' y comerciales'
+    de Productos Agropecuarios de la Floresta ubicadas en el corregimiento
+    Floresta y hortalizas de AGROSIMA -Asociación de Campesinos Productores
+    Agropecuarios de la Sima ubicada en el corregimiento de Lomitas mediante el
+    incremento de las capacidades técnico productivos y comerciales
   - ' buscando mayor competitividad y sostenibilidad ambiental'
 org_focalizada: []
 riesgo: null

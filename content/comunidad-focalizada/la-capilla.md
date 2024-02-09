@@ -30,15 +30,10 @@ vias_acceso: >-
   mayor dificultad de acceso. En temporadas de lluvia podría dificultarse la
   movilidad.
 infraestructura_comunitaria:
-  - >-
-    * Institución educativa de preescolar a 5to grado en muy mal estado (20
-    NN). 
-
-    * Caseta comunal (Mejorada y dotada en el marco de los PDET).
-
-    * Cancha de futbol
-
-    * Puesto de Malaria
+  - Institución educativa
+  - ' Caseta comunal (Mejorada y dotada en el marco de los PDET)'
+  - ' Cancha de futbol'
+  - Puesto de Malaria
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
@@ -63,38 +58,32 @@ comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
-  - Cuenta con un centro educativo  rural
-  - ' (preescolar - 5). Estudian actualmente 20 NN.  La infraestructura está en pésimas condiciones'
-  - ' no cuenta con unidades sanitarias '
-  - |2-
-     solo un salón disponible y con sillas en mal estado.
-    Los estudiantes de  bachillerato
-  - ' se trasladan a la vereda La Bonga  Institución Educativa Villa Chica'
-  - ' la cual se encuentra en adecuadas condiciones.'
+  - Cuenta con un centro educativo rural
+  - ' (preescolar - 5). Estudian actualmente 20 NN'
+  - '  La infraestructura está en pésimas condiciones - no cuenta con unidades sanitarias - solo un salón disponible y con sillas en mal estado'
+  - >-
+    Los estudiantes de  bachillerato se trasladan a la vereda La Bonga 
+    Institución Educativa Villa Chica.
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Malo
 iniciativas_priorizadas:
   - >-
-    Fortalecimiento de los medios de vida de familias campesinas de las veredas
-    Villa Grande y La Capilla
-  - ' municipio de El Bagre'
-  - '  generación de capacidades y  habilidades técnicas'
-  - ' comerciales y financieras necesarias para la reactivación de la piscicultura'
-  - ' y transferencia  tecnológico y estrategias comerciales locales para los cultivos de sandía y ají bajo un modelo de sostenibilidad ambiental.'
+    Fortalecimiento de los medios de vida de familias campesinas en la 
+    generación de capacidades y  habilidades técnicas - comerciales y
+    financieras necesarias para la reactivación de la piscicultura y
+    transferencia tecnológica para los cultivos de sandía y ají bajo un modelo
+    de sostenibilidad ambiental.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
 alianzas_colaboradores: []
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - >-
-    Acciones colectivas que realiza la comunidad mensualmente enfocados en el
-    bienestar comunitario. 
-
-    Reuniones periódicas que realiza la JAC. 
-
-    Encuentros religiosos
-  - ' deportivos y culturales. '
+  - Acciones colectivas bienestar comunitario
+  - ' Reuniones periódicas que realiza la JAC'
+  - |2-
+     
+    Encuentros religiosos - deportivos y culturales. 
 medios_comunicacion_narrativas_locales:
   - Colectivo Gente y Bosques
 num_visitas_realizadas: null

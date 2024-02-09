@@ -60,10 +60,9 @@ iniciativas_priorizadas:
   - >-
     Trapiche comunitario ASOPRANELA: 18 socios. El objetivo fue mejorar la
     cadena de panela desarrollada por la Asociación de Productores de Panela –
-    ASPROPANELA
-  - ' en el municipio de Anorí'
-  - ' a través del fortalecimiento de conocimientos y capacidades técnicas'
-  - '  mejora de la productividad y del trapiche comunitario Aguas Lindas.'
+    ASPROPANELA en el municipio de Anorí a través del fortalecimiento de
+    conocimientos y capacidades técnicas;  mejora de la productividad y del
+    trapiche comunitario Aguas Lindas.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []

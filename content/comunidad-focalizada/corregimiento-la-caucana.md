@@ -60,10 +60,8 @@ iniciativas_priorizadas:
   - >-
     En esta comunidad el programa WLH trabajó con microemprendimientos para
     construir habilidades y competencias que les permita fortalecer su pequeño
-    negocio
-  - ' y de esta forma contribuir al mejoramiento de los medios de vida'
-  - ' por medio de negocios viables'
-  - ' rentables y sostenibles.'
+    negocio y de esta forma contribuir al mejoramiento de los medios de vida por
+    medio de negocios viables rentables y sostenibles.
 org_focalizada: []
 riesgo: ''
 otros_programas_USAID:
@@ -83,8 +81,8 @@ posibilidad_iniciativas_conjuntas_aliados_2:
 actividades_ocio:
   - Fútbol
   - >-
-    "Huellas ecológicas (Grupo de niños y niñas quetienen un vivero, hacen
-    reforestación y jornadas de limpieza)"
+    Huellas ecológicas (Grupo de niños y niñas que tienen un vivero hacen
+    reforestación y jornadas de limpieza)
 medios_comunicacion_narrativas_locales:
   - |-
     Emisora la Caucana

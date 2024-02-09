@@ -26,7 +26,8 @@ vias_acceso: >-
   Vía en regular estado. Se encuentra ubicada a una hora de la cabecera
   municipal 
 infraestructura_comunitaria:
-  - "* La Institución Educativa es el centro de concentración de la comunidad.\_ \n* Hay un espacio para eventos deportivos (arquerías)."
+  - La Institución Educativa es el centro de concentración de la comunidad
+  - ' Hay un espacio para eventos deportivos (arquerías).'
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad: []
 inclusion_diversidad_genero: null
@@ -36,24 +37,22 @@ comentarios_punto_SOLE:
   - >-
     https://padlet.com/comunidadelbongalyarroyodemari/sole-arroyo-de-mar-a-y-el-bongal-p0bq83dybyb64ixv
 ppales_actividades_economicas_vocacion_productiva:
-  - "* Aproximadamente\_40 ha\_ de cultivos de cacao en 22 familias. Una de las limitantes ha sido la incompatibilidad genética.\_\n* Tienen cultivos de aguacate\_\n* Plátano - 10 Ha y están sembrando en asocio con sistemas forestales con el cacao.\_\n* Ají\_\n* Agricultura tradicional\_"
+  - Agricultura (cacao - aguacate - plátano - ají)
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - |-
-    Hay energia. 
-    No hay acueducto
-  - ' tienen cosecha de agua. '
+  - Hay energía
+  - 'No hay acueducto - tienen cosecha de agua. '
 comunidades_focalizadas_educacion_infraestructura_educativa:
-  - "* La Institución Educativa  hasta\_5° Grado. El bachillerato lo realizan en Corregimiento Paraíso. "
+  - "La Institución Educativa  hasta\_5° Grado. El bachillerato lo realizan en Corregimiento Paraíso. "
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Bueno
 iniciativas_priorizadas:
   - >-
     Se trabajó por mejorar la cadena productiva del cacao y fortalecer las
     asociaciones de productores ASODECABON y ASOPROCOAS en las veredas Arroyo de
-    María y el Bongal del municipio de San Jacinto – Bolívar
+    María y el Bongal del municipio de San Jacinto – Bolívar.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
@@ -68,7 +67,11 @@ alianzas_colaboradores:
     FEDECACAO
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - "* Fiestas patronales\n* Campeonato de softbol y futbol entre las dos comunidades\n* Celebración San Francisco\_\n* Escuela de cacaoteritos (lúdico-educativo)\n* Artesanías elaboradas por mujeres\_(mochilas y hamacas)\_"
+  - Fiestas patronales
+  - ' Campeonato de softbol y fútbol'
+  - ' Celebración San Francisco'
+  - Escuela de cacaoteritos (lúdico-educativo)
+  - ' '
 medios_comunicacion_narrativas_locales:
   - Fundación Tierra Montemariana
 num_visitas_realizadas: null

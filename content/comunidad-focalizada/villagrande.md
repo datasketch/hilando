@@ -16,14 +16,9 @@ vias_acceso: >-
   mayor dificultad de acceso y en temporadas de lluvia podría afectarse la
   movilidad. Se debe cruzar una quebrada.
 infraestructura_comunitaria:
-  - >-
-    * Institución educativa de preescolar a 5to grado. 
-
-    * Quiosco comunitario  (Construido en el marco del cumplimiento de una
-    medida de satisfacción
-  - |2-
-     en el marco de reparación colectiva).
-    * Cancha de fútbol.
+  - Institución educativa de preescolar a 5to grado
+  - Quiosco comunitario  (Construido en el marco de reparación colectiva)
+  - Cancha de fútbol
 notas_infraestructura_comunitaria: null
 liderazgo_comunidad:
   - >-
@@ -44,34 +39,27 @@ comentarios_punto_SOLE:
   - >-
     https://padlet.com/comunidadvillagrande/clon-de-sole-comunidad-villa-grande-kt9zgi9mr8z55hdl
 ppales_actividades_economicas_vocacion_productiva:
-  - '* Zona de reserva protegida'
-  - ' declarada por ley segunda de 1959. Cuenta con 665 ha de tierra'
-  - ' 15 mujeres trabajan colectivamente en una huerta agrícola donde tienen establecido 0'
-  - 5 ha de ají cubano
-  - ' 0'
-  - 5 ha de plátano hartón
-  - |2-
-     el cual se encuentra en producción.
-    * Piscicultura 
-    * Mineria
-    * Mototaxi
-    * Rebusque
+  - Agricultura (plátano y ají)
+  - ' Piscicultura'
+  - Minería
+  - Mototaxi
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
-comunidad_sostenible_uso_suelo: null
+comunidad_sostenible_uso_suelo: ' Zona de reserva protegida, declarada por ley segunda de 1959.'
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas: []
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - >-
-    * Institución educativa de preescolar a 5to grado. Los jóvenes estudian
+    Institución educativa de preescolar a 5to grado. Los jóvenes estudian
     bachillerato en la Institución educativa de la vereda La Bonga. 
 comunidades_focalizadas_practicas_organizativas: []
 conectividad_minima: Malo
 iniciativas_priorizadas:
   - >-
-    Fortalecimiento de los medios de vida de familias campesinas de las veredas
-    Villa Grande y La Capilla municipio de El Bagre  generación de capacidades
-    y  habilidades técnicas
-  - ' comerciales y financieras necesarias para la reactivación de la piscicultura y transferencia  tecnológico y estrategias comerciales locales para los cultivos de sandía y ají bajo un modelo de sostenibilidad ambiental.'
+    Fortalecimiento de los medios de vida de familias campesinas para la
+    generación de capacidades y  habilidades técnicas; comerciales y financieras
+    necesarias para la reactivación de la piscicultura y transferencia
+    tecnológica para los cultivos de sandía y ají bajo un modelo de
+    sostenibilidad ambiental.
 org_focalizada: []
 riesgo: null
 otros_programas_USAID: []
@@ -80,14 +68,9 @@ alianzas_colaboradores:
   - ' estrategia Entrelazando. '
 posibilidad_iniciativas_conjuntas_aliados_2: []
 actividades_ocio:
-  - >-
-    Acciones colectivas que realiza la comunidad mensualmente enfocados en el
-    bienestar comunitario. 
-
-    Reuniones periódicas que realiza el consejo comunitario 
-
-    Encuentros religiosos 
-  - ' deportivos y culturales. '
+  - Acciones colectivas
+  - ' Reuniones periódicas que realiza el consejo comunitario'
+  - ' Encuentros religiosos - deportivos y culturales. '
 medios_comunicacion_narrativas_locales:
   - Colectivo Gente y Bosques
 num_visitas_realizadas: null
