@@ -48,12 +48,10 @@ comentarios_ppales_actividades_economicas_vocacion_productiva: Finca tradicional
 comunidad_sostenible_uso_suelo: null
 org_con_proyeccion: []
 servicios_publicos_comunidades_focalizadas:
-  - |-
-    * Acueducto municipal (no con la cobertura total )
-    * Alumbrado público
-    * Energía 
-    * Vías: Algunas zonas con placa huella
-    * No cuenta con alcantarillado 
+  - Acueducto municipal (no con la cobertura total )
+  - ' Alumbrado público'
+  - Energía
+  - 'No cuenta con alcantarillado '
 comunidades_focalizadas_educacion_infraestructura_educativa:
   - Institución Educativa Agropecuaria Dominguillo
 comunidades_focalizadas_practicas_organizativas: []
