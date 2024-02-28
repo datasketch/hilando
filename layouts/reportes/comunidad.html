@@ -197,83 +197,6 @@
                 <div>
                     <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
-                            Liderazgo en la comunidad
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.liderazgo_comunidad }}
-                            {{ $liderazgo := split . "." }}
-                            {{ range $liderazgo }}
-                            {{ with . }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                            {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Prácticas Organizativas
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.comunidades_focalizadas_practicas_organizativas }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Inclusión, diversidad y género
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    Algunas mujeres hacen parte de ASOCAVAL.
-                                </p>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    La JAC tiene una presidenta mujer
-                                </p>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    No hay organizaciones de mujeres ni jóvenes
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
                             Conectividad
                         </h3>
                         <ul class="text-xxs space-y-1">
@@ -391,50 +314,6 @@
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Oportunidades de innovación
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        Ruta del cacao: Experiencia turística desde la siembra hasta su transformación.
-                                    </p>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        Escuela de cacaoteritos: Ubicada en el IE El pital como estrategia para relevo generacional
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Organizaciones con proyección
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.org_con_proyeccion }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -442,25 +321,6 @@
     <div class="relative bg-white-3 pt-4 pb-8">
         <div class="mx-auto w-10/12">
             <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Organizaciones focalizadas
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.org_focalizada }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
                 <div>
                     <div class="space-y-2">
                         <h3 class="text-xxs text-blue font-bold">
@@ -477,23 +337,6 @@
                                 </p>
                             </li>
                             {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Riesgo
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ .Params.riesgo }}
-                                </p>
-                            </li>
                         </ul>
                     </div>
                 </div>
