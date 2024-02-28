@@ -517,6 +517,7 @@
                             <p class="px-2 flex items-start justify-between relative">
                                 <img class="absolute w-4 top-0 right-0" src="/images/public/triangle-down.svg" alt="">
                                 <span>{{ .mes }}</span>
+                                <span>{{ dateFormat "2006" .date }}</span>
                             </p>
                         </div>
                     {{ end }}
