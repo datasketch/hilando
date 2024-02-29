@@ -10,7 +10,7 @@ const slugCommunityNames = communityData.map((comm) => comm.nombre_comunidad.toL
 
 const slugs = [...slugMunicipalityNames, ...slugCommunityNames];
 
-const domain = 'http://localhost:1313';
+const domain = 'https://www.hilandocomunidades.com';
 
 (async () => {
   try {
