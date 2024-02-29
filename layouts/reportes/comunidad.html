@@ -1,635 +1,516 @@
-{{ define "content" }}
-{{ $data := .Site.Data.eventos }}
-{{ $municipio := .Params.municipio }}
+{{ define "content" }} {{ $data := .Site.Data.eventos }} {{ $municipio :=
+.Params.municipio }}
 <!-- 1 -->
 <section class="page-a4 relative">
-    <div class="bg-blue py-6">
-        <div class="mx-auto w-10/12">
-            <div class="space-y-4">
-                <div class="flex justify-end">
-                    <div class="flex justify-between items-center space-x-2">
-                        <div class="tk-mr-eaves-sans text-white text-xxs">
-                            <h2 class="font-black">
-                                Fichas de caracterización Comunidad focalizada
-                            </h2>
-                            <p class="uppercase">
-                                WEAVING LIVES AND HOPE
-                            </p>
-                        </div>
-                        <div class="h-9 w-0.5 bg-white">
-                            &nbsp;
-                        </div>
-                        <div>
-                            <img src="/images/logo.svg" alt="logo con forma de la silueta del mapa de colombia">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-between">
-                    <div class="w-full" style="max-width: 241.11px;">
-                        <div class="space-y-2">
-                            <div class="tk-mr-eaves-sans text-white">
-                                <h1 class="inline-block relative">
-                                    <span class="text-2xl font-black uppercase">
-                                        {{ .Title }}
-                                    </span>
-                                    <img class="absolute top-2 -right-5" src="/images/location.svg" alt="">
-                                </h1>
-                                <h2 class="text-xxs uppercase">
-                                    {{ .Params.municipio }} - {{ .Params.departamento }}
-                                </h2>
-                            </div>
-                            <p class="text-xxs text-white">
-                                {{ .Params.descripcion }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-full self-end" style="max-width: 218px;">
-                        <div class="p-4 flex justify-between items-center" style="border: 0.5px solid #FFFFFF;">
-                            <div>
-                                <img src="/images/cantidad-habitantes.svg" alt="">
-                            </div>
-                            <div class="text-center text-white">
-                                <h3 class="text-xxs font-bold">
-                                    Cantidad de habitantes
-                                </h3>
-                                <p class="text-xxs">
-                                    <span class="font-bold">
-                                        {{ .Params.num_personas }}
-                                    </span>
-                                    PERSONAS
-                                </p>
-                            </div>
-                        </div>
-                        <div class="p-4 flex justify-between items-center" style="border: 0.5px solid #FFFFFF;">
-                            <div>
-                                <img src="/images/cantidad-familias.svg" alt="">
-                            </div>
-                            <div class="text-center text-white">
-                                <h3 class="text-xxs font-bold">
-                                    Cantidad de familias
-                                </h3>
-                                <p class="text-xxs">
-                                    <span class="font-bold">
-                                        {{ .Params.num_familias }}
-                                    </span>
-                                    FAMILIAS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="bg-blue py-6">
+    <div class="mx-auto w-10/12">
+      <div class="space-y-4">
+        <div class="flex justify-end">
+          <div class="flex justify-between items-center space-x-2">
+            <div class="tk-mr-eaves-sans text-white text-xxs">
+              <h2 class="font-black">
+                Fichas de caracterización Comunidad focalizada
+              </h2>
+              <p class="uppercase">WEAVING LIVES AND HOPE</p>
             </div>
-        </div>
-    </div>
-    <div class="relative bg-white-2 pt-4">
-        <div class="mx-auto w-10/12 relative z-10">
-            <div class="flex justify-between">
-                <div class="w-full" style="max-width: 192.64px;">
-                    <div class="space-y-1">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Vías de acceso
-                        </h3>
-                        <p class="text-xxs">
-                            {{ .Params.vias_acceso }}
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-1">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Distancia del casco urbano
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li>
-                                <p>
-                                    <span class="font-bold">
-                                        {{ .Params.min_distancia_casco_urbano }}
-                                    </span>
-                                    MINUTOS
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    <span class="font-bold">
-                                        {{ .Params.km_distancia_casco_urbano }}
-                                    </span>
-                                    KILOMETROS
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <img class="-mt-5   " src="/images/distancia-casco-urbano.svg" alt="">
-                </div>
+            <div class="h-9 w-0.5 bg-white">&nbsp;</div>
+            <div>
+              <img
+                src="/images/logo.svg"
+                alt="logo con forma de la silueta del mapa de colombia"
+              />
             </div>
+          </div>
         </div>
-        <img class="absolute top-0 w-full h-full" src="/images/carretera.svg" alt="">
-    </div>
-    <div class="relative bg-white pt-4">
-        <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Infraestructura comunitaria
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.infraestructura_comunitaria }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Educación e infraestructura educativa
-                        </h3>
-                        <p class="text-xxs">
-                            Centro educativo rural La Paulina Primaria hasta el grado 8vo, 120 estudiantes, de 9 a 11 lo hacen en la IE de Puerto Valdivia (cuanta con 10 sedes en las veredas aledañas, en total en promedio 614 estudiantes)
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Servicios Públicos
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.servicios_publicos_comunidades_focalizadas }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    &nbsp;
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Infraestructura salud y atención psicosocial
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.infraestructura_salud_atencion_psicosocial }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    &nbsp;
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Liderazgo en la comunidad
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.liderazgo_comunidad }}
-                            {{ $liderazgo := split . "." }}
-                            {{ range $liderazgo }}
-                            {{ with . }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                            {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Prácticas Organizativas
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.comunidades_focalizadas_practicas_organizativas }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Inclusión, diversidad y género
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    Algunas mujeres hacen parte de ASOCAVAL.
-                                </p>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    La JAC tiene una presidenta mujer
-                                </p>
-                            </li>
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    No hay organizaciones de mujeres ni jóvenes
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Conectividad
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ .Params.conectividad_minima }}
-                                </p>
-                            </li>
-                        </ul>
-                        <div class="flex items-center bg-orange bg-opacity-20 py-2 px-2 space-x-2">
-                            <div class="flex-shrink-0">
-                                <img src="/images/wifi.svg" alt="">
-                            </div>
-                            <div>
-                                <p class="text-xxs leading-none">
-                                    {{ .Params.comentarios_conectividad }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="flex justify-between">
+          <div class="w-full" style="max-width: 241.11px">
+            <div class="space-y-2">
+              <div class="tk-mr-eaves-sans text-white">
+                <h1 class="inline-block relative">
+                  <span class="text-2xl font-black uppercase">
+                    {{ .Title }}
+                  </span>
+                  <img
+                    class="absolute top-2 -right-5"
+                    src="/images/location.svg"
+                    alt=""
+                  />
+                </h1>
+                <h2 class="text-xxs uppercase">
+                  {{ .Params.municipio }} - {{ .Params.departamento }}
+                </h2>
+              </div>
+              <p class="text-xxs text-white">{{ .Params.descripcion }}</p>
             </div>
+          </div>
+          <div class="w-full self-end" style="max-width: 218px">
+            <div
+              class="p-4 flex justify-between items-center"
+              style="border: 0.5px solid #ffffff"
+            >
+              <div>
+                <img src="/images/cantidad-habitantes.svg" alt="" />
+              </div>
+              <div class="text-center text-white">
+                <h3 class="text-xxs font-bold">Cantidad de habitantes</h3>
+                <p class="text-xxs">
+                  <span class="font-bold"> {{ .Params.num_personas }} </span>
+                  PERSONAS
+                </p>
+              </div>
+            </div>
+            <div
+              class="p-4 flex justify-between items-center"
+              style="border: 0.5px solid #ffffff"
+            >
+              <div>
+                <img src="/images/cantidad-familias.svg" alt="" />
+              </div>
+              <div class="text-center text-white">
+                <h3 class="text-xxs font-bold">Cantidad de familias</h3>
+                <p class="text-xxs">
+                  <span class="font-bold"> {{ .Params.num_familias }} </span>
+                  FAMILIAS
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <img class="absolute left-1/2 bottom-4 transform -translate-x-1/2" src="/images/logo-datasketch.svg" alt="logo datasketch">
+  </div>
+  <div class="relative bg-white-2 pt-4">
+    <div class="mx-auto w-10/12 relative z-10">
+      <div class="flex justify-between">
+        <div class="w-full" style="max-width: 192.64px">
+          <div class="space-y-1">
+            <h3 class="text-xxs text-blue font-bold">Vías de acceso</h3>
+            <p class="text-xxs">{{ .Params.vias_acceso }}</p>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-1">
+            <h3 class="text-xxs text-blue font-bold">
+              Distancia del casco urbano
+            </h3>
+            <ul class="text-xxs space-y-1">
+              <li>
+                <p>
+                  <span class="font-bold">
+                    {{ .Params.min_distancia_casco_urbano }}
+                  </span>
+                  MINUTOS
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="font-bold">
+                    {{ .Params.km_distancia_casco_urbano }}
+                  </span>
+                  KILOMETROS
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img class="-mt-5" src="/images/distancia-casco-urbano.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <img
+      class="absolute top-0 w-full h-full"
+      src="/images/carretera.svg"
+      alt=""
+    />
+  </div>
+  <div class="relative bg-white pt-4">
+    <div class="mx-auto w-10/12">
+      <div class="grid grid-cols-2 gap-y-5 gap-x-10">
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">
+              Infraestructura comunitaria
+            </h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.infraestructura_comunitaria }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>{{ . }}</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">
+              Educación e infraestructura educativa
+            </h3>
+            <p class="text-xxs">
+              Centro educativo rural La Paulina Primaria hasta el grado 8vo, 120
+              estudiantes, de 9 a 11 lo hacen en la IE de Puerto Valdivia
+              (cuanta con 10 sedes en las veredas aledañas, en total en promedio
+              614 estudiantes)
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">Servicios Públicos</h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.servicios_publicos_comunidades_focalizadas }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>&nbsp;</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">
+              Infraestructura salud y atención psicosocial
+            </h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.infraestructura_salud_atencion_psicosocial }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>&nbsp;</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">Conectividad</h3>
+            <ul class="text-xxs space-y-1">
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>{{ .Params.conectividad_minima }}</p>
+              </li>
+            </ul>
+            <div
+              class="flex items-center bg-orange bg-opacity-20 py-2 px-2 space-x-2"
+            >
+              <div class="flex-shrink-0">
+                <img src="/images/wifi.svg" alt="" />
+              </div>
+              <div>
+                <p class="text-xxs leading-none">
+                  {{ .Params.comentarios_conectividad }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    class="absolute left-1/2 bottom-4 transform -translate-x-1/2"
+    src="/images/logo-datasketch.svg"
+    alt="logo datasketch"
+  />
 </section>
 <!-- 2 -->
 <section class="page-a4 relative">
-    <div class="relative bg-white pt-4 pb-2">
-        <div class="mx-auto w-10/12">
-            <div class="space-y-6">
-                <div class="grid grid-cols-2">
-                    <div class="bg-blue py-2 px-7">
-                        <div class="tk-mr-eaves-sans text-white">
-                            <h1 class="text-2xl font-black uppercase">
-                                {{ .Title }}
-                            </h1>
-                            <h2 class="text-xxs uppercase">
-                                {{ .Params.municipio }} - {{ .Params.departamento }}
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="grid place-items-center" style="border: 0.5px solid #5F2161;">
-                        <img src="/images/Logos USAID-OIM-WLH.png" alt="Logos del Programa USAID OIM y WLH">
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Actividades económicas principales y vocación productiva
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.ppales_actividades_economicas_vocacion_productiva }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Punto SOLE
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.comentarios_punto_SOLE }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Iniciativas productivas priorizadas
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.iniciativas_priorizadas }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Iniciativas productivas priorizadas
-                            </h3>
-                            <p class="text-xxs">
-                                {{ .Params.comunidad_sostenible_uso_suelo }}
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Oportunidades de innovación
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        Ruta del cacao: Experiencia turística desde la siembra hasta su transformación.
-                                    </p>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        Escuela de cacaoteritos: Ubicada en el IE El pital como estrategia para relevo generacional
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="space-y-2">
-                            <h3 class="text-xxs text-blue font-bold">
-                                Organizaciones con proyección
-                            </h3>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.org_con_proyeccion }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <div class="relative bg-white pt-4 pb-2">
+    <div class="mx-auto w-10/12">
+      <div class="space-y-6">
+        <div class="grid grid-cols-2">
+          <div class="bg-blue py-2 px-7">
+            <div class="tk-mr-eaves-sans text-white">
+              <h1 class="text-2xl font-black uppercase">{{ .Title }}</h1>
+              <h2 class="text-xxs uppercase">
+                {{ .Params.municipio }} - {{ .Params.departamento }}
+              </h2>
             </div>
+          </div>
+          <div
+            class="grid place-items-center"
+            style="border: 0.5px solid #5f2161"
+          >
+            <img
+              src="/images/Logos USAID-OIM-WLH.png"
+              alt="Logos del Programa USAID OIM y WLH"
+            />
+          </div>
         </div>
-    </div>
-    <div class="relative bg-white-3 pt-4 pb-8">
-        <div class="mx-auto w-10/12">
-            <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Organizaciones focalizadas
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.org_focalizada }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Actividades de ocio
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.actividades_ocio }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Riesgo
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ .Params.riesgo }}
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Medios de comunicación
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.medios_comunicacion_narrativas_locales }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Otros programas USAID
-                        </h3>
-                        <ul class="text-xxs space-y-1">
-                            {{ range .Params.otros_programas_USAID }}
-                            <li class="flex items-center space-x-2">
-                                <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                    &nbsp;
-                                </div>
-                                <p>
-                                    {{ . }}
-                                </p>
-                            </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="space-y-2">
-                        <h3 class="text-xxs text-blue font-bold">
-                            Alianzas y colaboradores
-                        </h3>
-                        <div class="space-y-2">
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.alianzas_colaboradores_1 }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                            <ul class="text-xxs space-y-1">
-                                {{ range .Params.alianzas_colaboradores_2 }}
-                                <li class="flex items-center space-x-2">
-                                    <div class="w-1 h-1 bg-black" style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);">
-                                        &nbsp;
-                                    </div>
-                                    <p>
-                                        {{ . }}
-                                    </p>
-                                </li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="grid grid-cols-2 gap-y-5 gap-x-10">
+          <div>
+            <div class="space-y-2">
+              <h3 class="text-xxs text-blue font-bold">
+                Actividades económicas principales y vocación productiva
+              </h3>
+              <ul class="text-xxs space-y-1">
+                {{ range
+                .Params.ppales_actividades_economicas_vocacion_productiva }}
+                <li class="flex items-center space-x-2">
+                  <div
+                    class="w-1 h-1 bg-black"
+                    style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                  >
+                    &nbsp;
+                  </div>
+                  <p>{{ . }}</p>
+                </li>
+                {{ end }}
+              </ul>
             </div>
+          </div>
+          <div>
+            <div class="space-y-2">
+              <h3 class="text-xxs text-blue font-bold">Punto SOLE</h3>
+              <ul class="text-xxs space-y-1">
+                {{ range .Params.comentarios_punto_SOLE }}
+                <li class="flex items-center space-x-2">
+                  <div
+                    class="w-1 h-1 bg-black"
+                    style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                  >
+                    &nbsp;
+                  </div>
+                  <p>{{ . }}</p>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="space-y-2">
+              <h3 class="text-xxs text-blue font-bold">
+                Iniciativas productivas priorizadas
+              </h3>
+              <ul class="text-xxs space-y-1">
+                {{ range .Params.iniciativas_priorizadas }}
+                <li class="flex items-center space-x-2">
+                  <div
+                    class="w-1 h-1 bg-black"
+                    style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                  >
+                    &nbsp;
+                  </div>
+                  <p>{{ . }}</p>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="space-y-2">
+              <h3 class="text-xxs text-blue font-bold">
+                Iniciativas productivas priorizadas
+              </h3>
+              <p class="text-xxs">
+                {{ .Params.comunidad_sostenible_uso_suelo }}
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <img class="absolute left-1/2 bottom-4 transform -translate-x-1/2" src="/images/logo-datasketch.svg" alt="logo datasketch">
+  </div>
+  <div class="relative bg-white-3 pt-4 pb-8">
+    <div class="mx-auto w-10/12">
+      <div class="grid grid-cols-2 gap-y-5 gap-x-10">
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">Actividades de ocio</h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.actividades_ocio }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>{{ . }}</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">Medios de comunicación</h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.medios_comunicacion_narrativas_locales }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>{{ . }}</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">Otros programas USAID</h3>
+            <ul class="text-xxs space-y-1">
+              {{ range .Params.otros_programas_USAID }}
+              <li class="flex items-center space-x-2">
+                <div
+                  class="w-1 h-1 bg-black"
+                  style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                >
+                  &nbsp;
+                </div>
+                <p>{{ . }}</p>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-xxs text-blue font-bold">
+              Alianzas y colaboradores
+            </h3>
+            <div class="space-y-2">
+              <ul class="text-xxs space-y-1">
+                {{ range .Params.alianzas_colaboradores_1 }}
+                <li class="flex items-center space-x-2">
+                  <div
+                    class="w-1 h-1 bg-black"
+                    style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                  >
+                    &nbsp;
+                  </div>
+                  <p>{{ . }}</p>
+                </li>
+                {{ end }}
+              </ul>
+              <ul class="text-xxs space-y-1">
+                {{ range .Params.alianzas_colaboradores_2 }}
+                <li class="flex items-center space-x-2">
+                  <div
+                    class="w-1 h-1 bg-black"
+                    style="transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0)"
+                  >
+                    &nbsp;
+                  </div>
+                  <p>{{ . }}</p>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    class="absolute left-1/2 bottom-4 transform -translate-x-1/2"
+    src="/images/logo-datasketch.svg"
+    alt="logo datasketch"
+  />
 </section>
 <!-- 3 -->
 <section class="page-a4 relative">
-    <div class="space-y-8">
-        <div class="relative bg-white pt-4 pb-2">
-            <div class="mx-auto w-10/12">
-                <div class="grid grid-cols-2">
-                    <div class="bg-blue py-2 px-7">
-                        <div class="tk-mr-eaves-sans text-white">
-                            <h2 class="text-2xl font-black uppercase">
-                                {{ .Title }}
-                            </h2>
-                            <h3 class="text-xxs uppercase">
-                                {{ .Params.municipio }} - {{ .Params.departamento }}
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="grid place-items-center" style="border: 0.5px solid #5F2161;">
-                        <img src="/images/Logos USAID-OIM-WLH.png" alt="Logos del Programa USAID OIM y WLH">
-                    </div>
-                </div>
+  <div class="space-y-8">
+    <div class="relative bg-white pt-4 pb-2">
+      <div class="mx-auto w-10/12">
+        <div class="grid grid-cols-2">
+          <div class="bg-blue py-2 px-7">
+            <div class="tk-mr-eaves-sans text-white">
+              <h2 class="text-2xl font-black uppercase">{{ .Title }}</h2>
+              <h3 class="text-xxs uppercase">
+                {{ .Params.municipio }} - {{ .Params.departamento }}
+              </h3>
             </div>
+          </div>
+          <div
+            class="grid place-items-center"
+            style="border: 0.5px solid #5f2161"
+          >
+            <img
+              src="/images/Logos USAID-OIM-WLH.png"
+              alt="Logos del Programa USAID OIM y WLH"
+            />
+          </div>
         </div>
-        <div class="relative">
-            <div class="bg-banner-eventos-significativos bg-cover bg-center text-center py-2.5">
-                <h3 class="text-xxs text-blue font-bold">
-                    Eventos significativos de la vida comunitaria
-                </h3>
-            </div>
-            <div class="bg-white-3 py-8">
-                <div class="mx-auto w-10/12">
-                    <div class="grid grid-cols-2 gap-y-5 gap-x-10">
-                        {{ range where $data "municipio" $municipio }}
-                        <div class="relative space-y-1">
-                            <h3 class="text-xxs font-bold relative z-10 pl-3">
-                                {{ .nombre_evento }}
-                            </h3>
-                            <div class="bg-blue" style="height: 1px;">&nbsp;</div>
-                            <p class="pl-3 text-xxs">
-                                {{ .mes }}
-                            </p>
-                            <img class="absolute w-4 h-4 top-0" src="/images/triangle-blue.svg" alt="">
-                            <img class="absolute w-4 h-4 right-0 bottom-0.5 transform rotate-180" src="/images/triangle-blue.svg" alt="">
-                        </div>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white pt-4 pb-3">
-        <div class="text-blue text-center space-y-2">
-            <h3 class="tk-mr-eaves-sans uppercase text-xxs">
-                WEAVING LIVES AND HOPE
-            </h3>
-            <img class="mx-auto" src="/images/weaving.svg" alt="">
-            <img class="mx-auto" src="/images/logo-datasketch.svg" alt="logo datasketch">
+    <div class="relative">
+      <div
+        class="bg-banner-eventos-significativos bg-cover bg-center text-center py-2.5"
+      >
+        <h3 class="text-xxs text-blue font-bold">
+          Eventos significativos de la vida comunitaria
+        </h3>
+        <p>test screenshot</p>
+      </div>
+      <div class="bg-white-3 py-8">
+        <div class="mx-auto w-10/12">
+          <div class="grid grid-cols-2 gap-y-5 gap-x-10">
+            {{ range where $data "municipio" $municipio }}
+            <div class="relative space-y-1">
+              <h3 class="text-xxs font-bold relative z-10 pl-3">
+                {{ .nombre_evento }}
+              </h3>
+              <div class="bg-blue" style="height: 1px">&nbsp;</div>
+              <div class="flex items-center justify-between">
+                <p class="pl-3 text-xxs">{{ .mes }}</p>
+                <p class="pr-3 text-xxs">{{ dateFormat "2006" .date }}</p>
+              </div>
+              <img
+                class="absolute w-4 h-4 top-0"
+                src="/images/triangle-blue.svg"
+                alt=""
+              />
+              <img
+                class="absolute w-4 h-4 right-0 bottom-0.5 transform rotate-180"
+                src="/images/triangle-blue.svg"
+                alt=""
+              />
+            </div>
+            {{ end }}
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+  <div
+    class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white pt-4 pb-3"
+  >
+    <div class="text-blue text-center space-y-2">
+      <h3 class="tk-mr-eaves-sans uppercase text-xxs">
+        WEAVING LIVES AND HOPE
+      </h3>
+      <img class="mx-auto" src="/images/weaving.svg" alt="" />
+      <img
+        class="mx-auto"
+        src="/images/logo-datasketch.svg"
+        alt="logo datasketch"
+      />
+    </div>
+  </div>
 </section>
 {{ end }}
