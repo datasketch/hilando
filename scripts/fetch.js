@@ -11,13 +11,13 @@ const req = axios.create({
 });
 
 async function run() {
-  const communities = await req.get('/comunidades?limit=100');
-  const events = await req.get('/eventos?limit=100');
+  const communities = await req.get('/comunidades?limit=500');
+  const events = await req.get('/eventos?limit=500');
 
-  const eventsMunicipalities = await req.get('/eventos_municipios?limit=100');
-  const trrs = await req.get('/fichas_municipio?limit=100');
-  const publications = await req.get('/publicaciones?limit=100');
-  const multimedia = await req.get('/multimedia?limit=100');
+  const eventsMunicipalities = await req.get('/eventos_municipios?limit=500');
+  const trrs = await req.get('/fichas_municipio?limit=500');
+  const publications = await req.get('/publicaciones?limit=500');
+  const multimedia = await req.get('/multimedia?limit=500');
   fs.writeFile(
       getFilePath('comunidades-focalizadas.json'),
       JSON.stringify(communities.data.list),
