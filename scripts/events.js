@@ -7,7 +7,7 @@ const {URL} = require('url');
 const dataEvents = data.map((item) => {
   const monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
   const currentYear = new Date().getFullYear() + '';
-  const month = (monthNames.indexOf(item.mes.toLowerCase()) + 1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false});
+  const month = (monthNames.indexOf(item.mes.toLowerCase().trim()) + 1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false});
   const day = Number(item.dia_inicio).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false});
 
   let photos = item.foto ? (JSON.parse(item.foto)).map((item) => item.url) : [];

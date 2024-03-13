@@ -478,7 +478,9 @@
               <div class="bg-blue" style="height: 1px">&nbsp;</div>
               <div class="flex items-center justify-between">
                 <p class="pl-3 text-xxs">{{ .mes }}</p>
-                <p class="pr-3 text-xxs">{{ dateFormat "2006" .date }}</p>
+                {{ if .date }}
+                  <p class="pr-3 text-xxs">{{ dateFormat "2006" .date }}</p>
+                {{ end }}
               </div>
               <img
                 class="absolute w-4 h-4 top-0"
