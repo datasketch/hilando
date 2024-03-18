@@ -32,8 +32,14 @@ async function run() {
       return u.toString();
     });
 
+    if (!item.municipio) {
+      console.log('REVISAR EVENTO NO ASOCIADO A NINGÚN MUNICIPIO:', item.nombre_evento);
+      return null;
+    }
+
     return {
       ...item,
+      municipio: item.municipio.trim(),
       mes: item.mes.trim(),
       foto: photos,
       thumbnail: photos[0] || '',
