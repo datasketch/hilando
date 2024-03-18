@@ -92,7 +92,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
         <button data-id="${data.id}" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
-        <img class="event__image" src="${data.thumbnail}" alt="imagen de evento" style="height: 365px;">
+        ${data.thumbnail && `<img class="event__image" src="${data.thumbnail}" alt="" style="height: 365px;" />`}
     </div>
   </div>
     `;
