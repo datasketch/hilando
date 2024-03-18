@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS eventos (
 	mes TEXT,
 	dia_inicio TEXT,
 	dia_finalizacion TEXT,
+	anio TEXT,
 	comunidad TEXT,
 	municipio TEXT,
 	macroregion TEXT,
