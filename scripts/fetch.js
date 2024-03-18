@@ -18,6 +18,7 @@ async function run() {
   const trrs = await req.get('/fichas_municipio?limit=500');
   const publications = await req.get('/publicaciones?limit=500');
   const multimedia = await req.get('/multimedia?limit=500');
+
   fs.writeFile(
       getFilePath('comunidades-focalizadas.json'),
       JSON.stringify(communities.data.list),

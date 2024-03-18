@@ -34,6 +34,7 @@
     "ics": "^2.35.0",
     "js-yaml": "^4.1.0",
     "lodash.groupby": "^4.6.0",
+    "lodash.omit": "^4.5.0",
     "lodash.orderby": "^4.6.0",
     "puppeteer": "^13.1.1",
     "slugify": "^1.6.5",

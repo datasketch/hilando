@@ -55,7 +55,9 @@ function filterData() {
 
   // state.filteredData = orderBy(state.filteredData, 'id', 'desc');
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderMultimedia(multimedia, item, item.type));
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => {
+    renderMultimedia(multimedia, item, item.type);
+  });
 
   pagination.insertAdjacentHTML(
       'beforeend',
