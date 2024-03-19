@@ -12,7 +12,7 @@ async function run() {
     const month = (monthNames.indexOf(item.mes.toLowerCase().trim()) + 1).toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false});
 
     if (month == '00') {
-      console.log('REVISAR EVENTO:', item.nombre_evento);
+      console.log('REVISAR FECHA INCORRECTA EN EVENTO:', item.nombre_evento);
       return null;
     }
 
@@ -40,6 +40,9 @@ async function run() {
     return {
       ...item,
       municipio: item.municipio.trim(),
+      macroregion: item.macroregion ? item.macroregion.trim() : '',
+      comunidad: item.comunidad ? item.comunidad.trim() : '',
+      tipo_evento: item.tipo_evento ? item.tipo_evento.trim() : '',
       mes: item.mes.trim(),
       foto: photos,
       thumbnail: photos[0] || '',
