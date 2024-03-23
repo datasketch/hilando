@@ -1,6 +1,6 @@
 ---
-title: Montefrio
-nombre_comunidad: Montefrio
+title: Montefrío
+nombre_comunidad: Montefrío
 municipio: Valdivia
 departamento: Antioquia
 descripcion: >-

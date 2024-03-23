@@ -1,6 +1,6 @@
 ---
-title: Las Delicias - Piedras
-nombre_comunidad: Las Delicias - Piedras
+title: Las Delicias, Piedras
+nombre_comunidad: Las Delicias, Piedras
 municipio: Tarazá
 departamento: Antioquia
 descripcion: >-
