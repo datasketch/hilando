@@ -125,9 +125,9 @@ comunidades:
   - label: Isla de la Amargura
     slug: isla-de-la-amargura
     permalink: /comunidad-focalizada/isla-de-la-amargura
-  - label: Corregimiento Puerto Bélgica
-    slug: corregimiento-puerto-belgica
-    permalink: /comunidad-focalizada/corregimiento-puerto-belgica
+  - label: Puerto Bélgica
+    slug: puerto-belgica
+    permalink: /comunidad-focalizada/puerto-belgica
   - label: ' Altos del tigre'
     slug: altos-del-tigre
     permalink: /comunidad-focalizada/altos-del-tigre

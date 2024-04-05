@@ -171,9 +171,9 @@ comunidades:
   - label: Vereda El Turco
     slug: vereda-el-turco
     permalink: /comunidad-focalizada/vereda-el-turco
-  - label: Vereda Dominguillo
-    slug: vereda-dominguillo
-    permalink: /comunidad-focalizada/vereda-dominguillo
+  - label: Dominguillo
+    slug: dominguillo
+    permalink: /comunidad-focalizada/dominguillo
   - label: Resguardo Nasa Kiwe
     slug: resguardo-nasa-kiwe
     permalink: /comunidad-focalizada/resguardo-nasa-kiwe

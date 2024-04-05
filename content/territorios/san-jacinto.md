@@ -128,12 +128,12 @@ programas_usaid:
   - ' Fondo de Inversiones para la Paz'
   - ' Mujeres Poderosas'
 comunidades:
-  - label: Corregimiento Las Mercedes y Vereda Casa de Piedra
-    slug: corregimiento-las-mercedes-y-vereda-casa-de-piedra
-    permalink: /comunidad-focalizada/corregimiento-las-mercedes-y-vereda-casa-de-piedra
-  - label: Vereda El Bongal
-    slug: vereda-el-bongal
-    permalink: /comunidad-focalizada/vereda-el-bongal
+  - label: Las Mercedes y Casa de Piedra
+    slug: las-mercedes-y-casa-de-piedra
+    permalink: /comunidad-focalizada/las-mercedes-y-casa-de-piedra
+  - label: El Bongal
+    slug: el-bongal
+    permalink: /comunidad-focalizada/el-bongal
 download_file: /reportes/san-jacinto.pdf
 
 ---

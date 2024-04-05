@@ -1,6 +1,6 @@
 ---
-title: San José del Peñon
-nombre_comunidad: San José del Peñon
+title: San José del Peñón
+nombre_comunidad: San José del Peñón
 municipio: San Juan Nepomuceno
 departamento: Bolívar
 descripcion: >-

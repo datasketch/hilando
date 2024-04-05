@@ -37,10 +37,10 @@ trabajo_informal: null
 observaciones_ppal_uso_suelo: null
 iniciativas_org_sociedad_civil: null
 comunidades:
-  - label: Vereda El Agrado
-    slug: vereda-el-agrado
-    permalink: /comunidad-focalizada/vereda-el-agrado
-  - label: Resguardo Misak PIscitau
+  - label: El Agrado
+    slug: el-agrado
+    permalink: /comunidad-focalizada/el-agrado
+  - label: Resguardo Misak Piscitau
     slug: resguardo-misak-piscitau
     permalink: /comunidad-focalizada/resguardo-misak-piscitau
 download_file: /reportes/piendamo.pdf

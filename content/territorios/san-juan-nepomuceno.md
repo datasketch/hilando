@@ -115,15 +115,15 @@ programas_usaid:
   - ' Iniciativa de Finanzas Rurales'
   - ' Mujeres Poderosas'
 comunidades:
-  - label: Corregimiento San Pedro Consolado
-    slug: corregimiento-san-pedro-consolado
-    permalink: /comunidad-focalizada/corregimiento-san-pedro-consolado
-  - label: ' Corregimiento La Haya'
-    slug: corregimiento-la-haya
-    permalink: /comunidad-focalizada/corregimiento-la-haya
-  - label: ' Corregimiento San José del Peñon'
-    slug: corregimiento-san-jose-del-penon
-    permalink: /comunidad-focalizada/corregimiento-san-jose-del-penon
+  - label: San Pedro Consolado
+    slug: san-pedro-consolado
+    permalink: /comunidad-focalizada/san-pedro-consolado
+  - label: La Haya
+    slug: la-haya
+    permalink: /comunidad-focalizada/la-haya
+  - label: San José del Peñón
+    slug: san-jose-del-penon
+    permalink: /comunidad-focalizada/san-jose-del-penon
 download_file: /reportes/san-juan-nepomuceno.pdf
 
 ---

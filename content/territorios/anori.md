@@ -139,9 +139,9 @@ programas_usaid:
   - ' Programa de Alianzas Comerciales'
   - ' Fortalecimiento Institucional a Víctimas'
 comunidades:
-  - label: Vereda El Banco
-    slug: vereda-el-banco
-    permalink: /comunidad-focalizada/vereda-el-banco
+  - label: El Banco
+    slug: el-banco
+    permalink: /comunidad-focalizada/el-banco
   - label: La Meseta
     slug: la-meseta
     permalink: /comunidad-focalizada/la-meseta

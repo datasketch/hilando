@@ -40,9 +40,9 @@ trabajo_informal: null
 observaciones_ppal_uso_suelo: null
 iniciativas_org_sociedad_civil: null
 comunidades:
-  - label: Vereda Las Casitas
-    slug: vereda-las-casitas
-    permalink: /comunidad-focalizada/vereda-las-casitas
+  - label: Las Casitas
+    slug: las-casitas
+    permalink: /comunidad-focalizada/las-casitas
 download_file: /reportes/cajibio.pdf
 
 ---

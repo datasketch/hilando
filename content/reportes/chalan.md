@@ -107,18 +107,18 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidades:
-  - label: Corregimiento La Ceiba
-    slug: corregimiento-la-ceiba
-    permalink: /comunidad-focalizada/corregimiento-la-ceiba
-  - label: ' Vereda Nuevo Manzanares'
-    slug: vereda-nuevo-manzanares
-    permalink: /comunidad-focalizada/vereda-nuevo-manzanares
-  - label: ' Vereda Montebello'
-    slug: vereda-montebello
-    permalink: /comunidad-focalizada/vereda-montebello
-  - label: ' Vereda Alemania y Rancho Rojo'
-    slug: vereda-alemania-y-rancho-rojo
-    permalink: /comunidad-focalizada/vereda-alemania-y-rancho-rojo
+  - label: La Ceiba
+    slug: la-ceiba
+    permalink: /comunidad-focalizada/la-ceiba
+  - label: Nuevo Manzanares
+    slug: nuevo-manzanares
+    permalink: /comunidad-focalizada/nuevo-manzanares
+  - label: Montebello
+    slug: montebello
+    permalink: /comunidad-focalizada/montebello
+  - label: Alemania y Rancho Rojo
+    slug: alemania-y-rancho-rojo
+    permalink: /comunidad-focalizada/alemania-y-rancho-rojo
 download_file: /reportes/chalan.pdf
 layout: territorio
 

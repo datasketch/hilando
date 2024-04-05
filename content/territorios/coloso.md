@@ -117,18 +117,18 @@ programas_usaid:
   - Nuestra Tierra Próspera
   - ' Riqueza Natural 2017-2022'
 comunidades:
-  - label: Vereda Paraiso
-    slug: vereda-paraiso
-    permalink: /comunidad-focalizada/vereda-paraiso
-  - label: ' Vereda Coraza'
-    slug: vereda-coraza
-    permalink: /comunidad-focalizada/vereda-coraza
-  - label: ' Vereda La Estación'
-    slug: vereda-la-estacion
-    permalink: /comunidad-focalizada/vereda-la-estacion
-  - label: ' Vereda La Esmeralda'
-    slug: vereda-la-esmeralda
-    permalink: /comunidad-focalizada/vereda-la-esmeralda
+  - label: Paraiso
+    slug: paraiso
+    permalink: /comunidad-focalizada/paraiso
+  - label: ' Coraza'
+    slug: coraza
+    permalink: /comunidad-focalizada/coraza
+  - label: ' La Estación'
+    slug: la-estacion
+    permalink: /comunidad-focalizada/la-estacion
+  - label: ' La Esmeralda'
+    slug: la-esmeralda
+    permalink: /comunidad-focalizada/la-esmeralda
 download_file: /reportes/coloso.pdf
 
 ---

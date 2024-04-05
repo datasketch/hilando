@@ -242,10 +242,9 @@ comunidades:
   - label: Punta Soldado
     slug: punta-soldado
     permalink: /comunidad-focalizada/punta-soldado
-  - label: Consejo Comunitario de la Comunidad Negra de Calle Larga
-    slug: consejo-comunitario-de-la-comunidad-negra-de-calle-larga
-    permalink: >-
-      /comunidad-focalizada/consejo-comunitario-de-la-comunidad-negra-de-calle-larga
+  - label: Calle Larga
+    slug: calle-larga
+    permalink: /comunidad-focalizada/calle-larga
   - label: Resguardo indígena Nasa-Embera-Chamí
     slug: resguardo-indigena-nasa-embera-chami
     permalink: /comunidad-focalizada/resguardo-indigena-nasa-embera-chami
