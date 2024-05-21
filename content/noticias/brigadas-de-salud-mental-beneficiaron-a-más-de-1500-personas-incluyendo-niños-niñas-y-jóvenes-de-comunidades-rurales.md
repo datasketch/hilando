@@ -30,4 +30,6 @@ Según el Ministerio de Salud en Colombia, la salud mental de los jóvenes es un
 
 El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, busca mejorar la salud mental y el bienestar psicosocial de comunidades históricamente afectadas por la violencia ampliando el acceso a los servicios de atención psicosocial; promoviendo la resiliencia social y comunitaria; impulsando el empoderamiento económico; y fortaleciendo las habilidades comunicativas para una cultura de paz desde un enfoque de desarrollo inclusivo. El Programa atiende a sobrevivientes del conflicto en los departamentos de Valle, Cauca, Antioquia, Bolívar y Sucre, con una oferta para comunidades étnicas, comunidades rurales, población LGBTIQ+, jóvenes, mujeres, personas mayores, y personas con discapacidad.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/bannersaludmental3.jpg)
