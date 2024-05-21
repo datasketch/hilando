@@ -36,6 +36,6 @@ Como parte del curso, los participantes realizaron actividades para poner en pr�
 
 **Cosechando Futuro: educación ambiental para el desarrollo sostenible** hace parte de la estrategia de empoderamiento económico del Programa Hilando Vidas y Esperanza, de USAID, implementado por OIM, que tiene como objetivo mejorar la salud mental y el bienestar de comunidades históricamente afectadas por el conflicto armado. El fortalecimiento de los medios de vida de este tipo de poblaciones es fundamental para mejorar la calidad de vida de esas comunidades en zonas rurales, generando un impacto directo en su bienestar.
 
- 
+Este contenido fue publicado originalmente en www.colombia.iom.int
 
 ![Participante Montes de María Cosechando Futuro](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/573044973212.jpeg)
