@@ -29,3 +29,5 @@ Las actividades, reunieron a más de 300 personas entre niños, niñas, adolesce
 El Programa WLH apoyó las conmemoraciones con logística y entrega de dotaciones deportivas e instrumentos musicales. Por su parte, aproximadamente 30 mujeres, de los corregimientos Casa de Piedra y las Mercedes, recibieron hilos y otros materiales de tejeduría para la elaboración y venta de productos artesanales como mochilas, monederos, billeteras y hamacas; así como el apoyo para la realización de un taller de tejido en telar vertical. 
 
 A su vez, las comunidades de La Borrachera y La Bonga, en el Bagre; San Pedro Consolado, en San Juan Nepomuceno; y Casa de Piedra y Las Mercedes, en San Jacinto, participan de forma permanente en procesos del Programa WLH que buscan fortalecer la reconciliación y la convivencia, el acceso a la salud mental, y el empoderamiento económico.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
