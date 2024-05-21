@@ -36,3 +36,5 @@ El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, trabaja co
 **Acerca del Programa Juntanza Étnica**
 
 El Programa Juntanza Étnica de USAID y ACDI/VOCA, promueve el orgullo por lo étnico y resalta los aportes del pueblo afrocolombiano y los pueblos indígenas en la construcción de la nación, en su triple acción: social, cultural y económico. Una juntanza co-creada con 9 procesos organizativos socios (PCN, CONPA, CIMARRÓN, Afrodes, COCOMACIA, ONIC, OPIAC, CRIC y CTC) para fortalecer la gobernanza, la autonomía, la identidad y el desarrollo de los pueblos étnicos, desde formas propias y sustentables.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
