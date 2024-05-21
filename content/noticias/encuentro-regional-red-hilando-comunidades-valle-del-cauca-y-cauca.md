@@ -11,4 +11,6 @@ Durante el 27, 28 y 29 de febrero, el encuentro de la Red Hilando Comunidades en
 
 Este evento proporcionó un espacio invaluable para que los participantes compartieran sus experiencias, establecieran conexiones y fortalecieran la colaboración en pro de la red Hilando Comunidades, promoviendo la armonía y la paz en los territorios. Además de los municipios, diversas entidades territoriales se sumaron a esta iniciativa, contribuyendo a su crecimiento y alcance.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![](/images/uploads/img_9088.jpg)
