@@ -31,4 +31,6 @@ La intervención permitirá brindar atención especializada a pacientes que vive
 
 En los últimos meses, WLH y el HOMO entregaron los equipos y el software requeridos para el ser-vicio de telemedicina; realizaron jornadas de socialización de la política pública de salud mental o telemedicina; y formaron al personal de salud y comunidades en el uso de los equipos con el fin de que puedan empezar a recibir atención remota. Actualmente, los profesionales capacitados realizan las primeras pruebas de atención con pacientes.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![Grupo de funcionarios de la salud y OIM en la inauguracion de la sala de Telemedicina en Antioquia](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/WhatsApp%20Image%202022-09-07%20at%203.15.34%20PMMod.jpg "Grupo de funcionarios de la salud y OIM en la inauguracion de la sala de Telemedicina en Antioquia")
