@@ -28,3 +28,5 @@ El balance, en términos económicos también fue positivo, logrando ventas por 
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/bannerwebpetronio3.jpg "maestro artesano mostrando sus violines de guadua")
 
 La participación de estas organizaciones en el Festival Petronio Álvarez, hace parte de las acciones de la estrategia de empoderamiento económico del programa WLH, que busca contribuir a mejorar los medios y calidad de vida de personas sobrevivientes del conflicto armado. Este Programa de USAID y OIM busca mejorar la salud mental y el bienestar psicosocial de comunidades históricamente afectadas por la violencia ampliando el acceso a los servicios de atención psicosocial; promoviendo la resiliencia social y comunitaria; impulsando el acceso a ingresos dignos y sostenibles; y fortaleciendo las habilidades comunicativas para una cultura de paz desde un enfoque de desarrollo inclusivo.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
