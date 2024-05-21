@@ -23,3 +23,5 @@ Además de estas proyecciones, el Programa distribuyó material pedagógico como
 ![Beneficiaria junto a los pensamientos sobre la conmemoracion del dia de la mujer](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/WhatsApp%20Image%202023-04-11%20at%2010.51.44%20AM%20(2)Banner.jpg "Beneficiaria junto a los pensamientos sobre la conmemoracion dia de la mujer")
 
 La inauguración de la campaña ¨Si Duele, No es Amor¨ tuvo lugar el 25 de noviembre de 2022, como parte de las actividades realizadas durante la conmemoración del Día Internacional para Eliminar la Violencia contra las Mujeres, en las comunidades focalizadas en el primer año de ejecución del Programa WLH. Con este tipo de actividades, el equipo de Hilando Vidas y Esperanza continúa hablando de la importancia de identificar las violencias contra las mujeres y buscar alternativas comunitarias que alberguen y protejan a mujeres y víctimas.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
