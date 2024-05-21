@@ -20,3 +20,5 @@ De otro lado, Ana Vanessa, coincide con él en su afirmación, dice que los jóv
 Tanto Ana como Daniel hicieron parte de la estrategia psicosocial Jóvenes Hilando Juntos, creada por el programa, y desarrollada por la fundación Mi Sangre, la cual tiene como objetivo fortalecer las capacidades de liderazgo de los jóvenes en los 15 municipios priorizados en Sucre, Bolívar, Antioquia, Cauca y Valle del Cauca. “Lo que más me gustó fue que adquirí nuevos conocimientos, pude proponerme muchas metas y logré hacer unos talleres que me sirven para empezar a trabajar en la unión de nuestra comunidad”, dice Ana Vanessa.
 
 En 2023, Ana, Daniel y su colectivo están participando activamente de la segunda fase del proyecto de Narrativas, proponiendo nuevas historias y haciendo cubrimiento periodístico de iniciativas del Programa en su región. En abril, participaron de un taller regional de fortalecimiento de capacidades en periodismo de paz, y cubrieron el Festival Literario de Montebello, en Chalán, que hace parte de las iniciativas de la Agenda Cultural del Programa.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
