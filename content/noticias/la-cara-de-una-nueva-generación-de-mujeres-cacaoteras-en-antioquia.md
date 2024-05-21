@@ -22,4 +22,4 @@ Chocoshow fue la primera feria en la que Juliet participó. Ella es una de las p
 
 Juliet y su comunidad, además, han participado en diferentes espacios propuestos por el Programa WLH, que, por medio de su enfoque de desarrollo incluyente, busca mejorar la calidad de vida, la salud mental y el bienestar de las comunidades más afectadas por el conflicto en Colombia. Tener medios de vida dignos es fundamental en la construcción de paz, que las nuevas generaciones sanen las heridas de la guerra y puedan acceder a mejores opciones que les permitan forjar sus proyectos de vida.
 
-\#DíaDeLaMujerRural
+Este contenido fue publicado originalmente en www.colombia.iom.int
