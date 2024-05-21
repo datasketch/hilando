@@ -31,3 +31,5 @@ En la segunda fase, los participantes plantearon una iniciativa de memoria y ver
 Las iniciativas expuestas por los participantes fueron desarrolladas en la tercera y última fase, e incluyeron cine foros con material audiovisual de la Comisión de la Verdad, velatones, muestras artísticas, actividades lúdicas con juegos tradicionales, entre otras. Los resultados de estos espacios estuvieron enfocados a la reflexión sobre la verdad y su significado: el potencial que tiene para restaurar el tejido social y la confianza, para abordar los conflictos de forma pacífica, para entender los impactos y la dimensión del conflicto armado en la vida comunitaria, y como medida para la no repetición.
 
 “Súmale Verdad” fue incorporada en la ruta metodológica de atención psicosocial *Hilando Juntos,* que hace parte de WLH y que actualmente se implementa en 9 municipios del país.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
