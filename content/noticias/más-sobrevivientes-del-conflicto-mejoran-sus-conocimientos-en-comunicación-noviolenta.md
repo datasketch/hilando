@@ -31,4 +31,6 @@ Estos 66 nuevos participantes se suman a los 75 que recibieron esta misma capaci
 
 El proceso pedagógico se basa en el modelo desarrollado por el psicólogo estadounidense Marshall B. Rosenberg y el Centro para la Comunicación Noviolenta. WLH incorporó esta metodología en su intervención considerando que la resolución pacífica de conflictos es fundamental para la construcción de paz en Colombia; y por eso, junto a Resuena trabaja para llevar estos conocimientos a personas que han sobrevivido el conflicto armado y la violencia. Ellos, que han resistido pacíficamente la violencia de la que fueron víctimas, ahora cuentan con más herramientas para seguir promoviendo una cultura de paz en sus territorios. Contribuir a mejorar el acceso a salud mental, las estrategias comunitarias de resiliencia y la calidad de vida de estas regiones, hace parte de los objetivos del Programa Hilando Vidas y Esperanza. 
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/portada-nota444.jpg)
