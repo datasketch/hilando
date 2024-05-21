@@ -24,43 +24,29 @@ En esta galería presentamos algunas de las acciones acompañadas. También invi
 
 *En Medio San Juan, Chocó, recorrieron las calles al ritmo de una chirimía, en una ruta por la memoria en la que participaron la Unidad para las Víctimas, la Alcaldía Municipal, la Personería Municipal y la Defensoría del Pueblo.* 
 
- 
-
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-y-entrega-eeaf-tumaco-9-de-abril-6banner1.jpg)
 
 *Con el apoyo de ROF, en Tumaco, Nariño, se entregaron 105 apoyos de dotación a negocios familiares que beneficiarán a cerca de 400 víctimas de desplazamiento para rehacer sus proyectos de vida.* 
-
- 
 
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-y-entrega-eeaf-tumaco-9-de-abril-4banner.jpg)
 
 *Además, las víctimas y la población tumaqueña se reunieron a conmemorar en el Parque Colón, donde se dispuso una valla para que los asistentes escribieran sus mensajes alusivos a la reconciliación. “Que las voces de las víctimas sean escuchadas”, dice uno de ellos*
 
- 
-
 ![ROF](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-mutata-9-de-abril-2banner1.png)
 
 *En Mutatá, Antioquia, las víctimas también se sumaron a la conmemoración y con carteles y pancartas alzaron su voz por la reconciliación en el Urabá antioqueño.*
-
- 
 
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-popayanbanner1.jpg)
 
 *En alianza con las Tamboreras del Cauca, el programa Hilando Vidas y Esperanza participó en la conmemoración en Popayán, donde la percusión simbolizó los latidos del corazón para honrar a las más de 9 millones de víctimas del conflicto armado.* 
 
- 
-
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-maria-la-bajabanner2.jpg)
 
 *En la plaza principal de María La Baja, Bolívar, ROF acompañó a las víctimas y a las instituciones en sus acciones de memoria, en las que se comprometieron con la construcción colectiva de paz.* 
 
-  
-
 ![ROF](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-cnmh-9-de-abril-3banner1.jpg)
 
 *En Bogotá, se acompañó al Centro Nacional de Memoria Histórica en una conmemoración abierta al público, que incluyó diálogos, actividades de tejido y un concierto, y a la que asistieron decenas de víctimas de distintos territorios del país con el lema “La memoria vive y resiste”.* 
-
- 
 
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/ruta-itinerante-pasto-9-de-abril-2banner.jpg)
 
@@ -74,8 +60,8 @@ En esta galería presentamos algunas de las acciones acompañadas. También invi
 
 *En Bogotá, junto a la Unidad para las Víctimas, se desarrolló un foro en el que representantes de algunas de las entidades responsables de la Política Pública de Víctimas dialogaron con líderes de las organizaciones sobre los retos en la construcción de paz.* 
 
- 
-
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/conmemoracion-carepa-9-de-abril-1banner.jpg)
 
 *Con actos culturales y danzas tradicionales, la población de Carepa, Antioquia, conmemoró el Día de la Memoria y la Solidaridad con las Víctimas, en un evento en el que participaron la Unidad para las Víctimas, la Alcaldía Municipal y la Mesa de Participación Efectiva de Víctimas.*
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
