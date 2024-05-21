@@ -33,3 +33,5 @@ Podrán presentarse organizaciones de base comunitaria, productoras o emprendedo
 Para conocer más sobre la Convocatoria Fondo de Donaciones No. 002 de 2022 Hilando Vidas y Esperanza (Weaving Lives and Hope Activity - WLH) visite: [Licitaciones y Convocatorias | OIM Colombia (iom.int)](https://colombia.iom.int/es/licitaciones-y-convocatorias)
 
 En caso de requerir mayor información o para remitir preguntas, por favor comuníquese al correo: [fondowlh@iom.int](mailto:fondowlh@iom.int)
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
