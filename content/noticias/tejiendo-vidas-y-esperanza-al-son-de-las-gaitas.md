@@ -32,3 +32,5 @@ La ‘Escuela Cuna de Gaiteros’ es liderada por los Maestros Orlando Yépez y 
 ![Tres artesanos frente a sus mochilas tejidas durante la feria de artesanias del festival de Gaitas 2022](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/IMG_0739%20(2).png "Tres artesanos frente a sus mochilas tejidas durante la feria de artesanias del festival de Gaitas 2022")
 
 En el marco del Festival, y bajo el liderazgo de la Alcaldía de San Jacinto y el apoyo de USAID y OIM, también tuvo lugar la primera feria artesanal y agroindustrial “San Jacinto Produce” con la participación de más de 30 organizaciones locales. Tres iniciativas, que han sido acompañadas por el componente de empoderamiento económico del Programa Hilando Vidas y Esperanza, se vincularon a la feria. Así, ASOPROCOAS, con su marca LATIN CACAO; Teje Esperanza, una organización de mujeres artesanas que produce y comercializa productos en telar vertical y otros materiales; y Mujeres Emprendedoras con Iniciativa de Paz de la vereda Casa de Piedra ofrecieron sus productos incrementando el promedio de ventas.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
