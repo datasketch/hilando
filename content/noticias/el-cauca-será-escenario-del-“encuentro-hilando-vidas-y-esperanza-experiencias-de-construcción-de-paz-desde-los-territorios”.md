@@ -36,3 +36,5 @@ Los resultados del diálogo permitirán fortalecer y reconocer los mecanismos e 
 **Hora:** 9:00 am a 12 m. \
 **Lugar:** Auditorio Paraninfo Francisco José de Caldas de la Universidad del Cauca en Popayán\
 **Mayor Información:**  Salud Mental y Bienestar Social – Herramienta para la paz en Colombia (eventovirtual.co)
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
