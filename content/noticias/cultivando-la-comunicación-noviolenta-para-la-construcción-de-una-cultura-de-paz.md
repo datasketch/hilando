@@ -32,4 +32,6 @@ Entre noviembre de 2022 y enero de 2023, las sembradoras y sembradores de Comuni
 
 La Comunicación Noviolenta es un modelo impulsado por el psicólogo estadounidense Marshall B. Rosenberg y desarrollado por el [Centro para la Comunicación Noviolenta](https://www.cnvc.org/). Algunos de los temas tratados durante el proceso formativo son las necesidades humanas y el uso de un vocabulario que facilite la conexión con los demás; los sentimientos; la empatía; el lenguaje de la observación; la forma transformar exigencias en peticiones y la transformación restaurativa de conflictos.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![Encuentro de Comunicacion no violenta con beneficiarios de la region del Valle de Cauca y Cauca](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/IMG_E4051Editada.jpg "Encuentro de Comunicacion no violenta con beneficiarios de la region del Valle de Cauca y Cauca")
