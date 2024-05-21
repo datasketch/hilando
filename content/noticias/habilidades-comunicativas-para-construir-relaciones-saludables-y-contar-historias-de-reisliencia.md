@@ -29,3 +29,5 @@ A partir de los aprendizajes compartidos durante el ejercicio pedagógico, cada 
 De esta manera, el Programa Hilando Vidas y Esperanza promueve la construcción de una cultura de paz basada en la confianza y reconciliación ayudando a las comunidades a desarrollar las habilidades interpersonales y de comunicación necesarias para construir relaciones saludables. Esta actividad apoya también el desarrollo positivo de las comunidades mediante la identificación y el fortalecimiento de liderazgos comunitarios, especialmente juveniles.
 
 A partir de contar las historias y experiencias de las 15 comunidades focalizadas, el Programa busca, junto a diferentes socios, contribuir a resignificar las víctimas del conflicto como sobrevivientes, destacando su resiliencia y capacidades para transformar sus comunidades.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
