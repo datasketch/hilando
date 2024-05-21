@@ -30,3 +30,7 @@ Según relató el organizador de la pasarela del evento, William Perlaza, uno de
 ![Mujer afro con vestido rosado y bordado con chaquiras](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/whatsapp-image-2022-06-13-at-8.27.20-am-1.jpeg "Mujer afro con vestido rosado y bordado con chaquiras")
 
 Las actividades económicas basadas en las prácticas culturales de las comunidades son una estrategia de empoderamiento económico que restaura los tejidos sociales y garantiza la pervivencia del patrimonio inmaterial de esta región golpeada por la violencia armada en Colombia. Tanto las comunidades indígenas, como las afrocolombianas, ven en el fortalecimiento de su cultura una forma poderosa de resistencia pacífica a los conflictos sociales que han padecido durante años.
+
+
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
