@@ -11,3 +11,5 @@ Julio es un hombre gay, miembro de la Asociación Arco Iris de San Jacinto, Bol�
 Julio menciona que gracias a los talleres y espacios del Programa WLH se ha fortalecido y ha podido expresar su identidad de forma más libre. 
 
 Video: <https://www.youtube.com/watch?v=FjTr_yCrqoE>
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
