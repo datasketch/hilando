@@ -28,3 +28,5 @@ El Festival también fue la oportunidad para desplegar lo mejor de los platos t�
 ![Tejido mochilas y tambores en la Cunda Gaitas en Las Mercedes](/images/uploads/whatsapp-image-2022-03-31-at-6.35.39-pm.jpeg "Tejido mochilas y tambores en la Cunda Gaitas en Las Mercedes")
 
 Además del Festival Cuna de Gaiteros, la agenda cultural del programa WLH en articulación con el equipo territorial, están apoyando el proceso de formación en música de gaitas para niños y niñas de las comunidades de Casa de Piedra y Las Mercedes, al igual que procesos de tejeduría en telar vertical con las mujeres y el fortalecimiento de los escenarios deportivos juveniles.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
