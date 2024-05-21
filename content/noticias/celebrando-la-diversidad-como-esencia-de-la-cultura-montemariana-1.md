@@ -25,3 +25,5 @@ Este espacio,  ha sido articulado como parte de la estrategia de Igualdad de g�
 ![](/images/uploads/whatsapp-image-2023-06-28-at-18.50.03-1-.jpeg)
 
 Cabe anotar, que este tipo de inciativas son un ejemplo de la resiliencia y tenacidad de los y las habitantes de los Montes de María, una región donde la diversidad no era aceptada y llego a ser castigada por grupos armados ilegales. La celebración del Orgullo en Montes de María es un símbolo de paz y una declaración de la importancia que tiene la diversidad, como escencia de la cultura montemariana.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
