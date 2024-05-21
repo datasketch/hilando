@@ -30,6 +30,6 @@ A partir del 30 de agosto y durante el mes de septiembre, el equipo de WLH reali
 
 “Queremos promover el desarrollo de capacidades de personas, comunidades, organizaciones de la sociedad civil e instituciones; así como trabajar con el sector privado, la academia y los gremios empresariales para promover el crecimiento económico inclusivo y sostenible, la paz y la convivencia. Nuestro objetivo es contribuir a romper los ciclos de violencia, victimización y discriminación con enfoques territoriales, psicosociales y diferenciados”, agregó Wiesner.
 
-
+Este contenido fue publicado originalmente en www.colombia.iom.int
 
 <!--EndFragment-->
