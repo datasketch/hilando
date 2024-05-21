@@ -38,6 +38,8 @@ USAID y OIM apoyaron la asistencia y participación de más de 20 psicólogos de
 
 A la fecha, el Programa WLH ha apoyado la formulación y adopción del acto administrativo de la política pública de salud mental de 14 municipios, a través de procesos colaborativos y participativos. Además, ha capacitado a 37 profesionales de rehabilitación en atención de pacientes con parálisis cerebral, y ha apoyado la puesta en marcha de ocho espacios psicosociales en Hospitales del país ubicados en municipios históricamente afectados por la violencia donde este servicio no estaba disponible. A la fecha 584 personas han recibido atención en salud mental allí. Finalmente, 11 hospitales cuentan con habilitación en servicios de telemedicina para salud mental en teleorientación y tele-experticia.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/web4.jpg)
 
 *Profesionales de la salud, de hospitales municipales apoyados por WLH, participaron de las actividades del Congreso.*
