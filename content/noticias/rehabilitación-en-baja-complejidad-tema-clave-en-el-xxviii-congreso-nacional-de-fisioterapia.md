@@ -33,3 +33,5 @@ Finalmente, en el marco del XXVIII Congreso Nacional de Fisioterapia. “El pode
  **Sobre el Programa Hilando Vidas y Esperanza**
 
 El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, busca mejorar la salud mental y el bienestar psicosocial de los sobrevivientes del conflicto y de las comunidades afectadas por la violencia, ampliando el acceso a los servicios de atención psicosocial y rehabilitación; promoviendo la resiliencia social y comunitaria; impulsando el empoderamiento económico; y fortaleciendo las habilidades comunicativas para una cultura de paz mediante un enfoque de desarrollo inclusivo. En este marco, USAID y OIM apoyan la política de salud mental a nivel local, la implementación de espacios psicosociales y servicios de telemedicina en hospitales públicos, y la generación de alianzas para desarrollar procesos de formación, investigación y proyección social para la salud mental y la atención psicosocial.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
