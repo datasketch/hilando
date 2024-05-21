@@ -31,4 +31,6 @@ Este es el caso de Orcelis, Embajadora de la comunidad de San Pedro Consolado en
 
 En los próximos meses, el Programa WLH, junto a la Fundación SOLE Colombia, continuará acompañando y motivando a los embajadores de cada región para que los SOLE continúen y lleguen a más personas. Además de continuar con la entrega de computadores para lograr comunidades más equitativas y conectadas.  
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![Una embajadora de San Pedro Consolado sonrie por haber realizado el SOLE con exito](/images/uploads/whatsapp-image-2022-03-24-at-5.12.29-pm-2-.jpeg "Una embajadora de San Pedro Consolado sonrie por haber realizado el SOLE con exito")
