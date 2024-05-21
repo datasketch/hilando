@@ -32,3 +32,5 @@ Involucrar a niños, niñas y jóvenes en el folclor de la región es importante
 Para celebrar la cultura Montemariana, en el primer Festival Cuna de Gaiteros también se dio la oportunidad de desplegar lo mejor de los platos típicos del corregimiento y realizar una muestra de las artesanías y tejidos elaborados por las personas de la comunidad. Participaron personas de todas las edades, turistas y miembros de instituciones locales y nacionales. El apoyo a este tipo de eventos, que congregan a la comunidad, hace parte de las estrategias del Programa para fortalecer la reconciliación y la convivencia, el acceso a la salud mental y el empoderamiento económico. 
 
 Pedro Pablo espera poder contribuir a organizar otros Festivales en Las Mercedes en los próximos años, para que estos jóvenes músicos puedan demostrar allí su talento. Además, espera seguir enviando artistas nativos del corregimiento a eventos importantes como el Festival de las Gaitas de San Jacinto, -que se llevará a cabo en agosto- y otros festivales de música tradicional en Colombia y el mundo.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
