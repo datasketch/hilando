@@ -27,6 +27,8 @@ Desde entonces, este grupo ha participado en el desarrollo de 56 encuentros SOLE
 
 El Programa WLH de USAID, implementado por OIM tiene como uno de sus objetivos contribuir a fortalecer una cultura de paz en algunos de los territorios más afectados por el conflicto armado en Colombia. Para ello, WLH reconoce que las comunicaciones son fundamentales y es imperativo trabajar para cerrar la brecha digital que existe en la ruralidad.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/20230607_solwwlh_tallerdeinspiracion_ptobelgica_4web.jpg)
 
 *Taller de Inspiración Puerto Bélgica, Cáceres.*
