@@ -50,4 +50,6 @@ Las tres regiones en las que opera el Programa (1. Montes de María; 2. Bajo C
 
 Durante los últimos meses, el equipo del Programa ha realizado jornadas de diálogo y socialización con las comunidades para conocerlas más a profundidad e informarles sobre su selección. Así mismo, el Programa realizó visitas familiares; diagnósticos rurales participativos;  concertación de agendas culturales; y la construcción participativa los planes de trabajo de intervención integral, que serán implementados en un periodo de aproximadamente un año.
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 <!--EndFragment-->
