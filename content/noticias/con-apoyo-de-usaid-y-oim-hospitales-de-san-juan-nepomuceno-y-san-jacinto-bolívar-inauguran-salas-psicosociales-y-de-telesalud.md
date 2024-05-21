@@ -21,3 +21,5 @@ Esta adecuación incluye la dotación de mobiliario, material terapéutico y equ
 El Programa Hilando Vidas y Esperanza apoyará el establecimiento de 15 salas de atención psicosocial y telesalud en los municipios focalizados de las regiones de Montes de María, Bajo Cauca y Nordeste Antioqueño; y Valle y Norte del Cauca. A la fecha, 13 hospitales han habilitado la atención remota en psicología a través de servicios de este tipo (Anorí, Cáceres, El Bagre, Tarazá, Valdivia, en Antioquia; Chalán, Colosó, Toluviejo en Sucre; San Juan Nepomuceno en Bolívar; Buenos Aires, Santander de Quilichao, Toribio en Cauca y Pradera en el Valle del Cauca).
 
 Además, seis salas psicosociales ya están en funcionamiento (Anorí, Cáceres, Toluviejo, San Jacinto, Buenos Aires y Pradera), cuatro han completado las adecuaciones (Tarazá, Chalán, Colosó y San Juan Nepomuceno) y están pendientes de ser habilitadas con el visto bueno de las respectivas autoridades sanitarias territoriales, y cinco están en proceso de completarlas (El Bagre, Valdivia, Santander de Quilichao, Toribio y Buenaventura).
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
