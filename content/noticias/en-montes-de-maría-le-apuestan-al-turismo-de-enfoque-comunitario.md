@@ -24,3 +24,5 @@ En febrero de 2023, estas organizaciones participaron en la versión número 42 
 ![Encuentro para la promocion de ecorrutas en los Montes de Maria](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/IMG_2936Banner3.jpg "Encuentro para la promocion de ecorrutas en los Montes de Maria")
 
 El proyecto hace parte del componente de empoderamiento económico del Programa Hilando Vidas y Esperanza que busca potenciar los esfuerzos de los sobrevivientes del conflicto, quienes diariamente construyen y transforman su territorio buscando que sea sostenible en términos ambientales, económicos y sociales. El turismo con enfoque comunitario es una oportunidad para promover el desarrollo local sostenible y la consolidación de la paz en estos territorios.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
