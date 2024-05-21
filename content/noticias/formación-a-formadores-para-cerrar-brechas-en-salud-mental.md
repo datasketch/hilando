@@ -27,3 +27,5 @@ Según Cristian Peña participante del curso en Antioquia, “la herramienta es 
 En el marco de las acciones de la política pública de salud mental, las formaciones fueron la oportunidad para relanzar la Estrategia MhGAP por parte del Ministerio de Salud. El relanzamiento incluyó la publicación de la nueva guía para implementación del Programa en Colombia e implica la necesidad de lograr su apropiación en el sistema de salud colombiano.
 
 Estas acciones hacen parte de los esfuerzos del Programa WLH de USAID y OIM para mejorar la salud mental y el bienestar psicosocial de los sobrevivientes del conflicto y de las comunidades afectadas por la violencia. El Programa apoya la política de salud mental a nivel local, la implementación de espacios psicosociales y servicios de telesalud en hospitales públicos, y la generación de alianzas para desarrollar procesos de formación, investigación y proyección social para la salud mental y la atención psicosocial.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
