@@ -34,4 +34,6 @@ Durante el evento, las asociaciones presentaron más de 40.000 kilos de cafés y
 
 ![WLH](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/0c032428-c2c2-466f-8083-32e7e3be1de0web.jpg)
 
-*Asociaciones de productores de café en el Norte de Cauca dieron a conocer sus proyectos y compartieron sus productos durante la feria*
+*Asociaciones de productores de café en el Norte de Cauca dieron a conocer sus proyectos y compartieron sus productos durante la feria.*
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
