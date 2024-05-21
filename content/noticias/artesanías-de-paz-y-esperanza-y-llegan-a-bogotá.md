@@ -29,3 +29,5 @@ José Nilson, uno de los artesanos de Buenaventura, nos cuenta que sus artesaní
 A través de una intervención integral, el Programa Hilando Vidas y Esperanza (WLH) apoya a comunidades sobrevivientes del conflicto armado en el acceso y mejoramiento de la salud mental; la reconstrucción del tejido social; y el empoderamiento económico. Además de las vitrinas artesanales como espacios de comercialización, los beneficiarios de esta iniciativa también reciben de Artesanías de Colombia un fortalecimiento organizacional encaminado a mejorar sus prácticas en su gestión.
 
 Gracias a una alianza con Almacenes Éxito, las vitrinas móviles estuvieron nuevamente en Bogotá el 19, 20 y 21 de noviembre en Centro Comercial Parque La Colina y en el Centro Comercial La Gran Estación.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
