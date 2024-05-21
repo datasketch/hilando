@@ -21,4 +21,6 @@ Adicionalmente, USAID y OIM apoyaron el Encuentro Pedagógico y Compartir de Sab
 
 Este tipo de iniciativas son un ejemplo de la resiliencia y tenacidad de los y las habitantes de los Montes de María, una región en la que las personas LGBTIQ+, además de haber sido afectadas por el conflicto armado, también eran objeto de discriminación y exclusión por causa de su orientación sexual o identidad de género. La celebración del Orgullo en Montes de María es un símbolo de paz y una declaración de la importancia que tiene la diversidad, como escencia de la cultura montemariana. 
 
+Este contenido fue publicado originalmente en www.colombia.iom.int
+
 ![Chalan LGBTIQ+](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/whatsapp-image-2023-06-28-at-12.41.00-pm-5.jpeg)
