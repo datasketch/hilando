@@ -22,3 +22,5 @@ La campaña +AGUA +VIDA se suma a la entrega de una dotación de 321 tanques de 
 ![Stencil realizado sobre un tanque en Buenaventura](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/bannerwlh3.png "Stencil realizado sobre un tanque en Buenaventura")
 
 La campaña ya ha llegado a lugares como Colosó, Chalán, San Juan Nepomuceno, San Jacinto y Tolú Viejo en Montes de María, a la Isla de la Dulzura, en Cáceres, Antioquia, y recientemente también al Consejo Comunitario de Punta Soldado en Buenaventura, donde se llevó a un taller de reciclaje, facilitado por líderes y lideresas de la comunidad. En lo que resta del año, la campaña +AGUA +VIDA llegará a las demás comunidades priorizadas por el Programa para fortalecer los procesos locales y comunitarios de cuidado ambiental, buscando efectos positivos en su calidad de vida y en salud física.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
