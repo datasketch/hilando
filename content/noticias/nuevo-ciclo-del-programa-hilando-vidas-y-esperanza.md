@@ -32,3 +32,5 @@ Las más de 900 familias que harán parte del Programa WLH en 2023 han sido resi
 Las veredas son:  La Floresta y Las Lomitas en Pradera, Valle del Cauca; Dominguillo en Santander de Quilichao, Cauca; Las casitas en Cajibío, Cauca; el Agrado en Piendamó, Cauca; y Calle Larga en Buenaventura, Valle del Cauca.
 
 Durante el mes de diciembre y lo que va corrido de enero, el equipo de WLH realizó más de 300 visitas de acercamiento a las familias y los actores comunitarios, y 15 diálogos grupales para presentar el Programa, sus componentes y actividades. Este proceso permitió reconocer las afectaciones psicosociales y los recursos con los que se cuentan para adaptar la intervención a las dinámicas y contextos locales. En el mes de febrero, se realizará una nueva ronda de encuentros para acordar el inicio de las acciones, las cuales estarán orientadas por el Modelo de Intervención Comunitaria Hilando Juntos, desarrollado por este Programa de USAID, implementado por OIM.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
