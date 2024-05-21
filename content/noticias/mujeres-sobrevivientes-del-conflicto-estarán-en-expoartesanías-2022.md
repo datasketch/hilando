@@ -25,3 +25,5 @@ Durante este año, tanto Fundaproductividad, como Tejesperanza han tenido la opo
 ![Dos artesanas de Montes de Maria posan frente a sus productos hechos de totumo](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/images/Notas/IMG_2368%20(2)Acomp.jpg "Dos artesanas de Montes de Maria posan frente a sus productos hechos de totumo")
 
 Expoartesanías se ha convertido en una de las principales plataformas para que comercializadores y distribuidores nacionales e internacionales encuentren productos con calidad e identidad. La participación de estas dos organizaciones es una oportunidad para seguir fortaleciendo las relaciones comerciales de sus organizaciones y para contribuir a posicionar la importancia de la participación de las mujeres en entornos productivos y sus aportes a la construcción de paz y al desarrollo local.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
