@@ -26,3 +26,5 @@ Después de que los hijos menores crecieron y fueron independientes, Prudencio y
 También, en 2022, se graduó como sembrador de Comunicación No Violenta, otro proyecto del Programa que busca transformar la manera como las personas gestionan sus emociones, manifiestan sus necesidades y se expresan, entendiendo que en la comunicación empática está la base de la convivencia pacífica. “Dicen que loro viejo da la pata, pero eso no es verdad porque yo estoy aquí y he aprendido mucho de la forma de comunicar de forma no violenta y de construir la paz”, dice.
 
 Su apuesta es seguir trabajando la tierra y aportando a su comunidad por medio de un proyecto de batata apoyado por el componente de fortalecimiento económico del Programa WLH de USAID y OIM. Además, quiere compartir con las nuevas generaciones los aprendizajes, fruto de su experiencia, pero también las nuevas cosas que sigue aprendiendo.
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
