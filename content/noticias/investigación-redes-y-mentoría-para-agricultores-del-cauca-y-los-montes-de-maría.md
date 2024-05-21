@@ -44,3 +44,7 @@ La visita fortaleció sus conocimientos sobre la siembra, el manejo de cultivos,
 Además de la gira de conocimiento, el Programa WLH de USAID y OIM ha apoyado el empoderamiento económico de estas comunidades fuertemente golpeadas por la violencia en la región, por medio de alianzas con el comité de Cafeteros del Cauca y la Cooperativa de Caficultores del Norte del Cauca (Cafinorte), con el fin de mejorar la calidad del café; implementar nuevas tecnologías para el desarrollo de cafés especiales y/o nuevas técnicas de postcosecha; y realizar análisis de calidad de grano y taza. El programa también ha promovido el uso de la aplicación móvil “Agenda Cafetera” para que jóvenes productores mejoren los procesos organizativos dentro de las fincas. 
 
 Los resultados de estos procesos de intercambio de conocimiento entre los agricultores de Norte del Cauca y los Montes de María con pequeños empresarios de la industria del agro en sus propias regiones han sido positivos. Los espacios de mentorías han abierto posibilidades nuevas para sus productos y han fortalecido sus capacidades técnicas en la siembra y distribución.
+
+
+
+Este contenido fue publicado originalmente en www.colombia.iom.int
