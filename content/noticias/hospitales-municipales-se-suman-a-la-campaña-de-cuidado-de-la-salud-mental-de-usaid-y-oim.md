@@ -16,8 +16,6 @@ La jornada de reflexión estuvo compuesta por siete momentos significativos que 
 
 La actividad fue liderada por los psicólogos de cada hospital, destacando la importancia de resaltar este día, como parte de un compromiso global para crear conciencia sobre los problemas de salud mental en el mundo y movilizar esfuerzos para su prevención, atención y rehabilitación. Al iniciar, recibieron a los participantes con una cálida bienvenida, en la que les entregaron un Kit que hace parte de la Campaña *“La salud mental la tejemos entre todxs”*, diseñada por el Programa WLH, que incluye un pocillo con el slogan de la campaña, y unas piezas informativas con recomendaciones para el cuidado de la salud mental. 
 
- 
-
 ![Salud Mental](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/whatsapp-image-2023-10-10-at-8.19.04-am.jpeg)
 
 Después de la bienvenida, los dinamizadores desarrollaron un ejercicio de respiración consciente, enfatizando la acción de "inspirar". También guiaron a los participantes para que se realizaran un masaje de manos, que estimula la creatividad y fomenta la conciencia sobre la importancia de los elementos con los que contamos en el día a día para procurar nuestro bienestar. 
@@ -26,22 +24,16 @@ Después de la bienvenida, los dinamizadores desarrollaron un ejercicio de respi
 
 Para finalizar la jornada, los asistentes compartieron un café, intercambiaron experiencias y leyeron las recomendaciones para la salud mental que les fueron entregadas. 
 
- 
-
 ![Salud Mental](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/whatsapp-image-2023-10-10-at-9.03.58-am.jpeg)
 
 Esta actividad fomentó la conexión y el diálogo sobre el autocuidado, y demostró el compromiso de cada uno de los hospitales municipales y del Ministerio de Salud con la promoción de la salud mental en el sector de la salud y también en las comunidades rurales.
-
- 
 
 “Fue una actividad de unión, amor, comprensión. Nos pudimos integrar como funcionarios del hospital. Conocimos las diferentes herramientas técnicas y estratégicas que utilizan nuestros compañeros para afrontar las problemáticas y fortalecer su salud mental”, dijo Ingrid Niño, psicóloga del Hospital San Agustín de Puerto Merizalde, ubicado a dos horas de Buenaventura.
 
 *La salud mental la tejemos entre todxs* es una Campaña del Programa Hilando Vidas y Esperanza, que tiene como objetivo invitar a las comunidades sobrevivientes del conflicto a reconocer los diferentes síntomas que se presentan cuando nuestra salud mental se ve deteriorada o no cuidada de forma consciente; la campaña también ofrece información sobre las rutas de atención a las que pueden acudir las personas en caso de necesitarlo. Así mismo, cuidar a quien cuida garantiza mayor calidad en los servicios de salud mental a nivel local. A la fecha, más de 3.000 personas han participado en esta iniciativa de USAID y OIM.
 
- 
+Este contenido fue publicado originalmente en www.colombia.iom.int
 
 ![Salud Mental](https://colombia.iom.int/sites/g/files/tmzbdl1011/files/whatsapp-image-2023-10-10-at-8.30.02-am-1.jpeg)
-
- 
 
 \* Municipios en los que se realizó la actividad: Cáceres, Tarazá, Caucasia, Valdivia, Anorí, Yarumal, El Bagre, Bello, Medellín, en Antioquia; Toluviejo, Colosó, Chalán, en Sucre; San Juan Nepomuceno y San Jacinto, en Bolívar; Pradera, Buenaventura, Cali, en Valle; Buenos Aires, Toribío, Santander de Quilichao, Cajibío, Piendamó, en Cauca.
