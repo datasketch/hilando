@@ -44,5 +44,3 @@ Ruby aplaude y resalta la labor que vienen realizando en San Jacinto, Bolívar y
 “Estas organizaciones son como el aire que reciben nuestros pulmones, nos oxigenan. Además, nos capacitan y nos preparan. Todo esto enriquece nuestro liderazgo”, dice con mucha confianza.
 
 Ruby Ariza seguirá tejiendo la paz en los Montes de María, aferrada en que el diálogo y la tolerancia es el mejor camino para vivir en un mundo lleno de armonía.
-
-Este contenido fue publicado originalmente en www.colombia.iom.int
