@@ -165,9 +165,9 @@ programas_usaid:
   - ' Superando las Violencias contra las Mujeres'
   - ' Inclusión para la Paz'
 comunidades:
-  - label: Vereda El Turco
-    slug: vereda-el-turco
-    permalink: /comunidad-focalizada/vereda-el-turco
+  - label: El Turco
+    slug: el-turco
+    permalink: /comunidad-focalizada/el-turco
   - label: Dominguillo
     slug: dominguillo
     permalink: /comunidad-focalizada/dominguillo

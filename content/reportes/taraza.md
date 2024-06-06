@@ -76,9 +76,9 @@ medios_comunicacion:
   - ' Emisora Comunitaria de Tarazá'
 iniciativas_org_sociedad_civil: null
 comunidades:
-  - label: Corregimiento La Caucana
-    slug: corregimiento-la-caucana
-    permalink: /comunidad-focalizada/corregimiento-la-caucana
+  - label: La Caucana
+    slug: la-caucana
+    permalink: /comunidad-focalizada/la-caucana
   - label: ' Las Delicias - Piedras'
     slug: las-delicias-piedras
     permalink: /comunidad-focalizada/las-delicias-piedras

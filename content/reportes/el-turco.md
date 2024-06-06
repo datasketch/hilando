@@ -1,6 +1,6 @@
 ---
-title: Vereda el Turco
-nombre_comunidad: Vereda el Turco
+title: El Turco
+nombre_comunidad: El Turco
 municipio: Santander de Quilichao
 departamento: Cauca
 descripcion: >
@@ -90,8 +90,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   psiquiatria. Y esa institución tiene todos los otros servicios de manera
   presencial (psicología, fonoaudiología, fisioterapia y terapia ocupacional)
 num_visitas_predio: 0
-url: /reportes/vereda-el-turco
+url: /reportes/el-turco
 layout: comunidad
-download_file: /reportes/vereda-el-turco.pdf
+download_file: /reportes/el-turco.pdf
 
 ---
