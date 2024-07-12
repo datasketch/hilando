@@ -1,4 +1,7 @@
-{{ define "main" }} {{ $data := index .Site.Data.eventos }}
+{{ define "main" }} {{ $data := index .Site.Data.eventos }} {{ $communities :=
+shuffle (index site.Data "comunidades_focalizadas") }} {{ $selectedCommunity :=
+index $communities 0 }} {{ $communitySlug := printf "/comunidad-focalizada/%s"
+(urlize $selectedCommunity.nombre_comunidad) }}
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div class="lg:col-start-1 lg:col-end-13">
@@ -8,50 +11,17 @@
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
-          <!-- BANNER HOME PAGE -->
-          <a
-            href='{{ relref . "galeria.md" }}'
-            class="block w-full relative py-60 lg:py-72 xl:py-80 h-550"
-            role="img"
-          >
-            <span
-              class="bg-banner-home bg-cover bg-center absolute top-0 left-0 w-full h-full"
-              role="img"
-              aria-label="Mapa de Colombia con ilustración de manos trabajando juntas y logo de Red Hilando Comunidades"
-            ></span>
-            {{/*
-            <div class="mx-auto w-10/12 lg:w-full relative">
-              <h1
-                class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center uppercase"
-              ></h1>
-            </div>
-            */}}
+          <a href='{{ relref . "galeria.md" }}'>
+            <img class="w-full" src="/images/home/banner-home.png" alt="" />
           </a>
-          <!-- BANNER HOME PAGE END -->
         </div>
         <div class="swiper-slide">
-          <!-- BANNER HOME PAGE -->
-          <a
-            href='{{ relref . "galeria.md" }}'
-            class="block w-full relative py-60 lg:py-72 xl:py-80 h-550"
-            role="img"
-          >
-            <span
-              class="bg-banner-home-2 bg-cover bg-center absolute top-0 left-0 w-full h-full"
-              role="img"
-              aria-label="Mapa de Colombia con ilustración de manos trabajando juntas y logo de Red Hilando Comunidades"
-            ></span>
-            {{/*
-            <div class="mx-auto w-10/12 lg:w-full relative">
-              <h1
-                class="tk-mr-eaves-sans text-white text-4xl xl:text-5xl font-black text-center uppercase"
-              ></h1>
-            </div>
-            */}}
-          </a>
-          <!-- BANNER HOME PAGE END -->
+          <div class="swiper-slide">
+            <a href='{{ relref . "galeria.md" }}'>
+              <img class="w-full" src="/images/home/banner-home-2.png" alt="" />
+            </a>
+          </div>
         </div>
-       
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination swiper-pagination-banner"></div>
@@ -88,7 +58,7 @@
         class="uppercase text-white font-bold py-2 px-6 xl:text-lg bg-space-cadet"
         href='{{ relref . "sobre-nosotros.md" }}'
       >
-        Sobre el programa
+        Sobre nosotros
       </a>
     </div>
   </div>
@@ -97,15 +67,27 @@
   <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
     <img class="mx-auto" src="/images/home/about-program.svg" alt="" />
   </div>
+  <!-- UPCOMING EVENTS -->
+  <div
+    class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20 bg-cultured"
+  >
+    <h2
+      class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black"
+    >
+      Eventos <span class="inline-block px-1 bg-puce">Comunitarios</span>
+    </h2>
+    {{ partial "events" . }}
+  </div>
+  <!-- UPCOMING EVENTS END -->
   <!-- OUTSTANDING NEWS -->
-  <div class="lg:col-start-1 lg:col-end-13 py-16 xl:py-20 bg-cultured">
+  <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
     <div class="mx-auto w-10/12 lg:w-8/12">
       <h2
         class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center"
       >
         <span class="px-1 bg-cambridge-blue">Noticias</span> destacadas
       </h2>
-      <div class="mb-12 lg:mb-16 xl:mb-20 relative">
+      <div class="relative">
         <!-- Slider main container -->
         <div class="swiper swiper-news">
           <!-- Additional required wrapper -->
@@ -161,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center mb-12 lg:mb-16">
         <a
           class="uppercase text-white py-2 px-6 xl:text-lg bg-rose"
           href='{{ relref . "noticias/_index.md" }}'
@@ -171,7 +153,6 @@
     </div>
   </div>
   <!-- OUTSTANDING NEWS END -->
-
   <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
     <img
       class="mx-auto w-11/12 md:w-9/12 lg:w-auto"
@@ -179,187 +160,138 @@
       alt=""
     />
   </div>
-
-  <!-- TARGETED TERRITORIES -->
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
-    <div class="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-12 gap-y-8">
-      <div class="lg:col-start-1 lg:col-end-6">
-        <div class="text-center lg:text-left">
-          <h2
-            class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-4"
-          >
-            <span class="px-1 bg-thulian-pink">Tres Nodos,</span> muchas
-            relaciones
-          </h2>
-          <p class="text-lg xl:text-xl mb-4 lg:mb-6">
-            Hilando Comunidades agrupa las experiencias de tres regiones
-            gravemente afectadas por el conflicto armado:
-            <b
-              >1) Bajo Cauca y Nordeste Antioqueño; 2) Montes de María, y 3)
-              Pacífico Medio, Alto Patía y Norte del Cauca.</b
-            >
-            En cada región, priorizamos 17 municipios con quienes desde el
-            Programa Hilando Vidas y Esperanza de USAID, implementado por OIM,
-            generamos alianzas (con la sociedad civil, el sector público y el
-            sector privado) para trabajar juntos en torno a la salud mental, el
-            liderazgo, la generación de ingresos, la resolución de conflictos y
-            la comunicación buscando desarrollar capacidades locales, promover
-            la resiliencia e impulsar transformaciones sociales para la
-            convivencia pacífica.
-          </p>
-        </div>
-      </div>
-      <div class="lg:col-start-8 lg:col-end-13">
-        <img
-          class="mx-auto lg:col-start-8 lg:col-end-13"
-          src="/images/home/mapa-home.jpg"
-          alt="Mapa de Colombia con los departamentos marcados donde opera el programa WLH"
-        />
-      </div>
-      <div class="lg:col-start-1 lg:col-end-13">
-        <div class="grid grid-cols-1 lg:grid-cols-3">
-          {{ $territories := where .Site.RegularPages "Section" "territorios" }}
-          {{ range $territories.GroupByParam "region" }}
-          <div>
-            <h3 class="font-black lg:text-lg xl:text-xl mb-2 lg:mb-4">
-              {{ .Key }}
-            </h3>
-            <ul class="space-y-4 mb-10 lg:mb-8 xl:mb-10">
-              {{ range .Pages }}
-              <li class="line">
-                <a
-                  class="lg:text-lg xl:text-xl text-rose"
-                  href="{{ .Permalink }}"
-                  >{{ .Title }}</a
-                >
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- TARGETED TERRITORIES END -->
-
-  <div class="lg:col-start-1 lg:col-end-13 bg-cultured">
-    <img src="/images/home/sticky.svg" alt="" />
-  </div>
-
-  <!-- LOREM IPSUM -->
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
-    <div class="mx-auto w-10/12">
+  <div class="lg:col-start-1 lg:col-end-13 bg-cultured py-12 lg:py-16 xl:py-20">
+    <div class="mx-auto w-11/12 lg:w-10/12">
       <h2
         class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center"
       >
-        <span class="px-1 bg-puce">Mapeo</span> social
+        Fichas de
+        <span class="px-1 bg-space-cadet bg-opacity-40">Comunidades</span>
       </h2>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center"
-      >
-        <div
-          class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full"
-        >
-          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-            Distribución
-            <span class="pl-1 pr-2 bg-puce">poblacional rural</span>
-          </h3>
-          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-            Recopilamos la información de 17 municipios, principalmente rurales,
-            con una distribución poblacional que incluye víctimas del conflicto,
-            comunidades étnicas, mujeres, niños, niñas, jóvenes y personas con
-            discapacidad. Aquí podrás conocer su tamaño.
-          </p>
-          <a
-            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
-            href="#"
+      <div class="flex flex-col md:flex-row items-stretch">
+        <div class="md:w-1/2">
+          <div
+            class="bg-space-cadet text-cultured p-10 h-full flex flex-col justify-between"
           >
-            Explorar datos
-          </a>
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold uppercase">
+                {{ $selectedCommunity.nombre_comunidad }}
+              </h3>
+              <p class="uppercase text-sm font-light">
+                {{ $selectedCommunity.municipio }} - {{
+                $selectedCommunity.departamento }}
+              </p>
+            </div>
+            {{ if $selectedCommunity.descripcion }}
+            <div class="relative mt-4">
+              <img
+                class="w-full"
+                src="/images/public/shape-gray.svg"
+                alt="shape gray"
+              />
+              <p class="-mt-4 xl:-mt-8 lg:text-lg line-clamp-4">
+                {{ $selectedCommunity.descripcion }}
+              </p>
+            </div>
+            {{ end }}
+            <div>
+              <a
+                class="inline-block mt-6 bg-cultured py-2 px-6 text-space-cadet font-light uppercase"
+                href="{{ $communitySlug }}"
+              >
+                Ver todo
+              </a>
+            </div>
+          </div>
         </div>
-        <iframe
-          class="order-1 lg:order-2 mx-auto self-end w-full h-400"
-          src="/charts/home/distribucion_poblacion_total.html"
-          frameborder="0"
-          title="Distribución de población urbana y rural en los municipios priorizados."
-        ></iframe>
-        <iframe
-          class="order-3 mx-auto self-end w-full h-400"
-          src="/charts/home/top_diagnosticos_total.html"
-          frameborder="0"
-          title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"
-        ></iframe>
-        <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
-          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-            Panorama de la
-            <span class="pl-1 pr-2 bg-puce"> salud mental</span>
-          </h3>
-          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-            A partir del Registro Individual de Prestación (RIPS), realizamos un
-            comparativo entre los principales diagnósticos de salud mental
-            atendidos durante el 2020 por el Sistema General de Seguridad Social
-            Salud (SGSSS) en los diecisiete municipios priorizados. De igual
-            manera, revisamos las prioridades en salud establecidas por las
-            autoridades sanitarias municipales y relacionadas con las
-            dimensiones de intervención del Programa y que hacen parte del Plan
-            Decenal de Salud que nos permite alinearnos con campañas de salud
-            mental y bienestar.
-          </p>
-          <a
-            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
-            href="#"
-          >
-            Explorar datos
-          </a>
+        <div class="md:w-1/2">
+          <div class="p-10 bg-white h-full">
+            <div
+              class="text-center flex flex-col justify-between h-full gap-y-4"
+            >
+              <h3 class="text-xl xl:text-2xl font-semibold uppercase">
+                Cantidad de familias
+              </h3>
+              <img
+                class="mx-auto"
+                src="/images/territorios/family.svg"
+                alt=""
+              />
+              <p class="text-3xl xl:text-4xl font-extrabold">
+                {{ $selectedCommunity.num_familias }}
+                <span class="block text-sm"> FAMILIAS </span>
+              </p>
+            </div>
+          </div>
         </div>
-        <div
-          class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full"
-        >
-          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
-            <span class="pl-1 pr-2 bg-puce">Economías</span> tradicionales
-          </h3>
-          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
-            Los diecisiete municipios priorizados son predominantemente
-            agrícolas y forestales, con una potencia para la piscicultura,
-            apicultura y otras prácticas que protegen el medio ambiente.
-            También, se encuentran en zonas de extracción minera, y tienen
-            tradición en la agricultura y la producción de artesanías. Existen
-            procesos incipientes de industrialización en algunos municipios e
-            incentivos para el emprendimiento campesino. Conozca más sobre los
-            procesos de empoderamiento económico que impulsan la resiliencia.
-          </p>
-          <a
-            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
-            href="#"
-          >
-            Explorar datos
-          </a>
-        </div>
-        <iframe
-          class="order-5 lg:order-6 mx-auto self-end w-full h-400"
-          src="/charts/home/actividades_economicas_total.html"
-          frameborder="0"
-          title="Gráfica de actividades económicas totales"
-        ></iframe>
       </div>
+      {{ if $selectedCommunity.comentarios_punto_sole }}
+      <div
+        class="padlet-embed"
+        style="
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+          box-sizing: border-box;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          background: #f4f4f4;
+        "
+      >
+        <p style="padding: 0; margin: 0">
+          <iframe
+            src="{{ $selectedCommunity.comentarios_punto_sole }}"
+            frameborder="0"
+            allow="camera;microphone;geolocation"
+            style="
+              width: 100%;
+              height: 608px;
+              display: block;
+              padding: 0;
+              margin: 0;
+            "
+          ></iframe>
+        </p>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin: 0;
+            height: 28px;
+          "
+        >
+          <a
+            href="https://padlet.com?ref=embed"
+            style="
+              display: block;
+              flex-grow: 0;
+              margin: 0;
+              border: none;
+              padding: 0;
+              text-decoration: none;
+            "
+            target="_blank"
+            ><div style="display: flex; align-items: center">
+              <img
+                src="https://padlet.net/embeds/made_with_padlet_2022.png"
+                width="114"
+                height="28"
+                style="
+                  padding: 0;
+                  margin: 0;
+                  background: 0 0;
+                  border: none;
+                  box-shadow: none;
+                "
+                alt="Hecho con Padlet"
+              /></div
+          ></a>
+        </div>
+      </div>
+      {{ end }}
     </div>
   </div>
-  <!-- LOREM IPSUM END -->
-
-  <!-- UPCOMING EVENTS -->
-  <div
-    class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20 bg-cultured"
-  >
-    <h2
-      class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black"
-    >
-      Eventos <span class="inline-block px-1 bg-puce">Comunitarios</span>
-    </h2>
-    {{ partial "events" . }}
-  </div>
-  <!-- UPCOMING EVENTS END -->
-
   <input
     type="hidden"
     name="data"
