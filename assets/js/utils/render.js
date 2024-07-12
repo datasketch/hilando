@@ -173,7 +173,7 @@ export const renderMultimedia = (parentEl, data, type) => {
             ${data.nombre_galeria}
             </h3>
             <p class="multimedia__description">
-            ${data.descripcion}
+            ${data.descripcion || ''}
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">

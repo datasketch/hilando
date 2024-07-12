@@ -149,7 +149,7 @@ export default class Modal {
                   </div>
                 </div>
                 <div>
-                  <p>${this.data.descripcion ? this.data.descripcion : ''}</p>
+                  <p>${this.data.descripcion || ''}</p>
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@ export default class Modal {
                   </div>
                 </div>
                 <div>
-                  <p>${this.data.descripcion}</p>
+                  <p>${this.data.descripcion || ''}</p>
                 </div>
               </div>
             </div>
@@ -285,7 +285,7 @@ export default class Modal {
                 )
 }
               <div>
-                <p>${this.data.descripcion}</p>
+                <p>${this.data.descripcion || ''}</p>
               </div>
             </div>
           </div>

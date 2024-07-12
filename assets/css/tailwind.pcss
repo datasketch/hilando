@@ -377,7 +377,8 @@
   /* MODAL */
 
   .modal {
-    @apply bg-white-2 h-auto w-10/12 lg:w-full mx-auto fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 invisible opacity-0 scale-0 duration-300;
+    @apply bg-white-2 w-10/12 overflow-y-scroll lg:w-full mx-auto fixed left-1/2 transform -translate-x-1/2 bottom-8 z-50 invisible opacity-0 scale-0 duration-300;
+    height: 75vh;
   }
 
   .modal--events {
@@ -401,7 +402,7 @@
   }
 
   .modal__button-close {
-      @apply cursor-pointer absolute -top-10 -right-8 z-10 px-2 py-1 bg-white text-2xl font-bold;
+      @apply cursor-pointer absolute top-0 right-0 z-10 px-2 py-1 bg-white text-2xl font-bold;
   }
 
   /* PUBLICACIONES  */
@@ -469,10 +470,10 @@
       @apply bg-white-2 p-6 space-y-2 h-full;
   }
   .multimedia__title {
-      @apply text-xl xl:text-2xl font-black;
+      @apply text-xl xl:text-2xl font-black text-fern-green line-clamp-2;
   }
   .multimedia__description {
-      @apply text-lg xl:text-xl ;
+      @apply text-lg xl:text-xl line-clamp-4;
   }
   .multimedia__lugar-comunidad {
       @apply flex justify-between items-center space-x-12;
