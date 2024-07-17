@@ -1,44 +1,187 @@
 {{ define "main" }}
+{{ $fecha := slice }}
+{{ $tema := slice }}
+{{ $municipio := slice }}
+{{ $region := slice }}
+{{ $tipo := slice }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
-  <div class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
-    style="height: 451px;">
+  <div
+    class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
+    style="height: 451px"
+  >
     <h1
-      class="text-white uppercase text-3xl lg:text-4xl xl:text-5xl font-black absolute top-1/2 left-1/2 transform -translate-x-1/2">
-      Noticias</h1>
+      class="text-white uppercase text-3xl lg:text-4xl xl:text-5xl font-black absolute top-1/2 left-1/2 transform -translate-x-1/2"
+    >
+      Noticias
+    </h1>
   </div>
   {{ range first 1 .Pages }}
-  <div class="lg:w-9/12 mx-auto lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12 -mt-20 z-10">
-    <img class="mx-auto w-10/12 lg:w-full object-center object-cover lg:col-start-1 lg:col-end-9"
-      src="{{ .Params.image }}" alt="{{ .Title }}" style="height: 394px;">
-    <div class="mx-auto w-10/12 lg:w-full lg:col-start-9 lg:col-end-13 px-8 py-6 lg:py-12 lg:px-16 bg-cultured">
-      <span class="block italic mb-3">Fecha: {{ .Date | time.Format ":date_long" }}</span>
-      <h3 class="font-black lg:text-lg xl:text-xl mb-3">
+  <div
+    class="lg:w-10/12 mx-auto lg:col-start-1 lg:col-end-13 grid grid-cols-1 lg:grid-cols-12 -mt-20 z-10"
+  >
+    <img
+      class="mx-auto w-10/12 lg:w-full object-center object-cover lg:col-start-1 lg:col-end-9"
+      src="{{ .Params.image }}"
+      alt="{{ .Title }}"
+      style="height: 394px"
+    />
+    <div
+      class="mx-auto w-10/12 lg:w-full lg:col-start-9 lg:col-end-13 p-8 bg-cultured"
+    >
+      <span class="block italic mb-3"
+        >Fecha: {{ .Date | time.Format ":date_long" }}</span
+      >
+      <h3
+        class="font-black lg:text-lg xl:text-xl text-fern-green mb-3 line-clamp-2"
+      >
         {{ .Title }}
       </h3>
-      <p class="lg:text-lg xl:text-xl mb-8 lg:mb-10 xl:mb-12">
-        {{ .Description | safeHTML | truncate 180 }}
+      <p class="lg:text-lg xl:text-xl mb-8 line-clamp-3">
+        {{ .Description | safeHTML }}
       </p>
-      <a class="uppercase text-white py-2 px-6 xl:text-lg bg-space-cadet" href="{{ .Permalink }}">VER TODO</a>
+      <a
+        class="uppercase text-white py-2 px-6 xl:text-lg bg-space-cadet"
+        href="{{ .Permalink }}"
+        >VER TODO</a
+      >
     </div>
   </div>
   {{ end }}
-  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20">
-    <div class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-y-12 lg:gap-x-8">
-      {{ range after 1 .Pages }}
-      <div class="relative border-t-2 p-10 cursor-pointer hover:shadow-lg duration-300 bg-seasalt border-olivine">
-        <img class="mb-2 lg:mb-4 w-full h-56 object-cover object-center" src="{{ .Params.image }}" alt="{{ .Title }}">
-        <span class="block italic mb-3">Fecha: {{ .Date | time.Format ":date_long" }}</span>
-        <h3 class="font-black lg:text-lg xl:text-xl mb-3">
-          {{ .Title }}
-        </h3>
-        <p class="lg:text-lg xl:text-xl mb-6 lg:mb-7 xl:mb-8">
-          {{ .Description | safeHTML | truncate 180 }}
-        </p>
-        <a class="uppercase text-white py-2 px-6 xl:text-lg bg-space-cadet" href="{{ .Permalink }}">VER TODO</a>
-        <img class="absolute right-0 top-0" src="/images/public/sticky.svg" alt="">
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16">
+    <div class="px-9">
+      <div class="flex flex-col gap-y-8 lg:flex-row lg:gap-x-12 lg:items-start">
+        <div class="lg:w-2/12 lg:sticky lg:top-28">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl lg:text-2xl font-semibold">Filtros</h3>
+            <button class="text-lg lg:text-xl">Reestablecer</button>
+          </div>
+          <div class="filters mt-4 space-y-2">
+            <div>
+              <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
+                Fecha
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $fecha) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="fecha" id="{{ . }}" value="{{ . }}" disabled>
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <div>
+              <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+                Tema
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $tema) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="tema" id="{{ . }}" value="{{ . }}" disabled>
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <div>
+              <button class="accordion accordion--purple" data-tab="2" style="border: 1px solid #BABBC9;">
+                Municipio
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $municipio) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}" disabled>
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <div>
+              <button class="accordion accordion--purple" data-tab="3" style="border: 1px solid #BABBC9;">
+                Región
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $region) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="region" id="{{ . }}" value="{{ . }}" disabled>
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <div>
+              <button class="accordion accordion--purple" data-tab="4" style="border: 1px solid #BABBC9;">
+                Tipo de publicación
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $tipo) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}" disabled>
+                </label>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-10/12">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {{ range after 1 .Pages }}
+            <div
+              class="relative border-t-2 p-10 hover:shadow-lg duration-300 bg-seasalt border-olivine"
+            >
+              <img
+                class="mb-2 lg:mb-4 w-full h-56 object-cover object-center"
+                src="{{ .Params.image }}"
+                alt="{{ .Title }}"
+              />
+              <span class="block italic mb-3"
+                >Fecha: {{ .Date | time.Format ":date_long" }}</span
+              >
+              <h3
+                class="font-black lg:text-lg xl:text-xl mb-3 text-fern-green line-clamp-2"
+              >
+                {{ .Title }}
+              </h3>
+              <p
+                class="lg:text-lg xl:text-xl mb-6 lg:mb-7 xl:mb-8 line-clamp-3"
+              >
+                {{ .Description | safeHTML }}
+              </p>
+              <a
+                class="uppercase text-white py-2 px-6 xl:text-lg bg-space-cadet"
+                href="{{ .Permalink }}"
+                >VER TODO</a
+              >
+              <img
+                class="absolute right-0 top-0"
+                src="/images/public/sticky.svg"
+                alt=""
+              />
+            </div>
+            {{ end }}
+          </div>
+        </div>
       </div>
-      {{ end }}
     </div>
   </div>
 </div>
+{{ end }}
+{{ define "js" }}
+{{ $noticias := resources.Get "js/api/noticias.js" | js.Build (dict "minify" hugo.IsProduction)}}
+<script src="{{ $noticias.Permalink }}"></script>
 {{ end }}
