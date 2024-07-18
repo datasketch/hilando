@@ -2,10 +2,9 @@
 title: "Yorladis Bassa: Multiplicando saberes en La Dulzura "
 date: 2023-08-01T14:20:52.150Z
 image: /images/uploads/20220405_104510.jpg
-description: "Desde niña, Naty Milena Angulo hace parte de Fundaproductividad,
-  una Asociación conformada por aproximadamente 200 familias indígenas,
-  afrodescendientes y mestizas del Pacífico, que promueve la generación de
-  ingresos en mujeres artesanas víctimas de violencia basada en género.   "
+description: Yorladis Bassa es oriunda del corregimiento de Guarumo, zona rural
+  del municipio de Cáceres Antioquia, menciona que llegó a la vereda Isla de La
+  Dulzura desde muy joven
 cms: true
 ---
 Yorladis Bassa es oriunda del corregimiento de Guarumo, zona rural del municipio de Cáceres Antioquia, menciona que llegó a la vereda Isla de La Dulzura desde muy joven y se radicó allí con su familia por la oportunidad de tener un lugar propio en el cual vivir; desde entonces, y después de tener a sus dos hijas, conformar un hogar y haber experimentado tres desplazamientos forzados (dos de ellos por inundaciones y otro por la violencia que permea el territorio), menciona que su lugar en el mundo es La Dulzura.  
