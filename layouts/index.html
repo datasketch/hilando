@@ -37,7 +37,7 @@ index $communities 0 }} {{ $communitySlug := printf "/comunidad-focalizada/%s"
   </div>
   <!-- ABOUT THE PROGRAM -->
   <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-20 bg-cultured">
-    <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 text-center">
+    <div class="mx-auto w-11/12 lg:w-10/12 max-w-5xl text-center">
       <p class="text-lg xl:text-xl mb-4">
         Hilando Comunidades surge de una iniciativa del Programa Hilando Vidas y
         Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo
@@ -290,6 +290,13 @@ index $communities 0 }} {{ $communitySlug := printf "/comunidad-focalizada/%s"
         </div>
       </div>
       {{ end }}
+      <div class="text-center mt-12 lg:mt-16">
+        <a
+          class="uppercase text-white py-2 px-6 xl:text-lg bg-rose"
+          href='{{ relref . "territorios/_index.md" }}'
+          >Conoce Más</a
+        >
+      </div>
     </div>
   </div>
   <input
