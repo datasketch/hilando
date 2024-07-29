@@ -38,26 +38,40 @@ function filterData() {
   state.filteredData = orderBy(originalData, 'id', 'desc');
 
   if (hasMunicipioFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.municipio.includes(item.municipio));
+    state.filteredData = state.filteredData.filter((item) =>
+      filters.municipio.includes(item.municipio),
+    );
   }
 
   if (hasComunidadFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.comunidad.includes(item.comunidad_focalizada));
+    state.filteredData = state.filteredData.filter((item) =>
+      filters.comunidad.includes(item.comunidad_focalizada),
+    );
   }
 
   if (hasTipoFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.tipo.includes(item['tipo_multimedia']));
+    state.filteredData = state.filteredData.filter((item) =>
+      filters.tipo.includes(item['tipo_multimedia']),
+    );
   }
 
   if (hasQueryFilter) {
-    state.filteredData = state.filteredData.filter((item) => item.nombre_galeria?.toLowerCase().includes(filters.query.toLowerCase()) || item.titulo?.toLowerCase().includes(filters.query.toLowerCase()));
+    state.filteredData = state.filteredData.filter(
+        (item) =>
+          item.nombre_galeria
+              ?.toLowerCase()
+              .includes(filters.query.toLowerCase()) ||
+        item.titulo?.toLowerCase().includes(filters.query.toLowerCase()),
+    );
   }
 
   // state.filteredData = orderBy(state.filteredData, 'id', 'desc');
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => {
-    renderMultimedia(multimedia, item, item.type);
-  });
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach(
+      (item) => {
+        renderMultimedia(multimedia, item, item.type);
+      },
+  );
 
   pagination.insertAdjacentHTML(
       'beforeend',
@@ -101,13 +115,17 @@ filters.addEventListener('click', function(e) {
     panels[id].style.padding = '0px 24px 0px 24px';
     panels[id].style.overflowY = 'hidden';
     images[id].style.transform = 'rotate(0deg)';
-    panels[id].querySelectorAll('input').forEach((input) => input.setAttribute('disabled', 'true'));
+    panels[id]
+        .querySelectorAll('input')
+        .forEach((input) => input.setAttribute('disabled', 'true'));
   } else {
     panels[id].style.maxHeight = 193 + 'px';
     panels[id].style.padding = '16px 24px 8px 24px';
     panels[id].style.overflowY = 'scroll';
     images[id].style.transform = 'rotate(90deg)';
-    panels[id].querySelectorAll('input').forEach((input) => input.removeAttribute('disabled'));
+    panels[id]
+        .querySelectorAll('input')
+        .forEach((input) => input.removeAttribute('disabled'));
   }
 });
 
@@ -154,10 +172,14 @@ multimedia.addEventListener('click', function(e) {
     spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
-    direction: 'vertical',
+    direction: window.innerWidth >= 1024 ? 'vertical' : 'horizontal',
 
     // Responsive breakpoints
     breakpoints: {
+      0: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
       1024: {
         slidesPerView: 5,
         spaceBetween: 12,
@@ -214,7 +236,6 @@ search.addEventListener('input', (e) => {
   state.filters.query = e.target.value;
   filterData();
 });
-
 
 window.addEventListener('load', () => {
   filterData();

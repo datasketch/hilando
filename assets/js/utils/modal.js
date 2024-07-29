@@ -103,7 +103,7 @@ export default class Modal {
           </button>
           <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
-              <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}" style="max-width: 71px;">
+              <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}">
                 <!-- Slider main container -->
                 <button class="swiper-button-prev-events" aria-label="Imagen anterior">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
@@ -168,7 +168,7 @@ export default class Modal {
           </button>
           <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
-              <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}" style="max-width: 71px;">
+              <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}">
                 <!-- Slider main container -->
                 <button class="swiper-button-prev-events" aria-label="Imagen anterior">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
@@ -183,6 +183,9 @@ export default class Modal {
                 <button class="swiper-button-next-events" aria-label="Imagen siguiente">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                 </button>
+                <div>
+                  <p class="event__modal-paragraph--mobile">${this.data.descripcion || ''}</p>
+                </div>
               </div>
               <div class="event__modal-right" style="max-width: 622px;">
                 <div class="event__modal--space-y-5">
@@ -214,7 +217,7 @@ export default class Modal {
                   </div>
                 </div>
                 <div>
-                  <p>${this.data.descripcion || ''}</p>
+                  <p class="event__modal-paragraph--desktop">${this.data.descripcion || ''}</p>
                 </div>
               </div>
             </div>

@@ -91,6 +91,8 @@ module.exports = {
         'event__modal-italic',
         'event__modal--text-purple',
         'event__button',
+        'event__modal-paragraph--mobile',
+        'event__modal-paragraph--desktop',
         'swiper__image--thumbs',
         'swiper__image--multimedia',
         'swiperThumbs--events',

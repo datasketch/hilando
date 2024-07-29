@@ -127,15 +127,42 @@
 
   /* EVENT MODAL */
   .event__modal-panel {
-    @apply bg-white-2 py-6 pr-14 pl-16;
+    @apply bg-white-2 p-5 lg:py-6 lg:pr-14 lg:pl-16;
   }
 
   .event__modal--flex-justify {
-    @apply flex items-center justify-between;
+    @apply flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between;
   }
 
   .event__modal-left {
-    @apply hidden lg:block w-full h-full relative;
+    @apply w-full h-full relative;
+  }
+
+  .event__modal-left button {
+    @apply hidden;
+  }
+
+  .event__modal-paragraph--desktop {
+     @apply hidden;
+  }
+
+
+  @screen lg {
+    .event__modal-left {
+      max-width: 71px;
+    }
+
+    .event__modal-left button {
+      @apply block;
+    }
+
+    .event__modal-paragraph--mobile {
+      @apply hidden;
+    }
+
+    .event__modal-paragraph--desktop {
+       @apply block;
+    }
   }
 
   .event__modal-right {
