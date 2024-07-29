@@ -37,7 +37,7 @@ index $communities 0 }} {{ $communitySlug := printf "/comunidad-focalizada/%s"
   </div>
   <!-- ABOUT THE PROGRAM -->
   <div class="lg:col-start-1 lg:col-end-13 py-16 lg:py-20 bg-cultured">
-    <div class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 text-center">
+    <div class="mx-auto w-11/12 lg:w-10/12 max-w-5xl text-center">
       <p class="text-lg xl:text-xl mb-4">
         Hilando Comunidades surge de una iniciativa del Programa Hilando Vidas y
         Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo
@@ -224,6 +224,78 @@ index $communities 0 }} {{ $communitySlug := printf "/comunidad-focalizada/%s"
             </div>
           </div>
         </div>
+      </div>
+      {{ if $selectedCommunity.comentarios_punto_sole }}
+      <div
+        class="padlet-embed"
+        style="
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 2px;
+          box-sizing: border-box;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+          background: #f4f4f4;
+        "
+      >
+        <p style="padding: 0; margin: 0">
+          <iframe
+            src="{{ $selectedCommunity.comentarios_punto_sole }}"
+            frameborder="0"
+            allow="camera;microphone;geolocation"
+            style="
+              width: 100%;
+              height: 608px;
+              display: block;
+              padding: 0;
+              margin: 0;
+            "
+          ></iframe>
+        </p>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin: 0;
+            height: 28px;
+          "
+        >
+          <a
+            href="https://padlet.com?ref=embed"
+            style="
+              display: block;
+              flex-grow: 0;
+              margin: 0;
+              border: none;
+              padding: 0;
+              text-decoration: none;
+            "
+            target="_blank"
+            ><div style="display: flex; align-items: center">
+              <img
+                src="https://padlet.net/embeds/made_with_padlet_2022.png"
+                width="114"
+                height="28"
+                style="
+                  padding: 0;
+                  margin: 0;
+                  background: 0 0;
+                  border: none;
+                  box-shadow: none;
+                "
+                alt="Hecho con Padlet"
+              /></div
+          ></a>
+        </div>
+      </div>
+      {{ end }}
+      <div class="text-center mt-12 lg:mt-16">
+        <a
+          class="uppercase text-white py-2 px-6 xl:text-lg bg-rose"
+          href='{{ relref . "territorios/_index.md" }}'
+          >Conoce Más</a
+        >
       </div>
       {{ if $selectedCommunity.comentarios_punto_sole }}
       <div
