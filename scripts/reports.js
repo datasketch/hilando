@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const puppeteer = require('puppeteer');
 const trrs = require('../data/territorios.json');
-const communityData = require('../data/comunidades-focalizadas.json');
+const communityData = require('../data/comunidades_focalizadas.json');
 
 const slugMunicipalityNames = trrs.map((trr) => trr.municipio.toLowerCase().replace(/\s/g, '-').normalize('NFD').replace(/[\u0300-\u036f]/g, ''));
 
