@@ -118,6 +118,9 @@ export default class Modal {
                 <button class="swiper-button-next-events" aria-label="Imagen siguiente">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                 </button>
+                <div>
+                  <p class="event__modal-paragraph--mobile">${this.data.descripcion || ''}</p>
+                </div>
               </div>
               <div class="event__modal-right" style="max-width: 622px;">
                 <div class="event__modal--space-y-5">
@@ -149,7 +152,7 @@ export default class Modal {
                   </div>
                 </div>
                 <div>
-                  <p>${this.data.descripcion || ''}</p>
+                  <p class="event__modal-paragraph--desktop">${this.data.descripcion || ''}</p>
                 </div>
               </div>
             </div>
