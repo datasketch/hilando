@@ -1,68 +1,4 @@
-import {parseISO, addDays, format} from 'date-fns';
-
-const months = {
-  enero: '01',
-  febrero: '02',
-  marzo: '03',
-  abril: '04',
-  mayo: '05',
-  junio: '06',
-  julio: '07',
-  agosto: '08',
-  septiembre: '09',
-  octubre: '10',
-  noviembre: '11',
-  diciembre: '12',
-};
-
-function addLeadingZero(num) {
-  return num.toString().padStart(2, '0');
-}
-
-function getGoogleCalendar(data) {
-  const gcURL = new URL('https://calendar.google.com/calendar/render');
-  const startStr = data.start.replace(/-/g, '');
-  const endStr = data.end.replace(/-/g, '');
-  gcURL.searchParams.append('action', 'TEMPLATE');
-  gcURL.searchParams.append('text', data.name);
-  gcURL.searchParams.append('dates', `${startStr}/${endStr}`);
-  gcURL.searchParams.append('details', data.description || '');
-  return gcURL.toString();
-}
-
-function createCalendar(event) {
-  if (!event.dia_inicio) return;
-  const year = new Date().getFullYear();
-  const month = months[event['mes'].toLowerCase().trim()];
-  const startDay = Number(event.dia_inicio);
-  const startDate = parseISO(`${year}-${month}-${addLeadingZero(startDay)}`);
-  let endDate;
-  if ((event.dia_finalizacion && startDay === Number(event.dia_finalizacion)) || !event.dia_finalizacion) {
-    endDate = addDays(startDate, 1);
-  } else {
-    endDate = parseISO(`${year}-${month}-${addLeadingZero(Number(event.dia_finalizacion))}`);
-  }
-  return {
-    gc: getGoogleCalendar({
-      name: event.nombre_evento,
-      start: format(startDate, 'yyyy-MM-dd'),
-      end: format(endDate, 'yyyy-MM-dd'),
-      description: event.descripcion,
-    }),
-    ics: {
-      title: event.nombre_evento,
-      description: event.descripcion || '',
-      start: [startDate.getFullYear(), startDate.getMonth() + 1, startDate.getDate()],
-      end: [endDate.getFullYear(), endDate.getMonth() + 1, endDate.getDate()],
-      status: 'CONFIRMED',
-      busyStatus: 'BUSY',
-    },
-  };
-}
-
 export const renderEvent = (parentEl, data, classNames = '') => {
-  const calendar = createCalendar(data);
-  // ${calendar ? `<p><button class="download-ics underline" data-ics='${JSON.stringify(calendar.ics || {})}'>Descargar .ics</button></p>` : ''}
   const html = `
     <div class=${`'event__item ${classNames}'`} style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
     <div class="event__container-left">
@@ -75,20 +11,20 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             </span>
             <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${data.nombre_evento}">
         </h3>
-        <div class="text-purple">
+        <div class="text-purple flex items-center gap-x-1">
             <p class="font-bold text-xl xl:text-2xl">
                 ${data.dia_inicio || ''}
             </p>
-            <p class="-mt-2">  
-            ${data.mes}
+            <p>  
+                ${data.mes}
+            </p>
+            <p>  
+                ${data.anio}
             </p>
         </div>
         <p class="text-lg xl:text-xl">
             ${data.descripcion && data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : 'No hay descripcion'}
         </p>
-        <div class="flex space-x-2">
-            ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
-        </div>
         <button data-id="${data.id}" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
