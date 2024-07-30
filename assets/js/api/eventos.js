@@ -3,7 +3,6 @@ import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Swiper, {
   Navigation,
-  Pagination,
   Thumbs,
   Autoplay,
   FreeMode,
@@ -208,7 +207,7 @@ event.addEventListener('click', function(e) {
     spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
-    direction: 'vertical',
+    direction: window.innerWidth >= 1024 ? 'vertical' : 'horizontal',
 
     // Responsive breakpoints
     breakpoints: {
@@ -247,6 +246,7 @@ event.addEventListener('click', function(e) {
 events?.addEventListener('click', function(e) {
   // get id
   const id = e.target.closest('button')?.dataset.id;
+  console.log(id);
 
   // closure protection
   if (!id) return;

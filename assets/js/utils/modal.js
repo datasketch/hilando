@@ -104,7 +104,8 @@ export default class Modal {
           <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
               <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}">
-                <!-- Slider main container -->
+              <div class="event__modal-controls">
+               <!-- Slider main container -->
                 <button class="swiper-button-prev-events" aria-label="Imagen anterior">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                 </button>
@@ -118,9 +119,8 @@ export default class Modal {
                 <button class="swiper-button-next-events" aria-label="Imagen siguiente">
                   <img src="/images/public/right-arrow.svg" alt="arrow slider" />
                 </button>
-                <div>
-                  <p class="event__modal-paragraph--mobile">${this.data.descripcion || ''}</p>
-                </div>
+              </div>
+                <p class="event__modal-paragraph--mobile">${this.data.descripcion || ''}</p>
               </div>
               <div class="event__modal-right" style="max-width: 622px;">
                 <div class="event__modal--space-y-5">
@@ -172,20 +172,22 @@ export default class Modal {
           <div class="event__modal-panel">
             <div class="event__modal--flex-justify">
               <div class="event__modal-left ${this.data.foto.length > 1 ? 'visible' : 'invisible'}">
-                <!-- Slider main container -->
-                <button class="swiper-button-prev-events" aria-label="Imagen anterior">
-                  <img src="/images/public/right-arrow.svg" alt="arrow slider" />
-                </button>
-                <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
+                <div class="event__modal-controls">
+                  <!-- Slider main container -->
+                  <button class="swiper-button-prev-events" aria-label="Imagen anterior">
+                    <img src="/images/public/right-arrow.svg" alt="arrow slider" />
+                  </button>
+                  <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events" style="max-height: 350.27px;">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      ${this.data.foto.length > 0 ? this.#renderImageSwiperSlide(this.data.foto, this.data.titulo_multimedia, 'thumbs') : this.#renderImageSwiperSlide([this.data.thumbnail], this.data.nombre_galeria, 'thumbs')}
+                    </div>
                   </div>
+                  <button class="swiper-button-next-events" aria-label="Imagen siguiente">
+                    <img src="/images/public/right-arrow.svg" alt="arrow slider" />
+                  </button>
                 </div>
-                <button class="swiper-button-next-events" aria-label="Imagen siguiente">
-                  <img src="/images/public/right-arrow.svg" alt="arrow slider" />
-                </button>
                 <div>
                   <p class="event__modal-paragraph--mobile">${this.data.descripcion || ''}</p>
                 </div>

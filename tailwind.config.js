@@ -93,6 +93,7 @@ module.exports = {
         'event__button',
         'event__modal-paragraph--mobile',
         'event__modal-paragraph--desktop',
+        'event__modal-controls',
         'swiper__image--thumbs',
         'swiper__image--multimedia',
         'swiperThumbs--events',

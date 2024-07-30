@@ -138,21 +138,20 @@
     @apply w-full h-full relative;
   }
 
-  .event__modal-left button {
-    @apply hidden;
+  .event__modal-controls {
+    @apply flex items-center gap-x-4
   }
 
   .event__modal-paragraph--desktop {
      @apply hidden;
   }
 
-
   @screen lg {
     .event__modal-left {
       max-width: 71px;
     }
 
-    .event__modal-left button {
+    .event__modal-controls {
       @apply block;
     }
 
@@ -360,20 +359,35 @@
     transform: scale(1.1) !important;
   }
 
-  .swiper-button-prev-events {
-    @apply absolute -top-8 transform -translate-x-1/2 left-1/2;
-  }
-
+  .swiper-button-prev-events,
   .swiper-button-next-events {
-    @apply absolute -bottom-6 transform -translate-x-1/2 left-1/2;
+    @apply flex-shrink-0;
   }
 
-  .swiper-button-prev-events img {
-    @apply w-5 transform -rotate-90;
-  }
+    .swiper-button-prev-events img {
+      @apply w-4 transform -translate-y-2 rotate-180;
+    }
 
-  .swiper-button-next-events img {
-    @apply w-5 transform rotate-90;
+    .swiper-button-next-events img {
+      @apply w-4 transform -translate-y-2;
+    }
+
+  @screen lg {
+    .swiper-button-prev-events {
+      @apply absolute -top-8 transform -translate-x-1/2 left-1/2;
+    }
+
+    .swiper-button-next-events {
+      @apply absolute -bottom-6 transform -translate-x-1/2 left-1/2;
+    }
+
+    .swiper-button-prev-events img {
+      @apply w-5 transform -translate-x-1 translate-y-0 -rotate-90;
+    }
+
+    .swiper-button-next-events img {
+      @apply w-5 transform -translate-x-1 translate-y-0 rotate-90;
+    }
   }
 
   /* MENU */
