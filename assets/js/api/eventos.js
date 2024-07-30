@@ -1,14 +1,10 @@
 /* eslint-disable no-unused-vars */
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
-import Swiper, {
-  Navigation,
-  Thumbs,
-  Autoplay,
-  FreeMode,
-} from 'swiper';
+import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
 import * as ics from 'ics';
 import Modal from '../utils/modal';
+import {normalize} from 'js/utils';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -107,7 +103,7 @@ function filterData() {
   }
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter((item) =>
-      item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()),
+      normalize(item.nombre_evento).includes(normalize(filters.query)),
     );
   }
 

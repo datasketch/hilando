@@ -3,6 +3,7 @@ import {renderMultimedia} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Modal from '../utils/modal';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
+import {normalize} from 'js/utils';
 const orderBy = require('lodash.orderby');
 
 // ELEMENTS
@@ -58,10 +59,8 @@ function filterData() {
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter(
         (item) =>
-          item.nombre_galeria
-              ?.toLowerCase()
-              .includes(filters.query.toLowerCase()) ||
-        item.titulo?.toLowerCase().includes(filters.query.toLowerCase()),
+          normalize(item.nombre_galeria).includes(normalize(filters.query)) ||
+        normalize(item.titulo).includes(normalize(filters.query)),
     );
   }
 
