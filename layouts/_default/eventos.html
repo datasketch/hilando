@@ -81,9 +81,14 @@
                 alt="">
             </div>
           </div>
-          <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black text-space-cadet">
-            Filtros
-          </h3>
+          <div class="mb-4 lg:mb-5 flex items-center justify-between">
+            <h3 class="text-xl lg:text-2xl font-black text-space-cadet">
+              Filtros
+            </h3>
+            <button id="reset" class="text-lg">
+              Reestablecer
+            </button>
+          </div>
           <!-- PARENT ELEMENT FILTERS -->
           <div class="filters space-y-8">
             <!-- TIPO EVENTO -->
@@ -210,6 +215,15 @@
         </div>
       </div>
       <div class="lg:col-start-4 lg:col-end-13">
+        <div class="mb-10 flex justify-end">
+          <select id="orderBy" class="bg-space-cadet text-white py-2 px-6 uppercase">
+            <option value="0">Ordenar por</option>
+            <option value="1">Más reciente</option>
+            <option value="2">Más antiguo</option>
+            <option value="3">A - Z</option>
+            <option value="4">Z - A</option>
+          </select>
+        </div>
         <div class="event"></div>
         <div class="pagination text-center mt-10 lg:mt-20"></div>
       </div>

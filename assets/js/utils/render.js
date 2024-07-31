@@ -16,10 +16,10 @@ export const renderEvent = (parentEl, data, classNames = '') => {
                 ${data.dia_inicio || ''}
             </p>
             <p>  
-                ${data.mes}
+                ${data.mes || ''}
             </p>
             <p>  
-                ${data.anio}
+                ${data.anio || ''}
             </p>
         </div>
         <p class="text-lg xl:text-xl">
