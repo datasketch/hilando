@@ -4,6 +4,7 @@ import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
 import * as ics from 'ics';
 import Modal from '../utils/modal';
+import {normalize} from 'js/utils';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -113,7 +114,7 @@ function filterData() {
   }
   if (hasQueryFilter) {
     state.filteredData = state.filteredData.filter((item) =>
-      item.nombre_evento.toLowerCase().includes(filters.query.toLowerCase()),
+      normalize(item.nombre_evento).includes(normalize(filters.query)),
     );
   }
 
@@ -301,7 +302,7 @@ event.addEventListener('click', function(e) {
     spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
-    direction: 'vertical',
+    direction: window.innerWidth >= 1024 ? 'vertical' : 'horizontal',
 
     // Responsive breakpoints
     breakpoints: {
@@ -340,6 +341,7 @@ event.addEventListener('click', function(e) {
 events?.addEventListener('click', function(e) {
   // get id
   const id = e.target.closest('button')?.dataset.id;
+  console.log(id);
 
   // closure protection
   if (!id) return;
@@ -378,10 +380,14 @@ events?.addEventListener('click', function(e) {
     spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
-    direction: 'vertical',
+    direction: window.innerWidth >= 1024 ? 'vertical' : 'horizontal',
 
     // Responsive breakpoints
     breakpoints: {
+      0: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      },
       1024: {
         slidesPerView: 5,
         spaceBetween: 12,
