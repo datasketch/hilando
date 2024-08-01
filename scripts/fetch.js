@@ -20,7 +20,7 @@ async function run() {
   const multimedia = await req.get('/multimedia?limit=500');
 
   fs.writeFile(
-      getFilePath('comunidades-focalizadas.json'),
+      getFilePath('comunidades_focalizadas.json'),
       JSON.stringify(communities.data.list),
   );
   fs.writeFile(

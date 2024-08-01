@@ -1,9 +1,5 @@
-{{ define "main" }}
-{{ $fecha := slice }}
-{{ $tema := slice }}
-{{ $municipio := slice }}
-{{ $region := slice }}
-{{ $tipo := slice }}
+{{ define "main" }} {{ $fecha := slice }} {{ $tema := slice }} {{ $municipio :=
+slice }} {{ $region := slice }} {{ $tipo := slice }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div
     class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
@@ -51,87 +47,185 @@
     <div class="px-9">
       <div class="flex flex-col gap-y-8 lg:flex-row lg:gap-x-12 lg:items-start">
         <div class="lg:w-2/12 lg:sticky lg:top-28">
-          <div class="flex items-center justify-between">
+          <div>
+            <p class="text-space-cadet font-black text-xl lg:text-2xl"
+              >Buscar</p
+            >
+            <div class="relative mt-4">
+              <input
+                id="search"
+                class="w-full py-3 px-5 focus:outline-none rounded-xl border-space-cadet border"
+                type="text"
+                placeholder="Palabras clave"
+              />
+              <img
+                class="absolute right-3 top-1/2 transform -translate-y-1/2"
+                src="/images/public/search-icon.svg"
+                alt="search icon"
+              />
+            </div>
+          </div>
+          <div class="mt-8 flex items-center justify-between">
             <h3 class="text-xl lg:text-2xl font-semibold">Filtros</h3>
             <button class="text-lg lg:text-xl">Reestablecer</button>
           </div>
           <div class="filters mt-4 space-y-2">
             <div>
-              <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
+              <button
+                class="accordion accordion--purple"
+                data-tab="0"
+                style="border: 1px solid #babbc9"
+              >
                 Fecha
-                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+                <img
+                  class="accordion--images"
+                  src="/images/eventos/arrow-right-white.svg"
+                  alt="flecha a la derecha"
+                />
               </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
+              <div class="panel" style="border: 1px solid #babbc9">
                 {{ range sort (uniq $fecha) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                <label
+                  class="filter-label focus-within:outline-black"
+                  for="{{ . }}"
+                >
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="fecha" id="{{ . }}" value="{{ . }}" disabled>
+                    type="checkbox"
+                    name="fecha"
+                    id="{{ . }}"
+                    value="{{ . }}"
+                    disabled
+                  />
                 </label>
                 {{ end }}
               </div>
             </div>
             <div>
-              <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+              <button
+                class="accordion accordion--purple"
+                data-tab="1"
+                style="border: 1px solid #babbc9"
+              >
                 Tema
-                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+                <img
+                  class="accordion--images"
+                  src="/images/eventos/arrow-right-white.svg"
+                  alt="flecha a la derecha"
+                />
               </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
+              <div class="panel" style="border: 1px solid #babbc9">
                 {{ range sort (uniq $tema) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                <label
+                  class="filter-label focus-within:outline-black"
+                  for="{{ . }}"
+                >
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="tema" id="{{ . }}" value="{{ . }}" disabled>
+                    type="checkbox"
+                    name="tema"
+                    id="{{ . }}"
+                    value="{{ . }}"
+                    disabled
+                  />
                 </label>
                 {{ end }}
               </div>
             </div>
             <div>
-              <button class="accordion accordion--purple" data-tab="2" style="border: 1px solid #BABBC9;">
+              <button
+                class="accordion accordion--purple"
+                data-tab="2"
+                style="border: 1px solid #babbc9"
+              >
                 Municipio
-                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+                <img
+                  class="accordion--images"
+                  src="/images/eventos/arrow-right-white.svg"
+                  alt="flecha a la derecha"
+                />
               </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
+              <div class="panel" style="border: 1px solid #babbc9">
                 {{ range sort (uniq $municipio) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                <label
+                  class="filter-label focus-within:outline-black"
+                  for="{{ . }}"
+                >
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}" disabled>
+                    type="checkbox"
+                    name="municipio"
+                    id="{{ . }}"
+                    value="{{ . }}"
+                    disabled
+                  />
                 </label>
                 {{ end }}
               </div>
             </div>
             <div>
-              <button class="accordion accordion--purple" data-tab="3" style="border: 1px solid #BABBC9;">
+              <button
+                class="accordion accordion--purple"
+                data-tab="3"
+                style="border: 1px solid #babbc9"
+              >
                 Región
-                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+                <img
+                  class="accordion--images"
+                  src="/images/eventos/arrow-right-white.svg"
+                  alt="flecha a la derecha"
+                />
               </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
+              <div class="panel" style="border: 1px solid #babbc9">
                 {{ range sort (uniq $region) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                <label
+                  class="filter-label focus-within:outline-black"
+                  for="{{ . }}"
+                >
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="region" id="{{ . }}" value="{{ . }}" disabled>
+                    type="checkbox"
+                    name="region"
+                    id="{{ . }}"
+                    value="{{ . }}"
+                    disabled
+                  />
                 </label>
                 {{ end }}
               </div>
             </div>
             <div>
-              <button class="accordion accordion--purple" data-tab="4" style="border: 1px solid #BABBC9;">
-                Tipo de publicación
-                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              <button
+                class="accordion accordion--purple"
+                data-tab="4"
+                style="border: 1px solid #babbc9"
+              >
+                Autor
+                <img
+                  class="accordion--images"
+                  src="/images/eventos/arrow-right-white.svg"
+                  alt="flecha a la derecha"
+                />
               </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
+              <div class="panel" style="border: 1px solid #babbc9">
                 {{ range sort (uniq $tipo) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                <label
+                  class="filter-label focus-within:outline-black"
+                  for="{{ . }}"
+                >
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="tipo" id="{{ . }}" value="{{ . }}" disabled>
+                    type="checkbox"
+                    name="tipo"
+                    id="{{ . }}"
+                    value="{{ . }}"
+                    disabled
+                  />
                 </label>
                 {{ end }}
               </div>
@@ -180,8 +274,7 @@
     </div>
   </div>
 </div>
-{{ end }}
-{{ define "js" }}
-{{ $noticias := resources.Get "js/api/noticias.js" | js.Build (dict "minify" hugo.IsProduction)}}
+{{ end }} {{ define "js" }} {{ $noticias := resources.Get "js/api/noticias.js" |
+js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $noticias.Permalink }}"></script>
 {{ end }}

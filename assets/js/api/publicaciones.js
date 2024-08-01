@@ -1,5 +1,6 @@
 import {renderPublicaciones} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
+import {normalize} from 'js/utils';
 
 // ELEMENTS
 const filters = document.querySelector('.filters');
@@ -31,14 +32,20 @@ function filterData() {
   state.filteredData = originalData;
 
   if (hasTemaFilter) {
-    state.filteredData = state.filteredData.filter((item) => filters.tema.includes(item.tema));
+    state.filteredData = state.filteredData.filter((item) =>
+      filters.tema.includes(item.tema),
+    );
   }
 
   if (hasQueryFilter) {
-    state.filteredData = state.filteredData.filter((item) => item.nombre_publicacion.toLowerCase().includes(filters.query.toLowerCase()));
+    state.filteredData = state.filteredData.filter((item) =>
+      normalize(item.nombre_publicacion).includes(normalize(filters.query)),
+    );
   }
 
-  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach((item) => renderPublicaciones(publicaciones, item));
+  paginate(state.page, state.itemsPerPagination, state.filteredData).forEach(
+      (item) => renderPublicaciones(publicaciones, item),
+  );
 
   pagination.insertAdjacentHTML(
       'beforeend',
@@ -82,13 +89,17 @@ filters.addEventListener('click', function(e) {
     panels[id].style.padding = '0px 24px 0px 24px';
     panels[id].style.overflowY = 'hidden';
     images[id].style.transform = 'rotate(0deg)';
-    panels[id].querySelectorAll('input').forEach((input) => input.setAttribute('disabled', 'true'));
+    panels[id]
+        .querySelectorAll('input')
+        .forEach((input) => input.setAttribute('disabled', 'true'));
   } else {
     panels[id].style.maxHeight = 193 + 'px';
     panels[id].style.padding = '16px 24px 8px 24px';
     panels[id].style.overflowY = 'scroll';
     images[id].style.transform = 'rotate(90deg)';
-    panels[id].querySelectorAll('input').forEach((input) => input.removeAttribute('disabled'));
+    panels[id]
+        .querySelectorAll('input')
+        .forEach((input) => input.removeAttribute('disabled'));
   }
 });
 
