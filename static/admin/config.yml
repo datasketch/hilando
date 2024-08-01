@@ -7,7 +7,7 @@ media_folder: "static/images/uploads" # Media files will be stored in the repo u
 
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
-locale: 'es'
+locale: "es"
 
 # NOTICIAS
 collections:
@@ -16,11 +16,100 @@ collections:
     folder: "content/noticias" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    filter: {field: "cms", value: true}
+    filter: { field: "cms", value: true }
     fields: # The fields for each document, usually in front matter
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-      - {label: "Imagen", name: "image", widget: "image"}
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "CMS", name: "cms", widget: "hidden", default: true}
-      - {label: "Contenido", name: "body", widget: "markdown"}
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - {
+          label: "Tema",
+          name: "topic",
+          widget: "select",
+          options:
+            [
+              "ambiental",
+              "cultural",
+              "económico",
+              "psicosocial",
+              "deportivo",
+              "perfiles",
+              "formación",
+            ],
+        }
+      - {
+          label: "Región",
+          name: "region",
+          widget: "select",
+          options:
+            [
+              "Bajo Cauca y Nordeste Antioqueño",
+              "Montes de María",
+              "Pacífico Medio, Alto Patía y Norte del Cauca",
+            ],
+        }
+      - {
+          label: "Municipio",
+          name: "municipality",
+          widget: "select",
+          options:
+            [
+              "Anorí",
+              "Cáceres",
+              "El Bagre",
+              "Tarazá",
+              "Valdivia",
+              "Chalán",
+              "Colosó",
+              "San Jacinto",
+              "San Juan Nepomuceno",
+              "Toluviejo",
+              "Buenaventura",
+              "Buenos Aires",
+              "Cajibío",
+              "Piendamó",
+              "Pradera",
+              "Santander de Quilichao",
+              "Toribío",
+            ],
+        }
+      - {
+          label: "Autor",
+          name: "author",
+          widget: "select",
+          options:
+            [
+              "Anorí Estéreo",
+              "Jagua Comunicaciones",
+              "Colectivo Gente y Bosques",
+              "Emisora la Caucana",
+              "Semillero Protegiendo lo nuestro",
+              "CODENA",
+              "Eleggua comunicaciones",
+              "ASOM",
+              "Corporación Borondo Bio",
+              "Casa Zambo",
+              "Nasa Stereo",
+              "Las Casitas",
+              "EL BONCHE",
+              "NP Comunicaciones",
+              "Fundación Tierra Montemariana",
+              "Comunicarte",
+              "San Pedro Estéreo",
+              "Colectivo Eco-Ambiental San Pedro",
+              "Programa Hilando Vidas y Esperanza",
+              "Tejido de Comunicaciones ACIN",
+              "Nuevos cubrimientos 2024",
+              "Emisora pscitai wam",
+              "Emisora San Isidro",
+              "Emisora Namuy Urewi Wam",
+              "Sro wam",
+              "Telemontes de María",
+              "Tele San Jacinto",
+              "Colectivo de Comunicaciones Casa de Piedra",
+              "Colectivo de Comunicaciones Capiro",
+              "Digital San Jacinto Radio",
+            ],
+        }
+      - { label: "CMS", name: "cms", widget: "hidden", default: true }
+      - { label: "Contenido", name: "body", widget: "markdown" }
