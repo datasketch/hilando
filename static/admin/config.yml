@@ -28,13 +28,13 @@ collections:
           widget: "select",
           options:
             [
-              "ambiental",
-              "cultural",
-              "económico",
-              "psicosocial",
-              "deportivo",
-              "perfiles",
-              "formación",
+              "Ambiental",
+              "Cultural",
+              "Económico",
+              "Psicosocial",
+              "Deportivo",
+              "Perfiles",
+              "Formación",
             ],
         }
       - {
