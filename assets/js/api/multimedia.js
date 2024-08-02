@@ -57,14 +57,10 @@ function filterData() {
   }
 
   if (hasQueryFilter) {
-    state.filteredData = state.filteredData.filter(
-        (item) =>
-          normalize(item.nombre_galeria).includes(normalize(filters.query)) ||
-        normalize(item.titulo).includes(normalize(filters.query)),
+    state.filteredData = state.filteredData.filter((item) =>
+      normalize(item.nombre_galeria).includes(normalize(filters.query)),
     );
   }
-
-  // state.filteredData = orderBy(state.filteredData, 'id', 'desc');
 
   paginate(state.page, state.itemsPerPagination, state.filteredData).forEach(
       (item) => {
