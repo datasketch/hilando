@@ -1,4 +1,5 @@
 import {parseISO, addDays, format} from 'date-fns';
+import {getYouTubeVideoID} from '.';
 
 const months = {
   enero: '01',
@@ -37,10 +38,15 @@ function createCalendar(event) {
   const startDay = Number(event.dia_inicio);
   const startDate = parseISO(`${year}-${month}-${addLeadingZero(startDay)}`);
   let endDate;
-  if ((event.dia_finalizacion && startDay === Number(event.dia_finalizacion)) || !event.dia_finalizacion) {
+  if (
+    (event.dia_finalizacion && startDay === Number(event.dia_finalizacion)) ||
+    !event.dia_finalizacion
+  ) {
     endDate = addDays(startDate, 1);
   } else {
-    endDate = parseISO(`${year}-${month}-${addLeadingZero(Number(event.dia_finalizacion))}`);
+    endDate = parseISO(
+        `${year}-${month}-${addLeadingZero(Number(event.dia_finalizacion))}`,
+    );
   }
   return {
     gc: getGoogleCalendar({
@@ -52,7 +58,11 @@ function createCalendar(event) {
     ics: {
       title: event.nombre_evento,
       description: event.descripcion || '',
-      start: [startDate.getFullYear(), startDate.getMonth() + 1, startDate.getDate()],
+      start: [
+        startDate.getFullYear(),
+        startDate.getMonth() + 1,
+        startDate.getDate(),
+      ],
       end: [endDate.getFullYear(), endDate.getMonth() + 1, endDate.getDate()],
       status: 'CONFIRMED',
       busyStatus: 'BUSY',
@@ -73,7 +83,9 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             <span class="event__nombre">
             ${data.nombre_evento}
             </span>
-            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${data.nombre_evento}">
+            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${
+  data.nombre_evento
+}">
         </h3>
         <div class="text-purple">
             <p class="font-bold text-xl xl:text-2xl">
@@ -84,15 +96,28 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             </p>
         </div>
         <p class="text-lg xl:text-xl">
-            ${data.descripcion && data.descripcion.length >= 150 ? data.descripcion.slice(0, 150) + ' ...' : 'No hay descripcion'}
+            ${
+              data.descripcion && data.descripcion.length >= 150 ?
+                data.descripcion.slice(0, 150) + ' ...' :
+                'No hay descripcion'
+}
         </p>
         <div class="flex space-x-2">
-            ${calendar ? `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` : ''}
+            ${
+              calendar ?
+                `<p><a class="underline" target="_blank" href="${calendar.gc}">Agregar a Google Calendar</a></p>` :
+                ''
+}
         </div>
-        <button data-id="${data.id}" class="event__button" style="background-color: #C5296A;">Leer más</button>
+        <button data-id="${
+  data.id
+}" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
-        ${data.thumbnail && `<img class="event__image" src="${data.thumbnail}" alt="" style="height: 365px;" />`}
+        ${
+  data.thumbnail &&
+          `<img class="event__image" src="${data.thumbnail}" alt="" style="height: 365px;" />`
+}
     </div>
   </div>
     `;
@@ -119,10 +144,19 @@ export const renderPublicaciones = (parentEl, data) => {
         </p>
         <div>
           <p class="publicaciones__fecha publicaciones--mt-4">
-              Fecha: ${new Intl.DateTimeFormat('es-CO', {dateStyle: 'full'}).format(new Date(data.fecha))}
+              Fecha: ${new Intl.DateTimeFormat('es-CO', {
+    dateStyle: 'full',
+  }).format(new Date(data.fecha))}
           </p>
           <div class="publicaciones__text-right publicaciones--mt-2">
-          ${files ? files.map((f) => `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #C5296A;" download="${f.title}" target="_blank">Descargar</a>`) : ''}
+          ${
+            files ?
+              files.map(
+                  (f) =>
+                    `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #C5296A;" download="${f.title}" target="_blank">Descargar</a>`,
+              ) :
+              ''
+}
           </div>
         </div>
     </div>
@@ -132,11 +166,22 @@ export const renderPublicaciones = (parentEl, data) => {
 
 export const renderMultimedia = (parentEl, data, type) => {
   let html = '';
-  if (data['tipo_multimedia'] === 'Video' && type === 'video' || data['tipo_multimedia'] === 'Audio' && type === 'audio') {
+  if (
+    (data['tipo_multimedia'] === 'Video' && type === 'video') ||
+    (data['tipo_multimedia'] === 'Audio' && type === 'audio')
+  ) {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'}">
+            ${
+              data.thumbnail ?
+                `<img class="multimedia__image" src="${
+                  data.thumbnail
+                }" alt="${data.nombre_galeria + 'image'}">` :
+                `<img class="multimedia__image" src="${`https://img.youtube.com/vi/${getYouTubeVideoID(
+                    data.enlace_video_audio[0],
+                )}/hqdefault.jpg`}" alt="${data.nombre_galeria + 'image'}">`
+}
             <button data-id="${data.id}" class="multimedia__button-play">
                 <img src="/images/public/button-play.svg" alt="button play">
             </button>
@@ -164,8 +209,12 @@ export const renderMultimedia = (parentEl, data, type) => {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'}">
-            <button data-id="${data.id}" class="multimedia__button-galeria" href="#" style="background-color: #3A3C6A;">Ver galería</button>
+            <img class="multimedia__image" src="${data.thumbnail}" alt="${
+  data.nombre_galeria + 'image'
+}">
+            <button data-id="${
+  data.id
+}" class="multimedia__button-galeria" href="#" style="background-color: #3A3C6A;">Ver galería</button>
             <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
         </div>
         <div class="multimedia__details">
@@ -177,7 +226,11 @@ export const renderMultimedia = (parentEl, data, type) => {
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                    ${data.municipio || ''} - ${(Array.isArray(data.departamento) ? [...new Set(data.departamento)].join(' - ') : data.departamento) || ''}
+                    ${data.municipio || ''} - ${
+  (Array.isArray(data.departamento) ?
+        [...new Set(data.departamento)].join(' - ') :
+        data.departamento) || ''
+}
                 <p class="text-space-cadet">
                     ${data.comunidad_focalizada || ''}
                 </p>
