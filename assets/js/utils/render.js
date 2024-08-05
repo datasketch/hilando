@@ -1,3 +1,5 @@
+import {getYouTubeVideoID} from '.';
+
 export const renderEvent = (parentEl, data, classNames = '') => {
   const html = `
     <div class=${`'event__item ${classNames}'`} style="background-color: #F0F0F2; box-shadow: 0px 6px 11px #00305766;">
@@ -18,11 +20,9 @@ export const renderEvent = (parentEl, data, classNames = '') => {
                 ${data.dia_inicio || ''}
             </p>
             <p>  
-                ${data.mes || ''}
+            ${data.mes || ''}
             </p>
-            <p>  
-                ${data.anio || ''}
-            </p>
+            <p>${data.anio || ''}</p>
         </div>
         <p class="text-lg xl:text-xl">
             ${
@@ -31,7 +31,9 @@ export const renderEvent = (parentEl, data, classNames = '') => {
                 'No hay descripcion'
 }
         </p>
-        <button data-id="${data.id}" class="event__button" style="background-color: #C5296A;">Leer más</button>
+        <button data-id="${
+  data.id
+}" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
         ${
