@@ -1,5 +1,28 @@
-{{ define "main" }} {{ $fecha := slice }} {{ $tema := slice }} {{ $municipio :=
-slice }} {{ $region := slice }} {{ $tipo := slice }}
+{{ define "main" }} 
+{{ $fecha := slice }}
+{{ $tema := slice }}
+{{ $municipio :=slice }}
+{{ $region := slice }}
+{{ $autor := slice }}
+
+{{ range .Pages }}
+  {{ if .Params.date }}
+  {{ $fecha = $fecha | append .Params.date }}
+  {{ end }}
+  {{ if .Params.topic }}
+  {{ $tema = $tema | append .Params.topic }}
+  {{ end }}
+  {{ if .Params.municipality }}
+  {{ $municipio = $municipio | append .Params.municipality }}
+  {{ end }}
+  {{ if .Params.region }}
+  {{ $region = $region | append .Params.region }}
+  {{ end }}
+  {{ if .Params.author }}
+  {{ $autor = $autor | append .Params.author }}
+  {{ end }}
+{{ end }}
+
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div
     class="relative bg-banner-noticias bg-cover bg-center lg:col-start-1 lg:col-end-13 observer"
@@ -48,9 +71,9 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
       <div class="flex flex-col gap-y-8 lg:flex-row lg:gap-x-12 lg:items-start">
         <div class="lg:w-2/12 lg:sticky lg:top-28">
           <div>
-            <p class="text-space-cadet font-black text-xl lg:text-2xl"
-              >Buscar</p
-            >
+            <p class="text-space-cadet font-black text-xl lg:text-2xl">
+              Buscar
+            </p>
             <div class="relative mt-4">
               <input
                 id="search"
@@ -84,16 +107,16 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
                 />
               </button>
               <div class="panel" style="border: 1px solid #babbc9">
-                {{ range sort (uniq $fecha) "value" "asc" }}
+                {{ range sort (uniq $fecha) "value" "desc" }}
                 <label
                   class="filter-label focus-within:outline-black"
                   for="{{ . }}"
                 >
-                  <span class="text-lg">{{ . }}</span>
+                  <span class="text-lg">{{ . | time.Format ":date_long" }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
                     type="checkbox"
-                    name="fecha"
+                    name="date"
                     id="{{ . }}"
                     value="{{ . }}"
                     disabled
@@ -125,7 +148,7 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
                     type="checkbox"
-                    name="tema"
+                    name="topic"
                     id="{{ . }}"
                     value="{{ . }}"
                     disabled
@@ -157,7 +180,7 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
                     type="checkbox"
-                    name="municipio"
+                    name="municipality"
                     id="{{ . }}"
                     value="{{ . }}"
                     disabled
@@ -212,7 +235,7 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
                 />
               </button>
               <div class="panel" style="border: 1px solid #babbc9">
-                {{ range sort (uniq $tipo) "value" "asc" }}
+                {{ range sort (uniq $autor) "value" "asc" }}
                 <label
                   class="filter-label focus-within:outline-black"
                   for="{{ . }}"
@@ -221,7 +244,7 @@ slice }} {{ $region := slice }} {{ $tipo := slice }}
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
                     type="checkbox"
-                    name="tipo"
+                    name="author"
                     id="{{ . }}"
                     value="{{ . }}"
                     disabled
