@@ -16,6 +16,8 @@ const dataEl = document.querySelector('#data-eventos');
 const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
 const search = document.querySelector('#search');
+const orderBy = document.querySelector('#orderBy');
+const resetBtn = document.querySelector('#reset');
 dataEl.remove();
 
 // init Swiper:
@@ -50,16 +52,18 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const state = {
+let state = {
   originalData: JSON.parse(dataEl.value),
   filteredData: null,
   filters: {
     departamento: [],
     municipio: [],
+    anio: [],
     mes: [],
     tipo: [],
     comunidad: [],
     query: '',
+    orderBy: '0',
   },
   itemsPerPagination: 10,
   page: 1,
@@ -70,10 +74,12 @@ function filterData() {
   const {filters, originalData} = state;
   const hasDepartamentoFilter = !!filters.departamento.length;
   const hasMunicipioFilter = !!filters.municipio.length;
+  const hasAnioFilter = !!filters.anio.length;
   const hasMesFilter = !!filters.mes.length;
   const hasTipoFilter = !!filters.tipo.length;
   const hasComunidadFilter = !!filters.comunidad.length;
   const hasQueryFilter = !!filters.query.length;
+  const hasOrderBy = !!filters.orderBy.length;
   state.filteredData = originalData;
 
   if (hasDepartamentoFilter) {
@@ -84,6 +90,11 @@ function filterData() {
   if (hasMunicipioFilter) {
     state.filteredData = state.filteredData.filter((item) =>
       filters.municipio.includes(item.municipio),
+    );
+  }
+  if (hasAnioFilter) {
+    state.filteredData = state.filteredData.filter((item) =>
+      filters.anio.includes(item.anio),
     );
   }
   if (hasMesFilter) {
@@ -107,11 +118,63 @@ function filterData() {
     );
   }
 
-  paginate(
-      state.page,
-      state.itemsPerPagination,
-      state.filteredData.sort((a, b) => new Date(b.date) - new Date(a.date)),
-  ).forEach((item) => renderEvent(event, item));
+  if (hasOrderBy) {
+    switch (filters.orderBy) {
+      case '0':
+      case '1':
+        state.filteredData = state.filteredData.sort((a, b) => {
+          if (b.anio > a.anio) {
+            return 1;
+          }
+          if (b.anio < a.anio) {
+            return -1;
+          }
+          return 0;
+        });
+        break;
+      case '2':
+        state.filteredData = state.filteredData.sort((a, b) => {
+          if (b.anio < a.anio) {
+            return 1;
+          }
+          if (b.anio > a.anio) {
+            return -1;
+          }
+          return 0;
+        });
+        break;
+      case '3':
+        state.filteredData = state.filteredData.sort((a, b) => {
+          if (a.nombre_evento > b.nombre_evento) {
+            return 1;
+          }
+          if (a.nombre_evento < b.nombre_evento) {
+            return -1;
+          }
+          return 0;
+        });
+        break;
+      case '4':
+        state.filteredData = state.filteredData.sort((a, b) => {
+          if (a.nombre_evento < b.nombre_evento) {
+            return 1;
+          }
+          if (a.nombre_evento > b.nombre_evento) {
+            return -1;
+          }
+          return 0;
+        });
+        break;
+    }
+  }
+
+  if (state.filteredData.length > 0) {
+    paginate(state.page, state.itemsPerPagination, state.filteredData).forEach(
+        (item) => renderEvent(event, item),
+    );
+  } else {
+    event.innerHTML = '<p>No hay resultados para su búsqueda</p>';
+  }
 
   pagination.insertAdjacentHTML(
       'beforeend',
@@ -158,6 +221,42 @@ filters.addEventListener('change', function(e) {
     filterKeyValue.push(value);
   }
   state.page = 1;
+  filterData();
+});
+
+orderBy.addEventListener('change', (e) => {
+  state.filters.orderBy = e.target.value;
+  filterData();
+});
+
+search.addEventListener('input', (e) => {
+  state.filters.query = e.target.value;
+  filterData();
+});
+
+resetBtn.addEventListener('click', () => {
+  state = {
+    originalData: JSON.parse(dataEl.value),
+    filteredData: null,
+    filters: {
+      departamento: [],
+      municipio: [],
+      anio: [],
+      mes: [],
+      tipo: [],
+      comunidad: [],
+      query: '',
+      orderBy: '0',
+    },
+    itemsPerPagination: 10,
+    page: 1,
+  };
+  search.value = '';
+  orderBy.selectedIndex = 0;
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function(checkbox) {
+    checkbox.checked = false;
+  });
   filterData();
 });
 
@@ -319,11 +418,6 @@ events?.addEventListener('click', function(e) {
 
     loop: true,
   });
-});
-
-search.addEventListener('input', (e) => {
-  state.filters.query = e.target.value;
-  filterData();
 });
 
 window.addEventListener('load', () => {

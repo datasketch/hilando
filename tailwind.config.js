@@ -121,6 +121,9 @@ module.exports = {
         'visible',
         'hidden',
         'swiper-slide--thumbs',
+        'flex',
+        'items-center',
+        'gap-x-1',
       ],
     },
   },
@@ -204,5 +207,6 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/forms'),
   ],
 };
