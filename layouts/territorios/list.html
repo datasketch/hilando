@@ -99,9 +99,9 @@
               A partir del Registro Individual de Prestación (RIPS), realizamos
               un comparativo entre los principales diagnósticos de salud mental
               atendidos durante el 2020 por el Sistema General de Seguridad
-              Social Salud (SGSSS) en los 17 municipios priorizados. De
-              igual manera, revisamos las prioridades en salud establecidas por
-              las autoridades sanitarias municipales y relacionadas con las
+              Social Salud (SGSSS) en los 17 municipios priorizados. De igual
+              manera, revisamos las prioridades en salud establecidas por las
+              autoridades sanitarias municipales y relacionadas con las
               dimensiones de intervención del Programa WLH y que hacen parte del
               Plan Decenal de Salud.
             </p>
@@ -111,8 +111,8 @@
               Economías tradicionales
             </h3>
             <p class="text-lg xl:text-xl">
-              Los 17 municipios priorizados son predominantemente agrícolas
-              y forestales, con una potencia para la piscicultura, apicultura y
+              Los 17 municipios priorizados son predominantemente agrícolas y
+              forestales, con una potencia para la piscicultura, apicultura y
               otras prácticas que protegen el medio ambiente. También, se
               encuentran en zonas de extracción minera, y tienen tradición en la
               agricultura y la producción de artesanías. Existen procesos
@@ -130,6 +130,104 @@
   <!-- DATA EXPLORER -->
   {{ partial "partials/data-explorer.html" . }}
   <!-- DATA EXPLORER END -->
+
+  <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
+    <div class="mx-auto w-10/12">
+      <h2
+        class="tk-mr-eaves-sans font-black text-3xl xl:text-4xl mb-8 lg:mb-12 xl:mb-16 text-center"
+      >
+        <span class="px-1 bg-puce">Mapeo</span> social
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-16 lg:gap-y-20 xl:gap-y-26 md:gap-x-16 lg:gap-x-32 xl:gap-x-36 items-center"
+      >
+        <div
+          class="order-2 lg:order-1 text-center lg:text-left mx-auto w-11/12 lg:w-full"
+        >
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            Distribución
+            <span class="pl-1 pr-2 bg-puce">poblacional rural</span>
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            Recopilamos la información de 17 municipios, principalmente rurales,
+            con una distribución poblacional que incluye víctimas del conflicto,
+            comunidades étnicas, mujeres, niños, niñas, jóvenes y personas con
+            discapacidad. Aquí podrás conocer su tamaño.
+          </p>
+          <a
+            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
+            href="#"
+          >
+            Explorar datos
+          </a>
+        </div>
+        <iframe
+          class="order-1 lg:order-2 mx-auto self-end w-full h-400"
+          src="/charts/home/distribucion_poblacion_total.html"
+          frameborder="0"
+          title="Distribución de población urbana y rural en los municipios priorizados."
+        ></iframe>
+        <iframe
+          class="order-3 mx-auto self-end w-full h-400"
+          src="/charts/home/top_diagnosticos_total.html"
+          frameborder="0"
+          title="Top 10 de diagnóstico más recurrentes en los municipios priorizados"
+        ></iframe>
+        <div class="order-4 text-center lg:text-left mx-auto w-11/12 lg:w-full">
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            Panorama de la
+            <span class="pl-1 pr-2 bg-puce"> salud mental</span>
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            A partir del Registro Individual de Prestación (RIPS), realizamos un
+            comparativo entre los principales diagnósticos de salud mental
+            atendidos durante el 2020 por el Sistema General de Seguridad Social
+            Salud (SGSSS) en los diecisiete municipios priorizados. De igual
+            manera, revisamos las prioridades en salud establecidas por las
+            autoridades sanitarias municipales y relacionadas con las
+            dimensiones de intervención del Programa y que hacen parte del Plan
+            Decenal de Salud que nos permite alinearnos con campañas de salud
+            mental y bienestar.
+          </p>
+          <a
+            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
+            href="#"
+          >
+            Explorar datos
+          </a>
+        </div>
+        <div
+          class="order-6 lg:order-5 text-center lg:text-left mx-auto w-11/12 lg:w-full"
+        >
+          <h3 class="font-black text-xl lg:text-2xl mb-10 lg:mb-4 xl:mb-6">
+            <span class="pl-1 pr-2 bg-puce">Economías</span> tradicionales
+          </h3>
+          <p class="text-lg xl:text-xl mb-12 lg:mb-6 xl:mb-8">
+            Los diecisiete municipios priorizados son predominantemente
+            agrícolas y forestales, con una potencia para la piscicultura,
+            apicultura y otras prácticas que protegen el medio ambiente.
+            También, se encuentran en zonas de extracción minera, y tienen
+            tradición en la agricultura y la producción de artesanías. Existen
+            procesos incipientes de industrialización en algunos municipios e
+            incentivos para el emprendimiento campesino. Conozca más sobre los
+            procesos de empoderamiento económico que impulsan la resiliencia.
+          </p>
+          <a
+            class="uppercase font-bold text-white py-2 px-7 xl:text-lg bg-rose"
+            href="#"
+          >
+            Explorar datos
+          </a>
+        </div>
+        <iframe
+          class="order-5 lg:order-6 mx-auto self-end w-full h-400"
+          src="/charts/home/actividades_economicas_total.html"
+          frameborder="0"
+          title="Gráfica de actividades económicas totales"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- DOWNLOAD -->
   <div

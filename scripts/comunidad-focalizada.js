@@ -4,7 +4,7 @@ const yaml = require('js-yaml');
 const slugify = require('slugify');
 const {difference} = require('lodash');
 
-const data = require('../data/comunidades-focalizadas.json');
+const data = require('../data/comunidades_focalizadas.json');
 
 function createPath(folder, name) {
   return join(__dirname, `../content/${folder}/${name}.md`);

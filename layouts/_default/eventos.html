@@ -3,6 +3,7 @@
 {{ $data := index .Site.Data.eventos }}
 {{ $departamento := slice }}
 {{ $municipio := slice }}
+{{ $anio := slice }}
 {{ $mes := slice }}
 {{ $tipo := slice }}
 {{ $comunidad := slice }}
@@ -18,6 +19,9 @@
 {{ if .municipio }}
 {{ $municipio = $municipio | append .municipio }}
 {{ end }}
+{{ if .anio }}
+{{ $anio = $anio | append .anio }}
+{{ end }}
 {{ if .mes }}
 {{ $mes = $mes | append .mes }}
 {{ end }}
@@ -29,6 +33,11 @@
 {{ end }}
 {{ end }}
 {{/* GET CATEGORIES END */}}
+
+{{/*  SORT BY YEARS  */}}
+{{ $uniqueAnio := uniq $anio }}
+{{ $sortedAnio := sort $uniqueAnio }}
+{{/*  SORT BY YEARS END  */}}
 
 {{/*  SORT BY MONTHS  */}}
 {{ range $months }}
@@ -72,11 +81,16 @@
                 alt="">
             </div>
           </div>
-          <h3 class="text-xl lg:text-2xl mb-4 lg:mb-5 font-black text-space-cadet">
-            Filtros
-          </h3>
+          <div class="mb-4 lg:mb-5 flex items-center justify-between">
+            <h3 class="text-xl lg:text-2xl font-black text-space-cadet">
+              Filtros
+            </h3>
+            <button id="reset" class="text-lg">
+              Reestablecer
+            </button>
+          </div>
           <!-- PARENT ELEMENT FILTERS -->
-          <div class="filters space-y-8">
+          <div class="filters space-y-2">
             <!-- TIPO EVENTO -->
             <div>
               <button class="accordion accordion--purple" data-tab="0" style="border: 1px solid #BABBC9;">
@@ -97,10 +111,30 @@
             </div>
             <!-- TIPO EVENTO END -->
 
+                        <!-- ANIO -->
+                        <div>
+                          <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+                            Año
+                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+                          </button>
+                          <div class="panel" style="border: 1px solid #BABBC9;">
+                            {{ range $sortedAnio }}
+                            <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                              <span class="text-lg">{{ . }}</span>
+                              <input
+                                class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                                type="checkbox" name="anio" id="{{ . }}" value="{{ . }}" disabled>
+                              <!-- <span class="checkmark checkmark--purple"></span> -->
+                            </label>
+                            {{ end }}
+                          </div>
+                        </div>
+                        <!-- ANIO END -->
+
 
             <!-- MES -->
             <div>
-              <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+              <button class="accordion accordion--purple" data-tab="2" style="border: 1px solid #BABBC9;">
                 Mes
                 <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
               </button>
@@ -120,7 +154,7 @@
 
             <!-- MACROREGION -->
             <div>
-              <button class="accordion accordion--trasparent" data-tab="2" style="border: 1px solid #BABBC9;">
+              <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
                 MacroRegión
                 <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
               </button>
@@ -140,7 +174,7 @@
 
             <!-- MUNICIPIO -->
             <div>
-              <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
+              <button class="accordion accordion--trasparent" data-tab="4" style="border: 1px solid #BABBC9;">
                 Municipio
                 <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
               </button>
@@ -160,7 +194,7 @@
 
             <!-- COMUNIDAD -->
             <div>
-              <button class="accordion accordion--trasparent" data-tab="4" style="border: 1px solid #BABBC9;">
+              <button class="accordion accordion--trasparent" data-tab="5" style="border: 1px solid #BABBC9;">
                 Comunidad
                 <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
               </button>
@@ -181,75 +215,21 @@
         </div>
       </div>
       <div class="lg:col-start-4 lg:col-end-13">
+        <div class="mb-10 flex justify-end">
+          <select id="orderBy" class="bg-space-cadet text-white py-2 px-6 uppercase">
+            <option value="0">Ordenar por</option>
+            <option value="1">Más reciente</option>
+            <option value="2">Más antiguo</option>
+            <option value="3">A - Z</option>
+            <option value="4">Z - A</option>
+          </select>
+        </div>
         <div class="event"></div>
         <div class="pagination text-center mt-10 lg:mt-20"></div>
       </div>
     </div>
   </div>
   <input type="hidden" name="data" id="data-eventos" value="{{ jsonify $data }}" />
-
-  {{/* <div class="modal modal--active modal--events">
-    <div class="modal__button-close">
-      X
-    </div>
-    <div class="bg-white-2 py-6 pr-14 pl-16">
-      <div class="flex items-center justify-between">
-        <div class="hidden lg:block w-full bg-red-200 self-stretch" style="max-width: 71px;">
-          &nbsp;
-        </div>
-        <div class="w-full" style="max-width: 622px;">
-          <div class="space-y-5">
-            <div class="space-y-2 lg:space-y-0">
-              <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                  <img src="/images/eventos/icon-location.svg" alt="">
-                  <p class="text-purple font-medium italic">
-                    La Piche, Toluviejo
-                  </p>
-                </div>
-                <div class="flex items-center space-x-2">
-                  <img src="/images/eventos/calendar.svg" alt="">
-                  <p class="text-purple font-medium italic">
-                    Marzo
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col lg:flex-row justify-between items-center">
-                <div>
-                  <h3 class="text-center lg:flex-row text-xl xl:text-2xl font-bold">
-                    Taller de inspiración SOLE + WLH
-                  </h3>
-                </div>
-                <div>
-                  <p class="font-medium italic">
-                    <span class="text-purple ">
-                      Tipo de evento:
-                    </span>
-                    Formación
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <img class="w-full h-full object-center object-cover" style="max-width: 622px; max-height: 436px;"
-                src="/images/eventos/prueba.jpg" alt="Grupo de niños en el taller SOLE">
-            </div>
-            <div>
-              <p>
-                Los talleres de inspiración SOLE son talleres para aquellos quienes deseen ser
-                embajadores en una de las comunidades focalizadas de WLH. Ellos durante este espacio
-                recibirán el entrenamiento para poder ser embajadores y aSOLEAR su comunidad a través de
-                la metodología de autoaprendizaje.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="modal__overlay modal__overlay--active">
-    &nbsp;
-  </div> */}}
 </div>
 {{ end }}
 
