@@ -177,7 +177,11 @@ export const renderNews = (parentEl, data) => {
                 alt="${data.title}"
               />
               <span class="news__date"
-                >Fecha: ${format(new Date(data.date), 'dd \'de\' MMMM \'de\' yyyy', {locale: es})}</span
+                >Fecha: ${format(
+      new Date(data.date),
+      'dd \'de\' MMMM \'de\' yyyy',
+      {locale: es},
+  )}</span
               >
               <h3
                 class="news__title"
@@ -201,5 +205,38 @@ export const renderNews = (parentEl, data) => {
               />
             </div>
   `;
+  parentEl.insertAdjacentHTML('beforeend', html);
+};
+
+export const renderLearn = (parentEl, data) => {
+  const html = `
+<div class="learn__item">
+  <p class="learn__topic">
+    ${data.tema}
+  </p>
+  <img class="learn__sticky" src="/images/aprende/sticky.svg" alt="sticky">
+  <h3 class="learn__title">${data.nombre_de_la_publicacion}</h3>
+  ${
+  data.enlace_video &&
+    `
+      <div class="learn__image">
+        <img src="${`https://img.youtube.com/vi/${getYouTubeVideoID(
+      data.enlace_video,
+  )}/hqdefault.jpg`}" alt="${data.nombre_de_la_publicacion} image" />
+      </div>
+    `
+}
+  <p class="learn__description">${data.descripcion}</p>
+  <div class="learn__date">
+    <p>Fecha: ${format(
+      new Date(data.fecha),
+      'dd \'de\' MMMM \'de\' yyyy',
+      {locale: es},
+  )}</p>
+    <button data-id="${data.Id}" class="learn__view-more">Ver más</button>
+  </div>
+</div>
+  `;
+
   parentEl.insertAdjacentHTML('beforeend', html);
 };

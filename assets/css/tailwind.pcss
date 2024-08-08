@@ -244,6 +244,47 @@
     @apply absolute right-0 top-0;
   }
 
+  .learn {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+
+  .learn__item {
+    @apply bg-white-2 py-5 px-10;
+  }
+
+  .learn__topic {
+    @apply text-lg lg:text-xl text-purple;
+  }
+
+  .learn__sticky {
+    @apply mt-4 w-full;
+  }
+
+  .learn__title {
+    @apply -mt-10 md:-mt-6 xl:-mt-10 text-lg lg:text-xl font-semibold w-11/12;
+  }
+
+  .learn__image {
+    @apply mt-2;
+  }
+
+  .learn__image img {
+    @apply bg-cover bg-center;
+    height: '144px';
+  }
+
+  .learn__description {
+    @apply mt-4 text-lg lg:text-xl line-clamp-3;
+  }
+
+  .learn__date {
+    @apply mt-10 flex items-center justify-between;
+  }
+
+  .learn__view-more {
+    @apply bg-rose text-cultured py-2 px-6 uppercase;
+  }
+
   .swiper-slide--thumbs {
     width: 65px !important;
     height: 54.39px !important;

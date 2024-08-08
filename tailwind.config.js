@@ -68,6 +68,7 @@ module.exports = {
         'multimedia__details',
         'multimedia__title',
         'line-clamp-2',
+        'line-clamp-3',
         'line-clamp-4',
         'multimedia__description',
         'multimedia__lugar-comunidad',
