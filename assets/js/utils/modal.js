@@ -303,6 +303,34 @@ export default class Modal {
         &nbsp;
       </div>
     `;
+    } else if (this.modalSection === 'aprende') {
+      html = `
+         <div class="modal modal--video">
+          <button class="modal__button-close" aria-label="Cerrar">
+            X
+          </button>
+          <div class="video">
+            <div class="video__left">
+              &nbsp;
+            </div>
+            <div class="video__right">
+              <div class="video--space-y-8">
+                 <h3 class="video--font-size-22 video--font-bold">
+                      ${this.data.nombre_de_la_publicacion}
+                  </h3>
+                  <div class="aspect-w-16 aspect-h-9">
+                      <iframe src="${this.data.enlace_video}"></iframe>
+                  </div>
+                  <p>${this.data.descripcion || ''}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__overlay">
+        &nbsp;
+      </div>
+      `;
     }
     return document.body.insertAdjacentHTML('beforeend', html);
   }

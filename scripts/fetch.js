@@ -18,23 +18,18 @@ async function run() {
   const trrs = await req.get('/fichas_municipio?limit=500');
   const publications = await req.get('/publicaciones?limit=500');
   const multimedia = await req.get('/multimedia?limit=500');
+  const learn = await req.get('/aprende?limit=500');
 
   fs.writeFile(
       getFilePath('comunidades_focalizadas.json'),
       JSON.stringify(communities.data.list),
   );
-  fs.writeFile(
-      getFilePath('eventos.json'),
-      JSON.stringify(events.data.list),
-  );
+  fs.writeFile(getFilePath('eventos.json'), JSON.stringify(events.data.list));
   fs.writeFile(
       getFilePath('eventos_municipios.json'),
       JSON.stringify(eventsMunicipalities.data.list),
   );
-  fs.writeFile(
-      getFilePath('territorios.json'),
-      JSON.stringify(trrs.data.list),
-  );
+  fs.writeFile(getFilePath('territorios.json'), JSON.stringify(trrs.data.list));
   fs.writeFile(
       getFilePath('publicaciones.json'),
       JSON.stringify(publications.data.list),
@@ -43,6 +38,7 @@ async function run() {
       getFilePath('multimedia.json'),
       JSON.stringify(multimedia.data.list),
   );
+  fs.writeFile(getFilePath('aprende.json'), JSON.stringify(learn.data.list));
 }
 
 run().catch((error) => {
