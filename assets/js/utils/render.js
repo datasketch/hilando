@@ -1,4 +1,6 @@
 import {getYouTubeVideoID} from '.';
+import {format} from 'date-fns';
+import {es} from 'date-fns/locale';
 
 export const renderEvent = (parentEl, data, classNames = '') => {
   const html = `
@@ -161,5 +163,43 @@ export const renderMultimedia = (parentEl, data, type) => {
     </div>
     `;
   }
+  parentEl.insertAdjacentHTML('beforeend', html);
+};
+
+export const renderNews = (parentEl, data) => {
+  const html = `
+            <div
+              class="news__item"
+            >
+              <img
+                class="news__image"
+                src="${data.image}"
+                alt="${data.title}"
+              />
+              <span class="news__date"
+                >Fecha: ${format(new Date(data.date), 'dd \'de\' MMMM \'de\' yyyy', {locale: es})}</span
+              >
+              <h3
+                class="news__title"
+              >
+                ${data.title}
+              </h3>
+              <p
+                class="news__description"
+              >
+               ${data.description}
+              </p>
+              <a
+                class="news__link"
+                href="${data.link}"
+                >VER TODO</a
+              >
+              <img
+                class="news__sticky"
+                src="/images/public/sticky.svg"
+                alt="sticky"
+              />
+            </div>
+  `;
   parentEl.insertAdjacentHTML('beforeend', html);
 };

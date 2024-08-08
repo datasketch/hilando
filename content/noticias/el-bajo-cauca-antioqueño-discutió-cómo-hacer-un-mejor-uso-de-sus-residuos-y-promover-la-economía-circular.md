@@ -10,7 +10,6 @@ description: >-
 
 
   -El evento fue organizado por el Programa Hilando Vidas y Esperanza de USAID, implementado por la OIM, en alianza con Arreciclar y la Gobernación de Antioquia.
-topic: Cultural
 cms: true
 ---
 ¿Sabías que sólo Antioquia genera el 15 por ciento de los residuos de todo Colombia? ¿Y que esto equivale aproximadamente a 1.773.471 toneladas de residuos al año? ¿Sabías que de los residuos del Bajo Cauca solo el 13 por ciento se aprovecha como reciclaje?  Estas cifras, de la Corporación Centro de Ciencia y Tecnología de Antioquia (CTA), dan cuenta de algunas de las problemáticas y oportunidades que se abordaron en el foro Cosechando Futuro: Manejo Integrado de Residuos y Perspectivas para una Economía Circular en el Bajo Cauca Antioqueño, que se realizó el 16 de mayo en el auditorio de la Cámara de Comercio de Caucasia, Antioquia. 

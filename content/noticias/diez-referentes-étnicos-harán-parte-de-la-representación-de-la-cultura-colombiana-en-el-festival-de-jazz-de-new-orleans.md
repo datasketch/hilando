@@ -9,7 +9,6 @@ description: >-
 
 
   La participación es el resultado de una alianza entre los Programas de Juntanza Étnica e Hilando Vidas y Esperanza de USAID, implementados por ACDI/VOCA y OIM respectivamente.
-region: Montes de María
 cms: true
 ---
 Este año el Festival de Jazz y la Herencia de New Orleans conmemora la diversidad cultural y el patrimonio, teniendo a Colombia como país invitado. Por ello, los Programas Juntanza Étnica e Hilando Vidas y Esperanza de USAID, implementados por ACDI/VOCA y OIM respectivamente, cumpliendo con su propósito de dar a conocer los aportes de los pueblos indígenas y el pueblo afrocolombiano en la construcción del país y de la paz desde diferentes artistas, impulsan la participación de diez artesanos, luthiers y diseñadores que representaran el patrimonio cultural de las poblaciones étnicas colombianas.
