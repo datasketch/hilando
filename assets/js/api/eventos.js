@@ -2,7 +2,6 @@
 import {renderEvent} from '../utils/render';
 import {paginate, renderPaginationButtons} from '../utils/pagination';
 import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
-import * as ics from 'ics';
 import Modal from '../utils/modal';
 import {normalize} from 'js/utils';
 
@@ -226,11 +225,13 @@ filters.addEventListener('change', function(e) {
 
 orderBy.addEventListener('change', (e) => {
   state.filters.orderBy = e.target.value;
+  state.page = 1;
   filterData();
 });
 
 search.addEventListener('input', (e) => {
   state.filters.query = e.target.value;
+  state.page = 1;
   filterData();
 });
 
@@ -422,25 +423,4 @@ events?.addEventListener('click', function(e) {
 
 window.addEventListener('load', () => {
   filterData();
-  const downloadICS = Array.from(document.querySelectorAll('.download-ics'));
-  downloadICS.forEach((button) => {
-    button.addEventListener('click', (e) => {
-      try {
-        const data = JSON.parse(e.target.dataset.ics);
-        ics.createEvent(data, (err, value) => {
-          if (err) {
-            console.log(error);
-            alert('Se ha producido un error');
-            return;
-          }
-          window.open(
-              'data:text/calendar;charset=utf8,' + encodeURIComponent(value),
-          );
-        });
-      } catch (error) {
-        console.log(error);
-        alert('Se ha producido un error');
-      }
-    });
-  });
 });
