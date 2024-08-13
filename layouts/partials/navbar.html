@@ -95,6 +95,13 @@
           {{ range .Site.Menus.main }}
           {{ $menu_item_url := .URL | relLangURL }}
           {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+          {{ if eq .Title "Territorios" }}
+          <li>
+           <button id="button-territories" class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300">
+             <b>{{ .Title }}</b>
+           </button>
+         </li> 
+          {{ else }}
           {{ if eq $menu_item_url $page_url }}
           <li>
             <a class="uppercase text-xl border-b-2 border-white pb-1 duration-300" href="{{ .URL }}">
@@ -102,19 +109,12 @@
             </a>
           </li>
           {{ else }}
-         {{ if eq .Title "Territorios" }}
-         <li>
-          <button id="button-territories" class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300">
-            <b>{{ .Title }}</b>
-          </button>
-        </li> 
-         {{ else }}
-         <li>
-          <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
-            href="{{ .URL }}">{{ .Title }}
-          </a>
-        </li> 
-         {{ end }}
+          <li>
+            <a class="uppercase text-xl border-b-2 border-transparent hover:border-white pb-1 duration-300"
+              href="{{ .URL }}">{{ .Title }}
+            </a>
+          </li> 
+          {{ end }}
           {{ end }}
           {{ end }}
         </ul>
