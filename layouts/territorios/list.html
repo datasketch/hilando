@@ -15,7 +15,8 @@
   <!-- TERRITORIES -->
   <div class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div
-      class="mx-auto w-10/12 md:w-8/12 lg:w-7/12 xl:w-5/12 mb-10 lg:mb-12 xl:mb-16"
+      class="mx-auto w-10/12 xl:w-9/12 mb-10 lg:mb-12 xl:mb-16"
+      style="max-width: 612px"
     >
       <p class="lg:text-lg xl:text-xl text-center">
         Conoce y compara los territorios a través de varias categorías como
@@ -25,25 +26,42 @@
         ejecutando con las comunidades en cada una de las regiones.
       </p>
     </div>
-    <div
-      class="mx-auto w-10/12 xl:w-9/12 grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 xl:gap-x-12 gap-y-10"
-    >
-      {{ range .Pages.GroupByParam "region" }}
-      <div>
-        <h3 class="font-black text-lg lg:text-xl xl:text-2xl mb-2 lg:mb-4">
-          {{ .Key }}
-        </h3>
-        <ul class="grid grid-cols-1 gap-y-4">
-          {{ range .Pages }}
-          <li class="line">
-            <a class="lg:text-lg xl:text-xl text-rose" href="{{ .Permalink }}"
-              >{{ .Title }}</a
-            >
-          </li>
-          {{ end }}
-        </ul>
+    <div class="mx-auto w-10/12 xl:w-9/12">
+      <div class="space-y-12 lg:space-y-16 xl:space-y-20">
+        {{ range .Pages.GroupByParam "region" }}
+        <div>
+          <div class="text-center">
+            <h3 class="font-black text-lg lg:text-xl mb-2 lg:mb-4">
+              {{ .Key }}
+            </h3>
+          </div>
+          <ul
+            class="mt-10 text-center flex flex-col gap-y-8 md:flex-row md:flex-wrap items-center md:items-start justify-center md:gap-x-12 xl:gap-x-16"
+          >
+            {{ range .Pages }}
+            <li>
+              <a
+                class="lg:text-lg xl:text-xl text-rose font-medium border-rose border-b"
+                href="{{ .Permalink }}"
+                >{{ .Title }}</a
+              >
+              <ul class="mt-1 space-y-2 text-center">
+                {{ range .Params.comunidades }}
+                <li>
+                  <a
+                    class="lg:text-lg xl:text-xl font-medium border-black border-b"
+                    href="{{ .permalink }}"
+                    >{{ .label }}</a
+                  >
+                </li>
+                {{ end }}
+              </ul>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
   </div>
   <!-- TERRITORIES END -->
