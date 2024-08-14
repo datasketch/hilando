@@ -465,11 +465,14 @@
 
   /* MENU */
   .menu:hover .sub-menu,
-  .menu:focus-within .sub-menu {
+  .menu:focus-within .sub-menu,
+  .menu:hover .sub-menu-territories,
+  .menu:focus-within .sub-menu-territories
+   {
     @apply visible opacity-100;
   }
   .sub-menu {
-    @apply absolute invisible opacity-0 cursor-pointer duration-300;
+    @apply absolute invisible opacity-0 duration-300;
     background-color: #3A3C6A;
   }
   .sub-menu li:hover {
@@ -486,6 +489,26 @@
   }
   .sub-menu-icon--active {
     @apply transform rotate-90;
+  }
+
+  .sub-menu-territories {
+    @apply absolute bg-oxford-blue invisible opacity-0 duration-300;
+  }
+
+  .sub-menu-buttons {
+    @apply border-r px-2 py-4 border-white space-y-2;
+  }
+
+  .sub-menu-button {
+    @apply text-left leading-none;
+  }
+
+  .sub-menu-button.active {
+    @apply font-bold;
+  }
+
+  .sub-menu-items {
+    @apply px-5 py-4 grid grid-cols-3 gap-5 font-normal;
   }
 
   /* MODAL */
