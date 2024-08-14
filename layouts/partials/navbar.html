@@ -15,7 +15,7 @@
       <nav class="tk-mr-eaves-sans text-white font-bold self-end">
         {{ $currentPage := . }}
         <!-- NAV DESKTOP -->
-        <ul class="hidden lg:flex lg:items-center lg:gap-x-12 xl:gap-x-16">
+        <ul class="hidden lg:flex lg:items-center lg:gap-x-8 xl:gap-x-16">
           {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
             <li class="menu relative">
@@ -29,7 +29,7 @@
                 </a>
               {{ end }}
                 {{ if eq .Page.Section "territorios" }}
-                <ul class="sub-menu-territories transform -translate-x-1/2 left-1/2 flex text-sm" style="width: 480px;">
+                <ul class="sub-menu-territories transform -translate-x-1/2 left-1/2 flex" style="width: 480px;">
                     <li class="sub-menu-buttons" style="width: 134px;">
                       {{ range $index, $element := $.Site.Menus.region }}
                         <button data-id="{{ $index }}" class="sub-menu-button active">{{ .Name }}</button>
@@ -41,7 +41,7 @@
                       {{ range .Children }}
                       {{ $name := .Name }}
                       <div>
-                        <a href="{{ .URL | absURL }}" class="inline-flex items-center gap-x-1 font-bold">
+                        <a href="{{ .URL | absURL }}" class="inline-flex items-center gap-x-1 font-bold" style="line-height: 1;">
                           <span>{{ $name }}</span>
                           <img class="w-2 h-2 duration-300 sub-menu-icon" src="/images/public/arrow-menu.svg" alt="flecha de menu">
                         </a>

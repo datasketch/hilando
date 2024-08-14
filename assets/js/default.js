@@ -15,7 +15,9 @@ const subMenuButton = document.querySelectorAll('.sub-menu-button');
 const subMenuItems = document.querySelectorAll('.sub-menu-items');
 const buttonTerritories = document.querySelector('#button-territories');
 const navTerritories = document.querySelector('#nav-territories');
-const navTerritoriesOverlay = document.querySelector('#nav-territories-overlay');
+const navTerritoriesOverlay = document.querySelector(
+    '#nav-territories-overlay',
+);
 
 subMenuButton.forEach((btn) => btn.classList.remove('active'));
 subMenuButton[0].classList.add('active');
@@ -54,7 +56,10 @@ if (observer) {
 buttonMenu.addEventListener('click', menuToggle);
 
 window.addEventListener('scroll', (e) => {
-  if (e.isTrusted && navMobile.classList.contains('nav--active') || navTerritories.classList.contains('nav-territories-active')) {
+  if (
+    (e.isTrusted && navMobile.classList.contains('nav--active')) ||
+    navTerritories.classList.contains('nav-territories-active')
+  ) {
     menuToggle();
     navTerritories.classList.remove('nav-territories-active');
     navTerritories.classList.remove('right-0');
@@ -64,7 +69,10 @@ window.addEventListener('scroll', (e) => {
 });
 
 window.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
+  if (
+    (e.key === 'Escape' && navMobile.classList.contains('nav--active')) ||
+    navTerritories.classList.contains('nav-territories-active')
+  ) {
     menuToggle();
     navTerritories.classList.remove('nav-territories-active');
     navTerritories.classList.remove('right-0');
@@ -84,17 +92,19 @@ subMenuList.forEach((menuList, idx) => {
   });
 });
 
-subMenuButton.forEach((btn) => btn.addEventListener('click', (e) => {
-  const btn = e.target.closest('button');
-  if (!btn) return;
-  const id = +btn.dataset.id;
+subMenuButton.forEach((btn) =>
+  btn.addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    const id = +btn.dataset.id;
 
-  subMenuButton.forEach((btn) => btn.classList.remove('active'));
-  subMenuItems.forEach((item) => item.classList.add('hidden'));
+    subMenuButton.forEach((btn) => btn.classList.remove('active'));
+    subMenuItems.forEach((item) => item.classList.add('hidden'));
 
-  subMenuButton[id].classList.add('active');
-  subMenuItems[id].classList.remove('hidden');
-}));
+    subMenuButton[id].classList.add('active');
+    subMenuItems[id].classList.remove('hidden');
+  }),
+);
 
 buttonTerritories.addEventListener('click', () => {
   menuToggle();
