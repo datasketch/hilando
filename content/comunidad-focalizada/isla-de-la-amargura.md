@@ -95,6 +95,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   psiquiatría. También, presta presencialmente servicio de fisioterapia en la
   cabecera municipal de Cáceres.
 num_visitas_predio: 16
+grafica_ubicacion_geografica: /charts/municipios/caceres/ubicacion_geografica.html
 url: /comunidad-focalizada/isla-de-la-amargura
 layout: single
 download_file: /reportes/isla-de-la-amargura.pdf

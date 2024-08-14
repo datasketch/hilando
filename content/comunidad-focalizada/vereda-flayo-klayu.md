@@ -95,6 +95,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   ATENCIÓN EN SALUD ofrece el servicio de psicología de manera presencia en la
   cabecera municipal de Toribio.
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/toribio/ubicacion_geografica.html
 url: /comunidad-focalizada/vereda-flayo-klayu
 layout: single
 download_file: /reportes/vereda-flayo-klayu.pdf

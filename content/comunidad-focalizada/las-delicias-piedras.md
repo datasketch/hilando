@@ -100,6 +100,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   psicología. También ya habilitó el servicio presencial de fisioterapia,
   terapia ocupacional y fonoaudiología.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 url: /comunidad-focalizada/las-delicias-piedras
 layout: single
 download_file: /reportes/las-delicias-piedras.pdf

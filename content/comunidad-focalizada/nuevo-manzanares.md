@@ -83,6 +83,7 @@ infraestructura_salud_atencion_psicosocial:
   - La atención especializada se brinda en la ciudad de Sincelejo
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /comunidad-focalizada/nuevo-manzanares
 layout: single
 download_file: /reportes/nuevo-manzanares.pdf

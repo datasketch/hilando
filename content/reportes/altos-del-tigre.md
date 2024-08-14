@@ -49,6 +49,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   También, presta presencialmente servicio de fisioterapia en la cabecera
   municipal de Cáceres.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/caceres/ubicacion_geografica.html
 url: /reportes/altos-del-tigre
 layout: comunidad
 download_file: /reportes/altos-del-tigre.pdf

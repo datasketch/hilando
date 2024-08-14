@@ -75,6 +75,7 @@ infraestructura_salud_atencion_psicosocial:
   - Presencia de la Alcaldía en atención psicosocial a jóvenes
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 4
+grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /reportes/la-ceiba
 layout: comunidad
 download_file: /reportes/la-ceiba.pdf

@@ -76,6 +76,7 @@ num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /comunidad-focalizada/alemania-y-rancho-rojo
 layout: single
 download_file: /reportes/alemania-y-rancho-rojo.pdf

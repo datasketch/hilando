@@ -72,6 +72,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Distrito de Buenaventura, habilitó el servicio de psicología, fonoaudiología y
   fisioterapia.
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/buenaventura/ubicacion_geografica.html
 url: /reportes/punta-soldado
 layout: comunidad
 download_file: /reportes/punta-soldado.pdf

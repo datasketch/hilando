@@ -71,6 +71,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   A través de la alianza HOMO - USAID - OIM, el ESE HOSPITAL SAN JUAN DE DIOS
   ofrece servicios de telemedicina para psicología, psiquiatría y fisioterapia.
 num_visitas_predio: 16
+grafica_ubicacion_geografica: /charts/municipios/anori/ubicacion_geografica.html
 url: /reportes/el-banco
 layout: comunidad
 download_file: /reportes/el-banco.pdf

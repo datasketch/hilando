@@ -1,11 +1,10 @@
-{{ define "main" }} {{ $data := .Site.Data.eventos }} {{ $municipio :=
-.Params.municipio }}
+{{ define "main" }} {{ $data := .Site.Data.eventos }} {{ $comunidad := .Params.nombre_comunidad }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div
     class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer bg-blue"
   >
     <div class="mx-auto w-10/12 xl:w-9/12">
-      <div class="flex flex-col lg:flex-row lg:justify-between">
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-8 gap-x-12">
         <div class="lg:w-7/12 text-white">
           <h1
             class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto uppercase"
@@ -26,11 +25,20 @@
           </p>
         </div>
         <div class="lg:w-5/12">
+          {{ with .Params.grafica_ubicacion_geografica }}
+          <iframe
+            class="mx-auto w-full h-96"
+            src="{{ . }}"
+            frameborder="0"
+            title="Gráfica de ubicación geográfica"
+          ></iframe>
+          {{ else }}
           <img
-            class="mx-auto"
+            class="mx-auto mb-6 lg:mb-8 xl:mb-10"
             src="/images/territorios/pradera-map.svg"
-            alt="imagen mapa pradera"
+            alt="Mapa de Pradera"
           />
+          {{ end }}
         </div>
       </div>
     </div>
@@ -100,7 +108,7 @@
                 </h2>
               </div>
               <div class="container x mandatory-scroll-snapping" dir="ltr">
-                {{ range where $data "municipio" $municipio }}
+                {{ range where $data "comunidad" $comunidad }}
                 <div class="relative space-y-2 bg-white-2 p-8">
                   <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
                   <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
@@ -319,9 +327,7 @@
     <div class="flex flex-col lg:flex-row lg:justify-between">
       <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2">
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Cooperación y alianzas
-          </h3>
+          <h3 class="text-xl xl:text-2xl font-black">Cooperación y alianzas</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
             {{ range .Params.alianzas_colaboradores }} {{ with . }}
             <li>{{ . }}</li>
@@ -332,14 +338,14 @@
           </ul>
         </div>
       </div>
-      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-fern-green text-white">
+      <div
+        class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-fern-green text-white"
+      >
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Medios de comunicación 
-          </h3>
+          <h3 class="text-xl xl:text-2xl font-black">Medios de comunicación</h3>
           <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
-            {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with
-            . }}
+            {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with .
+            }}
             <li>{{ . }}</li>
             {{ end }} {{ end }}
           </ul>

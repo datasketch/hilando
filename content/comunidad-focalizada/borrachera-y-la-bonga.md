@@ -96,6 +96,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   A través del convenio HOMO USAID OIM el ESE HOSPITAL NUESTRA SEÑORA DEL CARMEN
   ofrece servicio de telemedicina para psiquiatría y psicología. 
 num_visitas_predio: 20
+grafica_ubicacion_geografica: /charts/municipios/el-bagre/ubicacion_geografica.html
 url: /comunidad-focalizada/borrachera-y-la-bonga
 layout: single
 download_file: /reportes/borrachera-y-la-bonga.pdf

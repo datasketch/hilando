@@ -81,6 +81,7 @@ infraestructura_salud_atencion_psicosocial:
   - ' deben desplazarse a La cabecera municipal de San Jacinto'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/san-jacinto/ubicacion_geografica.html
 url: /comunidad-focalizada/arroyo-de-maria
 layout: single
 download_file: /reportes/arroyo-de-maria.pdf

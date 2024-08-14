@@ -64,6 +64,7 @@ num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: La atención especializada se brinda en la ciudad de Sincelejo.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /comunidad-focalizada/montebello
 layout: single
 download_file: /reportes/montebello.pdf

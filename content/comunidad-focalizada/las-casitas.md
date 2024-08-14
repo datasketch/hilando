@@ -81,6 +81,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   través del programa se habilitó consulta de psicología presencial en la
   cabecera municipal de Cajibio en el ESE Centro UNO.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/cajibio/ubicacion_geografica.html
 url: /comunidad-focalizada/las-casitas
 layout: single
 download_file: /reportes/las-casitas.pdf
