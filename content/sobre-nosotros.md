@@ -1,6 +1,6 @@
 ---
 title: Sobre nosotros
-weight: 7
+weight: 8
 menu: main
 layout: sobre-el-programa
 ---
