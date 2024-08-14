@@ -90,6 +90,37 @@
           alt=""
         />
       </div>
+      <div class="lg:col-span-2">
+        <div class="py-12 lg:py-16 xl:py-20 relative overflow-x-hidden">
+          <div class="mx-auto w-10/12 xl:w-9/12">
+            <div class="space-y-12 mx-auto">
+              <div class="text-center">
+                <h2 class="text-magenta font-bold text-2xl xl:text-3xl">
+                  Eventos significativos de la vida comunitaria
+                </h2>
+              </div>
+              <div class="container x mandatory-scroll-snapping" dir="ltr">
+                {{ range where $data "municipio" $municipio }}
+                <div class="relative space-y-2 bg-white-2 p-8">
+                  <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
+                  <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
+                    {{ .nombre_evento }}
+                  </h3>
+                  <div class="bg-magenta" style="height: 2px">&nbsp;</div>
+                  <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                    <img
+                      class="w-full h-full object-cover object-center"
+                      src="{{ .thumbnail }}"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-cultured">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
           <h3 class="text-xl xl:text-2xl font-black">
@@ -117,7 +148,7 @@
           {{ with . }}
           <li>{{ . }}</li>
           {{ end }} {{ end }}
-          </ul>
+        </ul>
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-white-2">
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
@@ -145,7 +176,7 @@
             with . }}
             <li>{{ . }}</li>
             {{ end }} {{ end }}
-            </ul>
+          </ul>
         </div>
       </div>
     </div>
@@ -270,40 +301,26 @@
   </div>
   <div class="lg:col-start-7 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div
-        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0"
-      >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Iniciativas productivas priorizadas
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl">
-              {{ range .Params.iniciativas_priorizadas }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
+      <div class="space-y-8 lg:space-y-12 xl:space-y-16">
+        <div class="space-y-4">
+          <h3 class="text-xl xl:text-2xl font-black">
+            Iniciativas productivas priorizadas
+          </h3>
+          <ul class="space-y-2 text-lg xl:text-xl">
+            {{ range .Params.iniciativas_priorizadas }} {{ with . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
+          </ul>
         </div>
       </div>
     </div>
   </div>
   <div class="lg:col-start-1 lg:col-end-13">
     <div class="flex flex-col lg:flex-row lg:justify-between">
-      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green">
-        <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">Otros programas USAID</h3>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.otros_programas_USAID }} {{ with . }}
-            <li>{{ . }}</li>
-            {{ end }} {{ end }}
-          </ul>
-        </div>
-      </div>
       <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2">
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
           <h3 class="text-xl xl:text-2xl font-black">
-            Alianzas y colaboradores
+            Cooperación y alianzas
           </h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
             {{ range .Params.alianzas_colaboradores }} {{ with . }}
@@ -315,68 +332,17 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-  <div
-    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green"
-  >
-    <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div
-        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 text-white"
-      >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">Actividades de ocio</h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.actividades_ocio }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Medios de comunicación
-            </h3>
-            <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
-              {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with
-              . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 relative overflow-x-hidden bg-cultured"
-  >
-    <div class="mx-auto w-10/12 xl:w-9/12">
-      <div class="space-y-12 mx-auto">
-        <div class="text-center">
-          <h2 class="text-magenta font-bold text-2xl xl:text-3xl">
-            Eventos significativos de la vida comunitaria
-          </h2>
-        </div>
-        <div class="container x mandatory-scroll-snapping" dir="ltr">
-          {{ range where $data "municipio" $municipio }}
-          <div class="relative space-y-2 bg-white-2 p-8">
-            <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
-            <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
-              {{ .nombre_evento }}
-            </h3>
-            <div class="bg-magenta" style="height: 2px">&nbsp;</div>
-            <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-              <img
-                class="w-full h-full object-cover object-center"
-                src="{{ .thumbnail }}"
-                alt=""
-              />
-            </div>
-          </div>
-          {{ end }}
+      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-fern-green text-white">
+        <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
+          <h3 class="text-xl xl:text-2xl font-black">
+            Medios de comunicación 
+          </h3>
+          <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
+            {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with
+            . }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
+          </ul>
         </div>
       </div>
     </div>
