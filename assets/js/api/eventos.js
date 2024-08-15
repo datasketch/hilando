@@ -422,4 +422,46 @@ events?.addEventListener('click', function(e) {
 
 window.addEventListener('load', () => {
   filterData();
+  const urlParams = new URLSearchParams(window.location.search);
+  const event = urlParams.get('event');
+  if (!event) return;
+  const currEvent = state.originalData.find((el) => el.nombre_evento === event);
+  new Modal(currEvent);
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    modules: [Autoplay, FreeMode],
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 3,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: window.innerWidth >= 1024 ? 'vertical' : 'horizontal',
+    breakpoints: {
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 12,
+      },
+    },
+  });
+  const swiperMain = new Swiper('.swiperMain', {
+    modules: [Navigation, Thumbs, Autoplay],
+    navigation: {
+      nextEl: '.swiper-button-next-events',
+      prevEl: '.swiper-button-prev-events',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });
