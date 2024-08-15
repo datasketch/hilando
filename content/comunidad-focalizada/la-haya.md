@@ -46,6 +46,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Gracias al programa, el E.S.E. HOSPITAL LOCAL DE SAN JUAN NEPOMUCENO ofrece
   psicología y fisioterapia de manera presencial en la cabecera municipal.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/san-juan-de-nepomuceno/ubicacion_geografica.html
 url: /comunidad-focalizada/la-haya
 layout: single
 download_file: /reportes/la-haya.pdf

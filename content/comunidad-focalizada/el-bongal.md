@@ -82,6 +82,7 @@ infraestructura_salud_atencion_psicosocial:
   - ' deben desplazarse a la cabecera municipal de San Jacinto'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/san-jacinto/ubicacion_geografica.html
 url: /comunidad-focalizada/el-bongal
 layout: single
 download_file: /reportes/el-bongal.pdf

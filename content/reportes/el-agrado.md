@@ -86,6 +86,7 @@ num_diagnosticos_rurales_participativos_realizados: null
 infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/piendamo/ubicacion_geografica.html
 url: /reportes/el-agrado
 layout: comunidad
 download_file: /reportes/el-agrado.pdf

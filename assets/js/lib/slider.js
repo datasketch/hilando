@@ -271,3 +271,34 @@ export const swiperResilientesEntities = (element = '.swiper') => {
   });
 };
 
+export const swiperComunities = (element = '.swiper') => {
+  return new Swiper(element, {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next-news',
+      prevEl: '.swiper-button-prev-news',
+      disabledClass: 'opacity-40',
+    },
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+
+    // Responsive breakpoints
+    breakpoints: {
+      1366: {
+        slidesPerView: 2,
+        spaceBetween: 57.5,
+      },
+    },
+  });
+};
+

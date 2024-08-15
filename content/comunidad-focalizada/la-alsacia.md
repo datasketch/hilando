@@ -74,6 +74,7 @@ num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/buenos-aires/ubicacion_geografica.html
 url: /comunidad-focalizada/la-alsacia
 layout: single
 download_file: /reportes/la-alsacia.pdf

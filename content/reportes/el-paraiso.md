@@ -86,6 +86,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Los proyectos agroforestales desarrollados han tenido apoyo psicosocial.
   Actualmente no hay programas en curso.
 num_visitas_predio: 5
+grafica_ubicacion_geografica: /charts/municipios/coloso/ubicacion_geografica.html
 url: /reportes/el-paraiso
 layout: comunidad
 download_file: /reportes/el-paraiso.pdf

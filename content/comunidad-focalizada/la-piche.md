@@ -86,6 +86,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   fonoaudología. Todas por el momento de manera presencial en la cabecera
   municipal de Toluviejo. 
 num_visitas_predio: 5
+grafica_ubicacion_geografica: /charts/municipios/toluviejo/ubicacion_geografica.html
 url: /comunidad-focalizada/la-piche
 layout: single
 download_file: /reportes/la-piche.pdf

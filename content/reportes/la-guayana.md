@@ -48,6 +48,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   A través de la alianza HOMO - USAID - OIM, el ESE HOSPITAL SAN JUAN DE DIOS
   ofrece servicios de telemedicina para psicología, psiquiatría y fisioterapia.
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/bajo-cauca-y-nordeste-antioqueno/ubicacion_geografica.html
 url: /reportes/la-guayana
 layout: comunidad
 download_file: /reportes/la-guayana.pdf

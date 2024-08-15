@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Modal from './utils/modal';
-import {swiperBanner, swiperNews, swiperEvents, swiperGalleryThumbs, swiperGalleryMain} from './lib/slider';
-import Swiper, {Navigation, Pagination, Thumbs, Autoplay, FreeMode} from 'swiper';
+import {swiperBanner, swiperNews, swiperEvents} from './lib/slider';
+import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
 
 const events = document.querySelector('.events');
 const dataEl = document.querySelector('#data-eventos');

@@ -91,6 +91,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Gracias al programa, el E.S.E. HOSPITAL LOCAL DE SAN JUAN NEPOMUCENO ofrece
   psicología y fisioterapia de manera presencial en la cabecera municipal.
 num_visitas_predio: 1
+grafica_ubicacion_geografica: /charts/municipios/san-juan-nepomuceno/ubicacion_geografica.html
 url: /reportes/san-pedro-consolado
 layout: comunidad
 download_file: /reportes/san-pedro-consolado.pdf

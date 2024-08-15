@@ -93,6 +93,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   HOMO - USAID - OIM en el E.S.E HOSPITAL SAN JUAN DE DIOS, en la cabecera
   municipal de Valdivia. 
 num_visitas_predio: 16
+grafica_ubicacion_geografica: /charts/municipios/valdivia/ubicacion_geografica.html
 url: /comunidad-focalizada/la-paulina
 layout: single
 download_file: /reportes/la-paulina.pdf

@@ -96,6 +96,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   Y esa institución tiene todos los otros servicios de manera presencial
   (psicología, fonoaudiología, fisioterapia y terapia ocupacional)
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/santander-de-quilichao/ubicacion_geografica.html
 url: /comunidad-focalizada/dominguillo
 layout: single
 download_file: /reportes/dominguillo.pdf

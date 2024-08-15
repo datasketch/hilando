@@ -83,6 +83,7 @@ infraestructura_salud_atencion_psicosocial:
   - ' A través del convenio HOMO USAID OIM el ESE HOSPITAL NUESTRA SEÑORA DEL CARMEN ofrece servicio de telemedicina para psiquiatría y psicología.'
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/el-bagre/ubicacion_geografica.html
 url: /comunidad-focalizada/villagrande
 layout: single
 download_file: /reportes/villagrande.pdf

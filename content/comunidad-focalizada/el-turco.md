@@ -90,6 +90,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   psiquiatria. Y esa institución tiene todos los otros servicios de manera
   presencial (psicología, fonoaudiología, fisioterapia y terapia ocupacional)
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/santander-de-quilichao/ubicacion_geografica.html
 url: /comunidad-focalizada/el-turco
 layout: single
 download_file: /reportes/el-turco.pdf

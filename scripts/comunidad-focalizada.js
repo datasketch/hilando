@@ -24,6 +24,12 @@ data.forEach((item) => {
     remove: /[:,]/g,
   }).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
+  const municipality = slugify(item.municipio, {
+    lower: true,
+    replacement: '-',
+    remove: /[:,]/g,
+  }).normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
   filenames.push(`${filename}.md`);
 
   const fields = {
@@ -65,6 +71,7 @@ data.forEach((item) => {
     infraestructura_salud_atencion_psicosocial: splitList(item.infraestructura_salud_atencion_psicosocial),
     notas_infraestructura_salud_atencion_psicosocial: item.notas_infraestructura_salud_atencion_psicosocial,
     num_visitas_predio: item.num_visitas_predio,
+    grafica_ubicacion_geografica: `/charts/municipios/${slugify(municipality)}/ubicacion_geografica.html`,
     url: `/comunidad-focalizada/${filename}`,
     layout: 'single',
     download_file: `/reportes/${filename}.pdf`,

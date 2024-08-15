@@ -93,6 +93,7 @@ infraestructura_salud_atencion_psicosocial:
     presencial en la cabecera municipal en el ESE CENTRO UNO.
 notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
+grafica_ubicacion_geografica: /charts/municipios/pradera/ubicacion_geografica.html
 url: /reportes/la-floresta-y-lomitas
 layout: comunidad
 download_file: /reportes/la-floresta-y-lomitas.pdf

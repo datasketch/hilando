@@ -1,11 +1,11 @@
-{{ define "main" }} {{ $data := .Site.Data.eventos }} {{ $municipio :=
-.Params.municipio }}
+{{ define "main" }} {{ $data := .Site.Data.eventos }} {{ $comunidad :=
+.Params.nombre_comunidad }}
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div
     class="lg:col-start-1 lg:col-end-13 pt-36 pb-16 lg:pt-40 lg:pb-20 xl:pt-48 xl:pb-32 observer bg-blue"
   >
     <div class="mx-auto w-10/12 xl:w-9/12">
-      <div class="flex flex-col lg:flex-row lg:justify-between">
+      <div class="flex flex-col lg:flex-row lg:justify-between gap-8 gap-x-12">
         <div class="lg:w-7/12 text-white">
           <h1
             class="tk-mr-eaves-sans text-4xl xl:text-5xl font-black mx-auto uppercase"
@@ -26,11 +26,20 @@
           </p>
         </div>
         <div class="lg:w-5/12">
+          {{ with .Params.grafica_ubicacion_geografica }}
+          <iframe
+            class="mx-auto w-full h-96"
+            src="{{ . }}"
+            frameborder="0"
+            title="Gráfica de ubicación geográfica"
+          ></iframe>
+          {{ else }}
           <img
-            class="mx-auto"
+            class="mx-auto mb-6 lg:mb-8 xl:mb-10"
             src="/images/territorios/pradera-map.svg"
-            alt="imagen mapa pradera"
+            alt="Mapa de Pradera"
           />
+          {{ end }}
         </div>
       </div>
     </div>
@@ -90,7 +99,63 @@
           alt=""
         />
       </div>
+      <div class="lg:col-span-2">
+        <div class="py-12 lg:py-16 xl:py-20 relative overflow-x-hidden">
+          <div class="mx-auto w-10/12 xl:w-9/12">
+            <div class="space-y-12 mx-auto">
+              <div class="text-center">
+                <h2 class="text-magenta font-bold text-2xl xl:text-3xl">
+                  Eventos significativos de la vida comunitaria
+                </h2>
+              </div>
+              <div class="relative">
+                <!-- Slider main container -->
+                <div class="swiper swiper-comunities">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {{ range where $data "comunidad" $comunidad }}
+                    <div class="swiper-slide">
+                      <a href="/eventos/?event={{ .nombre_evento }}" class="block w-full relative space-y-2 bg-white-2 p-8">
+                        <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
+                        <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
+                          {{ .nombre_evento }}
+                        </h3>
+                        <div class="bg-magenta" style="height: 2px">&nbsp;</div>
+                        <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                          <img
+                            class="w-full h-full object-cover object-center"
+                            src="{{ .thumbnail }}"
+                            alt=""
+                          />
+                        </div>
+                      </a>
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+                <div class="z-20">
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev swiper-button-prev-news">
+                    <img
+                      src="/images/public/left-arrow-green.svg"
+                      alt="Flecha a la izquierda"
+                    />
+                  </div>
+                  <div class="swiper-button-next swiper-button-next-news">
+                    <img
+                      src="/images/public/right-arrow-green.svg"
+                      alt="Flecha a la derecha"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-cultured">
+        {{ if .Params.infraestructura_comunitaria }}
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
           <h3 class="text-xl xl:text-2xl font-black">
             Infraestructura comunitaria
@@ -104,10 +169,12 @@
             {{ end }} {{ end }}
           </ul>
         </div>
+        {{ end }}
       </div>
       <div
         class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 space-y-4 overflow-hidden text-center lg:text-left bg-cultured"
       >
+        {{ if .Params.comunidades_focalizadas_educacion_infraestructura_educativa }}
         <h3 class="text-xl xl:text-2xl font-black">
           Educación e infraestructura educativa
         </h3>
@@ -117,9 +184,11 @@
           {{ with . }}
           <li>{{ . }}</li>
           {{ end }} {{ end }}
-          </ul>
+        </ul>
+        {{ end }}
       </div>
       <div class="px-2 py-8 lg:py-10 xl:py-12 bg-white-2">
+        {{ if .Params.servicios_publicos_comunidades_focalizadas }}
         <div class="w-10/12 lg:w-8/12 mx-auto space-y-4">
           <h3 class="text-xl xl:text-2xl font-black">Servicios Públicos</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
@@ -129,10 +198,12 @@
             {{ end }} {{ end }}
           </ul>
         </div>
+        {{ end }}
       </div>
       <div
         class="px-2 lg:px-12 xl:px-14 py-8 lg:py-10 xl:py-12 overflow-hidden bg-white-2"
       >
+        {{ if .Params.notas_infraestructura_salud_atencion_psicosocial }}
         <div class="w-10/12 lg:w-auto mx-auto space-y-4">
           <h3 class="text-xl xl:text-2xl font-black">
             Infraestructura salud y atención psicosocial
@@ -145,8 +216,9 @@
             with . }}
             <li>{{ . }}</li>
             {{ end }} {{ end }}
-            </ul>
+          </ul>
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -249,6 +321,7 @@
     </div>
   </div>
   <div class="lg:col-start-1 lg:col-end-7 py-12 lg:py-16 xl:py-20 bg-magenta">
+    {{ if .Params.ppales_actividades_economicas_vocacion_productiva }}
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
       <div class="space-y-4 text-white">
         <h3 class="text-xl xl:text-2xl font-black">
@@ -267,44 +340,32 @@
         </ul>
       </div>
     </div>
+    {{ end }}
   </div>
   <div class="lg:col-start-7 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-cultured">
+    {{ if .Params.iniciativas_priorizadas }}
     <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
-      <div
-        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0"
-      >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Iniciativas productivas priorizadas
-            </h3>
-            <ul class="space-y-2 text-lg xl:text-xl">
-              {{ range .Params.iniciativas_priorizadas }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="lg:col-start-1 lg:col-end-13">
-    <div class="flex flex-col lg:flex-row lg:justify-between">
-      <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-tea-green">
-        <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">Otros programas USAID</h3>
-          <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-            {{ range .Params.otros_programas_USAID }} {{ with . }}
+      <div class="space-y-8 lg:space-y-12 xl:space-y-16">
+        <div class="space-y-4">
+          <h3 class="text-xl xl:text-2xl font-black">
+            Iniciativas productivas priorizadas
+          </h3>
+          <ul class="space-y-2 text-lg xl:text-xl">
+            {{ range .Params.iniciativas_priorizadas }} {{ with . }}
             <li>{{ . }}</li>
             {{ end }} {{ end }}
           </ul>
         </div>
       </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="lg:col-start-1 lg:col-end-13">
+    <div class="flex flex-col lg:flex-row lg:justify-between">
       <div class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2">
+        {{ if .Params.alianzas_colaboradores }}
         <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
-          <h3 class="text-xl xl:text-2xl font-black">
-            Alianzas y colaboradores
-          </h3>
+          <h3 class="text-xl xl:text-2xl font-black">Cooperación y alianzas</h3>
           <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
             {{ range .Params.alianzas_colaboradores }} {{ with . }}
             <li>{{ . }}</li>
@@ -314,70 +375,22 @@
             {{ end }} {{ end }}
           </ul>
         </div>
+        {{ end }}
       </div>
-    </div>
-  </div>
-  <div
-    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 bg-fern-green"
-  >
-    <div class="mx-auto w-10/12 xl:w-9/12 px-2 lg:px-0">
       <div
-        class="flex flex-col lg:flex-row lg:justify-between space-y-8 lg:space-y-0 text-white"
+        class="lg:w-6/12 py-12 lg:py-16 xl:py-20 px-2 bg-fern-green text-white"
       >
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">Actividades de ocio</h3>
-            <ul class="space-y-2 text-lg xl:text-xl list-inside list-disc">
-              {{ range .Params.actividades_ocio }} {{ with . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
+        {{ if .Params.medios_comunicacion_narrativas_locales }}
+        <div class="space-y-4 w-10/12 mx-auto lg:w-9/12 lg:ml-auto">
+          <h3 class="text-xl xl:text-2xl font-black">Medios de comunicación</h3>
+          <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
+            {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with .
+            }}
+            <li>{{ . }}</li>
+            {{ end }} {{ end }}
+          </ul>
         </div>
-        <div class="lg:w-5/12 space-y-8 lg:space-y-12 xl:space-y-16">
-          <div class="space-y-4">
-            <h3 class="text-xl xl:text-2xl font-black">
-              Medios de comunicación
-            </h3>
-            <ul class="space-y-4 list-inside list-disc text-lg xl:text-xl">
-              {{ range .Params.medios_comunicacion_narrativas_locales }} {{ with
-              . }}
-              <li>{{ . }}</li>
-              {{ end }} {{ end }}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="lg:col-start-1 lg:col-end-13 py-12 lg:py-16 xl:py-20 relative overflow-x-hidden bg-cultured"
-  >
-    <div class="mx-auto w-10/12 xl:w-9/12">
-      <div class="space-y-12 mx-auto">
-        <div class="text-center">
-          <h2 class="text-magenta font-bold text-2xl xl:text-3xl">
-            Eventos significativos de la vida comunitaria
-          </h2>
-        </div>
-        <div class="container x mandatory-scroll-snapping" dir="ltr">
-          {{ range where $data "municipio" $municipio }}
-          <div class="relative space-y-2 bg-white-2 p-8">
-            <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
-            <h3 class="text-xl xl:text-2xl relative z-10 font-bold">
-              {{ .nombre_evento }}
-            </h3>
-            <div class="bg-magenta" style="height: 2px">&nbsp;</div>
-            <div class="aspect-w-16 aspect-h-9 overflow-hidden">
-              <img
-                class="w-full h-full object-cover object-center"
-                src="{{ .thumbnail }}"
-                alt=""
-              />
-            </div>
-          </div>
-          {{ end }}
-        </div>
+        {{ end }}
       </div>
     </div>
   </div>
@@ -415,4 +428,10 @@
     />
   </div>
 </div>
+{{ end }} {{ define "head" }} {{ $swiper := resources.Get "css/swiper.css" |
+postCSS | fingerprint }}
+<link rel="stylesheet" href="{{ $swiper.Permalink }}" />
+{{ end }} {{ define "js" }} {{ $comunities := resources.Get "js/api/comunidad-focalizada.js" | js.Build
+(dict "minify" true) }}
+<script src="{{ $comunities.Permalink }}"></script>
 {{ end }}

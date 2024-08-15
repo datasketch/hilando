@@ -70,6 +70,7 @@ num_diagnosticos_rurales_participativos_realizados: 1
 infraestructura_salud_atencion_psicosocial: []
 notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/pradera/ubicacion_geografica.html
 url: /reportes/kwet-wala
 layout: comunidad
 download_file: /reportes/kwet-wala.pdf

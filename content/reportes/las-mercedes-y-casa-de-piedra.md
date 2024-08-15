@@ -94,6 +94,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   otros servicios así como la consulta por telemedicina. por el momento, deben
   desplazarse a La cabecera municipal de San Jacinto.
 num_visitas_predio: 0
+grafica_ubicacion_geografica: /charts/municipios/san-jacinto/ubicacion_geografica.html
 url: /reportes/las-mercedes-y-casa-de-piedra
 layout: comunidad
 download_file: /reportes/las-mercedes-y-casa-de-piedra.pdf

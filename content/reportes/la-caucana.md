@@ -95,6 +95,7 @@ notas_infraestructura_salud_atencion_psicosocial: >-
   servicio de telemedicina para psiquiatría y psicología. También ya habilitó el
   servicio presencial de fisioterapia, terapia ocupacional y fonoaudiología. 
 num_visitas_predio: 19
+grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 url: /reportes/la-caucana
 layout: comunidad
 download_file: /reportes/la-caucana.pdf
