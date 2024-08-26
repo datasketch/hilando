@@ -167,6 +167,8 @@ function filterData() {
     }
   }
 
+  state.filteredData = state.filteredData.filter((el) => el.foto.length !== 0);
+
   if (state.filteredData.length > 0) {
     paginate(state.page, state.itemsPerPagination, state.filteredData).forEach(
         (item) => renderEvent(event, item),

@@ -309,9 +309,14 @@
   }
 
   .video__right {
-    @apply w-full;
+    @apply w-full p-8;
     max-width: 732.43px;
-    padding: 25.23px 59.84px 33.1px 59.59px;
+  }
+
+  @screen lg {
+    .video__right {
+      padding: 25.23px 59.84px 33.1px 59.59px;
+    }
   }
 
   .video--flex {

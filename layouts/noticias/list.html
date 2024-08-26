@@ -1,15 +1,42 @@
-{{ define "main" }} {{ $fecha := slice }} {{ $tema := slice }} {{ $municipio
-:=slice }} {{ $region := slice }} {{ $autor := slice }} {{ range .Pages }} {{ if
-.Params.date }} {{ $fecha = $fecha | append .Params.date }} {{ end }} {{ if
-.Params.topic }} {{ $tema = $tema | append .Params.topic }} {{ end }} {{ if
-.Params.municipality }} {{ $municipio = $municipio | append .Params.municipality
-}} {{ end }} {{ if .Params.region }} {{ $region = $region | append
-.Params.region }} {{ end }} {{ if .Params.author }} {{ $autor = $autor | append
-.Params.author }} {{ end }} {{ end }} {{- $data := slice -}} {{- range after 1
-.Pages -}} {{- $data = $data | append (dict "title" .Title "date" .Date
-"description" .Params.description "image" .Params.image "link" .Permalink
-"topic" .Params.topic "municipality" .Params.municipality "region"
-.Params.region "author" .Params.author) -}} {{- end -}}
+{{ define "main" }}
+{{ $fecha := slice }} 
+{{ $tema := slice }} 
+{{ $municipio:=slice }} 
+{{ $region := slice }} 
+{{ $autor := slice }} 
+
+{{ range .Pages }} 
+{{ if .Params.date }}
+{{ $fecha = $fecha | append .Params.date }}
+{{ end }} 
+
+{{ if .Params.topic }} 
+{{ $tema = $tema | append .Params.topic }} 
+{{ end }} 
+
+{{ if .Params.municipality }} 
+{{ $municipio = $municipio | append .Params.municipality}} 
+{{ end }} 
+
+{{ if .Params.region }} 
+{{ $region = $region | append .Params.region }}
+{{ end }}
+
+{{ if .Params.author }}
+{{ $autor = $autor | append.Params.author }} 
+{{ end }} 
+{{ end }}
+
+{{- $data := slice -}} 
+{{- range after 1 .Pages -}} 
+{{- $data = $data | append (dict "title" .Title "date" .Date "description" .Params.description "image" .Params.image "link" .Permalink "topic" .Params.topic "municipality" .Params.municipality "region" .Params.region "author" .Params.author) -}}
+{{- end -}}
+
+{{ $newdates := slice }}
+
+{{ range $fecha }}
+  {{ $newdates = $newdates | append ( dateFormat "January 2006" .) }}
+{{ end }}
 
 <div class="grid grid-cols-1 lg:grid-cols-12">
   <div
@@ -95,20 +122,20 @@
                 />
               </button>
               <div class="panel" style="border: 1px solid #babbc9">
-                {{ range after 1 (sort (uniq $fecha) "value" "desc") }}
+                {{ range after 1 (uniq $newdates) }}
                 <label
                   class="filter-label focus-within:outline-black"
                   for="{{ . }}"
                 >
-                  <span class="text-lg"
-                    >{{ . | time.Format ":date_long" }}</span
+                  <span class="text-lg capitalize"
+                    >{{ . }}</span
                   >
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
                     type="checkbox"
                     name="date"
                     id="{{ . }}"
-                    value="{{ . | time.Format ":date_long" }}"
+                    value="{{ . }}"
                     disabled
                   />
                 </label>

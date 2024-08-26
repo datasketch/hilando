@@ -115,6 +115,7 @@
                   <div class="swiper-wrapper">
                     <!-- Slides -->
                     {{ range where $data "comunidad" $comunidad }}
+                    {{ if .foto }}
                     <div class="swiper-slide">
                       <a href="/eventos/?event={{ .nombre_evento }}" class="block w-full relative space-y-2 bg-white-2 p-8">
                         <p class="text-lg xl:text-xl">{{ .mes | humanize }}</p>
@@ -131,6 +132,7 @@
                         </div>
                       </a>
                     </div>
+                    {{ end }}
                     {{ end }}
                   </div>
                 </div>

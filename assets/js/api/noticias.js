@@ -15,6 +15,7 @@ const pagination = document.querySelector('.pagination');
 const scrollPagination = document.querySelector('#paginationScroll');
 dataEl.remove();
 
+
 const panels = document.querySelectorAll('.panel');
 const images = document.querySelectorAll('.accordion--images');
 
@@ -54,7 +55,7 @@ function filterData() {
   if (hasDateFilter) {
     state.filteredData = state.filteredData.filter((item) =>
       filters.date.includes(
-          format(new Date(item.date), 'd \'de\' MMMM \'de\' yyyy', {locale: es}),
+          format(new Date(item.date), 'MMMM yyyy', {locale: es}),
       ),
     );
   }

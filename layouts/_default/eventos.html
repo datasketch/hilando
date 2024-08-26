@@ -34,12 +34,12 @@
 {{ end }}
 {{/* GET CATEGORIES END */}}
 
-{{/*  SORT BY YEARS  */}}
+{{/* SORT BY YEARS */}}
 {{ $uniqueAnio := uniq $anio }}
 {{ $sortedAnio := sort $uniqueAnio }}
-{{/*  SORT BY YEARS END  */}}
+{{/* SORT BY YEARS END */}}
 
-{{/*  SORT BY MONTHS  */}}
+{{/* SORT BY MONTHS */}}
 {{ range $months }}
 {{ $var := . }}
 {{ range $mes }}
@@ -49,7 +49,7 @@
 {{ end }}
 {{ end }}
 {{ end }}
-{{/*  SORT BY MONTHS END */}}
+{{/* SORT BY MONTHS END */}}
 
 <div class="grid grid-cols-1 lg:grid-cols-12" data-events="{{ len $data }}">
   <!-- BANNER EVENTS -->
@@ -61,7 +61,8 @@
   </div>
   <!-- BANNER EVENTS END -->
 
-  <div class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20 bg-cultured">
+  <div
+    class="lg:col-start-1 lg:col-end-13 pt-12 lg:pt-16 xl:pt-20 relative space-y-12 pb-12 lg:pb-16 xl:pb-20 bg-cultured">
     <h2 class="text-purple text-3xl xl:text-4xl text-center tk-mr-eaves-sans font-black">
       Lo último en nuestros territorios:
     </h2>
@@ -111,30 +112,69 @@
             </div>
             <!-- TIPO EVENTO END -->
 
-                        <!-- ANIO -->
-                        <div>
-                          <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
-                            Año
-                            <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
-                          </button>
-                          <div class="panel" style="border: 1px solid #BABBC9;">
-                            {{ range $sortedAnio }}
-                            <label class="filter-label focus-within:outline-black" for="{{ . }}">
-                              <span class="text-lg">{{ . }}</span>
-                              <input
-                                class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                                type="checkbox" name="anio" id="{{ . }}" value="{{ . }}" disabled>
-                              <!-- <span class="checkmark checkmark--purple"></span> -->
-                            </label>
-                            {{ end }}
-                          </div>
-                        </div>
-                        <!-- ANIO END -->
+            <!-- COMUNIDAD -->
+            <div>
+              <button class="accordion accordion--purple" data-tab="1" style="border: 1px solid #BABBC9;">
+                Comunidad
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $comunidad) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- COMUNIDAD END -->
 
+            <!-- MUNICIPIO -->
+            <div>
+              <button class="accordion accordion--purple" data-tab="2" style="border: 1px solid #BABBC9;">
+                Municipio
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $municipio) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- MUNICIPIO END -->
+
+            <!-- MACROREGION -->
+            <div>
+              <button class="accordion accordion--purple" data-tab="3" style="border: 1px solid #BABBC9;">
+                MacroRegión
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
+              </button>
+              <div class="panel" style="border: 1px solid #BABBC9;">
+                {{ range sort (uniq $departamento) "value" "asc" }}
+                <label class="filter-label focus-within:outline-black" for="{{ . }}">
+                  <span class="text-lg">{{ . }}</span>
+                  <input
+                    class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
+                    type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                </label>
+                {{ end }}
+              </div>
+            </div>
+            <!-- MACROREGION END -->
 
             <!-- MES -->
             <div>
-              <button class="accordion accordion--purple" data-tab="2" style="border: 1px solid #BABBC9;">
+              <button class="accordion accordion--purple" data-tab="4" style="border: 1px solid #BABBC9;">
                 Mes
                 <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
               </button>
@@ -152,74 +192,32 @@
             </div>
             <!-- MES END -->
 
-            <!-- MACROREGION -->
+            <!-- ANIO -->
             <div>
-              <button class="accordion accordion--trasparent" data-tab="3" style="border: 1px solid #BABBC9;">
-                MacroRegión
-                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
+              <button class="accordion accordion--purple" data-tab="5" style="border: 1px solid #BABBC9;">
+                Año
+                <img class="accordion--images" src="/images/eventos/arrow-right-white.svg" alt="flecha a la derecha">
               </button>
               <div class="panel" style="border: 1px solid #BABBC9;">
-                {{ range sort (uniq $departamento) "value" "asc" }}
+                {{ range $sortedAnio }}
                 <label class="filter-label focus-within:outline-black" for="{{ . }}">
                   <span class="text-lg">{{ . }}</span>
                   <input
                     class="bg-purple bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-purple"
-                    type="checkbox" name="departamento" id="{{ . }}" value="{{ . }}" disabled>
-                  <!-- <span class="checkmark checkmark--blue"></span> -->
+                    type="checkbox" name="anio" id="{{ . }}" value="{{ . }}" disabled>
+                  <!-- <span class="checkmark checkmark--purple"></span> -->
                 </label>
                 {{ end }}
               </div>
             </div>
-            <!-- MACROREGION END -->
-
-            <!-- MUNICIPIO -->
-            <div>
-              <button class="accordion accordion--trasparent" data-tab="4" style="border: 1px solid #BABBC9;">
-                Municipio
-                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
-              </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
-                {{ range sort (uniq $municipio) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
-                  <span class="text-lg">{{ . }}</span>
-                  <input
-                    class="bg-space-cadet bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-space-cadet"
-                    type="checkbox" name="municipio" id="{{ . }}" value="{{ . }}" disabled>
-                  <!-- <span class="checkmark checkmark--blue"></span> -->
-                </label>
-                {{ end }}
-              </div>
-            </div>
-            <!-- MUNICIPIO END -->
-
-            <!-- COMUNIDAD -->
-            <div>
-              <button class="accordion accordion--trasparent" data-tab="5" style="border: 1px solid #BABBC9;">
-                Comunidad
-                <img class="accordion--images" src="/images/eventos/arrow-right.svg" alt="flecha a la derecha">
-              </button>
-              <div class="panel" style="border: 1px solid #BABBC9;">
-                {{ range sort (uniq $comunidad) "value" "asc" }}
-                <label class="filter-label focus-within:outline-black" for="{{ . }}">
-                  <span class="text-lg">{{ . }}</span>
-                  <input
-                    class="bg-space-cadet bg-opacity-60 w-5 h-5 flex-shrink-0 relative duration-300 border-none focus:bg-opacity-60 checked:bg-opacity-100 checked:bg-space-cadet"
-                    type="checkbox" name="comunidad" id="{{ . }}" value="{{ . }}" disabled>
-                  <!-- <span class="checkmark checkmark--blue"></span> -->
-                </label>
-                {{ end }}
-              </div>
-            </div>
-            <!-- COMUNIDAD END -->
+            <!-- ANIO END -->
           </div>
         </div>
       </div>
       <div class="lg:col-start-4 lg:col-end-13">
         <div class="mb-10 flex lg:justify-end">
-          <select
-            id="orderBy"
-            class="bg-space-cadet text-white py-2 px-6 uppercase w-full lg:w-auto text-sm lg:text-base"
-          >
+          <select id="orderBy"
+            class="bg-space-cadet text-white py-2 px-6 uppercase w-full lg:w-auto text-sm lg:text-base">
             <option value="0">Ordenar por</option>
             <option value="1">Más reciente</option>
             <option value="2">Más antiguo</option>
