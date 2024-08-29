@@ -15,6 +15,9 @@ municipality: Piendamó
 author: Nuevos cubrimientos 2024
 cms: true
 ---
+
+Por: Paola Andrea Pacho -Comité de Comunicaciones de Piendamó.
+
 El pasado 18 de agosto de 2024, más de 4.000 productores de café se reunieron en la Feria “Cauca Sabe a Café”, en Popayán, un evento clave para la promoción y reconocimiento de la calidad del café en el país. En este escenario, la finca La Facari, ubicada en la vereda El Agrado del municipio de Piendamó, Cauca, se destacó al obtener el primer puesto en la categoría de Naturales: café de proceso natural con o sin fermentación.
 
 
