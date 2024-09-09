@@ -152,7 +152,6 @@ learn?.addEventListener('click', function(e) {
   // filter by id
   const data = JSON.parse(dataEl.value).filter((item) => +item.Id === +id);
 
-
   // call modal class
   // eslint-disable-next-line no-unused-vars
   const modal = new Modal(data[0], 'aprende');

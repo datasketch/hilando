@@ -36,6 +36,7 @@ collections:
               "Perfiles",
               "Formación",
             ],
+          required: false,
         }
       - {
           label: "Región",
@@ -47,6 +48,7 @@ collections:
               "Montes de María",
               "Pacífico Medio, Alto Patía y Norte del Cauca",
             ],
+          required: false,
         }
       - {
           label: "Municipio",
@@ -72,6 +74,7 @@ collections:
               "Santander de Quilichao",
               "Toribío",
             ],
+          required: false,
         }
       - {
           label: "Autor",
@@ -110,6 +113,7 @@ collections:
               "Colectivo de Comunicaciones Capiro",
               "Digital San Jacinto Radio",
             ],
+          required: false,
         }
       - { label: "CMS", name: "cms", widget: "hidden", default: true }
       - { label: "Contenido", name: "body", widget: "markdown" }

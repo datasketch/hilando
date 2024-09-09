@@ -319,7 +319,7 @@ export default class Modal {
                       ${this.data.nombre_de_la_publicacion}
                   </h3>
                   <div class="aspect-w-16 aspect-h-9">
-                      <iframe src="${this.data.enlace_video}"></iframe>
+                      <iframe src="${this.data.enlace_video.split(', ')[0]}"></iframe>
                   </div>
                   <p>${this.data.descripcion || ''}</p>
               </div>
