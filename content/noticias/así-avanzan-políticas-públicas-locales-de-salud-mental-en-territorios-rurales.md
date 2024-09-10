@@ -9,6 +9,8 @@ description: >-
 
 
   - Nueve gobiernos locales ya han firmado actos administrativos para formalizar la implementación de las políticas nacionales en sus municipios. Otros cinco están desarrollando planes para poner en funcionamiento acciones que contribuyan a mejorar la salud mental y el bienestar de las comunidades.
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 En el mes de marzo, el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM) hizo parte de la firma del ‘Pacto social comunitario por la vida, la paz y el territorio de Santander de Quilichao’. Con este evento protocolario se formalizó la creación del acto administrativo para el desarrollo de la Política Pública de Salud Mental y Prevención del Consumo de Sustancias Psicoactivas en este municipio.
