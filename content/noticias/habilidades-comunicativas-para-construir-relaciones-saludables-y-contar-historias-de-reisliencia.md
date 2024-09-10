@@ -10,6 +10,8 @@ description: >+
 
   - WLH en alianza con Pacifista ha realizado talleres para la realización de radio/podcast y audiovisual, además de afianzar conocimientos sobre escritura para medios de comunicación y manejo de redes sociales.
 
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 El Programa Hilando Vidas y Esperanza (WLH), de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), en alianza con Pacifista, realizó entre julio y agosto cuatro encuentros con representantes de 16 colectivos de comunicación, pertenecientes a las zonas de Bajo Cauca y Nordeste Antioqueño, Pacífico Medio, Alto Patía, Norte del Cauca y Montes de María. Los talleres se han enfocado en compartir información referente a la realización de radio/podcast y audiovisual, además de afianzar conocimientos sobre escritura para medios de comunicación y manejo de redes sociales.
