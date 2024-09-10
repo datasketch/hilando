@@ -9,6 +9,10 @@ description: >-
   Pacífico Petronio Álvarez.
 
   -Las tres organizaciones, representantes afrocolombianos e indígenas del Valle y Cauca, vendieron, en total, 22 millones de pesos durante los seis días del Festival.
+topic: Económico
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+municipality: Buenaventura
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Tres organizaciones artesanas de las zonas rurales de Cauca y Valle del Cauca, territorios históricamente afectados por el conflicto armado, estuvieron presentes en la XXVI versión del Festival de Música del Pacífico Petronio Álvarez. Su participación estuvo apoyada por el Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), el cual les ha acompañado en el perfeccionamiento de sus diseños.
