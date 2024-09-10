@@ -9,6 +9,10 @@ description: Prudencio tiene 77 años. Ha trabajado toda su vida en el campo,
   esposa, con quién tuvo 11 hijos que criaron en el municipio de Colosó, Sucre.
   A pesar de que la violencia le pasó muy de cerca, su proyecto de vida tiene
   como centro la paz
+topic: Perfiles
+region: Montes de María
+municipality: Colosó
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 En el marco del Día Internacional de las Personas Mayores, el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, exalta la resiliencia de personas como el señor Prudencio Bustamante, de 77 años. A pesar de la violencia de la que fue testigo, siempre apostó por la paz, y aún ahora, sigue aprendiendo para contribuir al bienestar de su comunidad.
