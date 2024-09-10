@@ -11,6 +11,7 @@ description: >-
 
 
   Con la donación de computadores a las 15 comunidades focalizadas se pretende reducir la brecha digital y fortalecer los espacios SOLE.  
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 * Continúan las grandes preguntas y el fortalecimiento de las comunidades WLH 
