@@ -7,6 +7,10 @@ description: Con el apoyo del Programa Hilando Vidas y Esperanza (WLH) de USAID,
   organizaciones locales de turismo de San Juan Nepomuceno (Bolívar) y Toluviejo
   (Sucre) trabajan para fortalecer sus servicios y contribuir al desarrollo
   local sostenible.
+topic: Económico
+region: Montes de María
+municipality: Toluviejo
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Dos organizaciones de turismo comunitario de los Montes de María mejoraron sus capacidades en cuanto al desarrollo local y comunitario alrededor de las actividades turísticas que promueven, para mejorar sus medios de vida de una forma sostenible. Este fortalecimiento fue realizado en alianza con Travolution Colombia en el marco del Programa de WLH de USAID, implementado por OIM.
