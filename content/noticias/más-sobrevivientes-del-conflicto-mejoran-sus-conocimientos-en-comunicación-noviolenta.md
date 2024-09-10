@@ -11,6 +11,8 @@ description: >-
 
 
   - En total, entre 2022 y 2023, 141 personas de Montes de María, Bajo Cauca y Nordeste Antioqueño, Valle y Norte del Cauca se han capacitado en esta metodología.
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 “En la comunicación sincera encontramos el puente para entender la tierra y sus misterios latentes. La buena comunicación un arte en sí, un puente que conecta corazones aquí”. 
