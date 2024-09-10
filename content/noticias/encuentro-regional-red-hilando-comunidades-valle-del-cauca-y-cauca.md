@@ -3,6 +3,9 @@ title: ENCUENTRO REGIONAL RED HILANDO COMUNIDADES - VALLE DEL CAUCA Y CAUCA
 date: 2024-02-29T13:57:27.770Z
 image: /images/uploads/img_8355.jpg
 description: PRIMER ENCUENTRO DE LAS REDES MUNICIPALES
+topic: Formación
+region: Bajo Cauca y Nordeste Antioqueño
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Durante el 27, 28 y 29 de febrero, el encuentro de la Red Hilando Comunidades en Valle y Cauca reunió a representantes de comunidades de siete municipios: Pradera, Santander de Quilichao, Piendamó, Cajibío, Buenaventura, Buenos Aires y Toribio. 
