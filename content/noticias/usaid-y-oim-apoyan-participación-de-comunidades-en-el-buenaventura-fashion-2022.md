@@ -8,6 +8,10 @@ description: >-
   económico.
 
   Desde 2020, el Buenaventura Fashion se ha posicionado como uno de los escenarios culturales y de moda más importantes del Pacífico.
+topic: Económico
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+municipality: Buenaventura
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *•    Con un stand de artesanías y un espacio en la pasarela, comunidades afro e indígenas del Pacífico visibilizó su riqueza e impulsaron su empoderamiento económico. \
