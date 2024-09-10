@@ -8,6 +8,8 @@ description: "•    El Programa Hilando Vidas y Esperanza (WLH) de USAID y OIM
   activó la campaña ¨Si duele, no es amor¨, para la sensibilización sobre las
   Violencias Basadas en Género (VBG) en los territorios priorizados en Colombia.
   "
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 El Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), activó la campaña ¨Si Duele, No es Amor¨. Esta iniciativa tiene como objetivo llevar mensajes de prevención para atender y mitigar las Violencias Basadas en Género (VGB) en 11 comunidades sobrevivientes del conflicto armado, ubicadas en los departamentos de Bolívar, Sucre, Valle, Cauca y Antioquia, y que han sido priorizadas por WLH en su segundo año de ejecución. 
