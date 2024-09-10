@@ -5,6 +5,8 @@ image: /images/uploads/photo-2022-06-30-10-56-15.jpg
 description: "A través de la campaña +AGUA+VIDA, el Programa Hilando Vidas y
   Esperanza de USAID, implementado por OIM, realiza acciones para sensibilizar a
   15 comunidades en el cuidado del medio ambiente "
+topic: Ambiental
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *A través de la campaña +AGUA+VIDA, el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, realiza acciones para sensibilizar a 15 comunidades en el cuidado del medio ambiente.*
