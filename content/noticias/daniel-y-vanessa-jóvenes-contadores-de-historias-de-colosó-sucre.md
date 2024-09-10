@@ -7,6 +7,9 @@ description: El Paraíso es “un territorio habitado por gente humilde,
   María, se caracteriza también por sus procesos organizativos consolidados,
   que, a pesar de las adversidades que el conflicto armado generó, ha conseguido
   sacar adelante importantes iniciativas de resiliencia y construcción de paz.
+topic: Perfiles
+region: Montes de María
+municipality: Colosó
 cms: true
 ---
 Daniel y Ana, dos jóvenes de la vereda El Paraíso, en Colosó, Sucre, sueñan con terminar sus estudios para ver transformaciones positivas en su comunidad. En el primer año del Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), hicieron parte de diferentes procesos, como la estrategia psicosocial Jóvenes Hilando Juntos, la Agenda Cultural y el proyecto #ResilientES. Ahora, en este segundo año, junto con otros jóvenes del colectivo de Comunicación Nuevo Paraíso, están participando del Proyecto de Narrativas Locales de Construcción de Paz, para visibilizar iniciativas de resiliencia de su territorio.
