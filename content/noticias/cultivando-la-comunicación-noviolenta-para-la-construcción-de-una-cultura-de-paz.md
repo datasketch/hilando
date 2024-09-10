@@ -10,6 +10,8 @@ description: >-
 
 
   Gracias a los procesos de réplica llevados a cabo por ellos en los territorios, ya son más 350 personas quienes se han acercado a este tema como una herramienta para la convivencia
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 La construcción de paz en Colombia, como afirmó en sus recomendaciones el Informe Final de la Comisión para el Esclarecimiento de la Verdad, CEV, requiere de un cambio cultural de posturas que normalizan las prácticas de violencia en la vida cotidiana. En un esfuerzo para contribuir a la transformación de las comunidades afectadas por el conflicto armado, el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), desarrolló un proceso de formación para crear una red de personas multiplicadoras de la Comunicación Noviolenta (CNV) en Colombia.
