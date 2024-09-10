@@ -10,6 +10,8 @@ description: >-
 
 
   Más de 150 líderes participaron del proceso para “Sumar Verdad” a la vida comunitaria y entender su rol en el bienestar colectivo, el cual finalizó con la realización de iniciativas culturales y simbólicas en donde aproximadamente 2000 personas participaron de la reflexión sobre el conflicto, la memoria y la resiliencia comunitaria.
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 ¿Puede la verdad ayudarnos a solucionar nuestros conflictos? ¿Por qué decir la verdad es tan difícil? ¿Saber la verdad hace daño? ¿Qué responsabilidad implica decir la verdad? ¿La verdad sirve para reconstruir la confianza tras el conflicto armado?
