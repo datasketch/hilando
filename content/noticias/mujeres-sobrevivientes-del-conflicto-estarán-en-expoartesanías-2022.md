@@ -6,6 +6,8 @@ description: Dos organizaciones de mujeres artesanas sobrevivientes del
   conflicto armado, que han sido apoyadas por el Programa WLH, estarán del 7 al
   20 de diciembre en el stand 104 del pabellón 1 de Corferias, en la versión
   2022 de Expoartesanías.
+topic: Económico
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *Dos organizaciones de mujeres artesanas sobrevivientes del conflicto armado, que han sido apoyadas por el Programa WLH, estarán del 7 al 20 de diciembre en el stand 104 del pabellón 1 de Corferias, en la versión 2022 de Expoartesanías.*
