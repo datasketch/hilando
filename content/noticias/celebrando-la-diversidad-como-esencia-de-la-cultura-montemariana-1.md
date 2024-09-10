@@ -7,6 +7,10 @@ description: "Habitantes de diversas comunidades del municipio de Chalán, Sucre
   municipio. Con apoyo del Programa WLH de USAID, implementado por OIM, se
   realizaron diferentes actividades para que diferentes grupos poblacionales
   celebraran y reflexionaran alrededor de la importancia de la diversidad. "
+topic: Cultural
+region: Montes de María
+municipality: Chalán
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 EL 28 de junio, en el marco de la celebración del Día del Orgullo a nivel nacional e internacional, el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM) apoyó a las comunidades del municipio de Chalán en esta conmemoración.
