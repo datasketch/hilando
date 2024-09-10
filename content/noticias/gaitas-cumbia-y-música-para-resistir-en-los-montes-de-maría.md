@@ -8,6 +8,10 @@ description: "Los habitantes de los corregimientos Las Mercedes y Casa de
   implementado por OIM. Allí han logrado revivir prácticas culturales alrededor
   de la música, que habían perdido a causa del conflicto armado y que
   representaban una estrategia de resistencia. "
+topic: Cultural
+region: Montes de María
+municipality: San Jacinto
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 ***Los habitantes de los corregimientos Las Mercedes y Casa de Piedra, en el municipio de San Jacinto, Bolívar, celebran los espacios otorgados por el programa Hilando Vidas y Esperanza (WLH) de USAID, implementado por OIM. Allí han logrado revivir prácticas culturales alrededor de la música, que habían perdido a causa del conflicto armado y que representaban una estrategia de resistencia.*** 
