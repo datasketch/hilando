@@ -10,6 +10,8 @@ description: >-
   SOLE Colombia.
 
   - 47 jóvenes se formaron como embajadores para replicar esta metodología de forma independiente. Ya son 166 personas capacitadas desde 2022.
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 \*- Durante 2023, 17 comunidades rurales realizaron 129 SOLEs o espacios autónomos de aprendizaje para cerrar la brecha digital, con el apoyo del Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, y su socio SOLE Colombia.\
