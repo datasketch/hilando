@@ -11,6 +11,8 @@ description: >-
 
 
   Desde agosto, WLH ha entregado equipos de telemedicina para la atención en salud mental en 10 municipios del Bajo Cauca antioqueño y los Montes de María.
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *Una alianza entre el Hospital de Salud Mental de Antioquia y el Programa Hilando Vidas y Esperanza (WLH) de USAID, implementado por OIM, permitirá fortalecer la implementación de la política pública de salud mental mediante el uso de telemedicina.*
