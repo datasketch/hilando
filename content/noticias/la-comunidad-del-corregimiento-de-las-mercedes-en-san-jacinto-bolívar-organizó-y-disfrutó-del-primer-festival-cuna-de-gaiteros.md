@@ -10,6 +10,10 @@ description: >-
 
 
   El Festival rindió homenaje a los maestros vivos y fallecidos, oriundos de la comunidad de Las Mercedes, que han llevado la música de gaitas, la cumbia y el folclore Caribe a nivel nacional e internacional.
+topic: Cultural
+region: Montes de María
+municipality: San Jacinto
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 ![semillero_jovenes_bailando_cuna_gaiteros](/images/uploads/whatsapp-image-2022-04-15-at-8.07.04-am-6-.jpeg "Jovenes del semillero bailando en cuna de gaiteros")
