@@ -10,6 +10,8 @@ description: >-
 
 
   * Más de 500 personas, pertenecientes a poblaciones rurales históricamente afectadas por el conflicto armado y la desigualdad, han participado de este espacio de formación, que consta de una serie audiovisual y otros contenidos digitales.
+topic: Ambiental
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM desarrolló el curso como herramienta para la educación ambiental y desarrollo sostenible.* Cosechando Futuro incluye una serie audiovisual, que ya está disponible en YouTube.
