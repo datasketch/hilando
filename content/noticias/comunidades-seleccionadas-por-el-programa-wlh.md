@@ -11,6 +11,8 @@ description: >+
 
   Con diálogos comunitarios, visitas domiciliarias, diagnósticos rurales participativos y la construcción de una agenda cultural de eventos, WLH inició la intervención integral en las comunidades que se caracterizan por su resiliencia, diversidad y potencial productivo. 
 
+topic: Perfiles
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 <!--StartFragment-->
