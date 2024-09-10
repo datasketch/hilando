@@ -10,6 +10,8 @@ description: >-
   mental de las comunidades rurales.
 
   •    Estas salas han sido el resultado de un proceso de articulación entre las autoridades locales, los hospitales, el Ministerio de Salud, y el Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM).
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 En un esfuerzo por mejorar la salud mental y el bienestar psicosocial de los sobrevivientes del conflicto armado, el Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM) ha trabajado con hospitales públicos de baja complejidad, en la implementación de la Estrategia de Espacios Psicosociales y de Telemedicina. Con esta intervención USAID y OIM buscan mejorar el acceso a la atención oportuna y de alta calidad en salud mental para los habitantes de 15 municipios históricamente afectadas por la violencia ubicados en Antioquia, Sucre, Bolívar, Cauca y Valle del Cauca. 
