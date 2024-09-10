@@ -6,6 +6,8 @@ image: /images/uploads/banner-uariv.jpeg
 description: En el marco del Día de la Memoria y la Solidaridad con las
   Víctimas, el programa Restaurando Nuestro Futuro lideró conmemoraciones y
   acciones comunicativas para avanzar en el camino de la reconciliación.
+topic: Cultural
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 En el marco del Día de la Memoria y la Solidaridad con las Víctimas, el programa Restaurando Nuestro Futuro lideró conmemoraciones y acciones comunicativas para avanzar en el camino de la reconciliación. 
