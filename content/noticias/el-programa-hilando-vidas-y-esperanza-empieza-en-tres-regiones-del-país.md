@@ -12,6 +12,8 @@ description: "El Programa Hilando Vidas y Esperanzas (WLH, por sus siglas en
   (OIM). Los municipios focalizados se encuentran ubicados en 3 regiones: Montes
   de María, Bajo Cauca y Nordeste de Antioqueño; y Pacífico Medio, Alto Patía y
   Norte del Cauca (Ver mapa)."
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 <!--StartFragment-->
