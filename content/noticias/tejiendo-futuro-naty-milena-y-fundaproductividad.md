@@ -1,7 +1,7 @@
 ---
 title: "Yorladis Bassa: Multiplicando saberes en La Dulzura "
 date: 2023-08-01T14:20:52.150Z
-image: /images/uploads/20220405_104510.jpg
+image: /images/uploads/yorladis-bassa.jpg
 description: Yorladis Bassa es oriunda del corregimiento de Guarumo, zona rural
   del municipio de Cáceres Antioquia, menciona que llegó a la vereda Isla de La
   Dulzura desde muy joven
