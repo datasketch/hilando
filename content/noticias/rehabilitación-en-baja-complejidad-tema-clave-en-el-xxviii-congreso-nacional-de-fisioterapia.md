@@ -8,6 +8,9 @@ description: En el evento, el Programa Hilando Vidas y Esperanza (WLH) de la
   implementado la Organización Internacional para las Migraciones (OIM), exhibió
   una réplica de una sala de rehabilitación en baja complejidad, similar a las
   que ha puesto en funcionamiento en 32 hospitales del país.
+topic: Psicosocial
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Ni la discapacidad, ni las enfermedades crónicas o degenerativas deben ser sinónimo de exclusión. Sin embargo, el acceso oportuno a servicios para su tratamiento es fundamental para garantizar que todas las personas, sin importar su condición de salud, puedan tener una vida digna y una participación integral en la sociedad. No obstante, las limitaciones y barreras en el acceso son frecuentes en la ruralidad colombiana que, además, ha sido históricamente afectada por el conflicto armado. Estos y algunos otros temas fueron discutidos en el XXVIII Congreso Nacional de Fisioterapia realizado en la ciudad de Cali con la asistencia de más de 270 personas entre estudiantes, profesionales de la salud y expertos.
