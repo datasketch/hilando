@@ -10,6 +10,8 @@ description: >-
 
 
   -    En total, 1500 personas accedieron a la oferta de servicios que llegaron a las comunidades, entre ellos, acciones conjuntas de la estrategia Jóvenes Hilando Juntos, la estrategia psicosocial del Programa, en alianza con la Fundación Mi Sangre.
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Entre mayo y agosto de este año, el programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), realizó 15 brigadas de salud con énfasis psicosocial, junto a las entidades prestadoras de servicios de salud municipales en el Bajo Cauca y Nordeste Antioqueño, los Montes de María, Valle del Cauca y Norte del Cauca. En total, más de 1500 personas se beneficiaron de estas actividades que hacen parte de los esfuerzos para aumentar el acceso a los servicios de salud mental, en los territorios históricamente afectados por la violencia. 
