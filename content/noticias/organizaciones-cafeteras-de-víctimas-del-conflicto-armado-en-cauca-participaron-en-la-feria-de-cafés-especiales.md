@@ -7,6 +7,9 @@ description: Del 24 al 26 de agosto de 2023, organizaciones de productores de
   café participantes del Programa Hilando Vidas y Esperanza de USAID y OIM
   expusieron en la 12ª Feria y Concurso de Cafés Especiales en Santander de
   Quilichao, Cauca.
+topic: Económico
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 El programa Hilando Vidas y Esperanza de USAID, implementado por la OIM, apoyó la “12ª Feria y Concurso de Cafés Especiales: El Mejor Café del Cauca”. El Comité de Cafeteros del Cauca realizó este espacio en el municipio de Santander de Quilichao para promocionar el café de la región y propiciar encuentros, colaboraciones y redes de apoyo entre miembros del gremio cafetero caucano.
