@@ -10,6 +10,8 @@ description: >-
 
 
   25 personas de los Montes de María y el Cauca participaron en visitas a asociaciones de producción de café y maíz para intercambiar conocimiento técnico y fortalecer sus redes comerciales.  
+topic: Económico
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 * Con dos giras de conocimiento, el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, fortalece capacidades en agricultores para su empoderamiento económico. 
