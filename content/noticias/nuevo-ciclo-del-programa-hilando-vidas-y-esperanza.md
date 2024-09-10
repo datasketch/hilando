@@ -7,6 +7,7 @@ description: Tras finalizar su primer año de trabajo, el Programa Hilando Vidas
   para el Desarrollo Internacional (USAID), implementado por la Organización
   Internacional para las Migraciones (OIM), focalizó las  nuevas comunidades que
   acompañará durante 2023.
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Como parte de las actividades de inicio de año, el Programa Hilando Vidas y Esperanza ha focalizado 15 nuevas comunidades que han sido afectadas por la violencia. En total, más de 2.200 familias se beneficiarán con las iniciativas, cuyo principal objetivo está orientado a ampliar el acceso a los servicios de atención psicosocial; promover la resiliencia social y comunitaria; impulsar el empoderamiento económico; y fortalecer las habilidades comunicativas para una cultura de paz mediante un enfoque de desarrollo inclusivo.
