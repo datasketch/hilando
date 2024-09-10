@@ -11,6 +11,10 @@ description: >-
 
 
   Este proceso hace parte de la Agenda Cultural del Programa Hilando Vidas y Esperanza (WLH), de USAID, implementado por OIM.  
+topic: Deportivo
+region: Montes de María
+municipality: Chalán
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 * Desde el mes de marzo, empezó a crearse el primer equipo de Ultimate en el corregimiento de La Ceiba, en Chalán, Sucre. Neider, quien lidera la formación del equipo y trabaja en enseñar a niños y niñas de la comunidad, se ha sorprendido del talento. 
