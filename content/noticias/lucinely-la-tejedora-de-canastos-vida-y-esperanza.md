@@ -4,6 +4,9 @@ date: 2023-01-20T17:13:48.455Z
 image: /images/uploads/img_2556banner3_0.jpeg
 description: “Vendí mucho y hablé mucho de cómo es mi comunidad, saludé a la
   gente en mi lengua para que conozcan la historia detrás de la canasta”
+topic: Perfiles
+municipality: Buenaventura
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 La señora Lucinely habla con firmeza a un empresario estadounidense a quien le da la tarjeta de su organización, Fundaproductividad, integrada por artesanas indígenas Wounaan. Este encuentro se dio en el marco de Expoartesanías 2022, la feria artesanal más importante de Colombia, donde Lucinely y sus compañeras vendieron canastos elaborados en palma de Werregue y en fibra de Chocolatillo.  
