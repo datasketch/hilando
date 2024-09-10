@@ -9,6 +9,7 @@ description: >-
   comunidades. 
 
   En las regiones de Montes de María, Bajo Cauca y Nordeste Antioqueño y Valle y Norte del Cauca, los jóvenes embajadores digitales están por compartir experiencias y recargarse para seguir trabajando por la paz de su región, usando herramientas digitales. 
+topic: Formación
 cms: true
 ---
 Después de la pandemia por COVID-19, en Colombia se hizo evidente la importancia de la alfabetización digital, particularmente en contextos rurales. Las herramientas digitales y el uso del internet son de vital importancia para mejorar la calidad de vida de las comunidades rurales,  pues por medio de ellos niños y jóvenes pueden acceder a información valiosa para su educación, campesinos y campesinas pueden optimizar sus procesos productivos y la población general puede acceder a diferentes servicios como la banca digital o servicios de asesoría legal y de salud.
