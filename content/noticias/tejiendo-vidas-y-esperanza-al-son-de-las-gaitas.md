@@ -9,6 +9,10 @@ description: >-
 
 
   -    Al Festival también asistieron 20 artesanas y productores locales que han hecho parte de las iniciativas de empoderamiento económico del Programa WLH que consiguieron vender sus productos entre los asistentes.
+topic: Cultural
+region: Montes de María
+municipality: San Jacinto
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 *\-    El Programa Hilando Vidas y Esperanza (WLH) de USAID y OIM acompañó la participación de 12 niños y niñas del corregimiento de Las Mercedes en el 31vo Festival Nacional de Gaitas de San Jacinto.*
