@@ -8,6 +8,9 @@ description: >-
 
 
   Estos eventos hicieron visibles las luchas y resiliencia de las mujeres e incluyeron recitales de poesía, ofrendas y reconocimientos, marchas, presentaciones artísticas, ollas comunitarias, talleres de tejeduría y partidos de fútbol femenino.
+topic: Deportivo
+region: null
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 \* Las actividades hacen parte de la agenda cultural del Programa WLH de USAID, implementado por OIM.
