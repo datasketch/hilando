@@ -10,6 +10,8 @@ description: "Con la participación de 49 profesionales de salud mental, el
   Internacional de las Migraciones (OIM), llevó a cabo dos procesos de formación
   a formadores sobre el Programa de Acción para Superar las Brechas en Salud
   Mental: MhGAP (por su sigla en inglés)."
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Con la participación de 49 profesionales de salud mental, el Ministerio de Salud y Protección Social en articulación con la Organización Mundial de la Salud, la Organización Panamericana de la Salud y con el apoyo del Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional de las Migraciones (OIM), llevó a cabo dos procesos de formación a formadores sobre el Programa de Acción para Superar las Brechas en Salud Mental: MhGAP (por su sigla en inglés).
