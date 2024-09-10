@@ -92,3 +92,7 @@
 js.Build (dict "minify" hugo.IsProduction)}}
 <script src="{{ $aprende.Permalink }}"></script>
 {{ end }}
+{{ define "head" }}
+{{ $swiper := resources.Get "css/swiper.css" | postCSS | fingerprint }}
+<link rel="stylesheet" href="{{ $swiper.Permalink }}">
+{{ end }}

@@ -1,6 +1,7 @@
 const {default: Modal} = require('js/utils/modal');
 const {paginate} = require('js/utils/pagination');
 const {renderLearn} = require('js/utils/render');
+import Swiper, {Navigation, Thumbs, Autoplay, FreeMode} from 'swiper';
 
 const filters = document.querySelector('.filters');
 const panels = document.querySelectorAll('.panel');
@@ -155,6 +156,51 @@ learn?.addEventListener('click', function(e) {
   // call modal class
   // eslint-disable-next-line no-unused-vars
   const modal = new Modal(data[0], 'aprende');
+
+  const swiperThumbs = new Swiper('.swiperThumbs', {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay, FreeMode],
+
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+
+    // loop: true,
+
+    // Default parameters
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'horizontal',
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  const swiperMain = new Swiper('.swiperMain', {
+    // configure Swiper to use modules
+    modules: [Navigation, Thumbs, Autoplay],
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-learn-next',
+      prevEl: '.swiper-button-learn-prev',
+      disabledClass: 'opacity-40',
+    },
+
+    // Default parameters
+    spaceBetween: 10,
+
+    thumbs: {
+      swiper: swiperThumbs,
+    },
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    loop: true,
+  });
 });
 
 filters.addEventListener('click', function(e) {

@@ -1,3 +1,5 @@
+import {getYouTubeVideoID} from '../utils/index';
+
 export default class Modal {
   // constructor
   constructor(data, modalSection = 'eventos') {
@@ -89,6 +91,34 @@ export default class Modal {
              </div>
             `;
     });
+    return html;
+  }
+
+  #renderVideoSwiperSlide(urlVideos, isThumbs = false) {
+    let html = '';
+
+    if (isThumbs) {
+      urlVideos.forEach((urlVideo, i) => {
+        html += `
+          <div class="swiper-slide swiper-slide--thumbs">
+              <img src="${`https://img.youtube.com/vi/${getYouTubeVideoID(urlVideo)}/hqdefault.jpg`}" alt="${`video ${i + 1}`}">
+           </div>
+          `;
+      });
+    }
+
+    if (!isThumbs) {
+      urlVideos.forEach((urlVideo) => {
+        html += `
+          <div class="swiper-slide">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="${urlVideo}"></iframe>
+            </div>
+           </div>
+          `;
+      });
+    }
+
     return html;
   }
 
@@ -264,9 +294,8 @@ export default class Modal {
                   </div>
                 </div>
               </div>
-              ${
-                this.data.enlace_video_audio.length > 1 ? (
-                  `
+              ${this.data.enlace_video_audio.length > 1 ? (
+          `
                   <!-- Slider main container -->
                   <div class="swiper swiperVideoAudio" style="position: relative;">
                     <!-- Additional required wrapper -->
@@ -284,13 +313,13 @@ export default class Modal {
                     </div>
                   </div>
                   `
-                ) : (
-                  `
+        ) : (
+          `
                   <div class="aspect-w-16 aspect-h-9">
                     <iframe src="${this.data.enlace_video_audio[0]}"></iframe>
                   </div>
                   `
-                )
+        )
 }
               <div>
                 <p>${this.data.descripcion || ''}</p>
@@ -318,9 +347,38 @@ export default class Modal {
                  <h3 class="video--font-size-22 video--font-bold">
                       ${this.data.nombre_de_la_publicacion}
                   </h3>
+                  ${this.data.enlace_video.split(', ').length > 0 ? (
+          `
+                       <div class="swiper swiperMain">
+                          <div class="swiper-wrapper">
+                  ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(', '))}
+                          </div>
+                       </div>
+                    `
+        ) : (
+          `
                   <div class="aspect-w-16 aspect-h-9">
-                      <iframe src="${this.data.enlace_video.split(', ')[0]}"></iframe>
+                      <iframe src="${this.data.enlace_video.trim().split(', ')[0]}"></iframe>
                   </div>
+                    `
+        )}
+                  ${this.data.enlace_video.trim().split(', ').length > 0 && (
+    `
+                      <div class="flex items-center justify-between">
+                        <button class="transform -translate-y-2 swiper-button-learn-prev" aria-label="Imagen anterior">
+                          <img class="h-6 lg:h-8" src="/images/public/left-arrow.svg" alt="arrow slider" />
+                      </button>
+                      <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events"">
+                          <div class="swiper-wrapper">
+                              ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(', '), true)}
+                          </div>
+                      </div>
+                      <button class="transform -translate-y-2 swiper-button-learn-next" aria-label="Imagen siguiente">
+                          <img class="h-6 lg:h-8" src="/images/public/right-arrow.svg" alt="arrow slider" />
+                      </button>
+                    </div>
+                    `
+  )}
                   <p>${this.data.descripcion || ''}</p>
               </div>
             </div>
