@@ -10,6 +10,8 @@ description: Entre marzo y mayo la Ola SOLEra llegó a los hermosos territorios
   para el Desarrollo    Internacional    (USAID),    implementado    por    la 
     Organización Internacional para las Migraciones (OIM) y F﻿undación SOLE
   Colombia
+topic: Formación
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Entre marzo y mayo la Ola SOLEra llegó a los hermosos territorios del Cauca, Valle del Cauca, Antioquia y Montes de María. Nos reunimos el equipo de SOLE Colombia, los Exploradores OIM y los Exploradores Hiladores con alrededor de 25 a 30 personas en cada una de las 15 comunidades beneﬁciarias del programa Hilando Vidas y Esperanza de la Agencia de los Estados Unidos para el Desarrollo    Internacional    (USAID),    implementado    por    la    Organización Internacional para las Migraciones (OIM) y F﻿undación SOLE Colombia.
