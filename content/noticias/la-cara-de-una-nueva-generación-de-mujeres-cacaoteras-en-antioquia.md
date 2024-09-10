@@ -4,6 +4,10 @@ date: 2023-10-17T21:08:10.311Z
 image: /images/uploads/descarga.jpeg
 description: Juliet Ortega sueña con posicionar el cacao de la región como una
   alternativa de vida digna para otros jóvenes como ella.
+topic: Económico
+region: Bajo Cauca y Nordeste Antioqueño
+municipality: Tarazá
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Juliet Ortega tiene 24 años. Nació y creció en la zona rural del municipio de Tarazá, en la subregión del Bajo Cauca antioqueño, que, según el Informe Final de la Comisión para el Esclarecimiento de la Verdad, fue de los más afectados por el conflicto armado en Colombia.
