@@ -11,6 +11,10 @@ description: >-
   corriendo por amenazas a su esposo.
 
   Por Rosember Anaya Ramírez
+topic: Perfiles
+region: Montes de María
+municipality: San Jacinto
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 **Por Rosember Anaya Ramírez**
