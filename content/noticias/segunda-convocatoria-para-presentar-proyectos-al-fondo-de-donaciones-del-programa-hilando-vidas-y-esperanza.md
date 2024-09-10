@@ -14,6 +14,8 @@ description: >-
 
 
   • La convocatoria estará abierta entre el 1 y el 30 de septiembre de 2022. 
+topic: Económico
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 • El Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, abre convocatoria para financiar proyectos que busquen mejorar la salud mental y el bienestar psicosocial de los sobrevivientes del conflicto y de las comunidades afectadas por la violencia en 13 municipios focalizados por el Programa.
