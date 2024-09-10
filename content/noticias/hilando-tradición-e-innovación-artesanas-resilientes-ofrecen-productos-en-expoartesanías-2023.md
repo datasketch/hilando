@@ -7,6 +7,8 @@ description: Ocho organizaciones de San Jacinto, Colosó, Buenaventura, Santande
   de Quilichao y Pradera ofrecen en Expoartesanías 2023 productos que nacieron
   de procesos de co-creacion y diseño, impulsados por el Programa Hilando Vidas
   y Esperanza de USAID, implementado por OIM.
+topic: Económico
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Ocho organizaciones de San Jacinto, Bolívar; Colosó, Sucre; Buenaventura y Pradera, Valle; y Santander de Quilichao, Cauca ofrecen, por estos días, en Expoartesanías 2023 *(Pabellón 3, nivel 1, stand 230)* productos artesanales con innovación y tradición apoyados por el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM)*.* La feria, una de las más importantes de este tipo en el país, se realiza en Corferias en Bogotá y se extenderá hasta el 20 de diciembre.
