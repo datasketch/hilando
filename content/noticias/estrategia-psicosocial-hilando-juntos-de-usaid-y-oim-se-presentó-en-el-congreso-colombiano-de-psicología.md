@@ -11,6 +11,9 @@ description: >-
 
 
   -    En el Congreso, el programa Hilando Vidas y Esperanza de USAID, implementado por OIM, presentó su estrategia psicosocial, Hilando Juntos, y reflexionó sobre la importancia de seguir generando puentes entre la Cooperación Internacional, los gremios y las comunidades.
+topic: Psicosocial
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Con dos mesas de diálogo, un simposio y un stand informativo, el programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), estuvo en la versión 2023 del Congreso Colombiano de Psicología, organizado por el Colegio Colombiano de Psicólogos (COLPSIC) y la Asociación Colombiana de Facultades de Psicología (ASCOFAPSI). 
