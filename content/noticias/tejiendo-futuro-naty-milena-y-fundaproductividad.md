@@ -5,6 +5,10 @@ image: /images/uploads/20220405_104510.jpg
 description: Yorladis Bassa es oriunda del corregimiento de Guarumo, zona rural
   del municipio de Cáceres Antioquia, menciona que llegó a la vereda Isla de La
   Dulzura desde muy joven
+topic: Perfiles
+region: Bajo Cauca y Nordeste Antioqueño
+municipality: Cáceres
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Yorladis Bassa es oriunda del corregimiento de Guarumo, zona rural del municipio de Cáceres Antioquia, menciona que llegó a la vereda Isla de La Dulzura desde muy joven y se radicó allí con su familia por la oportunidad de tener un lugar propio en el cual vivir; desde entonces, y después de tener a sus dos hijas, conformar un hogar y haber experimentado tres desplazamientos forzados (dos de ellos por inundaciones y otro por la violencia que permea el territorio), menciona que su lugar en el mundo es La Dulzura.  
