@@ -5,6 +5,10 @@ image: /images/uploads/img_8055.jpeg
 description: "Juan Pablo Valencia nació en Tarazá, un pequeño municipio del Bajo
   Cauca Antioqueño. Vivía con su abuela cuando hizo pública ante su familia su
   orientación sexual: ser joven gay."
+topic: Perfiles
+region: Bajo Cauca y Nordeste Antioqueño
+municipality: Tarazá
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Juan Pablo Valencia nació en Tarazá, un pequeño municipio del Bajo Cauca Antioqueño. Vivía con su abuela cuando hizo pública ante su familia su orientación sexual: ser joven gay. Así, empezando su adolescencia, a los 14 años, se vio obligado a salir de su casa. Desde entonces, Juan se ha tenido que valer por sí mismo, enfrentando abusos y otros tipos de violencia basadas en género. Incluso, en 2015 fue amenazado por grupos armados por causa de su orientación sexual. 
