@@ -6,6 +6,9 @@ image: /images/uploads/photo-2024-06-19-08-34-55.jpg
 description: "Estos eventos reunieron a cerca de 250 integrantes de estos
   municipios con el objetivo de fomentar prácticas sostenibles, como el
   reciclaje, el compostaje y el cuidado del agua. "
+topic: Ambiental
+region: Montes de María
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 En los últimos días de junio, a propósito del Mes del Medio Ambiente, las veredas de Alemania, en Chalán (Sucre); La Esmeralda, en Colosó (Sucre); y San José del Peñón, en San Juan Nepomuceno (Bolívar), vivieron jornadas ambientales enfocadas en la economía circular y la preservación de los recursos naturales.  
