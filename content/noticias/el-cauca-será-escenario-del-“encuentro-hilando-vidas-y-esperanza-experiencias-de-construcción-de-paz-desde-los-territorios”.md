@@ -15,6 +15,9 @@ description: >-
 
 
   -    Salud mental, sanación comunitaria, economía rural y cultura serán algunos temas abordados en este espacio. 
+topic: Psicosocial
+region: Pacífico Medio, Alto Patía y Norte del Cauca
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 El próximo miércoles 22 de marzo se llevará a cabo en Popayán (Cauca) el “Encuentro Hilando Vidas y Esperanza: experiencias de construcción de paz desde los territorios” organizado por el Programa Hilando Vidas y Esperanza de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM). El encuentro es realizado en alianza con Colombia +20 de El Espectador, la Universidad del Cauca, la Asociación de Facultades de Psicología y el Colegio Colombiano de Psicólogos.
