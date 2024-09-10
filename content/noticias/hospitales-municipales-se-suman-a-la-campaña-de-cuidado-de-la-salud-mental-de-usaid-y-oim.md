@@ -8,6 +8,8 @@ description: Más de 1.000 profesionales de la salud participaron en ¨Un Café 
   Esperanza, en alianza con el Ministerio de Salud, que promovió el autocuidado
   y la reflexión en torno al cuidado de la salud mental en profesionales de la
   salud y personal de apoyo de 24 hospitales municipales del país.
+topic: Psicosocial
+author: Programa Hilando Vidas y Esperanza
 cms: true
 ---
 Como parte de la conmemoración del Día Mundial de la Salud Mental, el Programa Hilando Vidas y Esperanza (WLH) de la Agencia de Estados Unidos para el Desarrollo Internacional (USAID), implementado por la Organización Internacional para las Migraciones (OIM), desarrolló junto al Ministerio de Salud y Protección Social, la actividad de autocuidado *"Un Café que Inspira"*, en 24 hospitales municipales * de Antioquia, Sucre, Bolívar, Valle y Cauca; y en la Universidad Nacional, sede Bogotá.
