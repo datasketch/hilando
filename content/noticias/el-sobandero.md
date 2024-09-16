@@ -10,6 +10,4 @@ municipality: Pradera
 author: Casa Zambo
 cms: true
 ---
-```
 <iframe src="https://drive.google.com/file/d/1vLzfi0PUrsbK4pi7WQ7xpU1ybCReQBYe/preview" width="640" height="480" allow="autoplay"></iframe>
-```
