@@ -13,8 +13,4 @@ Casas de palafitos en el barrio Miramar de Buenaventura.
 
 Foto: Terumoto Fukuda
 
-
-
-```
 <iframe src="https://drive.google.com/file/d/1uxUtFdjr8acykKUWcVd59QeIxHghWxR1/preview" width="640" height="480" allow="autoplay"></iframe>
-```
