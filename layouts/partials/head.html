@@ -7,6 +7,10 @@
 {{ partial "twitter-meta-tags.html" . }}
 {{ partial "og-meta-tags.html" . }}
 
+<!-- 100% privacy-first analytics -->
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
 {{ $css := resources.Get "css/tailwind.pcss" | toCSS | postCSS | minify }}
 {{ $menu := resources.Get "css/menu.css" | toCSS | postCSS | minify }}
 

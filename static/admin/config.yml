@@ -112,6 +112,7 @@ collections:
               "Colectivo de Comunicaciones Casa de Piedra",
               "Colectivo de Comunicaciones Capiro",
               "Digital San Jacinto Radio",
+              "Comité Comunicaciones Red Hilando Comunidades"
             ],
           required: false,
         }
