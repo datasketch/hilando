@@ -1,4 +1,4 @@
-import {getYouTubeVideoID} from '.';
+import {getDrivePreviewImage, getDriveVideoID, getVideoPlatform, getYouTubePreviewImage, getYouTubeVideoID} from '.';
 import {format} from 'date-fns';
 import {es} from 'date-fns/locale';
 
@@ -13,8 +13,7 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             <span class="event__nombre">
             ${data.nombre_evento}
             </span>
-            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${
-  data.nombre_evento
+            <img class="event__image-titulo" src="/images/eventos/nombre-evento.svg" alt="${data.nombre_evento
 }">
         </h3>
         <div class="text-purple flex items-center gap-x-1">
@@ -27,20 +26,17 @@ export const renderEvent = (parentEl, data, classNames = '') => {
             <p>${data.anio || ''}</p>
         </div>
         <p class="text-lg xl:text-xl">
-            ${
-              data.descripcion && data.descripcion.length >= 150 ?
-                data.descripcion.slice(0, 150) + ' ...' :
-                'No hay descripcion'
+            ${data.descripcion && data.descripcion.length >= 150 ?
+      data.descripcion.slice(0, 150) + ' ...' :
+      'No hay descripcion'
 }
         </p>
-        <button data-id="${
-  data.id
+        <button data-id="${data.id
 }" class="event__button" style="background-color: #C5296A;">Leer más</button>
     </div>
     <div class="event__container-right">
-        ${
-  data.thumbnail &&
-          `<img class="event__image" src="${data.thumbnail}" alt="" style="height: 365px;" />`
+        ${data.thumbnail &&
+    `<img class="event__image" src="${data.thumbnail}" alt="" style="height: 365px;" />`
 }
     </div>
   </div>
@@ -73,19 +69,36 @@ export const renderPublicaciones = (parentEl, data) => {
   }).format(new Date(data.fecha))}
           </p>
           <div class="publicaciones__text-right publicaciones--mt-2">
-          ${
-            files ?
-              files.map(
-                  (f) =>
-                    `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #C5296A;" download="${f.title}" target="_blank">Descargar</a>`,
-              ) :
-              ''
+          ${files ?
+      files.map(
+          (f) =>
+            `<a class="publicaciones__download" title="${f.title}" href="${f.url}" style="background-color: #C5296A;" download="${f.title}" target="_blank">Descargar</a>`,
+      ) :
+      ''
 }
           </div>
         </div>
     </div>
     `;
   parentEl.insertAdjacentHTML('beforeend', html);
+};
+
+export const getPreviewImage = (url) => {
+  const videoPlatform = getVideoPlatform(url);
+
+  if (videoPlatform === 'Unknown') return;
+
+  if (videoPlatform === 'YouTube') {
+    const id = getYouTubeVideoID(url);
+    const previewImage = getYouTubePreviewImage(id);
+    return previewImage;
+  }
+
+  if (videoPlatform === 'Google Drive') {
+    const id = getDriveVideoID(url);
+    const previewImage = getDrivePreviewImage(id);
+    return previewImage;
+  }
 };
 
 export const renderMultimedia = (parentEl, data, type) => {
@@ -97,14 +110,10 @@ export const renderMultimedia = (parentEl, data, type) => {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            ${
-              data.thumbnail ?
-                `<img class="multimedia__image" src="${
-                  data.thumbnail
-                }" alt="${data.nombre_galeria + 'image'}">` :
-                `<img class="multimedia__image" src="${`https://img.youtube.com/vi/${getYouTubeVideoID(
-                    data.enlace_video_audio[0],
-                )}/hqdefault.jpg`}" alt="${data.nombre_galeria + 'image'}">`
+            ${data.thumbnail ?
+        `<img class="multimedia__image" src="${data.thumbnail
+        }" alt="${data.nombre_galeria + 'image'}">` :
+        `<img class="multimedia__image" src="${getPreviewImage(data.enlace_video_audio[0])}" alt="${data.nombre_galeria + 'image'}">`
 }
             <button data-id="${data.id}" class="multimedia__button-play">
                 <img src="/images/public/button-play.svg" alt="button play">
@@ -133,11 +142,9 @@ export const renderMultimedia = (parentEl, data, type) => {
     html = `
     <div class="multimedia__item">
         <div class="relative">
-            <img class="multimedia__image" src="${data.thumbnail}" alt="${
-  data.nombre_galeria + 'image'
+            <img class="multimedia__image" src="${data.thumbnail}" alt="${data.nombre_galeria + 'image'
 }">
-            <button data-id="${
-  data.id
+            <button data-id="${data.id
 }" class="multimedia__button-galeria" href="#" style="background-color: #3A3C6A;">Ver galería</button>
             <div class="multimedia__type" style="background-color: #5F2161;">&nbsp;</div>
         </div>
@@ -150,8 +157,7 @@ export const renderMultimedia = (parentEl, data, type) => {
             </p>
             <div class="multimedia__lugar-comunidad">
                 <p class="italic">
-                    ${data.municipio || ''} - ${
-  (Array.isArray(data.departamento) ?
+                    ${data.municipio || ''} - ${(Array.isArray(data.departamento) ?
         [...new Set(data.departamento)].join(' - ') :
         data.departamento) || ''
 }
@@ -209,6 +215,8 @@ export const renderNews = (parentEl, data) => {
 };
 
 export const renderLearn = (parentEl, data) => {
+  const enlacesVideo = data.enlace_video.trim().split(',');
+
   const html = `
 <div class="learn__item">
   <p class="learn__topic">
@@ -216,13 +224,10 @@ export const renderLearn = (parentEl, data) => {
   </p>
   <img class="learn__sticky" src="/images/aprende/sticky.svg" alt="sticky">
   <h3 class="learn__title">${data.nombre_de_la_publicacion}</h3>
-  ${
-  data.enlace_video &&
+  ${data.enlace_video &&
     `
       <div class="learn__image">
-        <img src="${`https://img.youtube.com/vi/${getYouTubeVideoID(
-      data.enlace_video,
-  )}/hqdefault.jpg`}" alt="${data.nombre_de_la_publicacion} image" />
+        <img src="${getPreviewImage(enlacesVideo[Math.floor(Math.random() * enlacesVideo.length)])}" alt="${data.nombre_de_la_publicacion} image" />
       </div>
     `
 }

@@ -155,7 +155,16 @@ learn?.addEventListener('click', function(e) {
 
   // call modal class
   // eslint-disable-next-line no-unused-vars
-  const modal = new Modal(data[0], 'aprende');
+  const formatData = {
+    ...data[0],
+    enlace_video: data[0].enlace_video
+        .split(',')
+        .map((url) => url.trim())
+        .filter(Boolean).join(','),
+  };
+
+
+  const modal = new Modal(formatData, 'aprende');
 
   const swiperThumbs = new Swiper('.swiperThumbs', {
     // configure Swiper to use modules

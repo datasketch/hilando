@@ -10,3 +10,35 @@ export const getYouTubeVideoID = (url) => {
     return null;
   }
 };
+
+export const getDriveVideoID = (url) => {
+  const regex = /(?:https?:\/\/)?(?:www\.)?(?:drive\.google\.com\/file\/d\/|drive\.google\.com\/open\?id=)([a-zA-Z0-9_-]{33})/;
+  const match = url.match(regex);
+
+  if (match && match[1]) {
+    return match[1];
+  } else {
+    return null;
+  }
+};
+
+export const getYouTubePreviewImage = (youtubeVideoID) => {
+  return `https://img.youtube.com/vi/${youtubeVideoID}/hqdefault.jpg`;
+};
+
+export const getDrivePreviewImage = (driveVideoID) => {
+  return `https://drive.google.com/thumbnail?id=${driveVideoID}`;
+};
+
+export const getVideoPlatform = (url) => {
+  const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const driveRegex = /(?:https?:\/\/)?(?:www\.)?(?:drive\.google\.com\/file\/d\/|drive\.google\.com\/open\?id=)([a-zA-Z0-9_-]{33})/;
+
+  if (youtubeRegex.test(url)) {
+    return 'YouTube';
+  } else if (driveRegex.test(url)) {
+    return 'Google Drive';
+  } else {
+    return 'Unknown';
+  }
+};

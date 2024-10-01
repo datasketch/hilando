@@ -1,4 +1,4 @@
-import {getYouTubeVideoID} from '../utils/index';
+import {getPreviewImage} from './render';
 
 export default class Modal {
   // constructor
@@ -97,11 +97,12 @@ export default class Modal {
   #renderVideoSwiperSlide(urlVideos, isThumbs = false) {
     let html = '';
 
+
     if (isThumbs) {
       urlVideos.forEach((urlVideo, i) => {
         html += `
           <div class="swiper-slide swiper-slide--thumbs">
-              <img src="${`https://img.youtube.com/vi/${getYouTubeVideoID(urlVideo)}/hqdefault.jpg`}" alt="${`video ${i + 1}`}">
+              <img src="${getPreviewImage(urlVideo)}" alt="${`video ${i + 1}`}">
            </div>
           `;
       });
@@ -351,7 +352,7 @@ export default class Modal {
           `
                        <div class="swiper swiperMain">
                           <div class="swiper-wrapper">
-                  ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(', '))}
+                  ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(','))}
                           </div>
                        </div>
                     `
@@ -370,7 +371,7 @@ export default class Modal {
                       </button>
                       <div thumbsSlider="" class="swiper swiperThumbs swiperThumbs--events"">
                           <div class="swiper-wrapper">
-                              ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(', '), true)}
+                              ${this.#renderVideoSwiperSlide(this.data.enlace_video.trim().split(','), true)}
                           </div>
                       </div>
                       <button class="transform -translate-y-2 swiper-button-learn-next" aria-label="Imagen siguiente">

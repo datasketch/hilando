@@ -1,1 +1,24 @@
-[{"Id":1,"nombre_de_la_publicacion":"Producción sostenible y amigable con el medio ambiente","CreatedAt":"2024-08-02T15:23:59.315Z","UpdatedAt":"2024-09-16T15:06:16.408Z","tema":"Cambio climático","fecha":"2024-01-15","descripcion":"Cosechando Futuro es una serie audiovisual de cinco capítulos que habla sobre los efectos del cambio climático en la tierra y brinda algunas soluciones para mitigar sus efectos.\n\nEsta serie fue realizada por el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, como parte de un proceso pedagógico y de sensibilización con comunidades rurales de Antioquia, Valle, Cauca, Bolívar y Sucre, para aprender diferentes formas en las que podemos contribuir a cuidar nuestro planeta desde el campo.","archivo_pdf":null,"enlace_video":"https://www.youtube.com/embed/I2MjeTBNvEE,https://www.youtube.com/embed/rkSTOP4jCVQ,https://www.youtube.com/embed/D6alZErtXrM, https://www.youtube.com/embed/PK34OzBQgH8,https://www.youtube.com/embed/HGCTZAOIfoQ"},{"Id":2,"nombre_de_la_publicacion":"Finanzas Rurales para el campo: módulo 1","CreatedAt":"2024-09-12T18:16:22.826Z","UpdatedAt":"2024-09-16T15:34:44.097Z","tema":"Finanzas","fecha":"2024-06-15","descripcion":"Aprende junto a Rosa y Carlos cómo administrar mejor tu finca y llevarla hacia la sostenibilidad ambiental y económica.","archivo_pdf":null,"enlace_video":""}]
+[
+    {
+        "Id": 1,
+        "nombre_de_la_publicacion": "Producción sostenible y amigable con el medio ambiente",
+        "CreatedAt": "2024-08-02T15:23:59.315Z",
+        "UpdatedAt": "2024-09-16T15:06:16.408Z",
+        "tema": "Cambio climático",
+        "fecha": "2024-01-15",
+        "descripcion": "Cosechando Futuro es una serie audiovisual de cinco capítulos que habla sobre los efectos del cambio climático en la tierra y brinda algunas soluciones para mitigar sus efectos.\n\nEsta serie fue realizada por el Programa Hilando Vidas y Esperanza de USAID, implementado por OIM, como parte de un proceso pedagógico y de sensibilización con comunidades rurales de Antioquia, Valle, Cauca, Bolívar y Sucre, para aprender diferentes formas en las que podemos contribuir a cuidar nuestro planeta desde el campo.",
+        "archivo_pdf": null,
+        "enlace_video": "https://www.youtube.com/embed/I2MjeTBNvEE,https://www.youtube.com/embed/rkSTOP4jCVQ,https://www.youtube.com/embed/D6alZErtXrM, https://www.youtube.com/embed/PK34OzBQgH8,https://www.youtube.com/embed/HGCTZAOIfoQ"
+    },
+    {
+        "Id": 2,
+        "nombre_de_la_publicacion": "Finanzas Rurales para el campo: módulo 1",
+        "CreatedAt": "2024-09-12T18:16:22.826Z",
+        "UpdatedAt": "2024-09-16T15:34:44.097Z",
+        "tema": "Finanzas",
+        "fecha": "2024-06-15",
+        "descripcion": "Aprende junto a Rosa y Carlos cómo administrar mejor tu finca y llevarla hacia la sostenibilidad ambiental y económica.",
+        "archivo_pdf": null,
+        "enlace_video": ""
+    }
+]
