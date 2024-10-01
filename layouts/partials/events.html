@@ -31,7 +31,7 @@
         <div class="swiper-wrapper">
             {{ range $month := $currentMonths }}
             {{ $month = lower $month }}
-            {{ range $data }}
+            {{ range sort $data "date" }}
             {{ if .foto}}
             {{ if eq $month (lower .mes) }}
             <!-- Slides -->
