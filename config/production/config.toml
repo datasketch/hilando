@@ -3,3 +3,7 @@ defaultContentLanguage = "es"
 languageCode = 'es'
 taxonomies = []
 title = 'Hilando Vidas y Esperanzas'
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
