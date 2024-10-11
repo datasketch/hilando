@@ -15,7 +15,9 @@ liderazgo_comunidad: []
 inclusion_diversidad_genero: null
 comentarios_conectividad: null
 punto_SOLE: null
-comentarios_punto_SOLE: []
+comentarios_punto_SOLE:
+  - >-
+    https://padlet.com/piscitaucomunidad/sole-resguardo-piscitau-tbhlpzwftafxafmi.
 ppales_actividades_economicas_vocacion_productiva: []
 comentarios_ppales_actividades_economicas_vocacion_productiva: null
 comunidad_sostenible_uso_suelo: null
