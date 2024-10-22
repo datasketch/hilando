@@ -6,8 +6,17 @@
 
 {{ $hasResult := false }}
 
+{{ $currentYear := now.Format "2006" }}
 {{ $currentMonth := now.Format "January"}}
 {{ $currentMonths := slice }}
+
+{{ $currentMonthIndex := 0 }}
+{{ range $index, $month := $monthNamesEN }}
+  {{ if eq $month $currentMonth }}
+    {{ $currentMonthIndex = $index }}
+  {{ end }}
+{{ end }}
+{{ $currentMonthES := index $monthNamesES $currentMonthIndex }}
 
 {{ range $index, $month := $monthNamesEN }}
 {{ if eq $month $currentMonth }}
@@ -17,14 +26,16 @@
 
 {{ range $currentMonths }}
 {{ range where $data "mes" . }}
+{{ if eq .anio $currentYear }}
 {{ $hasResult = true }}
+{{ end }}
 {{ end }}
 {{ end }}
 
 {{ end }}
 {{ end }}
+{{ if $hasResult }}
 <div class="mx-auto w-11/12 lg:w-10/12 relative">
-    {{ if $hasResult }}
     <!-- Slider main container -->
     <div class="swiper swiper-events events">
         <!-- Additional required wrapper -->
@@ -32,7 +43,7 @@
             {{ range $month := $currentMonths }}
             {{ $month = lower $month }}
             {{ range sort $data "date" }}
-            {{ if .foto}}
+            {{ if and .foto (eq $currentYear .anio) }}
             {{ if eq $month (lower .mes) }}
             <!-- Slides -->
             <div class="swiper-slide">
@@ -53,6 +64,11 @@
                                         <p class="-mt-2 italic xl:text-lg">
                                             {{ .mes }}
                                         </p>
+                                        {{ if .anio }}
+                                        <p class="-mt-1">
+                                            {{ .anio }}
+                                        </p>
+                                        {{ end }}
                                     </div>
                                 </div>
                                 <div class="p-6">
@@ -100,10 +116,10 @@
         <img src="/images/public/right-arrow.svg" alt="flecha a la derecha">
     </div>
     {{ else }}
-    <div>
+    <div class="mx-auto w-11/12 lg:w-10/12">
         <p>
-            No hay eventos
+            No hay eventos para el mes {{ $currentMonthES }} del año {{ $currentYear }}
         </p>
     </div>
-    {{ end }}
 </div>
+{{ end }}
