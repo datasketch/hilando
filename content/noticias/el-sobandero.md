@@ -1,7 +1,7 @@
 ---
 title: EL SOBANDERO
 date: 2024-09-12T17:21:42.049Z
-image: /images/uploads/la-charra-4-1024x683.jpeg
+image: /images/uploads/casazambo-sobandero.jpeg
 description: El sobandero  Eliberto Montenegro de Bolivar, Pradera Cauca. Tiene
   90 años y nos cuenta su historia.
 topic: Perfiles
