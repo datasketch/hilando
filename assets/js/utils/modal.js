@@ -86,7 +86,7 @@ export default class Modal {
       html += `
             <div class="swiper-slide">
               <div class="video-w-full">
-                 <object data="${urlObject}" width="100%" height="384px"></object>
+                 <iframe src="${urlObject}" width="100%" height="384px"></iframe>
               </div>
              </div>
             `;
@@ -157,10 +157,10 @@ export default class Modal {
                 <div class="event__modal--space-y-5">
                   <div class="event__modal--space-y-2">
                     <div class="event__modal--flex-justify">
-                      <div class="event__modal--flex-center event__modal--space-x-3 ${this.data.comunidad || this.data.comunidad_focalizada ? '' : 'hidden'}">
+                      <div class="event__modal--flex-center event__modal--space-x-3">
                         <img src="/images/eventos/icon-location.svg" alt="location icon">
                         <p class="event__modal-paragraph">
-                          ${this.data.comunidad || this.data.comunidad_focalizada}, ${this.data.municipio}
+                          ${this.data.comunidad || this.data.comunidad_focalizada || this.data.macroregion}, ${this.data.municipio}
                         </p>
                       </div>
                     </div>
@@ -169,6 +169,8 @@ export default class Modal {
                         <h3 class="event__modal-title">
                           ${this.data.nombre_evento || this.data.nombre_galeria}
                         </h3>
+                        <p style="font-size: 14px; margin-top: 10px;"><b>Fecha:</b> ${this.data.dia_inicio} ${this.data.mes} de ${this.data.anio}</p>
+                        <p style="font-size: 14px;"><b>Tipo de evento:</b> ${this.data.tipo_evento}</p>
                       </div>
                     </div>
                   </div>

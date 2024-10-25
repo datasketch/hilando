@@ -5,46 +5,32 @@
 "Noviembre" "Diciembre" }}
 
 {{ $hasResult := false }}
-
-{{ $currentYear := now.Format "2006" }}
-{{ $currentMonth := now.Format "January"}}
 {{ $currentMonths := slice }}
 
-{{ $currentMonthIndex := 0 }}
-{{ range $index, $month := $monthNamesEN }}
-  {{ if eq $month $currentMonth }}
-    {{ $currentMonthIndex = $index }}
+{{ $currentYear := now.Format "2006" }}
+{{ $currentEvents := where $data "anio" $currentYear }}
+
+{{ if $currentEvents }}
+  {{ $hasResult = true }}
+  {{ range $month := $monthNamesES }}
+    {{ $eventsInMonth := where $currentEvents "mes" $month }}
+    {{ if $eventsInMonth }}
+      {{ $currentMonths = $currentMonths | append $month }}
+    {{ end }}
   {{ end }}
 {{ end }}
-{{ $currentMonthES := index $monthNamesES $currentMonthIndex }}
 
-{{ range $index, $month := $monthNamesEN }}
-{{ if eq $month $currentMonth }}
-{{ $mod_index := mod $index 12 }}
-{{ $currentMonths = $currentMonths | append (index $monthNamesES $mod_index)}}
-{{ $currentMonths = $currentMonths | append (index $monthNamesES (mod (add $mod_index 1) 12) )}}
 
-{{ range $currentMonths }}
-{{ range where $data "mes" . }}
-{{ if eq .anio $currentYear }}
-{{ $hasResult = true }}
-{{ end }}
-{{ end }}
-{{ end }}
-
-{{ end }}
-{{ end }}
 {{ if $hasResult }}
 <div class="mx-auto w-11/12 lg:w-10/12 relative">
     <!-- Slider main container -->
     <div class="swiper swiper-events events">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            {{ range $month := $currentMonths }}
+            {{ range $month := $monthNamesES }}
             {{ $month = lower $month }}
-            {{ range sort $data "date" }}
-            {{ if and .foto (eq $currentYear .anio) }}
-            {{ if eq $month (lower .mes) }}
+            {{ range sort (where $data "anio" $currentYear) "date" }}
+            {{ if and .foto (eq (lower .mes) $month) }}
             <!-- Slides -->
             <div class="swiper-slide">
                 <div class="bg-purple bg-opacity-75 text-white overflow-hidden"
@@ -105,7 +91,6 @@
             {{ end }}
             {{ end }}
             {{ end }}
-            {{ end }}
         </div>
     </div>
     <!-- If we need navigation buttons -->
@@ -115,11 +100,10 @@
     <div class="swiper-button-next">
         <img src="/images/public/right-arrow.svg" alt="flecha a la derecha">
     </div>
-    {{ else }}
-    <div class="mx-auto w-11/12 lg:w-10/12">
-        <p>
-            No hay eventos para el mes {{ $currentMonthES }} del año {{ $currentYear }}
-        </p>
-    </div>
+{{ else }}
+<div class="mx-auto w-11/12 lg:w-10/12">
+    <p>
+        No hay eventos para el año {{ $currentYear }}
+    </p>
 </div>
 {{ end }}
