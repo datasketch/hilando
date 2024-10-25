@@ -9,9 +9,7 @@
         <a class="inline-flex items-center uppercase font-bold text-white py-3 px-10 xl:text-lg mb-6 lg:mb-10 bg-space-cadet" href='{{ relref . "noticias/_index.md" }}'>
           <img class="mr-3 h-3" src="/images/public/left-arrow-white.svg" alt="flecha a la izquierda">
           <span>Volver</span></a>
-        {{ if not (findRE "<p><img" .Content) }}
         <img src="{{ .Params.image }}" alt="{{ .Title }}">
-        {{ end }}
         <p class="mt-6 lg:mt-8"><b>Fecha:</b> {{ .Date | time.Format ":date_long"}}</p>
         {{ if .Params.author }}
         <p><b>Autor:</b> {{ .Params.author }}</p>
