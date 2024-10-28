@@ -170,13 +170,6 @@ learn?.addEventListener('click', function(e) {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay, FreeMode],
 
-    // Autoplay
-    autoplay: {
-      delay: 5000,
-    },
-
-    // loop: true,
-
     // Default parameters
     slidesPerView: 'auto',
     spaceBetween: 10,
@@ -202,10 +195,6 @@ learn?.addEventListener('click', function(e) {
 
     thumbs: {
       swiper: swiperThumbs,
-    },
-
-    autoplay: {
-      delay: 5000,
     },
 
     loop: true,
