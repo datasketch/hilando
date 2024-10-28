@@ -1,4 +1,5 @@
 import {getPreviewImage} from './render';
+import {getIframe} from './';
 
 export default class Modal {
   // constructor
@@ -113,7 +114,7 @@ export default class Modal {
         html += `
           <div class="swiper-slide">
             <div class="aspect-w-16 aspect-h-9">
-                <iframe src="${urlVideo}"></iframe>
+                <iframe src="${getIframe(urlVideo)}"></iframe>
             </div>
            </div>
           `;
