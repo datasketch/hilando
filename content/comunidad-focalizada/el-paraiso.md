@@ -88,6 +88,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 5
 grafica_ubicacion_geografica: /charts/municipios/coloso/ubicacion_geografica.html
 url: /comunidad-focalizada/el-paraiso
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/el-paraiso.pdf
 

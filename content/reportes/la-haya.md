@@ -48,6 +48,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/san-juan-de-nepomuceno/ubicacion_geografica.html
 url: /reportes/la-haya
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/la-haya.pdf
 

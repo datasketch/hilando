@@ -101,6 +101,8 @@ notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/el-bagre/ubicacion_geografica.html
 url: /comunidad-focalizada/la-capilla
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/la-capilla.pdf
 

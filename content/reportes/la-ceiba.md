@@ -77,6 +77,8 @@ notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: 4
 grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /reportes/la-ceiba
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/la-ceiba.pdf
 

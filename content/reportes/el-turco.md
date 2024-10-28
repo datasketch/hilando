@@ -92,6 +92,15 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 0
 grafica_ubicacion_geografica: /charts/municipios/santander-de-quilichao/ubicacion_geografica.html
 url: /reportes/el-turco
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/Icw-aP.jpeg
+    title: >-
+      El Turco Participación de ASPROAM en Feria de Cafés
+      especiales-SantanderQuilicaho2023.jpeg
+    mimetype: image/jpeg
+    size: 295713
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/el-turco.pdf
 

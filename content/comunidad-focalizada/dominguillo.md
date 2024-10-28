@@ -98,6 +98,18 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/santander-de-quilichao/ubicacion_geografica.html
 url: /comunidad-focalizada/dominguillo
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/GUUu4O.jpeg
+    title: IMG_7526 (1).jpeg
+    mimetype: image/jpeg
+    size: 3087976
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/v0C2kL.jpeg
+    title: IMG_7709.jpeg
+    mimetype: image/jpeg
+    size: 2098617
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/dominguillo.pdf
 

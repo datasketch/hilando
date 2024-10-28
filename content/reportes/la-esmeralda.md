@@ -67,6 +67,28 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/coloso/ubicacion_geografica.html
 url: /reportes/la-esmeralda
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/OOulEG.jpeg
+    title: IMG_7516.jpeg
+    mimetype: image/jpeg
+    size: 4365279
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/yh_bnb.jpeg
+    title: IMG_7515.jpeg
+    mimetype: image/jpeg
+    size: 3175249
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/9GvV8Y.jpeg
+    title: IMG_7726.jpeg
+    mimetype: image/jpeg
+    size: 3178244
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/ltBErA.jpeg
+    title: IMG_7528.jpeg
+    mimetype: image/jpeg
+    size: 3376266
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/la-esmeralda.pdf
 

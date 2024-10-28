@@ -72,6 +72,8 @@ notas_infraestructura_salud_atencion_psicosocial: ''
 num_visitas_predio: 0
 grafica_ubicacion_geografica: /charts/municipios/pradera/ubicacion_geografica.html
 url: /comunidad-focalizada/kwet-wala
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/kwet-wala.pdf
 

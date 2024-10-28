@@ -93,6 +93,25 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 1
 grafica_ubicacion_geografica: /charts/municipios/san-juan-nepomuceno/ubicacion_geografica.html
 url: /comunidad-focalizada/san-pedro-consolado
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/fETJy-.jpg
+    title: >-
+      san pedro Apuesta gastronómica Asoturcon - San Pedro Consolado - Montes
+      de María.jpg
+    mimetype: image/jpeg
+    size: 5889834
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/pHD4QW.png
+    title: 01_ASOTURCON_5SEPT.png
+    mimetype: image/png
+    size: 51507267
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/2vTx2D.jpg
+    title: Integrantes de ASOTURCON - San Pedro Consolado, Montes de María.jpg
+    mimetype: image/jpeg
+    size: 574031
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/san-pedro-consolado.pdf
 

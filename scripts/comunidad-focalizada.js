@@ -73,6 +73,8 @@ data.forEach((item) => {
     num_visitas_predio: item.num_visitas_predio,
     grafica_ubicacion_geografica: `/charts/municipios/${slugify(municipality)}/ubicacion_geografica.html`,
     url: `/comunidad-focalizada/${filename}`,
+    imagen_iniciativas_productivas: JSON.parse(item.imagen_iniciativas_productivas),
+    imagen_medios_comunicacion: JSON.parse(item.imagen_medios_comunicacion),
     layout: 'single',
     download_file: `/reportes/${filename}.pdf`,
   };

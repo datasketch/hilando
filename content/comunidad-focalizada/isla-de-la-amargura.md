@@ -97,6 +97,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 16
 grafica_ubicacion_geografica: /charts/municipios/caceres/ubicacion_geografica.html
 url: /comunidad-focalizada/isla-de-la-amargura
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/isla-de-la-amargura.pdf
 

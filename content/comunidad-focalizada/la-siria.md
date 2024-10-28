@@ -86,6 +86,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/toluviejo/ubicacion_geografica.html
 url: /comunidad-focalizada/la-siria
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/la-siria.pdf
 

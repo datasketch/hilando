@@ -84,6 +84,8 @@ notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/san-jacinto/ubicacion_geografica.html
 url: /comunidad-focalizada/el-bongal
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/el-bongal.pdf
 

@@ -54,6 +54,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/coloso/ubicacion_geografica.html
 url: /reportes/la-estacion
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/la-estacion.pdf
 

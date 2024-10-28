@@ -357,6 +357,16 @@
             <li>{{ . }}</li>
             {{ end }} {{ end }}
           </ul>
+          {{ if .Params.imagen_iniciativas_productivas }}
+          {{ range .Params.imagen_iniciativas_productivas }}
+          <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center"
+              src="{{ .url }}"
+              alt="{{ .title }}"
+            />
+          </div>
+          {{ end }} {{ end }}
         </div>
       </div>
     </div>
@@ -391,6 +401,16 @@
             <li>{{ . }}</li>
             {{ end }} {{ end }}
           </ul>
+          {{ if .Params.imagen_medios_comunicacion }}
+          {{ range .Params.imagen_medios_comunicacion }}
+          <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+            <img
+              class="w-full h-full object-cover object-center"
+              src="{{ .url }}"
+              alt="{{ .title }}"
+            />
+          </div>
+          {{ end }} {{ end }} 
         </div>
         {{ end }}
       </div>

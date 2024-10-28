@@ -75,6 +75,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/buenaventura/ubicacion_geografica.html
 url: /reportes/resguardo-indigena-nasa-embera-chami
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/resguardo-indigena-nasa-embera-chami.pdf
 

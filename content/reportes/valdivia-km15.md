@@ -49,6 +49,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/valdivia/ubicacion_geografica.html
 url: /reportes/valdivia-km15
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: comunidad
 download_file: /reportes/valdivia-km15.pdf
 

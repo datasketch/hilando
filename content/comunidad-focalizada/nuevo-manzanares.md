@@ -85,6 +85,8 @@ notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/chalan/ubicacion_geografica.html
 url: /comunidad-focalizada/nuevo-manzanares
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/nuevo-manzanares.pdf
 

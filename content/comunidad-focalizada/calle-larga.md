@@ -69,6 +69,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/buenaventura/ubicacion_geografica.html
 url: /comunidad-focalizada/calle-larga
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/calle-larga.pdf
 

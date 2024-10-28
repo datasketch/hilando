@@ -41,6 +41,8 @@ notas_infraestructura_salud_atencion_psicosocial: null
 num_visitas_predio: null
 grafica_ubicacion_geografica: /charts/municipios/piendamo/ubicacion_geografica.html
 url: /comunidad-focalizada/resguardo-misak-piscitau
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/resguardo-misak-piscitau.pdf
 

@@ -97,6 +97,8 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 19
 grafica_ubicacion_geografica: /charts/municipios/taraza/ubicacion_geografica.html
 url: /comunidad-focalizada/la-caucana
+imagen_iniciativas_productivas: null
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/la-caucana.pdf
 

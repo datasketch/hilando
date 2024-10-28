@@ -73,6 +73,15 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 16
 grafica_ubicacion_geografica: /charts/municipios/anori/ubicacion_geografica.html
 url: /comunidad-focalizada/el-banco
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/2ml2X8.jpeg
+    title: >-
+      Banco Proyecto Silvopastoril Anorí - ANTIOQUIA - Alianza con
+      Agrosavia.jpeg
+    mimetype: image/jpeg
+    size: 300991
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/el-banco.pdf
 

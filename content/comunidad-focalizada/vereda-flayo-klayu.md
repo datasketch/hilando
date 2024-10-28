@@ -97,6 +97,13 @@ notas_infraestructura_salud_atencion_psicosocial: >-
 num_visitas_predio: 0
 grafica_ubicacion_geografica: /charts/municipios/toribio/ubicacion_geografica.html
 url: /comunidad-focalizada/vereda-flayo-klayu
+imagen_iniciativas_productivas:
+  - url: >-
+      http://hilando.datasketch.co/download/noco/Proyecto/comunidades/imagen_iniciativas_productivas/-dPumu.jpg
+    title: NSZ_1785.jpg
+    mimetype: image/jpeg
+    size: 1246953
+imagen_medios_comunicacion: null
 layout: single
 download_file: /reportes/vereda-flayo-klayu.pdf
 
