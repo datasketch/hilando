@@ -13,7 +13,7 @@ cms: true
 ---
 **Por: Edinson José Mora**              
 
-I\
+**I**\
 Si hay algo que me enorgullece,\
 aquí se los vengo a decir:\
 ser nativo de este pueblo\
@@ -25,7 +25,7 @@ se los digo y lo repito:\
 es parte del patrimonio\
 y está allí en el Paraíso.
 
-II\
+**II**\
 Con sus hermosas veredas,\
 que aquí las voy a nombrar,\
 empiezo por La Estación\
@@ -37,9 +37,7 @@ mucha gente se destaca.\
 ¡Qué lindos parajes tiene\
 para construir mi casa!
 
-
-
-III\
+**III**\
 Y no pares de contar:\
 Estambul y Vijagual\
 son dos hermosas veredas\
@@ -51,7 +49,7 @@ van también en la elección.\
 Estas hermosas veredas\
 las llevo en mi corazón.
 
-IV\
+**IV**\
 Si voy pa' la zona norte,\
 todo lo veo tan bonito.\
 Visito todas las veredas\
@@ -63,14 +61,4 @@ ni la llamada Esmeralda.\
 Cuando voy pa’ los arroyos,\
 me obligan a visitarlas.
 
-**V\
-De este pueblo tan hermoso\
-tengo tanto que decir,\
-que en el resto de mi vida\
-terminaría de escribir.\
-No hallo con qué comparar\
-ese hermoso charco azul,\
-ni nuestro salto El Sereno\
-ni la poza de Arizal.\
-A este pueblo tan hermoso\
-nunca lo podré olvidar.**
+**V**De este pueblo tan hermosotengo tanto que decir,que en el resto de mi vidaterminaría de escribir.No hallo con qué compararese hermoso charco azul,ni nuestro salto El Serenoni la poza de Arizal.A este pueblo tan hermosonunca lo podré olvidar.
