@@ -13,7 +13,7 @@ cms: true
 ---
 **Por: Edinson José Mora**              
 
-   I
+ **I**
 
 Mi Colosó de antaño,\
 aquel mi Colosó\
@@ -23,7 +23,7 @@ tus fiestas patronales,\
 las fiestas en septiembre\
 del arcángel San Miguel.
 
-II\
+**II**\
 Vivir en Colosó,\
 aquel de los arroyos,\
 con hermosas montañas\
@@ -33,7 +33,7 @@ ni a ti ni a tus veredas,\
 mirando tus ocasos\
 frente a la calle Real.
 
-III
+**III**
 
 Aquel mi Colosó\
 con su Salto Sereno\
@@ -44,4 +44,14 @@ y el propio colosuano\
 disfrutan su excelencia,\
 la hospitalidad.
 
-**IV**Y llevo aquí en mi mentelas imágenes frescasde aquellos manantialesrepletos de color,esos lindos paisajesque debemos cuidar,como una vez lo hizoel indio Baltazar.
+**IV**
+
+Y llevo aquí en mi mente
+
+las imágenes frescas de aquellos manantiales
+
+repletos de color,
+
+esos lindos paisajesque debemos cuidar,
+
+como una vez lo hizoel indio Baltazar.
