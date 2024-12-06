@@ -8,7 +8,7 @@ description: Jorge Ávila, o "Pepe" —como cariñosamente lo llamaban sus amigo
   atravesado por el majestuoso Río Cauca y la carretera Troncal de Occidente
 topic: Perfiles
 region: Bajo Cauca y Nordeste Antioqueño
-municipality: Anorí
+municipality: Cáceres
 author: Comité Comunicaciones Red Hilando Comunidades
 cms: true
 ---
