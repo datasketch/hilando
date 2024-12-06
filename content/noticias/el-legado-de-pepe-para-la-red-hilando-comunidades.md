@@ -1,7 +1,7 @@
 ---
 title: El legado de Pepe para la Red Hilando Comunidades
 date: 2024-12-06T14:22:01.646Z
-image: /images/uploads/foto-jorge-hilando-juntos.jpg
+image: /images/uploads/whatsapp-image-2024-12-06-at-10.16.01-am.jpeg
 description: Jorge Ávila, o "Pepe" —como cariñosamente lo llamaban sus amigos y
   vecinos—, nació el 1 de mayo de 1977 en el municipio de Cáceres, Antioquia,
   siempre se consideró un hijo del corregimiento de Puerto Bélgica, un lugar
