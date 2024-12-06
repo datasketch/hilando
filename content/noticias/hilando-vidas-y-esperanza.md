@@ -63,7 +63,7 @@ jamás te voy a olvidar 
 
 
 
-Otra que también admito
+Otra que también admiro
 
 morena, muy talentosa 
 
@@ -87,7 +87,7 @@ También desde Bogotá
 
 nos vino a supervisar
 
-a la doctora Gabriela 
+ la doctora Gabriela 
 
 las gracias le quiero dar 
 
@@ -100,6 +100,8 @@ para poderla nombrar 
 Erlinda no te nos vayas 
 
 que nos vas a hacer llorar
+
+
 
 Otra que nos va a hacer falta
 
@@ -129,9 +131,7 @@ se trata de Luisa Florez 
 
 a quien nunca olvidaré
 
-
-
-Hay uno que es muy dichoso 
+Hay uno que es muy dichoso
 
 y trajo cosas especiales 
 
