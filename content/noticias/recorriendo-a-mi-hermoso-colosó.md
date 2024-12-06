@@ -1,5 +1,5 @@
 ---
-title: Recorriendo a mi hermoso Colosó
+title: "Mi Colosó bonito "
 date: 2024-12-06T21:52:07.599Z
 image: /images/uploads/whatsapp-image-2024-12-06-at-4.37.13-pm.jpeg
 description: Entrelazando Culturas es una iniciativa de la Red Hilando
@@ -13,52 +13,35 @@ cms: true
 ---
 **Por: Edinson José Mora**              
 
-**I**\
-Si hay algo que me enorgullece,\
-aquí se los vengo a decir:\
-ser nativo de este pueblo\
-que se llama Colosó.\
-Con sus hermosas montañas\
-y un lago que es un hechizo,\
-la verdad que es muy bonito,\
-se los digo y lo repito:\
-es parte del patrimonio\
-y está allí en el Paraíso.
+   I
 
-**II**\
-Con sus hermosas veredas,\
-que aquí las voy a nombrar,\
-empiezo por La Estación\
-y nuestro bajo Don Juan.\
-Hay que mencionar al Zuan,\
-antes o después de Coraza;\
-aunque con pocas familias,\
-mucha gente se destaca.\
-¡Qué lindos parajes tiene\
-para construir mi casa!
+Mi Colosó de antaño,\
+aquel mi Colosó\
+de estilo colonial.\
+En mis recuerdos viven\
+tus fiestas patronales,\
+las fiestas en septiembre\
+del arcángel San Miguel.
 
-**III**\
-Y no pares de contar:\
-Estambul y Vijagual\
-son dos hermosas veredas\
-cerca del casco central.\
-San Antonio y El Ojito,\
-Desbarrancao y Maratón,\
-que colindan con Chalán,\
-van también en la elección.\
-Estas hermosas veredas\
-las llevo en mi corazón.
+II\
+Vivir en Colosó,\
+aquel de los arroyos,\
+con hermosas montañas\
+y un lago de cristal.\
+No te olvidaré nunca,\
+ni a ti ni a tus veredas,\
+mirando tus ocasos\
+frente a la calle Real.
 
-**IV**\
-Si voy pa' la zona norte,\
-todo lo veo tan bonito.\
-Visito todas las veredas\
-del Señor de Chinulito:\
-Cerro, Ceiba y Arenitas,\
-Brazo Seco y hasta Mico.\
-No hay que olvidarnos del Jorro\
-ni la llamada Esmeralda.\
-Cuando voy pa’ los arroyos,\
-me obligan a visitarlas.
+III
 
-**V**De este pueblo tan hermosotengo tanto que decir,que en el resto de mi vidaterminaría de escribir.No hallo con qué compararese hermoso charco azul,ni nuestro salto El Serenoni la poza de Arizal.A este pueblo tan hermosonunca lo podré olvidar.
+Aquel mi Colosó\
+con su Salto Sereno\
+y pozas naturales\
+como la de Arizal.\
+Allí donde turistas\
+y el propio colosuano\
+disfrutan su excelencia,\
+la hospitalidad.
+
+**IV**Y llevo aquí en mi mentelas imágenes frescasde aquellos manantialesrepletos de color,esos lindos paisajesque debemos cuidar,como una vez lo hizoel indio Baltazar.
