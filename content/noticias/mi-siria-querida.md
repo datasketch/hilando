@@ -7,13 +7,14 @@ description: Entrelazando Culturas es una iniciativa de la Red Hilando
   y reconocerse en colectivo.
 topic: Cultural
 region: Montes de María
-municipality: Chalán
+municipality: Toluviejo
 author: Comité Comunicaciones Red Hilando Comunidades
 cms: true
 ---
 **P﻿or:** Otilia Monterrosa
 
-**I﻿**Oh, majestuosa comunidad\
+**I﻿**/Oh, majestuosa comunidad\
+
 Enmarcada en los bellos Montes de María,\
 con una hermosa naturaleza\
 que me inspira a escribir y cantar,\
